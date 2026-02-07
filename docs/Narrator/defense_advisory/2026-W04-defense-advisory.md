@@ -2,7 +2,6 @@
 layout: default
 title: 防禦建議 — 2026 第 04 週
 parent: 防禦建議
-grand_parent: Narrator
 nav_order: 3
 ---
 
