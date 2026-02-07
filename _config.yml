@@ -36,11 +36,6 @@ heading_anchors: true
 back_to_top: true
 back_to_top_text: "回到頂端"
 
-# External navigation links
-nav_external_links:
-  - title: GitHub
-    url: https://github.com/weiqi-kids/agent.cyber-security
-
 # Defaults for pages - exclude all content from nav, only index.md files have nav
 defaults:
   - scope:
