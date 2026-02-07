@@ -1,0 +1,29 @@
+# No sunshine or relaxed holiday vibes in July cyber weather
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2021-08-18 |
+| **來源** | NCSC-FI (Finland) |
+| **分類** | attack_incident |
+| **嚴重程度** | 高 |
+| **信心水準** | 高 |
+
+## 摘要
+
+July meant summer holidays for many of us, but there was no rest in the cyber world. FluBot continued to cause trouble in Finland, and we had to reactivate our alert. Phishing campaigns to steal online banking credentials continued in July, and financial losses are already counted in millions. Several...
+
+## 事實內容
+
+July meant summer holidays for many of us, but there was no rest in the cyber world. FluBot continued to cause trouble in Finland, and we had to reactivate our alert. Phishing campaigns to steal online banking credentials continued in July, and financial losses are already counted in millions. Several critical vulnerabilities were also detected. These should be patched as soon as possible.
+
+## 受影響系統
+
+- (To be determined from full content)
+
+## 來源連結
+
+- [No sunshine or relaxed holiday vibes in July cyber weather](https://www.kyberturvallisuuskeskus.fi/en/ajankohtaista/kybersaa-heinakuu-2021)
+
+---
+> 萃取時間:2026-01-27 05:22 UTC
+> 資料來源:NCSC-FI (Finland) ncsc-fi

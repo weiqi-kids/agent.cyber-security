@@ -1,0 +1,29 @@
+# The National Cyber Security Centre Finland’s weekly review – 41/2022
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2022-10-19 |
+| **來源** | NCSC-FI Security Now! |
+| **分類** | industry_trend |
+| **嚴重程度** | 未評估 |
+| **信心水準** | 高 |
+
+## 摘要
+
+This is the weekly review of the National Cyber Security Centre Finland (NCSC-FI) (reporting period 7–13 October 2022). The purpose of the weekly review is to share information about current cyber phenomena. The weekly review is intended for a wide audience, from cyber security specialists to regular citizens.
+
+## 事實內容
+
+This is the weekly review of the National Cyber Security Centre Finland (NCSC-FI) (reporting period 7–13 October 2022). The purpose of the weekly review is to share information about current cyber phenomena. The weekly review is intended for a wide audience, from cyber security specialists to regular citizens.
+
+## 受影響系統
+
+- General systems
+
+## 來源連結
+
+- [The National Cyber Security Centre Finland’s weekly review – 41/2022](https://www.kyberturvallisuuskeskus.fi/en/news/national-cyber-security-centre-finlands-weekly-review-412022)
+
+---
+> 萃取時間：2026-01-27 04:06 UTC
+> 資料來源：NCSC-FI Security Now! (ncsc-fi-secnow)

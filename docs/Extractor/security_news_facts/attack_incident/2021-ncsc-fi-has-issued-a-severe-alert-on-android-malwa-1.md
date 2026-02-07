@@ -1,0 +1,29 @@
+# NCSC-FI has issued a severe alert on Android malware spread by SMS
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2021-06-04 |
+| **來源** | NCSC-FI (Finland) |
+| **分類** | attack_incident |
+| **嚴重程度** | 高 |
+| **信心水準** | 高 |
+
+## 摘要
+
+NCSC-FI has issued a severe alert on Android malware spread by SMS. The malware may steal, for example, passwords and other data from infected devices. Infected devices are also used to spread the malware further.
+
+## 事實內容
+
+NCSC-FI has issued a severe alert on Android malware spread by SMS. The malware may steal, for example, passwords and other data from infected devices. Infected devices are also used to spread the malware further.
+
+## 受影響系統
+
+- (To be determined from full content)
+
+## 來源連結
+
+- [NCSC-FI has issued a severe alert on Android malware spread by SMS](https://www.kyberturvallisuuskeskus.fi/en/Varoitus_TTN_0621)
+
+---
+> 萃取時間:2026-01-27 05:22 UTC
+> 資料來源:NCSC-FI (Finland) ncsc-fi

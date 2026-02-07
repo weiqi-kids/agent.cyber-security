@@ -1,0 +1,29 @@
+# Advice to help you protect your accounts
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2021-06-23 |
+| **來源** | NCSC-FI (Finland) |
+| **分類** | attack_incident |
+| **嚴重程度** | 未評估 |
+| **信心水準** | 高 |
+
+## 摘要
+
+Attempts to break into and hijack accounts used in online services are often made using different methods. This article contains brief instructions on how to protect yourself in advance and what to do after a breach.
+
+## 事實內容
+
+Attempts to break into and hijack accounts used in online services are often made using different methods. This article contains brief instructions on how to protect yourself in advance and what to do after a breach.
+
+## 受影響系統
+
+- (To be determined from full content)
+
+## 來源連結
+
+- [Advice to help you protect your accounts](https://www.kyberturvallisuuskeskus.fi/en/news/advice-help-you-protect-your-accounts)
+
+---
+> 萃取時間:2026-01-27 05:22 UTC
+> 資料來源:NCSC-FI (Finland) ncsc-fi

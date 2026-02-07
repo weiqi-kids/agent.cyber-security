@@ -1,0 +1,32 @@
+# 惡意 URL - limewire.com
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-01-28 |
+| **來源** | abuse.ch URLhaus |
+| **分類** | malicious_url |
+| **威脅類型** | malware_download |
+| **惡意程式家族** | dropped-by-amadey |
+| **狀態** | offline |
+| **威脅等級** | Medium |
+| **信心水準** | High |
+
+## 威脅描述
+
+此惡意 URL 已被 URLhaus 資料庫標記為 malware_download 類型威脅。URL 當前狀態為 offline。
+
+標籤：dropped-by-amadey, fbf543
+
+## IoC 指標
+
+| 類型 | 值 |
+|------|-----|
+| URL | `hxxps://limewire.com/d/fWi5E#9LzPG2fkpb.exe` |
+
+## 來源連結
+
+- [abuse.ch URLhaus](hxxps://urlhaus.abuse.ch/url/3765290/)
+
+---
+> 萃取時間：2026-01-29 00:03:25 UTC
+> 資料來源：abuse.ch URLhaus

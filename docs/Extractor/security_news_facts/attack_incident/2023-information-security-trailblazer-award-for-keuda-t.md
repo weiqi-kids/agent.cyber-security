@@ -1,0 +1,29 @@
+# Information Security Trailblazer award for Keuda, the Central Uusimaa educational community association
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2023-10-17 |
+| **來源** | NCSC-FI Security Now! |
+| **分類** | attack_incident |
+| **嚴重程度** | 中 |
+| **信心水準** | 高 |
+
+## 摘要
+
+This year, the Information Security Trailblazer award given out by the Finnish Transport and Communications Agency Traficom was awarded to the Central Uusimaa educational community association Keuda. In the justifications for the award, Keuda was thanked, among other things, for open communication, after it became the target of a cyber-attack...
+
+## 事實內容
+
+This year, the Information Security Trailblazer award given out by the Finnish Transport and Communications Agency Traficom was awarded to the Central Uusimaa educational community association Keuda. In the justifications for the award, Keuda was thanked, among other things, for open communication, after it became the target of a cyber-attack with ransomware in November 2022.
+
+## 受影響系統
+
+- General systems
+
+## 來源連結
+
+- [Information Security Trailblazer award for Keuda, the Central Uusimaa educational community association](https://www.kyberturvallisuuskeskus.fi/en/news/information-security-trailblazer-award-keuda-central-uusimaa-educational-community-association)
+
+---
+> 萃取時間：2026-01-27 04:06 UTC
+> 資料來源：NCSC-FI Security Now! (ncsc-fi-secnow)
