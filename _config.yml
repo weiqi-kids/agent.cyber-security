@@ -78,6 +78,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
+# Permalinks - use pretty URLs (trailing slash)
+permalink: pretty
+
 # Kramdown settings
 kramdown:
   syntax_highlighter_opts:
