@@ -3,6 +3,7 @@ layout: default
 title: 防禦建議 — 2026 第 04 週
 parent: 防禦建議
 nav_order: 3
+nav_exclude: false
 ---
 
 # 防禦建議 — 2026 第 04 週
