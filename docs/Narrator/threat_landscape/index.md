@@ -3,6 +3,7 @@ layout: default
 title: 威脅態勢分析
 parent: Narrator
 nav_order: 1
+nav_exclude: false
 has_children: true
 permalink: /docs/Narrator/threat_landscape/
 ---
