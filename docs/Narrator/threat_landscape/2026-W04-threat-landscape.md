@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 威脅態勢分析 — 2026 第 04 週
+title: 2026 第 04 週
 parent: 威脅態勢分析
 nav_order: 3
 nav_exclude: false

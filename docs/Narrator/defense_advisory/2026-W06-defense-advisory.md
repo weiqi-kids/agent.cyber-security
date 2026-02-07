@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 防禦建議 — 2026 第 06 週
+title: 2026 第 06 週
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
