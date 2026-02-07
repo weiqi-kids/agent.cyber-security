@@ -19,13 +19,15 @@
 對每個 Layer 依序執行：
 
 1. **fetch** — 執行 `core/Extractor/Layers/{layer_name}/fetch.sh` 下載原始資料
-2. **萃取（逐行處理）** — 讀取該 Layer 的 `CLAUDE.md` 和 `core/Extractor/CLAUDE.md`，再對 `docs/Extractor/{layer_name}/raw/` 目錄中的 JSONL 逐行處理：
+2. **萃取（平行背景處理）** — 讀取該 Layer 的 `CLAUDE.md` 和 `core/Extractor/CLAUDE.md`，再對 `docs/Extractor/{layer_name}/raw/` 目錄中的 JSONL 平行處理：
    1. 用 `wc -l < {jsonl_file}` 取得總行數
-   2. 用 `sed -n '{N}p' {jsonl_file}` 逐行讀取（N = 1, 2, 3, ...）
-   3. 對每一行 JSON，獨立呼叫一個 Sonnet Task 進行萃取（Task 接收：單一 JSON + Layer 萃取邏輯）
-   4. 萃取 Task 依各 Layer CLAUDE.md 的 WebFetch 補充規則，決定是否用 WebFetch 抓取原始公告頁面補充資料
-   5. 每個 Task 產出一個 `.md` 檔到 `docs/Extractor/{layer_name}/` 對應的 category 子目錄
-   > **⛔ 禁止**：不可使用 Read 工具直接讀取 `.jsonl` 檔案（檔案過大會超出 token 上限）。JSONL 檔案一律透過 Bash `sed -n '{N}p'` 逐行讀取，每行交由獨立 Task 處理。
+   2. 用 `sed -n '{start},{end}p' {jsonl_file}` 批次讀取（每批 5-10 行）
+   3. **平行啟動多個背景 Task**：在單一訊息中呼叫多個 Task tool，每個 Task 設定 `run_in_background: true`
+   4. **主執行緒監控進度**：使用 `TaskOutput` 或 `Read` 檢查各 Task 的 output_file，回報整體進度
+   5. 萃取 Task 依各 Layer CLAUDE.md 的 WebFetch 補充規則，決定是否用 WebFetch 抓取原始公告頁面補充資料
+   6. 每個 Task 產出 `.md` 檔到 `docs/Extractor/{layer_name}/` 對應的 category 子目錄
+   > **⛔ 禁止**：不可使用 Read 工具直接讀取 `.jsonl` 檔案（檔案過大會超出 token 上限）。JSONL 檔案一律透過 Bash `sed` 批次讀取。
+   > **⚡ 效能規則**：同時啟動 3-5 個背景 Task 平行處理，主執行緒保持可用以監控進度與處理新任務。
 3. **update** — 將步驟 2 產出的 `.md` 檔案路徑作為參數，執行 `core/Extractor/Layers/{layer_name}/update.sh {md_files...}` 寫入 Qdrant 並檢查 REVIEW_NEEDED
 
 ### 步驟三：REVIEW_NEEDED 檢查（必要）
@@ -110,7 +112,7 @@ python3 core/scripts/qdrant_query.py --query "勒索軟體" --filter category=ac
 |------|----------|----------|------------|------|
 | 步驟一 | 動態發現所有 Layer | `sonnet` | `Bash` | 純目錄掃描，無需推理 |
 | 步驟二 | fetch.sh 執行 | `sonnet` | `Bash` | 純腳本執行 |
-| 步驟二 | Layer 萃取（RSS → Markdown） | `sonnet` | `general-purpose` | 需用 Write 工具寫 .md 檔，避免 Bash heredoc 權限問題 |
+| 步驟二 | Layer 萃取（RSS → Markdown） | `sonnet` | `general-purpose` | 需用 Write 工具寫 .md 檔；**使用 `run_in_background: true` 平行執行** |
 | 步驟二 | update.sh 執行 | `sonnet` | `Bash` | 純腳本執行 |
 | 步驟三 | REVIEW_NEEDED 檢查 | — | — | 與使用者互動，無需子代理 |
 | 步驟四 | 動態發現所有 Mode | `sonnet` | `Bash` | 純目錄掃描，無需推理 |
@@ -118,6 +120,29 @@ python3 core/scripts/qdrant_query.py --query "勒索軟體" --filter category=ac
 
 > **強制規則**：只有步驟五（Mode 報告產出）使用 `opus`，其餘所有步驟一律使用 `sonnet`。
 > **子代理規則**：需要寫入檔案的 Task 必須使用 `general-purpose`（透過 Write 工具寫檔），純腳本執行使用 `Bash`。
+
+### 背景執行模式
+
+萃取步驟採用**平行背景執行**，最大化效能：
+
+```
+主執行緒                     背景 Task (Sonnet)
+    │
+    ├─► 啟動 Task 1 ──────────► 處理第 1-5 行 → 產出 .md
+    ├─► 啟動 Task 2 ──────────► 處理第 6-10 行 → 產出 .md
+    ├─► 啟動 Task 3 ──────────► 處理第 11-15 行 → 產出 .md
+    │
+    ├─► 監控進度 (TaskOutput)
+    ├─► 回報使用者
+    ├─► 處理新任務
+    │
+    └─► 等待全部完成 → 進入 update 步驟
+```
+
+**關鍵參數**：
+- `run_in_background: true` — Task 在背景執行
+- `model: "sonnet"` — 使用 Sonnet 模型
+- 單一訊息內呼叫多個 Task — 實現平行啟動
 
 ---
 
