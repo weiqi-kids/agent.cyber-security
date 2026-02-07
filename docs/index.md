@@ -13,12 +13,15 @@ permalink: /
 自動化收集、萃取、分析全球資安威脅情報，提供可行動的防禦建議。
 {: .fs-6 .fw-300 }
 
-[查看本週報告](#本週報告){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[GitHub](https://github.com/weiqi-kids/agent.cyber-security){: .btn .fs-5 .mb-4 .mb-md-0 }
+{% assign threat_reports = site.pages | where_exp: "page", "page.path contains 'Narrator/threat_landscape'" | where_exp: "page", "page.name != 'index.md'" | sort: "name" | reverse %}
+{% assign defense_reports = site.pages | where_exp: "page", "page.path contains 'Narrator/defense_advisory'" | where_exp: "page", "page.name != 'index.md'" | sort: "name" | reverse %}
+
+[威脅態勢分析]({% if threat_reports.size > 0 %}{{ threat_reports[0].url | relative_url }}{% else %}{{ site.baseurl }}/docs/Narrator/threat_landscape/{% endif %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[防禦建議]({% if defense_reports.size > 0 %}{{ defense_reports[0].url | relative_url }}{% else %}{{ site.baseurl }}/docs/Narrator/defense_advisory/{% endif %}){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-## 本週報告
+## 最新報告
 
 ### 威脅態勢分析
 {: .d-inline-block }
@@ -28,7 +31,14 @@ permalink: /
 
 每週綜合分析全球資安威脅趨勢、重大事件、漏洞動態。
 
-[前往查看]({{ site.baseurl }}/docs/Narrator/threat_landscape/){: .btn }
+{% if threat_reports.size > 0 %}
+{% assign latest_threat = threat_reports[0] %}
+**{{ latest_threat.title }}**
+
+[查看報告]({{ latest_threat.url | relative_url }}){: .btn }
+{% else %}
+目前無報告。
+{% endif %}
 
 ### 防禦建議
 {: .d-inline-block }
@@ -38,47 +48,14 @@ permalink: /
 
 基於當週威脅態勢，提供優先修補清單與安全控制建議。
 
-[前往查看]({{ site.baseurl }}/docs/Narrator/defense_advisory/){: .btn }
+{% if defense_reports.size > 0 %}
+{% assign latest_defense = defense_reports[0] %}
+**{{ latest_defense.title }}**
 
----
-
-## 資料來源
-
-本系統整合以下資料來源進行分析：
-
-| Layer | 說明 | 資料來源 |
-|:------|:-----|:---------|
-| **security_news_facts** | 資安新聞事實 | 國際 CERT/CC、TWCERT、GovCERT.HK 等 |
-| **vulnerability_tracking** | 漏洞追蹤 | NVD、EPSS、各國 CERT 公告 |
-| **exploit_intelligence** | 漏洞利用情報 | CISA KEV、Exploit-DB、VulnCheck |
-| **threat_feeds** | 威脅情報饋送 | abuse.ch (URLhaus, MalwareBazaar, ThreatFox) |
-
----
-
-## 系統架構
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     Extractor (萃取層)                       │
-├─────────────┬─────────────┬─────────────┬──────────────────┤
-│ security_   │ vulnerability│ exploit_    │ threat_          │
-│ news_facts  │ _tracking    │ intelligence│ feeds            │
-└──────┬──────┴──────┬───────┴──────┬──────┴────────┬─────────┘
-       │             │              │               │
-       ▼             ▼              ▼               ▼
-┌─────────────────────────────────────────────────────────────┐
-│                   Qdrant 向量資料庫                          │
-│              (語意搜尋、跨 Layer 關聯分析)                    │
-└─────────────────────────────────────────────────────────────┘
-       │
-       ▼
-┌─────────────────────────────────────────────────────────────┐
-│                     Narrator (報告層)                        │
-├────────────────────────────┬────────────────────────────────┤
-│     threat_landscape       │      defense_advisory          │
-│     (威脅態勢分析)          │      (防禦建議)                 │
-└────────────────────────────┴────────────────────────────────┘
-```
+[查看報告]({{ latest_defense.url | relative_url }}){: .btn }
+{% else %}
+目前無報告。
+{% endif %}
 
 ---
 

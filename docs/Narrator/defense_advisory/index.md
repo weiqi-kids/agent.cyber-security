@@ -1,8 +1,7 @@
 ---
 layout: default
 title: 防禦建議
-parent: Narrator
-nav_order: 2
+nav_order: 3
 nav_exclude: false
 has_children: true
 permalink: /docs/Narrator/defense_advisory/

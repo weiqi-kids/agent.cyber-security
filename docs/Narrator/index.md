@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Narrator
-nav_order: 3
-nav_exclude: false
+nav_exclude: true
 has_children: true
 permalink: /docs/Narrator/
 ---
