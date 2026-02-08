@@ -224,7 +224,7 @@ OPENAI_API_KEY=sk-...
 
 ## 狀態更新
 
-執行完成後，**必須**更新 `docs/_data/status.yml`：
+執行完成後，**必須**更新 `_data/status.yml`：
 
 ```yaml
 # 更新以下欄位
@@ -238,7 +238,7 @@ layers:
   # ... 其他 Layer
 ```
 
-更新方式：使用 Edit 工具修改 `docs/_data/status.yml`，填入實際執行時間與各 Layer 的筆數。
+更新方式：使用 Edit 工具修改 `_data/status.yml`，填入實際執行時間與各 Layer 的筆數。
 
 > **自動化提示**：此檔案會顯示在首頁，讓使用者快速確認資料新鮮度。
 
@@ -251,4 +251,4 @@ layers:
 1. 各 Layer 擷取與萃取結果（筆數、有無 REVIEW_NEEDED）
 2. 各 Mode 報告產出狀態
 3. 是否有錯誤或需要人工介入的項目
-4. **更新 `docs/_data/status.yml` 的執行時間**
+4. **更新 `_data/status.yml` 的執行時間**
