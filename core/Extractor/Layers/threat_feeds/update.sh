@@ -10,9 +10,12 @@ PROJECT_ROOT="$(cd "$SCRIPT_DIR/../../../.." && pwd)"
 
 source "$PROJECT_ROOT/lib/args.sh"
 source "$PROJECT_ROOT/lib/core.sh"
+source "$PROJECT_ROOT/lib/api.sh"
 source "$PROJECT_ROOT/lib/update_common.sh"
 
 LAYER_NAME="threat_feeds"
+RAW_DIR="$PROJECT_ROOT/docs/Extractor/$LAYER_NAME/raw"
+PROCESSED_DIR="$RAW_DIR/.processed"
 DOCS_DIR="$PROJECT_ROOT/docs/Extractor/$LAYER_NAME"
 COLLECTION="${QDRANT_COLLECTION:-cyber-security}"
 CATEGORIES=(malicious_url malware_sample ioc_indicator c2_infrastructure)
@@ -90,6 +93,31 @@ fi
 
 # === 2. 檢查 REVIEW_NEEDED ===
 update_check_review_needed "$LAYER_NAME"
+
+# === 3. 標記已處理 ID ===
+echo ""
+echo "📋 標記已處理 ID..."
+mkdir -p "$PROCESSED_DIR"
+
+# URLhaus
+if [[ -f "$RAW_DIR/urlhaus-recent.jsonl" ]]; then
+  api_mark_processed "$RAW_DIR/urlhaus-recent.jsonl" "id" "$PROCESSED_DIR/urlhaus-ids.txt"
+fi
+
+# MalwareBazaar
+if [[ -f "$RAW_DIR/malwarebazaar-recent.jsonl" ]]; then
+  api_mark_processed "$RAW_DIR/malwarebazaar-recent.jsonl" "sha256" "$PROCESSED_DIR/malwarebazaar-ids.txt"
+fi
+
+# ThreatFox
+if [[ -f "$RAW_DIR/threatfox-recent.jsonl" ]]; then
+  api_mark_processed "$RAW_DIR/threatfox-recent.jsonl" "id" "$PROCESSED_DIR/threatfox-ids.txt"
+fi
+
+# Feodo Tracker
+if [[ -f "$RAW_DIR/feodo-c2.jsonl" ]]; then
+  api_mark_processed "$RAW_DIR/feodo-c2.jsonl" "_id" "$PROCESSED_DIR/feodo-ids.txt"
+fi
 
 echo "========================================"
 echo "✅ Update completed: $LAYER_NAME"

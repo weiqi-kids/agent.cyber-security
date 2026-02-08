@@ -185,6 +185,147 @@ api_json_to_jsonl() {
 }
 
 ########################################
+# api_dedup_jsonl INPUT_JSONL ID_FIELD PROCESSED_FILE OUTPUT_JSONL
+#
+# 功能：
+#   - 從 JSONL 中過濾掉已處理的項目（客戶端去重）
+#   - 比對 ID 欄位與已處理 ID 清單
+#
+# 參數：
+#   INPUT_JSONL: 輸入 JSONL 檔案路徑
+#   ID_FIELD: JSON 中的 ID 欄位名稱（如 "id"、"sha256"）
+#   PROCESSED_FILE: 已處理 ID 清單檔案路徑
+#   OUTPUT_JSONL: 輸出 JSONL 檔案路徑（僅含新項目）
+#
+# 回傳值：
+#   0 = 成功（stdout 輸出新增筆數）
+#
+# 用法：
+#   NEW_COUNT=$(api_dedup_jsonl input.jsonl "id" processed.txt output.jsonl)
+########################################
+api_dedup_jsonl() {
+  local input_jsonl="$1"
+  local id_field="$2"
+  local processed_file="$3"
+  local output_jsonl="$4"
+
+  require_cmd jq || return 1
+
+  # 確保已處理清單檔案存在
+  local processed_dir
+  processed_dir="$(dirname "$processed_file")"
+  mkdir -p "$processed_dir"
+  touch "$processed_file"
+
+  local total_count new_count skip_count
+
+  # 計算總筆數
+  total_count="$(wc -l < "$input_jsonl" | tr -d ' ')"
+
+  if [[ ! -s "$processed_file" ]]; then
+    # 已處理清單為空，全部都是新的
+    cp "$input_jsonl" "$output_jsonl"
+    new_count="$total_count"
+    skip_count=0
+  else
+    # 使用 grep -v -F -f 進行高效過濾
+    # 1. 提取所有 ID
+    # 2. 過濾掉已處理的 ID
+    # 3. 只保留新 ID 對應的行
+
+    local tmp_ids tmp_new_ids
+    tmp_ids="$(mktemp)"
+    tmp_new_ids="$(mktemp)"
+
+    # 提取當前所有 ID
+    jq -r ".$id_field // empty" "$input_jsonl" > "$tmp_ids" 2>/dev/null
+
+    # 找出新 ID（不在已處理清單中的）
+    grep -v -F -x -f "$processed_file" "$tmp_ids" > "$tmp_new_ids" 2>/dev/null || true
+
+    new_count="$(wc -l < "$tmp_new_ids" | tr -d ' ')"
+    skip_count=$((total_count - new_count))
+
+    if [[ "$new_count" -eq 0 ]]; then
+      # 沒有新項目
+      : > "$output_jsonl"
+    else
+      # 過濾 JSONL，只保留新 ID 的行
+      # 使用 jq 的 select + 檔案讀取方式
+      jq -c --slurpfile new_ids <(jq -R -s 'split("\n") | map(select(length > 0))' "$tmp_new_ids") \
+        "select(.$id_field as \$id | \$new_ids[0] | index(\$id))" \
+        "$input_jsonl" > "$output_jsonl" 2>/dev/null || {
+        # 備用方案：逐行 grep
+        : > "$output_jsonl"
+        while IFS= read -r line; do
+          local item_id
+          item_id="$(echo "$line" | jq -r ".$id_field // empty" 2>/dev/null)"
+          if [[ -n "$item_id" ]] && grep -q -F -x "$item_id" "$tmp_new_ids"; then
+            echo "$line" >> "$output_jsonl"
+          fi
+        done < "$input_jsonl"
+      }
+    fi
+
+    rm -f "$tmp_ids" "$tmp_new_ids"
+  fi
+
+  echo "📊 [dedup] 總計: $total_count, 新增: $new_count, 略過: $skip_count" >&2
+  echo "$new_count"
+  return 0
+}
+
+########################################
+# api_mark_processed JSONL_FILE ID_FIELD PROCESSED_FILE
+#
+# 功能：
+#   - 將 JSONL 中的 ID 加入已處理清單
+#   - 供 update.sh 在萃取成功後呼叫
+#
+# 參數：
+#   JSONL_FILE: 已成功處理的 JSONL 檔案路徑
+#   ID_FIELD: JSON 中的 ID 欄位名稱
+#   PROCESSED_FILE: 已處理 ID 清單檔案路徑
+#
+# 用法：
+#   api_mark_processed urlhaus.jsonl "id" processed/urlhaus-ids.txt
+########################################
+api_mark_processed() {
+  local jsonl_file="$1"
+  local id_field="$2"
+  local processed_file="$3"
+
+  require_cmd jq || return 1
+
+  if [[ ! -f "$jsonl_file" ]] || [[ ! -s "$jsonl_file" ]]; then
+    return 0
+  fi
+
+  local processed_dir
+  processed_dir="$(dirname "$processed_file")"
+  mkdir -p "$processed_dir"
+
+  # 提取 ID 並追加到已處理清單（去重）
+  local tmp_new
+  tmp_new="$(mktemp)"
+
+  jq -r ".$id_field // empty" "$jsonl_file" > "$tmp_new" 2>/dev/null
+
+  if [[ -s "$tmp_new" ]]; then
+    cat "$tmp_new" >> "$processed_file"
+    # 去重（保持順序無所謂，重點是唯一性）
+    sort -u "$processed_file" -o "$processed_file"
+
+    local added_count
+    added_count="$(wc -l < "$tmp_new" | tr -d ' ')"
+    echo "✅ [mark_processed] 已標記 $added_count 筆 ID 為已處理" >&2
+  fi
+
+  rm -f "$tmp_new"
+  return 0
+}
+
+########################################
 # api_paginate URL OUTPUT_FILE PAGE_PARAM PER_PAGE MAX_PAGES
 #
 # 功能：

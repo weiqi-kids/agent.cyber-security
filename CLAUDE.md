@@ -19,15 +19,18 @@
 對每個 Layer 依序執行：
 
 1. **fetch** — 執行 `core/Extractor/Layers/{layer_name}/fetch.sh` 下載原始資料
-2. **萃取（平行背景處理）** — 讀取該 Layer 的 `CLAUDE.md` 和 `core/Extractor/CLAUDE.md`，再對 `docs/Extractor/{layer_name}/raw/` 目錄中的 JSONL 平行處理：
-   1. 用 `wc -l < {jsonl_file}` 取得總行數
-   2. 用 `sed -n '{start},{end}p' {jsonl_file}` 批次讀取（每批 5-10 行）
-   3. **平行啟動多個背景 Task**：在單一訊息中呼叫多個 Task tool，每個 Task 設定 `run_in_background: true`
-   4. **主執行緒監控進度**：使用 `TaskOutput` 或 `Read` 檢查各 Task 的 output_file，回報整體進度
+2. **萃取（混合策略：受控平行 + 失敗重試）** — 讀取該 Layer 的 `CLAUDE.md` 和 `core/Extractor/CLAUDE.md`，再對 `docs/Extractor/{layer_name}/raw/` 目錄中的 JSONL 處理：
+   1. 用 `wc -l < {jsonl_file}` 取得總行數，計算批次數量
+   2. 用 `sed -n '{start},{end}p' {jsonl_file}` 批次讀取（每批 10-20 行）
+   3. **受控平行執行**（詳見「背景執行模式」）：
+      - 維持最多 5 個背景 Task 同時執行
+      - Task 完成後立即啟動下一個填補空位
+      - 每 30 秒輪詢檢查狀態並回報進度
+   4. **失敗重試**：所有背景 Task 完成後，主執行緒同步處理失敗的批次
    5. 萃取 Task 依各 Layer CLAUDE.md 的 WebFetch 補充規則，決定是否用 WebFetch 抓取原始公告頁面補充資料
    6. 每個 Task 產出 `.md` 檔到 `docs/Extractor/{layer_name}/` 對應的 category 子目錄
    > **⛔ 禁止**：不可使用 Read 工具直接讀取 `.jsonl` 檔案（檔案過大會超出 token 上限）。JSONL 檔案一律透過 Bash `sed` 批次讀取。
-   > **⚡ 效能規則**：同時啟動 3-5 個背景 Task 平行處理，主執行緒保持可用以監控進度與處理新任務。
+   > **⚡ 並行規則**：最多 5 個背景 Task，失敗項目由主執行緒同步重試。
 3. **update** — 將步驟 2 產出的 `.md` 檔案路徑作為參數，執行 `core/Extractor/Layers/{layer_name}/update.sh {md_files...}` 寫入 Qdrant 並檢查 REVIEW_NEEDED
 
 ### 步驟三：REVIEW_NEEDED 檢查（必要）
@@ -108,41 +111,75 @@ python3 core/scripts/qdrant_query.py --query "勒索軟體" --filter category=ac
 
 執行任務時，必須依照以下規則分派子任務（使用 Task tool 的 `model` 與 `subagent_type` 參數）：
 
-| 步驟 | 任務類型 | 指定模型 | 子代理類型 | 原因 |
-|------|----------|----------|------------|------|
-| 步驟一 | 動態發現所有 Layer | `sonnet` | `Bash` | 純目錄掃描，無需推理 |
-| 步驟二 | fetch.sh 執行 | `sonnet` | `Bash` | 純腳本執行 |
-| 步驟二 | Layer 萃取（RSS → Markdown） | `sonnet` | `general-purpose` | 需用 Write 工具寫 .md 檔；**使用 `run_in_background: true` 平行執行** |
-| 步驟二 | update.sh 執行 | `sonnet` | `Bash` | 純腳本執行 |
-| 步驟三 | REVIEW_NEEDED 檢查 | — | — | 與使用者互動，無需子代理 |
-| 步驟四 | 動態發現所有 Mode | `sonnet` | `Bash` | 純目錄掃描，無需推理 |
-| 步驟五 | Mode 報告產出 | `opus` | `general-purpose` | 需要跨來源綜合分析、趨勢判斷、信心水準評估 |
+| 步驟 | 任務類型 | 指定模型 | 子代理類型 | 背景執行 | 原因 |
+|------|----------|----------|------------|----------|------|
+| 步驟一 | 動態發現所有 Layer | `sonnet` | `Bash` | 否 | 純目錄掃描，無需推理 |
+| 步驟二 | fetch.sh 執行 | `sonnet` | `Bash` | 否 | 純腳本執行 |
+| 步驟二 | Layer 萃取（首次） | `sonnet` | `general-purpose` | **是** | 最多 5 個並行，受控執行 |
+| 步驟二 | Layer 萃取（失敗重試） | `sonnet` | `general-purpose` | **否** | 主執行緒同步處理，確保穩定 |
+| 步驟二 | update.sh 執行 | `sonnet` | `Bash` | 否 | 純腳本執行 |
+| 步驟三 | REVIEW_NEEDED 檢查 | — | — | — | 與使用者互動，無需子代理 |
+| 步驟四 | 動態發現所有 Mode | `sonnet` | `Bash` | 否 | 純目錄掃描，無需推理 |
+| 步驟五 | Mode 報告產出 | `opus` | `general-purpose` | 否 | 需要跨來源綜合分析、趨勢判斷 |
 
 > **強制規則**：只有步驟五（Mode 報告產出）使用 `opus`，其餘所有步驟一律使用 `sonnet`。
 > **子代理規則**：需要寫入檔案的 Task 必須使用 `general-purpose`（透過 Write 工具寫檔），純腳本執行使用 `Bash`。
+> **重試規則**：背景 Task 失敗後，主執行緒同步重試（不使用 `run_in_background`），確保穩定性。
 
-### 背景執行模式
+### 背景執行模式（混合策略）
 
-萃取步驟採用**平行背景執行**，最大化效能：
+萃取步驟採用**受控平行背景執行 + 失敗重試**，兼顧效能與穩定性：
 
 ```
-主執行緒                     背景 Task (Sonnet)
+主執行緒                     背景 Task Pool (最多 5 個)
     │
-    ├─► 啟動 Task 1 ──────────► 處理第 1-5 行 → 產出 .md
-    ├─► 啟動 Task 2 ──────────► 處理第 6-10 行 → 產出 .md
-    ├─► 啟動 Task 3 ──────────► 處理第 11-15 行 → 產出 .md
+    ├─► 啟動 Task 1-5 ─────────► [Pool] 處理批次 1-5
     │
-    ├─► 監控進度 (TaskOutput)
-    ├─► 回報使用者
-    ├─► 處理新任務
+    ├─► 輪詢檢查（每 30 秒）
+    │   ├─► 若有完成 → 記錄結果，啟動下一個 Task 填補空位
+    │   ├─► 若有失敗 → 加入失敗清單，啟動下一個 Task
+    │   └─► 回報進度給使用者
     │
-    └─► 等待全部完成 → 進入 update 步驟
+    ├─► 重複直到所有批次處理完畢
+    │
+    ├─► 檢查失敗清單
+    │   └─► 若有失敗項目 → 主執行緒同步重試（不用背景）
+    │
+    └─► 全部完成 → 進入 update 步驟
+```
+
+#### 並行控制規則
+
+| 規則 | 說明 |
+|------|------|
+| **最大並行數** | 同時最多 5 個背景 Task |
+| **批次大小** | 每個 Task 處理 10-20 行 JSONL |
+| **輪詢間隔** | 每 30 秒檢查一次 Task 狀態 |
+| **填補機制** | Task 完成後立即啟動下一個，維持 Pool 滿載 |
+
+#### 失敗重試規則
+
+| 情況 | 處理方式 |
+|------|----------|
+| **背景 Task 失敗** | 記錄失敗的批次範圍，繼續處理其他批次 |
+| **所有背景 Task 完成後** | 主執行緒同步處理失敗清單（無 `run_in_background`） |
+| **重試仍失敗** | 標記為 `[REVIEW_NEEDED]`，由人工處理 |
+
+#### 狀態追蹤
+
+主執行緒需維護以下狀態：
+
+```
+pending_batches: [(start, end), ...]     # 待處理批次
+running_tasks: {task_id: (start, end)}   # 執行中的 Task
+completed_batches: [(start, end), ...]   # 已完成批次
+failed_batches: [(start, end), ...]      # 失敗批次（待重試）
 ```
 
 **關鍵參數**：
-- `run_in_background: true` — Task 在背景執行
+- `run_in_background: true` — 背景 Task（首次嘗試）
+- `run_in_background: false` 或省略 — 同步 Task（失敗重試）
 - `model: "sonnet"` — 使用 Sonnet 模型
-- 單一訊息內呼叫多個 Task — 實現平行啟動
 
 ---
 
@@ -185,6 +222,28 @@ OPENAI_API_KEY=sk-...
 
 ---
 
+## 狀態更新
+
+執行完成後，**必須**更新 `docs/_data/status.yml`：
+
+```yaml
+# 更新以下欄位
+last_execution: "YYYY-MM-DDTHH:MM:SS+08:00"
+last_execution_display: "YYYY-MM-DD HH:MM (UTC+8)"
+
+layers:
+  exploit_intelligence:
+    last_fetch: "YYYY-MM-DDTHH:MM:SSZ"
+    items_count: N
+  # ... 其他 Layer
+```
+
+更新方式：使用 Edit 工具修改 `docs/_data/status.yml`，填入實際執行時間與各 Layer 的筆數。
+
+> **自動化提示**：此檔案會顯示在首頁，讓使用者快速確認資料新鮮度。
+
+---
+
 ## 互動規則
 
 完成執行後，簡要回報：
@@ -192,3 +251,4 @@ OPENAI_API_KEY=sk-...
 1. 各 Layer 擷取與萃取結果（筆數、有無 REVIEW_NEEDED）
 2. 各 Mode 報告產出狀態
 3. 是否有錯誤或需要人工介入的項目
+4. **更新 `docs/_data/status.yml` 的執行時間**

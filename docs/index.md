@@ -13,6 +13,10 @@ permalink: /
 自動化收集、萃取、分析全球資安威脅情報，提供可行動的防禦建議。
 {: .fs-6 .fw-300 }
 
+<div class="d-flex flex-justify-between flex-items-center mb-4">
+<span class="Label Label--success">資料更新：{{ site.data.status.last_execution_display }}</span>
+</div>
+
 {% assign threat_reports = site.pages | where_exp: "page", "page.path contains 'Narrator/threat_landscape'" | where_exp: "page", "page.name != 'index.md'" | sort: "name" | reverse %}
 {% assign defense_reports = site.pages | where_exp: "page", "page.path contains 'Narrator/defense_advisory'" | where_exp: "page", "page.name != 'index.md'" | sort: "name" | reverse %}
 
