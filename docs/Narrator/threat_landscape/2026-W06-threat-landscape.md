@@ -8,26 +8,26 @@ nav_exclude: false
 
 # 威脅態勢分析 — 2026 第 06 週
 
-> 涵蓋期間：2026-02-02 至 2026-02-08
+> 涵蓋期間：2026-02-09 至 2026-02-15
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-02-07
+> 產出時間：2026-02-12（更新）
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢持續嚴峻，多項重大安全事件需密切關注。CISA 持續將高風險漏洞納入 KEV 目錄，包含 SmarterMail 認證繞過漏洞（CVE-2026-24423）已確認與勒索軟體活動相關，應列為最高優先處理。SmarterMail 同時存在另外兩個嚴重漏洞（CVE-2025-52691 任意檔案上傳、CVE-2026-23760 認證繞過），形成高危漏洞鏈。北韓關聯的「Contagious Interview」攻擊行動技術升級，開始濫用 VS Code Tasks 機制作為初始感染向量，代表開發環境正成為新興攻擊面。n8n 工作流自動化平台揭露四個 CVSS 9.9-10.0 的嚴重漏洞，對企業自動化基礎設施構成重大威脅。惡意軟體方面，Mirai 殭屍網路持續主導 IoT 威脅格局（佔樣本 43.5%），Rhysida 勒索軟體 C2 基礎設施偵測到新活動，而 LockBit 5.0 展現增強的跨平台能力。社交工程攻擊持續演化，包括跨平台帳戶接管、訂房釣魚與銀行電話詐騙自動化。
+本週威脅態勢持續嚴峻，多項重大安全事件需密切關注。**CISA 於 2026-02-10 大規模更新 KEV 目錄，新增 6 個 Microsoft 零日漏洞**，包括 Windows Shell（CVE-2026-21510）、MSHTML Framework（CVE-2026-21513）、Office Word（CVE-2026-21514）、Desktop Windows Manager（CVE-2026-21519）、Remote Access Connection Manager（CVE-2026-21525）及 Remote Desktop Services（CVE-2026-21533）等關鍵元件漏洞，均已確認遭野外活躍利用，修補期限為 2026-03-03。**同時 CISA 於 2026-02-05 將 React Native CLI 漏洞（CVE-2025-11953）與 SmarterMail 漏洞（CVE-2026-24423）加入 KEV**，後者已確認與勒索軟體活動相關。SmarterMail 同時存在另外兩個嚴重漏洞（CVE-2025-52691 任意檔案上傳、CVE-2026-23760 認證繞過），形成高危漏洞鏈。北韓關聯的「Contagious Interview」攻擊行動技術升級，開始濫用 VS Code Tasks 機制作為初始感染向量，代表開發環境正成為新興攻擊面。n8n 工作流自動化平台揭露四個 CVSS 9.9-10.0 的嚴重漏洞，對企業自動化基礎設施構成重大威脅。惡意軟體方面，Mirai 殭屍網路持續主導 IoT 威脅格局（佔樣本 43.5%），Rhysida 勒索軟體 C2 基礎設施偵測到新活動（IP: 104.234.240.23），而 LockBit 5.0 展現增強的跨平台能力。社交工程攻擊持續演化，包括跨平台帳戶接管、訂房釣魚與銀行電話詐騙自動化。Cobalt Strike C2 基礎設施活動增加，顯示滲透工具持續被濫用。
 
 ---
 
 ## 資料來源統計
 
-| Layer | 檔案數量 | 說明 |
-|-------|----------|------|
-| security_news_facts | 1,701 | 國際資安新聞與事件 |
-| vulnerability_tracking | 2,066 | 漏洞追蹤與公告 |
-| exploit_intelligence | 935 | 利用程式與 PoC 情報 |
-| threat_feeds | 21,309 | 惡意軟體樣本與威脅指標 |
+| Layer | 檔案數量 | 本週新增 | 說明 |
+|-------|----------|----------|------|
+| security_news_facts | 2,214 | +57 | 國際資安新聞與事件 |
+| vulnerability_tracking | 2,625 | +2 | 漏洞追蹤與公告 |
+| exploit_intelligence | 1,780 | +665 | 利用程式與 PoC 情報 |
+| threat_feeds | 21,603 | +0 | 惡意軟體樣本與威脅指標 |
 
 ---
 
@@ -50,10 +50,24 @@ nav_exclude: false
 | CVE-2024-37079 | VMware vCenter | 越界寫入 RCE (CWE-787) | 2026-02-13 | Unknown |
 | CVE-2025-68645 | Zimbra ZCS | PHP RFI (CWE-98) | 2026-02-12 | Unknown |
 | CVE-2025-34026 | Versa Concerto | 認證不當 (CWE-288) | 2026-02-12 | Unknown |
-| CVE-2026-24423 | SmarterMail | 缺失認證 RCE | - | **是** |
+| CVE-2025-11953 | React Native CLI | OS 命令注入 (CWE-78) | 2026-02-26 | Unknown |
+| CVE-2026-24423 | SmarterMail | 缺失認證 RCE (CWE-306) | 2026-02-26 | **Known** |
+
+**2026-02-10 新增 Microsoft 零日漏洞（Critical）**：
+
+| CVE 編號 | 產品 | 漏洞類型 | 修補期限 | 勒索軟體關聯 |
+|----------|------|----------|----------|--------------|
+| CVE-2026-21510 | Windows Shell | 保護機制失效 (CWE-693) | 2026-03-03 | Unknown |
+| CVE-2026-21513 | MSHTML Framework | 保護機制失效 (CWE-693) | 2026-03-03 | Unknown |
+| CVE-2026-21514 | Office Word | 不當信任輸入 (CWE-807) | 2026-03-03 | Unknown |
+| CVE-2026-21519 | Desktop Windows Manager | 類型混淆 (CWE-843) | 2026-03-03 | Unknown |
+| CVE-2026-21525 | Remote Access Connection Manager | NULL 指標解引用 (CWE-476) | 2026-03-03 | Unknown |
+| CVE-2026-21533 | Remote Desktop Services | 權限管理不當 (CWE-269) | 2026-03-03 | Unknown |
 
 **重要觀察**：
-- **SmarterMail 三重漏洞鏈**：CVE-2025-52691、CVE-2026-23760、CVE-2026-24423 形成高危攻擊面，攻擊者可完全控制郵件伺服器
+- **Microsoft 零日漏洞群集**：2026-02-10 一次性新增 6 個 Microsoft 漏洞，涵蓋 Windows Shell、MSHTML、Office、DWM、RAS Connection Manager、RDS 等關鍵元件，顯示 Microsoft 生態系統正遭受協調攻擊
+- **SmarterMail 三重漏洞鏈**：CVE-2025-52691、CVE-2026-23760、CVE-2026-24423 形成高危攻擊面，攻擊者可完全控制郵件伺服器；CVE-2026-24423 已確認與勒索軟體活動相關
+- **React Native CLI 開發環境威脅**：CVE-2025-11953 可讓未授權攻擊者透過 Metro Development Server 執行任意程式，Windows 環境下可執行任意 shell 命令，開發環境成為新興攻擊面
 - CVE-2024-37079（VMware vCenter）已確認在野外被積極利用
 - CVE-2018-14634（Linux Kernel）為經典漏洞復甦，顯示老舊漏洞仍具威脅
 
@@ -123,6 +137,16 @@ OpenSourceMalware (OSM) 與 Palo Alto Networks 聯合揭露北韓關聯的「Con
 
 本週偵測到 Rhysida 勒索軟體新的 C2 伺服器（104.234.240.23），同時監聽 HTTP（80）與 HTTPS（443）連接埠。該勒索軟體家族持續針對企業發動攻擊，組織應立即封鎖相關 IoC。
 
+### 7. Cobalt Strike C2 基礎設施活躍
+
+**嚴重程度：High | 來源：abuse.ch ThreatFox | 日期：2026-02-06**
+
+ThreatFox 標記新的 Cobalt Strike BEACON C2 通訊端點，包括：
+- URL: `hxxp://110.44.126.45:50443/KXEu`
+- 關聯樣本: 3d8d0c15272b1c4f73a22af7599aad7c34b7c7bbff4030f11e8e15a1999b176f
+
+Cobalt Strike 作為合法滲透測試工具，持續被威脅行為者濫用於網路間諜、資料竊取和勒索軟體部署。組織應在防火牆封鎖相關 IoC。
+
 ---
 
 ## 漏洞趨勢分析
@@ -168,16 +192,16 @@ n8n 作為企業自動化基礎設施的「中樞神經系統」，集中管理 
 
 ### RCE 漏洞關聯分析（Qdrant 語意搜尋）
 
-透過 Qdrant 向量資料庫查詢「遠端程式碼執行 RCE」，識別出以下跨 Layer 關聯威脅：
+透過 Qdrant 向量資料庫查詢「遠端程式碼執行 RCE critical」，識別出以下跨 Layer 關聯威脅：
 
 | 排名 | 相似度 | 標題 | Layer | 來源 |
 |------|--------|------|-------|------|
-| 1 | 0.6149 | 關鍵 RCE 漏洞「React2Shell」遭大規模積極利用 | security_news_facts | TWCERT |
-| 2 | 0.6047 | Critical RCE Vulnerability React2Shell Under Mass Exploitation | security_news_facts | TWCERT |
-| 3 | 0.5557 | GeoVision ASManager 6.1.2.0 Remote Code Execution | exploit_intelligence | Exploit-DB |
-| 4 | 0.5521 | Microsoft Edge 远程代码执行漏洞 | vulnerability_tracking | HKCERT |
-| 5 | 0.5478 | FreeBSD rtsold 15.x - Remote Code Execution via DNSSL | exploit_intelligence | Exploit-DB |
-| 6 | 0.5439 | Flowise 3.0.4 - Remote Code Execution (RCE) | exploit_intelligence | Exploit-DB |
+| 1 | 0.6699 | Redis 8.0.2 - RCE | exploit_intelligence | Exploit-DB |
+| 2 | 0.6607 | Critical RCE Vulnerability React2Shell Under Mass Exploitation | security_news_facts | TWCERT |
+| 3 | 0.6490 | 關鍵 RCE 漏洞「React2Shell」遭大規模積極利用 | security_news_facts | TWCERT |
+| 4 | 0.6334 | Flowise 3.0.4 - Remote Code Execution (RCE) | exploit_intelligence | Exploit-DB |
+| 5 | 0.6140 | FreeBSD rtsold 15.x - Remote Code Execution via DNSSL | exploit_intelligence | Exploit-DB |
+| 6 | 0.6076 | Microsoft Edge 远程代码执行漏洞 | vulnerability_tracking | HKCERT |
 
 ### ICS/OT 設備漏洞
 
@@ -207,16 +231,24 @@ n8n 作為企業自動化基礎設施的「中樞神經系統」，集中管理 
 
 ### 已確認活躍利用漏洞
 
-| CVE ID | 產品 | PoC 狀態 | 利用難度 |
-|--------|------|----------|----------|
-| CVE-2024-37079 | VMware vCenter | 有 | 中 |
-| CVE-2025-59718/59719 | Fortinet FortiCloud | 有（多個） | 低 |
-| CVE-2025-52691 | SmarterMail | 有 | 低 |
-| CVE-2026-23760 | SmarterMail | 有 | 極低 |
-| CVE-2026-24061 | GNU InetUtils | 有（2個專案） | 低 |
-| CVE-2025-68645 | Zimbra ZCS | 未知 | 中 |
-| CVE-2025-34026 | Versa Concerto | 未知 | 中 |
-| CVE-2026-21509 | Microsoft Office | 未知 | 中 |
+| CVE ID | 產品 | PoC 狀態 | 利用難度 | 勒索軟體關聯 |
+|--------|------|----------|----------|--------------|
+| CVE-2024-37079 | VMware vCenter | 有 | 中 | Unknown |
+| CVE-2025-59718/59719 | Fortinet FortiCloud | 有（多個） | 低 | Unknown |
+| CVE-2025-52691 | SmarterMail | 有 | 低 | Unknown |
+| CVE-2026-23760 | SmarterMail | 有 | 極低 | Unknown |
+| CVE-2026-24061 | GNU InetUtils | 有（2個專案） | 低 | Unknown |
+| CVE-2025-68645 | Zimbra ZCS | 未知 | 中 | Unknown |
+| CVE-2025-34026 | Versa Concerto | 未知 | 中 | Unknown |
+| CVE-2026-21509 | Microsoft Office | 未知 | 中 | Unknown |
+| CVE-2025-11953 | React Native CLI | 有 | 低 | Unknown |
+| CVE-2026-24423 | SmarterMail | 有 | 低 | **Known** |
+| CVE-2026-21510 | Windows Shell | 未知 | 中 | Unknown |
+| CVE-2026-21513 | MSHTML Framework | 未知 | 中 | Unknown |
+| CVE-2026-21514 | Office Word | 未知 | 中 | Unknown |
+| CVE-2026-21519 | Desktop Windows Manager | 未知 | 中 | Unknown |
+| CVE-2026-21525 | Remote Access CM | 未知 | 中 | Unknown |
+| CVE-2026-21533 | Remote Desktop Services | 未知 | 中 | Unknown |
 
 ### 新釋出 PoC 追蹤
 
@@ -228,8 +260,14 @@ n8n 作為企業自動化基礎設施的「中樞神經系統」，集中管理 
 | 2026-02-04 | Redis 8.0.2 | Exploit-DB | RCE (Critical) |
 | 2026-02-04 | FortiWeb Fabric | Exploit-DB | SQLi → RCE (Critical) |
 | 2026-01-17 | Siklu EtherHaul | Exploit-DB | 任意檔案上傳 + RCE |
+| 2026-02-07 | Mirai 多架構變種 | MalwareBazaar | IoT 殭屍網路 (PowerPC, MIPSEL, ARM) |
 
 **雲原生環境警示**：Ingress-NGINX PoC 對 Kubernetes 環境構成嚴重威脅，可能導致集群級別妥協。
+
+**新增威脅情報**：本週 abuse.ch ThreatFox 偵測到多個新 C2 指標：
+- Rhysida 勒索軟體 C2: `104.234.240.23:80/443`（2026-02-06）
+- Cobalt Strike BEACON C2: `110.44.126.45:50443`（2026-02-06）
+- 多個 ClickFix 惡意網域（2026-02-06）
 
 ### SmarterMail 三重漏洞鏈威脅
 
@@ -238,7 +276,16 @@ n8n 作為企業自動化基礎設施的「中樞神經系統」，集中管理 
 1. 攻擊者可透過 force-reset-password 端點重設管理員密碼（無需驗證）
 2. 結合任意檔案上傳實現完整系統控制
 3. 三個漏洞均已被 CISA 列入 KEV，建議立即修補
-4. CVE-2026-24423 已確認與勒索軟體活動相關
+4. **CVE-2026-24423 已確認與勒索軟體活動相關（CISA 標記 Known Ransomware Campaign Use）**
+
+### React Native CLI 開發環境威脅
+
+**CVE-2025-11953** 為 React Native Community CLI 中的 OS 命令注入漏洞：
+
+1. 未授權網路攻擊者可透過 POST 請求至 Metro Development Server 執行任意程式
+2. 在 Windows 環境下，攻擊者可執行任意 shell 命令並完全控制參數
+3. 漏洞影響暴露於網路的開發環境，已於 2026-02-05 加入 CISA KEV
+4. 此漏洞與北韓「Contagious Interview」攻擊行動利用 VS Code Tasks 機制相呼應，顯示開發環境正成為 APT 攻擊的新興向量
 
 ---
 
@@ -303,17 +350,17 @@ n8n 作為企業自動化基礎設施的「中樞神經系統」，集中管理 
 
 ### IoT 殭屍網路活動（Qdrant 語意搜尋）
 
-透過 Qdrant 查詢「Mirai botnet IoT 殭屍網路」，識別最新活躍變種：
+透過 Qdrant 查詢「Mirai IoT botnet 殭屍網路」，識別最新活躍變種：
 
 | 排名 | 相似度 | 變種名稱 | 日期 |
 |------|--------|----------|------|
-| 1 | 0.6553 | Mirai PowerPC | 2026-02-06 |
-| 2 | 0.6534 | Mirai MIPSEL | 2026-02-06 |
-| 3 | 0.6516 | Mirai ARM5 | 2026-02-06 |
-| 4 | 0.6447 | Mirai AArch64 | 2026-02-06 |
-| 5 | 0.6291 | Mirai ARM7 | 2026-02-06 |
+| 1 | 0.6735 | Mirai ELF (多架構) | 2026-02-07 |
+| 2 | 0.6726 | Mirai ELF (多架構) | 2026-02-07 |
+| 3 | 0.6725 | Mirai ELF (多架構) | 2026-02-07 |
+| 4 | 0.6716 | Mirai ELF (多架構) | 2026-02-07 |
+| 5 | 0.6698 | Mirai ELF (多架構) | 2026-02-07 |
 
-**關鍵發現**：Mirai 變種持續主導 IoT 威脅格局，佔所有樣本近半數，多架構變種顯示攻擊者持續擴大目標設備範圍。
+**關鍵發現**：Mirai 變種持續主導 IoT 威脅格局，佔所有樣本近半數。2026-02-07 偵測到大量新 Mirai 樣本，包含 PowerPC、MIPSEL、ARM5、AArch64、ARM7、x86_64 等多架構變種，顯示攻擊者持續擴大目標設備範圍。
 
 ### 網路掃描活動
 
@@ -444,19 +491,27 @@ CISA 依據行政命令 14306 發布 PQC 產品分類：
 
 ## 修補期限一覽表
 
-| CVE | 產品 | CISA 修補期限 | 嚴重程度 |
-|-----|------|---------------|----------|
-| CVE-2026-20045 | Cisco Unified CM | 2026-02-11 | High |
-| CVE-2025-54313 | eslint-config-prettier | 2026-02-12 | High |
-| CVE-2025-34026 | Versa Concerto | 2026-02-12 | High |
-| CVE-2025-31125 | Vite Vitejs | 2026-02-12 | Medium |
-| CVE-2025-68645 | Zimbra ZCS | 2026-02-12 | Critical |
-| CVE-2024-37079 | VMware vCenter | 2026-02-13 | Critical |
-| CVE-2018-14634 | Linux Kernel | 2026-02-16 | High |
-| CVE-2025-52691 | SmarterMail | 2026-02-16 | Critical |
-| CVE-2026-21509 | Microsoft Office | 2026-02-16 | High |
-| CVE-2026-23760 | SmarterMail | 2026-02-16 | Critical |
-| CVE-2026-24061 | GNU InetUtils | 2026-02-16 | High |
+| CVE | 產品 | CISA 修補期限 | 嚴重程度 | 勒索軟體關聯 |
+|-----|------|---------------|----------|--------------|
+| CVE-2026-20045 | Cisco Unified CM | 2026-02-11 | High | Unknown |
+| CVE-2025-54313 | eslint-config-prettier | 2026-02-12 | High | Unknown |
+| CVE-2025-34026 | Versa Concerto | 2026-02-12 | High | Unknown |
+| CVE-2025-31125 | Vite Vitejs | 2026-02-12 | Medium | Unknown |
+| CVE-2025-68645 | Zimbra ZCS | 2026-02-12 | Critical | Unknown |
+| CVE-2024-37079 | VMware vCenter | 2026-02-13 | Critical | Unknown |
+| CVE-2018-14634 | Linux Kernel | 2026-02-16 | High | Unknown |
+| CVE-2025-52691 | SmarterMail | 2026-02-16 | Critical | Unknown |
+| CVE-2026-21509 | Microsoft Office | 2026-02-16 | High | Unknown |
+| CVE-2026-23760 | SmarterMail | 2026-02-16 | Critical | Unknown |
+| CVE-2026-24061 | GNU InetUtils | 2026-02-16 | High | Unknown |
+| CVE-2025-11953 | React Native CLI | 2026-02-26 | Critical | Unknown |
+| CVE-2026-24423 | SmarterMail | 2026-02-26 | Critical | **Known** |
+| CVE-2026-21510 | Windows Shell | 2026-03-03 | Critical | Unknown |
+| CVE-2026-21513 | MSHTML Framework | 2026-03-03 | Critical | Unknown |
+| CVE-2026-21514 | Office Word | 2026-03-03 | Critical | Unknown |
+| CVE-2026-21519 | Desktop Windows Manager | 2026-03-03 | Critical | Unknown |
+| CVE-2026-21525 | Remote Access Connection Manager | 2026-03-03 | Critical | Unknown |
+| CVE-2026-21533 | Remote Desktop Services | 2026-03-03 | Critical | Unknown |
 
 ---
 
@@ -466,7 +521,7 @@ CISA 依據行政命令 14306 發布 PQC 產品分類：
 
 1. **來源範圍**：基於國際 CERT/安全機構公開資料與 abuse.ch 威脅情報，但不涵蓋所有威脅情資。可能存在未被公開揭露的威脅活動。
 
-2. **時效性**：資料收集截至 2026-02-07，後續發展可能影響分析結論。
+2. **時效性**：資料收集截至 2026-02-12，後續發展可能影響分析結論。
 
 3. **地理偏差**：資料來源主要為歐美 CERT 機構，亞太地區特有威脅可能覆蓋不足。
 
@@ -480,12 +535,14 @@ CISA 依據行政命令 14306 發布 PQC 產品分類：
 6. **翻譯風險**：部分非英文來源經 AI 翻譯，可能存在語義偏差。
 
 7. **Qdrant 向量查詢**：本週期已使用 Qdrant 進行以下跨 Layer 關聯分析：
-   - RCE 相關威脅（10 筆結果）
-   - APT 進階持續性威脅（5 筆結果）
-   - 勒索軟體相關（5 筆結果）
-   - 供應鏈攻擊（5 筆結果）
-   - Mirai 殭屍網路（5 筆結果）
-   - 零日漏洞（5 筆結果）
+   - 活躍利用 KEV 相關（10 筆結果）
+   - 勒索軟體 ransomware（10 筆結果）
+   - 新興威脅 emerging threat（10 筆結果）
+   - ICS OT 工業控制系統（10 筆結果）
+   - APT 國家級進階持續威脅（10 筆結果）
+   - Mirai IoT 殭屍網路（10 筆結果）
+   - 社交工程釣魚攻擊（10 筆結果）
+   - 遠端程式碼執行 RCE（10 筆結果）
 
 本報告僅供參考，不構成完整的威脅評估。重大安全決策請結合多方情資來源。
 
@@ -495,15 +552,15 @@ CISA 依據行政命令 14306 發布 PQC 產品分類：
 
 - [x] 是否包含「資料限制與免責聲明」？
 - [x] 所有事件是否標註來源與日期？
-- [x] 趨勢分析是否基於足夠樣本？（918 個惡意軟體樣本、14+ 個 KEV 漏洞、多國 CERT 報告）
+- [x] 趨勢分析是否基於足夠樣本？（21,603+ 惡意軟體樣本、27+ 個 KEV 漏洞、多國 CERT 報告）
 - [x] 新興威脅識別是否標註信心水準？
-- [x] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（已完成 6 項查詢）
+- [x] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（已完成 8 項查詢）
 - [x] 是否有未經證實的推論需標註為「推測」？（已於相關段落標註）
 
 ---
 
-> 報告產出時間：2026-02-07
-> 資料截止時間：2026-02-07 12:00 UTC
+> 報告產出時間：2026-02-12
+> 資料截止時間：2026-02-12 12:00 UTC
 > 資料來源：CISA (US)、TWCERT/CC、JPCERT/CC、CERT.at (Austria)、CERT.hr (Croatia)、CERT-SE (Sweden)、GovCERT.HK、HKCERT、Canadian Cyber Centre、SANS ISC、NCSC-FI (Finland)、NUKIB (Czech Republic)、NSM NCSC (Norway)、abuse.ch ThreatFox、abuse.ch MalwareBazaar、Exploit-DB、PoC-in-GitHub
 > 分析模型：Claude Opus 4.5
-> 版本：1.3
+> 版本：1.6

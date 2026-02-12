@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'docs/**'
+      - '_data/**'
       - '_config.yml'
       - 'Gemfile'
       - '.github/workflows/pages.yml'

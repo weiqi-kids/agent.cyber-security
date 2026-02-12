@@ -222,9 +222,11 @@ OPENAI_API_KEY=sk-...
 
 ---
 
-## 狀態更新
+## 狀態更新與首頁觸發
 
-執行完成後，**必須**更新 `_data/status.yml`：
+執行完成後，**必須**完成以下步驟：
+
+### 1. 更新 `_data/status.yml`
 
 ```yaml
 # 更新以下欄位
@@ -240,7 +242,17 @@ layers:
 
 更新方式：使用 Edit 工具修改 `_data/status.yml`，填入實際執行時間與各 Layer 的筆數。
 
-> **自動化提示**：此檔案會顯示在首頁，讓使用者快速確認資料新鮮度。
+### 2. 觸發首頁更新（必要）
+
+首頁由 Jekyll 動態生成，需要 push 到 GitHub 才會重建。**更新 `_data/status.yml` 後必須執行：**
+
+```bash
+git add _data/status.yml docs/Narrator/
+git commit -m "chore: 更新執行狀態與報告 $(date +%Y-%m-%d)"
+git push origin main
+```
+
+> **⚠️ 重要**：若不執行 git push，首頁不會更新！GitHub Pages 由 `.github/workflows/pages.yml` 自動觸發部署。
 
 ---
 
@@ -255,6 +267,60 @@ layers:
 - `docs/Extractor/` 萃取結果 — 增量更新，下次完整執行時再一併提交
   - 理由：每次執行會重新產生，提交數百個檔案會讓 git 歷史雜亂
   - 例外：若使用者明確要求，或完成完整流程後統一提交
+
+---
+
+## 已知問題與解法
+
+執行流程中曾遇到的問題及標準解法，避免重複犯錯：
+
+### 1. fetch.sh / update.sh 路徑執行
+
+**問題**：使用相對路徑 `bash core/.../fetch.sh` 執行失敗（No such file or directory）
+
+**解法**：一律使用絕對路徑或 `cd` 切換後執行：
+```bash
+# 正確做法
+cd /Users/lightman/weiqi.kids/agent.cyber-security && bash core/Extractor/Layers/{layer}/fetch.sh
+
+# 錯誤做法
+bash core/Extractor/Layers/{layer}/fetch.sh
+```
+
+### 2. 子代理寫入權限問題
+
+**問題**：
+- 背景 Task（`run_in_background: true`）的 Edit/Write 工具可能被 auto-denied
+- **即使同步執行的子代理（如 Mode 報告產出）也可能無法寫檔**
+
+**解法**：
+- 背景 Task 失敗後，主執行緒以同步模式重試
+- 確保使用 `subagent_type: "general-purpose"`（非 Bash）
+- **重要**：Mode 報告產出後，主執行緒需**驗證檔案修改時間**是否更新
+- 若子代理報告「權限限制」或「檔案已存在」但未實際更新，主執行緒應直接執行 Edit 更新
+
+### 3. 檔名重複覆蓋
+
+**問題**：同標題不同日期的公告（如 CISA KEV 更新）產生相同 slug，後者覆蓋前者
+
+**解法**：萃取時檔名必須包含唯一識別：
+```
+# 優先順序
+1. CVE 編號：2026-CVE-2026-24423.md
+2. 公告編號：2026-NCSC-2026-0040.md
+3. 日期 + slug：2026-02-08-cisa-adds-one-kev.md
+4. 日期 + 序號：2026-02-08-kev-update-1.md
+```
+
+> **強制規則**：若偵測到檔案已存在且內容不同，應加上日期或序號區分，不可直接覆蓋。
+
+### 4. 已存在檔案的處理
+
+**問題**：多批次處理時，同一 CVE 可能出現在不同 commit（如 Nuclei Templates）
+
+**解法**：這是預期行為，非錯誤
+- 若檔案已存在且內容相同 → 跳過（正確）
+- 若檔案已存在但內容不同 → 依上述「檔名重複覆蓋」規則處理
 
 ---
 
