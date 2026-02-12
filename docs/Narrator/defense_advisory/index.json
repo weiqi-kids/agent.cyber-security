@@ -1,0 +1,42 @@
+[
+  {
+    "id": "index-md",
+    "title": "防禦建議 (Defense Advisory)",
+    "date": "",
+    "period": "",
+    "file": "index.md",
+    "source_mode": "defense_advisory"
+  },
+  {
+    "id": "2026-W07-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 07 週",
+    "date": "2026-W07",
+    "period": "2026-02-04 至 2026-02-11",
+    "file": "2026-W07-defense-advisory.md",
+    "source_mode": "defense_advisory"
+  },
+  {
+    "id": "2026-W06-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 06 週",
+    "date": "2026-W06",
+    "period": "2026-02-09 至 2026-02-15",
+    "file": "2026-W06-defense-advisory.md",
+    "source_mode": "defense_advisory"
+  },
+  {
+    "id": "2026-W05-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 05 週",
+    "date": "2026-W05",
+    "period": "2026-01-22 至 2026-01-28",
+    "file": "2026-W05-defense-advisory.md",
+    "source_mode": "defense_advisory"
+  },
+  {
+    "id": "2026-W04-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 04 週",
+    "date": "2026-W04",
+    "period": "2026-01-21 至 2026-01-27",
+    "file": "2026-W04-defense-advisory.md",
+    "source_mode": "defense_advisory"
+  }
+]
