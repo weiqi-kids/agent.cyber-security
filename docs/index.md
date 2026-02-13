@@ -25,6 +25,37 @@ permalink: /
 
 ---
 
+## 系統概覽
+
+| 資料層 | 筆數 | 最後更新 |
+|:-------|-----:|:---------|
+{% for layer in site.data.status.layers %}| {{ layer[0] | replace: "_", " " | capitalize }} | {{ layer[1].items_count | default: 0 }} | {{ layer[1].last_fetch | date: "%m-%d %H:%M" }} |
+{% endfor %}
+
+---
+
+## 活躍利用漏洞
+{: .d-inline-block }
+
+高優先級
+{: .label .label-red }
+
+以下漏洞正被實際攻擊利用，建議立即評估影響並修補。
+
+{% assign active_exploits = site.pages | where_exp: "p", "p.path contains 'active_exploitation'" | where_exp: "p", "p.name != 'index.md'" | sort: "name" | reverse %}
+{% if active_exploits.size > 0 %}
+| CVE/漏洞 | 連結 |
+|:---------|:-----|
+{% for item in active_exploits limit: 5 %}| {{ item.title | default: item.name | remove: ".md" }} | [詳情]({{ item.url | relative_url }}) |
+{% endfor %}
+
+[查看全部 {{ active_exploits.size }} 筆 →]({{ site.baseurl }}/docs/Extractor/exploit_intelligence/active_exploitation/)
+{% else %}
+目前無活躍利用漏洞資料。
+{% endif %}
+
+---
+
 ## 最新報告
 
 ### 威脅態勢分析

@@ -61,6 +61,11 @@ exclude:
   - node_modules/
   - vendor/
   - Gemfile.lock
+  # threat_feeds 單筆 IoC 資料不需要產生網頁（資料量過大）
+  - docs/Extractor/threat_feeds/malicious_url/20*.md
+  - docs/Extractor/threat_feeds/malware_sample/20*.md
+  - docs/Extractor/threat_feeds/c2_infrastructure/20*.md
+  - docs/Extractor/threat_feeds/ioc_indicator/20*.md
 
 # Include for processing
 include:

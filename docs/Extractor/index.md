@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Extractor
-nav_exclude: true
+nav_order: 2
+nav_exclude: false
 has_children: true
 permalink: /docs/Extractor/
 ---
