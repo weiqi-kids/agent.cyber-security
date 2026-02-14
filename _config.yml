@@ -2,8 +2,8 @@
 
 title: 資安威脅情報中心
 description: 自動化資安情報收集與分析系統
-baseurl: "/agent.cyber-security"
-url: "https://weiqi-kids.github.io"
+baseurl: ""
+url: "https://security.weiqi.kids"
 
 # Theme
 theme: just-the-docs
