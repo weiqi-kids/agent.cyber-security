@@ -10,30 +10,23 @@
 
 ## 摘要
 
-TSUBAME quarterly monitoring report covering overseas sensor trends and internet threat monitoring for January-March 2025.
+TSUBAME Report covering overseas sensor monitoring trends for January to March 2025 period, analyzing internet threat monitoring activities.
 
 ## 事實內容
 
-JPCERT/CC published the TSUBAME Report Overflow covering the monitoring period of January to March 2025. This series focuses on monitoring trends from overseas TSUBAME sensors and activities not included in the main Internet Threat Monitoring Quarterly Reports.
+This TSUBAME Report Overflow series discusses monitoring trends of overseas TSUBAME sensors and other activities which the Internet Threat Monitoring Quarterly Reports do not include. This article covers the monitoring results for the period January to March 2025, documenting trends observed in global internet threat activities.
 
-The report analyzes trends detected by the TSUBAME (Targeted cyberattacks Uncovering Based on Analyzing darknet and Malware behavior Emulation) sensor network during the first quarter of 2025.
-
-The report provides insights into:
-- Monitoring trends from overseas TSUBAME sensors
-- Threat activity patterns during Q1 2025
-- Activities and patterns not covered in standard quarterly reports
-- Analysis of the January-March 2025 period
-
-This report serves as supplementary intelligence to the main quarterly threat monitoring reports, focusing specifically on overseas sensor data and emerging patterns observed in early 2025.
+The report provides insights into evolving attack patterns, scanning activities, and other threat indicators detected by JPCERT/CC's distributed sensor network during the first quarter of 2025.
 
 ## 受影響系統
 
-- N/A (monitoring report)
+- Internet-facing systems globally
+- Organizations monitored by TSUBAME sensors
 
 ## 來源連結
 
 - [TSUBAME Report Overflow (Jan-Mar 2025)](https://blogs.jpcert.or.jp/en/2025/07/tsubame_overflow_2025-01-03.html)
 
 ---
-> 萃取時間: 2026-02-06 00:00 UTC
+> 萃取時間: 2026-02-08 UTC
 > 資料來源: JPCERT/CC Blog jpcert-blog

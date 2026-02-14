@@ -10,30 +10,24 @@
 
 ## 摘要
 
-JSAC2025 conference workshops and lightning talks highlighted, following the Day 2 main track presentations.
+JPCERT reports on JSAC2025 workshops and lightning talks, following the main track presentations from Day 2.
 
 ## 事實內容
 
-JPCERT/CC published highlights from the Workshops and Lightning Talks sessions at JSAC2025 (Japan Security Analyst Conference 2025), following the previously reported Day 2 main track.
+Following the previous blog post on the Main Track on Day 2, this article highlights the Workshops and Lightning Talks of JSAC2025 (Japan Security Analyst Conference 2025). The conference provides a platform for security analysts to share technical knowledge and research findings in shorter, focused presentation formats.
 
-JSAC is JPCERT/CC's annual technical conference aimed at enhancing the skills and knowledge of security analysts. The conference brings together experts in the field of cybersecurity to share technical insights.
-
-The Workshops and Lightning Talks sessions provide:
-- Hands-on technical training opportunities
-- Quick presentations on emerging topics
-- Practical skill development for security analysts
-- Platform for sharing innovative research and techniques
-
-These sessions complement the main conference tracks by offering more interactive and specialized content focused on practical application of security analysis techniques.
+JSAC is an annual technical conference organized by JPCERT/CC aimed at enhancing the skills and knowledge of security analysts through peer learning and knowledge exchange.
 
 ## 受影響系統
 
-- N/A (conference event)
+- Security analyst community
+- Cybersecurity researchers
+- Organizations improving analyst capabilities
 
 ## 來源連結
 
 - [JSAC2025 -Workshop & Lightning Talk-](https://blogs.jpcert.or.jp/en/2025/04/jsac2025-workshop-lightning-talk.html)
 
 ---
-> 萃取時間: 2026-02-06 00:00 UTC
+> 萃取時間: 2026-02-08 UTC
 > 資料來源: JPCERT/CC Blog jpcert-blog

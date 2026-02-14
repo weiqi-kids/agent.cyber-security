@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 資安新聞事實
-parent: Extractor
 nav_order: 1
 nav_exclude: false
 has_children: true

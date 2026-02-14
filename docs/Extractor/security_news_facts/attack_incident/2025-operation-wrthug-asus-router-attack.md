@@ -1,54 +1,61 @@
-# 全球網路威脅活動「Operation WrtHug」鎖定華碩 (ASUS) 路由器
-
-| 項目 | 內容 |
-|------|------|
-| 事件日期 | 2025-11-25 |
-| 來源 | TWCERT/CC |
-| 分類 | attack_incident |
-| 嚴重程度 | 高 |
-| 信心水準 | 低 |
+---
+title: "全球網路威脅活動「Operation WrtHug」鎖定華碩(ASUS)路由器,呼籲用戶立即更新韌體"
+date: 2025-11-25
+source: TWCERT/CC
+source_url: https://www.twcert.org.tw/tw/cp-104-10522-ff0b9-1.html
+feed_id: rss-104
+category: attack_incident
+confidence: 高
+---
 
 ## 摘要
 
-SecurityScorecard STRIKE 團隊揭露名為「Operation WrtHug」的大規模網路攻擊行動，鎖定全球華碩路由器，利用 AiCloud 服務的已知漏洞（CVE-2023-39780 相關）進行作業系統指令注入攻擊，植入後門程式，過去六個月已有超過 50,000 個 IP 設備被感染。
+資安廠商SecurityScorecard的STRIKE團隊近日發布重要報告,揭露代號為「Operation WrtHug」的大規模網路行動。此行動正鎖定全球華碩(ASUS)相關之路由器,利用已知漏洞將感染設備變成全球網路威脅活動的工具。過去六個月中,已識別出全球超過50,000個IP設備被感染。
 
-## 事實內容
+## 攻擊目標
 
-1. **攻擊活動名稱**：Operation WrtHug，針對小型/家用路由器的持續性攻擊活動
-2. **攻擊目標**：華碩（ASUS）品牌路由器，主要針對 AiCloud 服務
-3. **攻擊手法**：利用已公開的作業系統指令注入（OS Command Injection）漏洞作為初始存取點
-4. **相關 CVE**：CVE-2023-39780
-5. **受影響產品型號**（8 款）：
-   - 4G-AC55U
-   - 4G-AC860U
-   - DSL-AC68U
-   - GT-AC5300
-   - GT-AX11000
-   - RT-AC1200HP
-   - RT-AC1300GPLUS
-   - RT-AC1300UHP
-6. **攻擊結果**：植入後門程式，設備被加入全球感染網路，用於發動進一步網路威脅活動及間諜行動
-7. **感染規模**：STRIKE 團隊在過去六個月中識別出全球超過 50,000 個 IP 設備被感染
-8. **緩解措施**：
-   - 執行韌體更新至最新版本
-   - 汰換已終止支援（EoL）的舊款設備
-   - 諮詢華碩官方產品安全建議
+**受影響型號:**
 
-## 受影響系統
+| 型號 |
+|------|
+| ASUS Wireless Router 4G-AC55U |
+| ASUS Wireless Router 4G-AC860U |
+| ASUS Wireless Router DSL-AC68U |
+| ASUS Wireless Router GT-AC5300 |
+| ASUS Wireless Router GT-AX11000 |
+| ASUS Wireless Router RT-AC1200HP |
+| ASUS Wireless Router RT-AC1300GPLUS |
+| ASUS Wireless Router RT-AC1300UHP |
 
-- **產品**：ASUS 無線路由器
-- **型號**：4G-AC55U、4G-AC860U、DSL-AC68U、GT-AC5300、GT-AX11000、RT-AC1200HP、RT-AC1300GPLUS、RT-AC1300UHP
-- **服務**：AiCloud 服務
-- **漏洞類型**：作業系統指令注入（OS Command Injection）
-- **相關 CVE**：CVE-2023-39780
+## 攻擊手法
 
-## 來源連結
+**初始入侵:**
+- 主要針對華碩設備上的AiCloud服務
+- 利用一系列已公開的作業系統指令注入(OS Command Injection)漏洞
+- 例如與CVE-2023-39780相關的漏洞
 
-- [TWCERT/CC 原文](https://www.twcert.org.tw/tw/cp-104-10522-ff0b9-1.html)
-- [ASUS 產品安全建議](https://www.asus.com/content/asus-product-security-advisory/)
+**後續行動:**
+- 植入後門程式
+- 使設備加入一個龐大的全球感染網路
+- 被用作發動進一步的網路威脅活動及間諜行動
 
----
+**感染規模:**
+- 過去六個月中已識別出全球超過50,000個IP設備被感染
 
-**萃取時間**：2026-01-26 14:52 UTC
-**文件 ID**：news-20251125-007
-**資料來源**：security_news_facts Layer
+## 關鍵緩解措施
+
+由於攻擊者利用的都是已公開且已有修補程式的漏洞,請所有用戶立即採取以下三項關鍵行動:
+
+1. **執行韌體更新**: 務必將您的路由器韌體更新到最新版本。這是修補已知漏洞、防止入侵的最直接方法
+
+2. **檢查並汰換EoL設備**: 如果您使用的是已「終止支援」(End-of-Life, EoL)的舊款ASUS路由器,無法更新韌體,請考慮將這些老舊設備替換為官方仍持續支援的新產品
+
+3. **諮詢官方資源**: 華碩安全團隊已針對Operation WrtHug中涉及的所有漏洞提供了官方緩解步驟(https://www.asus.com/content/asus-product-security-advisory/)。請用戶務必查閱ASUS產品安全建議或相關FAQ,以取得最準確的防護資訊
+
+## 時間軸
+
+- 2025-11-25: TWCERT/CC發布警訊
+
+## 標籤
+
+#OperationWrtHug #ASUS #路由器 #AiCloud #CVE-2023-39780 #韌體更新 #IoT安全

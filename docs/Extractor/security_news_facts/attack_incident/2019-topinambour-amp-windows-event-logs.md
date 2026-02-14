@@ -1,0 +1,24 @@
+---
+title: "Topinambour &amp; Windows event logs"
+source: "CERT.at (Austria)"
+feed_id: "cert-at"
+link: "https://www.cert.at/en/blog/2019/7/blog-20190716140317-2501"
+pub_date: "Wed, 25 Sep 2019 13:41:44 GMT+0100"
+category: "attack_incident"
+confidence: "高"
+tags: ["AI"]
+---
+
+## 摘要
+
+TL;DR: Block outgoing SMB traffic if you can. Hunt or Monitor for event ID 106 in "Microsoft-Windows-TaskScheduler%4Operational.evtx". Think about enabling "Audit Process creation" in "Security.
+
+## 詳細內容
+
+TL;DR: Block outgoing SMB traffic if you can. Hunt or Monitor for event ID 106 in "Microsoft-Windows-TaskScheduler%4Operational.evtx". Think about enabling "Audit Process creation" in "Security.evtx" and command line logging. Hunt or monitor for event ID 4688 in "Security.evtx". While reading through the recent Kaspersky report on the renewed arsenal of the Turla group, I was first getting a little bit frustrated by the fact that it is still too easy for the attackers. After coming over this I focused on the question "How would I detect/hunt for it in Windows event logs?" First of all, according to the report outgoing SMB is used by the dropper to download the next stage. Blocking outgoing SMB is not a new recommendation and while this still fits the "too easy for attackers" category it has nothing to do with event logs and is not the reason behind this blog post. Accepting that security is not only about prevention but also about detection brings us back to the aforementioned question. The dropper function "make_some_noise" generates a new scheduled task on an infected machine to gain persistence. Focusing on Win7+ here, this generates the event ID 106 "Scheduled Task created" in "Microsoft-Windows-TaskScheduler%4Operational.evtx". This log entry includes the time when the task was added, which user added it and the name of the task. If you go hunting for this event ID, make sure you are looking into the right event log file; as far as I know there is no guarantee that event IDs are unique accross all possible event logs. Not every new Scheduled Task is per se evil, but if you start looking and investigating, you will quickly end up with a list of expected/known good tasks. And before saying "No, too much work": Do you actually know how often this happens on your clients? Later in the report the section "KopiLuwak dropper" mentioned how a malicious JavaScript is downloaded. Following the trend of using tools already present on systems "cmd.exe" is used to run "net use" for downloading. So if "cmd.exe" is started this creates at least one process which can be logged by Windows (not enabled by default). By itself a "cmd.exe" process might not be overly suspicious, but what if we could also get the complete command line including arguments? And again Windows has something for us: if enabled, the process creation event also includes the supplied arguments. Enable process creation logging: run gpedit.msc with administrative rights, navigate the following path: "Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> System Audit Policies -> Detailed Tracking" and set the value for "Audit Process Creation" to either "Success" or "Success and Failure" This would give you the event ID 4688 in the "Security.evtx" log. To enable the inclusion of the supplied command line arguments: run gpedit.msc with administrative rights, navigate the following path: "Computer Configuration-> Windows Settings -> Administrative Templates -> System -> Audit Process Creation" and set the value for "Include command line in process creation events" to enabled. Enabling this will give you the supplied arguments in the 4688 event enabled above. Microsoft provides a nice description as well, which you can refer to for additional reading. In case your system language is different from English, your exact path may vary due to localisation. Now let me raise a question: "Is it normal for a standard user to run 'cmd.exe /c net use \\$IP-ADDRESS\...'?" I would say it's not and therefore seeing this in an event log can be considered an investigative hint, or can be an event triggering an investigation in a SOC team. I'm not saying building up a centralized monitoring of Windows client event logs including relevant events is easy or that using event logs is the only way for detection. What I'm saying is: if you don't do it, you are missing a lot of incredibly useful information for SOC teams as well as client administrators. Author: Olaf Schwarz
+
+## 來源資訊
+
+- **來源**: CERT.at (Austria)
+- **連結**: https://www.cert.at/en/blog/2019/7/blog-20190716140317-2501
+- **發布時間**: Wed, 25 Sep 2019 13:41:44 GMT+0100

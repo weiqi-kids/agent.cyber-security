@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 威脅情報饋送
-parent: Extractor
 nav_order: 4
 nav_exclude: false
 has_children: true

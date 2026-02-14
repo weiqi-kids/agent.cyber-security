@@ -1,32 +1,79 @@
-# TWCERT/CC 2025台灣資安通報應變年會:打造安全產品 串聯信任防線
-
-| 項目 | 內容 |
-|------|------|
-| **日期** | 2025-12-04 |
-| **來源** | TWCERT/CC |
-| **分類** | industry_trend |
-| **嚴重程度** | 未評估 |
-| **信心水準** | 中 |
+---
+title: "TWCERT/CC 2025台灣資安通報應變年會:打造安全產品 串聯信任防線"
+date: 2025-12-04
+source: TWCERT/CC
+source_url: https://www.twcert.org.tw/tw/cp-104-10541-3a11f-1.html
+feed_id: rss-104
+category: industry_trend
+confidence: 高
+---
 
 ## 摘要
-TWCERT/CC held 2025 Taiwan Cybersecurity Incident Response Annual Conference focusing on secure product development and trust chain.
 
-## 事實內容
-Taiwan Computer Emergency Response Team/Coordination Center (TWCERT/CC) held the "2025 Taiwan Cybersecurity Incident Response Annual Conference" on December 3rd. This year's theme "Building Secure Products, Connecting Trust Defense Lines" brought together cybersecurity experts from industry, government, and academia including ASUS, CyCraft, III, Delta Electronics, Zyxel Communications, Synology, and Panasonic Taiwan.
+台灣電腦網路危機處理暨協調中心(TWCERT/CC)於2025年12月3日辦理「2025台灣資安通報應變年會」。本年度以「打造安全產品 串聯信任防線」為主題,邀集來自華碩、奧義、資策會、台達電、合勤投控、群暉科技、台灣松下等產官學界資安專家齊聚一堂。
 
-Minister of Digital Development Lin Yi-jing stated that facing rapid proliferation of AI, IoT, and smart manufacturing, products once online carry not only functionality and performance but also user data and brand trust. Product security is no longer just a technical issue but an important foundation of corporate competitiveness.
+## 會議主題
 
-Director-General of Administration of Cyber Security Tsai Fu-lung stated that global cybersecurity situation remains severe in 2025, with APT attacks, ransomware, and new threats from generative AI making it difficult for single organizations to effectively respond alone. This conference theme responds to the global trend of cybersecurity governance moving from "protection" to "trust."
+**核心議題:**
+- AI驅動下的資安威脅
+- 國內通報協調機制的成果與挑戰
+- 產品資安治理與PSIRT弱點通報的實務經驗
+- 如何強化跨域協作與企業資安韌性
 
-The conference invited multiple cybersecurity experts for keynote speeches, including topics on security trends, TWCERT/CC annual achievements, AI attack and defense, Secure-by-Design principles, and PSIRT notification governance.
+## 重要致詞
 
-## 受影響系統
-- Not applicable (conference/industry event)
+**數位發展部林宜敬部長:**
+- 面對AI、IoT與智慧製造快速普及,產品一旦上線,承載的不只是功能與效能,更包含使用者資料與品牌信任
+- 產品資安不再只是技術議題,而是企業競爭力的重要基礎
+- 安全設計與安全開發流程是企業必要的基本功
+- 國際法規將產品資安視為供應鏈治理的一部分,代表「安全」已成全球市場的共同語言
+- 肯定TWCERT/CC在全年無休的事件通報、情資分享、漏洞揭露、PSIRT推動與國際組織參與上的努力
+- 強調資安防線需要政府、企業與使用者共同維護
 
-## 來源連結
-- [TWCERT/CC 2025台灣資安通報應變年會:打造安全產品 串聯信任防線](https://www.twcert.org.tw/tw/cp-104-10541-3a11f-1.html)
+**資通安全署蔡福隆署長:**
+- 2025年全球資安情勢仍持續嚴峻
+- APT、勒索攻擊與生成式AI帶來的新威脅,使單一組織已難以獨自有效因應
+- 全球資安治理從「防護」走向「信任」的趨勢
+- 唯有將「安全」作為設計與管理的核心,才能贏得市場與社會的信任
 
----
-> 萃取時間：2026-01-27 10:00 UTC
-> 資料來源：TWCERT/CC rss-104
-> Original language: Chinese (TWCERT/CC)
+## 專題演講
+
+**講者陣容:**
+- 華碩金慶柏資安長
+- 資安院通報應變中心孫偉哲主任
+- 奧義智慧科技邱銘彰創辦人
+- 資安院李婉萍經理
+- 資策會資安所李彥震主任
+- 資安院游家雯總監
+
+**演講主題:**
+- 資安趨勢
+- TWCERT/CC年度成果
+- AI攻防
+- Secure-by-Design設計理念
+- PSIRT通報治理
+
+## 高峰座談
+
+**主持人:** 資安院龔副院長
+
+**與會企業代表:**
+- 合勤投控
+- 台達電
+- 群暉科技
+- 台灣松下網路安全實驗室
+
+**討論主題:**
+- 產品資安即品牌信任
+- 從設計、製造到弱點通報的完整生命週期
+- 企業如何以行動落實產品資安治理
+- 打造更安全可信的資安生態
+
+## 時間軸
+
+- 2025-12-03: 年會舉辦
+- 2025-12-04: TWCERT/CC發布報導
+
+## 標籤
+
+#TWCERT #資安年會 #產品資安 #PSIRT #Secure-by-Design #AI資安 #供應鏈安全

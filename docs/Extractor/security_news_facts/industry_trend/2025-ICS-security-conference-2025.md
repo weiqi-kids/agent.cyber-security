@@ -10,31 +10,24 @@
 
 ## 摘要
 
-JPCERT/CC organized ICS Security Conference on February 5, 2025, to share current threats to industrial control systems and stakeholder efforts.
+JPCERT/CC organized ICS Security Conference on Feb 5, 2025, to share current ICS threats and stakeholder efforts in the field.
 
 ## 事實內容
 
-JPCERT/CC organized the ICS Security Conference on February 5, 2025. This event aimed to share the current threat landscape for Industrial Control Systems (ICS) both in Japan and overseas, as well as the efforts of stakeholders in the field.
+JPCERT/CC organised ICS Security Conference on 5 February 2025. This event aims to share the current threat to ICS (Industrial Control Systems) both in Japan and overseas and the efforts of stakeholders in the field, as well as to help participants improve their security posture.
 
-**Conference Objectives:**
-- Share current ICS threat landscape in Japan and internationally
-- Present efforts of stakeholders in the ICS security field
-- Help participants improve their understanding and skills in ICS security
-- Facilitate knowledge exchange among ICS security professionals
-
-The conference brought together experts and practitioners to discuss industrial control system security challenges, emerging threats, and best practices for protecting critical infrastructure.
-
-This annual event serves as a key platform for the Japanese ICS security community to collaborate on addressing cybersecurity challenges facing industrial and critical infrastructure sectors.
+The conference serves as a platform for exchanging knowledge about industrial control system security, bringing together experts to discuss threats, defensive measures, and best practices for protecting critical infrastructure.
 
 ## 受影響系統
 
 - Industrial Control Systems (ICS)
-- Critical infrastructure sectors
+- SCADA systems
+- Critical infrastructure operators
 
 ## 來源連結
 
 - [ICS Security Conference 2025](https://blogs.jpcert.or.jp/en/2025/04/ics-conference2025.html)
 
 ---
-> 萃取時間: 2026-02-06 00:00 UTC
+> 萃取時間: 2026-02-08 UTC
 > 資料來源: JPCERT/CC Blog jpcert-blog

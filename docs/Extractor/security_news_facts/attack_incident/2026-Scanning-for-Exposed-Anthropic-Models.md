@@ -1,59 +1,37 @@
-# Scanning for exposed Anthropic Models
+# Scanning for Exposed Anthropic Models
 
-| 项目 | 内容 |
+| 項目 | 內容 |
 |------|------|
 | **日期** | 2026-02-02 |
-| **来源** | SANS ISC |
-| **分类** | attack_incident |
-| **严重程度** | 中 |
-| **信心水准** | 高 |
+| **來源** | SANS ISC |
+| **分類** | attack_incident |
+| **嚴重程度** | 中 |
+| **信心水準** | 高 |
 
 ## 摘要
 
-Tor 出口节点对多个网络传感器进行扫描，寻找暴露的 Anthropic API 端点，使用通用文档密钥进行侦察。
+單一 IP 位址透過 Tor 出口節點掃描多個感測器，尋找暴露的 Anthropic API 節點。
 
-## 事实内容
+## 事實內容
 
-安全研究人员记录了 2026 年 2 月 2 日针对 Anthropic API 端点的可疑扫描活动，该活动跨越多个网络传感器。
+2026年2月1日，單一 IP 位址（204.76.203.210）對多個安全感測器進行掃描，目標是尋找類似 Anthropic API 節點的服務。該 IP 位址已知為 Tor 出口節點。
 
-**扫描详情**：
+此掃描活動顯示攻擊者正在積極尋找未受保護或錯誤配置的 AI API 端點。Anthropic 提供大型語言模型（如 Claude）的 API 服務，若這些 API 端點暴露在公開網路且缺乏適當的身份驗證，可能被濫用於：
+- 未授權的 API 呼叫（產生成本）
+- 資料竊取
+- 服務濫用
 
-一个 Tor 出口节点（204.76.203.210）进行侦察，请求结构如下：
+使用 Tor 網路進行掃描表明攻擊者試圖隱藏其真實來源。組織應檢查其 API 端點的暴露情況，並確保實施適當的存取控制和監控機制。
 
-```
-GET /anthropic/v1/models Host: 67.171.182.193:8000 X-Api-Key: password
-```
+## 受影響系統
 
-攻击者使用了一个不太可能提供实际访问权限的通用文档密钥。
+- Anthropic API 部署
+- AI/ML API 服務
 
-**次要活动**：
+## 來源連結
 
-另一个具有复杂地理位置模式的 IP 地址（154.83.103.179）对 "/v1/messages" 端点产生了增加的流量，尽管这个 URL 模式在多个 API 平台上看起来是通用的。
-
-**安全影响**：
-
-这次侦察表明威胁行为者正在积极寻找可能未得到充分保护的本地部署 Anthropic 模型实例。使用 Tor 基础设施表明有意进行匿名化。然而，研究人员指出，不确定这种攻击向量是否能够成功对抗正确配置的系统。
-
-**关键要点**：
-
-托管 AI 模型的组织应确保 API 端点未暴露于公共网络，并实施强大的身份验证机制，而不仅仅是默认凭据。
-
-**威胁指标（IOCs）**：
-- Tor 出口节点：204.76.203.210
-- 可疑 IP：154.83.103.179
-- 目标端点：/anthropic/v1/models, /v1/messages
-- 使用的测试密钥：password（通用文档密钥）
-
-## 受影响系统
-
-- 本地部署的 Anthropic AI 模型
-- 暴露于公网的 API 端点
-- 使用弱身份验证的 AI 模型服务
-
-## 来源链接
-
-- [Scanning for exposed Anthropic Models](https://isc.sans.edu/diary/rss/32674)
+- [Scanning for exposed Anthropic Models, (Mon, Feb 2nd)](https://isc.sans.edu/diary/rss/32674)
 
 ---
-> 萃取时间：2026-02-06T00:00:00Z
-> 数据来源：SANS ISC sans-isc
+> 萃取時間：2026-02-08 17:30 UTC
+> 資料來源：SANS ISC sans-isc

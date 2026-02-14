@@ -1,0 +1,26 @@
+---
+title: "A sétima edição do Cyber Security Challenge já arrancou!"
+date: 2022-09-13
+source: CNCS (Portugal)
+feed_id: cncs-pt
+category: attack_incident
+confidence: medium
+url: https://dyn.cncs.gov.pt/pt/detalhe/art/135689/a-setima-edicao-do-cyber-security-challenge-ja-arrancou
+---
+
+# A sétima edição do Cyber Security Challenge já arrancou!
+
+## Summary
+O Cyber Security Challenge 2022 é uma iniciativa promovida pela ENISA - Agência Europeia para a Cibersegurança, e este ano levará a jogo equipas oriun...
+
+## Content
+O Cyber Security Challenge 2022 é uma iniciativa promovida pela ENISA - Agência Europeia para a Cibersegurança, e este ano levará a jogo equipas oriundas de 33 Países (28 europeus e 5 convidados), compostas por 10 jovens talentos nacionais representando as cores do seu País. Esta competição que se poderá qualificar como a mais importante competição deste tipo na Europa, visa não só promover a identificação de talentos em cibersegurança, como também, a cooperação e sentido de comunidade. Com este desígnio, ao longo de 3 dias, as equipas serão desafiadas a resolver problemas relacionados com a segurança informática em vários domínios, tais como, a segurança na web, segurança móvel, Hardware, criptografia, engenharia reversa ou forense. Este ano, a competição terá uma novidade relativamente aos anos anteriores, através de uma prova de ataque e defesa, onde cada equipa terá que defender as suas próprias infraestruturas, ao mesmo tempo que ataca as restantes. Recorde-se que, Portugal através da iniciativa CyberSecurity Challenge PT, que agrega o Centro Nacional de Cibersegurança, o Instituto Superior Técnico, a Universidade do Porto e a AP2SI -Associação Portuguesa para a Promoção da Segurança da Informação, marcará mais uma vez presença nesta competição. Para isso, os 10 jovens que representam agora a seleção nacional, foram identificados através de uma prova de qualificação, ocorrida no passado mês de julho, e têm vindo a ser preparados pelos treinadores e de outros membros da comunidade de cibersegurança portuguesa, alguns dos quais participantes na seleção portuguesa de antigas edições.
+
+## Key Points
+- Source: Centro Nacional de Cibersegurança (CNCS), Portugal
+- Published: 2022-09-13
+- Category: attack_incident
+
+## Notes
+- Original language: Portuguese
+- Content from Portuguese National Cybersecurity Center
