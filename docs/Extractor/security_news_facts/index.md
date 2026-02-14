@@ -2,7 +2,7 @@
 layout: default
 title: 資安新聞事實
 nav_order: 6
-nav_exclude: false
+nav_exclude: true
 has_children: true
 permalink: /docs/Extractor/security_news_facts/
 ---
