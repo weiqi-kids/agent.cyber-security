@@ -7,26 +7,23 @@ nav_exclude: false
 ---
 
 # 防禦建議 — 2026 第 07 週
-> 涵蓋期間：2026-02-07 至 2026-02-13
+
+> 涵蓋期間：2026-02-07 至 2026-02-14
 > 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV
-> 產出時間：2026-02-13（更新）
+> 產出時間：2026-02-14（最終版）
 
 ---
 
 ## 執行摘要
 
-本週 CISA 持續更新 KEV 目錄，累計 **24 項活躍利用漏洞**需優先修補。關鍵威脅包括：
+本週 CISA KEV 目錄持續大幅更新，累計新增多項活躍利用漏洞，關鍵威脅包括：
 
-1. **SmarterMail 郵件系統漏洞（最高優先級）** — CVE-2026-24423 **已確認與勒索軟體活動相關**，CISA 修補期限 2026-02-26，全球逾 6,000 台伺服器暴露
-2. **Microsoft Windows/Office 多重漏洞（6 項活躍利用）** — 包含 Windows Shell、MSHTML Framework、Remote Desktop Services、Desktop Windows Manager 及 Office Word 等元件漏洞，CISA 修補期限 2026-03-03
-3. **Apple 多平台緩衝區溢位漏洞（本週新增）** — CVE-2026-20700 影響 iOS、macOS、tvOS、watchOS、visionOS，已被活躍利用，CISA 修補期限 2026-03-05
-4. **n8n 自動化平台重大漏洞（4 項 CVSS 9.9-10.0）** — CVE-2026-21858、CVE-2026-21877 等漏洞允許未經授權的遠端程式碼執行
-5. **MongoDB MongoBleed 記憶體洩漏**（CVE-2025-14847）— 全球 8.7 萬台伺服器面臨敏感資料外洩風險
-
-**本週威脅態勢重點：**
-- Ivanti 零日漏洞攻擊歐洲政府機構
-- APT UNC3886 攻擊新加坡電信業
-- 假冒 7-Zip 網站散布惡意軟體
+1. **SmarterMail 郵件系統漏洞（最高優先級）** — CVE-2026-24423 **已確認與勒索軟體活動相關**，CISA 修補期限 2026-02-26
+2. **Microsoft Windows/Office 多重零日漏洞（6 項）** — 2026-02-10 大規模新增，涵蓋 Windows Shell、MSHTML、Office Word、DWM、RAS、RDS，修補期限 2026-03-03
+3. **Apple 多平台緩衝區溢位漏洞（本週新增）** — CVE-2026-20700 影響 iOS/macOS/tvOS/watchOS/visionOS，修補期限 2026-03-05
+4. **2026-02-12 KEV 新增** — SolarWinds Web Help Desk、Notepad++ 更新劫持、Microsoft Configuration Manager SQL 注入
+5. **Ivanti EPMM 零日漏洞攻擊歐洲政府** — 荷蘭、芬蘭、歐盟執委會遭入侵
+6. **APT 威脅行為者活動** — APT28 利用 CVE-2026-21509 攻擊烏克蘭/歐盟，UNC1069 首次使用 AI 生成影片進行社交工程
 
 ---
 
@@ -34,351 +31,168 @@ nav_exclude: false
 
 按優先級排序：活躍利用 + 勒索軟體 > 活躍利用 > EPSS 高分 > CVSS 高分
 
-### P0 - 立即處置（活躍利用中 + 與勒索軟體相關）
+### P0 - 立即處置（活躍利用 + 勒索軟體關聯）
 
-#### 1. CVE-2026-24423 — SmarterMail 關鍵功能缺失認證漏洞（與勒索軟體相關）
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | SmarterMail 的 ConnectToHub API 方法存在關鍵功能缺失認證漏洞（CWE-306），攻擊者可將 SmarterMail 實例指向惡意 HTTP 伺服器，該伺服器提供惡意作業系統命令，導致遠端程式碼執行（RCE） |
-| **影響產品** | SmarterTools SmarterMail |
-| **CVSS/嚴重程度** | Critical |
-| **修補方式** | 參閱 SmarterTools 官方發布說明，套用最新安全更新 |
-| **官方連結** | https://www.smartertools.com/smartermail/release-notes/current |
-| **利用狀態** | 活躍利用中（CISA KEV），**已確認與勒索軟體活動相關**，全球逾 6,000 台伺服器暴露 |
-| **CISA 修補期限** | **2026-02-26** |
+| CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
+|-----|------|----------|----------|----------|
+| **CVE-2026-24423** | SmarterMail | 缺失認證 RCE (CWE-306) | **2026-02-26** | [SmarterTools Release Notes](https://www.smartertools.com/smartermail/release-notes/current) |
 
-### P1 - 緊急（活躍利用中 - Microsoft Windows）
+> **警告**：CVE-2026-24423 已確認被勒索軟體利用。攻擊者可透過 ConnectToHub API 將 SmarterMail 指向惡意伺服器執行命令。
 
-#### 2. CVE-2026-21510 — Microsoft Windows Shell 保護機制失效漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Microsoft Windows Shell 存在保護機制失效漏洞（CWE-693），允許未授權攻擊者透過網路繞過安全功能 |
-| **影響產品** | Microsoft Windows（多個版本） |
-| **CVSS/嚴重程度** | Critical |
-| **修補方式** | 套用 Microsoft 2 月份安全更新 |
-| **官方連結** | https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21510 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-03-03** |
+### P1 - 緊急（活躍利用 - 2026-02-12 KEV 新增）
 
-#### 3. CVE-2026-21514 — Microsoft Office Word 安全決策依賴不受信任輸入漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Microsoft Office Word 存在安全決策依賴不受信任輸入漏洞（CWE-807），允許已授權攻擊者本地提升權限 |
-| **影響產品** | Microsoft Office（多個版本） |
-| **CVSS/嚴重程度** | High |
-| **修補方式** | 套用 Microsoft 2 月份安全更新 |
-| **官方連結** | https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21514 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-03-03** |
+| CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
+|-----|------|----------|----------|----------|
+| CVE-2026-20700 | Apple iOS/macOS/tvOS/watchOS/visionOS | 緩衝區溢位 RCE (CWE-119) | 2026-03-05 | [iOS](https://support.apple.com/en-us/126346), [macOS](https://support.apple.com/en-us/126348), [tvOS](https://support.apple.com/en-us/126351), [watchOS](https://support.apple.com/en-us/126352), [visionOS](https://support.apple.com/en-us/126353) |
+| CVE-2025-40536 | SolarWinds Web Help Desk | 安全控制繞過 | 2026-03-05 | [WHD 2026.1 Release Notes](https://documentation.solarwinds.com/en/success_center/whd/content/release_notes/whd_2026-1_release_notes.htm) |
+| CVE-2025-15556 | Notepad++ (WinGUp) | 下載缺乏完整性檢查 RCE | 2026-03-05 | [v8.8.9 漏洞修復](https://community.notepad-plus-plus.org/topic/27298/notepad-v8-8-9-vulnerability-fix) |
+| CVE-2024-43468 | Microsoft Configuration Manager | SQL 注入 | 2026-03-05 | [MSRC CVE-2024-43468](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43468) |
 
-#### 4. CVE-2026-21519 — Microsoft Desktop Windows Manager 類型混淆漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Microsoft Desktop Windows Manager 存在類型混淆漏洞（CWE-843），允許已授權攻擊者本地提升權限 |
-| **影響產品** | Microsoft Windows（多個版本） |
-| **CVSS/嚴重程度** | High |
-| **修補方式** | 套用 Microsoft 2 月份安全更新 |
-| **官方連結** | https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21519 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-03-03** |
+### P2 - 緊急（活躍利用 - Microsoft 零日群集 2026-02-10）
 
-#### 5. CVE-2026-21533 — Microsoft Windows Remote Desktop Services 權限管理不當漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Microsoft Windows Remote Desktop Services 存在權限管理不當漏洞（CWE-269），允許已授權攻擊者本地提升權限 |
-| **影響產品** | Microsoft Windows（多個版本） |
-| **CVSS/嚴重程度** | High |
-| **修補方式** | 套用 Microsoft 2 月份安全更新 |
-| **官方連結** | https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21533 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-03-03** |
+| CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
+|-----|------|----------|----------|----------|
+| CVE-2026-21514 | Microsoft Office Word | 本地提權 (CWE-807) | 2026-03-03 | [MSRC CVE-2026-21514](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21514) |
+| CVE-2026-21519 | Windows Desktop Window Manager | 類型混淆提權 (CWE-843) | 2026-03-03 | [MSRC CVE-2026-21519](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21519) |
+| CVE-2026-21533 | Windows Remote Desktop Services | 權限管理不當提權 (CWE-269) | 2026-03-03 | [MSRC CVE-2026-21533](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21533) |
+| CVE-2026-21510 | Windows Shell | 保護機制失效 (CWE-693) | 2026-03-03 | [MSRC CVE-2026-21510](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21510) |
+| CVE-2026-21513 | MSHTML Framework | 保護機制失效 (CWE-693) | 2026-03-03 | [MSRC CVE-2026-21513](https://msrc.microsoft.com/update-guide/advisory/CVE-2026-21513) |
+| CVE-2026-21525 | Windows Remote Access Connection Manager | NULL 指標 DoS (CWE-476) | 2026-03-03 | [MSRC CVE-2026-21525](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21525) |
 
-#### 6. CVE-2026-21513 — Microsoft MSHTML Framework 保護機制失效漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Microsoft MSHTML Framework 存在保護機制失效漏洞（CWE-693），允許未授權攻擊者透過網路繞過安全功能 |
-| **影響產品** | Microsoft Windows（多個版本） |
-| **CVSS/嚴重程度** | Medium |
-| **修補方式** | 套用 Microsoft 2 月份安全更新 |
-| **官方連結** | https://msrc.microsoft.com/update-guide/advisory/CVE-2026-21513 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-03-03** |
+### P3 - 高優先（SmarterMail 漏洞鏈 - 期限將至）
 
-#### 7. CVE-2026-21525 — Microsoft Windows Remote Access Connection Manager NULL 指標解引用漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Microsoft Windows Remote Access Connection Manager 存在 NULL 指標解引用漏洞（CWE-476），允許未授權攻擊者造成本地服務中斷 |
-| **影響產品** | Microsoft Windows（多個版本） |
-| **CVSS/嚴重程度** | Medium |
-| **修補方式** | 套用 Microsoft 2 月份安全更新 |
-| **官方連結** | https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21525 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-03-03** |
+| CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
+|-----|------|----------|----------|----------|
+| CVE-2025-52691 | SmarterMail | 任意檔案上傳 RCE (CWE-434) | **2026-02-16** | [SmarterTools Release Notes](https://www.smartertools.com/smartermail/release-notes/current) |
+| CVE-2026-23760 | SmarterMail | 認證繞過 (CWE-288) | **2026-02-16** | [SmarterTools Release Notes](https://www.smartertools.com/smartermail/release-notes/current) |
+| CVE-2026-21509 | Microsoft Office | 安全功能繞過 (CWE-807) | **2026-02-16** | [MSRC CVE-2026-21509](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509) |
 
-### P2 - 高優先（活躍利用中 - Apple 設備）
+> **警告**：SmarterMail 漏洞鏈（CVE-2025-52691 + CVE-2026-23760 + CVE-2026-24423）可形成完整攻擊路徑。CVE-2026-21509 已被 APT28 利用攻擊烏克蘭及歐盟政府機構。
 
-#### 8. CVE-2026-20700 — Apple 多平台緩衝區溢位漏洞（本週新增）
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Apple iOS、macOS、tvOS、watchOS 及 visionOS 存在記憶體緩衝區操作限制不當漏洞（CWE-119），具有記憶體寫入能力的攻擊者可執行任意程式碼 |
-| **影響產品** | Apple iOS、macOS、tvOS、watchOS、visionOS（多個版本） |
-| **CVSS/嚴重程度** | High |
-| **修補方式** | 套用 Apple 最新安全更新 |
-| **官方連結** | https://support.apple.com/en-us/126346 / https://support.apple.com/en-us/126348 / https://support.apple.com/en-us/126351 / https://support.apple.com/en-us/126352 / https://support.apple.com/en-us/126353 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-03-05** |
+### P4 - 本週關注（其他活躍利用）
 
-### P3 - 緊急（活躍利用中，本週內完成修補）
-
-#### 9. CVE-2026-21858 — n8n 自動化平台「Ni8mare」未授權 RCE 漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | n8n 平台 Webhook 處理過程中存在 Content-Type 混淆缺陷，未經身分驗證的攻擊者可繞過檔案上傳解析器，讀取伺服器任意檔案，竊取加密金鑰後偽造管理員 Session Cookie，最終執行任意程式碼（RCE） |
-| **影響產品** | n8n >= 1.65.0 <1.121.0 |
-| **CVSS/嚴重程度** | 10.0 (Critical) |
-| **修補方式** | 升級至 n8n 1.121.0 或更新版本 |
-| **官方連結** | https://www.twcert.org.tw/tw/cp-104-10688-91d6d-1.html |
-| **利用狀態** | 高風險，PoC 可能已公開 |
-
-#### 10. CVE-2026-21877 — n8n Git 節點路徑驗證漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | n8n Git 節點功能對儲存庫路徑缺乏足夠驗證，經過身分驗證的攻擊者可藉由惡意路徑操控檔案系統並執行惡意程式碼 |
-| **影響產品** | n8n >= 0.121.2 |
-| **CVSS/嚴重程度** | 10.0 (Critical) |
-| **修補方式** | 升級至安全版本 |
-| **官方連結** | https://www.twcert.org.tw/tw/cp-104-10688-91d6d-1.html |
-| **利用狀態** | 高風險 |
-
-#### 11. CVE-2025-14847 — MongoDB MongoBleed 記憶體資料外洩漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | MongoDB Server 處理 zlib 壓縮訊息時，對解壓後資料長度處理出現錯誤，導致回應中可能夾帶未初始化的堆（heap）記憶體殘留資料 |
-| **影響產品** | MongoDB Server 多個版本 |
-| **CVSS/嚴重程度** | 8.7 (High - CVSS 4.x) |
-| **修補方式** | 更新至 8.2.3、8.0.17、7.0.28、6.0.27、5.0.32 或 4.4.30 |
-| **官方連結** | https://www.twcert.org.tw/tw/cp-104-10656-84f7e-1.html |
-| **利用狀態** | 活躍利用中（CISA KEV），全球逾 8.7 萬台伺服器暴露 |
-
-#### 12. CVE-2025-40551 — SolarWinds Web Help Desk 反序列化漏洞（修補期限已過）
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | SolarWinds Web Help Desk 存在不受信任資料的反序列化漏洞，可導致遠端程式碼執行 |
-| **影響產品** | SolarWinds Web Help Desk |
-| **CVSS/嚴重程度** | Critical |
-| **修補方式** | 依據廠商指示套用安全更新，若無可用緩解措施則停止使用 |
-| **官方連結** | https://www.solarwinds.com/trust-center/security-advisories/cve-2025-40551 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-02-06**（已過期，需立即處理） |
-
-#### 13. CVE-2025-11953 — React Native CLI 命令注入漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | React Native Community CLI 存在作業系統命令注入漏洞，未經驗證的網路攻擊者可透過 Metro Development Server 執行任意執行檔 |
-| **影響產品** | React Native Community CLI |
-| **CVSS/嚴重程度** | Critical |
-| **修補方式** | 依據廠商指示套用安全更新 |
-| **官方連結** | https://github.com/react-native-community/cli/pull/2735 |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | **2026-02-26** |
-
-#### 14. CVE-2025-64328 — Sangoma FreePBX 命令注入漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Sangoma FreePBX Endpoint Manager 存在作業系統命令注入漏洞 |
-| **影響產品** | Sangoma FreePBX |
-| **CVSS/嚴重程度** | Critical |
-| **修補方式** | 依據廠商指示套用安全更新 |
-| **官方連結** | https://github.com/FreePBX/security-reporting/security/advisories/GHSA-vm9p-46mv-5xvw |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | 2026-02-24 |
-
-#### 15. CVE-2019-19006 — Sangoma FreePBX 認證不當漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | Sangoma FreePBX 存在認證不當漏洞，可能允許未授權使用者繞過密碼驗證 |
-| **影響產品** | Sangoma FreePBX |
-| **CVSS/嚴重程度** | Critical |
-| **修補方式** | 依據廠商指示套用安全更新 |
-| **官方連結** | https://wiki.freepbx.org/display/FOP/2019-11-20%2BRemote%2BAdmin%2BAuthentication%2BBypass |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | 2026-02-24 |
-
-#### 16. CVE-2021-39935 — GitLab SSRF 漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | GitLab Community 及 Enterprise Editions 存在伺服器端請求偽造（SSRF）漏洞 |
-| **影響產品** | GitLab Community 及 Enterprise Editions |
-| **CVSS/嚴重程度** | High |
-| **修補方式** | 升級至 GitLab 14.5.2 或更新版本 |
-| **官方連結** | https://about.gitlab.com/releases/2021/12/06/security-release-gitlab-14-5-2-released/ |
-| **利用狀態** | 活躍利用中（CISA KEV） |
-| **CISA 修補期限** | 2026-02-24 |
-
-### P4 - 關注（Critical/High CVSS）
-
-#### 17. CVE-2025-68668 — n8n「N8scape」Python 沙箱逃逸漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | n8n Python 節點中 Pyodide 環境與 JavaScript 之間的互操作機制存在沙箱逃逸漏洞 |
-| **影響產品** | n8n >= 1.0.0 <2.0.0 |
-| **CVSS/嚴重程度** | 9.9 (Critical) |
-| **修補方式** | 升級至安全版本，或設定 N8N_PYTHON_ENABLED=false 暫時停用 |
-| **官方連結** | https://www.twcert.org.tw/tw/cp-104-10688-91d6d-1.html |
-| **利用狀態** | 高風險 |
-
-#### 18. CVE-2025-68613 — n8n 表達式注入漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | n8n 允許經過身分驗證的攻擊者透過表達式注入惡意遠端程式碼 |
-| **影響產品** | n8n >= 0.211.0 <1.120.4 |
-| **CVSS/嚴重程度** | 9.9 (Critical) |
-| **修補方式** | 升級至 1.120.4 或更新版本 |
-| **官方連結** | https://www.twcert.org.tw/tw/cp-104-10688-91d6d-1.html |
-| **利用狀態** | 高風險 |
-
-#### 19. CVE-2026-1427/1428/1429 — 葳橋資訊單一簽入系統多重漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | 葳橋資訊單一簽入系統存在 OS Command Injection 及 Reflected XSS 漏洞 |
-| **影響產品** | 葳橋資訊單一簽入暨電子目錄服務系統（V4）IFTOP_P4_181 之前版本 |
-| **CVSS/嚴重程度** | 8.8 (High) |
-| **修補方式** | 更新至 IFTOP_P4_181 或更新版本 |
-| **官方連結** | https://www.twcert.org.tw/tw/cp-132-10654-23f40-1.html |
-| **利用狀態** | 無已知活躍利用 |
-
-#### 20. CVE-2026-0629 — TP-Link VIGI 系列 IP 攝影機認證繞過漏洞
-| 項目 | 內容 |
-|------|------|
-| **漏洞描述** | TP-Link VIGI 系列 IP 攝影機的密碼恢復功能存在認證繞過漏洞 |
-| **影響產品** | TP-Link VIGI Cx45/Cx55/Cx85/C340S/C540S/C540V/C250 等 30+ 型號 |
-| **CVSS/嚴重程度** | 8.8 (High) |
-| **修補方式** | 更新至最新韌體版本 |
-| **官方連結** | https://www.tp-link.com/us/support/faq/4906/ |
-| **利用狀態** | 無已知活躍利用（僅限區域網路攻擊） |
+| CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
+|-----|------|----------|----------|----------|
+| CVE-2025-40551 | SolarWinds Web Help Desk | 反序列化 RCE | **已過期** | [SolarWinds 安全公告](https://www.solarwinds.com/trust-center/security-advisories/cve-2025-40551) |
+| CVE-2025-11953 | React Native CLI | 命令注入 RCE | 2026-02-26 | [GitHub PR #2735](https://github.com/react-native-community/cli/pull/2735) |
+| CVE-2025-64328 | Sangoma FreePBX | 命令注入 | 2026-02-24 | [GitHub GHSA-vm9p-46mv-5xvw](https://github.com/FreePBX/security-reporting/security/advisories/GHSA-vm9p-46mv-5xvw) |
+| CVE-2019-19006 | Sangoma FreePBX | 認證不當 | 2026-02-24 | [FreePBX Wiki](https://wiki.freepbx.org/display/FOP/2019-11-20%2BRemote%2BAdmin%2BAuthentication%2BBypass) |
+| CVE-2021-39935 | GitLab CE/EE | SSRF | 2026-02-24 | [GitLab 14.5.2](https://about.gitlab.com/releases/2021/12/06/security-release-gitlab-14-5-2-released/) |
 
 ---
 
 ## 安全控制建議
 
-### 通用建議
+### 網路層面
 
-| 層面 | 控制措施 |
-|------|----------|
-| **網路層** | 實施網路分段、部署 IDS/IPS、限制管理介面的網路存取 |
-| **端點層** | 確保所有端點安裝 EDR、啟用作業系統自動更新、實施應用程式白名單 |
-| **身分認證層** | 對所有管理介面啟用多因素認證（MFA）、定期輪替服務帳號密碼 |
-| **資料保護層** | 加密敏感資料（傳輸中與靜態）、定期備份並驗證還原程序 |
-| **供應鏈層** | 強化 CI/CD 管線中的依賴掃描機制、鎖定套件版本 |
-
-### 針對本週威脅
+#### 針對本週威脅
 
 | 威脅 | 建議措施 |
 |------|----------|
-| **SmarterMail 勒索軟體相關漏洞（CVE-2026-24423）** | 立即升級至最新版本；隔離備份郵件資料；審查管理帳號；監控異常檔案上傳或命令執行 |
-| **Microsoft Windows/Office 6 項活躍利用漏洞** | 立即套用 2 月份安全更新；優先處理暴露於網路的系統；監控異常的權限提升活動 |
-| **Apple 多平台漏洞（CVE-2026-20700）** | 立即套用 Apple 最新安全更新；確保所有 iOS、macOS、tvOS、watchOS、visionOS 設備已更新 |
-| **Ivanti 零日漏洞攻擊** | 檢查 Ivanti EPMM 是否已修補；限制管理介面網路存取；監控異常 API 呼叫 |
-| **APT UNC3886 電信業攻擊** | 加強電信業相關系統監控；審查 VPN 及遠端存取日誌；實施網路分段 |
-| **假冒 7-Zip 網站惡意軟體** | 驗證軟體下載來源；使用官方網站或信任的軟體倉庫；實施應用程式白名單 |
-| **n8n 自動化平台漏洞** | 升級至安全版本；限制平台網路存取；暫時停用 Code Node、Git Node 或 Python 執行功能 |
-| **MongoDB MongoBleed 漏洞** | 更新至修補版本；暫時停用 zlib 壓縮；限制 MongoDB 直接暴露於網路 |
+| **SmarterMail 勒索軟體漏洞** | 立即升級；隔離 SmarterMail 伺服器；封鎖 ConnectToHub API 的外部存取；監控異常外連 HTTP 請求 |
+| **Ivanti EPMM 零日漏洞** | 限制 MDM 管理介面網路存取（僅允許受信任 IP）；部署 WAF；監控異常登入與 API 呼叫 |
+| **Microsoft 零日群集** | 優先處理 RDP 暴露的系統；限制 RDP 至受信任 IP 範圍；監控異常權限提升 |
+| **電信基礎設施 APT 攻擊** | 加強周邊防火牆監控；審查 VPN 日誌；對網路設備進行完整性檢查 |
+
+#### 通用建議
+
+- 實施網路分段，限制橫向移動
+- 確保邊界設備（防火牆、VPN、負載平衡器）已更新
+- 啟用 IDS/IPS 並更新特徵碼
+- 部署 DNS 過濾封鎖已知惡意網域
+
+### 端點層面
+
+#### 針對本週威脅
+
+| 威脅 | 建議措施 |
+|------|----------|
+| **Windows 6 項零日漏洞** | 立即部署 2026 年 2 月份安全更新；特別關注使用 RDS 的系統；啟用 Attack Surface Reduction (ASR) 規則 |
+| **Apple CVE-2026-20700** | 確保所有 Apple 設備啟用自動更新；透過 MDM 強制部署安全更新；暫時限制不受信任應用程式 |
+| **Notepad++ CVE-2025-15556** | 從[官方網站](https://notepad-plus-plus.org/)手動下載更新至 v8.8.9；驗證下載檔案數位簽章 |
+| **假冒 7-Zip 網站** | 實施軟體白名單；驗證所有軟體下載來源；教育使用者辨識假冒網站 |
+
+#### 通用建議
+
+- 確保 EDR 解決方案已部署並保持最新
+- 實施應用程式白名單
+- 定期備份關鍵資料並測試還原程序
+- 監控端點異常程式執行行為
+
+### 身分認證層面
+
+#### 針對本週威脅
+
+| 威脅 | 建議措施 |
+|------|----------|
+| **AI 社交工程攻擊（UNC1069）** | 更新安全意識培訓，納入 AI 生成內容（深偽）識別；對視訊會議敏感請求要求二次確認 |
+| **APT28 魚叉式釣魚** | 警惕偽裝為政府或外交文件的 Office 附件；加強郵件附件過濾 |
+| **WhatsApp 帳戶接管詐騙** | 啟用所有應用程式雙因素認證；教育員工識別「已知聯絡人」的異常請求 |
+
+#### 通用建議
+
+- 對所有關鍵系統實施多因素認證 (MFA)
+- 定期審核特權帳戶與存取權限
+- 實施 Privileged Access Management (PAM) 解決方案
+- 定期輪替服務帳號密碼
 
 ---
 
 ## 緩解策略
 
-以下針對尚無修補方案或需要額外緩解的威脅提供策略。
+針對尚無修補或無法立即更新的情況：
 
-### 1. SmarterMail 勒索軟體相關漏洞（CVE-2026-24423）
+### 1. SmarterMail（若無法立即更新）
 
-由於此漏洞已確認與勒索軟體活動相關，需採取最高優先級措施。
+| 措施 | 說明 |
+|------|------|
+| 網路隔離 | 限制 SmarterMail 伺服器僅接受內部網路連線 |
+| API 封鎖 | 在防火牆層級阻斷對 ConnectToHub API 端點的存取 |
+| 備份隔離 | 立即備份郵件資料，存放於隔離環境 |
+| 加強監控 | 監控異常檔案上傳、外連請求、命令執行 |
 
-**緩解措施：**
-- 立即備份所有郵件資料（隔離備份，避免連線至生產環境）
-- 限制 SmarterMail 伺服器的網路存取（僅允許必要的 SMTP/IMAP/POP3 流量）
-- 封鎖對 ConnectToHub API 的外部存取
-- 審查並移除所有可疑的管理帳號
-- 監控系統是否有異常檔案上傳或命令執行
-- 若無法立即修補，考慮暫時停止服務
+> **有效期限**：直到完成升級 | **CISA 修補期限**：2026-02-26
 
-> **有效期限**：直到完成升級
-> **CISA 修補期限**：2026-02-26
+### 2. Ivanti EPMM（MDM）
 
-### 2. Microsoft Windows/Office 多項活躍利用漏洞
+| 措施 | 說明 |
+|------|------|
+| 管理介面限制 | 將管理介面限制為僅允許 VPN 連線 |
+| 存取日誌審計 | 審查過去 30 天的存取日誌，尋找異常登入 |
+| 用戶資料審核 | 確認是否有未授權的配置變更或用戶資料存取 |
 
-**緩解措施：**
-- 立即套用 2026 年 2 月份 Patch Tuesday 安全更新
-- 優先處理 Remote Desktop Services、Windows Shell、MSHTML Framework 相關系統
-- 監控 Windows 事件日誌中的異常權限提升活動
-- 限制 RDP 存取至受信任 IP 範圍
-- 啟用 Windows Defender Credential Guard
-- 對 Office 文件啟用 Protected View 並限制巨集執行
+> **有效期限**：直到 Ivanti 發布修補 | **重新評估日期**：2026-02-21
 
-> **有效期限**：直到完成修補
-> **CISA 修補期限**：2026-03-03
+### 3. Notepad++（若無法立即更新）
 
-### 3. Apple 多平台漏洞（CVE-2026-20700）
+| 措施 | 說明 |
+|------|------|
+| 停用自動更新 | 暫時停用 WinGUp 自動更新功能 |
+| 手動更新 | 從官方網站手動下載並驗證數位簽章 |
+| 網路監控 | 監控異常的更新流量 |
 
-**緩解措施：**
-- 立即透過系統偏好設定/設定 App 套用最新系統更新
-- 確保所有受管理的 iOS、macOS、tvOS、watchOS、visionOS 設備已更新
-- 透過 MDM 強制推送更新至企業設備
-- 監控異常的記憶體存取或程式碼執行行為
+> **有效期限**：直到完成更新 | **CISA 修補期限**：2026-03-05
 
-> **有效期限**：直到完成更新
-> **CISA 修補期限**：2026-03-05
+### 4. Microsoft Office 2016/2019（CVE-2026-21509）
 
-### 4. Ivanti EPMM 零日漏洞（針對本週威脅態勢）
+| 措施 | 說明 |
+|------|------|
+| 套用臨時緩解 | 依 Microsoft 提供的臨時緩解措施設定 |
+| 巨集限制 | 僅允許數位簽章的巨集執行 |
+| 附件過濾 | 在郵件閘道加強可疑 .doc/.docx 附件過濾 |
+| Protected View | 確保 Office Protected View 已啟用 |
 
-**緩解措施：**
-- 檢查 Ivanti EPMM 是否為最新修補版本
-- 限制管理介面的網路存取（僅允許受信任 IP）
-- 審查存取日誌是否有異常活動
-- 監控異常的 API 呼叫行為
-- 若尚未修補，考慮暫時將 EPMM 從網際網路隔離
+> **有效期限**：直到最終修補發布 | **CISA 修補期限**：2026-02-16
 
-> **有效期限**：直到確認已修補
-> **重新評估日期**：2026-02-16
+### 5. n8n 自動化平台（若使用）
 
-### 5. n8n 自動化平台漏洞（CVE-2026-21858、CVE-2026-21877 等）
+| 措施 | 說明 |
+|------|------|
+| 版本升級 | 升級至 1.121.0 或更新版本 |
+| 功能停用 | 設定 `N8N_PYTHON_ENABLED=false`；透過 `NODES_EXCLUDE` 停用 Code/Git Node |
+| 網路隔離 | 避免將 n8n 直接暴露於網際網路 |
 
-**緩解措施：**
-- 升級至官方安全版本
-- 若無法立即更新：
-  - 透過 `NODES_EXCLUDE` 環境變數暫時停用 Code Node 或 Git Node
-  - 設定 `N8N_PYTHON_ENABLED=false` 關閉 Python 執行功能
-- 避免將 n8n 直接暴露於網際網路
-- 強制啟用身分驗證與 MFA
-- 監控工作流程日誌中的異常 child_process 建立或檔案系統寫入
-
-> **有效期限**：直到升級至安全版本
-> **重新評估日期**：2026-02-16
-
-### 6. SolarWinds Web Help Desk 漏洞（CVE-2025-40551）— 修補期限已過
-
-**緩解措施：**
-- 立即套用修補或停止服務
-- 隔離 Web Help Desk 伺服器
-- 審查系統日誌以確認是否遭入侵
-- 若發現入侵跡象，啟動事件回應程序
-
-> **有效期限**：立即處理
-> **狀態**：緊急（修補期限已過）
-
-### 7. 假冒軟體下載網站防範
-
-針對本週發現的假冒 7-Zip 網站惡意軟體散布活動。
-
-**緩解措施：**
-- 實施軟體白名單，僅允許從官方來源安裝軟體
-- 使用 DNS 過濾封鎖已知惡意網域
-- 教育使用者辨識假冒網站
-- 監控端點的異常程式執行行為
-- 在下載軟體前驗證數位簽章
-
-> **有效期限**：持續執行
-> **重新評估日期**：每週
+> **有效期限**：直到升級至安全版本 | **重新評估日期**：2026-02-16
 
 ---
 
@@ -386,35 +200,27 @@ nav_exclude: false
 
 ### 適用範圍與限制
 
-1. **環境差異**：本報告所列建議為通用性質，實際實施前請評估組織特定環境、業務需求和風險承受度
-
-2. **時效性**：報告基於 2026-02-07 至 2026-02-13 期間的公開資訊，新漏洞可能在報告發布後出現
-
-3. **完整性**：報告涵蓋主要公開來源（CISA KEV、CISA ICS-CERT、TWCERT/CC、GovCERT.HK、GitHub Security Advisories），不包含非公開威脅情報
-
-4. **供應商確認**：第三方產品可能使用受影響的開源元件，建議向供應商確認是否受影響
-
-5. **翻譯風險**：部分非英文來源經 AI 處理，修補建議請以官方原文為準
+1. **環境差異**：本建議為通用性質，實際實施需依據組織環境調整
+2. **時效性**：基於 2026-02-07 至 2026-02-14 期間的公開資訊
+3. **完整性**：不包含非公開威脅情報
+4. **供應商確認**：第三方產品可能使用受影響元件，請向供應商確認
 
 ### 可能的副作用
 
 | 建議措施 | 可能副作用 | 替代方案 |
 |----------|------------|----------|
-| 套用 Microsoft 2 月份更新 | 可能影響部分應用程式相容性 | 先於測試環境驗證 |
-| 套用 Apple 更新 | 可能影響部分 App 相容性 | 先於測試設備驗證 |
+| Microsoft 2 月份更新 | 可能影響應用程式相容性 | 先於測試環境驗證 |
+| Apple 更新 | 可能影響部分 App 相容性 | 先於測試設備驗證 |
 | 暫停 SmarterMail 服務 | 郵件服務中斷 | 套用修補後重新啟用 |
-| 停用 n8n Python/Git Node | 依賴這些功能的工作流程將失效 | 升級至安全版本後恢復 |
-| 停用 MongoDB zlib 壓縮 | 網路傳輸效能下降 | 儘速升級至修補版本 |
+| 停用 Notepad++ 自動更新 | 無法自動獲得修補 | 手動更新至 v8.8.9 |
 | 隔離 Ivanti EPMM | 行動裝置管理功能受限 | 修補後恢復 |
-| 重設管理憑證 | 短暫中斷管理存取 | 安排維護時段執行 |
 
-### 測試建議
+### 本週特別警示
 
-1. **修補前測試**：在測試環境中套用安全更新，確認不影響系統正常運作
-2. **修補後驗證**：使用漏洞掃描工具確認漏洞已被修補
-3. **回滾計畫**：為每項修補準備回滾方案
-4. **功能驗證**：修補後驗證關鍵業務流程是否正常運作
-5. **監控期間**：修補後至少監控 48 小時
+1. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級處理
+2. **AI 社交工程**：UNC1069 首次使用 AI 生成影片進行攻擊，傳統安全培訓可能不足以應對
+3. **假冒軟體網站**：假冒 7-Zip 網站長期散布惡意軟體，下載軟體請驗證官方來源
+4. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，UNC3886 攻擊電信基礎設施
 
 ---
 
@@ -433,6 +239,18 @@ nav_exclude: false
 
 ---
 
-> 報告產出時間：2026-02-13（更新）
-> 資料來源：CISA KEV、CISA ICS-CERT、TWCERT/CC、GovCERT.HK、GitHub Security Advisories、NVD
-> 本報告使用 Qdrant 向量資料庫進行關聯分析
+## 自我審核結果
+
+- [x] 是否包含完整免責聲明？
+- [x] 修補建議是否全部來自官方來源？
+- [x] 是否清楚區分「通用建議」與「針對本週威脅」？
+- [x] 緩解策略是否標註有效期限？
+- [x] 是否有可能被誤解為「保證安全」的措辭？（無）
+- [x] 是否標註建議的適用範圍與限制？
+- [x] 所有引用的漏洞是否有正確的 CVE 編號？
+- [x] 格式是否適合 IT/資安管理人員快速閱讀？
+
+---
+
+> 產出時間：2026-02-14
+> 資料來源：CISA KEV、Microsoft MSRC、Apple Security、SmarterTools、SolarWinds、Notepad++、NCSC-FI、CERT-UA、Singapore CSA、Mandiant
