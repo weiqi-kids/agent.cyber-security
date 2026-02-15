@@ -8,14 +8,14 @@ nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-02-15
+date: 2026-02-16
 ---
 
 # 威脅態勢分析 — 2026 第 07 週
 
-> 涵蓋期間：2026-02-08 至 2026-02-14
+> 涵蓋期間：2026-02-08 至 2026-02-15
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-02-15
+> 產出時間：2026-02-16
 
 ---
 
@@ -435,27 +435,78 @@ SANS ISC 發布技術分析報告，探討 Windows Subsystem for Linux（WSL）�
 
 ## 跨 Layer 關聯分析
 
-### Qdrant 語意查詢（執行狀態）
+### Qdrant 語意查詢結果
 
-本週期嘗試執行以下 Qdrant 語意查詢：
+本週期成功執行以下 Qdrant 語意查詢，用於跨 Layer 關聯分析：
 
-| 查詢 | 狀態 | 備註 |
-|------|------|------|
-| 「活躍利用 遠端程式碼執行」 | 未成功 | Python 依賴未安裝 |
-| 「勒索軟體 攻擊事件」 | 未成功 | Python 依賴未安裝 |
-| 「APT 進階持續威脅」 | 未成功 | Python 依賴未安裝 |
+#### 查詢 1：「勒索軟體攻擊」
 
-> 注意：Qdrant 查詢腳本需要 `requests` 與 `openai` 套件，本次執行環境未安裝。建議執行 `pip install requests openai` 後重新嘗試。
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.6196 | Vite RCE 漏洞 | exploit_intelligence | active_exploitation |
+| 0.5675 | 駭客偽冒通訊軟體，釣魚攻擊再升級 | security_news_facts | attack_incident |
+| 0.5295 | Contagious Interview VS Code Tasks 攻擊 | security_news_facts | attack_incident |
+| 0.5275 | 從 Windows 到 Linux 勒索軟體 BERT 的演化與擴散 | security_news_facts | attack_incident |
 
-### 替代分析：基於檔案系統的跨 Layer 關聯
+**關聯發現**：勒索軟體攻擊與社交工程、IDE 濫用攻擊手法呈現關聯，BERT 勒索軟體的跨平台演化值得關注。
 
-**CVE-2026-21509 跨 Layer 關聯**：
+#### 查詢 2：「遠端程式碼執行 RCE」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.7118 | Critical RCE Vulnerability React2Shell Under Mass Exploitation | security_news_facts | vulnerability_disclosure |
+| 0.7089 | Redis 8.0.2 - RCE | exploit_intelligence | poc_available |
+| 0.6909 | motionEye 0.43.1b4 - RCE | exploit_intelligence | poc_available |
+| 0.6760 | RPi-Jukebox-RFID 2.8.0 - Remote Command Execution | exploit_intelligence | poc_available |
+
+**關聯發現**：React2Shell（CVE-2025-55182）RCE 漏洞正遭大規模利用，Redis 與 motionEye 的 PoC 也已公開，需優先修補。
+
+#### 查詢 3：「BeyondTrust CVE-2026-1731」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.6675 | BeyondTrust Remote Support and PRA Vulnerability - CVE-2026-1731 (Actively Exploited) | vulnerability_tracking | critical_high |
+| 0.6314 | BeyondTrust Products Remote Code Execution Vulnerability | vulnerability_tracking | critical_high |
+
+**關聯發現**：CVE-2026-1731 在 vulnerability_tracking 層有加拿大 Cyber Centre 與 BeyondTrust 官方兩處來源確認，屬於 critical_high 分類，且已確認活躍利用。
+
+#### 查詢 4：「APT 進階持續威脅 國家級駭客」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.5667 | 駭客偽冒通訊軟體，釣魚攻擊再升級 | security_news_facts | attack_incident |
+| 0.5559 | CrowdStrike 深入解析 2025 駭客戰術演進 | security_news_facts | industry_trend |
+| 0.5406 | 半導體戰略背後的網路戰–資安攻擊鎖定設計、生產與財經分析師 | security_news_facts | attack_incident |
+| 0.5262 | 駭客利用 SonicWall 裝置植入「隱形後門」 | security_news_facts | attack_incident |
+
+**關聯發現**：APT 組織持續針對半導體產業與關鍵基礎設施，攻擊手法演進包含社交工程與邊界設備滲透（SonicWall）。
+
+#### 查詢 5：「供應鏈攻擊」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.5054 | 半導體戰略背後的網路戰 | security_news_facts | attack_incident |
+| 0.4984 | Semiconductor Industry Targeted by Cyber Espionage Campaigns | security_news_facts | industry_trend |
+| 0.4731 | Data breach against an industrial system supplier | security_news_facts | attack_incident |
+| 0.4699 | Dependency confusion exposes to attacks | security_news_facts | attack_incident |
+
+**關聯發現**：供應鏈攻擊模式涵蓋半導體產業鏈滲透、工業系統供應商入侵、依賴套件混淆攻擊等多種面向。
+
+### 跨 Layer 關聯總結
+
+**CVE-2026-21509 完整追蹤**：
 - **exploit_intelligence/active_exploitation**：CISA KEV 列入，確認活躍利用
 - **security_news_facts/attack_incident**：CERT-UA 報告 APT28 利用此漏洞攻擊烏克蘭與歐盟
+- **vulnerability_tracking/critical_high**：HKCERT 發布安全公告，確認野外利用
 
 **SmarterMail 漏洞鏈跨 Layer 關聯**：
-- **exploit_intelligence/active_exploitation**：CVE-2026-24423 列入 KEV
-- **threat_feeds**：潛在與勒索軟體 C2 活動相關（需進一步驗證）
+- **exploit_intelligence/active_exploitation**：CVE-2026-24423 列入 KEV，確認勒索軟體利用
+- **vulnerability_tracking**：三個 CVE 形成完整攻擊鏈（上傳 → 繞過 → RCE）
+
+**BeyondTrust CVE-2026-1731 跨 Layer 關聯**：
+- **exploit_intelligence/active_exploitation**：CISA KEV 列入（2026-02-13）
+- **vulnerability_tracking/critical_high**：加拿大 Cyber Centre 與官方公告雙來源確認
+- **修補期限**：2026-02-16（緊急）
 
 ---
 
@@ -480,8 +531,6 @@ SANS ISC 發布技術分析報告，探討 Windows Subsystem for Linux（WSL）�
 
 7. **事件歸因**：威脅行為者歸因基於公開報導，實際攻擊者身份可能與報導不同。
 
-8. **Qdrant 查詢限制**：本週期 Qdrant 語意查詢因環境依賴問題未能執行，跨 Layer 關聯分析基於檔案系統手動比對。
-
 本報告僅供參考，不構成完整的威脅評估。重大安全決策請結合多方情資來源。
 
 ---
@@ -490,17 +539,17 @@ SANS ISC 發布技術分析報告，探討 Windows Subsystem for Linux（WSL）�
 
 - [x] 是否包含「資料限制與免責聲明」？
 - [x] 所有事件是否標註來源與日期？
-- [x] 趨勢分析是否基於足夠樣本？（17 個活躍利用漏洞、669 資安新聞、3175 漏洞追蹤、多國 CERT 報告）
+- [x] 趨勢分析是否基於足夠樣本？（40 個活躍利用漏洞、1,917 個 PoC、669 資安新聞、3,175 漏洞追蹤、多國 CERT 報告）
 - [x] 新興威脅識別是否標註信心水準？
 - [x] 是否有未經證實的推論需標註為「推測」？（已於相關段落標註）
 - [x] 統計數據是否準確？（已核對各 Layer 數量）
 - [x] 格式是否符合目標受眾閱讀習慣？
-- [ ] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（環境限制，已說明替代方案）
+- [x] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（已執行 5 次語意查詢）
 
 ---
 
-> 報告產出時間：2026-02-15
-> 資料截止時間：2026-02-15 08:00 UTC
-> 資料來源：CISA (US)、NCSC-FI (Finland)、SK-CERT (Slovakia)、Singapore CSA、CERT-UA (Ukraine)、SANS ISC、Mandiant、The Record、Fortra、Apple Security、Microsoft Security、abuse.ch、Exploit-DB
+> 報告產出時間：2026-02-16
+> 資料截止時間：2026-02-16 00:00 UTC
+> 資料來源：CISA (US)、NCSC-FI (Finland)、SK-CERT (Slovakia)、Singapore CSA、CERT-UA (Ukraine)、SANS ISC、Mandiant、The Record、Fortra、Apple Security、Microsoft Security、abuse.ch、Exploit-DB、Canadian Cyber Centre
 > 分析模型：Claude Opus 4.5
-> 版本：2.2（2026-02-15 更新：新增波蘭能源攻擊、WSL 惡意軟體分析、BeyondTrust CVE-2026-1731、本週 PoC 追蹤）
+> 版本：2.3（2026-02-16 更新：新增完整 Qdrant 跨 Layer 關聯分析、更新統計數據）
