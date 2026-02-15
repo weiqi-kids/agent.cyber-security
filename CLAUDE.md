@@ -105,6 +105,51 @@ python3 core/scripts/qdrant_query.py --query "勒索軟體" --filter category=ac
 
 > **⚠️ 強制規則**：產出報告時，**必須**執行至少 3 次 Qdrant 語意查詢進行跨 Layer 關聯分析。若未使用 Qdrant，報告視為不完整。
 
+### 步驟六：SEO 優化（可選）
+
+Narrator 報告產出後，可選擇性執行 SEO 優化流程。
+
+#### 觸發條件
+
+- 使用者說「執行 SEO 優化」或「SEO {報告路徑}」
+- 使用者說「執行完整流程含 SEO」
+- **不自動執行**：完整流程預設不含 SEO，需明確要求
+
+#### 執行流程
+
+1. **SEO Writer**：讀取 `seo/CLAUDE.md` 規則庫，分析指定報告，產出 SEO 優化建議
+   - 產出 JSON-LD Schema（必填 7 種 + 條件式）
+   - 產出 SGE/AEO 標記建議
+   - 產出 Meta 標籤建議
+
+2. **SEO Reviewer**：讀取 `seo/review/CLAUDE.md`，檢查 Writer 輸出
+   - 執行 7 大檢查清單
+   - 回報 pass/fail
+   - 若 fail，Writer 修正後重新檢查
+
+3. **迭代直到 pass**：Reviewer 說 "pass" 後，SEO 優化完成
+
+#### SEO 輸出位置
+
+```
+docs/Narrator/{mode_name}/
+├── {報告}.md                    # 原始報告
+└── {報告}.seo.json              # SEO 優化結果（JSON-LD + Meta + 建議）
+```
+
+#### SEO 優化結果格式
+
+```json
+{
+  "generated_at": "2026-02-15T10:00:00+08:00",
+  "source_file": "docs/Narrator/threat_landscape/2026-W07-threat-landscape.md",
+  "json_ld": { "@context": "https://schema.org", "@graph": [...] },
+  "meta_tags": { "title": "...", "description": "...", "og": {...}, "twitter": {...} },
+  "sge_recommendations": [...],
+  "reviewer_status": "pass"
+}
+```
+
 ---
 
 ## 模型與子代理指派規則
@@ -121,6 +166,8 @@ python3 core/scripts/qdrant_query.py --query "勒索軟體" --filter category=ac
 | 步驟三 | REVIEW_NEEDED 檢查 | — | — | — | 與使用者互動，無需子代理 |
 | 步驟四 | 動態發現所有 Mode | `sonnet` | `Bash` | 否 | 純目錄掃描，無需推理 |
 | 步驟五 | Mode 報告產出 | `opus` | `general-purpose` | 否 | 需要跨來源綜合分析、趨勢判斷 |
+| 步驟六 | SEO Writer | `sonnet` | `general-purpose` | 否 | 依規則庫產出，無需高階推理 |
+| 步驟六 | SEO Reviewer | `sonnet` | `general-purpose` | 否 | 依 checklist 檢查，無需高階推理 |
 
 > **強制規則**：只有步驟五（Mode 報告產出）使用 `opus`，其餘所有步驟一律使用 `sonnet`。
 > **子代理規則**：需要寫入檔案的 Task 必須使用 `general-purpose`（透過 Write 工具寫檔），純腳本執行使用 `Bash`。
@@ -192,7 +239,13 @@ failed_batches: [(start, end), ...]      # 失敗批次（待重試）
 - 「只跑 fetch」→ 只執行所有 Layer 的 fetch.sh，不萃取
 - 「只跑萃取」→ 假設 `docs/Extractor/{layer_name}/raw/` 已有 JSONL 資料，只做萃取 + update
 
-> 指定執行時，模型指派規則仍然生效。Layer 相關任務使用 `sonnet`，Mode 相關任務使用 `opus`。
+### SEO 指定執行
+
+- 「執行 SEO 優化」→ 對所有最新 Mode 報告執行 SEO Writer → Reviewer 流程
+- 「SEO {報告路徑}」→ 對指定報告執行 SEO 優化（如 `SEO docs/Narrator/threat_landscape/2026-W07-threat-landscape.md`）
+- 「執行完整流程含 SEO」→ 步驟一至六全部執行
+
+> 指定執行時，模型指派規則仍然生效。Layer 相關任務使用 `sonnet`，Mode 相關任務使用 `opus`，SEO 任務使用 `sonnet`。
 > **注意**：即使是指定執行 Mode，若來源 Layer 有 REVIEW_NEEDED 標記，仍須先解決後才產出報告。
 
 ---

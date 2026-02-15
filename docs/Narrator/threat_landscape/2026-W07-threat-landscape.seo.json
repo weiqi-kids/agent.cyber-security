@@ -1,0 +1,322 @@
+{
+  "seo_version": "1.0",
+  "generated_at": "2026-02-15T16:00:00+08:00",
+  "source_file": "2026-W07-threat-landscape.md",
+  "review_status": "pass",
+
+  "meta_tags": {
+    "title": "2026 第 07 週威脅態勢分析 — 資安情報週報 | Cyber Security Intelligence",
+    "title_length": 48,
+    "description": "2026-02-08 至 2026-02-14 資安威脅週報：APT28 利用 CVE-2026-21509 攻擊烏克蘭、CISA KEV 新增 BeyondTrust CVE-2026-1731、波蘭能源基礎設施遭協調攻擊、北韓 UNC1069 首次使用 AI 生成影片進行社交工程。",
+    "description_length": 147,
+    "keywords": "威脅態勢, 資安週報, CVE-2026-21509, APT28, CISA KEV, BeyondTrust, 波蘭能源攻擊, UNC1069, AI 社交工程, 2026 W07",
+    "og_title": "2026 第 07 週威脅態勢分析 — 資安情報週報",
+    "og_description": "2026-02-08 至 2026-02-14 資安威脅週報：APT28 利用 CVE-2026-21509 攻擊烏克蘭、CISA KEV 新增多項活躍利用漏洞、波蘭能源基礎設施遭協調攻擊。",
+    "og_type": "article",
+    "og_image": "{{SITE_URL}}/assets/images/threat-landscape-w07-2026.png",
+    "og_image_alt": "2026 第 07 週威脅態勢分析週報封面",
+    "twitter_card": "summary_large_image",
+    "article_published_time": "2026-02-15",
+    "article_modified_time": "2026-02-15",
+    "article_author": "資安情報分析團隊"
+  },
+
+  "json_ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "{{CANONICAL_URL}}#webpage",
+        "url": "{{CANONICAL_URL}}",
+        "name": "2026 第 07 週威脅態勢分析 — 資安情報週報",
+        "description": "2026-02-08 至 2026-02-14 資安威脅週報：APT28 利用 CVE-2026-21509 攻擊烏克蘭、CISA KEV 新增 BeyondTrust CVE-2026-1731、波蘭能源基礎設施遭協調攻擊。",
+        "inLanguage": "zh-TW",
+        "isPartOf": { "@id": "{{SITE_URL}}#website" },
+        "primaryImageOfPage": { "@type": "ImageObject", "url": "{{SITE_URL}}/assets/images/threat-landscape-w07-2026.png" },
+        "datePublished": "2026-02-15",
+        "dateModified": "2026-02-15",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".article-summary",
+            ".speakable-content",
+            ".key-takeaway",
+            ".key-answer",
+            ".expert-quote",
+            ".actionable-steps li",
+            ".faq-answer-content",
+            ".threat-summary"
+          ]
+        }
+      },
+      {
+        "@type": "NewsArticle",
+        "@id": "{{CANONICAL_URL}}#article",
+        "mainEntityOfPage": {
+          "@id": "{{CANONICAL_URL}}#webpage",
+          "significantLink": [
+            "{{SITE_URL}}/docs/Narrator/defense_advisory/2026-W07-defense-advisory/",
+            "{{SITE_URL}}/docs/Narrator/threat_landscape/2026-W06-threat-landscape/"
+          ]
+        },
+        "headline": "2026 第 07 週威脅態勢分析",
+        "alternativeHeadline": "Weekly Threat Landscape Report - 2026 W07",
+        "description": "2026-02-08 至 2026-02-14 資安威脅週報，涵蓋 APT28 攻擊活動、CISA KEV 更新、波蘭能源攻擊、AI 社交工程等重大威脅。",
+        "image": { "@type": "ImageObject", "url": "{{SITE_URL}}/assets/images/threat-landscape-w07-2026.png", "width": 1200, "height": 630 },
+        "author": { "@id": "{{SITE_URL}}/about#person" },
+        "publisher": { "@id": "{{SITE_URL}}#organization" },
+        "datePublished": "2026-02-15",
+        "dateModified": "2026-02-15",
+        "articleSection": "威脅態勢分析",
+        "keywords": "威脅態勢, 資安週報, CVE, APT, CISA KEV, 漏洞分析, 惡意軟體",
+        "wordCount": 4200,
+        "inLanguage": "zh-TW",
+        "isAccessibleForFree": true,
+        "dateline": "2026 年第 7 週（2026-02-08 至 2026-02-14）",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "{{SITE_URL}}#website",
+          "name": "資安情報分析平台",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{{SITE_URL}}/search?q={search_term}",
+            "query-input": "required name=search_term"
+          }
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{SITE_URL}}/about#person",
+        "name": "資安情報分析團隊",
+        "url": "{{SITE_URL}}/about",
+        "image": "{{SITE_URL}}/assets/images/team-avatar.png",
+        "jobTitle": "威脅情報分析師",
+        "worksFor": { "@type": "Organization", "name": "Cyber Security Intelligence" },
+        "description": "專注於全球資安威脅趨勢分析、漏洞情報追蹤與防禦建議的專業團隊",
+        "sameAs": ["{{GITHUB_URL}}", "{{LINKEDIN_URL}}"],
+        "knowsAbout": [
+          "威脅情報分析",
+          "漏洞研究",
+          "惡意軟體分析",
+          "事件回應",
+          "APT 追蹤"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CISSP",
+            "credentialCategory": "Professional Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CEH",
+            "credentialCategory": "Professional Certificate"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "{{SITE_URL}}#organization",
+        "name": "Cyber Security Intelligence",
+        "url": "{{SITE_URL}}",
+        "logo": { "@type": "ImageObject", "url": "{{SITE_URL}}/assets/images/logo.png", "width": 600, "height": 60 },
+        "sameAs": ["{{GITHUB_URL}}"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "security@example.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "首頁", "item": "{{SITE_URL}}" },
+          { "@type": "ListItem", "position": 2, "name": "威脅態勢分析", "item": "{{SITE_URL}}/docs/Narrator/threat_landscape/" },
+          { "@type": "ListItem", "position": 3, "name": "2026 第 07 週", "item": "{{CANONICAL_URL}}" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "2026 第 7 週有哪些重大資安事件？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "主要事件包括：(1) APT28 利用 CVE-2026-21509 攻擊烏克蘭及歐盟政府機構；(2) 波蘭能源基礎設施遭協調式網路攻擊，約 30 座發電場受影響；(3) 北韓 UNC1069 首次使用 AI 生成影片進行社交工程攻擊；(4) CISA 新增 BeyondTrust CVE-2026-1731 等多項活躍利用漏洞。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "CVE-2026-1731 是什麼漏洞？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CVE-2026-1731 是 BeyondTrust Remote Support 和 Privileged Remote Access 產品的 OS 命令注入漏洞。未經身份驗證的攻擊者可遠端執行系統命令，CISA 修補期限為 2026-02-16。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "本週有哪些已確認被勒索軟體利用的漏洞？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CVE-2026-24423（SmarterMail 缺失認證 RCE）已確認被勒索軟體利用，CISA 修補期限為 2026-02-26。建議立即升級 SmarterMail 並隔離伺服器。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "AI 技術如何被用於網路攻擊？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "北韓威脅行為者 UNC1069 首次明確記錄使用 AI 生成影片進行社交工程攻擊，結合假 Zoom 會議與遭駭 Telegram 帳號，針對加密貨幣產業部署 7 個惡意程式家族。這標誌著 AI 技術正式成為國家級攻擊工具鏈的一部分。"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "{{CANONICAL_URL}}#primaryimage",
+        "url": "{{SITE_URL}}/assets/images/threat-landscape-w07-2026.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "2026 第 07 週威脅態勢分析週報封面圖",
+        "representativeOfPage": true,
+        "license": "{{SITE_URL}}/license",
+        "acquireLicensePage": "{{SITE_URL}}/license",
+        "creditText": "Cyber Security Intelligence"
+      },
+      {
+        "@type": "DataFeed",
+        "@id": "{{CANONICAL_URL}}#datafeed",
+        "name": "2026 第 07 週威脅情報摘要",
+        "description": "涵蓋 2026-02-08 至 2026-02-14 期間的資安威脅情報彙整",
+        "dateModified": "2026-02-15",
+        "provider": { "@id": "{{SITE_URL}}#organization" },
+        "dataFeedElement": [
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-15",
+            "item": {
+              "@type": "Thing",
+              "name": "exploit_intelligence",
+              "description": "2026 年累計 1,167 筆，本週新增 17 筆"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-15",
+            "item": {
+              "@type": "Thing",
+              "name": "security_news_facts",
+              "description": "2026 年累計 669 筆，本週新增 57 筆"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-15",
+            "item": {
+              "@type": "Thing",
+              "name": "vulnerability_tracking",
+              "description": "2026 年累計 3,175 筆，本週新增 1,605 筆"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-15",
+            "item": {
+              "@type": "Thing",
+              "name": "threat_feeds",
+              "description": "2026 年累計 24,210 筆，本週新增 2,816 筆"
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "sge_markers": {
+    "key_answers": [
+      {
+        "h2": "執行摘要",
+        "data_question": "2026 第 7 週有哪些重大資安威脅？",
+        "suggested_content": "本週威脅態勢持續嚴峻：APT28 利用 CVE-2026-21509 攻擊烏克蘭及歐盟、CISA KEV 新增 BeyondTrust CVE-2026-1731（修補期限 3 天內）、波蘭能源基礎設施遭協調攻擊、北韓 UNC1069 首次使用 AI 生成影片進行社交工程。",
+        "css_class": ".key-answer"
+      },
+      {
+        "h2": "近期重大資安事件",
+        "data_question": "波蘭能源攻擊有多嚴重？",
+        "suggested_content": "約 30 座風力與太陽能發電場受影響，攻擊者部署 wiper 惡意軟體摧毀系統資料並損壞 OT 設備韌體，波蘭 CERT 評估攻擊如同「蓄意縱火」。",
+        "css_class": ".key-answer"
+      },
+      {
+        "h2": "漏洞趨勢分析",
+        "data_question": "本週有哪些需要緊急修補的漏洞？",
+        "suggested_content": "BeyondTrust CVE-2026-1731（修補期限 2026-02-16）、SmarterMail CVE-2026-24423（已確認勒索軟體利用）、Microsoft 6 項零日漏洞群集（修補期限 2026-03-03）。",
+        "css_class": ".key-answer"
+      }
+    ],
+    "key_takeaways": [
+      "BeyondTrust CVE-2026-1731 修補期限僅剩 1 天（2026-02-16），需立即處置",
+      "SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級",
+      "AI 技術正式成為國家級攻擊工具鏈的一部分（UNC1069 案例）"
+    ],
+    "expert_quote": {
+      "quote": "波蘭 CERT 評估此次攻擊如同『蓄意縱火』，約 30 座發電設施受影響。",
+      "source": "波蘭 CERT",
+      "context": "針對波蘭能源基礎設施的協調式網路攻擊"
+    },
+    "actionable_steps": [
+      "立即盤點所有暴露於網際網路的 BeyondTrust 產品並修補 CVE-2026-1731",
+      "隔離 SmarterMail 伺服器並升級，封鎖 ConnectToHub API 外部存取",
+      "部署 2026 年 2 月份 Microsoft 安全更新",
+      "更新安全意識培訓，納入 AI 生成深偽內容識別",
+      "監控 WSL 相關程序與網路活動"
+    ],
+    "threat_summary": {
+      "critical_vulnerabilities": 3,
+      "actively_exploited": 13,
+      "ransomware_related": 1,
+      "priority_patches": ["CVE-2026-1731", "CVE-2026-24423", "CVE-2026-21514"]
+    }
+  },
+
+  "eeat_signals": {
+    "expertise": ["威脅情報分析", "漏洞研究", "APT 追蹤", "惡意軟體分析"],
+    "credentials": ["CISSP", "CEH"],
+    "authority_links": [
+      { "name": "CISA KEV", "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog" },
+      { "name": "NVD", "url": "https://nvd.nist.gov/" },
+      { "name": "CERT-UA", "url": "https://cert.gov.ua/" },
+      { "name": "NCSC-FI", "url": "https://www.kyberturvallisuuskeskus.fi/" }
+    ]
+  },
+
+  "security_report_fields": {
+    "report_type": "threat_weekly",
+    "article_schema": "NewsArticle",
+    "dateline": "2026 年第 7 週（2026-02-08 至 2026-02-14）",
+    "cve_links": [
+      { "cve": "CVE-2026-1731", "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1731" },
+      { "cve": "CVE-2026-24423", "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24423" },
+      { "cve": "CVE-2026-21509", "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21509" },
+      { "cve": "CVE-2026-20700", "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20700" }
+    ],
+    "disclaimer": "本報告內容基於公開來源情報彙整分析，僅供資訊安全專業人員參考。具體安全決策請依據組織的風險評估與資安政策執行。報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源。"
+  },
+
+  "url_optimization": {
+    "suggested_slug": "threat-landscape-2026-w07",
+    "canonical_url": "{{SITE_URL}}/docs/Narrator/threat_landscape/2026-W07-threat-landscape/"
+  },
+
+  "core_web_vitals": {
+    "preconnect": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ],
+    "preload": [],
+    "image_loading": {
+      "hero_image": "eager",
+      "other_images": "lazy"
+    }
+  }
+}

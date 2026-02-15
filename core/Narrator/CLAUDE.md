@@ -36,6 +36,30 @@ core/Narrator/Modes/{mode_name}/
 - 標註不確定性與限制
 - 異常時發 GitHub Issue 通知 Architect
 
+### 4. SEO 優化整合（可選）
+
+報告產出後，可選擇性執行 SEO 優化流程。詳見 `seo/CLAUDE.md`。
+
+#### SEO 執行流程
+
+1. **Writer 階段**：讀取 `seo/writer/CLAUDE.md`，對報告執行 SEO 分析並產出優化建議
+2. **Reviewer 階段**：讀取 `seo/review/CLAUDE.md`，檢查 Writer 輸出是否符合規則庫
+3. **迭代修正**：Reviewer 回報問題 → Writer 修正 → 重新檢查，直到 pass
+
+#### SEO 輸出
+
+```
+docs/Narrator/{mode_name}/
+├── {報告}.md                    # 原始報告（不修改）
+└── {報告}.seo.json              # SEO 優化結果
+```
+
+#### 觸發方式
+
+- 使用者說「執行 SEO 優化」
+- 使用者說「SEO {報告路徑}」
+- **不自動執行**：需明確要求
+
 ## 管轄 Modes（動態發現）
 
 掃描 `core/Narrator/Modes/*/`，排除含有 `.disabled` 檔案的目錄。
