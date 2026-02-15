@@ -8,9 +8,9 @@ nav_exclude: false
 
 # 防禦建議 — 2026 第 07 週
 
-> 涵蓋期間：2026-02-07 至 2026-02-14
+> 涵蓋期間：2026-02-08 至 2026-02-14
 > 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV
-> 產出時間：2026-02-14（最終版）
+> 產出時間：2026-02-15（更新版）
 
 ---
 
@@ -18,12 +18,13 @@ nav_exclude: false
 
 本週 CISA KEV 目錄持續大幅更新，累計新增多項活躍利用漏洞，關鍵威脅包括：
 
-1. **SmarterMail 郵件系統漏洞（最高優先級）** — CVE-2026-24423 **已確認與勒索軟體活動相關**，CISA 修補期限 2026-02-26
-2. **Microsoft Windows/Office 多重零日漏洞（6 項）** — 2026-02-10 大規模新增，涵蓋 Windows Shell、MSHTML、Office Word、DWM、RAS、RDS，修補期限 2026-03-03
-3. **Apple 多平台緩衝區溢位漏洞（本週新增）** — CVE-2026-20700 影響 iOS/macOS/tvOS/watchOS/visionOS，修補期限 2026-03-05
-4. **2026-02-12 KEV 新增** — SolarWinds Web Help Desk、Notepad++ 更新劫持、Microsoft Configuration Manager SQL 注入
-5. **Ivanti EPMM 零日漏洞攻擊歐洲政府** — 荷蘭、芬蘭、歐盟執委會遭入侵
-6. **APT 威脅行為者活動** — APT28 利用 CVE-2026-21509 攻擊烏克蘭/歐盟，UNC1069 首次使用 AI 生成影片進行社交工程
+1. **BeyondTrust 遠端支援平台 RCE（2026-02-13 新增，極緊急）** — CVE-2026-1731 未經驗證命令注入，CISA 修補期限 **2026-02-16（3 天內）**
+2. **SmarterMail 郵件系統漏洞（最高優先級）** — CVE-2026-24423 **已確認與勒索軟體活動相關**，CISA 修補期限 2026-02-26
+3. **Microsoft Windows/Office 多重零日漏洞（6 項）** — 2026-02-10 大規模新增，涵蓋 Windows Shell、MSHTML、Office Word、DWM、RAS、RDS，修補期限 2026-03-03
+4. **Apple 多平台緩衝區溢位漏洞（本週新增）** — CVE-2026-20700 影響 iOS/macOS/tvOS/watchOS/visionOS，修補期限 2026-03-05
+5. **2026-02-12 KEV 新增** — SolarWinds Web Help Desk、Notepad++ 更新劫持、Microsoft Configuration Manager SQL 注入
+6. **Ivanti EPMM 零日漏洞攻擊歐洲政府** — 荷蘭、芬蘭、歐盟執委會遭入侵
+7. **APT 威脅行為者活動** — APT28 利用 CVE-2026-21509 攻擊烏克蘭/歐盟，UNC1069 首次使用 AI 生成影片進行社交工程
 
 ---
 
@@ -31,13 +32,16 @@ nav_exclude: false
 
 按優先級排序：活躍利用 + 勒索軟體 > 活躍利用 > EPSS 高分 > CVSS 高分
 
-### P0 - 立即處置（活躍利用 + 勒索軟體關聯）
+### P0 - 立即處置（極緊急 - 期限 3 天內）
 
 | CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
 |-----|------|----------|----------|----------|
+| **CVE-2026-1731** | BeyondTrust Remote Support / PRA | 未經驗證命令注入 RCE (CWE-78) | **2026-02-16** | [BeyondTrust BT26-02](https://www.beyondtrust.com/trust-center/security-advisories/bt26-02) |
 | **CVE-2026-24423** | SmarterMail | 缺失認證 RCE (CWE-306) | **2026-02-26** | [SmarterTools Release Notes](https://www.smartertools.com/smartermail/release-notes/current) |
 
-> **警告**：CVE-2026-24423 已確認被勒索軟體利用。攻擊者可透過 ConnectToHub API 將 SmarterMail 指向惡意伺服器執行命令。
+> **警告 - CVE-2026-1731**：BeyondTrust Remote Support 和 Privileged Remote Access 存在未經驗證的 OS 命令注入漏洞。攻擊者無需身份驗證即可在站點使用者上下文中執行命令，可能導致系統完全控制、資料外洩。**請立即檢查所有暴露於網際網路的 BeyondTrust 產品是否有入侵跡象。**
+>
+> **警告 - CVE-2026-24423**：已確認被勒索軟體利用。攻擊者可透過 ConnectToHub API 將 SmarterMail 指向惡意伺服器執行命令。
 
 ### P1 - 緊急（活躍利用 - 2026-02-12 KEV 新增）
 
@@ -89,6 +93,7 @@ nav_exclude: false
 
 | 威脅 | 建議措施 |
 |------|----------|
+| **BeyondTrust RCE（極緊急）** | **立即**盤點所有暴露於網際網路的 BeyondTrust 產品；修補前限制僅允許內部存取；檢查入侵跡象 |
 | **SmarterMail 勒索軟體漏洞** | 立即升級；隔離 SmarterMail 伺服器；封鎖 ConnectToHub API 的外部存取；監控異常外連 HTTP 請求 |
 | **Ivanti EPMM 零日漏洞** | 限制 MDM 管理介面網路存取（僅允許受信任 IP）；部署 WAF；監控異常登入與 API 呼叫 |
 | **Microsoft 零日群集** | 優先處理 RDP 暴露的系統；限制 RDP 至受信任 IP 範圍；監控異常權限提升 |
@@ -142,7 +147,18 @@ nav_exclude: false
 
 針對尚無修補或無法立即更新的情況：
 
-### 1. SmarterMail（若無法立即更新）
+### 1. BeyondTrust Remote Support / PRA（極緊急）
+
+| 措施 | 說明 |
+|------|------|
+| 立即評估暴露 | 盤點所有可從網際網路存取的 BeyondTrust 產品 |
+| 入侵檢查 | 檢查是否有異常命令執行、未授權存取跡象 |
+| 網路隔離 | 在修補前將管理介面限制為僅允許內部存取 |
+| 依廠商指引修補 | 參閱 [BeyondTrust BT26-02](https://www.beyondtrust.com/trust-center/security-advisories/bt26-02) |
+
+> **有效期限**：直到完成修補 | **CISA 修補期限**：**2026-02-16（僅剩 1 天！）**
+
+### 2. SmarterMail（若無法立即更新）
 
 | 措施 | 說明 |
 |------|------|
@@ -153,7 +169,7 @@ nav_exclude: false
 
 > **有效期限**：直到完成升級 | **CISA 修補期限**：2026-02-26
 
-### 2. Ivanti EPMM（MDM）
+### 3. Ivanti EPMM（MDM）
 
 | 措施 | 說明 |
 |------|------|
@@ -163,7 +179,7 @@ nav_exclude: false
 
 > **有效期限**：直到 Ivanti 發布修補 | **重新評估日期**：2026-02-21
 
-### 3. Notepad++（若無法立即更新）
+### 4. Notepad++（若無法立即更新）
 
 | 措施 | 說明 |
 |------|------|
@@ -173,7 +189,7 @@ nav_exclude: false
 
 > **有效期限**：直到完成更新 | **CISA 修補期限**：2026-03-05
 
-### 4. Microsoft Office 2016/2019（CVE-2026-21509）
+### 5. Microsoft Office 2016/2019（CVE-2026-21509）
 
 | 措施 | 說明 |
 |------|------|
@@ -184,7 +200,7 @@ nav_exclude: false
 
 > **有效期限**：直到最終修補發布 | **CISA 修補期限**：2026-02-16
 
-### 5. n8n 自動化平台（若使用）
+### 6. n8n 自動化平台（若使用）
 
 | 措施 | 說明 |
 |------|------|
@@ -201,7 +217,7 @@ nav_exclude: false
 ### 適用範圍與限制
 
 1. **環境差異**：本建議為通用性質，實際實施需依據組織環境調整
-2. **時效性**：基於 2026-02-07 至 2026-02-14 期間的公開資訊
+2. **時效性**：基於 2026-02-08 至 2026-02-14 期間的公開資訊
 3. **完整性**：不包含非公開威脅情報
 4. **供應商確認**：第三方產品可能使用受影響元件，請向供應商確認
 
@@ -217,10 +233,11 @@ nav_exclude: false
 
 ### 本週特別警示
 
-1. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級處理
-2. **AI 社交工程**：UNC1069 首次使用 AI 生成影片進行攻擊，傳統安全培訓可能不足以應對
-3. **假冒軟體網站**：假冒 7-Zip 網站長期散布惡意軟體，下載軟體請驗證官方來源
-4. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，UNC3886 攻擊電信基礎設施
+1. **BeyondTrust 極緊急**：CVE-2026-1731 修補期限僅剩 1 天（2026-02-16），未經驗證即可 RCE，**立即處置**
+2. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級處理
+3. **AI 社交工程**：UNC1069 首次使用 AI 生成影片進行攻擊，傳統安全培訓可能不足以應對
+4. **假冒軟體網站**：假冒 7-Zip 網站長期散布惡意軟體，下載軟體請驗證官方來源
+5. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，UNC3886 攻擊電信基礎設施
 
 ---
 
@@ -252,5 +269,5 @@ nav_exclude: false
 
 ---
 
-> 產出時間：2026-02-14
-> 資料來源：CISA KEV、Microsoft MSRC、Apple Security、SmarterTools、SolarWinds、Notepad++、NCSC-FI、CERT-UA、Singapore CSA、Mandiant
+> 產出時間：2026-02-15
+> 資料來源：CISA KEV、Microsoft MSRC、Apple Security、BeyondTrust、SmarterTools、SolarWinds、Notepad++、NCSC-FI、CERT-UA、Singapore CSA、Mandiant
