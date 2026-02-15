@@ -1,0 +1,111 @@
+<!-- SEO Enhancement: Load and inject .seo.json data -->
+{% if page.seo_json %}
+<script type="application/ld+json" id="seo-jsonld-placeholder"></script>
+<script>
+(function() {
+  // Construct the .seo.json URL from current page URL
+  var pageUrl = window.location.pathname;
+  var seoJsonUrl = pageUrl.replace(/\/$/, '') + '.seo.json';
+
+  // For index pages, try the parent directory
+  if (pageUrl.endsWith('/index.html') || pageUrl.endsWith('/')) {
+    var basePath = pageUrl.replace(/index\.html$/, '').replace(/\/$/, '');
+    var parts = basePath.split('/');
+    var pageName = parts[parts.length - 1];
+    seoJsonUrl = basePath + '/' + pageName + '.seo.json';
+  }
+
+  // Fetch and inject SEO data
+  fetch(seoJsonUrl)
+    .then(function(response) {
+      if (!response.ok) throw new Error('SEO JSON not found');
+      return response.json();
+    })
+    .then(function(seoData) {
+      // Inject JSON-LD
+      if (seoData.json_ld) {
+        var jsonLd = JSON.stringify(seoData.json_ld);
+        // Replace template variables
+        jsonLd = jsonLd.replace(/\{\{CANONICAL_URL\}\}/g, window.location.href.replace(/\/$/, ''));
+        jsonLd = jsonLd.replace(/\{\{SITE_URL\}\}/g, window.location.origin);
+        jsonLd = jsonLd.replace(/\{\{GITHUB_URL\}\}/g, 'https://github.com/weiqi-kids/agent.cyber-security');
+        jsonLd = jsonLd.replace(/\{\{LINKEDIN_URL\}\}/g, '');
+
+        var script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = jsonLd;
+        document.head.appendChild(script);
+      }
+
+      // Update meta tags
+      if (seoData.meta_tags) {
+        var meta = seoData.meta_tags;
+
+        // Update or create OG tags
+        updateMeta('og:title', meta.og_title);
+        updateMeta('og:description', meta.og_description);
+        updateMeta('og:type', meta.og_type);
+        updateMeta('og:image', resolveUrl(meta.og_image));
+        updateMeta('og:url', window.location.href);
+        updateMeta('og:site_name', '資安威脅情報中心');
+
+        // Twitter Card
+        updateMeta('twitter:card', meta.twitter_card);
+        updateMeta('twitter:title', meta.og_title);
+        updateMeta('twitter:description', meta.og_description);
+        updateMeta('twitter:image', resolveUrl(meta.og_image));
+
+        // Article meta
+        if (meta.article_published_time) {
+          updateMeta('article:published_time', meta.article_published_time, 'property');
+          updateMeta('article:modified_time', meta.article_modified_time, 'property');
+          updateMeta('article:author', meta.article_author, 'property');
+        }
+      }
+
+      console.log('[SEO] JSON-LD and meta tags injected from', seoJsonUrl);
+    })
+    .catch(function(err) {
+      console.log('[SEO] No .seo.json found for this page');
+    });
+
+  function updateMeta(name, content, attr) {
+    if (!content) return;
+    attr = attr || (name.startsWith('og:') || name.startsWith('article:') ? 'property' : 'name');
+    var selector = 'meta[' + attr + '="' + name + '"]';
+    var meta = document.querySelector(selector);
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.setAttribute(attr, name);
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute('content', content);
+  }
+
+  function resolveUrl(url) {
+    if (!url) return '';
+    if (url.startsWith('http')) return url;
+    return url.replace(/\{\{SITE_URL\}\}/g, window.location.origin);
+  }
+})();
+</script>
+{% endif %}
+
+<!-- Structured Data for all pages (fallback) -->
+{% unless page.seo_json %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ page.title | default: site.title }}",
+  "description": "{{ page.description | default: site.description }}",
+  "url": "{{ page.url | absolute_url }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ site.url }}#website",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+{% endunless %}

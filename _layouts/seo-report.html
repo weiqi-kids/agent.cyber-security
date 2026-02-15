@@ -1,0 +1,254 @@
+---
+layout: default
+seo_json: true
+---
+
+<article class="seo-report" itemscope itemtype="https://schema.org/TechArticle">
+  {{ content }}
+</article>
+
+<!-- SGE/AEO Marker Injection -->
+<script>
+(function() {
+  // Add speakable-content class to summary sections
+  document.querySelectorAll('h2').forEach(function(h2) {
+    var text = h2.textContent.toLowerCase();
+    var nextP = h2.nextElementSibling;
+
+    // Mark first paragraph after key H2s as key-answer
+    if (text.includes('執行摘要') || text.includes('summary')) {
+      if (nextP && nextP.tagName === 'P') {
+        nextP.classList.add('key-answer', 'speakable-content');
+        nextP.setAttribute('data-question', h2.textContent + '的重點是什麼？');
+      }
+    }
+
+    // Mark threat summary sections
+    if (text.includes('威脅') || text.includes('threat') || text.includes('漏洞') || text.includes('vulnerability')) {
+      var section = h2.parentElement;
+      if (section) {
+        section.classList.add('threat-summary');
+      }
+    }
+  });
+
+  // Add actionable-steps class to ordered lists in defense sections
+  document.querySelectorAll('h2, h3').forEach(function(heading) {
+    var text = heading.textContent.toLowerCase();
+    if (text.includes('建議') || text.includes('修補') || text.includes('緩解') ||
+        text.includes('recommendation') || text.includes('mitigation')) {
+      var next = heading.nextElementSibling;
+      while (next && !['H1', 'H2', 'H3'].includes(next.tagName)) {
+        if (next.tagName === 'OL' || next.tagName === 'UL') {
+          next.classList.add('actionable-steps', 'defense-recommendations');
+        }
+        next = next.nextElementSibling;
+      }
+    }
+  });
+
+  // Add comparison-table class to tables
+  document.querySelectorAll('table').forEach(function(table) {
+    table.classList.add('comparison-table');
+    // Wrap in container for responsive design
+    if (!table.parentElement.classList.contains('table-wrapper')) {
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    }
+  });
+
+  // Add key-takeaway class to blockquotes with warning/important content
+  document.querySelectorAll('blockquote').forEach(function(bq) {
+    var text = bq.textContent.toLowerCase();
+    if (text.includes('警告') || text.includes('重要') || text.includes('注意') ||
+        text.includes('warning') || text.includes('important') || text.includes('critical')) {
+      bq.classList.add('key-takeaway');
+    }
+  });
+
+  // Mark CVE links for tracking
+  document.querySelectorAll('a').forEach(function(link) {
+    var href = link.getAttribute('href') || '';
+    if (href.includes('nvd.nist.gov') || href.includes('cve.org') || href.includes('msrc.microsoft.com')) {
+      link.classList.add('authority-link', 'cve-link');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  // Add vulnerability-impact class to CVE detail sections
+  document.querySelectorAll('h4, h3').forEach(function(heading) {
+    var text = heading.textContent;
+    if (text.match(/CVE-\d{4}-\d+/)) {
+      var section = heading.parentElement;
+      var nextEl = heading.nextElementSibling;
+      while (nextEl && !['H1', 'H2', 'H3', 'H4'].includes(nextEl.tagName)) {
+        if (nextEl.tagName === 'UL' || nextEl.tagName === 'P') {
+          nextEl.classList.add('vulnerability-impact');
+        }
+        nextEl = nextEl.nextElementSibling;
+      }
+    }
+  });
+
+  console.log('[SGE] Semantic markers applied');
+})();
+</script>
+
+<!-- Security Report Disclaimer -->
+{% if page.disclaimer != false %}
+<div class="disclaimer security-disclaimer" role="contentinfo">
+  <p><strong>免責聲明</strong></p>
+  <p>本報告內容基於公開來源情報彙整分析，僅供資訊安全專業人員參考。</p>
+  <p>具體安全決策請依據組織的風險評估與資安政策執行。報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源。</p>
+</div>
+{% endif %}
+
+<style>
+/* SGE/AEO Semantic Markers Styling */
+.key-answer {
+  background: linear-gradient(135deg, #e8f4fd 0%, #f0f7ff 100%);
+  border-left: 4px solid #0066cc;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.key-takeaway {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.actionable-steps {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.actionable-steps li {
+  margin-bottom: 0.5rem;
+}
+
+.defense-recommendations {
+  counter-reset: step-counter;
+}
+
+.defense-recommendations li::marker {
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.comparison-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.vulnerability-impact {
+  border-left: 3px solid #ef4444;
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+}
+
+.threat-summary {
+  position: relative;
+}
+
+.threat-summary::before {
+  content: "⚠️";
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  font-size: 1.25rem;
+}
+
+.authority-link {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.cve-link::after {
+  content: " ↗";
+  font-size: 0.75em;
+  vertical-align: super;
+}
+
+.security-disclaimer {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.security-disclaimer strong {
+  color: #334155;
+}
+
+/* Speakable content indicator (dev mode) */
+.speakable-content {
+  position: relative;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .key-answer {
+    background: linear-gradient(135deg, #1e3a5f 0%, #1e293b 100%);
+    border-left-color: #3b82f6;
+  }
+
+  .key-takeaway {
+    background: #422006;
+    border-left-color: #fbbf24;
+  }
+
+  .actionable-steps {
+    background: #052e16;
+    border-color: #22c55e;
+  }
+
+  .comparison-table th {
+    background: #334155;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    border-color: #475569;
+  }
+
+  .security-disclaimer {
+    background: #1e293b;
+    border-color: #475569;
+    color: #94a3b8;
+  }
+
+  .security-disclaimer strong {
+    color: #e2e8f0;
+  }
+}
+</style>

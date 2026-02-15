@@ -45,6 +45,13 @@ defaults:
       layout: default
       nav_exclude: true
       search_exclude: false
+  # SEO-optimized layout for Narrator reports
+  - scope:
+      path: "docs/Narrator"
+      type: "pages"
+    values:
+      layout: seo-report
+      seo_json: true
 
 # Exclude from processing
 exclude:
@@ -70,6 +77,11 @@ exclude:
 # Include for processing
 include:
   - docs/
+  - "*.seo.json"
+
+# Keep .seo.json files as static assets
+keep_files:
+  - "*.seo.json"
 
 # Plugins
 plugins:

@@ -1,9 +1,14 @@
 ---
-layout: default
-title: 2026 第 07 週
+layout: seo-report
+title: 2026 第 07 週威脅態勢分析
+description: "2026-02-08 至 2026-02-14 資安威脅週報：APT28 利用 CVE-2026-21509 攻擊烏克蘭、CISA KEV 新增 BeyondTrust CVE-2026-1731、波蘭能源基礎設施遭協調攻擊。"
 parent: 威脅態勢分析
 nav_order: 1
 nav_exclude: false
+seo_json: true
+image: /assets/images/og-threat-landscape.png
+author: 資安情報分析團隊
+date: 2026-02-15
 ---
 
 # 威脅態勢分析 — 2026 第 07 週

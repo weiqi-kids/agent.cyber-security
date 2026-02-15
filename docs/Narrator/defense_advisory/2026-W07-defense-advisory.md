@@ -1,9 +1,14 @@
 ---
-layout: default
-title: 2026 第 07 週
+layout: seo-report
+title: 2026 第 07 週防禦建議
+description: "2026-02-08 至 2026-02-14 資安防禦建議：BeyondTrust CVE-2026-1731 緊急修補、SmarterMail 勒索軟體漏洞、Microsoft 6 項零日漏洞修補指南。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
+seo_json: true
+image: /assets/images/og-defense-advisory.png
+author: 資安情報分析團隊
+date: 2026-02-15
 ---
 
 # 防禦建議 — 2026 第 07 週
