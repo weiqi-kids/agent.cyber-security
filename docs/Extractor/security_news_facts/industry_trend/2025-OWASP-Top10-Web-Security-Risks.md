@@ -1,8 +1,8 @@
-# OWASP 2025年Web應用安全十大威脅揭曉，存取控制漏洞位居榜首
+# OWASP 2025 Top 10 Web Application Security Risks Released
 
 | 項目 | 內容 |
 |------|------|
-| **日期** | 2025-12-11 |
+| **日期** | 2025-12-06 |
 | **來源** | TWCERT/CC |
 | **分類** | industry_trend |
 | **嚴重程度** | 中 |
@@ -10,41 +10,55 @@
 
 ## 摘要
 
-OWASP發布2025年Web應用十大安全風險清單，存取控制漏洞持續居首，新增軟體供應鏈缺失與特殊情況處理不當兩大類別，反映雲端架構與第三方組件管理挑戰。
+OWASP released 2025 Top 10 list with significant ranking changes, highlighting supply chain risks and misconfiguration challenges.
 
 ## 事實內容
 
-2025年OWASP Top 10 Web應用程式安全風險清單正式公布，排名出現顯著異動：
+The OWASP Top 10 2025 Web Application Security Risk list was officially published, reflecting significant shifts in current security threats:
 
-1. **存取控制漏洞（Broken Access Control）**持續位居榜首
-2. **安全配置錯誤（Security Misconfiguration）**與**軟體供應鏈缺失（Software Supply Chain Failures）**躍升至第二、第三位
-3. 新增兩大類別：「軟體供應鏈缺失」和「特殊情況處理不當」
-4. 伺服器端請求偽造(SSRF)合併至「存取控制漏洞」
-5. 「加密機制失效」與「注入攻擊」排名下降，顯示組織已累積一定防護能量
+**Key Rankings:**
+1. **A01:2025 - Broken Access Control**: Remains at top position, allows attackers to bypass authorization
+2. **A02:2025 - Security Misconfiguration**: Jumped to second place, covering system, application, and cloud service misconfigurations
+3. **A03:2025 - Software Supply Chain Failures**: NEW entry at third place, addressing third-party software build, distribution, and update disruptions
+4. **A04:2025 - Cryptographic Failures**: Dropped from second to fourth, covering weak encryption and key exposure
+5. **A05:2025 - Injection**: Decreased in ranking, malicious code insertion attacks
+6. **A06:2025 - Insecure Design**: Design and architecture flaws including logic errors
+7. **A07:2025 - Authentication Failures**: System deception to accept invalid users as legitimate
+8. **A08:2025 - Software and Data Integrity Failures**: Code and data not protected from tampering
+9. **A09:2025 - Security Logging and Monitoring Failures**: Insufficient logging leading to delayed incident detection
+10. **A10:2025 - Improper Handling of Edge Cases**: NEW category covering software behavior under unpredictable stress
 
-完整排名：
-- A01: 存取控制漏洞
-- A02: 安全配置錯誤
-- A03: 軟體供應鏈缺失（新增）
-- A04: 加密機制失效
-- A05: 注入攻擊
-- A06: 不安全設計
-- A07: 身份驗證失敗
-- A08: 軟體及資料完整性失效
-- A09: 日誌記錄與告警
-- A10: 特殊情況處理不當（新增）
+**Notable Changes from 2021:**
+- **Software Supply Chain Failures** enters Top 3 for first time, highlighting open-source package and third-party service risks
+- **Improper Handling of Edge Cases** added as new category, covering error handling failures and logic collapse under stress
+- SSRF (Server-Side Request Forgery) merged into Broken Access Control
+- Cryptographic Failures and Injection attacks dropped in ranking, indicating improved defensive capabilities
+
+**Implications:**
+- Cloud architecture and third-party component management pose greater challenges
+- AI-driven systems increase edge case handling risks
+- Organizations need stronger supply chain security practices
+- Traditional vulnerabilities (injection, crypto) better managed but still present
+
+**Recommendations:**
+1. Implement comprehensive access control testing and monitoring
+2. Audit cloud service configurations regularly
+3. Establish software supply chain security policies
+4. Maintain updated dependency inventories
+5. Enhance edge case testing in AI/ML systems
 
 ## 受影響系統
 
-- Web應用程式
-- 雲端服務
-- 開源套件與第三方服務
-- 軟體供應鏈系統
+- Web applications worldwide
+- Cloud-based services
+- Applications using third-party dependencies
+- AI/ML-driven systems
 
 ## 來源連結
 
 - [OWASP 2025年Web應用安全十大威脅揭曉，存取控制漏洞位居榜首](https://www.twcert.org.tw/tw/cp-104-10548-03edd-1.html)
 
 ---
-> 萃取時間：2026-01-27 08:30 UTC
-> 資料來源：TWCERT/CC RSS-104
+> 萃取時間: 2026-02-16 00:00 UTC
+> 資料來源: TWCERT/CC rss-104
+> 備註: Original language: zh-TW (Traditional Chinese)
