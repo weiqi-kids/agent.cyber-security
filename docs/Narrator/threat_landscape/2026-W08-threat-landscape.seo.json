@@ -3,6 +3,7 @@
   "generated_at": "2026-02-16T18:00:00+08:00",
   "source_file": "2026-W08-threat-landscape.md",
   "review_status": "pass",
+  "url_placeholders_note": "本檔案使用 Jekyll 佔位符變數：{{SITE_URL}} 為網站根 URL、{{CANONICAL_URL}} 為本頁完整 URL、{{GITHUB_URL}} 為 GitHub 專案 URL、{{LINKEDIN_URL}} 為 LinkedIn URL。這些變數於 Jekyll 建置時自動替換為實際值。",
 
   "meta_tags": {
     "title": "2026 第 08 週威脅態勢分析 — 資安情報週報 | Cyber Security Intelligence",
