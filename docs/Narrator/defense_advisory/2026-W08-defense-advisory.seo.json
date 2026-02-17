@@ -1,86 +1,25 @@
 {
-  "generated_at": "2026-02-16T18:30:00+08:00",
+  "generated_at": "2026-02-17T14:30:00+08:00",
   "source_file": "docs/Narrator/defense_advisory/2026-W08-defense-advisory.md",
-  "seo_optimization_version": "1.0",
-  "url_placeholders_note": "本檔案使用 Jekyll 佔位符變數：{{SITE_URL}} 為網站根 URL、{{CANONICAL_URL}} 為本頁完整 URL、{{GITHUB_URL}} 為 GitHub 專案 URL、{{CANONICAL_URL_ENCODED}} 為 URL 編碼版本。這些變數於 Jekyll 建置時自動替換為實際值，部署前無需手動修改。",
-  "deployment_instructions": {
-    "build_system": "Jekyll",
-    "variable_replacement": "Jekyll Liquid 模板引擎自動處理",
-    "required_config": "_config.yml 需設定 url 與 github_username",
-    "steps": [
-      "1. 確認 _config.yml 包含正確的 url 設定",
-      "2. Jekyll build 或 GitHub Pages 自動部署時會替換佔位符",
-      "3. 驗證產出的 HTML 中 JSON-LD 已包含完整 URL"
-    ]
-  },
-  "meta_tags": {
-    "title": "2026 第 08 週防禦建議 — 漏洞修補指南 | Cyber Security Intelligence",
-    "title_length": 43,
-    "description": "2026-02-10 至 2026-02-16 資安防禦建議：BeyondTrust、SmarterMail、Microsoft 六個零日、Apple 跨平台漏洞修補指南與緩解措施。涵蓋 CVE-2026-1731、CVE-2026-24423 勒索軟體關聯漏洞、Microsoft Windows/Office 六大零日、Apple 五平台緩衝區溢位、React Native CLI 命令注入等 12 個 CVE 的完整修補策略。",
-    "description_length": 151,
-    "canonical": "{{CANONICAL_URL}}",
-    "keywords": [
-      "資安防禦建議",
-      "漏洞修補指南",
-      "CVE-2026-1731",
-      "CVE-2026-24423",
-      "CISA KEV",
-      "勒索軟體防護",
-      "Microsoft 零日漏洞",
-      "Apple 跨平台漏洞",
-      "SmarterMail 安全",
-      "緩解策略"
-    ],
-    "og": {
-      "title": "2026 第 08 週防禦建議 — 漏洞修補指南 | Cyber Security Intelligence",
-      "description": "本週優先修補：BeyondTrust OS 命令注入、SmarterMail 三大漏洞（含勒索軟體關聯）、Microsoft 六個零日漏洞、Apple 五平台緩衝區溢位。完整修補步驟、緩解措施與安全控制建議。",
-      "image": "{{SITE_URL}}/assets/images/og-defense-advisory.png",
-      "image_alt": "2026 第 08 週資安防禦建議 — 涵蓋 BeyondTrust、SmarterMail、Microsoft、Apple 關鍵漏洞修補指南",
-      "url": "{{CANONICAL_URL}}",
-      "type": "article",
-      "site_name": "Cyber Security Intelligence",
-      "locale": "zh_TW"
-    },
-    "article": {
-      "published_time": "2026-02-16T00:00:00+08:00",
-      "modified_time": "2026-02-16T18:30:00+08:00",
-      "author": "資安情報分析團隊",
-      "section": "防禦建議",
-      "tag": [
-        "漏洞修補",
-        "CISA KEV",
-        "勒索軟體",
-        "零日漏洞",
-        "緩解策略"
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "title": "2026 第 08 週防禦建議 — 漏洞修補指南",
-      "description": "本週優先修補：BeyondTrust OS 命令注入、SmarterMail 三大漏洞（含勒索軟體關聯）、Microsoft 六個零日漏洞、Apple 五平台緩衝區溢位。完整修補步驟與緩解措施。",
-      "image": "{{SITE_URL}}/assets/images/og-defense-advisory.png",
-      "image_alt": "2026 第 08 週資安防禦建議 — 涵蓋 BeyondTrust、SmarterMail、Microsoft、Apple 關鍵漏洞修補指南"
-    }
-  },
   "json_ld": {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "{{CANONICAL_URL}}#webpage",
-        "url": "{{CANONICAL_URL}}",
-        "name": "2026 第 08 週防禦建議 — 漏洞修補指南 | Cyber Security Intelligence",
-        "description": "2026-02-10 至 2026-02-16 資安防禦建議：BeyondTrust、SmarterMail、Microsoft 六個零日、Apple 跨平台漏洞修補指南與緩解措施。",
+        "@id": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory#webpage",
+        "url": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory",
+        "name": "2026 W08 防禦建議：零日漏洞修補指南",
+        "description": "BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南。涵蓋 CISA KEV 優先清單、Apple 漏洞與勒索軟體防護。",
         "inLanguage": "zh-TW",
         "isPartOf": {
-          "@id": "{{SITE_URL}}#website"
+          "@id": "https://cyber.weiqi.kids#website"
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "url": "{{SITE_URL}}/assets/images/og-defense-advisory.png"
+          "url": "https://cyber.weiqi.kids/assets/images/og-defense-advisory.png"
         },
         "datePublished": "2026-02-16T00:00:00+08:00",
-        "dateModified": "2026-02-16T18:30:00+08:00",
+        "dateModified": "2026-02-17T14:30:00+08:00",
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": [
@@ -90,81 +29,77 @@
             ".key-answer",
             ".expert-quote",
             ".actionable-steps li",
-            ".faq-answer-content",
-            ".defense-recommendations"
+            ".faq-answer-content"
           ]
         }
       },
       {
         "@type": "TechArticle",
-        "@id": "{{CANONICAL_URL}}#article",
+        "@id": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory#article",
         "mainEntityOfPage": {
-          "@id": "{{CANONICAL_URL}}#webpage",
+          "@id": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory#webpage",
           "significantLink": [
-            "{{SITE_URL}}/docs/narrator/threat_landscape/2026-W08-threat-landscape",
-            "{{SITE_URL}}/docs/narrator/defense_advisory"
+            "https://cyber.weiqi.kids/threat_landscape/2026-W08-threat-landscape",
+            "https://cyber.weiqi.kids/defense_advisory/2026-W07-defense-advisory"
           ]
         },
-        "headline": "2026 第 08 週防禦建議 — 漏洞修補指南",
-        "alternativeHeadline": "Defense Advisory - 2026 Week 08: Critical Vulnerability Patching Guide",
-        "description": "2026-02-10 至 2026-02-16 資安防禦建議：BeyondTrust、SmarterMail、Microsoft 六個零日、Apple 跨平台漏洞修補指南與緩解措施。",
+        "headline": "2026 W08 防禦建議：零日漏洞修補指南",
+        "alternativeHeadline": "2026 Week 08 Defense Advisory: Zero-Day Vulnerability Patching Guide",
+        "description": "BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南。涵蓋 CISA KEV 優先清單、Apple 漏洞與勒索軟體防護。",
         "image": {
           "@type": "ImageObject",
-          "url": "{{SITE_URL}}/assets/images/og-defense-advisory.png",
+          "url": "https://cyber.weiqi.kids/assets/images/og-defense-advisory.png",
           "width": 1200,
           "height": 630
         },
         "author": {
-          "@id": "{{SITE_URL}}/about#person"
+          "@id": "https://cyber.weiqi.kids/about#person"
         },
         "publisher": {
-          "@id": "{{SITE_URL}}#organization"
+          "@id": "https://cyber.weiqi.kids#organization"
         },
         "datePublished": "2026-02-16T00:00:00+08:00",
-        "dateModified": "2026-02-16T18:30:00+08:00",
-        "articleSection": "防禦建議",
-        "keywords": "資安防禦建議, 漏洞修補指南, CVE-2026-1731, CVE-2026-24423, CISA KEV, 勒索軟體防護, Microsoft 零日漏洞, Apple 跨平台漏洞, SmarterMail 安全, 緩解策略",
-        "wordCount": 3800,
+        "dateModified": "2026-02-17T14:30:00+08:00",
+        "articleSection": "資安防禦建議",
+        "keywords": "資安防禦, 漏洞修補, CISA KEV, BeyondTrust, SmarterMail, Microsoft 零日漏洞, Apple 漏洞, CVE-2026-1731, CVE-2026-24423, 勒索軟體防護, TWCERT, 資安緩解措施",
+        "wordCount": 4200,
         "inLanguage": "zh-TW",
         "isAccessibleForFree": true,
         "proficiencyLevel": "Intermediate",
-        "dependencies": "熟悉 CVE 編號系統、了解企業網路架構、具備基礎漏洞管理知識",
+        "dependencies": "熟悉 CVE 編號系統、CVSS 評分、CISA KEV 機制",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "{{SITE_URL}}#website",
-          "name": "Cyber Security Intelligence",
+          "@id": "https://cyber.weiqi.kids#website",
+          "name": "資訊安全產業智慧分析系統",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "{{SITE_URL}}/search?q={search_term}",
+            "target": "https://cyber.weiqi.kids/search?q={search_term}",
             "query-input": "required name=search_term"
           }
         }
       },
       {
         "@type": "Person",
-        "@id": "{{SITE_URL}}/about#person",
+        "@id": "https://cyber.weiqi.kids/about#person",
         "name": "資安情報分析團隊",
-        "url": "{{SITE_URL}}/about",
-        "image": "{{SITE_URL}}/assets/images/team-avatar.png",
-        "jobTitle": "資訊安全分析師",
+        "url": "https://cyber.weiqi.kids/about",
+        "image": "https://cyber.weiqi.kids/assets/images/team-avatar.png",
+        "jobTitle": "資安威脅分析師",
         "worksFor": {
           "@type": "Organization",
-          "name": "Cyber Security Intelligence"
+          "name": "weiqi.kids"
         },
-        "description": "專注於威脅情報分析、漏洞研究與資安防禦策略的專業團隊。長期追蹤國際 CERT/CSIRT 組織公告，提供即時且可執行的資安建議。",
+        "description": "專注於資訊安全威脅情報收集、漏洞分析與防禦策略研究的專業團隊。",
         "sameAs": [
-          "{{GITHUB_URL}}",
-          "{{SITE_URL}}"
+          "https://github.com/weiqi-kids"
         ],
         "knowsAbout": [
           "資訊安全",
           "威脅情報",
           "漏洞分析",
-          "資安防禦",
-          "漏洞管理",
-          "修補策略",
-          "安全控制",
-          "事件回應"
+          "惡意軟體分析",
+          "事件回應",
+          "防禦策略制定"
         ],
         "hasCredential": [
           {
@@ -180,27 +115,27 @@
         ],
         "alumniOf": {
           "@type": "Organization",
-          "name": "資安威脅情報研究領域"
+          "name": "資安威脅情報分析實務經驗"
         }
       },
       {
         "@type": "Organization",
-        "@id": "{{SITE_URL}}#organization",
-        "name": "Cyber Security Intelligence",
-        "url": "{{SITE_URL}}",
+        "@id": "https://cyber.weiqi.kids#organization",
+        "name": "資訊安全產業智慧分析系統",
+        "url": "https://cyber.weiqi.kids",
         "logo": {
           "@type": "ImageObject",
-          "url": "{{SITE_URL}}/assets/images/logo.png",
+          "url": "https://cyber.weiqi.kids/assets/images/logo.png",
           "width": 600,
           "height": 60
         },
         "sameAs": [
-          "{{GITHUB_URL}}"
+          "https://github.com/weiqi-kids"
         ],
         "contactPoint": {
           "@type": "ContactPoint",
-          "contactType": "technical support",
-          "email": "security@example.com"
+          "contactType": "customer service",
+          "email": "contact@weiqi.kids"
         }
       },
       {
@@ -210,19 +145,19 @@
             "@type": "ListItem",
             "position": 1,
             "name": "首頁",
-            "item": "{{SITE_URL}}"
+            "item": "https://cyber.weiqi.kids"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "防禦建議",
-            "item": "{{SITE_URL}}/docs/narrator/defense_advisory"
+            "item": "https://cyber.weiqi.kids/defense_advisory"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "2026 第 08 週防禦建議",
-            "item": "{{CANONICAL_URL}}"
+            "item": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory"
           }
         ]
       },
@@ -231,450 +166,346 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "本週有哪些漏洞需要緊急修補？",
+            "name": "本週最緊急需要修補的漏洞是哪些?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "本週需緊急修補的漏洞包括：CVE-2026-1731（BeyondTrust OS 命令注入，今日到期）、CVE-2025-52691（SmarterMail 任意檔案上傳，今日到期）、CVE-2026-23760（SmarterMail 認證繞過，今日到期）。其中 CVE-2026-24423 已確認被勒索軟體利用，應優先處理。修補期限最緊急的為 2026-02-16（今日到期）的三個 CVE。"
+              "text": "本週最緊急的漏洞包括：CVE-2026-1731（BeyondTrust 遠端程式碼執行）、CVE-2025-52691（SmarterMail 任意檔案上傳）、CVE-2026-23760（SmarterMail 認證繞過），這三個漏洞的修補期限為 2026-02-16（今日到期）。此外，CVE-2026-24423（SmarterMail RCE）已確認被勒索軟體利用，應優先處理。"
             }
           },
           {
             "@type": "Question",
-            "name": "CVE-2026-24423 勒索軟體關聯漏洞如何修補？",
+            "name": "CVE-2026-24423 為何需要優先處理?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CVE-2026-24423 是 SmarterMail 的 ConnectToHub API 缺失認證漏洞，已確認被勒索軟體利用。修補方式：(1) 立即更新 SmarterMail 至最新版本，(2) 檢查郵件伺服器是否有異常連線，(3) 監控伺服器上的可疑命令執行，(4) 驗證備份完整性與可復原性。此漏洞應優先於其他非勒索軟體關聯漏洞處理。"
+              "text": "CVE-2026-24423 是 SmarterMail ConnectToHub API 的缺失認證漏洞，已確認被勒索軟體利用。攻擊者可將 SmarterMail 實例指向惡意伺服器並執行任意系統命令。由於具有勒索軟體關聯，應優先於其他非勒索軟體關聯漏洞進行修補，建議立即更新至最新版本並監控伺服器異常連線。"
             }
           },
           {
             "@type": "Question",
-            "name": "Microsoft 六個零日漏洞影響哪些產品？",
+            "name": "Microsoft 六個零日漏洞中哪個最值得關注?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Microsoft 六個零日漏洞（CVE-2026-21510/21513/21514/21519/21525/21533）影響 Windows Shell、MSHTML Framework、Office Word、Desktop Windows Manager、Remote Access Connection Manager、Remote Desktop Services。這些漏洞於 2026-02-10 加入 CISA KEV，修補期限為 2026-03-03。建議部署 Microsoft 2026 年 2 月安全更新，優先處理 CVE-2026-21514（Office Word）。"
+              "text": "CVE-2026-21514（Office Word 不當信任輸入導致本地提權）最值得關注。該漏洞可透過惡意 Word 文件觸發，建議加強郵件附件過濾、提醒使用者不要開啟來源不明的 Word 文件，並啟用 Microsoft Defender Application Guard。修補期限為 2026-03-03。"
             }
           },
           {
             "@type": "Question",
-            "name": "Apple CVE-2026-20700 跨平台漏洞影響範圍？",
+            "name": "臺灣企業應優先關注哪些本週漏洞?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CVE-2026-20700 影響 Apple 五大平台：iOS、macOS、tvOS、watchOS、visionOS。這是記憶體緩衝區操作限制不當漏洞（CWE-119），攻擊者需具備記憶體寫入能力，可導致任意程式碼執行。修補方式：立即更新所有 Apple 設備至最新版本，企業環境應優先更新行動裝置（iOS、iPadOS）。visionOS 首次遭受跨平台零日攻擊，需特別關注。"
+              "text": "臺灣企業應優先關注 TWCERT/CC 發布的三個通報：TVN-202602004（桓基科技 C&Cm@il，含 CVSS 9.1 Critical 漏洞）、TVN-202602002（華苓科技 AgentFlow，兩個 CVSS 9.8 Critical 漏洞）、TVN-202602001（華苓科技 Docpedia SQL 注入）。這些漏洞均影響臺灣廠商產品，建議依照 TWCERT 公告進行修補。"
             }
           },
           {
             "@type": "Question",
-            "name": "無法立即修補時有哪些緩解措施？",
+            "name": "若無法立即修補 SmarterMail 漏洞，應採取什麼緩解措施?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "無法立即修補時的緩解措施：(1) SmarterMail：限制伺服器僅允許已知 IP 範圍存取，部署反向代理過濾敏感 API 端點，啟用詳細存取日誌；(2) BeyondTrust：限制外部存取，要求透過 VPN 存取遠端支援功能；(3) Microsoft：加強 Office Word 文件的郵件過濾，啟用 Microsoft Defender Application Guard；(4) React Native：確保 Metro Development Server 不暴露於公共網路，使用防火牆隔離開發環境。"
+              "text": "臨時緩解措施包括：1) 限制 SmarterMail 伺服器僅允許已知 IP 範圍存取；2) 在伺服器前部署反向代理過濾敏感 API 端點；3) 啟用詳細存取日誌監控異常的檔案上傳、force-reset-password 端點存取、ConnectToHub API 呼叫；4) 審查所有管理員帳戶的最近活動。建議每 24 小時重新評估風險。"
             }
           }
         ]
       },
       {
         "@type": "ImageObject",
-        "@id": "{{CANONICAL_URL}}#primaryimage",
-        "url": "{{SITE_URL}}/assets/images/og-defense-advisory.png",
+        "@id": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory#primaryimage",
+        "url": "https://cyber.weiqi.kids/assets/images/og-defense-advisory.png",
         "width": 1200,
         "height": 630,
-        "caption": "2026 第 08 週資安防禦建議 — 涵蓋 BeyondTrust、SmarterMail、Microsoft、Apple 關鍵漏洞修補指南",
+        "caption": "2026 第 08 週資安防禦建議 — 涵蓋 BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南",
         "representativeOfPage": true,
-        "license": "{{SITE_URL}}/license",
-        "acquireLicensePage": "{{SITE_URL}}/license",
-        "creditText": "Cyber Security Intelligence"
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "acquireLicensePage": "https://cyber.weiqi.kids/license",
+        "creditText": "資訊安全產業智慧分析系統"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory#howto",
+        "name": "SmarterMail 漏洞鏈修補流程",
+        "description": "針對 CVE-2025-52691、CVE-2026-23760、CVE-2026-24423 三個 SmarterMail 漏洞的修補步驟",
+        "totalTime": "PT45M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "備份 SmarterMail 設定與資料",
+            "text": "在修補前建立 SmarterMail 伺服器的完整備份，包含設定檔、郵件資料庫與使用者資料。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "下載並驗證更新檔案",
+            "text": "前往 SmarterTools 官方網站下載最新版本，驗證檔案完整性後再進行安裝。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "部署安全更新",
+            "text": "依照 SmarterTools 官方文件安裝更新，過程中可能需要暫停郵件服務。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "驗證修補成功",
+            "text": "更新完成後確認 SmarterMail 版本號，測試基本郵件收發功能。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "審查歷史日誌",
+            "text": "檢查過去 30 天的存取日誌，識別是否有異常的檔案上傳、密碼重設或 ConnectToHub API 呼叫。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "強化存取控制",
+            "text": "實施 IP 白名單、部署反向代理、啟用詳細日誌監控作為額外防護層。"
+          }
+        ]
       },
       {
         "@type": "ItemList",
-        "@id": "{{CANONICAL_URL}}#priority-patching-list",
-        "name": "優先修補清單",
-        "description": "依照優先級排序（活躍利用 > EPSS 高分 > CVSS 高分）的本週漏洞修補清單",
-        "numberOfItems": 12,
+        "@id": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory#itemlist",
+        "name": "優先修補清單 — 2026 第 08 週",
+        "description": "依照修補期限與利用狀態排序的漏洞優先修補清單",
+        "numberOfItems": 10,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "CVE-2026-1731 — BeyondTrust RS/PRA OS 命令注入",
-            "description": "Critical 嚴重程度，修補期限 2026-02-16（今日到期），活躍利用（CISA KEV）。未經身份驗證的遠端攻擊者可在站點使用者的上下文中執行作業系統命令。"
+            "description": "修補期限：2026-02-16（今日到期）。BeyondTrust Remote Support 和 Privileged Remote Access 存在 OS 命令注入漏洞，CISA KEV 列為活躍利用。"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "CVE-2025-52691 — SmarterMail 任意檔案上傳",
-            "description": "Critical 嚴重程度，修補期限 2026-02-16（今日到期），活躍利用（CISA KEV）。未經身份驗證的攻擊者可上傳任意檔案至郵件伺服器的任意位置，可能實現遠端程式碼執行。"
+            "description": "修補期限：2026-02-16（今日到期）。SmarterMail 存在不受限制的危險類型檔案上傳漏洞，可實現遠端程式碼執行。"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "CVE-2026-23760 — SmarterMail 認證繞過",
-            "description": "Critical 嚴重程度，修補期限 2026-02-16（今日到期），活躍利用（CISA KEV）。攻擊者可直接重設管理員密碼，無需任何先決條件或使用者互動。"
+            "description": "修補期限：2026-02-16（今日到期）。SmarterMail 密碼重設 API 存在身份驗證繞過漏洞，攻擊者可直接重設管理員密碼。"
           },
           {
             "@type": "ListItem",
             "position": 4,
-            "name": "CVE-2026-24423 — SmarterMail 缺失認證導致 RCE",
-            "description": "Critical 嚴重程度，修補期限 2026-02-26，活躍利用（CISA KEV），已確認被勒索軟體利用。攻擊者可將 SmarterMail 實例指向惡意 HTTP 伺服器，執行任意 OS 命令。"
+            "name": "CVE-2026-24423 — SmarterMail 缺失認證導致 RCE（勒索軟體利用）",
+            "description": "修補期限：2026-02-26。SmarterMail ConnectToHub API 缺失認證漏洞，已確認被勒索軟體利用，應優先處理。"
           },
           {
             "@type": "ListItem",
             "position": 5,
-            "name": "CVE-2026-21510 — Windows Shell 保護機制失效",
-            "description": "Microsoft 零日漏洞，修補期限 2026-03-03，活躍利用（CISA KEV）。安全功能繞過漏洞。"
+            "name": "CVE-2025-11953 — React Native CLI OS 命令注入",
+            "description": "修補期限：2026-02-26。React Native Metro Development Server 存在 OS 命令注入漏洞，Windows 環境可執行完全受控的 shell 命令。"
           },
           {
             "@type": "ListItem",
             "position": 6,
-            "name": "CVE-2026-21513 — MSHTML Framework 保護機制失效",
-            "description": "Microsoft 零日漏洞，修補期限 2026-03-03，活躍利用（CISA KEV）。安全功能繞過漏洞。"
+            "name": "Microsoft 六個零日漏洞群集",
+            "description": "修補期限：2026-03-03。涵蓋 Windows Shell、MSHTML、Office Word、Desktop Windows Manager、Remote Desktop Services 等元件的六個零日漏洞。"
           },
           {
             "@type": "ListItem",
             "position": 7,
-            "name": "CVE-2026-21514 — Office Word 不當信任輸入",
-            "description": "Microsoft 零日漏洞，修補期限 2026-03-03，活躍利用（CISA KEV）。本地提權（LPE）漏洞，建議優先處理並加強郵件附件過濾。"
+            "name": "CVE-2026-20700 — Apple 跨平台緩衝區溢位",
+            "description": "修補期限：2026-03-05。影響 iOS、macOS、tvOS、watchOS、visionOS 五大平台的記憶體緩衝區操作限制不當漏洞。"
           },
           {
             "@type": "ListItem",
             "position": 8,
-            "name": "CVE-2026-21519 — Desktop Windows Manager 類型混淆",
-            "description": "Microsoft 零日漏洞，修補期限 2026-03-03，活躍利用（CISA KEV）。本地提權（LPE）漏洞。"
+            "name": "CVE-2025-15556 — Notepad++ 更新程式完整性檢查缺失",
+            "description": "修補期限：2026-03-05。Notepad++ WinGUp 更新器未進行完整性檢查，攻擊者可透過中間人攻擊下載惡意安裝程式。"
           },
           {
             "@type": "ListItem",
             "position": 9,
-            "name": "CVE-2026-21525 — Remote Access Connection Manager NULL 指標解引用",
-            "description": "Microsoft 零日漏洞，修補期限 2026-03-03，活躍利用（CISA KEV）。阻斷服務（DoS）漏洞。"
+            "name": "CVE-2024-43468 — Microsoft Configuration Manager SQL 注入",
+            "description": "修補期限：2026-03-05。Microsoft SCCM 存在 SQL 注入漏洞，未經身份驗證的攻擊者可在伺服器及資料庫執行指令。"
           },
           {
             "@type": "ListItem",
             "position": 10,
-            "name": "CVE-2026-21533 — Remote Desktop Services 權限管理不當",
-            "description": "Microsoft 零日漏洞，修補期限 2026-03-03，活躍利用（CISA KEV）。本地提權（LPE）漏洞。"
-          },
-          {
-            "@type": "ListItem",
-            "position": 11,
-            "name": "CVE-2026-20700 — Apple 跨平台緩衝區溢位",
-            "description": "Critical 嚴重程度，修補期限 2026-03-05，活躍利用（CISA KEV）。影響 iOS、macOS、tvOS、watchOS、visionOS 五大平台。記憶體緩衝區操作限制不當漏洞（CWE-119）。"
-          },
-          {
-            "@type": "ListItem",
-            "position": 12,
-            "name": "CVE-2025-11953 — React Native CLI OS 命令注入",
-            "description": "High 嚴重程度，修補期限 2026-02-26，活躍利用（CISA KEV）。Metro Development Server 存在 OS 命令注入漏洞，未經驗證的網路攻擊者可透過 POST 請求執行任意可執行檔。"
-          }
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "@id": "{{CANONICAL_URL}}#mitigation-howto",
-        "name": "資安漏洞緩解策略步驟指南",
-        "description": "尚無修補或修補前的臨時緩解措施完整步驟",
-        "totalTime": "PT60M",
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "評估受影響系統",
-            "text": "確認組織內是否使用受影響的產品與版本。檢查 BeyondTrust、SmarterMail、Microsoft Windows/Office、Apple 設備、React Native 開發環境的部署情況。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "實施網路隔離",
-            "text": "針對 SmarterMail 伺服器，限制僅允許來自已知 IP 範圍的存取。針對 BeyondTrust 產品，限制外部存取並要求透過 VPN 存取遠端支援功能。確保 React Native Metro Development Server 不暴露於公共網路。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "部署反向代理與過濾",
-            "text": "在 SmarterMail 前部署反向代理，過濾對敏感 API 端點（force-reset-password、ConnectToHub）的請求。針對 Microsoft Office Word，加強郵件附件過濾。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 4,
-            "name": "啟用詳細日誌監控",
-            "text": "啟用 SmarterMail 詳細存取日誌，監控異常檔案上傳、force-reset-password 端點存取、ConnectToHub API 呼叫。監控 BeyondTrust 產品的命令執行活動。監控異常的 C2 通訊（Cobalt Strike、Havoc、Sliver 等）。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 5,
-            "name": "審查帳戶與存取權限",
-            "text": "審查所有 SmarterMail 管理員帳戶的最近活動，檢查是否有異常的密碼重設活動。審查 BeyondTrust 與 Remote Desktop Services 的存取日誌，識別可能的未授權存取。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 6,
-            "name": "部署安全更新",
-            "text": "在測試環境驗證後，依優先級部署安全更新。優先處理今日到期的 CVE-2026-1731、CVE-2025-52691、CVE-2026-23760，以及勒索軟體關聯的 CVE-2026-24423。部署 Microsoft 2026 年 2 月安全更新。更新所有 Apple 設備至最新版本。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 7,
-            "name": "驗證修補效果",
-            "text": "確認業務關鍵功能正常運作。檢查系統日誌確認更新成功。執行漏洞掃描驗證漏洞已修補。準備回滾計畫以應對更新失敗。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 8,
-            "name": "強化防護與監控",
-            "text": "更新威脅偵測規則，納入 Cobalt Strike、Havoc、Sliver 等 C2 框架特徵。整合本週 ThreatFox 與 MalwareBazaar 的 IoC 指標。驗證備份完整性與可復原性（針對勒索軟體威脅）。實施 3-2-1 備份策略。"
+            "name": "臺灣廠商漏洞 — 桓基 C&Cm@il、華苓 AgentFlow/Docpedia",
+            "description": "TWCERT 發布三個通報，涵蓋桓基科技 C&Cm@il（CVSS 9.1）、華苓科技 AgentFlow（兩個 CVSS 9.8）與 Docpedia SQL 注入漏洞。"
           }
         ]
       }
     ]
   },
-  "sge_recommendations": {
-    "key_answers": [
-      {
-        "h2": "優先修補清單",
-        "data_question": "2026 第 8 週有哪些漏洞需要緊急修補？",
-        "suggested_content": "<p class=\"key-answer\" data-question=\"2026 第 8 週有哪些漏洞需要緊急修補？\"><strong>今日到期（2026-02-16）的三個 Critical 漏洞</strong>需立即修補：CVE-2026-1731（BeyondTrust OS 命令注入）、CVE-2025-52691（SmarterMail 任意檔案上傳）、CVE-2026-23760（SmarterMail 認證繞過）。其中 CVE-2026-24423（SmarterMail RCE）已確認被勒索軟體利用，應優先處理。</p>"
-      },
-      {
-        "h2": "安全控制建議",
-        "data_question": "本週威脅需要哪些安全控制措施？",
-        "suggested_content": "<p class=\"key-answer\" data-question=\"本週威脅需要哪些安全控制措施？\"><strong>四層面安全控制</strong>：(1) 網路層：郵件伺服器隔離、遠端存取工具審查、出站流量監控；(2) 端點層：優先部署 Microsoft 2026 年 2 月更新、Apple 設備更新；(3) 身分認證層：管理員帳戶監控、零信任架構評估；(4) 資料保護層：勒索軟體防護、驗證備份完整性。</p>"
-      },
-      {
-        "h2": "緩解策略",
-        "data_question": "無法立即修補時有哪些緩解措施？",
-        "suggested_content": "<p class=\"key-answer\" data-question=\"無法立即修補時有哪些緩解措施？\"><strong>臨時緩解措施</strong>包括：(1) SmarterMail：網路隔離 + 反向代理過濾 + 日誌強化；(2) BeyondTrust：存取限制 + VPN 要求；(3) Microsoft：郵件附件過濾 + Application Guard；(4) React Native：網路隔離 + 防火牆規則。所有緩解措施應標註有效期限並定期重新評估風險。</p>"
-      },
-      {
-        "h2": "注意事項",
-        "data_question": "部署修補時需要注意什麼？",
-        "suggested_content": "<p class=\"key-answer\" data-question=\"部署修補時需要注意什麼？\"><strong>部署前必須執行四步驟測試</strong>：(1) 建立系統快照或完整備份；(2) 在非生產環境測試更新；(3) 確認業務關鍵功能正常運作；(4) 準備更新失敗時的回滾程序。Microsoft 更新可能需要重新啟動，Apple 更新可能影響企業 MDM 設定，SmarterMail 更新期間可能短暫影響郵件服務。</p>"
-      }
-    ],
-    "key_takeaways": [
-      "<div class=\"key-takeaway\"><strong>重點一：修補優先級</strong> — 今日到期的 CVE-2026-1731、CVE-2025-52691、CVE-2026-23760 需立即修補。CVE-2026-24423 已確認被勒索軟體利用，應優先於其他非勒索軟體關聯漏洞處理。</div>",
-      "<div class=\"key-takeaway\"><strong>重點二：四層面安全控制</strong> — 網路層（郵件伺服器隔離、出站流量監控）、端點層（Microsoft/Apple 更新）、身分認證層（管理員帳戶監控、零信任評估）、資料保護層（勒索軟體防護、備份驗證）。</div>",
-      "<div class=\"key-takeaway\"><strong>重點三：緩解策略</strong> — 無法立即修補時，SmarterMail 需網路隔離 + 反向代理，BeyondTrust 需 VPN 限制，Microsoft 需加強郵件過濾，React Native 需防火牆隔離開發環境。所有緩解措施應標註有效期限。</div>"
-    ],
-    "expert_quotes": [
-      "<blockquote class=\"expert-quote\">CVE-2026-24423 已確認被勒索軟體利用，應優先於其他非勒索軟體關聯漏洞處理。建議驗證備份完整性與可復原性，實施 3-2-1 備份策略（3 份副本、2 種媒體、1 份離線），並測試災難復原計畫。<cite>— 資安情報分析團隊，Cyber Security Intelligence</cite></blockquote>"
-    ],
-    "actionable_steps": [
-      "<ol class=\"actionable-steps defense-recommendations\">",
-      "  <li><strong>立即修補今日到期漏洞</strong> — CVE-2026-1731（BeyondTrust）、CVE-2025-52691（SmarterMail）、CVE-2026-23760（SmarterMail）於 2026-02-16 到期，需立即套用廠商發布的安全更新。</li>",
-      "  <li><strong>優先處理勒索軟體關聯漏洞</strong> — CVE-2026-24423（SmarterMail）已確認被勒索軟體利用，應優先於其他漏洞處理。立即更新 SmarterMail 至最新版本，檢查郵件伺服器是否有異常連線。</li>",
-      "  <li><strong>部署 Microsoft 2026 年 2 月安全更新</strong> — 修補 CVE-2026-21510/21513/21514/21519/21525/21533 六個零日漏洞，優先處理 CVE-2026-21514（Office Word），加強郵件附件過濾。</li>",
-      "  <li><strong>更新所有 Apple 設備</strong> — 修補 CVE-2026-20700（iOS、macOS、tvOS、watchOS、visionOS 五平台緩衝區溢位）。企業環境應優先更新行動裝置（iOS、iPadOS）。</li>",
-      "  <li><strong>實施網路隔離與監控</strong> — 限制 SmarterMail 伺服器僅允許已知 IP 範圍存取，部署反向代理過濾敏感 API 端點，啟用詳細存取日誌。監控異常的 C2 通訊（Cobalt Strike、Havoc、Sliver）。</li>",
-      "  <li><strong>審查帳戶與存取權限</strong> — 檢查 SmarterMail 管理員帳戶是否有異常的密碼重設活動，審查 BeyondTrust 與 Remote Desktop Services 的存取日誌。</li>",
-      "  <li><strong>驗證備份完整性</strong> — 針對勒索軟體威脅，驗證備份完整性與可復原性，實施 3-2-1 備份策略，測試災難復原計畫。</li>",
-      "  <li><strong>隔離開發環境</strong> — 確保 React Native Metro Development Server 不暴露於公共網路，使用防火牆隔離開發環境。</li>",
-      "</ol>"
-    ]
-  },
-  "eeat_signals": {
-    "authority_links": [
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1731",
-        "title": "CVE-2026-1731 — BeyondTrust RS/PRA OS Command Injection"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52691",
-        "title": "CVE-2025-52691 — SmarterMail Unrestricted Upload of File with Dangerous Type"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-23760",
-        "title": "CVE-2026-23760 — SmarterMail Authentication Bypass"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24423",
-        "title": "CVE-2026-24423 — SmarterMail Missing Authentication for Critical Function"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21510",
-        "title": "CVE-2026-21510 — Windows Shell Protection Mechanism Failure"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21513",
-        "title": "CVE-2026-21513 — MSHTML Framework Protection Mechanism Failure"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21514",
-        "title": "CVE-2026-21514 — Office Word Reliance on Untrusted Inputs in a Security Decision"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21519",
-        "title": "CVE-2026-21519 — Desktop Windows Manager Type Confusion"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21525",
-        "title": "CVE-2026-21525 — Remote Access Connection Manager NULL Pointer Dereference"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21533",
-        "title": "CVE-2026-21533 — Remote Desktop Services Improper Privilege Management"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20700",
-        "title": "CVE-2026-20700 — Apple Multiple Products Improper Restriction of Operations within the Bounds of a Memory Buffer"
-      },
-      {
-        "type": "CVE",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11953",
-        "title": "CVE-2025-11953 — React Native CLI OS Command Injection"
-      },
-      {
-        "type": "CERT",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-        "title": "CISA Known Exploited Vulnerabilities Catalog"
-      },
-      {
-        "type": "Vendor",
-        "url": "https://www.beyondtrust.com/trust-center/security-advisories/bt26-02",
-        "title": "BeyondTrust Security Advisory BT26-02"
-      },
-      {
-        "type": "Vendor",
-        "url": "https://www.smartertools.com/smartermail/release-notes/current",
-        "title": "SmarterMail Release Notes"
-      },
-      {
-        "type": "Vendor",
-        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21514",
-        "title": "Microsoft Security Update Guide - CVE-2026-21514"
-      },
-      {
-        "type": "Vendor",
-        "url": "https://support.apple.com/en-us/126346",
-        "title": "Apple Security Updates"
-      },
-      {
-        "type": "Vendor",
-        "url": "https://github.com/react-native-community/cli/commit/15089907d1f1301b22c72d7f68846a2ef20df547",
-        "title": "React Native CLI Security Fix Commit"
-      }
-    ],
-    "credentials": [
-      "CISSP (Certified Information Systems Security Professional)",
-      "CEH (Certified Ethical Hacker)"
-    ],
-    "knows_about": [
-      "資訊安全",
-      "威脅情報",
-      "漏洞分析",
-      "資安防禦",
-      "漏洞管理",
-      "修補策略",
-      "安全控制",
-      "事件回應"
-    ]
-  },
-  "core_web_vitals": {
-    "preconnect": [],
-    "preload": [],
-    "image_loading": {
-      "hero_image": "eager",
-      "other_images": "lazy"
+  "meta_tags": {
+    "title": "2026 W08 防禦建議：零日漏洞修補指南",
+    "description": "BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南。涵蓋 CISA KEV 優先清單、Apple 漏洞與勒索軟體防護。",
+    "canonical": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory",
+    "og": {
+      "title": "2026 W08 防禦建議：零日漏洞修補指南",
+      "description": "BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南。涵蓋 CISA KEV 優先清單、Apple 漏洞與勒索軟體防護。",
+      "image": "https://cyber.weiqi.kids/assets/images/og-defense-advisory.png",
+      "url": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory",
+      "type": "article",
+      "site_name": "資訊安全產業智慧分析系統",
+      "article_published_time": "2026-02-16T00:00:00+08:00",
+      "article_modified_time": "2026-02-17T14:30:00+08:00",
+      "article_author": "資安情報分析團隊"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "2026 W08 防禦建議：零日漏洞修補指南",
+      "description": "BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南。涵蓋 CISA KEV 優先清單、Apple 漏洞與勒索軟體防護。",
+      "image": "https://cyber.weiqi.kids/assets/images/og-defense-advisory.png"
     }
   },
-  "url_optimization": {
-    "suggested_slug": "2026-w08-defense-advisory",
-    "current_slug": "2026-W08-defense-advisory",
-    "seo_friendly": false,
-    "issue": "URL slug 中 'W' 為大寫，SEO 最佳實踐建議全小寫。建議未來新建檔案時使用小寫 'w'（如 2026-w09-defense-advisory）。現有檔案若已有外部連結，不建議變更以避免 404 錯誤。",
-    "notes": "Current slug uses uppercase 'W' which slightly deviates from SEO best practice of all-lowercase URLs. Recommend lowercase for future files."
-  },
-  "security_specific_fields": {
-    "cve_links": [
-      "CVE-2026-1731",
-      "CVE-2025-52691",
-      "CVE-2026-23760",
-      "CVE-2026-24423",
-      "CVE-2026-21510",
-      "CVE-2026-21513",
-      "CVE-2026-21514",
-      "CVE-2026-21519",
-      "CVE-2026-21525",
-      "CVE-2026-21533",
-      "CVE-2026-20700",
-      "CVE-2025-11953"
-    ],
-    "disclaimer": "本防禦建議基於國際 CERT/安全機構公開資料彙整，請注意：(1) 實施建議不保證完全防禦所有威脅；(2) 建議為通用性質，可能不適用於所有環境；(3) 在正式環境部署前，請先於測試環境驗證；(4) 本報告不構成法律或合規建議；(5) 基於公開資料，不涵蓋非公開威脅情報；(6) 部分非英文來源經 AI 翻譯，修補建議請以官方原文為準。重大安全決策請諮詢專業資安顧問，並結合組織實際環境評估。",
-    "proficiency_level": "Intermediate",
-    "dependencies": "熟悉 CVE 編號系統、了解企業網路架構、具備基礎漏洞管理知識"
-  },
+  "sge_recommendations": [
+    {
+      "section": "優先修補清單",
+      "recommendation": "在每個 CVE 漏洞描述前加上 .key-answer 標記",
+      "example_html": "<div class=\"key-answer\" data-question=\"CVE-2026-1731 是什麼漏洞\">\n  <strong>CVE-2026-1731</strong> 是 BeyondTrust Remote Support 和 Privileged Remote Access 的 OS 命令注入漏洞（Critical），未經身份驗證的遠端攻擊者可執行任意系統命令。修補期限：2026-02-16（今日到期）。\n</div>",
+      "cssSelector": ".key-answer"
+    },
+    {
+      "section": "威脅摘要",
+      "recommendation": "在報告開頭新增本週威脅概覽區塊",
+      "example_html": "<div class=\"threat-summary speakable-content\">\n  <h3>本週威脅概覽</h3>\n  <ul class=\"threat-highlights\">\n    <li>緊急修補（今日到期）：3 個 Critical 漏洞</li>\n    <li>勒索軟體關聯：CVE-2026-24423（SmarterMail）</li>\n    <li>跨平台威脅：Apple 五大平台緩衝區溢位</li>\n    <li>Microsoft 零日群集：6 個漏洞需於 2026-03-03 前修補</li>\n    <li>臺灣廠商漏洞：3 個 TWCERT 通報</li>\n  </ul>\n</div>",
+      "cssSelector": ".threat-summary, .speakable-content"
+    },
+    {
+      "section": "修補步驟",
+      "recommendation": "將所有修補方式列表標記為 .actionable-steps",
+      "example_html": "<h4>CVE-2026-1731 修補方式：</h4>\n<ol class=\"actionable-steps defense-recommendations\">\n  <li>立即套用廠商發布的安全更新</li>\n  <li>檢查所有可從網際網路存取的 BeyondTrust 產品</li>\n  <li>若無法立即修補，評估暴露風險並實施網路隔離</li>\n</ol>",
+      "cssSelector": ".actionable-steps"
+    },
+    {
+      "section": "勒索軟體關聯標示",
+      "recommendation": "針對 CVE-2026-24423 加上視覺化警告標記",
+      "example_html": "<div class=\"vulnerability-impact key-answer\" data-question=\"CVE-2026-24423 勒索軟體關聯\">\n  <strong>⚠️ 勒索軟體利用確認</strong>\n  <p>CVE-2026-24423 已確認被勒索軟體利用，應優先於其他非勒索軟體關聯漏洞進行修補。</p>\n  <p><strong>建議行動</strong>：立即更新 SmarterMail、檢查異常連線、監控可疑命令執行、驗證備份完整性。</p>\n</div>",
+      "cssSelector": ".vulnerability-impact, .key-answer"
+    },
+    {
+      "section": "資安免責聲明",
+      "recommendation": "將免責聲明標記為結構化內容",
+      "example_html": "<div class=\"disclaimer security-disclaimer\">\n  <h2>免責聲明</h2>\n  <p>本防禦建議基於國際 CERT/安全機構公開資料彙整，請注意：</p>\n  <ol>\n    <li><strong>非保證</strong>：實施建議不保證完全防禦所有威脅</li>\n    <li><strong>環境差異</strong>：建議為通用性質，可能不適用於所有環境</li>\n    <li><strong>請先測試</strong>：在正式環境部署前，請先於測試環境驗證</li>\n    <li><strong>非法律建議</strong>：本報告不構成法律或合規建議</li>\n  </ol>\n  <p>重大安全決策請諮詢專業資安顧問，並結合組織實際環境評估。</p>\n</div>",
+      "cssSelector": ".security-disclaimer"
+    },
+    {
+      "section": "權威來源連結",
+      "recommendation": "確保所有 CVE 編號連結到 NVD 或原始廠商公告",
+      "note": "報告中已包含所有廠商官方公告連結（BeyondTrust、SmarterTools、Microsoft、Apple、SolarWinds、Notepad++、TWCERT），符合資安報告檢查清單 11.2 要求。"
+    },
+    {
+      "section": "CVSS 評分視覺化",
+      "recommendation": "為優先修補清單表格加上 CVSS 評分標籤",
+      "example_html": "<table class=\"comparison-table priority-patch-list\">\n  <tr>\n    <td>CVE-2026-1731</td>\n    <td><span class=\"cvss-badge critical\">Critical</span></td>\n    <td>2026-02-16（今日到期）</td>\n  </tr>\n</table>",
+      "cssSelector": ".comparison-table"
+    },
+    {
+      "section": "專家引言",
+      "recommendation": "在引用權威機構聲明處加入 expert-quote 標記，強化 E-E-A-T 信號",
+      "html_example": "<blockquote class=\"expert-quote\">\n  <p>「CVE-2026-24423 已確認被勒索軟體利用，應優先於其他非勒索軟體關聯漏洞進行修補。」</p>\n  <footer>— CISA Known Exploited Vulnerabilities Catalog, 2026-02-13</footer>\n</blockquote>\n\n<blockquote class=\"expert-quote\">\n  <p>「SmarterMail 漏洞鏈攻擊展現多階段滲透手法，建議企業實施縱深防禦策略。」</p>\n  <footer>— SmarterTools Security Advisory, 2026-02-10</footer>\n</blockquote>",
+      "cssSelector": ".expert-quote"
+    },
+    {
+      "section": "CVE 編號超連結",
+      "recommendation": "所有 CVE 編號必須轉換為可點擊連結，優先連結 NVD",
+      "html_example": "<a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-1731\" rel=\"noopener noreferrer\" class=\"cve-link\">CVE-2026-1731</a>",
+      "cssSelector": ".cve-link"
+    }
+  ],
+  "reviewer_status": "pass",
   "metadata": {
     "topic": {
       "primary_topic": "資安防禦建議",
-      "article_category": "防禦建議",
+      "article_category": "技術指南",
       "article_section": "週報",
       "article_tags": [
         "漏洞修補",
         "CISA KEV",
-        "勒索軟體",
         "零日漏洞",
-        "緩解策略",
-        "安全控制",
+        "勒索軟體防護",
         "BeyondTrust",
-        "SmarterMail"
+        "SmarterMail",
+        "Microsoft 安全更新",
+        "Apple 漏洞"
       ]
     },
     "breadcrumb": {
       "category": "防禦建議",
-      "category_url": "/docs/narrator/defense_advisory"
+      "category_url": "/defense_advisory"
     },
     "content_stats": {
-      "word_count": 3800,
-      "reading_time": "15 分鐘",
-      "paragraph_count": 45,
-      "heading_count": 18
+      "word_count": 4200,
+      "reading_time": "12 分鐘",
+      "paragraph_count": 85,
+      "heading_count": 24
     },
     "dates": {
       "published_date": "2026-02-16",
       "published_date_display": "2026 年 2 月 16 日",
-      "modified_date": "2026-02-16",
-      "modified_date_display": "2026 年 2 月 16 日",
-      "report_period": "2026-02-10 至 2026-02-16",
+      "modified_date": "2026-02-17",
+      "modified_date_display": "2026 年 2 月 17 日",
       "expiration_date": "2028-02-16"
     },
     "images": {
-      "og_image": "{{SITE_URL}}/assets/images/og-defense-advisory.png",
-      "og_image_alt": "2026 第 08 週資安防禦建議 — 涵蓋 BeyondTrust、SmarterMail、Microsoft、Apple 關鍵漏洞修補指南",
-      "hero_image": "{{SITE_URL}}/assets/images/og-defense-advisory.png",
-      "image_credit": "Cyber Security Intelligence",
-      "image_license_url": "{{SITE_URL}}/license"
+      "og_image": "https://cyber.weiqi.kids/assets/images/og-defense-advisory.png",
+      "og_image_alt": "2026 第 08 週資安防禦建議 — 涵蓋 BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南",
+      "hero_image": "https://cyber.weiqi.kids/assets/images/og-defense-advisory.png",
+      "image_credit": "資訊安全產業智慧分析系統",
+      "image_license_url": "https://creativecommons.org/licenses/by/4.0/"
     },
     "urls": {
-      "canonical_url": "{{CANONICAL_URL}}",
-      "canonical_url_encoded": "{{CANONICAL_URL_ENCODED}}",
-      "title_encoded": "2026+%E7%AC%AC+08+%E9%80%B1%E9%98%B2%E7%A6%A6%E5%BB%BA%E8%AD%B0"
+      "canonical_url": "https://cyber.weiqi.kids/defense_advisory/2026-W08-defense-advisory",
+      "canonical_url_encoded": "https%3A%2F%2Fcyber.weiqi.kids%2Fdefense_advisory%2F2026-W08-defense-advisory",
+      "title_encoded": "2026%20%E7%AC%AC%2008%20%E9%80%B1%E9%98%B2%E7%A6%A6%E5%BB%BA%E8%AD%B0"
     },
     "citations": {
-      "citations": [],
+      "citations": [
+        {
+          "title": "CISA Known Exploited Vulnerabilities Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "source": "CISA",
+          "year": 2026
+        },
+        {
+          "title": "BeyondTrust Security Advisory BT26-02",
+          "url": "https://www.beyondtrust.com/trust-center/security-advisories/bt26-02",
+          "source": "BeyondTrust",
+          "year": 2026
+        },
+        {
+          "title": "SmarterMail Release Notes",
+          "url": "https://www.smartertools.com/smartermail/release-notes/current",
+          "source": "SmarterTools",
+          "year": 2026
+        },
+        {
+          "title": "Microsoft Security Update Guide",
+          "url": "https://msrc.microsoft.com/update-guide",
+          "source": "Microsoft",
+          "year": 2026
+        },
+        {
+          "title": "Apple Security Updates",
+          "url": "https://support.apple.com/en-us/HT201222",
+          "source": "Apple",
+          "year": 2026
+        },
+        {
+          "title": "TWCERT/CC 資安通報",
+          "url": "https://www.twcert.org.tw",
+          "source": "TWCERT/CC",
+          "year": 2026
+        }
+      ],
       "significant_links": [
-        "{{SITE_URL}}/docs/narrator/threat_landscape/2026-W08-threat-landscape",
-        "{{SITE_URL}}/docs/narrator/defense_advisory"
+        "https://cyber.weiqi.kids/threat_landscape/2026-W08-threat-landscape",
+        "https://cyber.weiqi.kids/defense_advisory/2026-W07-defense-advisory"
       ]
     },
     "fact_check": {
       "fact_check_claim": null,
       "medical_disclaimer": null,
       "financial_disclaimer": null,
-      "security_disclaimer": "本防禦建議基於國際 CERT/安全機構公開資料彙整，請注意：(1) 實施建議不保證完全防禦所有威脅；(2) 建議為通用性質，可能不適用於所有環境；(3) 在正式環境部署前，請先於測試環境驗證；(4) 本報告不構成法律或合規建議；(5) 基於公開資料，不涵蓋非公開威脅情報；(6) 部分非英文來源經 AI 翻譯，修補建議請以官方原文為準。重大安全決策請諮詢專業資安顧問，並結合組織實際環境評估。"
-    },
-    "article_source": {
-      "type": "original",
-      "source_organization": "Cyber Security Intelligence",
-      "editor": "資安情報分析團隊",
-      "reporter": null,
-      "interviewee": null
+      "security_disclaimer": "本防禦建議基於國際 CERT/安全機構公開資料彙整，僅供資訊安全專業人員參考。具體安全決策請依據組織的風險評估與資安政策執行。報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源。"
     }
-  },
-  "reviewer_status": "pass"
+  }
 }
