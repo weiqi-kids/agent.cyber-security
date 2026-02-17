@@ -184,6 +184,78 @@ date: 2026-02-16
 
 ---
 
+#### CVE-2025-40536 — SolarWinds Web Help Desk 安全控制繞過
+
+| 項目 | 內容 |
+|------|------|
+| **嚴重程度** | Critical |
+| **修補期限** | 2026-02-15（已過期） |
+| **利用狀態** | 活躍利用（CISA KEV） |
+| **勒索軟體關聯** | Unknown |
+
+**漏洞描述**：SolarWinds Web Help Desk 存在安全控制繞過漏洞（CWE-693）。未經身份驗證的攻擊者可繞過安全控制存取受限功能。
+
+**影響產品**：
+- SolarWinds Web Help Desk
+
+**修補方式**：
+1. 立即套用 SolarWinds 官方修補程式
+2. 若無法立即修補，限制對 Web Help Desk 的外部存取
+
+**官方公告**：
+- https://www.solarwinds.com/trust-center/security-advisories/CVE-2025-40536
+- https://documentation.solarwinds.com/en/success_center/whd/content/release_notes/whd_2026-1_release_notes.htm
+
+---
+
+#### CVE-2025-15556 — Notepad++ 更新程式完整性檢查缺失
+
+| 項目 | 內容 |
+|------|------|
+| **嚴重程度** | High |
+| **修補期限** | 2026-03-05 |
+| **利用狀態** | 活躍利用（CISA KEV） |
+| **勒索軟體關聯** | Unknown |
+
+**漏洞描述**：Notepad++ 使用 WinGUp 更新器時，存在下載程式碼未進行完整性檢查漏洞（CWE-494）。攻擊者可透過中間人攻擊攔截或重導更新流量，下載並執行攻擊者控制的安裝程式。
+
+**影響產品**：
+- Notepad++（使用 WinGUp 更新器的版本）
+
+**修補方式**：
+1. 更新至 Notepad++ v8.8.9 或更新版本
+2. 避免在不安全網路環境中執行軟體更新
+
+**官方公告**：
+- https://notepad-plus-plus.org/news/clarification-security-incident/
+- https://community.notepad-plus-plus.org/topic/27298/notepad-v8-8-9-vulnerability-fix
+
+---
+
+#### CVE-2024-43468 — Microsoft Configuration Manager SQL 注入
+
+| 項目 | 內容 |
+|------|------|
+| **嚴重程度** | Critical |
+| **修補期限** | 2026-03-05 |
+| **利用狀態** | 活躍利用（CISA KEV） |
+| **勒索軟體關聯** | Unknown |
+
+**漏洞描述**：Microsoft Configuration Manager 存在 SQL 注入漏洞（CWE-89）。未經身份驗證的攻擊者可透過特製請求在伺服器及底層資料庫執行指令。
+
+**影響產品**：
+- Microsoft Configuration Manager（SCCM）
+
+**修補方式**：
+1. 套用 Microsoft 發布的安全更新
+2. 限制 Configuration Manager 的網路存取
+3. 審查資料庫存取日誌
+
+**官方公告**：
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43468
+
+---
+
 #### CVE-2025-11953 — React Native CLI OS 命令注入
 
 | 項目 | 內容 |
@@ -209,17 +281,84 @@ date: 2026-02-16
 
 ---
 
-### 1.4 修補優先級總覽
+### 1.4 臺灣廠商漏洞修補
+
+本週 TWCERT/CC 發布以下臺灣廠商產品漏洞，建議臺灣企業用戶優先關注：
+
+#### TVN-202602004 — 桓基科技 C&Cm@il 多個漏洞
+
+| 項目 | 內容 |
+|------|------|
+| **嚴重程度** | Critical |
+| **CVE** | CVE-2026-2234 (9.1)、CVE-2026-2235 (6.5)、CVE-2026-2236 (7.5) |
+| **利用狀態** | 無活躍利用報告 |
+
+**漏洞描述**：
+- CVE-2026-2234（CVSS 9.1 Critical）：未經身份驗證即可讀取與修改任意使用者信件內容
+- CVE-2026-2235（CVSS 6.5 Medium）：已驗證使用者可進行 SQL 注入
+- CVE-2026-2236（CVSS 7.5 High）：未經身份驗證即可進行 SQL 注入
+
+**修補方式**：更新至 olln-base 7.0-978 或更新版本
+
+**官方公告**：https://www.twcert.org.tw/tw/cp-132-10703-3d02f-1.html
+
+---
+
+#### TVN-202602002 — 華苓科技 AgentFlow 多個漏洞
+
+| 項目 | 內容 |
+|------|------|
+| **嚴重程度** | Critical |
+| **CVE** | CVE-2026-2095 (9.8)、CVE-2026-2096 (9.8)、CVE-2026-2097 (8.8)、CVE-2026-2098 (5.4)、CVE-2026-2099 (5.4) |
+| **利用狀態** | 無活躍利用報告 |
+
+**漏洞描述**：
+- CVE-2026-2095（CVSS 9.8 Critical）：認證繞過，可執行任意程式碼
+- CVE-2026-2096（CVSS 9.8 Critical）：缺失認證，可竊取使用者憑證
+- CVE-2026-2097（CVSS 8.8 High）：任意檔案上傳
+
+**修補方式**：
+- CVE-2026-2095/2096：參考官方緩解指引
+- CVE-2026-2097：請聯繫廠商
+- CVE-2026-2098/2099：更新至 4.0.0.1878.877 或更新版本
+
+**官方公告**：https://www.twcert.org.tw/tw/cp-132-10699-49c0b-1.html
+
+---
+
+#### TVN-202602001 — 華苓科技 Docpedia SQL 注入
+
+| 項目 | 內容 |
+|------|------|
+| **嚴重程度** | High |
+| **CVE** | CVE-2026-2093 (7.5)、CVE-2026-2094 (8.8) |
+| **利用狀態** | 無活躍利用報告 |
+
+**漏洞描述**：
+- CVE-2026-2093：未經身份驗證即可進行 SQL 注入
+- CVE-2026-2094：已驗證使用者可進行 SQL 注入讀取、修改、刪除資料
+
+**修補方式**：安裝修補程式 DP4 HotFix_057
+
+**官方公告**：https://www.twcert.org.tw/tw/cp-132-10697-6a30b-1.html
+
+---
+
+### 1.5 修補優先級總覽
 
 | 優先級 | 漏洞 | 產品 | 修補期限 | 勒索軟體關聯 |
 |--------|------|------|----------|--------------|
 | **P0** | CVE-2026-1731 | BeyondTrust RS/PRA | 2026-02-16 | Unknown |
 | **P0** | CVE-2025-52691 | SmarterMail | 2026-02-16 | Unknown |
 | **P0** | CVE-2026-23760 | SmarterMail | 2026-02-16 | Unknown |
+| **P0** | CVE-2025-40536 | SolarWinds WHD | 2026-02-15 | Unknown |
 | **P1** | CVE-2026-24423 | SmarterMail | 2026-02-26 | **Known** |
+| **P1** | CVE-2025-11953 | React Native CLI | 2026-02-26 | Unknown |
 | **P2** | CVE-2026-21510/13/14/19/25/33 | Microsoft Windows/Office | 2026-03-03 | Unknown |
 | **P3** | CVE-2026-20700 | Apple 多平台 | 2026-03-05 | Unknown |
-| **P3** | CVE-2025-11953 | React Native CLI | 2026-02-26 | Unknown |
+| **P3** | CVE-2025-15556 | Notepad++ | 2026-03-05 | Unknown |
+| **P3** | CVE-2024-43468 | MS Configuration Manager | 2026-03-05 | Unknown |
+| **P4** | CVE-2026-2234/2095/2096 | 臺灣廠商（桓基、華苓） | N/A | Unknown |
 
 ---
 
@@ -391,8 +530,8 @@ date: 2026-02-16
 
 ---
 
-> 報告產出時間：2026-02-16
+> 報告產出時間：2026-02-17
 > 資料截止時間：2026-02-16 UTC
 > 資料來源：CISA KEV、TWCERT/CC、NCSC-FI、Canadian Cyber Centre、NVD、Exploit-DB
 > 分析模型：Claude Opus 4.5
-> 版本：1.0（2026-02-16 初版）
+> 版本：1.1（2026-02-17 更新：新增 SolarWinds、Notepad++、SCCM、臺灣廠商漏洞）
