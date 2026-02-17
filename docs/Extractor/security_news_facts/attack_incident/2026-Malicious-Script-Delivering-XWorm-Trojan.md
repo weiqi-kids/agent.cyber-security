@@ -1,12 +1,12 @@
 # Malicious Script Delivering More Maliciousness
 
-| 项目 | 内容 |
+| 項目 | 內容 |
 |------|------|
 | **日期** | 2026-02-05 |
-| **来源** | SANS ISC |
-| **分类** | attack_incident |
-| **严重程度** | 高 |
-| **信心水准** | 高 |
+| **來源** | SANS ISC |
+| **分類** | attack_incident |
+| **嚴重程度** | 高 |
+| **信心水準** | 高 |
 
 ## 摘要
 

@@ -1,12 +1,12 @@
 # Poland Energy Sector Cyber Incident Highlights OT and ICS Security Gaps
 
-| 项目 | 内容 |
+| 項目 | 內容 |
 |------|------|
 | **日期** | 2026-02-10 |
-| **来源** | CISA (US) |
-| **分类** | attack_incident |
-| **严重程度** | 高 |
-| **信心水准** | 高 |
+| **來源** | CISA (US) |
+| **分類** | attack_incident |
+| **嚴重程度** | 高 |
+| **信心水準** | 高 |
 
 ## 摘要
 The purpose of this Alert is to amplify Poland’s Computer Emergency Response Team (CERT Polska’s) Energy Sector Incident Report published on Jan. 30, 2026, and highlight key mitigations for Energy Sec...

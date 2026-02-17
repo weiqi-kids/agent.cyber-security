@@ -1,12 +1,12 @@
 # Summary of the NCSC analysis of May 2020 US sanction
 
-| 项目 | 内容 |
+| 項目 | 內容 |
 |------|------|
 | **日期** | 2025-03-12 |
-| **来源** | UK NCSC |
-| **分类** | policy_regulation |
-| **严重程度** | 高 |
-| **信心水准** | 高 |
+| **來源** | UK NCSC |
+| **分類** | policy_regulation |
+| **嚴重程度** | 高 |
+| **信心水準** | 高 |
 
 ## 摘要
 

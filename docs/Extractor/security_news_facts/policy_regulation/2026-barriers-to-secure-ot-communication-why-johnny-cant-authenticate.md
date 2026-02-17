@@ -1,12 +1,12 @@
 # ​​Barriers to Secure OT Communication: Why Johnny Can’t Authenticate​
 
-| 项目 | 内容 |
+| 項目 | 內容 |
 |------|------|
 | **日期** | 2026-02-10 |
-| **来源** | CISA (US) |
-| **分类** | policy_regulation |
-| **严重程度** | 中 |
-| **信心水准** | 高 |
+| **來源** | CISA (US) |
+| **分類** | policy_regulation |
+| **嚴重程度** | 中 |
+| **信心水準** | 高 |
 
 ## 摘要
 CISA released the guidance, Barriers to Secure OT Communication: Why Johnny Can’t Authenticate, which highlights the known issues with insecure-by-design legacy industrial protocols and seeks to under...

@@ -1,0 +1,30 @@
+# TP-Link Systems Inc. VIGI Series IP Camera
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-02-05 |
+| **來源** | CISA (US) |
+| **分類** | attack_incident |
+| **嚴重程度** | 高 |
+| **信心水準** | 高 |
+
+## 摘要
+
+View CSAF Summary Successful exploitation of this vulnerability could result in unauthorized users gaining administrative access to affected closed circuit television cameras. The following versions o...
+
+## 事實內容
+
+View CSAF Summary Successful exploitation of this vulnerability could result in unauthorized users gaining administrative access to affected closed circuit television cameras. The following versions of TP-Link Systems Inc. VIGI Series IP Camera are affected: VIGI Cx45 Series Models C345, C445 VIGI Cx55 Series Models C355, C455 VIGI Cx85 Series Models C385, C485 VIGI C340S Series VIGI C540S Series Models C540S, EasyCam C540S VIGI C540V Series VIGI C250 Series VIGI Cx50 Series Models C350, C450 VIGI Cx20I (1.0) Series Models C220I 1.0, C320I 1.0, C420I 1.0 VIGI Cx20I (1.20) Series Models C220I 1.20, C320I 1.20, C420I 1.20 VIGI Cx30I (1.0) Series Models C230I 1.0, C330I 1.0, C430I 1.0 VIGI Cx30I (1.20) Series Models C230I 1.20, C330I 1.20, C430I 1.20 VIGI Cx30 (1.0) Series Models C230 1.0, C330 1.0, C430 1.0 VIGI Cx30 (1.20) Series Models C230 1.20, C330 1.20, C430 1.20 VIGI Cx40I (1.0) Series Models C240I 1.0, C340I 1.0, C440I 1.0 VIGI Cx40I (1.20) Series Models C240I 1.20, C340I 1.20, C440I 1.20 VIGI C230I Mini Series VIGI C240 1.0 Series VIGI C340 2.0 Series VIGI C440 2.0 Series VIGI C540 2.0 Series VIGI C540‑4G Series VIGI Cx40‑W Series Models C340‑W 2.0/2.20, C440‑W 2.0, C540‑W 2.0 VIGI Cx20 Series Models C320, C420 VIGI InSight Sx45 Series Models S245, S345, S445 VIGI InSight Sx55 Series Models S355, S455 VIGI InSight Sx85 Series Models S285, S385 VIGI InSight Sx45ZI Series Models S245ZI, S345ZI, S445ZI VIGI InSight Sx85PI Series Models S385PI, S485PI VIGI InSight S655I Series VIGI InSight S345‑4G Series VIGI InSight Sx25 Series Models S225, S325, S425 CVSS Vendor Equipment Vulnerabilities v3 8.8 TP-Link Systems Inc. TP-Link Systems Inc. VIGI Series IP Camera Improper Authentication Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-0629 An authentication bypass in the password recovery feature of the local web interface across multiple VIGI camera models allows an attacker on the LAN to reset the admin password without verification by manipulating client-side state. Attackers can gain full administrative access to the device, compromising configuration and network security. View CVE Details Affected Products TP-Link Systems Inc. VIGI Series IP Camera Vendor: TP-Link Systems Inc. Product Version: TP-Link Systems Inc. VIGI Cx45 Series Models C345, C445: Product Status: known_affected Remediations Mitigation TP-Link Systems Inc. strongly recommends that users with affected devices take the following actions: Mitigation Download and update to the latest firmware version to fix the vulnerability from the following links. Mitigation United States users should visit the TP-Link US Download Center here: https://www.vigi.com/us/support/download/. Mitigation Global English users should visit the TP-Link EN Download Center:https://www.vigi.com/es/support/download/. Mitigation India users should visit the TP-Link India Download Center:https://www.vigi.com/in/support/download/. Mitigation Please visit https://www.tp-link.com/us/support/faq/4906/ for the TP-Link advisory. Relevant CWE: CWE-287 Improper Authentication Metrics CVSS Version Base Score Base Severity Vector String 3.1 8.8 HIGH CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H Acknowledgments Arko Dhar of Redinent Innovations reported this vulnerability to CISA Legal Notice and Terms of Use This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability, such as: Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from the Internet. Locate control system networks and remote devices behind firewalls and isolating them from business networks. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov/ics. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents. No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time. This vulnerability is not exploitable remotely. Revision History Initial Release Date: 2026-02-05 Date Revision Summary 2026-02-05 1 Initial Publication Legal Notice and Terms of Use
+
+## 受影響系統
+
+- N/A (需進一步分析)
+
+## 來源連結
+
+- [TP-Link Systems Inc. VIGI Series IP Camera](https://www.cisa.gov/news-events/ics-advisories/icsa-26-036-01)
+
+---
+> 萃取時間：2026-02-17 08:10 UTC
+> 資料來源：CISA (US) (cisa)
+

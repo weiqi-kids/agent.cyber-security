@@ -1,0 +1,30 @@
+# Relat&oacute;rio Ciberseguran&ccedil;a em Portugal, tema Sociedade j&aacute; dispon&iacute;vel
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2024-12-19 |
+| **來源** | CNCS (Portugal) |
+| **分類** | other |
+| **嚴重程度** | 未評估 |
+| **信心水準** | 中 |
+
+## 摘要
+
+O Relat&oacute;rio Ciberseguran&ccedil;a em Portugal, tema Sociedade 2024, desenvolvido pelo Observat&oacute;rio de Ciberseguran&ccedil;a do Centro Nacional de Ciberseguran&ccedil;a (CNCS) analisa as ...
+
+## 事實內容
+
+O Relat&oacute;rio Ciberseguran&ccedil;a em Portugal, tema Sociedade 2024, desenvolvido pelo Observat&oacute;rio de Ciberseguran&ccedil;a do Centro Nacional de Ciberseguran&ccedil;a (CNCS) analisa as atitudes, comportamentos e a educa&ccedil;&atilde;o e sensibiliza&ccedil;&atilde;o no &acirc;mbito da ciberseguran&ccedil;a, com base em dados de 2023 e de 2024, apresentando conclus&otilde;es e identificando algumas recomenda&ccedil;&otilde;es estrat&eacute;gicas para organiza&ccedil;&otilde;es e indiv&iacute;duos. Este estudo, que vai na 6.&ordf; edi&ccedil;&atilde;o, sistematiza dados dispon&iacute;veis sobre mat&eacute;rias ligadas &agrave; ciberseguran&ccedil;a, tais como do Eurostat e da Dire&ccedil;&atilde;o-Geral de Estat&iacute;sticas da Educa&ccedil;&atilde;o e Ci&ecirc;ncia (DGEEC), e recolhe outros de fontes abertas ou de inqu&eacute;ritos &agrave; comunidade, nomeadamente os relativos &agrave; sensibiliza&ccedil;&atilde;o e educa&ccedil;&atilde;o. Das principais conclus&otilde;es dentro dos dom&iacute;nios analisados, destaca-se: Exposi&ccedil;&atilde;o: elevada exposi&ccedil;&atilde;o digital dos utilizadores e organiza&ccedil;&otilde;es &agrave; internet e certos servi&ccedil;os digitais; N&iacute;vel de interesse do tema: destaque crescente nos media e &iacute;ndices de pesquisa online de ciberamea&ccedil;as relevantes ligadas ao fator humano; Atitudes e comportamentos: elevada sensibilidade das organiza&ccedil;&otilde;es relativamente &agrave; ciberseguran&ccedil;a, embora tenham poucos recursos internos; Sensibiliza&ccedil;&atilde;o e educa&ccedil;&atilde;o: pouco uso de meios de grande alcance para campanhas de sensibiliza&ccedil;&atilde;o em ciberseguran&ccedil;a, mas maior investimento das organiza&ccedil;&otilde;es em a&ccedil;&otilde;es dirigidas aos colaboradores. Continua a aumentar o n&uacute;mero de cursos e alunos de ciberseguran&ccedil;a no ensino superior. Face aos riscos e vulnerabilidades associados &agrave;s tend&ecirc;ncias, o relat&oacute;rio identifica recomenda&ccedil;&otilde;es para as organiza&ccedil;&otilde;es e indiv&iacute;duos: Associar a literacia digital nas escolas e outros contextos educativos a uma literacia para a ciberseguran&ccedil;a; Promover boas pr&aacute;ticas nas organiza&ccedil;&otilde;es, como o m&uacute;ltiplo fator de autentica&ccedil;&atilde;o (MFA), de forma mais acentuada; Capacitar mais os recursos das organiza&ccedil;&otilde;es em ciberseguran&ccedil;a, nomeadamente na Administra&ccedil;&atilde;o P&uacute;blica e pequenas e m&eacute;dias empresas (PME); Aumentar o alcance das a&ccedil;&otilde;es de sensibiliza&ccedil;&atilde;o chegando a um p&uacute;blico mais alargado. Consulte a vers&atilde;o integral do estudo. Consulte a vers&atilde;o do estudo em 15 minutos.
+
+## 受影響系統
+
+- N/A (需進一步分析)
+
+## 來源連結
+
+- [Relat&oacute;rio Ciberseguran&ccedil;a em Portugal, tema Sociedade j&aacute; dispon&iacute;vel](https://dyn.cncs.gov.pt/pt/detalhe/art/135907/relatorio-ciberseguranca-em-portugal-tema-sociedade-ja-disponivel)
+
+---
+> 萃取時間：2026-02-17 08:10 UTC
+> 資料來源：CNCS (Portugal) (cncs-pt)
+> 備註：Original language: pt (CNCS (Portugal))

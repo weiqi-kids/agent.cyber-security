@@ -1,0 +1,30 @@
+# Update on Attacks by Threat Group APT-C-60
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-02-17 |
+| **來源** | JPCERT/CC Blog |
+| **分類** | attack_incident |
+| **嚴重程度** | 未評估 |
+| **信心水準** | 高 |
+
+## 摘要
+
+In JPCERT/CC Eyes, we previously reporte...
+
+## 事實內容
+
+In JPCERT/CC Eyes, we previously reporte...
+
+## 受影響系統
+
+- N/A (需進一步分析)
+
+## 來源連結
+
+- [Update on Attacks by Threat Group APT-C-60](https://blogs.jpcert.or.jp/en/2025/11/APT-C-60_update.html)
+
+---
+> 萃取時間：2026-02-17 08:10 UTC
+> 資料來源：JPCERT/CC Blog (jpcert-blog)
+> 備註：資訊有限,僅基於 RSS 摘要

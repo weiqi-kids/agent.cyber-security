@@ -1,0 +1,44 @@
+{
+  "review_report": {
+    "reviewed_at": "2026-02-17T14:45:00+08:00",
+    "status": "fail",
+    "checklist_summary": {
+      "schema_completeness": "22/22 通過",
+      "conditional_schema": "2/2 通過（18 項 N/A）",
+      "sge_markers": "6/7 通過",
+      "json_ld_syntax": "8/8 通過",
+      "meta_tags": "12/14 通過",
+      "eeat_signals": "4/4 通過",
+      "core_web_vitals": "5/5 通過（4 項 N/A）",
+      "ymyl_fields": "N/A（資安報告使用專用免責聲明）",
+      "security_report": "9/9 通過（1 項 N/A）"
+    },
+    "issues": [
+      {
+        "id": "3.5",
+        "category": "SGE Markers",
+        "item": "缺少 .expert-quote 建議",
+        "current": "sge_recommendations 未包含專家引言標記建議",
+        "expected": "應提供至少一個 .expert-quote 標記建議，例如引用 CISA、TWCERT 或廠商安全團隊的專業意見",
+        "fix_instruction": "在 sge_recommendations 新增一項，提供 .expert-quote 標記範例，可使用以下格式：\n<blockquote class=\"expert-quote\">\n  <p>「BeyondTrust CVE-2026-1731 已在野利用，建議立即套用更新。」</p>\n  <cite>— CISA Known Exploited Vulnerabilities Catalog</cite>\n</blockquote>"
+      },
+      {
+        "id": "5.1",
+        "category": "Meta Tags",
+        "item": "title 長度超過 60 字元",
+        "current": "「2026 第 08 週防禦建議 — BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南」共 37 個中文字（約 74 顯示字元），超過 60 字元限制",
+        "expected": "title 應控制在 60 字元內（中文約 30 字）",
+        "fix_instruction": "縮短 title 為：「2026 第 08 週防禦建議 — BeyondTrust、SmarterMail、Microsoft 零日漏洞」（30 中文字，約 60 顯示字元）\n或「2026-W08 防禦建議 — BeyondTrust、SmarterMail 零日漏洞修補」（28 中文字）"
+      },
+      {
+        "id": "5.3",
+        "category": "Meta Tags",
+        "item": "description 長度超過 155 字元",
+        "current": "description 共 84 個中文字（約 168 顯示字元），超過 155 字元限制",
+        "expected": "description 應控制在 155 字元內（中文約 77 字）",
+        "fix_instruction": "縮短 description 為：「2026-02-10 至 2026-02-16 資安防禦建議：BeyondTrust、SmarterMail、Microsoft 零日漏洞修補指南。涵蓋 CISA KEV 優先修補清單與臺灣廠商漏洞。」（72 中文字，約 144 顯示字元）"
+      }
+    ],
+    "summary": "共發現 3 個問題，狀態：fail。問題主要集中在 SGE 標記（缺少專家引言）與 Meta 標籤長度控制（title 和 description 均超過建議長度）。"
+  }
+}

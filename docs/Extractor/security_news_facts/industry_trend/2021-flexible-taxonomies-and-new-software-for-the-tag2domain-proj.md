@@ -1,0 +1,30 @@
+# Flexible taxonomies and new software for the tag2domain project
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2021-04-06 |
+| **來源** | CERT.at (Austria) |
+| **分類** | industry_trend |
+| **嚴重程度** | 高 |
+| **信心水準** | 高 |
+
+## 摘要
+
+Domain Names are the center piece of locating services on the internet and they can be used for a variety of purposes and services. Understanding the type of services a Domain Name offers is one of th...
+
+## 事實內容
+
+Domain Names are the center piece of locating services on the internet and they can be used for a variety of purposes and services. Understanding the type of services a Domain Name offers is one of the key aspects of Internet Security. In another post last year we already introduced tag2domain , our tagging / labelling framework for domain names that helps us to better understand this landscape of services and software. In this article we want to highlight a recently released, major update to the tag2domain repository . In this update we improve on the basic concepts of tag2domain, introduce software components that manage tag creation and updating, and add scripts and documentation that help in setting up a tag2domain database. This work is part of nic.at’s project within the Connecting Europe Facilities (CEF) framework as project 2018-AT-IA-0111 . tag2domain – Basics Before we get into the new developments, let us briefly reiterate the basic concepts of tag2domain. tag2domain is a framework for labelling DNS domain names with tags that is inspired by similar tagging systems such as the MISP system , the RSIT taxonomy , and OpenStreetMap tags . Think of these tags as sticky notes that attach to a domain and represent some kind of interesting property. These tags are grouped into taxonomies and each tag has a name and may also have a value. A single tag then looks like this: (cert-example-domain.at) -> taxonomy:tag = value As an example consider a taxonomy “proper_names” with tags that could look like: (city-of-vienna.at) -> proper_names:place_name = city The tags themselves are things like “place_name”, “first_name”, “organization_name” and so on. Under the tag “place_name” there are values named “city”, “village”, or “river”. A single domain can be associated with multiple tags. For example the name “Steyr” is the name of a city and the name of a river making both tags appropriate for a domain name that contains “steyr”. Since some properties of a domain name can change over time (e.g. is there a website hosted under this domain?), each tag has a start and an end date so one can calculate statistics over these tags at different points in time. Also, as some properties cannot be measured continuously, we include a “measured_at” property that gets updated each time a tag is confirmed. The overall setup of a tag2domain tagging system looks like this: We measure domain properties and pack them into measurements. These measurements get handed off to a service that updates the tag2domain database. On the other side we want to retrieve the gathered data via a REST interface. All these components are now included in the tag2domain repository . tag2domain – New features To make tag2domain tags a little more flexible we added two features to the basic framework: We now allow the tag and value set of a taxonomy to grow as new tags and values are observed. This enables us to define taxonomies where tags and values are not known in advance. We added categories that group tags together within a taxonomy. This is done on the semantic layer by adding a prefix “ category_name:: ” to the tag name and is used to calculate fine-grained statistics using the tag2domain-api programming interface. An example where both of these features come in handy is when one wants to tag software used under a given domain name, like so: (city-of-vienna.at) -> software:web-server::apache = v2.4.232 With the new capabilities of tag2domain the set of version numbers can grow as new versions are rolled out and the “web-server” category can be used to calculate statistics such as the market share of different web servers. In addition to updating the tag2domain framework, we also added py_tag2domain, a programming library that takes measurements as an input and converts them into tags stored in a tag2domain database. Measurements are simple JSON objects such as this one: { "version": "1", "tag_type": "domain", "tagged_id": 3, "taxonomy": "names", "producer": "namefinder", "measured_at": "2020-12-23T10:30:51", "measurement_id": " namefinder/1", "tags": [ { "tag": "place_name", "value": "city" } ] } py_tag2domain has been integrated into tag2domain-api so that measurements can be delivered by a REST call. Also, we built a service called msm2tag2domain that fetches measurements from a Kafka topic and does the same thing. In addition to these new software components we overhauled the setup process of tag2domain, expanded the documentation, and created docker-based demo setups so you can easily try it out for yourself. If you have any feedback to this article or any comments regarding tag2domain you can reach us via tag2domain@cert.at . This blog post is part of a series of blog posts related to our CEF Telecom 2018-AT-IA-0111 project, which also supports our participation in the CSIRTs Network.
+
+## 受影響系統
+
+- N/A (需進一步分析)
+
+## 來源連結
+
+- [Flexible taxonomies and new software for the tag2domain project](https://www.cert.at/en/blog/2021/4/flexible-taxonomies-and-new-software-for-the-tag2domain-project)
+
+---
+> 萃取時間：2026-02-17 08:10 UTC
+> 資料來源：CERT.at (Austria) (cert-at)
+
