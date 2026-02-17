@@ -8,6 +8,14 @@
     "source_mode": "threat_landscape"
   },
   {
+    "id": "2026-W08-threat-landscape-md",
+    "title": "威脅態勢分析 — 2026 第 08 週",
+    "date": "2026-W08",
+    "period": "2026-02-10 至 2026-02-16",
+    "file": "2026-W08-threat-landscape.md",
+    "source_mode": "threat_landscape"
+  },
+  {
     "id": "2026-W07-threat-landscape-md",
     "title": "威脅態勢分析 — 2026 第 07 週",
     "date": "2026-W07",
