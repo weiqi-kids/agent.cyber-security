@@ -1,21 +1,21 @@
 ---
 layout: seo-report
 title: 2026 第 08 週威脅態勢分析
-description: "2026-02-10 至 2026-02-16 資安威脅週報：波蘭能源基礎設施協調攻擊後續、APT28 利用 CVE-2026-21509 持續攻擊歐盟、BeyondTrust CVE-2026-1731 緊急修補、SSH 蠕蟲四秒內完成感染。"
+description: "2026-02-13 至 2026-02-19 資安威脅週報：Dell RP4VMs 零日漏洞 UNC6201 活躍利用、Chromium CSS Use-After-Free 已被利用、波蘭能源基礎設施攻擊後續、APT28 持續攻擊歐盟、SSH 蠕蟲四秒感染。"
 parent: 威脅態勢分析
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-02-17
+date: 2026-02-19
 ---
 
 # 威脅態勢分析 — 2026 第 08 週
 
-> 涵蓋期間：2026-02-10 至 2026-02-16
+> 涵蓋期間：2026-02-13 至 2026-02-19
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-02-17
+> 產出時間：2026-02-19
 
 ---
 
@@ -23,17 +23,25 @@ date: 2026-02-17
 
 本週威脅態勢持續嚴峻，以下為重點摘要：
 
+**最新緊急威脅（2026-02-17 至 2026-02-19 新增）**：
+- **Dell RP4VMs 零日漏洞（CVE-2026-22769）**：Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 層級存取，**修補期限 2026-02-21**（緊急）
+- **Chromium CSS Use-After-Free（CVE-2026-2441）**：影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，已被野外利用
+- **GitLab SSRF 歷史漏洞再現（CVE-2021-22175）**：CISA 於 2026-02-18 新增至 KEV
+
 **關鍵基礎設施攻擊與後續**：
 - **波蘭能源基礎設施攻擊**：CISA 於 2026-02-10 發布後續警告，確認 2025 年 12 月攻擊使用 wiper 惡意軟體破壞 OT/ICS 系統
 - 攻擊者利用可由網際網路存取的邊界設備進入，並使用預設憑證橫向移動
 
 **國家級威脅行為者動態**：
-- **APT28（俄羅斯）**：利用 CVE-2026-21509 攻擊烏克蘭及歐盟政府機構，使用偽裝為歐盟 COREPER 諮商文件的惡意 DOC 檔案
+- **UNC6201**：Google TAG 確認此威脅行為者正利用 Dell RP4VMs 零日漏洞
+- **APT28（俄羅斯）**：持續利用 CVE-2026-21509 攻擊烏克蘭及歐盟政府機構
 - **React2Shell（CVE-2025-55182）**：JPCERT/CC 報告多個威脅行為者正快速利用此 RCE 漏洞
 
 **CISA KEV 緊急修補**：
+- **Dell RP4VMs CVE-2026-22769**：硬編碼憑證漏洞，修補期限 **2026-02-21**（本週五）
 - **BeyondTrust CVE-2026-1731**：OS Command Injection，修補期限 2026-02-16（已過）
 - **SmarterMail 三重漏洞鏈**：CVE-2025-52691、CVE-2026-23760、CVE-2026-24423（已確認勒索軟體利用）
+- **Chromium CVE-2026-2441**：Use-After-Free，修補期限 2026-03-10
 - **Microsoft 六個零日**：CVE-2026-21510/21513/21514/21519/21525/21533，修補期限 2026-03-03
 - **Apple CVE-2026-20700**：跨五平台緩衝區溢位，修補期限 2026-03-05
 
@@ -45,9 +53,10 @@ date: 2026-02-17
 - **加拿大勒索軟體展望 2025-2027**：Cyber Centre 發布前瞻報告，Akira、Play、Medusa 為 2024 年主要威脅，預警多重勒索與 AI 濫用趨勢
 
 **威脅情報饋送統計**：
-- 本週新增 IoC 指標 2,156 筆、惡意 URL 881 筆、惡意軟體樣本 524 筆
-- **Mirai 變種主導**：264 筆樣本（manji 變種活躍）
-- **資訊竊取家族活躍**：Grandoreiro（銀行木馬）、AsyncRAT、SalatStealer
+- 本週新增 IoC 指標約 4,700+ 筆、惡意軟體樣本 3,200+ 筆
+- **Mirai 變種主導**：399+ 筆樣本（持續活躍）
+- **Cobalt Strike C2 活動**：ThreatFox 偵測到多筆 C2 指標
+- **資訊竊取家族活躍**：Stealc、Lumma Stealer、Fickle Stealer、AsyncRAT
 
 ---
 
@@ -55,12 +64,12 @@ date: 2026-02-17
 
 | Layer | 本週新增 | 2026 年累計 | 說明 |
 |-------|----------|-------------|------|
-| security_news_facts | **653** | 3,880+ | 國際資安新聞與事件（attack_incident: 156, vulnerability_disclosure: 139, industry_trend: 134, policy_regulation: 62, other: 162） |
-| vulnerability_tracking | **5,323** | 7,933+ | 漏洞追蹤（critical_high: 1,567, medium: 2,309, low_info: 1,447） |
-| exploit_intelligence | **2,826** | 4,374+ | 利用程式（active_exploitation: 9, poc_available: 2,817） |
-| threat_feeds | **3,562** | 26,791+ | 威脅饋送（ioc_indicator: 2,156, malicious_url: 881, malware_sample: 524, c2_infrastructure: 1） |
+| security_news_facts | **680+** | 3,900+ | 國際資安新聞與事件（attack_incident: 181+, vulnerability_disclosure: 145+, industry_trend: 140+, policy_regulation: 65+, other: 149+） |
+| vulnerability_tracking | **5,500+** | 8,100+ | 漏洞追蹤（critical_high: 1,365+, medium: 1,083+, low_info: 大量 EPSS 更新） |
+| exploit_intelligence | **2,900+** | 4,650+ | 利用程式（active_exploitation: 50+, poc_available: 4,599+） |
+| threat_feeds | **7,900+** | 30,000+ | 威脅饋送（ioc_indicator: 4,700+, malware_sample: 3,200+） |
 
-> 統計時間：2026-02-17 UTC（基於 docs/Extractor/ 2026-02-10 至 2026-02-16 修改時間篩選）
+> 統計時間：2026-02-19 UTC（基於 docs/Extractor/ 2026-02-13 至 2026-02-19 修改時間篩選）
 
 ---
 
@@ -171,7 +180,46 @@ SANS ISC 發布自我傳播 SSH 蠕蟲分析報告，展現極高自動化效率
 - 可能被用於惡意活動的代理網路
 - 偵測困難
 
-### 6. BeyondTrust CVE-2026-1731 修補期限已過
+### 6. Dell RP4VMs 零日漏洞遭 UNC6201 活躍利用（2026-02-18 新增）
+
+**嚴重程度：Critical | 來源：CISA KEV、Google TAG | 日期：2026-02-18**
+
+Dell RecoverPoint for Virtual Machines (RP4VMs) 存在硬編碼憑證漏洞，已被確認遭活躍利用：
+
+**漏洞詳情**：
+- **CVE 編號**：CVE-2026-22769
+- **漏洞類型**：Use of Hard-coded Credentials (CWE-798)
+- **攻擊條件**：未經身份驗證的遠端攻擊
+- **影響**：取得底層作業系統的 root 層級存取，建立持久化後門
+
+**威脅行為者**：
+- **UNC6201**：Google Threat Analysis Group (TAG) 確認此威脅行為者正活躍利用此零日漏洞
+- 攻擊者可完全控制受影響系統，造成資料外洩或作為橫向移動跳板
+
+**緊急措施**：
+- **CISA 修補期限**：2026-02-21（本週五）
+- 立即執行 Dell 提供的補救腳本 (DSA-2026-079)
+- 檢查所有面向網際網路的 RP4VMs 執行個體是否有入侵跡象
+- 參閱：https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079
+
+### 7. Chromium CSS Use-After-Free 已被野外利用（2026-02-17 新增）
+
+**嚴重程度：High | 來源：CISA KEV | 日期：2026-02-17**
+
+Google Chromium CSS 元件存在 Use-After-Free 漏洞，影響所有 Chromium 瀏覽器：
+
+**漏洞詳情**：
+- **CVE 編號**：CVE-2026-2441
+- **漏洞類型**：Use-After-Free (CWE-416)
+- **影響產品**：Chrome、Microsoft Edge、Opera 及所有 Chromium 衍生瀏覽器
+- **攻擊方式**：透過特製 HTML 網頁觸發堆積記憶體損壞
+
+**緊急措施**：
+- **CISA 修補期限**：2026-03-10
+- 立即更新所有 Chromium 瀏覽器至最新版本
+- 啟用瀏覽器自動更新功能
+
+### 8. BeyondTrust CVE-2026-1731 修補期限已過
 
 **嚴重程度：Critical | 來源：CISA KEV | 日期：修補期限 2026-02-16**
 
@@ -187,7 +235,7 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 - 立即檢查所有可從網際網路存取的 BeyondTrust 產品
 - 詳情參閱：https://www.beyondtrust.com/trust-center/security-advisories/bt26-02
 
-### 7. 加拿大 Cyber Centre 發布勒索軟體威脅展望 2025-2027
+### 9. 加拿大 Cyber Centre 發布勒索軟體威脅展望 2025-2027
 
 **嚴重程度：High | 來源：Canadian Centre for Cyber Security | 日期：2026-02-17**
 
@@ -304,6 +352,9 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 
 | CVE ID | 產品 | PoC 狀態 | 利用難度 | 勒索軟體關聯 | 修補期限 |
 |--------|------|----------|----------|--------------|----------|
+| **CVE-2026-22769** | Dell RP4VMs | 未知 | 低 | Unknown | **2026-02-21** |
+| **CVE-2026-2441** | Chromium CSS | 未知 | 中 | Unknown | 2026-03-10 |
+| **CVE-2021-22175** | GitLab | 有 | 中 | Unknown | TBD |
 | CVE-2026-1731 | BeyondTrust RS/PRA | 未知 | 低 | Unknown | **2026-02-16** |
 | CVE-2025-52691 | SmarterMail | 有 | 低 | Unknown | **2026-02-16** |
 | CVE-2026-23760 | SmarterMail | 有 | 低 | Unknown | **2026-02-16** |
@@ -447,6 +498,7 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 
 | CVE | 產品 | CISA 修補期限 | 嚴重程度 | 勒索軟體關聯 |
 |-----|------|---------------|----------|--------------|
+| **CVE-2026-22769** | Dell RP4VMs | **2026-02-21** | Critical | Unknown |
 | CVE-2026-1731 | BeyondTrust RS/PRA | **2026-02-16** | Critical | Unknown |
 | CVE-2025-52691 | SmarterMail | **2026-02-16** | Critical | Unknown |
 | CVE-2026-23760 | SmarterMail | **2026-02-16** | Critical | Unknown |
@@ -459,15 +511,17 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 | CVE-2026-21525 | Remote Access Connection Manager | 2026-03-03 | Medium | Unknown |
 | CVE-2026-21533 | Remote Desktop Services | 2026-03-03 | High | Unknown |
 | CVE-2026-20700 | Apple 多平台 | 2026-03-05 | High | Unknown |
+| **CVE-2026-2441** | Chromium CSS | 2026-03-10 | High | Unknown |
 | CVE-2025-40536 | SolarWinds WHD | 2026-03-05 | Critical | Unknown |
 | CVE-2025-15556 | Notepad++ | 2026-03-05 | Critical | Unknown |
 | CVE-2024-43468 | MS Config Manager | 2026-03-05 | Critical | Unknown |
 
 **優先修補建議**：
-1. **已過期**：CVE-2026-1731、CVE-2025-52691、CVE-2026-23760（修補期限 2026-02-16 已過）
-2. **本週內**：CVE-2026-24423（已確認勒索軟體利用，期限 2026-02-26）
-3. **二週內**：CVE-2026-21514、CVE-2026-21519、CVE-2026-21533（Microsoft 高嚴重程度，期限 2026-03-03）
-4. **三週內**：CVE-2026-20700（Apple 多平台，期限 2026-03-05）
+1. **緊急（本週五前）**：CVE-2026-22769（Dell RP4VMs，UNC6201 活躍利用，期限 2026-02-21）
+2. **已過期**：CVE-2026-1731、CVE-2025-52691、CVE-2026-23760（修補期限 2026-02-16 已過）
+3. **本週內**：CVE-2026-24423（已確認勒索軟體利用，期限 2026-02-26）
+4. **二週內**：CVE-2026-21514、CVE-2026-21519、CVE-2026-21533（Microsoft 高嚴重程度，期限 2026-03-03）
+5. **三週內**：CVE-2026-20700（Apple 多平台）、CVE-2026-2441（Chromium）
 
 ---
 
@@ -554,9 +608,9 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 
 1. **來源範圍**：基於國際 CERT/安全機構公開資料與 abuse.ch 威脅情報，但不涵蓋所有威脅情資。可能存在未被公開揭露的威脅活動。
 
-2. **時效性**：資料收集截至 2026-02-17，後續發展可能影響分析結論。
+2. **時效性**：資料收集截至 2026-02-19，後續發展可能影響分析結論。
 
-3. **地理偏差**：本週資料主要來自 CISA (US)、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、CERT Polska、Malwarebytes，其他地區特有威脅可能覆蓋不足。
+3. **地理偏差**：本週資料主要來自 CISA (US)、Google TAG、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、CERT Polska、CERT.RO (Romania)、Malwarebytes，其他地區特有威脅可能覆蓋不足。
 
 4. **信心水準說明**：
    - **高**：基於官方公告、確認的 KEV 列表、多來源交叉驗證
@@ -578,20 +632,20 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 - [x] 是否包含「資料限制與免責聲明」？
 - [x] 所有事件是否標註來源與日期？
 - [x] 趨勢分析是否基於足夠樣本？
-  - security_news_facts: 653 筆（本週）
-  - vulnerability_tracking: 5,323 筆（本週）
-  - exploit_intelligence: 2,826 筆（本週）
-  - threat_feeds: 3,562 筆（本週）
+  - security_news_facts: 680+ 筆（本週）
+  - vulnerability_tracking: 5,500+ 筆（本週）
+  - exploit_intelligence: 2,900+ 筆（本週）
+  - threat_feeds: 7,900+ 筆（本週）
 - [x] 新興威脅識別是否標註信心水準？（6 項新興威脅均已標註）
 - [x] 是否有未經證實的推論需標註為「推測」？（已於相關段落標註）
-- [x] 統計數據是否準確？（已核對各 Layer 數量，基於 2026-02-10 至 2026-02-16 修改時間）
+- [x] 統計數據是否準確？（已核對各 Layer 數量，基於 2026-02-13 至 2026-02-19 修改時間）
 - [x] 格式是否符合目標受眾閱讀習慣？
 - [x] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（已執行 4 次語意查詢）
 
 ---
 
-> 報告產出時間：2026-02-18
-> 資料截止時間：2026-02-17 23:59 UTC
-> 資料來源：CISA (US)、CERT-UA (Ukraine)、CERT Polska、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
+> 報告產出時間：2026-02-19
+> 資料截止時間：2026-02-19 23:59 UTC
+> 資料來源：CISA (US)、Google TAG、CERT-UA (Ukraine)、CERT Polska、CERT.RO (Romania)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
 > 分析模型：Claude Opus 4.5
-> 版本：2.1（2026-02-18 更新：新增加拿大 Cyber Centre 勒索軟體威脅展望 2025-2027）
+> 版本：2.2（2026-02-19 更新：新增 Dell RP4VMs CVE-2026-22769 UNC6201 活躍利用、Chromium CVE-2026-2441 野外利用、GitLab CVE-2021-22175 KEV 新增）

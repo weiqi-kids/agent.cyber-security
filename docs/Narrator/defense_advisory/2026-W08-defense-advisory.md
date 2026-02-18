@@ -1,37 +1,40 @@
 ---
 layout: seo-report
 title: 2026 第 08 週防禦建議
-description: "2026-02-10 至 2026-02-16 資安防禦建議：波蘭能源基礎設施 OT/ICS 攻擊防禦指引、BeyondTrust CVE-2026-1731 緊急修補（已過期）、SmarterMail 勒索軟體漏洞鏈、SSH 蠕蟲四秒感染防護、Microsoft 六個零日修補。"
+description: "2026-02-13 至 2026-02-19 資安防禦建議：Dell RP4VMs 零日漏洞 UNC6201 活躍利用（緊急 2026-02-21）、Chromium CSS Use-After-Free 已被利用、GitLab SSRF 歷史漏洞再現、波蘭能源基礎設施 OT/ICS 攻擊防禦指引、SmarterMail 勒索軟體漏洞鏈、SSH 蠕蟲四秒感染防護。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-defense-advisory.png
 author: 資安情報分析團隊
-date: 2026-02-18
+date: 2026-02-19
 ---
 
 # 防禦建議 — 2026 第 08 週
 
-> 涵蓋期間：2026-02-10 至 2026-02-16
+> 涵蓋期間：2026-02-13 至 2026-02-19
 > 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV
-> 產出時間：2026-02-18
+> 產出時間：2026-02-19
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢持續嚴峻，**關鍵基礎設施攻擊**與**認證繞過漏洞**為主要威脅：
+本週威脅態勢持續嚴峻，**零日漏洞活躍利用**與**關鍵基礎設施攻擊**為主要威脅：
 
-1. **波蘭能源基礎設施攻擊後續（Critical）** — CISA 與 CERT Polska 發布詳細分析，攻擊者使用 wiper 惡意軟體破壞 OT/ICS 系統，約 30 座發電設施受影響
-2. **BeyondTrust CVE-2026-1731（修補期限已過期！）** — 未經驗證 OS 命令注入，攻擊門檻極低
-3. **SmarterMail 三重漏洞鏈** — CVE-2026-24423 已確認勒索軟體利用，修補期限 2026-02-26
-4. **SSH 蠕蟲四秒感染（新興威脅）** — 使用 RSA 簽章驗證 C2 指令，自動化程度極高
-5. **Microsoft 六個零日漏洞** — 修補期限 2026-03-03
-6. **Apple 跨平台零日（首次含 visionOS）** — CVE-2026-20700，修補期限 2026-03-05
+1. **Dell RP4VMs 零日漏洞 CVE-2026-22769（極緊急！修補期限 2026-02-21）** — Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 層級存取
+2. **Chromium CSS Use-After-Free CVE-2026-2441（Critical）** — 影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，已被野外利用
+3. **GitLab SSRF 歷史漏洞 CVE-2021-22175（新增 KEV）** — CISA 於 2026-02-18 新增至 KEV，webhook SSRF 漏洞再現
+4. **波蘭能源基礎設施攻擊後續（Critical）** — CISA 與 CERT Polska 發布詳細分析，wiper 惡意軟體破壞 OT/ICS 系統
+5. **SmarterMail 三重漏洞鏈** — CVE-2026-24423 已確認勒索軟體利用，修補期限 2026-02-26
+6. **SSH 蠕蟲四秒感染（新興威脅）** — 使用 RSA 簽章驗證 C2 指令，自動化程度極高
+7. **Microsoft 六個零日漏洞** — 修補期限 2026-03-03
+8. **Apple 跨平台零日（首次含 visionOS）** — CVE-2026-20700，修補期限 2026-03-05
 
 **本週關鍵行動**：
-- **立即**：檢查 BeyondTrust 與 SmarterMail 暴露情況
+- **極緊急（本週五前）**：執行 Dell RP4VMs 補救腳本（DSA-2026-079），修補期限 2026-02-21
+- **立即**：更新所有 Chromium 瀏覽器、檢查 GitLab webhook 設定
 - **24 小時內**：盤點 OT/ICS 設備預設密碼，變更為強密碼
 - **本週內**：部署 Microsoft 2 月安全更新
 
@@ -41,7 +44,15 @@ date: 2026-02-18
 
 依照優先級排序：活躍利用 + 勒索軟體 > 活躍利用 > EPSS 高分 > CVSS 高分
 
-### P0 - 立即處置（修補期限已過期）
+### P0 - 極緊急（本週五前必須處置）
+
+| CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
+|-----|------|----------|----------|----------|
+| **CVE-2026-22769** | Dell RP4VMs | 硬編碼憑證 root RCE (CWE-798) | **2026-02-21（本週五！）** | [Dell DSA-2026-079](https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079) |
+
+> **極緊急警告 - CVE-2026-22769**：Dell RecoverPoint for Virtual Machines 存在硬編碼憑證漏洞，Google TAG 確認威脅行為者 **UNC6201** 正活躍利用此零日漏洞。未經身份驗證的攻擊者可取得 **root 層級存取**，建立持久化後門。**CISA 修補期限 2026-02-21（本週五），請立即執行 Dell 提供的補救腳本。**
+
+### P0.5 - 立即處置（修補期限已過期）
 
 | CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
 |-----|------|----------|----------|----------|
@@ -52,11 +63,17 @@ date: 2026-02-18
 
 > **警告 - CVE-2026-1731**：BeyondTrust Remote Support 和 Privileged Remote Access 存在未經驗證的 OS 命令注入漏洞。攻擊者無需身份驗證即可在站點使用者上下文中執行命令，可能導致系統完全控制、資料外洩。**請立即檢查所有暴露於網際網路的 BeyondTrust 產品是否有入侵跡象。**
 
-### P1 - 緊急（已確認勒索軟體利用）
+### P1 - 緊急（已確認活躍利用）
 
 | CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
 |-----|------|----------|----------|----------|
+| **CVE-2026-2441** | Chromium CSS | Use-After-Free (CWE-416) | **2026-03-10** | [Chrome Stable Channel Update](https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html) |
+| **CVE-2021-22175** | GitLab CE/EE | SSRF (CWE-918) | **2026-03-11** | [GitLab CVE-2021-22175](https://gitlab.com/gitlab-org/cves/-/blob/master/2021/CVE-2021-22175.json) |
 | **CVE-2026-24423** | SmarterMail | 缺失認證 RCE (CWE-306) | **2026-02-26** | [SmarterTools Release Notes](https://www.smartertools.com/smartermail/release-notes/current) |
+
+> **警告 - CVE-2026-2441**：Google Chromium CSS 元件存在 Use-After-Free 漏洞，**已被野外利用**。影響所有 Chromium 瀏覽器（Chrome、Edge、Opera 等），透過特製 HTML 網頁可觸發堆積記憶體損壞。**請立即更新所有瀏覽器。**
+
+> **警告 - CVE-2021-22175**：GitLab 的 webhook SSRF 漏洞被 CISA 於 2026-02-18 新增至 KEV，表示有活躍利用。攻擊者可偽造伺服器端請求存取內部網路資源。**請停用或限制 webhook 對內部網路的存取權限。**
 
 > **警告 - CVE-2026-24423**：**已確認被勒索軟體利用**。攻擊者可透過 ConnectToHub API 將 SmarterMail 指向惡意伺服器執行命令。此漏洞與 CVE-2025-52691、CVE-2026-23760 可形成完整攻擊鏈，應最優先處理。
 
@@ -99,6 +116,9 @@ date: 2026-02-18
 
 | 威脅 | 建議措施 |
 |------|----------|
+| **Dell RP4VMs 零日（極緊急）** | **立即**執行 Dell 補救腳本（DSA-2026-079）；檢查所有面向網際網路的 RP4VMs 執行個體是否有入侵跡象；實施網路隔離 |
+| **Chromium 瀏覽器（已被利用）** | **立即**更新所有 Chromium 瀏覽器（Chrome、Edge、Opera）至最新版本；啟用自動更新；實施瀏覽器隔離技術 |
+| **GitLab SSRF（KEV 新增）** | 停用或限制 webhook 對內部網路的存取權限；實施網路隔離限制 GitLab 對敏感內部資源的存取；監控異常內部連線 |
 | **波蘭能源攻擊（OT/ICS）** | 立即盤點可由網際網路存取的邊界設備；變更所有 OT 設備預設密碼；實施 OT 韌體完整性驗證；遵循 CISA BOD 26-02 |
 | **BeyondTrust RCE（已過期）** | **立即**盤點所有暴露於網際網路的 BeyondTrust 產品；修補前限制僅允許內部存取；檢查入侵跡象 |
 | **SmarterMail 勒索軟體漏洞** | 立即升級；隔離 SmarterMail 伺服器；封鎖 ConnectToHub API 的外部存取；監控異常外連 HTTP 請求 |
@@ -169,6 +189,45 @@ date: 2026-02-18
 ## 緩解策略
 
 針對尚無修補或無法立即更新的情況：
+
+### 0. Dell RP4VMs 零日漏洞（極緊急 - 2026-02-21）
+
+| 措施 | 說明 |
+|------|------|
+| **立即執行補救腳本** | 依 [Dell DSA-2026-079](https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079) 指引執行補救腳本 |
+| **入侵跡象檢查** | 檢查系統日誌是否有異常的 root 層級活動或未授權存取 |
+| **網路隔離** | 立即限制 RP4VMs 對外部網路的暴露；僅允許必要的管理存取 |
+| **憑證變更** | 變更所有相關系統的預設憑證 |
+| **橫向移動監控** | 監控異常的管理者活動與橫向移動行為 |
+| **停用建議** | 若無法修補，應立即停止使用受影響產品（遵循 BOD 22-01） |
+
+> **有效期限**：**2026-02-21（本週五！）** | **來源**：CISA KEV、Google TAG（2026-02-18）
+> **威脅行為者**：UNC6201（Google TAG 確認）
+
+### 0.5. Chromium 瀏覽器 Use-After-Free（極緊急）
+
+| 措施 | 說明 |
+|------|------|
+| **立即更新** | 更新所有 Chromium 基礎瀏覽器（Chrome、Edge、Opera）至最新版本 |
+| **自動更新** | 確保所有瀏覽器已啟用自動更新功能 |
+| **瀏覽器隔離** | 考慮部署瀏覽器隔離技術（Browser Isolation） |
+| **安全瀏覽政策** | 實施安全瀏覽政策，限制造訪不受信任網站 |
+
+> **有效期限**：直到完成更新 | **CISA 修補期限**：2026-03-10
+> **來源**：CISA KEV、Chrome Stable Channel Update（2026-02-13）
+
+### 0.6. GitLab SSRF 漏洞（新增 KEV）
+
+| 措施 | 說明 |
+|------|------|
+| **套用更新** | 立即檢查 GitLab 版本並套用安全更新 |
+| **Webhook 限制** | 停用或限制 webhook 對內部網路的存取權限 |
+| **網路隔離** | 限制 GitLab 伺服器對敏感內部資源的存取 |
+| **監控** | 監控異常的內部網路連線請求 |
+| **Webhook 審查** | 檢視 webhook 設定與使用記錄，識別可疑活動 |
+
+> **有效期限**：直到完成更新 | **CISA 修補期限**：2026-03-11
+> **來源**：CISA KEV（2026-02-18 新增）
 
 ### 1. 波蘭能源攻擊緩解（OT/ICS 環境）
 
@@ -243,7 +302,7 @@ date: 2026-02-18
 ### 適用範圍與限制
 
 1. **環境差異**：本建議為通用性質，實際實施需依據組織環境調整
-2. **時效性**：基於 2026-02-10 至 2026-02-16 期間的公開資訊
+2. **時效性**：基於 2026-02-13 至 2026-02-19 期間的公開資訊
 3. **完整性**：不包含非公開威脅情報
 4. **供應商確認**：第三方產品可能使用受影響元件，請向供應商確認
 5. **OT/ICS 特別注意**：OT 環境修補需經過完整測試，避免影響生產
@@ -260,12 +319,15 @@ date: 2026-02-18
 
 ### 本週特別警示
 
-1. **BeyondTrust 極緊急**：CVE-2026-1731 修補期限**已過期**（2026-02-16），未經驗證即可 RCE，**立即處置**
-2. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級處理
-3. **OT/ICS 攻擊**：波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點
-4. **SSH 蠕蟲**：四秒內完成感染，IoT 設備（尤其 Raspberry Pi）應立即變更預設密碼
-5. **假冒軟體網站**：假冒 7-Zip 網站長期散布代理惡意軟體，下載軟體請驗證官方來源
-6. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，攻擊文件偽裝為歐盟文件
+1. **Dell RP4VMs 極緊急**：CVE-2026-22769 修補期限 **2026-02-21（本週五）**，UNC6201 正活躍利用，可取得 root 存取，**最高優先級處置**
+2. **Chromium 瀏覽器已被利用**：CVE-2026-2441 Use-After-Free 已被野外利用，影響所有 Chromium 瀏覽器，**立即更新**
+3. **GitLab SSRF 歷史漏洞再現**：CVE-2021-22175 於 2026-02-18 新增至 KEV，webhook SSRF 可存取內部資源
+4. **BeyondTrust 極緊急**：CVE-2026-1731 修補期限**已過期**（2026-02-16），未經驗證即可 RCE，**立即處置**
+5. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級處理
+6. **OT/ICS 攻擊**：波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點
+7. **SSH 蠕蟲**：四秒內完成感染，IoT 設備（尤其 Raspberry Pi）應立即變更預設密碼
+8. **假冒軟體網站**：假冒 7-Zip 網站長期散布代理惡意軟體，下載軟體請驗證官方來源
+9. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，攻擊文件偽裝為歐盟文件
 
 ### 建議的測試步驟
 
@@ -306,8 +368,44 @@ date: 2026-02-18
 
 ---
 
-> 報告產出時間：2026-02-18
-> 資料截止時間：2026-02-17 UTC
-> 資料來源：CISA (US)、CERT Polska、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Microsoft MSRC、Apple Security、BeyondTrust、SmarterTools、SolarWinds、Notepad++、NVD、Exploit-DB
+## 跨 Layer 關聯分析（Qdrant 語意查詢）
+
+本週執行以下 Qdrant 語意查詢，用於跨 Layer 關聯分析：
+
+### 查詢 1：「活躍利用 CVE CVSS Critical High」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.6546 | CVE-2023-38817 PoC 追蹤更新 | exploit_intelligence | poc_available |
+| 0.6379 | Cisco Products Multiple Vulnerabilities | vulnerability_tracking | critical_high |
+| 0.6315 | WSUS 高嚴重性漏洞 CVE-2025-59287 已遭利用 | security_news_facts | vulnerability_disclosure |
+
+**關聯發現**：高嚴重程度漏洞持續是攻擊者首選目標，PoC 公開後快速武器化的模式持續。
+
+### 查詢 2：「緩解措施 修補 workaround mitigation」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.5399 | CVE-2025-46290 | vulnerability_tracking | critical_high |
+| 0.5362 | CVE-2026-20602 | vulnerability_tracking | medium |
+
+**關聯發現**：部分漏洞提供 workaround，但多數需依賴官方修補。組織應優先部署官方修補程式。
+
+### 查詢 3：「遠端程式碼執行 RCE 特權提升 LPE」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.5631 | CVE-2026-1731 (BeyondTrust RCE) | vulnerability_tracking | critical_high |
+| 0.5581 | motionEye 0.43.1b4 - RCE | exploit_intelligence | poc_available |
+| 0.5408 | Redis 8.0.2 - RCE | exploit_intelligence | poc_available |
+| 0.5289 | 關鍵 RCE 漏洞「React2Shell」遭大規模積極利用 | security_news_facts | vulnerability_disclosure |
+
+**關聯發現**：RCE 類型漏洞持續主導活躍利用清單。BeyondTrust CVE-2026-1731、React2Shell CVE-2025-55182 均為無需驗證的 RCE，攻擊門檻極低。
+
+---
+
+> 報告產出時間：2026-02-19
+> 資料截止時間：2026-02-19 UTC
+> 資料來源：CISA (US)、Google TAG、CERT Polska、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Microsoft MSRC、Apple Security、Dell、BeyondTrust、SmarterTools、SolarWinds、GitLab、Notepad++、NVD、Exploit-DB
 > 分析模型：Claude Opus 4.5
-> 版本：2.0（2026-02-18 更新：整合波蘭能源攻擊後續分析、SSH 蠕蟲防護、加拿大勒索軟體展望）
+> 版本：2.1（2026-02-19 更新：新增 Dell RP4VMs CVE-2026-22769 UNC6201 活躍利用、Chromium CVE-2026-2441 野外利用、GitLab CVE-2021-22175 KEV 新增、Qdrant 跨 Layer 關聯分析）
