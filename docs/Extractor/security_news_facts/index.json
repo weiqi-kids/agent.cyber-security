@@ -2300,6 +2300,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-claude-desktop-extension-vulnerability-md",
+    "title": "Critical Vulnerability in Claude Desktop Extensions",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-claude-desktop-extension-vulnerability.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-citrixbleed2-memory-disclosure-md",
     "title": "CitrixBleed2 Vulnerability Causes Memory Data Disclosure Risk",
     "category": "vulnerability_disclosure",
@@ -2925,6 +2935,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-apple-patches-everything-february-2026-wed-feb-11th.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-apple-february-security-updates-md",
+    "title": "Apple February 2026 Security Updates: 71 Vulnerabilities Patched",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-apple-february-security-updates.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -7745,6 +7765,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2025-chat-control-file-sharing-decentralization-risks.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2025-certbr-courses-2026-agenda-new-rules-md",
+    "title": "CERT.br Announces 2026 Course Schedule and New Acceptance Criteria",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-certbr-courses-2026-agenda-new-rules.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -20030,6 +20060,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-wsl-malware-ecosystem-analysis-md",
+    "title": "Windows Subsystem for Linux (WSL) in the Malware Ecosystem",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-wsl-malware-ecosystem-analysis.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-weekly-review-of-the-national-cyber-security-centr-md",
     "title": "Weekly review of the National Cyber Security Centre Finland (NCSC-FI) - 3/2026",
     "category": "industry_trend",
@@ -20165,6 +20205,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-safer-internet-day-croatia.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-romania-cybersecurity-news-week-02-12-md",
+    "title": "Romania Cybersecurity Weekly News (February 12, 2026)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-romania-cybersecurity-news-week-02-12.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -20710,6 +20760,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-csirts-forum-misp-workshop-brazil-md",
+    "title": "CSIRTs Forum and MISP Workshop 2026",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-csirts-forum-misp-workshop-brazil.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-crowdstrike-2025-threat-landscape-analysis-md",
     "title": "CrowdStrike 2025 Threat Landscape: Long-term Planning and Cross-domain Attacks",
     "category": "industry_trend",
@@ -20765,6 +20825,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-certfr-weekly-bulletin-act-005.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-certbr-courses-registration-open-md",
+    "title": "CERT.br Training Courses: 2026 Registration Open",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-certbr-courses-registration-open.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -20910,6 +20980,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-ai-powered-knowledge-graph-generator-apts-md",
+    "title": "AI-Powered Knowledge Graph Generator for APT Analysis",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-ai-powered-knowledge-graph-generator-apts.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-ai-generated-code-security-md",
     "title": "Is AI-Generated Code Secure?",
     "category": "industry_trend",
@@ -20935,6 +21015,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-Detecting-Monitoring-OpenClaw.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-64bit-malware-trend-analysis-md",
+    "title": "2026 Analysis: 64-Bit vs 32-Bit Malware Architecture Trends",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-64bit-malware-trend-analysis.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -23560,6 +23650,56 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-certbr-website-redesign-md",
+    "title": "CERT.br Launches Redesigned Website",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-certbr-website-redesign.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-certbr-ransomware-doc-translations-md",
+    "title": "CERT.br Publishes Ransomware Best Practices Translations",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-certbr-ransomware-doc-translations.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-certbr-ransomware-best-practices-slides-md",
+    "title": "CERT.br Releases Ransomware Best Practices Slide Deck",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-certbr-ransomware-best-practices-slides.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-certbr-ransomware-best-practices-doc-md",
+    "title": "CERT.br Releases Comprehensive Ransomware Best Practices Guide",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-certbr-ransomware-best-practices-doc.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-certbr-courses-2025-registration-md",
+    "title": "CERT.br Opens 2025 Training Course Registration",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-certbr-courses-2025-registration.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-cert-spamblok-service-shutdown-notice-md",
     "title": "Shutdown of CERT Spamblok service",
     "category": "industry_trend",
@@ -24525,6 +24665,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2024-cncs-1-edicao-do-bootcamp-for-girls-junta-jovens-talentos-em-aveiro.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2024-certbr-courses-2025-agenda-md",
+    "title": "CERT.br Announces 2025 Course Schedule",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2024-certbr-courses-2025-agenda.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -26320,6 +26470,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-uac0001-apt28-cve-2026-21509-ukraine-eu-md",
+    "title": "UAC-0001 (APT28) Cyber Attacks Against Ukraine and EU Using CVE-2026-21509",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-uac0001-apt28-cve-2026-21509-ukraine-eu.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-twcert-contagious-interview-vscode-tasks-abuse-md",
     "title": "Contagious Interview Attack Evolution: Abusing VS Code Tasks for Persistence",
     "category": "attack_incident",
@@ -26575,6 +26735,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-senegal-national-id-department-breach.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-self-propagating-ssh-worm-analysis-md",
+    "title": "Analysis: Self-Propagating SSH Worm with Cryptographic C2",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-self-propagating-ssh-worm-analysis.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -27205,6 +27375,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-finland-valtori-mobile-management-breach.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-fake-incident-report-phishing-campaign-md",
+    "title": "Fake Incident Report Used in Phishing Campaign",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-fake-incident-report-phishing-campaign.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
