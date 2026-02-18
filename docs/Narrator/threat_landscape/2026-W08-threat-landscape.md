@@ -41,6 +41,9 @@ date: 2026-02-17
 - **SSH 蠕蟲四秒感染**：SANS ISC 報告自我傳播 SSH 蠕蟲，使用 IRC C2 與 RSA 簽章驗證，四秒內完成系統入侵
 - **假冒 7-Zip 代理惡意軟體**：將家用電腦轉換為住宅代理節點，長期隱藏運作
 
+**政策與趨勢**：
+- **加拿大勒索軟體展望 2025-2027**：Cyber Centre 發布前瞻報告，Akira、Play、Medusa 為 2024 年主要威脅，預警多重勒索與 AI 濫用趨勢
+
 **威脅情報饋送統計**：
 - 本週新增 IoC 指標 2,156 筆、惡意 URL 881 筆、惡意軟體樣本 524 筆
 - **Mirai 變種主導**：264 筆樣本（manji 變種活躍）
@@ -183,6 +186,33 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 **緊急措施**：
 - 立即檢查所有可從網際網路存取的 BeyondTrust 產品
 - 詳情參閱：https://www.beyondtrust.com/trust-center/security-advisories/bt26-02
+
+### 7. 加拿大 Cyber Centre 發布勒索軟體威脅展望 2025-2027
+
+**嚴重程度：High | 來源：Canadian Centre for Cyber Security | 日期：2026-02-17**
+
+加拿大網路安全中心發布《Ransomware Threat Outlook 2025-2027》，提供 2025-2027 年勒索軟體威脅前瞻分析：
+
+**關鍵判斷**：
+- 加拿大勒索軟體威脅持續增加並快速演化
+- 所有組織（無論規模）幾乎確定會面臨勒索軟體攻擊風險
+- 攻擊者將持續利用 AI 與加密貨幣等技術
+- 2024 年加拿大勒索軟體事件比 2023 年增加
+
+**2024 年加拿大前三大勒索軟體威脅**：
+1. **Akira**：2023 年 4 月出現的 RaaS 組織，與 Conti 有關聯，採用雙重勒索
+2. **Play**：2022 年 6 月出現，2023 年 11 月轉為 RaaS 模式
+3. **Medusa**：2021 年 6 月出現的 RaaS 組織，針對關鍵基礎設施
+
+**新興趨勢**：
+- **多重勒索**：從單一勒索轉向多重勒索（DDoS + 資料外洩 + 第三方聯繫）
+- **僅資料外洩攻擊**：Hunters International 等組織放棄加密，專注資料外洩勒索
+- **AI 濫用**：利用生成式 AI 開發惡意軟體、生成 Deepfake、自動化協商
+
+**防禦建議**：
+- 實施基本網路衛生（軟體更新、MFA、備份）
+- 警惕釣魚攻擊
+- 報告事件至相關當局
 
 ---
 
@@ -560,8 +590,8 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 
 ---
 
-> 報告產出時間：2026-02-17
-> 資料截止時間：2026-02-16 23:59 UTC
-> 資料來源：CISA (US)、CERT-UA (Ukraine)、CERT Polska、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
+> 報告產出時間：2026-02-18
+> 資料截止時間：2026-02-17 23:59 UTC
+> 資料來源：CISA (US)、CERT-UA (Ukraine)、CERT Polska、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
 > 分析模型：Claude Opus 4.5
-> 版本：2.0（2026-02-17 更新：新增波蘭能源攻擊後續、APT28 攻擊、SSH 蠕蟲分析、假冒 7-Zip 事件、更新 Qdrant 跨 Layer 關聯分析）
+> 版本：2.1（2026-02-18 更新：新增加拿大 Cyber Centre 勒索軟體威脅展望 2025-2027）
