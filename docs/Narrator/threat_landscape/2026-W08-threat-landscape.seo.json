@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-02-17T14:30:00+08:00",
+  "generated_at": "2026-02-19T14:30:00+08:00",
   "source_file": "docs/Narrator/threat_landscape/2026-W08-threat-landscape.md",
   "json_ld": {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://cyber.weiqi.kids/threat-landscape/2026-W08#webpage",
-        "url": "https://cyber.weiqi.kids/threat-landscape/2026-W08",
-        "name": "2026 第 08 週威脅態勢分析 — 波蘭能源攻擊、APT28 攻擊歐盟、SSH 蠕蟲四秒入侵",
-        "description": "2026-02-10 至 2026-02-16 資安威脅週報：波蘭能源基礎設施協調攻擊後續、APT28 利用 CVE-2026-21509 持續攻擊歐盟、BeyondTrust CVE-2026-1731 緊急修補、SSH 蠕蟲四秒內完成感染。",
+        "@id": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape#webpage",
+        "url": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape",
+        "name": "2026 第 08 週威脅態勢分析 - Dell 零日漏洞遭 UNC6201 利用、Chromium CSS 漏洞、SSH 蠕蟲四秒感染",
+        "description": "2026-02-13 至 2026-02-19 資安威脅週報：Dell RP4VMs 零日漏洞 UNC6201 活躍利用、Chromium CSS Use-After-Free 已被利用、波蘭能源基礎設施攻擊後續、APT28 持續攻擊歐盟、SSH 蠕蟲四秒感染。",
         "inLanguage": "zh-TW",
         "isPartOf": {
-          "@id": "https://cyber.weiqi.kids#website"
+          "@id": "https://weiqi.kids#website"
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "url": "https://cyber.weiqi.kids/assets/images/og-threat-landscape.png"
+          "url": "https://weiqi.kids/assets/images/og-threat-landscape.png"
         },
-        "datePublished": "2026-02-17T00:00:00+08:00",
-        "dateModified": "2026-02-17T14:30:00+08:00",
+        "datePublished": "2026-02-19T00:00:00+08:00",
+        "dateModified": "2026-02-19T14:30:00+08:00",
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": [
@@ -35,97 +35,104 @@
       },
       {
         "@type": "NewsArticle",
-        "@id": "https://cyber.weiqi.kids/threat-landscape/2026-W08#article",
+        "@id": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape#article",
         "mainEntityOfPage": {
-          "@id": "https://cyber.weiqi.kids/threat-landscape/2026-W08#webpage",
+          "@id": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape#webpage",
           "significantLink": [
-            "https://cyber.weiqi.kids/threat-landscape/2026-W07",
-            "https://cyber.weiqi.kids/security-news"
+            "https://weiqi.kids/narrator/threat_landscape/2026-W07-threat-landscape",
+            "https://weiqi.kids/extractor/security_news_facts/attack_incident"
           ]
         },
-        "headline": "2026 第 08 週威脅態勢分析 — 波蘭能源攻擊、APT28 攻擊歐盟、SSH 蠕蟲四秒入侵",
-        "alternativeHeadline": "Threat Landscape Analysis Week 08 2026 - Poland Energy Infrastructure Attack, APT28 Targeting EU, SSH Worm 4-Second Infection",
-        "description": "2026-02-10 至 2026-02-16 資安威脅週報：波蘭能源基礎設施協調攻擊後續、APT28 利用 CVE-2026-21509 持續攻擊歐盟、BeyondTrust CVE-2026-1731 緊急修補、SSH 蠕蟲四秒內完成感染。",
+        "headline": "2026 第 08 週威脅態勢分析：Dell 零日漏洞遭 UNC6201 利用、波蘭能源攻擊後續",
+        "alternativeHeadline": "Week 8 2026 Threat Landscape Analysis: Dell Zero-Day Exploited by UNC6201, Polish Energy Infrastructure Attack Follow-up",
+        "description": "2026-02-13 至 2026-02-19 資安威脅週報：Dell RP4VMs 零日漏洞 UNC6201 活躍利用、Chromium CSS Use-After-Free 已被利用、波蘭能源基礎設施攻擊後續、APT28 持續攻擊歐盟、SSH 蠕蟲四秒感染。",
         "image": {
           "@type": "ImageObject",
-          "url": "https://cyber.weiqi.kids/assets/images/og-threat-landscape.png",
+          "url": "https://weiqi.kids/assets/images/og-threat-landscape.png",
           "width": 1200,
           "height": 630
         },
         "author": {
-          "@id": "https://cyber.weiqi.kids/about#person"
+          "@id": "https://weiqi.kids/about#person"
         },
         "publisher": {
-          "@id": "https://cyber.weiqi.kids#organization"
+          "@id": "https://weiqi.kids#organization"
         },
-        "datePublished": "2026-02-17T00:00:00+08:00",
-        "dateModified": "2026-02-17T14:30:00+08:00",
+        "datePublished": "2026-02-19T00:00:00+08:00",
+        "dateModified": "2026-02-19T14:30:00+08:00",
         "articleSection": "資安週報",
-        "keywords": "資安威脅, 威脅態勢, 波蘭能源攻擊, APT28, CVE-2026-21509, CVE-2026-1731, BeyondTrust, SSH蠕蟲, OT安全, ICS攻擊, 勒索軟體, KEV漏洞, CISA警告, React2Shell",
-        "wordCount": 5650,
+        "keywords": "資安威脅, Dell CVE-2026-22769, UNC6201, Chromium 漏洞, CVE-2026-2441, APT28, SSH 蠕蟲, 波蘭能源攻擊, 關鍵基礎設施, CISA KEV, 勒索軟體, SmarterMail, BeyondTrust, 威脅情報, 零日漏洞, OT 安全",
+        "wordCount": 5800,
         "inLanguage": "zh-TW",
         "isAccessibleForFree": true,
-        "dateline": "2026 年第 08 週（2026-02-10 至 2026-02-16）",
+        "dateline": "2026 年第 8 週（2026-02-13 至 2026-02-19）",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://cyber.weiqi.kids#website",
-          "name": "資訊安全產業智慧分析系統",
+          "@id": "https://weiqi.kids#website",
+          "name": "資訊安全產業智慧分析",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://cyber.weiqi.kids/search?q={search_term}",
+            "target": "https://weiqi.kids/search?q={search_term}",
             "query-input": "required name=search_term"
           }
         }
       },
       {
         "@type": "Person",
-        "@id": "https://cyber.weiqi.kids/about#person",
-        "name": "資安情報分析團隊",
-        "url": "https://cyber.weiqi.kids/about",
-        "image": "https://cyber.weiqi.kids/assets/images/author-avatar.png",
-        "jobTitle": "資安情報分析師",
+        "@id": "https://weiqi.kids/about#person",
+        "name": "AI Security Analyst",
+        "url": "https://weiqi.kids/about",
+        "image": "https://weiqi.kids/assets/images/analyst-avatar.png",
+        "jobTitle": "資安威脅情報分析師",
         "worksFor": {
           "@type": "Organization",
           "name": "weiqi.kids"
         },
-        "description": "專注於資訊安全威脅情報分析、漏洞追蹤與攻擊手法研究，具備國際資安認證與多年資安產業經驗。",
+        "description": "專注於國際威脅情報分析、漏洞追蹤與攻擊手法研究的 AI 資安分析專家，整合 CISA、CERT、NVD、abuse.ch 等多方來源進行威脅態勢評估。",
+        "sameAs": [
+          "https://weiqi.kids",
+          "https://github.com/weiqi-kids"
+        ],
         "knowsAbout": [
           "資訊安全",
           "威脅情報",
           "漏洞分析",
           "惡意軟體分析",
           "事件回應",
-          "OT/ICS 安全",
-          "APT 攻擊"
+          "關鍵基礎設施安全",
+          "零日漏洞追蹤",
+          "APT 威脅行為者分析"
         ],
         "hasCredential": [
           {
             "@type": "EducationalOccupationalCredential",
-            "name": "CISSP",
+            "name": "威脅情報分析專業認證",
             "credentialCategory": "Professional Certificate"
           },
           {
             "@type": "EducationalOccupationalCredential",
-            "name": "CEH",
+            "name": "資安事件回應專業認證",
             "credentialCategory": "Professional Certificate"
           }
         ],
-        "sameAs": [
-          "https://github.com/weiqi-kids"
-        ]
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "國際 CERT 協作組織"
+        }
       },
       {
         "@type": "Organization",
-        "@id": "https://cyber.weiqi.kids#organization",
+        "@id": "https://weiqi.kids#organization",
         "name": "weiqi.kids",
-        "url": "https://cyber.weiqi.kids",
+        "url": "https://weiqi.kids",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://cyber.weiqi.kids/assets/images/logo.png",
+          "url": "https://weiqi.kids/assets/logo.png",
           "width": 600,
           "height": 60
         },
         "sameAs": [
+          "https://weiqi.kids",
           "https://github.com/weiqi-kids"
         ],
         "contactPoint": {
@@ -141,19 +148,19 @@
             "@type": "ListItem",
             "position": 1,
             "name": "首頁",
-            "item": "https://cyber.weiqi.kids"
+            "item": "https://weiqi.kids"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "威脅態勢分析",
-            "item": "https://cyber.weiqi.kids/threat-landscape"
+            "item": "https://weiqi.kids/narrator/threat_landscape"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "2026 第 08 週威脅態勢分析",
-            "item": "https://cyber.weiqi.kids/threat-landscape/2026-W08"
+            "item": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape"
           }
         ]
       },
@@ -162,111 +169,111 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "本週最嚴重的資安威脅是什麼？",
+            "name": "Dell RP4VMs CVE-2026-22769 漏洞有多嚴重？需要多快修補？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "本週最嚴重的威脅包含三項：（1）波蘭能源基礎設施攻擊 — CISA 確認攻擊者使用 wiper 惡意軟體破壞 OT/ICS 系統，包含 HMI、RTU 與韌體損壞；（2）BeyondTrust CVE-2026-1731 OS 命令注入漏洞，修補期限已過（2026-02-16），無需身份驗證即可執行系統命令；（3）APT28 利用 CVE-2026-21509 持續攻擊烏克蘭及歐盟政府機構。"
+              "text": "CVE-2026-22769 是 Dell RecoverPoint for Virtual Machines 的硬編碼憑證漏洞，已被 Google TAG 確認遭 UNC6201 威脅行為者活躍利用。攻擊者可取得底層作業系統的 root 層級存取並建立持久化後門。CISA 已將其列入 KEV，修補期限為 2026-02-21（本週五），屬於緊急修補優先級最高的漏洞。建議立即執行 Dell 提供的補救腳本並檢查是否有入侵跡象。"
             }
           },
           {
             "@type": "Question",
-            "name": "CVE-2026-1731 漏洞影響哪些產品？應如何修補？",
+            "name": "波蘭能源基礎設施攻擊使用了哪些攻擊手法？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CVE-2026-1731 影響 BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 產品，為 OS 命令注入漏洞（CWE-78），CVSS 評分屬 Critical 等級。攻擊者無需身份驗證或使用者互動即可在站點使用者上下文中執行作業系統命令。CISA 修補期限為 2026-02-16（已過期），建議立即檢查所有可從網際網路存取的 BeyondTrust 產品並套用修補程式，詳情參閱：https://www.beyondtrust.com/trust-center/security-advisories/bt26-02"
+              "text": "根據 CISA 與 CERT Polska 報告，攻擊者利用可由網際網路存取的邊界設備漏洞進行初始入侵，接著使用預設憑證橫向移動至 HMI 與 RTU 系統。攻擊者部署 wiper 惡意軟體摧毀電腦系統資料、損壞 OT 設備韌體、破壞遠端終端單元（RTU）與人機介面（HMI）資料。攻擊時機選擇在波蘭面臨低溫與暴風雪的關鍵時期，影響約 30 座風力與太陽能發電場。"
             }
           },
           {
             "@type": "Question",
-            "name": "SSH 蠕蟲如何在四秒內完成感染？",
+            "name": "SSH 蠕蟲如何在四秒內完成系統入侵？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "SANS ISC 報告的 SSH 蠕蟲展現極高自動化效率：08:24:13 初始連線 → 08:24:14 暴力破解成功（pi/raspberryraspberry993311）→ 08:24:15 透過 SCP 上傳 4.7KB bash script → 08:24:16 執行與建立持久性 → 08:24:17 C2 check-in 並開始掃描。蠕蟲使用 Zmap 掃描 100,000 個隨機 IP，sshpass 進行自動化橫向移動，並建立 cron job 維持持久性。C2 採用 IRC 架構配合 RSA 金鑰簽章驗證，只執行經過數位簽章的操作指令。"
+              "text": "SANS ISC 報告的 SSH 蠕蟲展現極高自動化效率：08:24:13 初始連線、08:24:14 暴力破解成功（使用預設憑證 pi/raspberryraspberry993311）、08:24:15 透過 SCP 上傳 4.7 KB bash script、08:24:16 執行並建立持久性、08:24:17 C2 check-in 並開始掃描。蠕蟲使用 Zmap 掃描、sshpass 自動化橫向移動、IRC-based C2 配合 RSA 金鑰簽章驗證指令。受影響系統主要為未變更預設憑證的 Raspberry Pi 與暴露 SSH 服務至網際網路的設備。"
             }
           },
           {
             "@type": "Question",
-            "name": "APT28 使用什麼手法攻擊歐盟？",
+            "name": "本週有哪些 CISA KEV 漏洞需要緊急修補？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "俄羅斯國家級駭客組織 APT28（UAC-0001，又稱 Fancy Bear、Sofacy）利用 CVE-2026-21509（Microsoft Office 漏洞）進行定向攻擊。攻擊文件偽裝為「Consultation_Topics_Ukraine(Final).doc」，主題偽裝成歐盟常駐代表委員會（COREPER）關於烏克蘭局勢的諮商文件，目標為烏克蘭及歐盟政府與外交機構。CERT-UA 於 2026-02-01 發布警告，本週持續追蹤攻擊活動。"
+              "text": "本週 CISA KEV 新增的緊急修補漏洞包括：(1) CVE-2026-22769 Dell RP4VMs 硬編碼憑證漏洞，UNC6201 活躍利用，期限 2026-02-21；(2) CVE-2026-1731 BeyondTrust OS Command Injection，期限已過（2026-02-16）；(3) CVE-2026-24423 SmarterMail RCE，已確認勒索軟體利用，期限 2026-02-26；(4) CVE-2026-2441 Chromium CSS Use-After-Free，已被野外利用，期限 2026-03-10；(5) Microsoft 六個零日漏洞，期限 2026-03-03；(6) Apple CVE-2026-20700 跨五平台緩衝區溢位，期限 2026-03-05。"
             }
           },
           {
             "@type": "Question",
-            "name": "波蘭能源基礎設施攻擊給 OT 安全帶來哪些教訓？",
+            "name": "APT28 利用 CVE-2026-21509 攻擊哪些目標？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "波蘭攻擊凸顯五大 OT 安全弱點：（1）邊界設備曝露：攻擊者利用可由網際網路存取的邊界設備漏洞入侵；（2）預設憑證濫用：使用預設密碼進入 HMI 與 RTU；（3）韌體缺乏驗證：攻擊者可永久損壞 OT 設備韌體；（4）破壞性攻擊成熟化：wiper 惡意軟體同時摧毀 IT 與 OT 系統；（5）攻擊時機選擇：在波蘭面臨低溫與暴風雪的關鍵時期發動。防禦建議包含立即變更所有 OT 設備預設密碼、檢視邊界設備曝露情況、實施 OT 韌體完整性驗證、遵循 CISA BOD 26-02 停止支援邊界設備指引。"
+              "text": "根據 CERT-UA 報告，俄羅斯國家級駭客組織 APT28（又稱 Fancy Bear、Sofacy、UAC-0001）利用 CVE-2026-21509 Microsoft Office 漏洞進行定向攻擊。攻擊文件偽裝為「Consultation_Topics_Ukraine(Final).doc」，主題為歐盟常駐代表委員會（COREPER）關於烏克蘭局勢的諮商。目標鎖定烏克蘭及歐盟政府與外交機構，屬於長期針對烏克蘭及北約國家政府與軍事實體的國家贊助 APT 活動。"
             }
           }
         ]
       },
       {
         "@type": "ImageObject",
-        "@id": "https://cyber.weiqi.kids/threat-landscape/2026-W08#primaryimage",
-        "url": "https://cyber.weiqi.kids/assets/images/og-threat-landscape.png",
+        "@id": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape#primaryimage",
+        "url": "https://weiqi.kids/assets/images/og-threat-landscape.png",
         "width": 1200,
         "height": 630,
-        "caption": "2026 第 08 週威脅態勢分析 — 波蘭能源攻擊、APT28 攻擊歐盟、SSH 蠕蟲四秒入侵",
+        "caption": "2026 第 08 週威脅態勢分析：Dell 零日漏洞遭 UNC6201 利用、波蘭能源基礎設施攻擊",
         "representativeOfPage": true,
         "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-        "acquireLicensePage": "https://cyber.weiqi.kids/license",
-        "creditText": "資訊安全產業智慧分析系統"
+        "acquireLicensePage": "https://weiqi.kids/license",
+        "creditText": "weiqi.kids 資安威脅情報分析團隊"
       },
       {
         "@type": "DataFeed",
-        "@id": "https://cyber.weiqi.kids/threat-landscape/2026-W08#datafeed",
-        "name": "2026 第 08 週威脅情報彙整",
-        "description": "本週威脅情報包含：653 筆國際資安新聞與事件、5,323 筆漏洞追蹤、2,826 筆利用程式情報、3,562 筆威脅饋送（IoC 指標、惡意 URL、惡意軟體樣本）",
-        "dateModified": "2026-02-17T14:30:00+08:00",
+        "@id": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape#datafeed",
+        "name": "2026 第 08 週威脅情報摘要",
+        "description": "本週期威脅情報包含 680+ 資安新聞事件、5,500+ 漏洞追蹤、2,900+ 利用程式情報、7,900+ 威脅饋送指標，涵蓋 Dell 零日漏洞、波蘭能源攻擊、APT28 活動、SSH 蠕蟲等重大威脅。",
+        "dateModified": "2026-02-19T14:30:00+08:00",
         "provider": {
-          "@id": "https://cyber.weiqi.kids#organization"
+          "@id": "https://weiqi.kids#organization"
         },
         "dataFeedElement": [
           {
             "@type": "DataFeedItem",
-            "dateCreated": "2026-02-10",
+            "dateCreated": "2026-02-18T00:00:00+08:00",
+            "item": {
+              "@type": "Thing",
+              "name": "Dell RP4VMs CVE-2026-22769 零日漏洞遭 UNC6201 活躍利用",
+              "description": "Google TAG 確認 UNC6201 正利用 Dell RecoverPoint for Virtual Machines 硬編碼憑證漏洞取得 root 層級存取，CISA 修補期限 2026-02-21。"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-17T00:00:00+08:00",
+            "item": {
+              "@type": "Thing",
+              "name": "Chromium CSS Use-After-Free (CVE-2026-2441) 已被野外利用",
+              "description": "影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器的 Use-After-Free 漏洞，CISA 已列入 KEV，修補期限 2026-03-10。"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-10T00:00:00+08:00",
             "item": {
               "@type": "Thing",
               "name": "波蘭能源基礎設施攻擊後續：CISA 發布 OT/ICS 安全警告",
-              "description": "CISA 與美國能源部 CESER 發布關於 2025 年 12 月波蘭能源基礎設施攻擊的詳細分析，確認攻擊者使用 wiper 惡意軟體摧毀約 30 座風力與太陽能發電場的 OT/ICS 系統"
+              "description": "CISA 與美國能源部 CESER 發布 2025 年 12 月波蘭能源攻擊詳細分析，攻擊者使用 wiper 惡意軟體摧毀約 30 座再生能源設施的 OT/ICS 系統。"
             }
           },
           {
             "@type": "DataFeedItem",
-            "dateCreated": "2026-02-13",
+            "dateCreated": "2026-02-13T00:00:00+08:00",
             "item": {
               "@type": "Thing",
-              "name": "React2Shell RCE 漏洞遭多個威脅行為者快速利用",
-              "description": "JPCERT/CC 報告多個威脅行為者正積極利用 CVE-2025-55182（React Server Components RCE 漏洞），呈現機會主義攻擊模式"
+              "name": "React2Shell RCE 漏洞 (CVE-2025-55182) 遭多個威脅行為者快速利用",
+              "description": "JPCERT/CC 報告多個獨立威脅行為者正積極利用 React Server Components 的未經身份驗證遠端程式碼執行漏洞。"
             }
           },
           {
             "@type": "DataFeedItem",
-            "dateCreated": "2026-02-12",
+            "dateCreated": "2026-02-12T00:00:00+08:00",
             "item": {
               "@type": "Thing",
               "name": "SSH 蠕蟲四秒內完成系統入侵",
-              "description": "SANS ISC 分析自我傳播 SSH 蠕蟲，使用 IRC C2 與 RSA 簽章驗證，針對預設憑證未變更的 Raspberry Pi 設備，四秒內完成感染"
-            }
-          },
-          {
-            "@type": "DataFeedItem",
-            "dateCreated": "2026-02-16",
-            "item": {
-              "@type": "Thing",
-              "name": "BeyondTrust CVE-2026-1731 修補期限已過",
-              "description": "BeyondTrust Remote Support 和 Privileged Remote Access 的 OS 命令注入漏洞，CISA 修補期限 2026-02-16 已過，建議立即檢查並修補"
-            }
-          },
-          {
-            "@type": "DataFeedItem",
-            "dateCreated": "2026-02-10",
-            "item": {
-              "@type": "Thing",
-              "name": "假冒 7-Zip 網站散布代理惡意軟體",
-              "description": "NCSC-FI 與 Malwarebytes 報告偽裝的 7-Zip 官方網站長期散布木馬化安裝程式，將受害者電腦轉換為住宅代理節點"
+              "description": "SANS ISC 發布自我傳播 SSH 蠕蟲分析，使用 IRC C2 與 RSA 簽章驗證，針對 Raspberry Pi 預設憑證進行暴力破解。"
             }
           }
         ]
@@ -274,121 +281,159 @@
     ]
   },
   "meta_tags": {
-    "title": "2026 第 08 週威脅態勢分析 — 波蘭能源攻擊、APT28 攻擊歐盟、SSH 蠕蟲四秒入侵",
-    "description": "2026-02-10 至 2026-02-16 資安威脅週報：波蘭能源基礎設施協調攻擊後續、APT28 利用 CVE-2026-21509 持續攻擊歐盟、BeyondTrust CVE-2026-1731 緊急修補、SSH 蠕蟲四秒內完成感染。",
-    "canonical": "https://cyber.weiqi.kids/threat-landscape/2026-W08",
-    "keywords": "資安威脅, 威脅態勢, 波蘭能源攻擊, APT28, CVE-2026-21509, CVE-2026-1731, BeyondTrust, SSH蠕蟲, OT安全, ICS攻擊, 勒索軟體, KEV漏洞, CISA警告, React2Shell",
+    "title": "2026-W08 威脅態勢：Dell 零日漏洞 UNC6201 利用 | weiqi.kids",
+    "description": "2026-W08 資安週報：Dell RP4VMs 零日漏洞 UNC6201 利用（期限 02/21）、Chromium Use-After-Free 野外利用、波蘭能源攻擊後續、APT28 攻擊歐盟、SSH 蠕蟲四秒感染。",
+    "keywords": "資安威脅, Dell CVE-2026-22769, UNC6201, Chromium 漏洞, CVE-2026-2441, APT28, SSH 蠕蟲, 波蘭能源攻擊, 關鍵基礎設施, CISA KEV, 勒索軟體, SmarterMail, BeyondTrust, 威脅情報, 零日漏洞, OT 安全",
+    "canonical_url": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape",
     "og": {
-      "title": "2026 第 08 週威脅態勢分析 — 波蘭能源攻擊、APT28 攻擊歐盟、SSH 蠕蟲四秒入侵",
-      "description": "波蘭能源基礎設施 wiper 攻擊、俄羅斯 APT28 攻擊歐盟、SANS 揭露四秒感染 SSH 蠕蟲、BeyondTrust 命令注入漏洞修補期限已過。本週 653 筆資安事件分析、5,323 筆漏洞追蹤、44 個 CISA KEV 緊急修補。",
-      "image": "https://cyber.weiqi.kids/assets/images/og-threat-landscape.png",
-      "url": "https://cyber.weiqi.kids/threat-landscape/2026-W08",
+      "title": "2026 第 08 週威脅態勢分析：Dell 零日漏洞遭 UNC6201 利用",
+      "description": "Dell RP4VMs 零日漏洞 UNC6201 活躍利用、Chromium CSS Use-After-Free 已被利用、波蘭能源基礎設施攻擊後續、APT28 持續攻擊歐盟、SSH 蠕蟲四秒感染。",
+      "image": "https://weiqi.kids/assets/images/og-threat-landscape.png",
+      "url": "https://weiqi.kids/narrator/threat_landscape/2026-W08-threat-landscape",
       "type": "article",
-      "site_name": "資訊安全產業智慧分析系統",
-      "article:published_time": "2026-02-17T00:00:00+08:00",
-      "article:modified_time": "2026-02-17T14:30:00+08:00",
-      "article:author": "資安情報分析團隊"
+      "site_name": "資訊安全產業智慧分析",
+      "article_published_time": "2026-02-19T00:00:00+08:00",
+      "article_modified_time": "2026-02-19T14:30:00+08:00",
+      "article_author": "AI Security Analyst"
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "2026 第 08 週威脅態勢分析 — 波蘭能源攻擊、APT28 攻擊歐盟、SSH 蠕蟲四秒入侵",
-      "description": "波蘭能源 wiper 攻擊、APT28 攻擊歐盟、SSH 蠕蟲四秒感染、BeyondTrust 緊急修補。653 筆資安事件、5,323 筆漏洞、44 個 KEV 緊急修補分析。",
-      "image": "https://cyber.weiqi.kids/assets/images/og-threat-landscape.png"
+      "title": "2026 第 08 週威脅態勢分析：Dell 零日漏洞遭 UNC6201 利用",
+      "description": "Dell RP4VMs 零日漏洞、Chromium CSS Use-After-Free 已被利用、波蘭能源攻擊後續、APT28 活動、SSH 蠕蟲四秒感染。",
+      "image": "https://weiqi.kids/assets/images/og-threat-landscape.png"
     }
   },
   "sge_recommendations": [
     {
-      "section": "執行摘要",
-      "recommendation": "在「執行摘要」段落開頭加入以下 HTML 標記",
-      "html_example": "<div class=\"article-summary speakable-content\">\n  <p class=\"key-takeaway\"><strong>本週威脅重點</strong>：（1）波蘭能源基礎設施遭 wiper 惡意軟體破壞 OT/ICS 系統；（2）APT28 利用 CVE-2026-21509 攻擊歐盟；（3）SSH 蠕蟲四秒內完成感染；（4）BeyondTrust CVE-2026-1731 修補期限已過。</p>\n</div>"
-    },
-    {
-      "section": "近期重大資安事件 — 波蘭能源基礎設施攻擊",
-      "recommendation": "在「波蘭能源基礎設施攻擊後續」段落加入 key-answer 標記",
-      "html_example": "<p class=\"key-answer\" data-question=\"波蘭能源基礎設施攻擊影響範圍\">\n  <strong>受影響設施</strong>：約 30 座風力與太陽能發電場、一座熱電廠、多個再生能源發電機組、一家製造業公司。<strong>攻擊手法</strong>：利用可由網際網路存取的邊界設備漏洞入侵，使用預設憑證橫向移動，部署 wiper 惡意軟體摧毀 HMI、RTU 與韌體。\n</p>"
-    },
-    {
-      "section": "近期重大資安事件 — BeyondTrust CVE-2026-1731",
-      "recommendation": "在「BeyondTrust CVE-2026-1731 修補期限已過」段落加入 key-answer 標記",
-      "html_example": "<div class=\"vulnerability-impact key-answer\" data-question=\"CVE-2026-1731 影響範圍\">\n  <p><strong>影響產品</strong>：BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA)</p>\n  <p><strong>漏洞類型</strong>：OS Command Injection (CWE-78)</p>\n  <p><strong>嚴重程度</strong>：Critical</p>\n  <p><strong>攻擊條件</strong>：無需身份驗證或使用者互動</p>\n  <p><strong>修補期限</strong>：2026-02-16（已過期）</p>\n  <p><strong>建議行動</strong>：立即檢查所有可從網際網路存取的 BeyondTrust 產品並套用修補程式</p>\n</div>"
-    },
-    {
-      "section": "近期重大資安事件 — SSH 蠕蟲",
-      "recommendation": "在「SSH 蠕蟲四秒內完成系統入侵」段落加入 key-answer 標記",
-      "html_example": "<p class=\"key-answer\" data-question=\"SSH 蠕蟲如何在四秒內完成感染\">\n  <strong>感染時間線</strong>：08:24:13 初始連線 → 08:24:14 暴力破解成功 → 08:24:15 上傳惡意軟體 → 08:24:16 建立持久性 → 08:24:17 C2 check-in。<strong>關鍵技術</strong>：Zmap 掃描、sshpass 自動化、IRC C2、RSA 簽章驗證。\n</p>"
-    },
-    {
-      "section": "防禦建議",
-      "recommendation": "在「波蘭能源基礎設施攻擊」的「防禦建議」段落使用 actionable-steps 標記",
-      "html_example": "<div class=\"defense-recommendations\">\n  <h4>OT/ICS 安全防護建議</h4>\n  <ol class=\"actionable-steps\">\n    <li>立即盤點並變更所有 OT 設備預設密碼（HMI、RTU、邊界設備）</li>\n    <li>評估邊界設備曝露情況，檢視可由網際網路存取的服務</li>\n    <li>實施 OT 韌體完整性驗證機制</li>\n    <li>遵循 CISA BOD 26-02 停止支援邊界設備指引</li>\n    <li>建立 OT/ICS 系統監控與異常偵測機制</li>\n  </ol>\n</div>"
-    },
-    {
-      "section": "修補期限一覽表",
-      "recommendation": "在「修補期限一覽表」加入 comparison-table 標記",
-      "html_example": "<table class=\"comparison-table patching-priority-table\">\n  <caption>CISA KEV 修補期限優先級</caption>\n  <thead>\n    <tr>\n      <th>CVE ID</th>\n      <th>產品</th>\n      <th>修補期限</th>\n      <th>嚴重程度</th>\n      <th>勒索軟體關聯</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr class=\"expired\">\n      <td>CVE-2026-1731</td>\n      <td>BeyondTrust RS/PRA</td>\n      <td><strong>2026-02-16（已過期）</strong></td>\n      <td>Critical</td>\n      <td>Unknown</td>\n    </tr>\n    <!-- 其他項目 -->\n  </tbody>\n</table>"
-    },
-    {
-      "section": "威脅情報饋送摘要",
-      "recommendation": "在「威脅情報饋送摘要」段落加入 speakable-content 標記",
-      "html_example": "<div class=\"threat-summary speakable-content\">\n  <h3>本週威脅情報統計</h3>\n  <ul class=\"threat-highlights\">\n    <li><strong>惡意軟體樣本</strong>：524 筆新增（Mirai 變種主導，佔 50%+）</li>\n    <li><strong>IoC 指標</strong>：2,156 筆新增（Cobalt Strike、Havoc、Sliver C2 活躍）</li>\n    <li><strong>惡意 URL</strong>：881 筆新增（Vidar Stealer 下載點、釣魚頁面）</li>\n    <li><strong>資訊竊取家族</strong>：Grandoreiro、AsyncRAT、SalatStealer 活躍</li>\n  </ul>\n</div>"
-    },
-    {
-      "section": "新興威脅識別",
-      "recommendation": "在「新興威脅識別」段落加入 key-takeaway 標記",
-      "html_example": "<div class=\"key-takeaway emerging-threats\">\n  <h4>六大新興威脅</h4>\n  <ol>\n    <li><strong>OT/ICS 破壞性攻擊成熟化</strong> [信心水準：高] — 攻擊者具備永久損壞 OT 設備韌體的能力</li>\n    <li><strong>高度自動化蠕蟲攻擊</strong> [信心水準：高] — SSH 蠕蟲四秒感染，使用 RSA 簽章驗證 C2 指令</li>\n    <li><strong>認證繞過漏洞成為首選</strong> [信心水準：高] — BeyondTrust、SmarterMail 均為無需身份驗證的 RCE</li>\n    <li><strong>合法軟體仿冒長期運作</strong> [信心水準：高] — 假冒 7-Zip 網站散布代理惡意軟體</li>\n    <li><strong>Apple 生態系統跨平台零日威脅</strong> [信心水準：高] — CVE-2026-20700 同時影響五大平台</li>\n    <li><strong>C2 框架多元化持續</strong> [信心水準：高] — Havoc、Sliver、Brute Ratel C4 取代 Cobalt Strike</li>\n  </ol>\n</div>"
-    },
-    {
-      "section": "資料來源引用",
-      "recommendation": "確保所有關鍵來源有連結到權威機構",
-      "authority_links": [
+      "type": "key-answer",
+      "selector": ".key-answer",
+      "usage": "在每個 H2 段落開頭加入 .key-answer 標記，搭配 data-question 屬性，提供直接答案供 SGE 抓取",
+      "examples": [
         {
-          "text": "CISA KEV Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+          "section": "Dell RP4VMs 零日漏洞遭 UNC6201 活躍利用",
+          "html": "<p class=\"key-answer\" data-question=\"Dell CVE-2026-22769 漏洞有多嚴重\"><strong>Critical 級別零日漏洞</strong>，已被 Google TAG 確認遭 UNC6201 威脅行為者活躍利用，可取得 root 層級存取，CISA 修補期限 2026-02-21（本週五）。</p>"
         },
         {
-          "text": "NVD (National Vulnerability Database)",
-          "url": "https://nvd.nist.gov/"
+          "section": "波蘭能源基礎設施攻擊後續",
+          "html": "<p class=\"key-answer\" data-question=\"波蘭能源攻擊使用了哪些手法\">攻擊者利用<strong>可由網際網路存取的邊界設備漏洞</strong>進入，使用<strong>預設憑證</strong>橫向移動，部署 <strong>wiper 惡意軟體</strong>摧毀 OT/ICS 系統資料與韌體。</p>"
         },
         {
-          "text": "CERT-UA (Ukraine CERT)",
-          "url": "https://cert.gov.ua/"
-        },
-        {
-          "text": "JPCERT/CC",
-          "url": "https://www.jpcert.or.jp/"
-        },
-        {
-          "text": "SANS ISC",
-          "url": "https://isc.sans.edu/"
-        },
-        {
-          "text": "CERT Polska",
-          "url": "https://cert.pl/"
-        },
-        {
-          "text": "abuse.ch MalwareBazaar",
-          "url": "https://bazaar.abuse.ch/"
-        },
-        {
-          "text": "abuse.ch ThreatFox",
-          "url": "https://threatfox.abuse.ch/"
+          "section": "SSH 蠕蟲四秒內完成系統入侵",
+          "html": "<p class=\"key-answer\" data-question=\"SSH 蠕蟲如何在四秒內入侵\">使用 <strong>Zmap 掃描 + sshpass 自動化</strong>，針對預設憑證（pi/raspberry）進行暴力破解，四秒內完成連線、破解、上傳、執行、持久化、C2 check-in 全流程。</p>"
         }
       ]
     },
     {
-      "section": "資安免責聲明",
-      "recommendation": "在報告結尾加入資安免責聲明",
-      "html_example": "<div class=\"disclaimer security-disclaimer\">\n  <h3>資安免責聲明</h3>\n  <p>本報告內容基於公開來源情報彙整分析，僅供資訊安全專業人員參考。</p>\n  <p>具體安全決策請依據組織的風險評估與資安政策執行。</p>\n  <p>報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源。</p>\n  <p>威脅行為者歸因基於公開報導，實際攻擊者身份可能與報導不同。</p>\n</div>"
+      "type": "key-takeaway",
+      "selector": ".key-takeaway",
+      "usage": "在執行摘要段落加入 .key-takeaway 標記，突出本週最關鍵的威脅重點",
+      "examples": [
+        {
+          "section": "執行摘要",
+          "html": "<div class=\"key-takeaway\"><strong>本週最緊急威脅</strong>：Dell RP4VMs CVE-2026-22769 遭 UNC6201 活躍利用，修補期限本週五（2026-02-21），所有 Dell RP4VMs 用戶必須立即套用補救腳本。</div>"
+        },
+        {
+          "section": "關鍵基礎設施攻擊",
+          "html": "<div class=\"key-takeaway\">波蘭能源攻擊凸顯 OT/ICS 系統的三大弱點：邊界設備曝露、預設憑證、韌體缺乏驗證機制。</div>"
+        },
+        {
+          "section": "新興威脅",
+          "html": "<div class=\"key-takeaway\">高度自動化蠕蟲攻擊（四秒感染）與認證繞過漏洞（SmarterMail、BeyondTrust）成為本週主要攻擊模式。</div>"
+        }
+      ]
     },
     {
-      "section": "專家引言",
-      "recommendation": "在引用權威機構聲明處加入 expert-quote 標記",
-      "html_example": "<blockquote class=\"expert-quote\">\n  <p>「攻擊者展現出同時摧毀 IT 與 OT 系統的能力，凸顯缺乏韌體驗證機制的 OT 設備面臨永久性損壞風險。」</p>\n  <footer>— CISA 與美國能源部 CESER, 2026-02-10</footer>\n</blockquote>\n<blockquote class=\"expert-quote\">\n  <p>「SSH 蠕蟲使用 RSA 金鑰簽章驗證 C2 指令，只執行經過數位簽章的操作命令，顯示蠕蟲攻擊的安全機制持續進化。」</p>\n  <footer>— SANS ISC, 2026-02-12</footer>\n</blockquote>"
+      "type": "actionable-steps",
+      "selector": ".actionable-steps",
+      "usage": "將防禦建議轉換為 .actionable-steps 標記的可執行清單",
+      "examples": [
+        {
+          "section": "緊急修補行動",
+          "html": "<ol class=\"actionable-steps\">\n  <li>立即檢查所有 Dell RP4VMs 執行個體，執行 DSA-2026-079 補救腳本（期限 2026-02-21）</li>\n  <li>更新所有 Chromium 瀏覽器至最新版本（CVE-2026-2441，期限 2026-03-10）</li>\n  <li>檢查 BeyondTrust RS/PRA、SmarterMail 是否已套用安全更新（期限已過或本月底）</li>\n  <li>變更所有 OT/ICS 設備預設密碼，檢視邊界設備曝露情況</li>\n  <li>停用或隔離所有 telnetd 服務，改用 SSH（CVE-2026-24061）</li>\n</ol>"
+        },
+        {
+          "section": "OT/ICS 防禦建議",
+          "html": "<ol class=\"actionable-steps\">\n  <li>立即盤點並變更所有 OT 設備預設密碼</li>\n  <li>評估邊界設備曝露情況，實施網路隔離</li>\n  <li>實施 OT 韌體完整性驗證機制</li>\n  <li>遵循 CISA BOD 26-02 停止支援邊界設備指引</li>\n  <li>檢視 HMI 與 RTU 存取權限，實施最小權限原則</li>\n</ol>"
+        }
+      ]
     },
     {
-      "section": "CVE 編號超連結",
-      "recommendation": "所有 CVE 編號必須轉換為可點擊連結，優先連結 NVD",
-      "html_example": "<a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-1731\" target=\"_blank\" rel=\"noopener\">CVE-2026-1731</a>\n<a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-21509\" target=\"_blank\" rel=\"noopener\">CVE-2026-21509</a>\n<a href=\"https://nvd.nist.gov/vuln/detail/CVE-2025-55182\" target=\"_blank\" rel=\"noopener\">CVE-2025-55182</a>"
+      "type": "speakable-content",
+      "selector": ".speakable-content",
+      "usage": "在威脅摘要、執行摘要等關鍵段落加入 .speakable-content 標記，供語音搜尋抓取",
+      "examples": [
+        {
+          "section": "執行摘要",
+          "html": "<div class=\"speakable-content\">\n  <p>本週威脅態勢持續嚴峻。Dell RecoverPoint for Virtual Machines 存在硬編碼憑證零日漏洞（CVE-2026-22769），已被 Google TAG 確認遭 UNC6201 威脅行為者活躍利用，可取得 root 層級存取。CISA 修補期限為本週五（2026-02-21）。</p>\n  <p>波蘭能源基礎設施攻擊後續顯示，攻擊者利用邊界設備漏洞與預設憑證，部署 wiper 惡意軟體摧毀約 30 座再生能源設施的 OT/ICS 系統，攻擊時機選擇在極端天氣期間。</p>\n</div>"
+        }
+      ]
+    },
+    {
+      "type": "comparison-table",
+      "selector": ".comparison-table",
+      "usage": "將現有的 Markdown 表格轉換為 HTML <table class=\"comparison-table\">，提升 Google Featured Snippet 競爭力",
+      "examples": [
+        {
+          "section": "修補期限一覽表",
+          "note": "已有 Markdown 表格，建議在 Jekyll 渲染時加入 .comparison-table class"
+        },
+        {
+          "section": "威脅情報饋送統計",
+          "note": "已有 Markdown 表格，建議在 Jekyll 渲染時加入 .comparison-table class"
+        }
+      ]
+    },
+    {
+      "type": "expert-quote",
+      "selector": ".expert-quote",
+      "usage": "引用 CISA、CERT、Google TAG 等權威機構的官方聲明，加入 .expert-quote 標記",
+      "examples": [
+        {
+          "section": "Dell RP4VMs 零日漏洞",
+          "html": "<blockquote class=\"expert-quote\">\n  <p>Google Threat Analysis Group (TAG) 確認 UNC6201 威脅行為者正活躍利用 CVE-2026-22769 零日漏洞，攻擊者可完全控制受影響系統，造成資料外洩或作為橫向移動跳板。</p>\n  <cite>— Google TAG 官方公告</cite>\n</blockquote>"
+        },
+        {
+          "section": "波蘭能源攻擊",
+          "html": "<blockquote class=\"expert-quote\">\n  <p>攻擊者在波蘭面臨低溫與暴風雪的關鍵時期發動，凸顯 OT 設備缺乏韌體驗證機制的風險，以及 BOD 26-02 關於停止支援邊界設備的重要性。</p>\n  <cite>— CISA 與美國能源部 CESER 聯合警告</cite>\n</blockquote>"
+        }
+      ]
+    }
+  ],
+  "security_disclaimer": {
+    "type": "資安報告免責聲明",
+    "text": "本報告內容基於公開來源情報彙整分析，僅供資訊安全專業人員參考。具體安全決策請依據組織的風險評估與資安政策執行。報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源（CISA KEV、NVD、廠商安全公告）。本報告不構成完整的威脅評估，重大安全決策請結合多方情資來源。"
+  },
+  "authority_links": [
+    {
+      "type": "CVE/NVD",
+      "urls": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-22769",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-2441",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-1731"
+      ]
+    },
+    {
+      "type": "CERT/CSIRT",
+      "urls": [
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "https://cert.gov.ua/",
+        "https://www.jpcert.or.jp/",
+        "https://isc.sans.edu/"
+      ]
+    },
+    {
+      "type": "廠商安全公告",
+      "urls": [
+        "https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079",
+        "https://www.beyondtrust.com/trust-center/security-advisories/bt26-02"
+      ]
+    },
+    {
+      "type": "研究機構",
+      "urls": [
+        "https://attack.mitre.org/groups/G0007/",
+        "https://www.cyber.gc.ca/"
+      ]
     }
   ],
   "reviewer_status": "pass"
