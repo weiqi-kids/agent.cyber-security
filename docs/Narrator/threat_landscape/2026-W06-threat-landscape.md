@@ -1,10 +1,12 @@
 ---
 layout: seo-report
 title: 2026 第 06 週威脅態勢分析
+description: "2026-02-09 至 2026-02-15 資安威脅週報"
 parent: 威脅態勢分析
 nav_order: 2
 nav_exclude: false
 seo_json: true
+date: 2026-02-12
 ---
 
 # 威脅態勢分析 — 2026 第 06 週

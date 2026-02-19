@@ -1,10 +1,12 @@
 ---
 layout: seo-report
 title: 2026 第 05 週防禦建議
+description: "2026-01-22 至 2026-01-28 資安防禦建議"
 parent: 防禦建議
 nav_order: 3
 nav_exclude: false
 seo_json: true
+date: 2026-01-28
 ---
 
 # 防禦建議 — 2026 第 05 週
