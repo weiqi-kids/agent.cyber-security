@@ -532,3 +532,130 @@ bash core/Extractor/Layers/{layer}/fetch.sh
 3. 是否有錯誤或需要人工介入的項目
 4. **更新 `_data/status.yml` 的執行時間**
 5. **完成檢查報告**（依上述格式）
+
+---
+
+## 網站改版流程
+
+> **獨立流程**：本流程獨立於 Layer/Mode 的資訊萃取流程，專門用於持續優化本專案的 GitHub Pages 網站。
+
+### 觸發條件
+
+使用者說以下任一指令時，執行此流程：
+
+- 「執行網站改版」
+- 「優化網站」
+- 「執行 revamp」
+- 「revamp」
+
+### 流程總覽
+
+```
+0-Positioning → 1-Discovery → 2-Competitive → 3-Analysis → 4-Strategy → 5-Content-Spec → 執行 → Final-Review
+     ↓              ↓             ↓              ↓            ↓              ↓                       ↓
+  Review ✓      Review ✓      Review ✓      Review ✓     Review ✓       Review ✓                Review ✓
+```
+
+### 階段說明
+
+| 階段 | 目的 | 輸出位置 |
+|------|------|----------|
+| **0-positioning** | 釐清品牌定位、核心價值 | `docs/Revamp/0-positioning.md` |
+| **1-discovery** | 盤點現有內容 + 技術健檢 | `docs/Revamp/1-discovery.md` |
+| **2-competitive** | 分析競爭對手 | `docs/Revamp/2-competitive.md` |
+| **3-analysis** | 受眾分析 + 內容差距 | `docs/Revamp/3-analysis.md` |
+| **4-strategy** | 改版計劃 + 優先級排序 | `docs/Revamp/4-strategy.md` |
+| **5-content-spec** | 每頁內容規格 | `docs/Revamp/5-content-spec.md` |
+| **final-review** | 驗收執行結果 | `docs/Revamp/final-review.md` |
+
+### 執行方式（Writer → Reviewer 雙角色）
+
+每個階段採用 **Writer → Reviewer** 雙角色模式：
+
+1. **Writer 執行**：
+   - 讀取 `revamp/{階段}/CLAUDE.md` 的指令
+   - 讀取前一階段的輸出（作為輸入）
+   - 產出該階段文件到 `docs/Revamp/`
+
+2. **Reviewer 檢查**：
+   - 讀取 `revamp/{階段}/review/CLAUDE.md` 的檢查清單
+   - 逐項檢查 Writer 輸出
+   - 回報 `✅ 通過` / `⚠️ 需修改` / `❌ 重做`
+
+3. **迭代修正**：
+   - 若 Reviewer 說「需修改」，Writer 根據問題清單修正
+   - 修正後重新送審
+   - 重複直到 Reviewer 說「通過」
+
+4. **進入下一階段**：Reviewer 通過後，自動進入下一階段
+
+### 模型指派規則
+
+| 階段 | 角色 | 指定模型 | 子代理類型 | 原因 |
+|------|------|----------|------------|------|
+| 所有階段 | Writer | `sonnet` | `general-purpose` | 依規則產出，無需高階推理 |
+| 所有階段 | Reviewer | `sonnet` | `general-purpose` | 依 checklist 檢查 |
+| 工具執行 | site-audit.sh | `sonnet` | `Bash` | 純腳本執行 |
+
+### 自動化工具
+
+位於 `revamp/tools/` 目錄，用於 1-discovery 和 2-competitive 階段：
+
+| 工具 | 用途 | 用法 |
+|------|------|------|
+| `site-audit.sh` | 網站技術健檢（Lighthouse、安全性、SEO） | `bash revamp/tools/site-audit.sh URL` |
+| `competitive-audit.sh` | 競品比較分析 | `bash revamp/tools/competitive-audit.sh URL1 URL2 URL3` |
+
+**工具執行方式**：
+```bash
+cd /Users/lightman/weiqi.kids/agent.cyber-security && bash revamp/tools/site-audit.sh https://lightman.weiqi.kids/agent.cyber-security/
+```
+
+### 指定執行
+
+可以指定執行特定階段（跳過前面階段，假設前階段輸出已存在）：
+
+| 指令 | 執行內容 |
+|------|----------|
+| 「執行 positioning」 | 只跑 0-positioning 的 Writer + Reviewer |
+| 「執行 discovery」 | 只跑 1-discovery 的 Writer + Reviewer |
+| 「執行 competitive」 | 只跑 2-competitive 的 Writer + Reviewer |
+| 「執行 analysis」 | 只跑 3-analysis 的 Writer + Reviewer |
+| 「執行 strategy」 | 只跑 4-strategy 的 Writer + Reviewer |
+| 「執行 content-spec」 | 只跑 5-content-spec 的 Writer + Reviewer |
+| 「執行 final-review」 | 只跑最終驗收 |
+
+> **注意**：指定執行時，必須確保前階段輸出已存在於 `docs/Revamp/` 目錄。
+
+### 輸出位置
+
+所有改版文件輸出到 `docs/Revamp/` 目錄：
+
+```
+docs/Revamp/
+├── 0-positioning.md      # 品牌定位文件
+├── 1-discovery.md        # 網站現況盤點報告
+├── 2-competitive.md      # 競品分析報告
+├── 3-analysis.md         # 受眾與內容差距分析
+├── 4-strategy.md         # 改版策略計劃書
+├── 5-content-spec.md     # 內容規格書
+└── final-review.md       # 驗收報告
+```
+
+### 與主流程的關係
+
+| 流程 | 觸發指令 | 目的 |
+|------|----------|------|
+| **資訊萃取流程** | 「執行完整流程」、「更新資料」 | 萃取資安情報、產出報告 |
+| **網站改版流程** | 「執行網站改版」、「revamp」 | 優化 GitHub Pages 網站 |
+
+兩個流程**完全獨立**，可分別執行。
+
+### 完成時
+
+網站改版流程完成後，回報：
+
+1. 各階段通過狀態
+2. Final Review 驗收結果
+3. 待執行的改版項目（若有）
+4. 建議的下一步行動
