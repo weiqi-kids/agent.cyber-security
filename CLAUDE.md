@@ -608,7 +608,7 @@ bash core/Extractor/Layers/{layer}/fetch.sh
 
 **工具執行方式**：
 ```bash
-cd /Users/lightman/weiqi.kids/agent.cyber-security && bash revamp/tools/site-audit.sh https://lightman.weiqi.kids/agent.cyber-security/
+cd /Users/lightman/weiqi.kids/agent.cyber-security && bash revamp/tools/site-audit.sh https://security.weiqi.kids/
 ```
 
 ### 指定執行

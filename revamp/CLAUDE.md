@@ -6,7 +6,7 @@
 
 這是本專案 GitHub Pages 網站的結構化改版流程，包含 6 個階段，每個階段都有 Writer 和 Reviewer 角色確保品質。
 
-**目標網站**：https://lightman.weiqi.kids/agent.cyber-security/
+**目標網站**：https://security.weiqi.kids/
 
 ---
 
@@ -79,19 +79,19 @@ Reviewer: revamp/1-discovery/review/CLAUDE.md
 cd /Users/lightman/weiqi.kids/agent.cyber-security
 
 # 完整健檢（本專案網站）
-bash revamp/tools/site-audit.sh https://lightman.weiqi.kids/agent.cyber-security/
+bash revamp/tools/site-audit.sh https://security.weiqi.kids/
 
 # 只執行 Lighthouse
-bash revamp/tools/site-audit.sh https://lightman.weiqi.kids/agent.cyber-security/ --lighthouse
+bash revamp/tools/site-audit.sh https://security.weiqi.kids/ --lighthouse
 
 # 只檢測安全性
-bash revamp/tools/site-audit.sh https://lightman.weiqi.kids/agent.cyber-security/ --security
+bash revamp/tools/site-audit.sh https://security.weiqi.kids/ --security
 
 # 只檢測 SEO
-bash revamp/tools/site-audit.sh https://lightman.weiqi.kids/agent.cyber-security/ --seo
+bash revamp/tools/site-audit.sh https://security.weiqi.kids/ --seo
 
 # 輸出到檔案
-bash revamp/tools/site-audit.sh https://lightman.weiqi.kids/agent.cyber-security/ --output docs/Revamp/site-audit.json
+bash revamp/tools/site-audit.sh https://security.weiqi.kids/ --output docs/Revamp/site-audit.json
 ```
 
 **檢測項目**：
@@ -111,7 +111,7 @@ bash revamp/tools/site-audit.sh https://lightman.weiqi.kids/agent.cyber-security
 cd /Users/lightman/weiqi.kids/agent.cyber-security
 
 # 與競品比較（第一個是本站，後面是競品）
-bash revamp/tools/competitive-audit.sh https://lightman.weiqi.kids/agent.cyber-security/ https://competitor1.com https://competitor2.com
+bash revamp/tools/competitive-audit.sh https://security.weiqi.kids/ https://competitor1.com https://competitor2.com
 ```
 
 **注意**：每個網站約需 30-60 秒
@@ -213,4 +213,4 @@ npx lighthouse "https://example.com" --output json --output-path ./report.json -
 
 - 負責人：Lightman
 - 適用專案：agent.cyber-security (資訊安全產業智慧分析系統)
-- 目標網站：https://lightman.weiqi.kids/agent.cyber-security/
+- 目標網站：https://security.weiqi.kids/
