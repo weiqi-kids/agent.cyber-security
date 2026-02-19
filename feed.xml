@@ -1,0 +1,30 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title }}</title>
+    <description>{{ site.description }}</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% assign reports = site.pages | where_exp: "page", "page.path contains 'docs/Narrator/'" | where_exp: "page", "page.date" | sort: "date" | reverse %}
+    {% for report in reports limit:20 %}
+    <item>
+      <title>{{ report.title | xml_escape }}</title>
+      <description>{{ report.description | xml_escape }}</description>
+      <pubDate>{{ report.date | date_to_rfc822 }}</pubDate>
+      <link>{{ report.url | absolute_url }}</link>
+      <guid isPermaLink="true">{{ report.url | absolute_url }}</guid>
+      {% if report.path contains 'threat_landscape' %}
+      <category>威脅態勢分析</category>
+      {% elsif report.path contains 'defense_advisory' %}
+      <category>防禦建議</category>
+      {% endif %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -65,6 +65,35 @@
 - 從 L4 威脅情報饋送層補充 IoC 趨勢（惡意 URL、惡意程式、C2 活動）
 - 分類統計（勒索軟體、釣魚、DDoS、供應鏈攻擊等）
 - 與前期比較
+- **ATT&CK 映射**：為識別的攻擊手法標註 MITRE ATT&CK TTP
+
+##### ATT&CK TTP 標籤格式
+
+當報告中提到具體攻擊技術時，使用以下格式標註：
+
+**Badge 格式**（推薦用於重點技術）：
+```html
+<a href="https://attack.mitre.org/techniques/T1566/" class="ttp-badge" target="_blank">T1566</a>
+```
+
+**文字內嵌格式**（用於段落中）：
+```markdown
+攻擊者使用釣魚郵件 [T1566](https://attack.mitre.org/techniques/T1566/){: .ttp-ref } 作為初始存取手段...
+```
+
+**常見 TTP 對照表**：
+| 攻擊手法 | TTP ID | 說明 |
+|----------|--------|------|
+| 釣魚攻擊 | T1566 | Phishing |
+| 漏洞利用 | T1190 | Exploit Public-Facing Application |
+| 勒索軟體加密 | T1486 | Data Encrypted for Impact |
+| 認證竊取 | T1003 | OS Credential Dumping |
+| 供應鏈攻擊 | T1195 | Supply Chain Compromise |
+| 遠端服務利用 | T1021 | Remote Services |
+| 惡意附件 | T1566.001 | Spearphishing Attachment |
+| 惡意連結 | T1566.002 | Spearphishing Link |
+
+> **查詢 TTP**：https://attack.mitre.org/techniques/enterprise/
 
 #### 2.5 新興威脅識別
 - 首次出現的攻擊手法或目標
@@ -102,5 +131,6 @@
 - [ ] 統計數據是否準確？（數量、百分比需核對）
 - [ ] 格式是否符合目標受眾閱讀習慣？
 - [ ] 是否有 `[REVIEW_NEEDED]` 標記需要處理？
+- [ ] 攻擊手法是否已標註對應的 ATT&CK TTP？（使用 .ttp-badge 或 .ttp-ref 格式）
 
 若任一項未通過，在輸出開頭加上 `[REVIEW_NEEDED]` 標記。

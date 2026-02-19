@@ -1,9 +1,10 @@
 ---
-layout: default
-title: 2026 第 05 週
+layout: seo-report
+title: 2026 第 05 週威脅態勢分析
 parent: 威脅態勢分析
 nav_order: 3
 nav_exclude: false
+seo_json: true
 ---
 
 # 威脅態勢分析 — 2026 第 05 週

@@ -7,6 +7,7 @@
 raw/
 *.jsonl
 *.xml
+!feed.xml
 
 # macOS
 .DS_Store

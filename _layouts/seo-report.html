@@ -260,4 +260,61 @@ function applySemanticMarkers() {
     color: #e2e8f0;
   }
 }
+
+/* ATT&CK TTP Badge Styling */
+.ttp-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: monospace;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0 0.1rem;
+  vertical-align: middle;
+}
+
+.ttp-badge:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: white;
+  text-decoration: none;
+}
+
+.ttp-badge::before {
+  content: "⚔️ ";
+  font-size: 0.7rem;
+}
+
+/* Inline TTP reference style */
+.ttp-ref {
+  color: #7c3aed;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.ttp-ref:hover {
+  color: #5b21b6;
+  text-decoration-style: solid;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ttp-badge {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  }
+
+  .ttp-badge:hover {
+    background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+  }
+
+  .ttp-ref {
+    color: #a78bfa;
+  }
+
+  .ttp-ref:hover {
+    color: #c4b5fd;
+  }
+}
 </style>

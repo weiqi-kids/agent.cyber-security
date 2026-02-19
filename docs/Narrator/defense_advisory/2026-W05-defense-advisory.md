@@ -1,9 +1,10 @@
 ---
-layout: default
-title: 2026 第 05 週
+layout: seo-report
+title: 2026 第 05 週防禦建議
 parent: 防禦建議
 nav_order: 3
 nav_exclude: false
+seo_json: true
 ---
 
 # 防禦建議 — 2026 第 05 週

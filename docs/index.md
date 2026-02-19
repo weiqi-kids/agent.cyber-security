@@ -13,15 +13,16 @@ permalink: /
 自動化收集、萃取、分析全球資安威脅情報，提供可行動的防禦建議。
 {: .fs-6 .fw-300 }
 
-<div class="d-flex flex-justify-between flex-items-center mb-4">
-<span class="Label Label--success">資料更新：{{ site.data.status.last_execution_display }}</span>
-</div>
-
 {% assign threat_reports = site.pages | where_exp: "page", "page.path contains 'Narrator/threat_landscape'" | where_exp: "page", "page.name != 'index.md'" | sort: "name" | reverse %}
 {% assign defense_reports = site.pages | where_exp: "page", "page.path contains 'Narrator/defense_advisory'" | where_exp: "page", "page.name != 'index.md'" | sort: "name" | reverse %}
 
-[威脅態勢分析]({% if threat_reports.size > 0 %}{{ threat_reports[0].url | relative_url }}{% else %}{{ site.baseurl }}/docs/Narrator/threat_landscape/{% endif %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[防禦建議]({% if defense_reports.size > 0 %}{{ defense_reports[0].url | relative_url }}{% else %}{{ site.baseurl }}/docs/Narrator/defense_advisory/{% endif %}){: .btn .fs-5 .mb-4 .mb-md-0 }
+[查看本週威脅報告]({% if threat_reports.size > 0 %}{{ threat_reports[0].url | relative_url }}{% else %}{{ site.baseurl }}/docs/Narrator/threat_landscape/{% endif %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[防禦建議]({% if defense_reports.size > 0 %}{{ defense_reports[0].url | relative_url }}{% else %}{{ site.baseurl }}/docs/Narrator/defense_advisory/{% endif %}){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: text-bottom;"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2zm0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2zm.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg> 訂閱 RSS]({{ site.baseurl }}/feed.xml){: .btn .btn-outline .fs-5 .mb-4 .mb-md-0 }
+
+<div class="d-flex flex-justify-between flex-items-center mt-4 mb-4">
+<span class="Label Label--success fs-5">📅 資料更新：{{ site.data.status.last_execution_display }}</span>
+</div>
 
 ---
 
@@ -56,7 +57,7 @@ permalink: /
 
 ---
 
-## 最新報告
+## 最新報告 <a href="{{ site.baseurl }}/feed.xml" title="訂閱 RSS" style="font-size: 0.6em; vertical-align: middle;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f26522" viewBox="0 0 16 16"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2zm0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2zm.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg></a>
 
 ### 威脅態勢分析
 {: .d-inline-block }
