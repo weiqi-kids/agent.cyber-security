@@ -620,6 +620,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-siemens-simcenter-femap-and-nastran-md",
+    "title": "Siemens Simcenter Femap and Nastran",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-siemens-simcenter-femap-and-nastran.md",
+    "source": "**來源**: [CISA](https://www.cisa.gov/news-events/ics-advisories/icsa-26-048-01)",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-siemens-simatic-and-siplus-products-md",
     "title": "Siemens SIMATIC and SIPLUS products",
     "category": "vulnerability_disclosure",
@@ -2080,6 +2090,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-honeywell-cctv-products-md",
+    "title": "Honeywell CCTV Products",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-honeywell-cctv-products.md",
+    "source": "**來源**: [CISA](https://www.cisa.gov/news-events/ics-advisories/icsa-26-048-04)",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-hobby-hunter-notes-pypi-under-attack-md",
     "title": "",
     "category": "vulnerability_disclosure",
@@ -2166,6 +2186,16 @@
     "date": "",
     "file": "vulnerability_disclosure/2026-github-actions-privilege-escalation.md",
     "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-ge-vernova-enervista-ur-setup-md",
+    "title": "GE Vernova Enervista UR Setup",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-ge-vernova-enervista-ur-setup.md",
+    "source": "**來源**: [CISA](https://www.cisa.gov/news-events/ics-advisories/icsa-26-048-03)",
     "severity": "",
     "source_layer": "security_news_facts"
   },
@@ -2296,6 +2326,16 @@
     "date": "",
     "file": "vulnerability_disclosure/2026-delta-electronics-diaview-code-execution.md",
     "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-delta-electronics-asda-soft-md",
+    "title": "Delta Electronics ASDA-Soft",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-delta-electronics-asda-soft.md",
+    "source": "**來源**: [CISA](https://www.cisa.gov/news-events/ics-advisories/icsa-26-048-02)",
     "severity": "",
     "source_layer": "security_news_facts"
   },
@@ -3696,6 +3736,26 @@
     "date": "",
     "file": "vulnerability_disclosure/2026-Avation-Light-Engine-Pro-Missing-Authentication.md",
     "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-18-cisa-adds-two-known-exploited-vulnerabilities-to-catalog-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-18-cisa-adds-two-known-exploited-vulnerabilities-to-catalog.md",
+    "source": "**來源**: [CISA](https://www.cisa.gov/news-events/alerts/2026/02/18/cisa-adds-two-known-exploited-vulnerabilities-catalog)",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-17-cisa-adds-four-known-exploited-vulnerabilities-to-catalog-md",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-17-cisa-adds-four-known-exploited-vulnerabilities-to-catalog.md",
+    "source": "**來源**: [CISA](https://www.cisa.gov/news-events/alerts/2026/02/17/cisa-adds-four-known-exploited-vulnerabilities-catalog)",
     "severity": "",
     "source_layer": "security_news_facts"
   },
@@ -26935,17 +26995,7 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-poland-energy-sector-cyber-incident-highlights-ot-and-ics-security-gaps.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-2026-poland-energy-sector-cyber-incident-highlights-ot-and-ics-se-md",
-    "title": "Poland Energy Sector Cyber Incident Highlights OT and ICS Security Gaps",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/2026-poland-energy-sector-cyber-incident-highlights-ot-and-ics-se.md",
-    "source": "",
+    "source": "**來源**: [CISA](https://www.cisa.gov/news-events/alerts/2026/02/10/poland-energy-sector-cyber-incident-highlights-ot-and-ics-security-gaps)",
     "severity": "",
     "source_layer": "security_news_facts"
   },
