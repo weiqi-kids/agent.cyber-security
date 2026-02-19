@@ -89,6 +89,7 @@ exclude:
 include:
   - docs/
   - "*.seo.json"
+  - feed.xml
 
 # Keep .seo.json files as static assets
 keep_files:
