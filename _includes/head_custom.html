@@ -1,8 +1,13 @@
-<!-- SEO Enhancement: Load and inject .seo.json data -->
+<!-- SEO Enhancement: Load and inject .seo.json data (deferred to avoid blocking) -->
 {% if page.seo_json %}
 <script type="application/ld+json" id="seo-jsonld-placeholder"></script>
 <script>
-(function() {
+// Defer SEO JSON loading until after page is interactive
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(loadSeoJson, 50);
+});
+
+function loadSeoJson() {
   // Construct the .seo.json URL from current page URL
   var pageUrl = window.location.pathname;
   var seoJsonUrl = pageUrl.replace(/\/$/, '') + '.seo.json';
@@ -87,7 +92,7 @@
     if (url.startsWith('http')) return url;
     return url.replace(/\{\{SITE_URL\}\}/g, window.location.origin);
   }
-})();
+}
 </script>
 {% endif %}
 

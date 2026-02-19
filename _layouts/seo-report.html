@@ -7,9 +7,18 @@ seo_json: true
   {{ content }}
 </article>
 
-<!-- SGE/AEO Marker Injection -->
+<!-- SGE/AEO Marker Injection (deferred to avoid blocking) -->
 <script>
-(function() {
+// Defer execution until DOM is ready and idle
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(applySemanticMarkers, { timeout: 2000 });
+} else {
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(applySemanticMarkers, 100);
+  });
+}
+
+function applySemanticMarkers() {
   // Add speakable-content class to summary sections
   document.querySelectorAll('h2').forEach(function(h2) {
     var text = h2.textContent.toLowerCase();
@@ -93,7 +102,7 @@ seo_json: true
   });
 
   console.log('[SGE] Semantic markers applied');
-})();
+}
 </script>
 
 <!-- Security Report Disclaimer -->

@@ -38,20 +38,31 @@ back_to_top_text: "回到頂端"
 
 # Defaults for pages - exclude all content from nav, only index.md files have nav
 defaults:
+  # Extractor docs: exclude from search (1,800+ CVE entries would bloat the index)
   - scope:
-      path: "docs"
+      path: "docs/Extractor"
       type: "pages"
     values:
       layout: default
       nav_exclude: true
-      search_exclude: false
-  # SEO-optimized layout for Narrator reports
+      search_exclude: true
+  # Narrator reports: include in search, use SEO-optimized layout
   - scope:
       path: "docs/Narrator"
       type: "pages"
     values:
       layout: seo-report
       seo_json: true
+      nav_exclude: true
+      search_exclude: false
+  # Other docs: default settings
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: default
+      nav_exclude: true
+      search_exclude: true
 
 # Exclude from processing
 exclude:
