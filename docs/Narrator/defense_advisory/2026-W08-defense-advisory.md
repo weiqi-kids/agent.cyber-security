@@ -1,41 +1,45 @@
 ---
 layout: seo-report
 title: 2026 第 08 週防禦建議
-description: "2026-02-13 至 2026-02-19 資安防禦建議：Dell RP4VMs 零日漏洞 UNC6201 活躍利用（緊急 2026-02-21）、Chromium CSS Use-After-Free 已被利用、GitLab SSRF 歷史漏洞再現、波蘭能源基礎設施 OT/ICS 攻擊防禦指引、SmarterMail 勒索軟體漏洞鏈、SSH 蠕蟲四秒感染防護。"
+description: "2026-02-14 至 2026-02-20 資安防禦建議：Ivanti EPMM 零日 RCE CVE-2026-1281/1340 活躍利用、Dell RP4VMs CVE-2026-22769 UNC6201 利用（緊急 2026-02-21）、Chromium CSS Use-After-Free、VSCode 擴充套件供應鏈漏洞、Honeywell CCTV CVE-2026-1670 CVSS 9.8、波蘭能源基礎設施 OT/ICS 防禦、SmarterMail 勒索軟體漏洞鏈。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-defense-advisory.png
 author: 資安情報分析團隊
-date: 2026-02-19
+date: 2026-02-20
 ---
 
 # 防禦建議 — 2026 第 08 週
 
-> 涵蓋期間：2026-02-13 至 2026-02-19
+> 涵蓋期間：2026-02-14 至 2026-02-20
 > 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV
-> 產出時間：2026-02-19
+> 產出時間：2026-02-20
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢持續嚴峻，**零日漏洞活躍利用**與**關鍵基礎設施攻擊**為主要威脅：
+本週威脅態勢持續嚴峻，**多個零日漏洞活躍利用**、**供應鏈風險**與**關鍵基礎設施攻擊**為主要威脅：
 
-1. **Dell RP4VMs 零日漏洞 CVE-2026-22769（極緊急！修補期限 2026-02-21）** — Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 層級存取
-2. **Chromium CSS Use-After-Free CVE-2026-2441（Critical）** — 影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，已被野外利用
-3. **GitLab SSRF 歷史漏洞 CVE-2021-22175（新增 KEV）** — CISA 於 2026-02-18 新增至 KEV，webhook SSRF 漏洞再現
-4. **波蘭能源基礎設施攻擊後續（Critical）** — CISA 與 CERT Polska 發布詳細分析，wiper 惡意軟體破壞 OT/ICS 系統
-5. **SmarterMail 三重漏洞鏈** — CVE-2026-24423 已確認勒索軟體利用，修補期限 2026-02-26
-6. **SSH 蠕蟲四秒感染（新興威脅）** — 使用 RSA 簽章驗證 C2 指令，自動化程度極高
-7. **Microsoft 六個零日漏洞** — 修補期限 2026-03-03
-8. **Apple 跨平台零日（首次含 visionOS）** — CVE-2026-20700，修補期限 2026-03-05
+1. **Ivanti EPMM 零日漏洞 CVE-2026-1281、CVE-2026-1340（新增！極嚴重）** — Unit 42 報告兩個零日漏洞正遭活躍利用，允許未經認證的 RCE，可完全控制企業 MDM 基礎設施
+2. **Dell RP4VMs 零日漏洞 CVE-2026-22769（極緊急！修補期限 2026-02-21）** — Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 層級存取
+3. **VSCode 擴充套件漏洞（新增！供應鏈風險）** — Live Server、Code Runner 等 128M+ 下載量擴充套件存在高危漏洞（CVE-2025-65717、CVE-2025-65715）
+4. **Honeywell CCTV 認證繞過 CVE-2026-1670（新增！CVSS 9.8）** — 關鍵基礎設施監控系統認證繞過漏洞
+5. **Chromium CSS Use-After-Free CVE-2026-2441（Critical）** — 影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，已被野外利用
+6. **GitLab SSRF 歷史漏洞 CVE-2021-22175（新增 KEV）** — CISA 於 2026-02-18 新增至 KEV，webhook SSRF 漏洞再現
+7. **波蘭能源基礎設施攻擊後續（Critical）** — CISA 與 CERT Polska 發布詳細分析，wiper 惡意軟體破壞 OT/ICS 系統
+8. **SmarterMail 三重漏洞鏈** — CVE-2026-24423 已確認勒索軟體利用，修補期限 2026-02-26
+9. **SSH 蠕蟲四秒感染（新興威脅）** — 使用 RSA 簽章驗證 C2 指令，自動化程度極高
+10. **Microsoft 六個零日漏洞** — 修補期限 2026-03-03
+11. **Apple 跨平台零日（首次含 visionOS）** — CVE-2026-20700，修補期限 2026-03-05
 
 **本週關鍵行動**：
 - **極緊急（本週五前）**：執行 Dell RP4VMs 補救腳本（DSA-2026-079），修補期限 2026-02-21
-- **立即**：更新所有 Chromium 瀏覽器、檢查 GitLab webhook 設定
-- **24 小時內**：盤點 OT/ICS 設備預設密碼，變更為強密碼
+- **極緊急（立即）**：檢查 Ivanti EPMM 是否暴露於網際網路，假設已遭入侵
+- **立即**：更新所有 Chromium 瀏覽器、審查 VSCode 擴充套件、檢查 GitLab webhook 設定
+- **24 小時內**：盤點 OT/ICS 設備預設密碼，變更為強密碼；檢查 Honeywell CCTV 系統暴露
 - **本週內**：部署 Microsoft 2 月安全更新
 
 ---
@@ -48,7 +52,10 @@ date: 2026-02-19
 
 | CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
 |-----|------|----------|----------|----------|
+| **CVE-2026-1281, CVE-2026-1340** | Ivanti EPMM | 未經認證 RCE | **立即（零日活躍利用）** | [Ivanti 安全公告](https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM) |
 | **CVE-2026-22769** | Dell RP4VMs | 硬編碼憑證 root RCE (CWE-798) | **2026-02-21（本週五！）** | [Dell DSA-2026-079](https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079) |
+
+> **極緊急警告 - CVE-2026-1281、CVE-2026-1340**：Ivanti Endpoint Manager Mobile (EPMM) 存在兩個嚴重零日漏洞，**正遭野外活躍利用**（Unit 42 報告）。攻擊者可在**未經認證**的情況下遠端執行任意程式碼，取得企業 MDM 基礎設施的**完全控制權**。觀察到的攻擊行為包括：建立反向 Shell、安裝 Web Shell、進行偵察活動、下載惡意軟體。**面向網際網路的 EPMM 管理介面組織應採用「假設已遭入侵」思維。**
 
 > **極緊急警告 - CVE-2026-22769**：Dell RecoverPoint for Virtual Machines 存在硬編碼憑證漏洞，Google TAG 確認威脅行為者 **UNC6201** 正活躍利用此零日漏洞。未經身份驗證的攻擊者可取得 **root 層級存取**，建立持久化後門。**CISA 修補期限 2026-02-21（本週五），請立即執行 Dell 提供的補救腳本。**
 
@@ -63,13 +70,16 @@ date: 2026-02-19
 
 > **警告 - CVE-2026-1731**：BeyondTrust Remote Support 和 Privileged Remote Access 存在未經驗證的 OS 命令注入漏洞。攻擊者無需身份驗證即可在站點使用者上下文中執行命令，可能導致系統完全控制、資料外洩。**請立即檢查所有暴露於網際網路的 BeyondTrust 產品是否有入侵跡象。**
 
-### P1 - 緊急（已確認活躍利用）
+### P1 - 緊急（已確認活躍利用或 CVSS 9.0+）
 
 | CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
 |-----|------|----------|----------|----------|
+| **CVE-2026-1670** | Honeywell CCTV | 認證繞過 (CWE-306) CVSS 9.8 | **立即** | [CISA ICS Advisory](https://www.cisa.gov/news-events/ics-advisories) |
 | **CVE-2026-2441** | Chromium CSS | Use-After-Free (CWE-416) | **2026-03-10** | [Chrome Stable Channel Update](https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html) |
 | **CVE-2021-22175** | GitLab CE/EE | SSRF (CWE-918) | **2026-03-11** | [GitLab CVE-2021-22175](https://gitlab.com/gitlab-org/cves/-/blob/master/2021/CVE-2021-22175.json) |
 | **CVE-2026-24423** | SmarterMail | 缺失認證 RCE (CWE-306) | **2026-02-26** | [SmarterTools Release Notes](https://www.smartertools.com/smartermail/release-notes/current) |
+
+> **警告 - CVE-2026-1670（CVSS 9.8）**：Honeywell 多款 CCTV 產品存在嚴重認證繞過漏洞。攻擊者可在**未認證**情況下變更裝置帳戶的復原電子郵件地址，實現**完整帳戶接管**與未授權存取監控畫面。Honeywell 廣泛部署於商業設施、工業環境與關鍵基礎設施。**CISA 建議**：最小化控制系統設備的網路曝露、將設備隔離於防火牆後、使用安全遠端存取方式、聯繫 Honeywell 支援取得修補指引。
 
 > **警告 - CVE-2026-2441**：Google Chromium CSS 元件存在 Use-After-Free 漏洞，**已被野外利用**。影響所有 Chromium 瀏覽器（Chrome、Edge、Opera 等），透過特製 HTML 網頁可觸發堆積記憶體損壞。**請立即更新所有瀏覽器。**
 
@@ -99,12 +109,22 @@ date: 2026-02-19
 | CVE-2025-15556 | Notepad++ (WinGUp) | 下載缺乏完整性檢查 RCE | 2026-03-05 | [v8.8.9 漏洞修復](https://community.notepad-plus-plus.org/topic/27298/notepad-v8-8-9-vulnerability-fix) |
 | CVE-2024-43468 | Microsoft Configuration Manager | SQL 注入 | 2026-03-05 | [MSRC CVE-2024-43468](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43468) |
 
-### P4 - 本週關注（其他活躍利用）
+### P4 - 本週關注（供應鏈風險與其他活躍利用）
 
 | CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
 |-----|------|----------|----------|----------|
+| **CVE-2025-65717** | VSCode Live Server | 檔案竊取 RCE | **建議立即停用** | [Ox Security 研究報告](https://www.ox.security/) |
+| **CVE-2025-65715** | VSCode Code Runner | 配置操作 RCE | **建議立即停用** | [Ox Security 研究報告](https://www.ox.security/) |
+| **CVE-2025-65716/17** | VSCode Markdown Preview Enhanced | 多個漏洞 | **建議立即停用** | [Ox Security 研究報告](https://www.ox.security/) |
 | CVE-2025-11953 | React Native CLI | 命令注入 RCE | 2026-02-26 | [GitHub PR #2735](https://github.com/react-native-community/cli/pull/2735) |
 | CVE-2025-64328 | Sangoma FreePBX | 命令注入 | 2026-02-24 | [GitHub GHSA-vm9p-46mv-5xvw](https://github.com/FreePBX/security-reporting/security/advisories/GHSA-vm9p-46mv-5xvw) |
+
+> **供應鏈警告 - VSCode 擴充套件漏洞（128M+ 下載量）**：Ox Security 揭露多個熱門 VSCode 擴充套件存在高危漏洞：
+> - **Live Server（7,200 萬+下載）**：CVE-2025-65717，透過惡意網頁重導實現本地檔案竊取
+> - **Code Runner（3,700 萬下載）**：CVE-2025-65715，透過配置檔操作實現 RCE
+> - **Markdown Preview Enhanced**：CVE-2025-65716/17，多個漏洞影響預覽功能
+>
+> **嚴重問題**：Ox Security 自 2025 年 6 月起嘗試負責任揭露，但**無任何維護者回應**。開發者工作站遭入侵可能導致原始碼竊取、憑證收割、供應鏈注入攻擊。**建議暫時停用受影響擴充套件或改用替代方案。**
 
 ---
 
@@ -116,7 +136,9 @@ date: 2026-02-19
 
 | 威脅 | 建議措施 |
 |------|----------|
+| **Ivanti EPMM 零日（極緊急！新增）** | **立即**檢查 EPMM 是否暴露於網際網路；採用「假設已遭入侵」思維；檢查反向 Shell、Web Shell、異常偵察活動；聯繫 Ivanti 取得修補指引 |
 | **Dell RP4VMs 零日（極緊急）** | **立即**執行 Dell 補救腳本（DSA-2026-079）；檢查所有面向網際網路的 RP4VMs 執行個體是否有入侵跡象；實施網路隔離 |
+| **Honeywell CCTV（新增 CVSS 9.8）** | 最小化控制系統設備的網路曝露；將設備隔離於防火牆後；使用安全遠端存取方式（更新的 VPN）；聯繫 Honeywell 支援取得修補指引 |
 | **Chromium 瀏覽器（已被利用）** | **立即**更新所有 Chromium 瀏覽器（Chrome、Edge、Opera）至最新版本；啟用自動更新；實施瀏覽器隔離技術 |
 | **GitLab SSRF（KEV 新增）** | 停用或限制 webhook 對內部網路的存取權限；實施網路隔離限制 GitLab 對敏感內部資源的存取；監控異常內部連線 |
 | **波蘭能源攻擊（OT/ICS）** | 立即盤點可由網際網路存取的邊界設備；變更所有 OT 設備預設密碼；實施 OT 韌體完整性驗證；遵循 CISA BOD 26-02 |
@@ -139,6 +161,7 @@ date: 2026-02-19
 
 | 威脅 | 建議措施 |
 |------|----------|
+| **VSCode 擴充套件漏洞（新增！供應鏈風險）** | **審查已安裝的擴充套件**；暫時停用 Live Server、Code Runner、Markdown Preview Enhanced 等受影響擴充套件；改用替代方案；監控開發者工作站異常活動 |
 | **Windows 6 項零日漏洞** | 立即部署 2026 年 2 月份安全更新；特別關注使用 RDS 的系統；啟用 Attack Surface Reduction (ASR) 規則 |
 | **Apple CVE-2026-20700** | 確保所有 Apple 設備啟用自動更新；透過 MDM 強制部署安全更新；**visionOS 用戶首次遭受跨平台零日攻擊** |
 | **Notepad++ CVE-2025-15556** | 從[官方網站](https://notepad-plus-plus.org/)手動下載更新至 v8.8.9；驗證下載檔案數位簽章 |
@@ -190,7 +213,21 @@ date: 2026-02-19
 
 針對尚無修補或無法立即更新的情況：
 
-### 0. Dell RP4VMs 零日漏洞（極緊急 - 2026-02-21）
+### 0. Ivanti EPMM 零日漏洞（極緊急 - 活躍利用中）
+
+| 措施 | 說明 |
+|------|------|
+| **假設已遭入侵** | 面向網際網路的 EPMM 管理介面組織應採用「假設已遭入侵」思維 |
+| **入侵跡象檢查** | 檢查是否有反向 Shell、Web Shell、異常偵察活動、惡意軟體下載 |
+| **網路隔離** | 立即限制 EPMM 對外部網路的暴露；僅允許必要的管理存取 |
+| **漏洞公開與利用時間窗口** | 漏洞公開後數小時內即被整合至自動掃描框架，須立即回應 |
+| **聯繫廠商** | 聯繫 Ivanti 支援取得最新修補指引 |
+| **MDM 安全審查** | 檢視 MDM 管理的設備是否有異常配置變更或政策修改 |
+
+> **有效期限**：**立即（零日活躍利用中）** | **來源**：NCSC-FI、Unit 42（2026-02-19）
+> **漏洞**：CVE-2026-1281、CVE-2026-1340（未經認證 RCE）
+
+### 0.1. Dell RP4VMs 零日漏洞（極緊急 - 2026-02-21）
 
 | 措施 | 說明 |
 |------|------|
@@ -295,6 +332,32 @@ date: 2026-02-19
 
 > **有效期限**：持續執行 | **來源**：NCSC-FI、Malwarebytes（2026-02-10）
 
+### 7. VSCode 擴充套件供應鏈風險
+
+| 措施 | 說明 |
+|------|------|
+| **擴充套件審查** | 檢視組織開發者環境安裝的所有 VSCode 擴充套件 |
+| **暫時停用** | 停用 Live Server、Code Runner、Markdown Preview Enhanced 等受影響擴充套件 |
+| **替代方案** | 改用其他具有活躍維護的替代擴充套件 |
+| **開發者工作站監控** | 監控開發者工作站是否有異常檔案存取、憑證竊取行為 |
+| **安全瀏覽** | 避免在使用受影響擴充套件的 VSCode 中開啟不受信任的專案 |
+
+> **有效期限**：直到擴充套件維護者回應並修補 | **來源**：NCSC-FI、Ox Security（2026-02-19）
+> **影響範圍**：128M+ 下載量，開發者供應鏈風險
+
+### 8. Honeywell CCTV 認證繞過（關鍵基礎設施）
+
+| 措施 | 說明 |
+|------|------|
+| **網路隔離** | 將 Honeywell CCTV 設備隔離於防火牆後，最小化網路曝露 |
+| **VPN 存取** | 使用安全遠端存取方式（更新的 VPN 解決方案）存取設備 |
+| **帳戶審查** | 檢查裝置帳戶的復原電子郵件地址是否遭到變更 |
+| **聯繫廠商** | 聯繫 Honeywell 支援取得修補指引 |
+| **監控** | 監控異常的帳戶設定變更與未授權存取嘗試 |
+
+> **有效期限**：直到廠商提供修補 | **來源**：CISA ICS Advisory（2026-02-19）
+> **CVSS**：9.8（嚴重）| **影響**：商業設施、工業環境、關鍵基礎設施監控系統
+
 ---
 
 ## 注意事項
@@ -302,7 +365,7 @@ date: 2026-02-19
 ### 適用範圍與限制
 
 1. **環境差異**：本建議為通用性質，實際實施需依據組織環境調整
-2. **時效性**：基於 2026-02-13 至 2026-02-19 期間的公開資訊
+2. **時效性**：基於 2026-02-14 至 2026-02-20 期間的公開資訊
 3. **完整性**：不包含非公開威脅情報
 4. **供應商確認**：第三方產品可能使用受影響元件，請向供應商確認
 5. **OT/ICS 特別注意**：OT 環境修補需經過完整測試，避免影響生產
@@ -319,15 +382,18 @@ date: 2026-02-19
 
 ### 本週特別警示
 
-1. **Dell RP4VMs 極緊急**：CVE-2026-22769 修補期限 **2026-02-21（本週五）**，UNC6201 正活躍利用，可取得 root 存取，**最高優先級處置**
-2. **Chromium 瀏覽器已被利用**：CVE-2026-2441 Use-After-Free 已被野外利用，影響所有 Chromium 瀏覽器，**立即更新**
-3. **GitLab SSRF 歷史漏洞再現**：CVE-2021-22175 於 2026-02-18 新增至 KEV，webhook SSRF 可存取內部資源
-4. **BeyondTrust 極緊急**：CVE-2026-1731 修補期限**已過期**（2026-02-16），未經驗證即可 RCE，**立即處置**
-5. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級處理
-6. **OT/ICS 攻擊**：波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點
-7. **SSH 蠕蟲**：四秒內完成感染，IoT 設備（尤其 Raspberry Pi）應立即變更預設密碼
-8. **假冒軟體網站**：假冒 7-Zip 網站長期散布代理惡意軟體，下載軟體請驗證官方來源
-9. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，攻擊文件偽裝為歐盟文件
+1. **Ivanti EPMM 零日（新增！極緊急）**：CVE-2026-1281、CVE-2026-1340 正遭活躍利用，未經認證即可 RCE 控制企業 MDM 基礎設施，**假設已遭入侵**
+2. **Dell RP4VMs 極緊急**：CVE-2026-22769 修補期限 **2026-02-21（本週五）**，UNC6201 正活躍利用，可取得 root 存取，**最高優先級處置**
+3. **VSCode 擴充套件供應鏈風險（新增！）**：Live Server、Code Runner 等 128M+ 下載量擴充套件存在高危漏洞，維護者無回應，**建議暫時停用**
+4. **Honeywell CCTV（新增！CVSS 9.8）**：CVE-2026-1670 認證繞過影響關鍵基礎設施監控系統，可實現完整帳戶接管
+5. **Chromium 瀏覽器已被利用**：CVE-2026-2441 Use-After-Free 已被野外利用，影響所有 Chromium 瀏覽器，**立即更新**
+6. **GitLab SSRF 歷史漏洞再現**：CVE-2021-22175 於 2026-02-18 新增至 KEV，webhook SSRF 可存取內部資源
+7. **BeyondTrust 極緊急**：CVE-2026-1731 修補期限**已過期**（2026-02-16），未經驗證即可 RCE，**立即處置**
+8. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級處理
+9. **OT/ICS 攻擊**：波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點
+10. **SSH 蠕蟲**：四秒內完成感染，IoT 設備（尤其 Raspberry Pi）應立即變更預設密碼
+11. **假冒軟體網站**：假冒 7-Zip 網站長期散布代理惡意軟體，下載軟體請驗證官方來源
+12. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，攻擊文件偽裝為歐盟文件
 
 ### 建議的測試步驟
 
@@ -372,40 +438,56 @@ date: 2026-02-19
 
 本週執行以下 Qdrant 語意查詢，用於跨 Layer 關聯分析：
 
-### 查詢 1：「活躍利用 CVE CVSS Critical High」
+### 查詢 1：「修補緩解措施 patch mitigation remediation」
 
 | 相似度 | 標題 | Layer | 分類 |
 |--------|------|-------|------|
-| 0.6546 | CVE-2023-38817 PoC 追蹤更新 | exploit_intelligence | poc_available |
-| 0.6379 | Cisco Products Multiple Vulnerabilities | vulnerability_tracking | critical_high |
-| 0.6315 | WSUS 高嚴重性漏洞 CVE-2025-59287 已遭利用 | security_news_facts | vulnerability_disclosure |
+| 0.5630 | Tanium Patch 不當存取控制漏洞 CVE-2025-15326 | vulnerability_tracking | medium |
+| 0.5516 | CVE-2025-15319 | vulnerability_tracking | critical_high |
+| 0.5445 | 銘祥科技實業 IAQS 與 I6 系統嚴重身份驗證漏洞 | vulnerability_tracking | critical_high |
 
-**關聯發現**：高嚴重程度漏洞持續是攻擊者首選目標，PoC 公開後快速武器化的模式持續。
+**關聯發現**：修補管理系統本身也存在漏洞風險（Tanium Patch），組織需確保修補工具本身已更新。身份驗證漏洞持續是高優先處理項目。
 
-### 查詢 2：「緩解措施 修補 workaround mitigation」
-
-| 相似度 | 標題 | Layer | 分類 |
-|--------|------|-------|------|
-| 0.5399 | CVE-2025-46290 | vulnerability_tracking | critical_high |
-| 0.5362 | CVE-2026-20602 | vulnerability_tracking | medium |
-
-**關聯發現**：部分漏洞提供 workaround，但多數需依賴官方修補。組織應優先部署官方修補程式。
-
-### 查詢 3：「遠端程式碼執行 RCE 特權提升 LPE」
+### 查詢 2：「硬編碼憑證 hardcoded credentials default password」
 
 | 相似度 | 標題 | Layer | 分類 |
 |--------|------|-------|------|
-| 0.5631 | CVE-2026-1731 (BeyondTrust RCE) | vulnerability_tracking | critical_high |
-| 0.5581 | motionEye 0.43.1b4 - RCE | exploit_intelligence | poc_available |
-| 0.5408 | Redis 8.0.2 - RCE | exploit_intelligence | poc_available |
-| 0.5289 | 關鍵 RCE 漏洞「React2Shell」遭大規模積極利用 | security_news_facts | vulnerability_disclosure |
+| 0.5476 | FARA 軟體漏洞（硬編碼憑證）| vulnerability_tracking | critical_high |
+| 0.5346 | SUR-FBD CMMS 軟體漏洞 | vulnerability_tracking | critical_high |
+| 0.5305 | CVE-2026-2103: Infor SyteLine ERP 硬編碼靜態加密金鑰 | vulnerability_tracking | critical_high |
+| 0.5210 | KAON CG3000T/CG3000TC 路由器韌體漏洞 | vulnerability_tracking | critical_high |
 
-**關聯發現**：RCE 類型漏洞持續主導活躍利用清單。BeyondTrust CVE-2026-1731、React2Shell CVE-2025-55182 均為無需驗證的 RCE，攻擊門檻極低。
+**關聯發現**：硬編碼憑證漏洞在多種產品中持續出現（Dell RP4VMs、ERP 系統、路由器韌體）。此類漏洞攻擊門檻極低，應優先修補。波蘭能源攻擊與 SSH 蠕蟲均利用預設憑證。
+
+### 查詢 3：「零日漏洞利用 zero-day exploitation APT」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.6147 | CVE-2023-38817 PoC 追蹤更新 | exploit_intelligence | poc_available |
+| 0.5980 | CVE-2026-21962 PoC 追蹤更新 | exploit_intelligence | poc_available |
+| 0.5851 | CVE-2019-9978 PoC 追蹤更新 | exploit_intelligence | poc_available |
+| 0.5791 | Pluck 4.7.7-dev2 PHP Code Execution | exploit_intelligence | poc_available |
+
+**關聯發現**：PoC 公開後快速被整合至掃描框架的模式持續。Ivanti EPMM 漏洞公開後數小時內即被利用，符合此趨勢。
+
+### 查詢 4：「防禦建議 defense security control network segmentation」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.4405 | 高威脅安全警報 (A18-04-06): 保護網路基礎設施 | vulnerability_tracking | critical_high |
+| 0.4253 | NCSC-2026-0019: Fortinet FortiSIEM 漏洞修復 | vulnerability_tracking | critical_high |
+| 0.4166 | 高威脅安全警報 (A22-09-16): Sophos 防火牆漏洞 | vulnerability_tracking | critical_high |
+| 0.4162 | [Control systems] CISA ICS 安全警告 (AV26-036) | vulnerability_tracking | medium |
+
+**關聯發現**：
+- 網路基礎設施防護警報與本週波蘭能源攻擊呼應
+- 防火牆與 ICS 控制系統持續是攻擊目標
+- 網路分段與設備隔離是關鍵防禦措施
 
 ---
 
-> 報告產出時間：2026-02-19
-> 資料截止時間：2026-02-19 UTC
-> 資料來源：CISA (US)、Google TAG、CERT Polska、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Microsoft MSRC、Apple Security、Dell、BeyondTrust、SmarterTools、SolarWinds、GitLab、Notepad++、NVD、Exploit-DB
+> 報告產出時間：2026-02-20
+> 資料截止時間：2026-02-20 UTC
+> 資料來源：CISA (US)、Google TAG、CERT Polska、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Microsoft MSRC、Apple Security、Dell、BeyondTrust、SmarterTools、SolarWinds、GitLab、Notepad++、Ivanti、Honeywell、Ox Security、Unit 42、NVD、Exploit-DB
 > 分析模型：Claude Opus 4.5
-> 版本：2.1（2026-02-19 更新：新增 Dell RP4VMs CVE-2026-22769 UNC6201 活躍利用、Chromium CVE-2026-2441 野外利用、GitLab CVE-2021-22175 KEV 新增、Qdrant 跨 Layer 關聯分析）
+> 版本：2.2（2026-02-20 更新：新增 Ivanti EPMM CVE-2026-1281/1340 活躍利用、VSCode 擴充套件供應鏈漏洞、Honeywell CCTV CVE-2026-1670、更新 Qdrant 跨 Layer 關聯分析）

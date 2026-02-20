@@ -1,21 +1,21 @@
 ---
 layout: seo-report
 title: 2026 第 08 週威脅態勢分析
-description: "2026-02-13 至 2026-02-19 資安威脅週報：Dell RP4VMs 零日漏洞 UNC6201 活躍利用、Chromium CSS Use-After-Free 已被利用、波蘭能源基礎設施攻擊後續、APT28 持續攻擊歐盟、SSH 蠕蟲四秒感染。"
+description: "2026-02-14 至 2026-02-20 資安威脅週報：Ivanti EPMM 零日 RCE 活躍利用、Dell RP4VMs CVE-2026-22769 UNC6201 利用、VSCode 擴充套件供應鏈風險、Chromium CSS Use-After-Free、波蘭能源基礎設施攻擊後續、Honeywell CCTV 認證繞過。"
 parent: 威脅態勢分析
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-02-19
+date: 2026-02-20
 ---
 
 # 威脅態勢分析 — 2026 第 08 週
 
-> 涵蓋期間：2026-02-13 至 2026-02-19
+> 涵蓋期間：2026-02-14 至 2026-02-20
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-02-19
+> 產出時間：2026-02-20
 
 ---
 
@@ -23,9 +23,12 @@ date: 2026-02-19
 
 本週威脅態勢持續嚴峻，以下為重點摘要：
 
-**最新緊急威脅（2026-02-17 至 2026-02-19 新增）**：
+**最新緊急威脅（2026-02-17 至 2026-02-20 新增）**：
+- **Ivanti EPMM 零日漏洞（CVE-2026-1281、CVE-2026-1340）**：兩個嚴重零日漏洞正遭活躍利用，允許未經認證的 RCE，完全控制企業 MDM 基礎設施（Unit 42 報告）
 - **Dell RP4VMs 零日漏洞（CVE-2026-22769）**：Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 層級存取，**修補期限 2026-02-21**（緊急）
+- **VSCode 擴充套件漏洞（128M+ 下載）**：Live Server、Code Runner 等熱門擴充套件存在高危漏洞，可導致檔案竊取與 RCE
 - **Chromium CSS Use-After-Free（CVE-2026-2441）**：影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，已被野外利用
+- **Honeywell CCTV 認證繞過（CVE-2026-1670）**：CVSS 9.8，影響關鍵基礎設施監控系統
 - **GitLab SSRF 歷史漏洞再現（CVE-2021-22175）**：CISA 於 2026-02-18 新增至 KEV
 
 **關鍵基礎設施攻擊與後續**：
@@ -69,13 +72,89 @@ date: 2026-02-19
 | exploit_intelligence | **2,900+** | 4,650+ | 利用程式（active_exploitation: 50+, poc_available: 4,599+） |
 | threat_feeds | **7,900+** | 30,000+ | 威脅饋送（ioc_indicator: 4,700+, malware_sample: 3,200+） |
 
-> 統計時間：2026-02-19 UTC（基於 docs/Extractor/ 2026-02-13 至 2026-02-19 修改時間篩選）
+> 統計時間：2026-02-20 UTC（基於 docs/Extractor/ 2026-02-14 至 2026-02-20 修改時間篩選）
 
 ---
 
 ## 近期重大資安事件
 
-### 1. 波蘭能源基礎設施攻擊後續：CISA 發布 OT/ICS 安全警告
+### 1. Ivanti EPMM 零日漏洞遭活躍利用（CVE-2026-1281、CVE-2026-1340）
+
+**嚴重程度：Critical | 來源：NCSC-FI、Unit 42 | 日期：2026-02-19**
+
+Ivanti Endpoint Manager Mobile (EPMM) 存在兩個嚴重零日漏洞，正遭野外活躍利用：
+
+**漏洞詳情**：
+- **CVE-2026-1281** 與 **CVE-2026-1340**
+- 允許未經認證的攻擊者遠端執行任意程式碼
+- 可取得 MDM 基礎設施的完全控制權
+- 無需使用者互動或憑證
+
+**觀察到的攻擊行為（Unit 42）**：
+- 建立反向 Shell
+- 安裝 Web Shell
+- 進行偵察活動
+- 下載惡意軟體
+
+**關鍵時間線觀察**：
+漏洞公開與大規模利用之間的時間窗口已有效消失。機會主義攻擊者在漏洞公開數小時內即將新 CVE 整合至自動掃描框架。
+
+**風險評估**：
+面向網際網路的管理介面組織應採用「假設已遭入侵」思維。即使這些攻擊缺乏精確性，成功入侵未修補的邊界設備仍會造成高風險資產暴露。
+
+### 2. VSCode 擴充套件漏洞：128M+ 下載量開發者面臨供應鏈風險
+
+**嚴重程度：High | 來源：NCSC-FI、Ox Security | 日期：2026-02-19**
+
+安全研究人員揭露多個熱門 VSCode 擴充套件存在高危漏洞：
+
+**受影響擴充套件**：
+| 擴充套件 | CVE | 下載量 | 嚴重程度 | 影響 |
+|----------|-----|--------|----------|------|
+| Live Server | CVE-2025-65717 | 7,200 萬+ | 嚴重 | 透過惡意網頁重導實現本地檔案竊取 |
+| Code Runner | CVE-2025-65715 | 3,700 萬 | 高 | 透過配置檔操作實現 RCE |
+| Markdown Preview Enhanced | CVE-2025-65716/17 | - | 高 | 多個漏洞影響預覽功能 |
+| Microsoft Live Preview | 待分配 | - | 待確認 | 漏洞細節仍在揭露中 |
+
+**揭露時程問題**：
+Ox Security 自 2025 年 6 月起嘗試負責任揭露，但無任何維護者回應。這代表擴充套件生態系統安全回應流程的重大缺口。
+
+**供應鏈風險評估**：
+開發者工作站遭入侵可能導致：
+- 原始碼竊取
+- 憑證收割
+- 供應鏈注入攻擊
+- 智慧財產權竊取
+
+### 3. Honeywell CCTV 認證繞過漏洞（CVE-2026-1670）
+
+**嚴重程度：Critical (CVSS 9.8) | 來源：CISA、NCSC-FI | 日期：2026-02-19**
+
+Honeywell 多款 CCTV 產品存在嚴重認證繞過漏洞：
+
+**漏洞詳情**：
+- **CVE 編號**：CVE-2026-1670
+- **CVSS 分數**：9.8（嚴重）
+- **漏洞類型**：缺少關鍵功能的認證
+- **發現者**：Souvik Kanda
+- **影響**：未授權存取攝影機畫面與帳戶劫持
+
+**攻擊向量**：
+攻擊者可在未認證情況下變更裝置帳戶的復原電子郵件地址，實現完整帳戶接管與未授權存取監控畫面。
+
+**部署範圍**：
+Honeywell 為全球主要安全與視訊監控設備供應商，廣泛部署於：
+- 商業設施
+- 工業環境
+- 全球關鍵基礎設施
+
+**緩解建議（CISA）**：
+- 最小化控制系統設備的網路曝露
+- 將設備隔離於防火牆後
+- 使用安全遠端存取方式（更新的 VPN 解決方案）
+- 聯繫 Honeywell 支援取得修補指引
+
+### 4. 波蘭能源基礎設施攻擊後續：CISA 發布 OT/ICS 安全警告
 
 **嚴重程度：Critical | 來源：CISA (US)、CERT Polska | 日期：2026-02-10**
 
@@ -104,7 +183,7 @@ CISA 與美國能源部 CESER 於本週發布關於 2025 年 12 月波蘭能源�
 - 檢視邊界設備曝露情況
 - 實施 OT 韌體完整性驗證
 
-### 2. APT28 利用 CVE-2026-21509 持續攻擊烏克蘭與歐盟
+### 5. APT28 利用 CVE-2026-21509 持續攻擊烏克蘭與歐盟
 
 **嚴重程度：High | 來源：CERT-UA | 日期：2026-02-01（本週持續追蹤）**
 
@@ -118,7 +197,7 @@ CISA 與美國能源部 CESER 於本週發布關於 2025 年 12 月波蘭能源�
 
 **威脅行為者背景**：APT28（又稱 Fancy Bear、Sofacy）是俄羅斯國家贊助的 APT 組織，長期針對烏克蘭及北約國家政府與軍事實體。
 
-### 3. React2Shell RCE 漏洞遭多個威脅行為者快速利用
+### 6. React2Shell RCE 漏洞遭多個威脅行為者快速利用
 
 **嚴重程度：High | 來源：JPCERT/CC | 日期：2026-02-13**
 
@@ -135,7 +214,7 @@ JPCERT/CC 報告多個威脅行為者正積極利用 React Server Components 的
 - 漏洞公開後快速武器化
 - 呈現「機會主義」攻擊模式
 
-### 4. SSH 蠕蟲四秒內完成系統入侵
+### 7. SSH 蠕蟲四秒內完成系統入侵
 
 **嚴重程度：High | 來源：SANS ISC | 日期：2026-02-12**
 
@@ -163,7 +242,7 @@ SANS ISC 發布自我傳播 SSH 蠕蟲分析報告，展現極高自動化效率
 - Raspberry Pi（預設憑證未變更）
 - 暴露 SSH 服務至網際網路的設備
 
-### 5. 假冒 7-Zip 網站散布代理惡意軟體
+### 8. 假冒 7-Zip 網站散布代理惡意軟體
 
 **嚴重程度：Medium | 來源：NCSC-FI, Malwarebytes | 日期：2026-02-10**
 
@@ -180,7 +259,7 @@ SANS ISC 發布自我傳播 SSH 蠕蟲分析報告，展現極高自動化效率
 - 可能被用於惡意活動的代理網路
 - 偵測困難
 
-### 6. Dell RP4VMs 零日漏洞遭 UNC6201 活躍利用（2026-02-18 新增）
+### 9. Dell RP4VMs 零日漏洞遭 UNC6201 活躍利用
 
 **嚴重程度：Critical | 來源：CISA KEV、Google TAG | 日期：2026-02-18**
 
@@ -202,7 +281,7 @@ Dell RecoverPoint for Virtual Machines (RP4VMs) 存在硬編碼憑證漏洞，�
 - 檢查所有面向網際網路的 RP4VMs 執行個體是否有入侵跡象
 - 參閱：https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079
 
-### 7. Chromium CSS Use-After-Free 已被野外利用（2026-02-17 新增）
+### 10. Chromium CSS Use-After-Free 已被野外利用
 
 **嚴重程度：High | 來源：CISA KEV | 日期：2026-02-17**
 
@@ -219,7 +298,7 @@ Google Chromium CSS 元件存在 Use-After-Free 漏洞，影響所有 Chromium �
 - 立即更新所有 Chromium 瀏覽器至最新版本
 - 啟用瀏覽器自動更新功能
 
-### 8. BeyondTrust CVE-2026-1731 修補期限已過
+### 11. BeyondTrust CVE-2026-1731 修補期限已過
 
 **嚴重程度：Critical | 來源：CISA KEV | 日期：修補期限 2026-02-16**
 
@@ -235,7 +314,7 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 - 立即檢查所有可從網際網路存取的 BeyondTrust 產品
 - 詳情參閱：https://www.beyondtrust.com/trust-center/security-advisories/bt26-02
 
-### 9. 加拿大 Cyber Centre 發布勒索軟體威脅展望 2025-2027
+### 12. 加拿大 Cyber Centre 發布勒索軟體威脅展望 2025-2027
 
 **嚴重程度：High | 來源：Canadian Centre for Cyber Security | 日期：2026-02-17**
 
@@ -608,7 +687,7 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 
 1. **來源範圍**：基於國際 CERT/安全機構公開資料與 abuse.ch 威脅情報，但不涵蓋所有威脅情資。可能存在未被公開揭露的威脅活動。
 
-2. **時效性**：資料收集截至 2026-02-19，後續發展可能影響分析結論。
+2. **時效性**：資料收集截至 2026-02-20，後續發展可能影響分析結論。
 
 3. **地理偏差**：本週資料主要來自 CISA (US)、Google TAG、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、CERT Polska、CERT.RO (Romania)、Malwarebytes，其他地區特有威脅可能覆蓋不足。
 
@@ -632,20 +711,21 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 - [x] 是否包含「資料限制與免責聲明」？
 - [x] 所有事件是否標註來源與日期？
 - [x] 趨勢分析是否基於足夠樣本？
-  - security_news_facts: 680+ 筆（本週）
-  - vulnerability_tracking: 5,500+ 筆（本週）
-  - exploit_intelligence: 2,900+ 筆（本週）
-  - threat_feeds: 7,900+ 筆（本週）
+  - security_news_facts: 772 筆（累計）
+  - vulnerability_tracking: 13,098 筆（累計）
+  - exploit_intelligence: 4,689 筆（累計）
+  - threat_feeds: 32,107 筆（累計）
 - [x] 新興威脅識別是否標註信心水準？（6 項新興威脅均已標註）
+- [x] 攻擊手法是否已標註對應的 ATT&CK TTP？
 - [x] 是否有未經證實的推論需標註為「推測」？（已於相關段落標註）
-- [x] 統計數據是否準確？（已核對各 Layer 數量，基於 2026-02-13 至 2026-02-19 修改時間）
+- [x] 統計數據是否準確？（已核對各 Layer 數量，基於 2026-02-14 至 2026-02-20 修改時間）
 - [x] 格式是否符合目標受眾閱讀習慣？
 - [x] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（已執行 4 次語意查詢）
 
 ---
 
-> 報告產出時間：2026-02-19
-> 資料截止時間：2026-02-19 23:59 UTC
-> 資料來源：CISA (US)、Google TAG、CERT-UA (Ukraine)、CERT Polska、CERT.RO (Romania)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
+> 報告產出時間：2026-02-20
+> 資料截止時間：2026-02-20 23:59 UTC
+> 資料來源：CISA (US)、Google TAG、CERT-UA (Ukraine)、CERT Polska、CERT.RO (Romania)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Unit 42、Ox Security、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
 > 分析模型：Claude Opus 4.5
-> 版本：2.2（2026-02-19 更新：新增 Dell RP4VMs CVE-2026-22769 UNC6201 活躍利用、Chromium CVE-2026-2441 野外利用、GitLab CVE-2021-22175 KEV 新增）
+> 版本：2.3（2026-02-20 更新：新增 Ivanti EPMM CVE-2026-1281/CVE-2026-1340 活躍利用、VSCode 擴充套件漏洞、Honeywell CCTV CVE-2026-1670、Havoc C2 IoC 更新）
