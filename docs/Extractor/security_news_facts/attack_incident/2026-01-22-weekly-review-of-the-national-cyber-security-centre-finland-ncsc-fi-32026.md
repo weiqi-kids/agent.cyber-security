@@ -10,7 +10,7 @@
 
 ## 摘要
 
-This week, we cover information security considerations related to the use of AI assistants, phishing messages themed around hotel and travel bookings, and recorded scam calls made in the name of banks
+This week, we cover information security considerations related to the use of AI assistants, phishing messages themed around hotel and travel bookings, and recorded scam calls made in the name of bank...
 
 ## 事實內容
 
@@ -18,12 +18,12 @@ This week, we cover information security considerations related to the use of AI
 
 ## 受影響系統
 
-- To be determined from full article
+- 無特定系統
 
 ## 來源連結
 
 - [Weekly review of the National Cyber Security Centre Finland (NCSC-FI) - 3/2026](https://www.kyberturvallisuuskeskus.fi/en/news/weekly-review-national-cyber-security-centre-finland-ncsc-fi-32026)
 
 ---
-> 萃取時間:2026-01-28 23:44 UTC
-> 資料來源:NCSC-FI (Finland) (ncsc-fi)
+> 萃取時間: 2026-02-20 00:46 UTC
+> 資料來源: NCSC-FI (Finland) ncsc-fi-secnow

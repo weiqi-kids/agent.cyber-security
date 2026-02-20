@@ -1,0 +1,29 @@
+# Cyber exercise for the financial sector: sharing best practices and lessons learned
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2022-11-11 |
+| **來源** | NCSC-FI (Finland) |
+| **分類** | industry_trend |
+| **嚴重程度** | 未評估 |
+| **信心水準** | 高 |
+
+## 摘要
+
+Joint sectoral desk exercises benefit and can be implemented in various kinds of organisations. The latest example comes from the financial sector where organisations practiced sharing information wit...
+
+## 事實內容
+
+Joint sectoral desk exercises benefit and can be implemented in various kinds of organisations. The latest example comes from the financial sector where organisations practiced sharing information with each other and learned about the roles of different authorities in the event of cyber incidents.
+
+## 受影響系統
+
+- 無特定系統
+
+## 來源連結
+
+- [Cyber exercise for the financial sector: sharing best practices and lessons learned](https://www.kyberturvallisuuskeskus.fi/en/news/cyber-exercise-financial-sector-sharing-best-practices-and-lessons-learned)
+
+---
+> 萃取時間: 2026-02-20 00:46 UTC
+> 資料來源: NCSC-FI (Finland) ncsc-fi-secnow

@@ -1,0 +1,29 @@
+# We removed the alert on the theft of banking credentials
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2021-11-15 |
+| **來源** | NCSC-FI (Finland) |
+| **分類** | attack_incident |
+| **嚴重程度** | 未評估 |
+| **信心水準** | 高 |
+
+## 摘要
+
+We have removed the alert issued on 27 October 2021 about fraudsters trying to steal banking details. The number of reports on fraudulent My Kanta Pages and Suomi.fi messages trying to phish for onlin...
+
+## 事實內容
+
+We have removed the alert issued on 27 October 2021 about fraudsters trying to steal banking details. The number of reports on fraudulent My Kanta Pages and Suomi.fi messages trying to phish for online banking details has significantly reduced. However, fraudsters are still actively trying to steal banking details pretending to represent other organisations.
+
+## 受影響系統
+
+- 無特定系統
+
+## 來源連結
+
+- [We removed the alert on the theft of banking credentials](https://www.kyberturvallisuuskeskus.fi/en/news/we-removed-alert-theft-banking-credentials)
+
+---
+> 萃取時間: 2026-02-20 00:46 UTC
+> 資料來源: NCSC-FI (Finland) ncsc-fi-secnow
