@@ -6,6 +6,12 @@ on:
       - 'docs/Extractor/**/*.md'
       - 'docs/Narrator/**/*.md'
   workflow_dispatch:
+    inputs:
+      full_rebuild:
+        description: 'Force full rebuild (ignore incremental)'
+        required: false
+        default: 'false'
+        type: boolean
 
 jobs:
   build-index:
@@ -15,17 +21,43 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Need previous commit for diff
 
-      - name: Build Extractor index.json
+      - name: Detect changed files
+        id: changes
+        run: |
+          # Get changed .md files (added, modified, deleted)
+          CHANGED_FILES=$(git diff --name-status HEAD~1 -- 'docs/Extractor/**/*.md' 'docs/Narrator/**/*.md' 2>/dev/null || echo "")
+
+          # Count changes
+          CHANGE_COUNT=$(echo "$CHANGED_FILES" | grep -c '^' || echo "0")
+
+          # Determine if we should do incremental or full rebuild
+          FORCE_FULL="${{ inputs.full_rebuild }}"
+
+          if [[ "$FORCE_FULL" == "true" ]] || [[ "$CHANGE_COUNT" -gt 500 ]] || [[ -z "$CHANGED_FILES" ]]; then
+            echo "mode=full" >> $GITHUB_OUTPUT
+            echo "📋 Mode: Full rebuild (force=$FORCE_FULL, changes=$CHANGE_COUNT)"
+          else
+            echo "mode=incremental" >> $GITHUB_OUTPUT
+            echo "📋 Mode: Incremental update ($CHANGE_COUNT files changed)"
+
+            # Save changed files for incremental processing
+            echo "$CHANGED_FILES" > /tmp/changed_files.txt
+          fi
+
+      - name: Full rebuild - Extractor index.json
+        if: steps.changes.outputs.mode == 'full'
         run: |
           for layer_dir in docs/Extractor/*/; do
             layer_name="$(basename "$layer_dir")"
             index_file="${layer_dir}index.json"
-            echo "📋 Building index: $layer_name"
+            echo "📋 Full rebuild: $layer_name"
 
-            # 收集所有 .md 檔案的 metadata
-            items="[]"
-
+            # 收集所有 .md 檔案的 metadata（排除 raw 目錄）
+            find "$layer_dir" -path "*/raw" -prune -o -name "*.md" -type f -print 2>/dev/null | \
+            sort -r | \
             while IFS= read -r md_file; do
               [ -z "$md_file" ] && continue
 
@@ -34,12 +66,11 @@ jobs:
               category="$(dirname "$rel_path")"
               [ "$category" = "." ] && category="other"
 
-              # 從表格中提取欄位
               date_val="$(grep -m1 '\*\*日期\*\*' "$md_file" 2>/dev/null | sed 's/.*| *//; s/ *|.*//' || echo "")"
               source_val="$(grep -m1 '\*\*來源\*\*' "$md_file" 2>/dev/null | sed 's/.*| *//; s/ *|.*//' || echo "")"
               severity="$(grep -m1 '\*\*嚴重程度\*\*' "$md_file" 2>/dev/null | sed 's/.*| *//; s/ *|.*//' || echo "")"
 
-              items="$(echo "$items" | jq \
+              jq -nc \
                 --arg title "$title" \
                 --arg date "$date_val" \
                 --arg file "$rel_path" \
@@ -47,7 +78,7 @@ jobs:
                 --arg source "$source_val" \
                 --arg severity "$severity" \
                 --arg layer "$layer_name" \
-                '. + [{
+                '{
                   id: ($file | gsub("[/.]"; "-")),
                   title: $title,
                   category: $category,
@@ -56,52 +87,174 @@ jobs:
                   source: $source,
                   severity: $severity,
                   source_layer: $layer
-                }]'
-              )"
-            done < <(find "$layer_dir" -name "*.md" -type f 2>/dev/null | sort -r)
+                }'
+            done | jq -s '.' > "$index_file"
 
-            echo "$items" | jq '.' > "$index_file"
-            echo "✅ $layer_name: $(echo "$items" | jq 'length') 筆"
+            echo "✅ $layer_name: $(jq 'length' "$index_file") 筆"
           done
 
-      - name: Build Narrator index.json
+      - name: Full rebuild - Narrator index.json
+        if: steps.changes.outputs.mode == 'full'
         run: |
           for mode_dir in docs/Narrator/*/; do
             mode_name="$(basename "$mode_dir")"
             index_file="${mode_dir}index.json"
-            echo "📋 Building index: $mode_name"
+            echo "📋 Full rebuild: $mode_name"
 
-            items="[]"
-
+            find "$mode_dir" -name "*.md" -type f 2>/dev/null | \
+            sort -r | \
             while IFS= read -r md_file; do
               [ -z "$md_file" ] && continue
 
               rel_path="${md_file#${mode_dir}}"
               title="$(grep -m1 '^# ' "$md_file" 2>/dev/null | sed 's/^# //' || echo "")"
-
-              # 從報告頭部提取涵蓋期間
               period="$(grep -m1 '涵蓋期間' "$md_file" 2>/dev/null | sed 's/.*涵蓋期間[：:] *//' || echo "")"
               date_val="$(echo "$rel_path" | grep -oE '[0-9]{4}-W[0-9]{2}' || echo "")"
 
-              items="$(echo "$items" | jq \
+              jq -nc \
                 --arg title "$title" \
                 --arg date "$date_val" \
                 --arg file "$rel_path" \
                 --arg period "$period" \
                 --arg mode "$mode_name" \
-                '. + [{
+                '{
                   id: ($file | gsub("[/.]"; "-")),
                   title: $title,
                   date: $date,
                   period: $period,
                   file: $file,
                   source_mode: $mode
-                }]'
-              )"
-            done < <(find "$mode_dir" -name "*.md" -type f 2>/dev/null | sort -r)
+                }'
+            done | jq -s '.' > "$index_file"
 
-            echo "$items" | jq '.' > "$index_file"
-            echo "✅ $mode_name: $(echo "$items" | jq 'length') 筆"
+            echo "✅ $mode_name: $(jq 'length' "$index_file") 筆"
+          done
+
+      - name: Incremental update - Extractor index.json
+        if: steps.changes.outputs.mode == 'incremental'
+        run: |
+          echo "📋 Incremental update for Extractor..."
+
+          # Process each changed file
+          while IFS=$'\t' read -r status filepath; do
+            [[ -z "$filepath" ]] && continue
+            [[ "$filepath" != docs/Extractor/*.md ]] && continue
+            [[ "$filepath" == */raw/* ]] && continue
+
+            # Extract layer name from path: docs/Extractor/{layer}/{category}/{file}.md
+            layer_name=$(echo "$filepath" | cut -d'/' -f3)
+            layer_dir="docs/Extractor/${layer_name}/"
+            index_file="${layer_dir}index.json"
+            rel_path="${filepath#${layer_dir}}"
+            file_id=$(echo "$rel_path" | sed 's/[\/.]/-/g')
+
+            # Ensure index.json exists
+            [[ ! -f "$index_file" ]] && echo "[]" > "$index_file"
+
+            if [[ "$status" == "D" ]]; then
+              # File deleted - remove from index
+              echo "  🗑️  Removing: $filepath"
+              jq --arg id "$file_id" 'map(select(.id != $id))' "$index_file" > "${index_file}.tmp"
+              mv "${index_file}.tmp" "$index_file"
+            else
+              # File added or modified - update entry
+              echo "  📝 Updating: $filepath"
+
+              title="$(grep -m1 '^# ' "$filepath" 2>/dev/null | sed 's/^# //' || echo "")"
+              category="$(dirname "$rel_path")"
+              [[ "$category" == "." ]] && category="other"
+              date_val="$(grep -m1 '\*\*日期\*\*' "$filepath" 2>/dev/null | sed 's/.*| *//; s/ *|.*//' || echo "")"
+              source_val="$(grep -m1 '\*\*來源\*\*' "$filepath" 2>/dev/null | sed 's/.*| *//; s/ *|.*//' || echo "")"
+              severity="$(grep -m1 '\*\*嚴重程度\*\*' "$filepath" 2>/dev/null | sed 's/.*| *//; s/ *|.*//' || echo "")"
+
+              # Remove old entry (if exists) and add new one
+              new_entry=$(jq -nc \
+                --arg id "$file_id" \
+                --arg title "$title" \
+                --arg date "$date_val" \
+                --arg file "$rel_path" \
+                --arg category "$category" \
+                --arg source "$source_val" \
+                --arg severity "$severity" \
+                --arg layer "$layer_name" \
+                '{
+                  id: $id,
+                  title: $title,
+                  category: $category,
+                  date: $date,
+                  file: $file,
+                  source: $source,
+                  severity: $severity,
+                  source_layer: $layer
+                }')
+
+              jq --arg id "$file_id" --argjson entry "$new_entry" \
+                'map(select(.id != $id)) + [$entry]' "$index_file" > "${index_file}.tmp"
+              mv "${index_file}.tmp" "$index_file"
+            fi
+          done < /tmp/changed_files.txt
+
+          # Report results
+          for layer_dir in docs/Extractor/*/; do
+            layer_name="$(basename "$layer_dir")"
+            index_file="${layer_dir}index.json"
+            [[ -f "$index_file" ]] && echo "✅ $layer_name: $(jq 'length' "$index_file") 筆"
+          done
+
+      - name: Incremental update - Narrator index.json
+        if: steps.changes.outputs.mode == 'incremental'
+        run: |
+          echo "📋 Incremental update for Narrator..."
+
+          while IFS=$'\t' read -r status filepath; do
+            [[ -z "$filepath" ]] && continue
+            [[ "$filepath" != docs/Narrator/*.md ]] && continue
+
+            mode_name=$(echo "$filepath" | cut -d'/' -f3)
+            mode_dir="docs/Narrator/${mode_name}/"
+            index_file="${mode_dir}index.json"
+            rel_path="${filepath#${mode_dir}}"
+            file_id=$(echo "$rel_path" | sed 's/[\/.]/-/g')
+
+            [[ ! -f "$index_file" ]] && echo "[]" > "$index_file"
+
+            if [[ "$status" == "D" ]]; then
+              echo "  🗑️  Removing: $filepath"
+              jq --arg id "$file_id" 'map(select(.id != $id))' "$index_file" > "${index_file}.tmp"
+              mv "${index_file}.tmp" "$index_file"
+            else
+              echo "  📝 Updating: $filepath"
+
+              title="$(grep -m1 '^# ' "$filepath" 2>/dev/null | sed 's/^# //' || echo "")"
+              period="$(grep -m1 '涵蓋期間' "$filepath" 2>/dev/null | sed 's/.*涵蓋期間[：:] *//' || echo "")"
+              date_val="$(echo "$rel_path" | grep -oE '[0-9]{4}-W[0-9]{2}' || echo "")"
+
+              new_entry=$(jq -nc \
+                --arg id "$file_id" \
+                --arg title "$title" \
+                --arg date "$date_val" \
+                --arg file "$rel_path" \
+                --arg period "$period" \
+                --arg mode "$mode_name" \
+                '{
+                  id: $id,
+                  title: $title,
+                  date: $date,
+                  period: $period,
+                  file: $file,
+                  source_mode: $mode
+                }')
+
+              jq --arg id "$file_id" --argjson entry "$new_entry" \
+                'map(select(.id != $id)) + [$entry]' "$index_file" > "${index_file}.tmp"
+              mv "${index_file}.tmp" "$index_file"
+            fi
+          done < /tmp/changed_files.txt
+
+          for mode_dir in docs/Narrator/*/; do
+            mode_name="$(basename "$mode_dir")"
+            index_file="${mode_dir}index.json"
+            [[ -f "$index_file" ]] && echo "✅ $mode_name: $(jq 'length' "$index_file") 筆"
           done
 
       - name: Commit index.json
