@@ -438,17 +438,45 @@ date: 2026-02-20
 
 本週執行以下 Qdrant 語意查詢，用於跨 Layer 關聯分析：
 
-### 查詢 1：「修補緩解措施 patch mitigation remediation」
+### 查詢 1：「活躍利用 remote code execution」
 
 | 相似度 | 標題 | Layer | 分類 |
 |--------|------|-------|------|
-| 0.5630 | Tanium Patch 不當存取控制漏洞 CVE-2025-15326 | vulnerability_tracking | medium |
-| 0.5516 | CVE-2025-15319 | vulnerability_tracking | critical_high |
-| 0.5445 | 銘祥科技實業 IAQS 與 I6 系統嚴重身份驗證漏洞 | vulnerability_tracking | critical_high |
+| 0.5709 | SmarterTools SmarterMail - Remote Code Execution (Active Exploitation) | vulnerability_tracking | critical_high |
+| 0.5657 | Siklu EtherHaul Series EH-8010 - Remote Command Execution | exploit_intelligence | poc_available |
+| 0.5646 | Flowise 3.0.4 - Remote Code Execution (RCE) | exploit_intelligence | poc_available |
+| 0.5546 | CVE-2025-64676 Microsoft Purview eDiscovery Remote Code Execution | vulnerability_tracking | critical_high |
 
-**關聯發現**：修補管理系統本身也存在漏洞風險（Tanium Patch），組織需確保修補工具本身已更新。身份驗證漏洞持續是高優先處理項目。
+**關聯發現**：RCE 漏洞仍是攻擊者主要利用目標。SmarterMail 活躍利用與本週勒索軟體威脅呼應。網路設備（Siklu）與 AI/LLM 工具（Flowise）持續出現 RCE 漏洞，擴大攻擊面。
 
-### 查詢 2：「硬編碼憑證 hardcoded credentials default password」
+### 查詢 2：「CISA KEV 緊急修補」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.5670 | CISA Adds Two Known Exploited Vulnerabilities to Catalog (2026-02-05) | security_news_facts | policy_regulation |
+| 0.5441 | CISA Adds Four Known Exploited Vulnerabilities to KEV Catalog (2026-01-22) | security_news_facts | vulnerability_disclosure |
+| 0.5437 | [Control systems] CISA ICS security advisories (AV26-036) | vulnerability_tracking | medium |
+| 0.5415 | CISA Adds VMware vCenter Server Vulnerability to KEV Catalog | security_news_facts | vulnerability_disclosure |
+
+**關聯發現**：
+- CISA 持續高頻更新 KEV 目錄，本週新增 CVE-2021-22175（GitLab SSRF）、CVE-2026-22769（Dell RP4VMs）
+- ICS/OT 安全警告與波蘭能源攻擊事件呼應
+- 歷史漏洞（CVE-2021-22175，2021年）再次被列入 KEV，顯示未修補系統持續遭利用
+
+### 查詢 3：「勒索軟體 漏洞利用」
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| 0.5302 | Dell RecoverPoint for Virtual Machines 硬編碼憑證漏洞活躍利用 | exploit_intelligence | active_exploitation |
+| 0.5270 | motionEye 0.43.1b4 - RCE | exploit_intelligence | poc_available |
+| 0.5252 | OpenRepeater 2.1 - OS Command Injection | exploit_intelligence | poc_available |
+
+**關聯發現**：
+- Dell RP4VMs（CVE-2026-22769）被 UNC6201 利用，雖非勒索軟體但同樣危急
+- CVE-2026-1731（BeyondTrust）已確認勒索軟體利用，修補期限已過
+- IoT 設備（motionEye、OpenRepeater）RCE 漏洞可能成為勒索軟體入侵跳板
+
+### 查詢 4：「硬編碼憑證 hardcoded credentials default password」
 
 | 相似度 | 標題 | Layer | 分類 |
 |--------|------|-------|------|
@@ -459,18 +487,7 @@ date: 2026-02-20
 
 **關聯發現**：硬編碼憑證漏洞在多種產品中持續出現（Dell RP4VMs、ERP 系統、路由器韌體）。此類漏洞攻擊門檻極低，應優先修補。波蘭能源攻擊與 SSH 蠕蟲均利用預設憑證。
 
-### 查詢 3：「零日漏洞利用 zero-day exploitation APT」
-
-| 相似度 | 標題 | Layer | 分類 |
-|--------|------|-------|------|
-| 0.6147 | CVE-2023-38817 PoC 追蹤更新 | exploit_intelligence | poc_available |
-| 0.5980 | CVE-2026-21962 PoC 追蹤更新 | exploit_intelligence | poc_available |
-| 0.5851 | CVE-2019-9978 PoC 追蹤更新 | exploit_intelligence | poc_available |
-| 0.5791 | Pluck 4.7.7-dev2 PHP Code Execution | exploit_intelligence | poc_available |
-
-**關聯發現**：PoC 公開後快速被整合至掃描框架的模式持續。Ivanti EPMM 漏洞公開後數小時內即被利用，符合此趨勢。
-
-### 查詢 4：「防禦建議 defense security control network segmentation」
+### 查詢 5：「防禦建議 defense security control network segmentation」
 
 | 相似度 | 標題 | Layer | 分類 |
 |--------|------|-------|------|
@@ -487,7 +504,7 @@ date: 2026-02-20
 ---
 
 > 報告產出時間：2026-02-20
-> 資料截止時間：2026-02-20 UTC
-> 資料來源：CISA (US)、Google TAG、CERT Polska、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Microsoft MSRC、Apple Security、Dell、BeyondTrust、SmarterTools、SolarWinds、GitLab、Notepad++、Ivanti、Honeywell、Ox Security、Unit 42、NVD、Exploit-DB
+> 資料截止時間：2026-02-20 17:00 UTC
+> 資料來源：CISA (US)、Google TAG、CERT Polska、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Microsoft MSRC、Apple Security、Dell、BeyondTrust、SmarterTools、SolarWinds、GitLab、Notepad++、Ivanti、Honeywell、Ox Security、Unit 42、NVD、Exploit-DB、Nuclei Templates
 > 分析模型：Claude Opus 4.5
-> 版本：2.2（2026-02-20 更新：新增 Ivanti EPMM CVE-2026-1281/1340 活躍利用、VSCode 擴充套件供應鏈漏洞、Honeywell CCTV CVE-2026-1670、更新 Qdrant 跨 Layer 關聯分析）
+> 版本：2.3（2026-02-20 17:00 UTC 更新：整合最新 CISA KEV 更新、確認 CVE-2026-22769 修補期限 2026-02-21、新增 Nuclei Templates PoC 追蹤、更新 Qdrant 跨 Layer 關聯分析）
