@@ -7,12 +7,47 @@
 
 ## 執行流程
 
-使用者說「執行完整流程」或「更新資料」時，依照以下步驟執行：
+使用者說「執行完整流程」或「更新資料」時，依照以下步驟執行。
+
+> **⚠️ 強制規則**：本流程採用「Executor + Reviewer 雙角色模式」，每個主要步驟完成後必須啟動獨立的 Reviewer 子代理進行審核，審核通過才能進入下一步驟。詳見「Reviewer 審核機制」章節。
+
+---
 
 ### 步驟一：動態發現所有 Layer
 
 掃描 `core/Extractor/Layers/*/`，排除含有 `.disabled` 檔案的目錄。
 每個有效 Layer 目錄應包含 `fetch.sh`、`update.sh`、`CLAUDE.md`。
+
+#### 步驟一必須執行的動作
+
+```bash
+# 1. 列出所有 Layer 目錄
+ls -la core/Extractor/Layers/*/
+
+# 2. 檢查每個 Layer 的完整性
+for d in core/Extractor/Layers/*/; do
+  layer=$(basename "$d")
+  [ -f "$d/.disabled" ] && echo "DISABLED: $layer" && continue
+  [ -f "$d/fetch.sh" ] || echo "MISSING fetch.sh: $layer"
+  [ -f "$d/update.sh" ] || echo "MISSING update.sh: $layer"
+  [ -f "$d/CLAUDE.md" ] || echo "MISSING CLAUDE.md: $layer"
+  echo "VALID: $layer"
+done
+```
+
+#### 步驟一必須輸出（CHECKPOINT-1）
+
+```
+[CHECKPOINT-1] Layer 發現完成
+- 有效 Layer: {列出所有有效 Layer}
+- 排除 Layer: {列出 .disabled 的 Layer，若無則為「無」}
+- 缺失檔案: {列出缺失的檔案，若無則為「無」}
+- 狀態: PASS / FAIL
+```
+
+> **⛔ 審核點**：步驟一完成後，必須啟動 **Reviewer 子代理**審核 CHECKPOINT-1。若 Reviewer 回報 FAIL，必須修正後重新執行步驟一。
+
+---
 
 ### 步驟二：逐一執行 Layer
 
@@ -32,6 +67,59 @@
    > **⛔ 禁止**：不可使用 Read 工具直接讀取 `.jsonl` 檔案（檔案過大會超出 token 上限）。JSONL 檔案一律透過 Bash `sed` 批次讀取。
    > **⚡ 並行規則**：最多 5 個背景 Task，失敗項目由主執行緒同步重試。
 3. **update** — 將步驟 2 產出的 `.md` 檔案路徑作為參數，執行 `core/Extractor/Layers/{layer_name}/update.sh {md_files...}` 寫入 Qdrant 並檢查 REVIEW_NEEDED
+
+#### 步驟二必須輸出（CHECKPOINT-2A/2B/2C）
+
+對每個 Layer 完成後，必須輸出三個 CHECKPOINT：
+
+**CHECKPOINT-2A（Fetch）**：
+```
+[CHECKPOINT-2A] {layer_name} Fetch 完成
+- 執行指令: cd ... && bash fetch.sh
+- Exit code: {0 或錯誤碼}
+- 產出 JSONL: {列出檔案名稱}
+- 各檔案行數: {jsonl_file}: {N} 行
+- 狀態: PASS / FAIL
+```
+
+**CHECKPOINT-2B（萃取）**：
+```
+[CHECKPOINT-2B] {layer_name} 萃取完成
+- 讀取 CLAUDE.md: ✓
+- 總行數: {N}
+- 批次數量: {N}（每批約 15 行）
+- 並行 Task 數: {≤5}
+- 狀態追蹤:
+  - pending: {N}
+  - running: {N}
+  - completed: {N}
+  - failed: {N}
+- 失敗重試: {N} 筆
+- 最終失敗: {N} 筆
+- 產出檔案統計:
+  - {category_1}: {N} 個
+  - {category_2}: {N} 個
+  - ...
+- 狀態: PASS / PARTIAL / FAIL
+```
+
+**CHECKPOINT-2C（Update）**：
+```
+[CHECKPOINT-2C] {layer_name} Update 完成
+- 執行指令: cd ... && bash update.sh
+- Exit code: {0 或錯誤碼}
+- Qdrant 寫入: {N} 筆
+- REVIEW_NEEDED 檔案: {列出，若無則為 0}
+- 狀態: PASS / FAIL
+```
+
+> **⛔ 審核點**：每個 Layer 的三個 CHECKPOINT 完成後，必須啟動 **Reviewer 子代理**審核。特別注意：
+> - 若 Executor 未執行 `update.sh` → **FAIL**
+> - 若 Executor 使用 `grep` 替代 `update.sh` 檢查 REVIEW_NEEDED → **FAIL**
+> - 若批次大小不在 10-20 行範圍 → **FAIL**
+> - 若並行 Task > 5 → **FAIL**
+
+---
 
 ### 步驟三：REVIEW_NEEDED 檢查（必要）
 
@@ -63,10 +151,62 @@
 - 可補充的資訊缺失（TWCERT、NVD 可查）→ WebFetch 補充後移除標記
 - 補充後若分類需調整（如 CVSS ≥ 7.0）→ 移動檔案到正確的 category 目錄
 
+#### 步驟三必須輸出（CHECKPOINT-3）
+
+```
+[CHECKPOINT-3] REVIEW_NEEDED 檢查完成
+- 資料來源: update.sh 輸出（非 grep 掃描）
+- 初始 REVIEW_NEEDED: {N} 個
+- 已處理: {N} 個
+- 處理明細:
+  - {檔案路徑}: {處理方式}（WebFetch 補充 / 移除標記 / 其他）
+  - ...
+- 剩餘: {N} 個
+- 使用者確認: ✓ / ✗
+- 狀態: PASS / FAIL
+```
+
+> **⛔ 審核點**：步驟三完成後，必須啟動 **Reviewer 子代理**審核 CHECKPOINT-3。特別注意：
+> - REVIEW_NEEDED 清單必須來自 update.sh 輸出，不可用 grep 替代
+> - 若有 REVIEW_NEEDED 但未暫停詢問使用者 → **FAIL**
+> - 若剩餘 > 0 但繼續執行 → **FAIL**
+> - 若未獲使用者確認就繼續 → **FAIL**
+
+---
+
 ### 步驟四：動態發現所有 Mode
 
 掃描 `core/Narrator/Modes/*/`，排除含有 `.disabled` 檔案的目錄。
 每個有效 Mode 目錄應包含 `CLAUDE.md`。
+
+#### 步驟四必須執行的動作
+
+```bash
+# 1. 列出所有 Mode 目錄
+ls -la core/Narrator/Modes/*/
+
+# 2. 檢查每個 Mode 的完整性
+for d in core/Narrator/Modes/*/; do
+  mode=$(basename "$d")
+  [ -f "$d/.disabled" ] && echo "DISABLED: $mode" && continue
+  [ -f "$d/CLAUDE.md" ] || echo "MISSING CLAUDE.md: $mode"
+  echo "VALID: $mode"
+done
+```
+
+#### 步驟四必須輸出（CHECKPOINT-4）
+
+```
+[CHECKPOINT-4] Mode 發現完成
+- 有效 Mode: {列出所有有效 Mode}
+- 排除 Mode: {列出 .disabled 的 Mode，若無則為「無」}
+- 缺失檔案: {列出缺失的檔案，若無則為「無」}
+- 狀態: PASS / FAIL
+```
+
+> **⛔ 審核點**：步驟四完成後，必須啟動 **Reviewer 子代理**審核 CHECKPOINT-4。
+
+---
 
 ### 步驟五：逐一執行 Mode
 
@@ -104,6 +244,34 @@ python3 core/scripts/qdrant_query.py --query "勒索軟體" --filter category=ac
 - **綜合分析**：先用 docs/ 取得本週資料清單，再用 Qdrant 查詢歷史關聯
 
 > **⚠️ 強制規則**：產出報告時，**必須**執行至少 3 次 Qdrant 語意查詢進行跨 Layer 關聯分析。若未使用 Qdrant，報告視為不完整。
+
+#### 步驟五必須輸出（CHECKPOINT-5）
+
+對每個 Mode 完成後，必須輸出：
+
+```
+[CHECKPOINT-5] {mode_name} 報告產出完成
+- 讀取 CLAUDE.md: ✓
+- 使用模型: opus
+- Qdrant 查詢次數: {N}（必須 ≥ 3）
+- Qdrant 查詢內容:
+  1. "{查詢 1}" → {結果筆數} 筆
+  2. "{查詢 2}" → {結果筆數} 筆
+  3. "{查詢 3}" → {結果筆數} 筆
+- 報告檔案: {完整路徑}
+- 檔案大小: {N} bytes
+- 修改時間: {YYYY-MM-DD HH:MM:SS}
+- 自我審核 Checklist: PASS / FAIL
+- 狀態: PASS / FAIL
+```
+
+> **⛔ 審核點**：每個 Mode 完成後，必須啟動 **Reviewer 子代理**審核 CHECKPOINT-5。特別注意：
+> - 若 Qdrant 查詢 < 3 次 → **FAIL**
+> - 若未使用 opus 模型 → **FAIL**
+> - 若報告檔案修改時間不是今天 → **FAIL**（表示子代理可能未實際寫入）
+> - 若檔案大小 < 10KB → **FAIL**（報告內容可能不完整）
+
+---
 
 ### 步驟六：SEO 優化（可選）
 
@@ -171,6 +339,8 @@ docs/Narrator/{mode_name}/
 
 執行任務時，必須依照以下規則分派子任務（使用 Task tool 的 `model` 與 `subagent_type` 參數）：
 
+### Executor 子代理
+
 | 步驟 | 任務類型 | 指定模型 | 子代理類型 | 背景執行 | 原因 |
 |------|----------|----------|------------|----------|------|
 | 步驟一 | 動態發現所有 Layer | `sonnet` | `Bash` | 否 | 純目錄掃描，無需推理 |
@@ -183,9 +353,25 @@ docs/Narrator/{mode_name}/
 | 步驟五 | Mode 報告產出 | `opus` | `general-purpose` | 否 | 需要跨來源綜合分析、趨勢判斷 |
 | 步驟六 | SEO Writer | `sonnet` | `general-purpose` | 否 | 依規則庫產出，無需高階推理 |
 | 步驟六 | SEO Reviewer | `sonnet` | `general-purpose` | 否 | 依 checklist 檢查，無需高階推理 |
-| 步驟七 | 完成品質關卡檢查 | — | — | — | 主執行緒直接執行，無需子代理 |
 
-> **強制規則**：只有步驟五（Mode 報告產出）使用 `opus`，其餘所有步驟一律使用 `sonnet`。
+### Reviewer 子代理（獨立審核）
+
+| 審核點 | 指定模型 | 子代理類型 | 背景執行 | 說明 |
+|--------|----------|------------|----------|------|
+| CHECKPOINT-1 Reviewer | `sonnet` | `general-purpose` | 否 | 審核 Layer 發現結果 |
+| CHECKPOINT-2 Reviewer | `sonnet` | `general-purpose` | 否 | 審核 Fetch + 萃取 + Update |
+| CHECKPOINT-3 Reviewer | `sonnet` | `general-purpose` | 否 | 審核 REVIEW_NEEDED 處理 |
+| CHECKPOINT-4 Reviewer | `sonnet` | `general-purpose` | 否 | 審核 Mode 發現結果 |
+| CHECKPOINT-5 Reviewer | `sonnet` | `general-purpose` | 否 | 審核 Mode 報告產出 |
+| CHECKPOINT-7 Reviewer | `sonnet` | `general-purpose` | 否 | 最終品質關卡審核 |
+
+> **強制規則**：
+> - 只有步驟五（Mode 報告產出）使用 `opus`，其餘所有步驟一律使用 `sonnet`
+> - **每個 CHECKPOINT 完成後，必須啟動獨立的 Reviewer 子代理進行審核**
+> - Reviewer 與 Executor 是不同的子代理，Reviewer 負責「挑錯」
+> - Reviewer 回報 FAIL 時，必須列出具體問題，Executor 必須修正後重新執行
+> - **禁止跳過 Reviewer 審核**：即使 Executor 自認完成，也必須經過 Reviewer 確認
+
 > **子代理規則**：需要寫入檔案的 Task 必須使用 `general-purpose`（透過 Write 工具寫檔），純腳本執行使用 `Bash`。
 > **重試規則**：背景 Task 失敗後，主執行緒同步重試（不使用 `run_in_background`），確保穩定性。
 
@@ -339,6 +525,262 @@ git push origin main
 
 ---
 
+## Reviewer 審核機制
+
+本流程採用「Executor + Reviewer 雙角色模式」，確保每個步驟都被實際執行，不被跳過或簡化。
+
+### 審核流程
+
+```
+Executor 完成步驟 N
+         │
+         ▼
+    輸出 CHECKPOINT-N
+         │
+         ▼
+主執行緒啟動 Reviewer 子代理
+         │
+         ├─► Reviewer 讀取 CHECKPOINT-N 內容
+         ├─► Reviewer 執行對應的檢查清單
+         ├─► Reviewer 回報 PASS / FAIL
+         │
+         ▼
+    ┌─────────────────┐
+    │ PASS → 進入下一步驟 │
+    │ FAIL → 重做步驟 N   │
+    └─────────────────┘
+```
+
+### Reviewer 子代理啟動方式
+
+每個 CHECKPOINT 完成後，主執行緒必須啟動 Reviewer 子代理：
+
+```
+Task tool 參數：
+- description: "Reviewer: 審核 CHECKPOINT-{N}"
+- model: "sonnet"
+- subagent_type: "general-purpose"
+- prompt: （見下方各 CHECKPOINT 的 Reviewer Prompt）
+```
+
+### CHECKPOINT-1 Reviewer（Layer 發現）
+
+**Reviewer Prompt**：
+```
+你是 Reviewer，負責審核 CHECKPOINT-1（Layer 發現）。
+
+請檢查以下項目，逐一回報結果：
+
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否執行 ls core/Extractor/Layers/*/ | 檢查上方對話是否有此 Bash 呼叫 | ✅/❌ |
+| 2 | 是否檢查 .disabled 檔案 | 檢查是否有 for 迴圈或 [ -f .disabled ] | ✅/❌ |
+| 3 | 是否驗證 fetch.sh 存在 | 檢查輸出是否列出 | ✅/❌ |
+| 4 | 是否驗證 update.sh 存在 | 檢查輸出是否列出 | ✅/❌ |
+| 5 | 是否驗證 CLAUDE.md 存在 | 檢查輸出是否列出 | ✅/❌ |
+| 6 | 是否輸出 CHECKPOINT-1 格式 | 檢查是否有 [CHECKPOINT-1] 標記 | ✅/❌ |
+
+**判定規則**：
+- 全部 ✅ → 回報 "CHECKPOINT-1 Reviewer: PASS"
+- 任一 ❌ → 回報 "CHECKPOINT-1 Reviewer: FAIL"，並列出失敗項目
+
+請仔細檢查上方對話中的工具呼叫記錄，不要只看文字描述。
+```
+
+### CHECKPOINT-2 Reviewer（Fetch + 萃取 + Update）
+
+**Reviewer Prompt**：
+```
+你是 Reviewer，負責審核 CHECKPOINT-2（Fetch + 萃取 + Update）。
+
+對每個 Layer，請檢查以下項目：
+
+**2A Fetch 檢查**：
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否執行 cd ... && bash fetch.sh | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 2 | 是否檢查 exit code | 檢查輸出是否有 exit code 或 $? | ✅/❌ |
+| 3 | 是否列出產出的 JSONL | 檢查輸出內容 | ✅/❌ |
+
+**2B 萃取檢查**：
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否執行 wc -l 取得行數 | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 2 | 是否使用 sed -n 批次讀取 | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 3 | 批次大小是否 10-20 行 | 檢查 sed 參數 | ✅/❌ |
+| 4 | 背景 Task ≤ 5 個 | 計算 run_in_background: true 的 Task 數 | ✅/❌ |
+| 5 | 是否有狀態追蹤輸出 | 檢查 pending/running/completed/failed | ✅/❌ |
+
+**2C Update 檢查**：
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否執行 bash update.sh | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 2 | 是否捕獲 Qdrant 寫入結果 | 檢查輸出內容 | ✅/❌ |
+
+**嚴重違規（直接 FAIL）**：
+- ❌ 未執行 update.sh（用 grep 替代）
+- ❌ 批次大小 > 100 行
+- ❌ 並行 Task > 5 個
+- ❌ 使用 Read 工具讀取 .jsonl 檔案
+
+**判定規則**：
+- 全部 Layer 的 2A/2B/2C 都 ✅ → 回報 "CHECKPOINT-2 Reviewer: PASS"
+- 任一 ❌ → 回報 "CHECKPOINT-2 Reviewer: FAIL"，並列出失敗項目
+```
+
+### CHECKPOINT-3 Reviewer（REVIEW_NEEDED 處理）
+
+**Reviewer Prompt**：
+```
+你是 Reviewer，負責審核 CHECKPOINT-3（REVIEW_NEEDED 處理）。
+
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | REVIEW_NEEDED 清單來源 | 必須是 update.sh 輸出，不可是 grep 掃描 | ✅/❌ |
+| 2 | 若有 REVIEW_NEEDED，是否暫停詢問使用者 | 檢查是否有 AskUserQuestion 或等待使用者回應 | ✅/❌ |
+| 3 | 每個 REVIEW_NEEDED 是否有處理記錄 | 檢查是否列出處理方式 | ✅/❌ |
+| 4 | 是否獲得使用者確認 | 檢查對話記錄 | ✅/❌ |
+| 5 | 剩餘 REVIEW_NEEDED 是否為 0 | 檢查 CHECKPOINT-3 輸出 | ✅/❌ |
+
+**嚴重違規（直接 FAIL）**：
+- ❌ 使用 grep 掃描替代 update.sh 輸出
+- ❌ 有 REVIEW_NEEDED 但未暫停詢問使用者
+- ❌ 未獲使用者確認就繼續下一步驟
+
+**判定規則**：
+- 全部 ✅ → 回報 "CHECKPOINT-3 Reviewer: PASS"
+- 任一 ❌ → 回報 "CHECKPOINT-3 Reviewer: FAIL"，並列出失敗項目
+```
+
+### CHECKPOINT-4 Reviewer（Mode 發現）
+
+**Reviewer Prompt**：
+```
+你是 Reviewer，負責審核 CHECKPOINT-4（Mode 發現）。
+
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否執行 ls core/Narrator/Modes/*/ | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 2 | 是否檢查 .disabled 檔案 | 檢查輸出內容 | ✅/❌ |
+| 3 | 是否驗證 CLAUDE.md 存在 | 檢查輸出內容 | ✅/❌ |
+| 4 | 是否輸出 CHECKPOINT-4 格式 | 檢查是否有 [CHECKPOINT-4] 標記 | ✅/❌ |
+
+**判定規則**：
+- 全部 ✅ → 回報 "CHECKPOINT-4 Reviewer: PASS"
+- 任一 ❌ → 回報 "CHECKPOINT-4 Reviewer: FAIL"，並列出失敗項目
+```
+
+### CHECKPOINT-5 Reviewer（Mode 報告產出）
+
+**Reviewer Prompt**：
+```
+你是 Reviewer，負責審核 CHECKPOINT-5（Mode 報告產出）。
+
+對每個 Mode，請檢查以下項目：
+
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否讀取 Mode 的 CLAUDE.md | 檢查 Read 工具呼叫 | ✅/❌ |
+| 2 | 是否使用 opus 模型 | 檢查 Task 工具參數 model: "opus" | ✅/❌ |
+| 3 | Qdrant 查詢 ≥ 3 次 | 檢查 CHECKPOINT-5 中的 Qdrant 查詢次數 | ✅/❌ |
+| 4 | 是否列出 Qdrant 查詢內容 | 檢查 CHECKPOINT-5 輸出 | ✅/❌ |
+| 5 | 報告檔案是否存在 | 執行 ls -la 驗證 | ✅/❌ |
+| 6 | 檔案修改時間是否為今天 | 執行 stat 或 ls -la 驗證 | ✅/❌ |
+| 7 | 檔案大小 > 10KB | 檢查 ls -la 輸出 | ✅/❌ |
+
+**嚴重違規（直接 FAIL）**：
+- ❌ 未使用 opus 模型
+- ❌ Qdrant 查詢 < 3 次
+- ❌ 報告檔案修改時間不是今天（可能未實際寫入）
+- ❌ 檔案大小 < 10KB（報告可能不完整）
+
+**判定規則**：
+- 全部 Mode 的所有項目都 ✅ → 回報 "CHECKPOINT-5 Reviewer: PASS"
+- 任一 ❌ → 回報 "CHECKPOINT-5 Reviewer: FAIL"，並列出失敗項目
+```
+
+### CHECKPOINT-7 Reviewer（最終品質關卡）
+
+**Reviewer Prompt**：
+```
+你是 Reviewer，負責審核 CHECKPOINT-7（最終品質關卡）。
+
+**7.1 連結檢查**：
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否實際執行 curl 驗證連結 | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 2 | 抽查連結 ≥ 10 個 | 計算 curl 呼叫次數 | ✅/❌ |
+| 3 | 是否列出 HTTP 狀態碼 | 檢查輸出內容 | ✅/❌ |
+
+**7.2 內容更新確認**：
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否列出所有修改檔案 | 檢查輸出內容 | ✅/❌ |
+| 2 | 是否逐一確認 | 檢查 Read 工具呼叫或 ls 驗證 | ✅/❌ |
+
+**7.3 Git 狀態檢查**：
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | 是否執行 git status | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 2 | 是否執行 git commit | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 3 | 是否執行 git push | 檢查 Bash 工具呼叫 | ✅/❌ |
+| 4 | push 是否成功 | 檢查輸出無 error | ✅/❌ |
+
+**7.4 SOP 完成度檢查**：
+| # | 檢查項目 | 驗證方式 | 結果 |
+|---|----------|----------|------|
+| 1 | CHECKPOINT-1 是否 PASS | 檢查前面的 Reviewer 報告 | ✅/❌ |
+| 2 | CHECKPOINT-2 是否 PASS | 檢查前面的 Reviewer 報告 | ✅/❌ |
+| 3 | CHECKPOINT-3 是否 PASS | 檢查前面的 Reviewer 報告 | ✅/❌ |
+| 4 | CHECKPOINT-4 是否 PASS | 檢查前面的 Reviewer 報告 | ✅/❌ |
+| 5 | CHECKPOINT-5 是否 PASS | 檢查前面的 Reviewer 報告 | ✅/❌ |
+
+**判定規則**：
+- 全部 ✅ → 回報 "CHECKPOINT-7 Reviewer: PASS - 可以回報完成"
+- 任一 ❌ → 回報 "CHECKPOINT-7 Reviewer: FAIL - 不得回報完成"，並列出失敗項目
+```
+
+### Reviewer 回報格式
+
+每個 Reviewer 必須按以下格式回報：
+
+```
+## CHECKPOINT-{N} Reviewer 審核報告
+
+### 檢查結果
+
+| # | 檢查項目 | 結果 | 說明 |
+|---|----------|------|------|
+| 1 | ... | ✅/❌ | ... |
+| 2 | ... | ✅/❌ | ... |
+| ... | ... | ... | ... |
+
+### 判定結果
+
+**CHECKPOINT-{N} Reviewer: PASS / FAIL**
+
+（若 FAIL）需要修正的問題：
+1. ...
+2. ...
+```
+
+### FAIL 處理流程
+
+當 Reviewer 回報 FAIL 時：
+
+1. **主執行緒不得繼續下一步驟**
+2. **列出 Reviewer 指出的問題**
+3. **重新執行該步驟**，確保：
+   - 執行 Reviewer 指出缺少的動作
+   - 修正 Reviewer 指出的錯誤
+4. **重新輸出 CHECKPOINT**
+5. **再次啟動 Reviewer 審核**
+6. **重複直到 PASS**
+
+> **⛔ 強制規則**：禁止在 Reviewer 回報 FAIL 後跳過重做，直接進入下一步驟。這會導致最終的 CHECKPOINT-7 Reviewer 也回報 FAIL。
+
+---
+
 ## 已知問題與解法
 
 執行流程中曾遇到的問題及標準解法，避免重複犯錯：
@@ -396,6 +838,35 @@ bash core/Extractor/Layers/{layer}/fetch.sh
 ## 完成品質關卡
 
 **每當說「完成」時，必須先執行以下檢查，全部通過才能回報完成。**
+
+> **⚠️ 重要**：完成品質關卡即 CHECKPOINT-7，必須輸出標準格式並經過 Reviewer 審核。
+
+### 步驟七必須輸出（CHECKPOINT-7）
+
+```
+[CHECKPOINT-7] 完成品質關卡
+- 連結檢查:
+  - 抽查連結數: {N}
+  - 正常連結: {N}
+  - 異常連結: {N}（若有，列出）
+- 內容更新:
+  - 修改檔案數: {N}
+  - 檔案清單: {列出}
+  - 逐一驗證: ✓
+- Git 狀態:
+  - git status: ✓
+  - git commit: ✓（{commit hash}）
+  - git push: ✓
+- SOP 完成度:
+  - CHECKPOINT-1: PASS
+  - CHECKPOINT-2: PASS
+  - CHECKPOINT-3: PASS
+  - CHECKPOINT-4: PASS
+  - CHECKPOINT-5: PASS
+- 狀態: PASS / FAIL
+```
+
+> **⛔ 審核點**：CHECKPOINT-7 完成後，必須啟動 **Reviewer 子代理**審核。只有 Reviewer 回報 PASS，才能回報「完成」。
 
 ### 檢查項目
 
