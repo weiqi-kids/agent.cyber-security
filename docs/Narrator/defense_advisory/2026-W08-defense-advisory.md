@@ -1,21 +1,21 @@
 ---
 layout: seo-report
 title: 2026 第 08 週防禦建議
-description: "2026-02-14 至 2026-02-20 資安防禦建議：Ivanti EPMM 零日 RCE CVE-2026-1281/1340 活躍利用、Dell RP4VMs CVE-2026-22769 UNC6201 利用（緊急 2026-02-21）、Chromium CSS Use-After-Free、VSCode 擴充套件供應鏈漏洞、Honeywell CCTV CVE-2026-1670 CVSS 9.8、波蘭能源基礎設施 OT/ICS 防禦、SmarterMail 勒索軟體漏洞鏈。"
+description: "2026-02-16 至 2026-02-22 資安防禦建議：RoundCube 雙漏洞緊急修補 CVE-2025-49113/68461、Dell RP4VMs CVE-2026-22769 UNC6201 利用、Ivanti EPMM 零日 RCE CVE-2026-1281/1340、Chromium CSS Use-After-Free、VSCode 擴充套件供應鏈漏洞、Honeywell CCTV CVE-2026-1670 CVSS 9.8、波蘭能源基礎設施 OT/ICS 防禦、SmarterMail 勒索軟體漏洞鏈。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-defense-advisory.png
 author: 資安情報分析團隊
-date: 2026-02-20
+date: 2026-02-22
 ---
 
 # 防禦建議 — 2026 第 08 週
 
-> 涵蓋期間：2026-02-14 至 2026-02-20
-> 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV
-> 產出時間：2026-02-20
+> 涵蓋期間：2026-02-16 至 2026-02-22
+> 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV、CISA KEV
+> 產出時間：2026-02-22
 
 ---
 
@@ -23,24 +23,26 @@ date: 2026-02-20
 
 本週威脅態勢持續嚴峻，**多個零日漏洞活躍利用**、**供應鏈風險**與**關鍵基礎設施攻擊**為主要威脅：
 
-1. **Ivanti EPMM 零日漏洞 CVE-2026-1281、CVE-2026-1340（新增！極嚴重）** — Unit 42 報告兩個零日漏洞正遭活躍利用，允許未經認證的 RCE，可完全控制企業 MDM 基礎設施
-2. **Dell RP4VMs 零日漏洞 CVE-2026-22769（極緊急！修補期限 2026-02-21）** — Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 層級存取
-3. **VSCode 擴充套件漏洞（新增！供應鏈風險）** — Live Server、Code Runner 等 128M+ 下載量擴充套件存在高危漏洞（CVE-2025-65717、CVE-2025-65715）
-4. **Honeywell CCTV 認證繞過 CVE-2026-1670（新增！CVSS 9.8）** — 關鍵基礎設施監控系統認證繞過漏洞
-5. **Chromium CSS Use-After-Free CVE-2026-2441（Critical）** — 影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，已被野外利用
-6. **GitLab SSRF 歷史漏洞 CVE-2021-22175（新增 KEV）** — CISA 於 2026-02-18 新增至 KEV，webhook SSRF 漏洞再現
-7. **波蘭能源基礎設施攻擊後續（Critical）** — CISA 與 CERT Polska 發布詳細分析，wiper 惡意軟體破壞 OT/ICS 系統
-8. **SmarterMail 三重漏洞鏈** — CVE-2026-24423 已確認勒索軟體利用，修補期限 2026-02-26
-9. **SSH 蠕蟲四秒感染（新興威脅）** — 使用 RSA 簽章驗證 C2 指令，自動化程度極高
-10. **Microsoft 六個零日漏洞** — 修補期限 2026-03-03
-11. **Apple 跨平台零日（首次含 visionOS）** — CVE-2026-20700，修補期限 2026-03-05
+1. **RoundCube Webmail 雙漏洞（2026-02-20 新增 KEV！極緊急）** — CVE-2025-49113（反序列化 RCE）與 CVE-2025-68461（XSS）正遭活躍利用，需立即升級至 1.6.12+/1.5.12+
+2. **Dell RP4VMs 零日漏洞 CVE-2026-22769（修補期限已過！）** — Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，修補期限 2026-02-21
+3. **Ivanti EPMM 零日漏洞 CVE-2026-1281、CVE-2026-1340（極嚴重）** — Unit 42 報告兩個零日漏洞正遭活躍利用，允許未經認證的 RCE，可完全控制企業 MDM 基礎設施
+4. **VSCode 擴充套件漏洞（供應鏈風險）** — Live Server、Code Runner 等 128M+ 下載量擴充套件存在高危漏洞（CVE-2025-65717、CVE-2025-65715）
+5. **Honeywell CCTV 認證繞過 CVE-2026-1670（CVSS 9.8）** — 關鍵基礎設施監控系統認證繞過漏洞
+6. **Chromium CSS Use-After-Free CVE-2026-2441（Critical）** — 影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，已被野外利用
+7. **GitLab SSRF 歷史漏洞 CVE-2021-22175（KEV）** — CISA 於 2026-02-18 新增至 KEV，webhook SSRF 漏洞再現
+8. **波蘭能源基礎設施攻擊後續（Critical）** — CISA 與 CERT Polska 發布詳細分析，wiper 惡意軟體破壞 OT/ICS 系統
+9. **SmarterMail 三重漏洞鏈** — CVE-2026-24423 已確認勒索軟體利用，修補期限 2026-02-26
+10. **SSH 蠕蟲四秒感染（新興威脅）** — 使用 RSA 簽章驗證 C2 指令，自動化程度極高
+11. **Microsoft 六個零日漏洞** — 修補期限 2026-03-03
+12. **Apple 跨平台零日（首次含 visionOS）** — CVE-2026-20700，修補期限 2026-03-05
 
 **本週關鍵行動**：
-- **極緊急（本週五前）**：執行 Dell RP4VMs 補救腳本（DSA-2026-079），修補期限 2026-02-21
+- **極緊急（立即）**：升級 RoundCube Webmail 至 1.6.12/1.5.12，檢查伺服器日誌是否有異常活動
+- **極緊急（立即）**：執行 Dell RP4VMs 補救腳本（DSA-2026-079），修補期限 2026-02-21 已過
 - **極緊急（立即）**：檢查 Ivanti EPMM 是否暴露於網際網路，假設已遭入侵
 - **立即**：更新所有 Chromium 瀏覽器、審查 VSCode 擴充套件、檢查 GitLab webhook 設定
 - **24 小時內**：盤點 OT/ICS 設備預設密碼，變更為強密碼；檢查 Honeywell CCTV 系統暴露
-- **本週內**：部署 Microsoft 2 月安全更新
+- **本週內**：部署 Microsoft 2 月安全更新、處理 SmarterMail 勒索軟體關聯漏洞（期限 2026-02-26）
 
 ---
 
@@ -48,16 +50,24 @@ date: 2026-02-20
 
 依照優先級排序：活躍利用 + 勒索軟體 > 活躍利用 > EPSS 高分 > CVSS 高分
 
-### P0 - 極緊急（本週五前必須處置）
+### P0 - 極緊急（立即處置）
 
 | CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
 |-----|------|----------|----------|----------|
+| **CVE-2025-49113** | RoundCube Webmail | 反序列化 RCE | **2026-02-20（KEV 新增！）** | [RoundCube 安全更新](https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12) |
+| **CVE-2025-68461** | RoundCube Webmail | XSS（SVG animate） | **2026-02-20（KEV 新增！）** | [GitHub Commit Fix](https://github.com/roundcube/roundcubemail/commit/bfa032631c36b900e7444dfa278340b33cbf7cdb) |
+| **CVE-2026-22769** | Dell RP4VMs | 硬編碼憑證 root RCE (CWE-798) | **2026-02-21（已過期！）** | [Dell DSA-2026-079](https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079) |
 | **CVE-2026-1281, CVE-2026-1340** | Ivanti EPMM | 未經認證 RCE | **立即（零日活躍利用）** | [Ivanti 安全公告](https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM) |
-| **CVE-2026-22769** | Dell RP4VMs | 硬編碼憑證 root RCE (CWE-798) | **2026-02-21（本週五！）** | [Dell DSA-2026-079](https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079) |
+
+> **極緊急警告 - CVE-2025-49113、CVE-2025-68461（2026-02-20 新增 KEV！）**：RoundCube Webmail 存在兩個嚴重漏洞，**已被確認遭野外活躍利用**：
+> - **CVE-2025-49113**：反序列化 RCE 漏洞，透過 `_from` 參數未驗證問題，在 `program/actions/settings/upload.php` 實現遠端程式碼執行（需已認證使用者）
+> - **CVE-2025-68461**：XSS 漏洞，透過 SVG 文件中的 animate 標籤觸發
+>
+> **修補方式**：升級至 RoundCube **1.6.12**（或 1.5.12），檢查伺服器日誌是否有異常上傳或 SVG 相關活動。
+
+> **極緊急警告 - CVE-2026-22769（修補期限已過！）**：Dell RecoverPoint for Virtual Machines 存在硬編碼憑證漏洞，Google TAG 確認威脅行為者 **UNC6201** 正活躍利用此零日漏洞。未經身份驗證的攻擊者可取得 **root 層級存取**，建立持久化後門。**CISA 修補期限 2026-02-21 已過，請立即執行 Dell 提供的補救腳本。**
 
 > **極緊急警告 - CVE-2026-1281、CVE-2026-1340**：Ivanti Endpoint Manager Mobile (EPMM) 存在兩個嚴重零日漏洞，**正遭野外活躍利用**（Unit 42 報告）。攻擊者可在**未經認證**的情況下遠端執行任意程式碼，取得企業 MDM 基礎設施的**完全控制權**。觀察到的攻擊行為包括：建立反向 Shell、安裝 Web Shell、進行偵察活動、下載惡意軟體。**面向網際網路的 EPMM 管理介面組織應採用「假設已遭入侵」思維。**
-
-> **極緊急警告 - CVE-2026-22769**：Dell RecoverPoint for Virtual Machines 存在硬編碼憑證漏洞，Google TAG 確認威脅行為者 **UNC6201** 正活躍利用此零日漏洞。未經身份驗證的攻擊者可取得 **root 層級存取**，建立持久化後門。**CISA 修補期限 2026-02-21（本週五），請立即執行 Dell 提供的補救腳本。**
 
 ### P0.5 - 立即處置（修補期限已過期）
 
@@ -136,8 +146,9 @@ date: 2026-02-20
 
 | 威脅 | 建議措施 |
 |------|----------|
-| **Ivanti EPMM 零日（極緊急！新增）** | **立即**檢查 EPMM 是否暴露於網際網路；採用「假設已遭入侵」思維；檢查反向 Shell、Web Shell、異常偵察活動；聯繫 Ivanti 取得修補指引 |
-| **Dell RP4VMs 零日（極緊急）** | **立即**執行 Dell 補救腳本（DSA-2026-079）；檢查所有面向網際網路的 RP4VMs 執行個體是否有入侵跡象；實施網路隔離 |
+| **RoundCube 雙漏洞（極緊急！2026-02-20 新增 KEV）** | **立即**升級至 RoundCube 1.6.12/1.5.12；檢查伺服器日誌是否有異常上傳或 SVG 相關活動；監控已認證使用者的異常行為 |
+| **Ivanti EPMM 零日（極緊急）** | **立即**檢查 EPMM 是否暴露於網際網路；採用「假設已遭入侵」思維；檢查反向 Shell、Web Shell、異常偵察活動；聯繫 Ivanti 取得修補指引 |
+| **Dell RP4VMs 零日（極緊急！已過期）** | **立即**執行 Dell 補救腳本（DSA-2026-079）；檢查所有面向網際網路的 RP4VMs 執行個體是否有入侵跡象；實施網路隔離 |
 | **Honeywell CCTV（新增 CVSS 9.8）** | 最小化控制系統設備的網路曝露；將設備隔離於防火牆後；使用安全遠端存取方式（更新的 VPN）；聯繫 Honeywell 支援取得修補指引 |
 | **Chromium 瀏覽器（已被利用）** | **立即**更新所有 Chromium 瀏覽器（Chrome、Edge、Opera）至最新版本；啟用自動更新；實施瀏覽器隔離技術 |
 | **GitLab SSRF（KEV 新增）** | 停用或限制 webhook 對內部網路的存取權限；實施網路隔離限制 GitLab 對敏感內部資源的存取；監控異常內部連線 |
@@ -213,7 +224,21 @@ date: 2026-02-20
 
 針對尚無修補或無法立即更新的情況：
 
-### 0. Ivanti EPMM 零日漏洞（極緊急 - 活躍利用中）
+### 0. RoundCube Webmail 雙漏洞（極緊急 - 2026-02-20 新增 KEV）
+
+| 措施 | 說明 |
+|------|------|
+| **立即升級** | 升級至 RoundCube 1.6.12 或 1.5.12（若使用 1.5.x 系列） |
+| **日誌審查** | 檢查伺服器日誌是否有異常上傳活動或 SVG 相關請求 |
+| **使用者監控** | 監控已認證使用者的異常行為，特別是 settings/upload.php 相關活動 |
+| **SVG 過濾** | 考慮在郵件閘道層級過濾或掃描 SVG 附件 |
+| **入侵跡象檢查** | 檢查是否有 Web Shell 或異常檔案上傳 |
+
+> **有效期限**：**立即（活躍利用中）** | **來源**：CISA KEV（2026-02-20 新增）
+> **漏洞**：CVE-2025-49113（反序列化 RCE）、CVE-2025-68461（XSS）
+> **官方連結**：[RoundCube Security Update](https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12)
+
+### 0.1. Ivanti EPMM 零日漏洞（極緊急 - 活躍利用中）
 
 | 措施 | 說明 |
 |------|------|
@@ -227,7 +252,7 @@ date: 2026-02-20
 > **有效期限**：**立即（零日活躍利用中）** | **來源**：NCSC-FI、Unit 42（2026-02-19）
 > **漏洞**：CVE-2026-1281、CVE-2026-1340（未經認證 RCE）
 
-### 0.1. Dell RP4VMs 零日漏洞（極緊急 - 2026-02-21）
+### 0.2. Dell RP4VMs 零日漏洞（極緊急 - 修補期限已過！）
 
 | 措施 | 說明 |
 |------|------|
@@ -238,10 +263,10 @@ date: 2026-02-20
 | **橫向移動監控** | 監控異常的管理者活動與橫向移動行為 |
 | **停用建議** | 若無法修補，應立即停止使用受影響產品（遵循 BOD 22-01） |
 
-> **有效期限**：**2026-02-21（本週五！）** | **來源**：CISA KEV、Google TAG（2026-02-18）
+> **有效期限**：**2026-02-21（已過期！）** | **來源**：CISA KEV、Google TAG（2026-02-18）
 > **威脅行為者**：UNC6201（Google TAG 確認）
 
-### 0.5. Chromium 瀏覽器 Use-After-Free（極緊急）
+### 0.3. Chromium 瀏覽器 Use-After-Free（極緊急）
 
 | 措施 | 說明 |
 |------|------|
@@ -365,7 +390,7 @@ date: 2026-02-20
 ### 適用範圍與限制
 
 1. **環境差異**：本建議為通用性質，實際實施需依據組織環境調整
-2. **時效性**：基於 2026-02-14 至 2026-02-20 期間的公開資訊
+2. **時效性**：基於 2026-02-16 至 2026-02-22 期間的公開資訊
 3. **完整性**：不包含非公開威脅情報
 4. **供應商確認**：第三方產品可能使用受影響元件，請向供應商確認
 5. **OT/ICS 特別注意**：OT 環境修補需經過完整測試，避免影響生產
@@ -382,18 +407,19 @@ date: 2026-02-20
 
 ### 本週特別警示
 
-1. **Ivanti EPMM 零日（新增！極緊急）**：CVE-2026-1281、CVE-2026-1340 正遭活躍利用，未經認證即可 RCE 控制企業 MDM 基礎設施，**假設已遭入侵**
-2. **Dell RP4VMs 極緊急**：CVE-2026-22769 修補期限 **2026-02-21（本週五）**，UNC6201 正活躍利用，可取得 root 存取，**最高優先級處置**
-3. **VSCode 擴充套件供應鏈風險（新增！）**：Live Server、Code Runner 等 128M+ 下載量擴充套件存在高危漏洞，維護者無回應，**建議暫時停用**
-4. **Honeywell CCTV（新增！CVSS 9.8）**：CVE-2026-1670 認證繞過影響關鍵基礎設施監控系統，可實現完整帳戶接管
-5. **Chromium 瀏覽器已被利用**：CVE-2026-2441 Use-After-Free 已被野外利用，影響所有 Chromium 瀏覽器，**立即更新**
-6. **GitLab SSRF 歷史漏洞再現**：CVE-2021-22175 於 2026-02-18 新增至 KEV，webhook SSRF 可存取內部資源
-7. **BeyondTrust 極緊急**：CVE-2026-1731 修補期限**已過期**（2026-02-16），未經驗證即可 RCE，**立即處置**
-8. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，最高優先級處理
-9. **OT/ICS 攻擊**：波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點
-10. **SSH 蠕蟲**：四秒內完成感染，IoT 設備（尤其 Raspberry Pi）應立即變更預設密碼
-11. **假冒軟體網站**：假冒 7-Zip 網站長期散布代理惡意軟體，下載軟體請驗證官方來源
-12. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，攻擊文件偽裝為歐盟文件
+1. **RoundCube 雙漏洞（2026-02-20 新增 KEV！極緊急）**：CVE-2025-49113（反序列化 RCE）與 CVE-2025-68461（XSS）正遭活躍利用，**立即升級至 1.6.12/1.5.12**
+2. **Dell RP4VMs 極緊急**：CVE-2026-22769 修補期限 **2026-02-21（已過期！）**，UNC6201 正活躍利用，可取得 root 存取，**最高優先級處置**
+3. **Ivanti EPMM 零日（極緊急）**：CVE-2026-1281、CVE-2026-1340 正遭活躍利用，未經認證即可 RCE 控制企業 MDM 基礎設施，**假設已遭入侵**
+4. **VSCode 擴充套件供應鏈風險**：Live Server、Code Runner 等 128M+ 下載量擴充套件存在高危漏洞，維護者無回應，**建議暫時停用**
+5. **Honeywell CCTV（CVSS 9.8）**：CVE-2026-1670 認證繞過影響關鍵基礎設施監控系統，可實現完整帳戶接管
+6. **Chromium 瀏覽器已被利用**：CVE-2026-2441 Use-After-Free 已被野外利用，影響所有 Chromium 瀏覽器，**立即更新**
+7. **GitLab SSRF 歷史漏洞再現**：CVE-2021-22175 於 2026-02-18 新增至 KEV，webhook SSRF 可存取內部資源
+8. **BeyondTrust 極緊急**：CVE-2026-1731 修補期限**已過期**（2026-02-16），未經驗證即可 RCE，**立即處置**
+9. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用，修補期限 2026-02-26
+10. **OT/ICS 攻擊**：波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點
+11. **SSH 蠕蟲**：四秒內完成感染，IoT 設備（尤其 Raspberry Pi）應立即變更預設密碼
+12. **假冒軟體網站**：假冒 7-Zip 網站長期散布代理惡意軟體，下載軟體請驗證官方來源
+13. **APT 活動**：APT28 利用 CVE-2026-21509 針對政府機構，攻擊文件偽裝為歐盟文件
 
 ### 建議的測試步驟
 
@@ -503,8 +529,9 @@ date: 2026-02-20
 
 ---
 
-> 報告產出時間：2026-02-20
-> 資料截止時間：2026-02-20 17:00 UTC
-> 資料來源：CISA (US)、Google TAG、CERT Polska、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Microsoft MSRC、Apple Security、Dell、BeyondTrust、SmarterTools、SolarWinds、GitLab、Notepad++、Ivanti、Honeywell、Ox Security、Unit 42、NVD、Exploit-DB、Nuclei Templates
+> 報告產出時間：2026-02-22
+> 資料截止時間：2026-02-22 23:59 UTC
+> 資料來源：CISA (US)、Google TAG、CERT Polska、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Microsoft MSRC、Apple Security、Dell、BeyondTrust、SmarterTools、SolarWinds、GitLab、Notepad++、Ivanti、Honeywell、Ox Security、Unit 42、RoundCube、NVD、Exploit-DB、Nuclei Templates
 > 分析模型：Claude Opus 4.5
-> 版本：2.3（2026-02-20 17:00 UTC 更新：整合最新 CISA KEV 更新、確認 CVE-2026-22769 修補期限 2026-02-21、新增 Nuclei Templates PoC 追蹤、更新 Qdrant 跨 Layer 關聯分析）
+> Qdrant 語意查詢次數：3
+> 版本：2.4（2026-02-22 更新：新增 RoundCube CVE-2025-49113/CVE-2025-68461 緊急修補指引、更新 Dell RP4VMs 修補期限狀態為已過期、更新涵蓋期間至 2026-02-22、更新 Qdrant 跨 Layer 關聯分析）

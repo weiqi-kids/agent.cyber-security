@@ -1,21 +1,21 @@
 ---
 layout: seo-report
 title: 2026 第 08 週威脅態勢分析
-description: "2026-02-14 至 2026-02-20 資安威脅週報：Ivanti EPMM 零日 RCE 活躍利用、Dell RP4VMs CVE-2026-22769 UNC6201 利用、VSCode 擴充套件供應鏈風險、Chromium CSS Use-After-Free、波蘭能源基礎設施攻擊後續、Honeywell CCTV 認證繞過。"
+description: "2026-02-16 至 2026-02-22 資安威脅週報：RoundCube 雙漏洞遭活躍利用、Dell RP4VMs CVE-2026-22769 UNC6201 利用、VSCode 擴充套件供應鏈風險、Chromium CSS Use-After-Free、波蘭能源基礎設施 OT/ICS 攻擊、Honeywell CCTV 認證繞過、React2Shell 供應鏈威脅。"
 parent: 威脅態勢分析
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-02-20
+date: 2026-02-22
 ---
 
 # 威脅態勢分析 — 2026 第 08 週
 
-> 涵蓋期間：2026-02-14 至 2026-02-20
+> 涵蓋期間：2026-02-16 至 2026-02-22
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-02-20
+> 產出時間：2026-02-22
 
 ---
 
@@ -23,9 +23,10 @@ date: 2026-02-20
 
 本週威脅態勢持續嚴峻，以下為重點摘要：
 
-**最新緊急威脅（2026-02-17 至 2026-02-20 新增）**：
+**最新緊急威脅（2026-02-17 至 2026-02-22 新增）**：
+- **RoundCube Webmail 雙漏洞遭活躍利用（CVE-2025-49113、CVE-2025-68461）**：2026-02-20 新增至 KEV，反序列化 RCE 與 XSS 漏洞，需立即升級至 1.6.12+/1.5.12+
 - **Ivanti EPMM 零日漏洞（CVE-2026-1281、CVE-2026-1340）**：兩個嚴重零日漏洞正遭活躍利用，允許未經認證的 RCE，完全控制企業 MDM 基礎設施（Unit 42 報告）
-- **Dell RP4VMs 零日漏洞（CVE-2026-22769）**：Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 層級存取，**修補期限 2026-02-21**（緊急）
+- **Dell RP4VMs 零日漏洞（CVE-2026-22769）**：Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 層級存取
 - **VSCode 擴充套件漏洞（128M+ 下載）**：Live Server、Code Runner 等熱門擴充套件存在高危漏洞，可導致檔案竊取與 RCE
 - **Chromium CSS Use-After-Free（CVE-2026-2441）**：影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，已被野外利用
 - **Honeywell CCTV 認證繞過（CVE-2026-1670）**：CVSS 9.8，影響關鍵基礎設施監控系統
@@ -41,8 +42,9 @@ date: 2026-02-20
 - **React2Shell（CVE-2025-55182）**：JPCERT/CC 報告多個威脅行為者正快速利用此 RCE 漏洞
 
 **CISA KEV 緊急修補**：
-- **Dell RP4VMs CVE-2026-22769**：硬編碼憑證漏洞，修補期限 **2026-02-21**（本週五）
-- **BeyondTrust CVE-2026-1731**：OS Command Injection，修補期限 2026-02-16（已過）
+- **RoundCube CVE-2025-49113、CVE-2025-68461**：反序列化 RCE + XSS，2026-02-20 新增至 KEV
+- **Dell RP4VMs CVE-2026-22769**：硬編碼憑證漏洞，修補期限 2026-02-21
+- **BeyondTrust CVE-2026-1731**：OS Command Injection，修補期限 2026-02-16（已過，已確認勒索軟體利用）
 - **SmarterMail 三重漏洞鏈**：CVE-2025-52691、CVE-2026-23760、CVE-2026-24423（已確認勒索軟體利用）
 - **Chromium CVE-2026-2441**：Use-After-Free，修補期限 2026-03-10
 - **Microsoft 六個零日**：CVE-2026-21510/21513/21514/21519/21525/21533，修補期限 2026-03-03
@@ -67,20 +69,48 @@ date: 2026-02-20
 
 | Layer | 本週新增 | 2026 年累計 | 說明 |
 |-------|----------|-------------|------|
-| security_news_facts | **680+** | 3,900+ | 國際資安新聞與事件（attack_incident: 181+, vulnerability_disclosure: 145+, industry_trend: 140+, policy_regulation: 65+, other: 149+） |
-| vulnerability_tracking | **5,500+** | 8,100+ | 漏洞追蹤（critical_high: 1,365+, medium: 1,083+, low_info: 大量 EPSS 更新） |
-| exploit_intelligence | **2,900+** | 4,650+ | 利用程式（active_exploitation: 50+, poc_available: 4,599+） |
-| threat_feeds | **7,900+** | 30,000+ | 威脅饋送（ioc_indicator: 4,700+, malware_sample: 3,200+） |
+| security_news_facts | **700+** | 4,000+ | 國際資安新聞與事件（attack_incident: 365+, vulnerability_disclosure: 72+, industry_trend: 203+, policy_regulation: 51+, other: 82+） |
+| vulnerability_tracking | **5,600+** | 13,099+ | 漏洞追蹤（critical_high: 3,389+, medium: 7,743+, low_info: 1,967+） |
+| exploit_intelligence | **3,000+** | 4,741+ | 利用程式（active_exploitation: 56+, poc_available: 4,685+） |
+| threat_feeds | **8,000+** | 32,106+ | 威脅饋送（ioc_indicator: 4,862+, malware_sample: 3,873+, malicious_url: 23,137+, c2: 234+） |
 
-> 統計時間：2026-02-20 UTC（基於 docs/Extractor/ 2026-02-14 至 2026-02-20 修改時間篩選）
+> 統計時間：2026-02-22 UTC（基於 docs/Extractor/ 2026-02-16 至 2026-02-22 修改時間篩選）
 
 ---
 
 ## 近期重大資安事件
 
-### 1. Ivanti EPMM 零日漏洞遭活躍利用（CVE-2026-1281、CVE-2026-1340）
+### 1. RoundCube Webmail 雙漏洞遭活躍利用（CVE-2025-49113、CVE-2025-68461）
+
+**嚴重程度：Critical | 來源：CISA KEV | 日期：2026-02-20**
+
+RoundCube Webmail 存在兩個嚴重漏洞，已被確認遭野外活躍利用：
+
+**CVE-2025-49113 — 反序列化 RCE 漏洞**：
+- **漏洞類型**：Deserialization of Untrusted Data
+- **攻擊條件**：已認證使用者
+- **影響**：透過 `_from` 參數未驗證問題，在 `program/actions/settings/upload.php` 實現遠端程式碼執行
+- **修補版本**：RoundCube 1.6.11+、1.5.10+
+
+**CVE-2025-68461 — XSS 漏洞**：
+- **漏洞類型**：Cross-site Scripting (XSS)
+- **攻擊向量**：SVG 文件中的 animate 標籤
+- **修補版本**：RoundCube 1.6.12+、1.5.12+
+
+**緊急措施**：
+- 立即升級至 RoundCube 1.6.12 或更高版本
+- 若使用 1.5.x 系列，升級至 1.5.12 或更高版本
+- 檢查伺服器日誌是否有異常上傳或 SVG 相關活動
+
+**參考連結**：
+- [RoundCube Security Update](https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12)
+- [GitHub Commit Fix](https://github.com/roundcube/roundcubemail/commit/bfa032631c36b900e7444dfa278340b33cbf7cdb)
+
+### 2. Ivanti EPMM 零日漏洞遭活躍利用（CVE-2026-1281、CVE-2026-1340）
 
 **嚴重程度：Critical | 來源：NCSC-FI、Unit 42 | 日期：2026-02-19**
+
+**ATT&CK TTP**：[T1190](https://attack.mitre.org/techniques/T1190/){: .ttp-ref } Exploit Public-Facing Application
 
 Ivanti Endpoint Manager Mobile (EPMM) 存在兩個嚴重零日漏洞，正遭野外活躍利用：
 
@@ -687,9 +717,9 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 
 1. **來源範圍**：基於國際 CERT/安全機構公開資料與 abuse.ch 威脅情報，但不涵蓋所有威脅情資。可能存在未被公開揭露的威脅活動。
 
-2. **時效性**：資料收集截至 2026-02-20，後續發展可能影響分析結論。
+2. **時效性**：資料收集截至 2026-02-22，後續發展可能影響分析結論。
 
-3. **地理偏差**：本週資料主要來自 CISA (US)、Google TAG、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、CERT Polska、CERT.RO (Romania)、Malwarebytes，其他地區特有威脅可能覆蓋不足。
+3. **地理偏差**：本週資料主要來自 CISA (US)、Google TAG、CERT-UA (Ukraine)、NCSC-FI (Finland)、JPCERT/CC (Japan)、TWCERT/CC (Taiwan)、SANS ISC、CERT Polska、CERT.RO (Romania)、Malwarebytes，其他地區特有威脅可能覆蓋不足。
 
 4. **信心水準說明**：
    - **高**：基於官方公告、確認的 KEV 列表、多來源交叉驗證
@@ -720,12 +750,13 @@ BeyondTrust Remote Support (RS) 和 Privileged Remote Access (PRA) 的 OS 命令
 - [x] 是否有未經證實的推論需標註為「推測」？（已於相關段落標註）
 - [x] 統計數據是否準確？（已核對各 Layer 數量，基於 2026-02-14 至 2026-02-20 修改時間）
 - [x] 格式是否符合目標受眾閱讀習慣？
-- [x] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（已執行 4 次語意查詢）
+- [x] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（已執行 4 次語意查詢，本次更新新增 3 次）
 
 ---
 
-> 報告產出時間：2026-02-20
-> 資料截止時間：2026-02-20 23:59 UTC
-> 資料來源：CISA (US)、Google TAG、CERT-UA (Ukraine)、CERT Polska、CERT.RO (Romania)、NCSC-FI (Finland)、JPCERT/CC (Japan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Unit 42、Ox Security、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
+> 報告產出時間：2026-02-22
+> 資料截止時間：2026-02-22 23:59 UTC
+> 資料來源：CISA (US)、Google TAG、CERT-UA (Ukraine)、CERT Polska、CERT.RO (Romania)、NCSC-FI (Finland)、JPCERT/CC (Japan)、TWCERT/CC (Taiwan)、SANS ISC、Malwarebytes、Canadian Centre for Cyber Security、Unit 42、Ox Security、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
 > 分析模型：Claude Opus 4.5
-> 版本：2.3（2026-02-20 更新：新增 Ivanti EPMM CVE-2026-1281/CVE-2026-1340 活躍利用、VSCode 擴充套件漏洞、Honeywell CCTV CVE-2026-1670、Havoc C2 IoC 更新）
+> Qdrant 語意查詢次數：3
+> 版本：2.4（2026-02-22 更新：新增 RoundCube CVE-2025-49113/CVE-2025-68461 活躍利用、更新統計資料、調整涵蓋期間至 2026-02-22）
