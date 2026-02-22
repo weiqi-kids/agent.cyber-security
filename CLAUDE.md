@@ -62,7 +62,7 @@ done
       - Task 完成後立即啟動下一個填補空位
       - 每 30 秒輪詢檢查狀態並回報進度
    4. **失敗重試**：所有背景 Task 完成後，主執行緒同步處理失敗的批次
-   5. 萃取 Task 依各 Layer CLAUDE.md 的 WebFetch 補充規則，決定是否用 WebFetch 抓取原始公告頁面補充資料
+   5. 萃取 Task 依各 Layer CLAUDE.md 的網頁內容補充規則，決定是否用 MCP fetch_url 抓取原始公告頁面補充資料
    6. 每個 Task 產出 `.md` 檔到 `docs/Extractor/{layer_name}/` 對應的 category 子目錄
    > **⛔ 禁止**：不可使用 Read 工具直接讀取 `.jsonl` 檔案（檔案過大會超出 token 上限）。JSONL 檔案一律透過 Bash `sed` 批次讀取。
    > **⚡ 並行規則**：最多 5 個背景 Task，失敗項目由主執行緒同步重試。
@@ -142,13 +142,13 @@ done
 | 類型 | 來源特徵 | 處理方式 |
 |------|----------|----------|
 | **A. 非英文 RSS 資料不完整** | cert-ro、sk-cert 等非英文來源；缺 pubDate、description 截斷 | **直接移除標記**：這是來源結構性限制，已在 notes 標註，confidence 設為「低」已反映不確定性 |
-| **B. TWCERT TVN/CVSS 缺失** | rss-132、rss-139；缺 TVN 編號、CVSS、CVE | **WebFetch 補充**：抓取 TWCERT 網頁取得完整 TVN、CVSS、CVE，更新後移除標記 |
+| **B. TWCERT TVN/CVSS 缺失** | rss-132、rss-139；缺 TVN 編號、CVSS、CVE | **MCP fetch_url 補充**：抓取 TWCERT 網頁取得完整 TVN、CVSS、CVE，更新後移除標記 |
 | **C. 歷史資料缺乏細節** | 2019 年以前的 GovCERT.HK 等老舊公告 | **直接移除標記**：歷史資料不影響當週報告，或設定 confidence 為「低」 |
 | **D. 漏洞揭露缺乏技術細節** | 有 CVE 但缺 CVSS；來自加拿大 CERT 等僅提供摘要的來源 | **視情況處理**：若有 CVE 可查 NVD 補充；若為結構性限制則移除標記並在 notes 說明 |
 
 **處理原則**：
 - 結構性限制（來源本身不提供完整資料）→ 移除標記，在 confidence 和 notes 反映
-- 可補充的資訊缺失（TWCERT、NVD 可查）→ WebFetch 補充後移除標記
+- 可補充的資訊缺失（TWCERT、NVD 可查）→ MCP fetch_url 補充後移除標記
 - 補充後若分類需調整（如 CVSS ≥ 7.0）→ 移動檔案到正確的 category 目錄
 
 #### 步驟三必須輸出（CHECKPOINT-3）
@@ -159,7 +159,7 @@ done
 - 初始 REVIEW_NEEDED: {N} 個
 - 已處理: {N} 個
 - 處理明細:
-  - {檔案路徑}: {處理方式}（WebFetch 補充 / 移除標記 / 其他）
+  - {檔案路徑}: {處理方式}（MCP fetch_url 補充 / 移除標記 / 其他）
   - ...
 - 剩餘: {N} 個
 - 使用者確認: ✓ / ✗

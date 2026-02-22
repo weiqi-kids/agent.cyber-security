@@ -29,13 +29,14 @@ core/Extractor/Layers/{layer_name}/
 2. **Claude 萃取（逐行處理）** — 依照 Layer 的 CLAUDE.md 指令，對 `docs/Extractor/{layer_name}/raw/*.jsonl` 逐行處理，每次只傳入一筆 JSON 給獨立的 Sonnet Task 進行萃取
 3. **update.sh** — 更新 Qdrant 向量資料庫 + 檢查 REVIEW_NEEDED 標記
 
-### 2.1 WebFetch 補充機制
+### 2.1 網頁內容補充機制
 
-RSS 的 `description` 欄位資訊量有限。萃取 Task 可透過 WebFetch 工具抓取 JSON 中 `link` 欄位指向的原始公告頁面，以取得完整內容。
+RSS 的 `description` 欄位資訊量有限。萃取 Task 可透過 MCP 工具抓取 JSON 中 `link` 欄位指向的原始公告頁面，以取得完整內容。
 
 **通用規則：**
-- 各 Layer 的 CLAUDE.md 定義該 Layer 的 WebFetch 使用策略（必用 / 按需 / 不使用）
-- WebFetch 失敗不應阻斷萃取流程，應降級為僅基於 RSS 資料萃取
+- 各 Layer 的 CLAUDE.md 定義該 Layer 的網頁內容補充策略（必用 / 按需 / 不使用）
+- **工具優先級**：優先使用 MCP 工具 `mcp__fetch_url__fetch_url`，可避免授權提示
+- 網頁抓取失敗不應阻斷萃取流程，應降級為僅基於 RSS 資料萃取
 - 降級時需在 `notes` 欄位標註，並依各 Layer 的 `[REVIEW_NEEDED]` 觸發規則判定是否標記
 
 ### 2.2 `[REVIEW_NEEDED]` 統一原則

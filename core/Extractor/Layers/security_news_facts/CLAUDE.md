@@ -49,22 +49,23 @@
 
 接收單一 JSON 項目（格式為 `{"title":"...","link":"...","description":"...","pubDate":"..."}`）以及 `feed_id` 資訊。
 
-#### WebFetch 補充規則
+#### 網頁內容補充規則
 
 RSS 的 `description` 欄位可能資訊不足（僅含摘要或 HTML 片段）。萃取時應依以下流程判斷是否需要補充：
 
 1. **先嘗試從 `description` 萃取**：若 description 包含足夠的事實細節（攻擊手法、受影響系統、時間線等），直接萃取
-2. **若 description 不足，使用 WebFetch 補充**：用 JSON 中的 `link` 欄位，透過 WebFetch 工具抓取原始公告頁面，從完整內容中萃取
-3. **WebFetch 失敗時**：僅基於 RSS 資料萃取，在 `notes` 欄位標註「原始頁面無法存取，僅基於 RSS 摘要萃取」
+2. **若 description 不足，使用 MCP fetch_url 補充**：用 JSON 中的 `link` 欄位，透過 MCP 提供的 `mcp__fetch_url__fetch_url` 工具抓取原始公告頁面，從完整內容中萃取
+3. **fetch 失敗時**：僅基於 RSS 資料萃取，在 `notes` 欄位標註「原始頁面無法存取，僅基於 RSS 摘要萃取」
 
-> **判斷標準**：若 description 內容不足 100 字，或缺少攻擊手法/受影響系統等關鍵資訊，應使用 WebFetch 補充。
+> **判斷標準**：若 description 內容不足 100 字，或缺少攻擊手法/受影響系統等關鍵資訊，應使用 MCP fetch_url 補充。
+> **工具優先級**：優先使用 MCP 工具 `mcp__fetch_url__fetch_url`，可避免授權提示。
 
 #### 非英文來源處理規則
 
 來自非英文 RSS 來源的項目（見來源對照表語言欄位）：
 1. **萃取時用 AI 翻譯/摘要為英文**：`title`、`summary`、事實內容以英文輸出
 2. **`notes` 欄位標註原始語言**：如「Original language: French (CERT-FR)」
-3. **信心水準**：非英文來源且未經 WebFetch 驗證時，confidence 設為「中」
+3. **信心水準**：非英文來源且未經網頁內容驗證時，confidence 設為「中」
 
 萃取以下結構化資訊：
 
@@ -158,7 +159,7 @@ docs/Extractor/security_news_facts/{category}/{YYYY}-{描述}.md
 1. **分類無法判定**：內容無法歸類到 5 個 category 中的任何一個
 2. **摘要與原文矛盾**：萃取結果與原始 description 存在事實衝突
 3. **關鍵欄位缺失**：title、date、category 任一欄位無法填入
-4. **WebFetch 失敗且 description 不足**：原始頁面無法存取，且 RSS description 不足以完成萃取
+4. **網頁抓取失敗且 description 不足**：原始頁面無法存取，且 RSS description 不足以完成萃取
 
 以下情況**不觸發** `[REVIEW_NEEDED]`：
 - ❌ 「信心水準為低」 — 結構性限制，不構成審核理由
