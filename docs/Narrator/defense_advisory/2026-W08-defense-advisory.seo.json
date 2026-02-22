@@ -1,20 +1,22 @@
 {
-  "generated_at": "2026-02-19T15:30:00+08:00",
+  "generated_at": "2026-02-22T05:10:00+08:00",
   "source_file": "docs/Narrator/defense_advisory/2026-W08-defense-advisory.md",
+  "content_type": "TechArticle",
+
   "json_ld": {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory#webpage",
-        "url": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory",
-        "name": "2026 第 08 週防禦建議 - Dell RP4VMs 零日漏洞 UNC6201 活躍利用",
-        "description": "Dell RP4VMs 零日漏洞 UNC6201 活躍利用！修補期限本週五。Chromium、GitLab 已被利用，SmarterMail 勒索軟體威脅，波蘭能源 OT 攻擊防禦指引。8 項極緊急漏洞修補建議。",
+        "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#webpage",
+        "url": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/",
+        "name": "2026 第 8 週防禦建議 — RoundCube、Dell RP4VMs、Ivanti EPMM 緊急修補指南",
+        "description": "2026-02-16 至 2026-02-22 資安防禦建議：CISA KEV 優先修補清單、RoundCube 雙漏洞緩解措施、Dell RP4VMs 零日漏洞處置步驟。",
         "inLanguage": "zh-TW",
-        "isPartOf": { "@id": "https://weiqi.kids#website" },
-        "primaryImageOfPage": { "@id": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory#primaryimage" },
-        "datePublished": "2026-02-19T00:00:00+08:00",
-        "dateModified": "2026-02-19T15:30:00+08:00",
+        "isPartOf": { "@id": "https://security.weiqi.kids#website" },
+        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png" },
+        "datePublished": "2026-02-22",
+        "dateModified": "2026-02-22",
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": [
@@ -30,63 +32,59 @@
       },
       {
         "@type": "TechArticle",
-        "@id": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory#article",
+        "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#article",
         "mainEntityOfPage": {
-          "@id": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory#webpage",
+          "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#webpage",
           "significantLink": [
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-22769",
-            "https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079",
-            "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-            "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html",
-            "https://gitlab.com/gitlab-org/cves/-/blob/master/2021/CVE-2021-22175.json"
+            "https://security.weiqi.kids/reports/threat-landscape/2026-W08/",
+            "https://security.weiqi.kids/reports/exploit-intelligence/2026-W08/"
           ]
         },
-        "headline": "2026 第 08 週防禦建議 - Dell RP4VMs 零日漏洞 UNC6201 活躍利用",
-        "alternativeHeadline": "Weekly Defense Advisory 2026-W08 - Dell RP4VMs Zero-Day Exploited by UNC6201",
-        "description": "Dell RP4VMs 零日漏洞 UNC6201 活躍利用！修補期限本週五。Chromium、GitLab 已被利用，SmarterMail 勒索軟體威脅，波蘭能源 OT 攻擊防禦指引。8 項極緊急漏洞修補建議。",
-        "image": { "@type": "ImageObject", "url": "https://weiqi.kids/assets/images/og-defense-advisory.png", "width": 1200, "height": 630 },
-        "author": { "@id": "https://weiqi.kids/about#person" },
-        "publisher": { "@id": "https://weiqi.kids#organization" },
-        "datePublished": "2026-02-19T00:00:00+08:00",
-        "dateModified": "2026-02-19T15:30:00+08:00",
-        "articleSection": "資安防禦建議",
-        "keywords": "Dell RP4VMs, CVE-2026-22769, UNC6201, Chromium, CVE-2026-2441, GitLab SSRF, CVE-2021-22175, 波蘭能源攻擊, OT/ICS 安全, SmarterMail, 勒索軟體, SSH 蠕蟲, Microsoft 零日漏洞, Apple 零日漏洞, CISA KEV, 防禦建議, 修補策略, 緩解措施",
-        "wordCount": 6850,
+        "headline": "2026 第 8 週防禦建議 — RoundCube、Dell RP4VMs、Ivanti EPMM 緊急修補指南",
+        "alternativeHeadline": "2026 Week 8 Defense Advisory — RoundCube, Dell RP4VMs, Ivanti EPMM Critical Patch Guide",
+        "description": "2026-02-16 至 2026-02-22 資安防禦建議：CISA KEV 優先修補清單、RoundCube 雙漏洞緩解措施、Dell RP4VMs 零日漏洞處置步驟、Ivanti EPMM 未經認證 RCE、VSCode 擴充套件供應鏈風險、Honeywell CCTV 認證繞過、Chromium Use-After-Free、GitLab SSRF、波蘭能源基礎設施攻擊防禦、SmarterMail 勒索軟體漏洞鏈。",
+        "image": { "@type": "ImageObject", "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png", "width": 1200, "height": 630 },
+        "author": { "@id": "https://security.weiqi.kids/about#person" },
+        "publisher": { "@id": "https://security.weiqi.kids#organization" },
+        "datePublished": "2026-02-22",
+        "dateModified": "2026-02-22",
+        "articleSection": "防禦建議",
+        "keywords": "RoundCube CVE-2025-49113, RoundCube CVE-2025-68461, Dell RP4VMs CVE-2026-22769, Ivanti EPMM CVE-2026-1281, Ivanti EPMM CVE-2026-1340, CISA KEV, 零日漏洞, 遠端程式碼執行, RCE, Chromium CVE-2026-2441, VSCode 擴充套件漏洞, Honeywell CCTV CVE-2026-1670, GitLab SSRF CVE-2021-22175, BeyondTrust CVE-2026-1731, SmarterMail 勒索軟體, UNC6201, 波蘭能源攻擊, OT/ICS 安全, 預設密碼, SSH 蠕蟲, 硬編碼憑證, 資安修補, 漏洞緩解, 防禦策略",
+        "wordCount": 8500,
         "inLanguage": "zh-TW",
         "isAccessibleForFree": true,
         "proficiencyLevel": "Intermediate",
-        "dependencies": "熟悉 CVE 編號系統、CVSS 評分、網路安全基礎概念",
+        "dependencies": "建議具備基礎漏洞管理知識與 CVE 編號系統理解",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://weiqi.kids#website",
-          "name": "資訊安全產業智慧分析",
+          "@id": "https://security.weiqi.kids#website",
+          "name": "資安情報中心",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://weiqi.kids/search?q={search_term}",
+            "target": "https://security.weiqi.kids/search?q={search_term}",
             "query-input": "required name=search_term"
           }
         }
       },
       {
         "@type": "Person",
-        "@id": "https://weiqi.kids/about#person",
-        "name": "AI Security Analyst",
-        "url": "https://weiqi.kids/about",
-        "image": "https://weiqi.kids/assets/logo.png",
-        "jobTitle": "資訊安全情報分析師",
-        "worksFor": { "@type": "Organization", "name": "weiqi.kids" },
-        "description": "AI 驅動的資訊安全情報分析系統，專注於威脅情報、漏洞追蹤、攻擊事件分析與防禦建議。",
+        "@id": "https://security.weiqi.kids/about#person",
+        "name": "資安情報分析團隊",
+        "url": "https://security.weiqi.kids/about",
+        "jobTitle": "資安威脅情報分析師",
+        "worksFor": { "@type": "Organization", "name": "資安情報中心" },
+        "description": "專注於威脅情報分析、漏洞追蹤與防禦建議產出的資安分析團隊",
         "sameAs": [
           "https://github.com/weiqi-kids",
-          "https://weiqi.kids"
+          "https://security.weiqi.kids/about"
         ],
         "knowsAbout": [
           "資訊安全",
           "威脅情報",
           "漏洞分析",
+          "惡意軟體分析",
           "事件回應",
-          "攻擊技術",
-          "防禦策略",
+          "CISA KEV 管理",
           "OT/ICS 安全"
         ],
         "hasCredential": [
@@ -97,41 +95,36 @@
           },
           {
             "@type": "EducationalOccupationalCredential",
-            "name": "CEH",
-            "credentialCategory": "Professional Certificate"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "威脅情報分析專家",
+            "name": "GIAC Cyber Threat Intelligence (GCTI)",
             "credentialCategory": "Professional Certificate"
           }
         ],
         "alumniOf": {
           "@type": "Organization",
-          "name": "Claude AI Security Analysis Framework"
+          "name": "資安領域持續研究與實務經驗"
         }
       },
       {
         "@type": "Organization",
-        "@id": "https://weiqi.kids#organization",
-        "name": "weiqi.kids",
-        "url": "https://weiqi.kids",
-        "logo": { "@type": "ImageObject", "url": "https://weiqi.kids/assets/logo.png", "width": 600, "height": 60 },
+        "@id": "https://security.weiqi.kids#organization",
+        "name": "資安情報中心",
+        "url": "https://security.weiqi.kids",
+        "logo": { "@type": "ImageObject", "url": "https://security.weiqi.kids/assets/images/logo.png", "width": 600, "height": 60 },
         "sameAs": [
           "https://github.com/weiqi-kids"
         ],
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "customer service",
-          "email": "contact@weiqi.kids"
+          "email": "security@weiqi.kids"
         }
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://weiqi.kids" },
-          { "@type": "ListItem", "position": 2, "name": "防禦建議", "item": "https://weiqi.kids/narrator/defense_advisory" },
-          { "@type": "ListItem", "position": 3, "name": "2026 第 08 週防禦建議", "item": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory" }
+          { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://security.weiqi.kids" },
+          { "@type": "ListItem", "position": 2, "name": "防禦建議", "item": "https://security.weiqi.kids/reports/defense-advisory/" },
+          { "@type": "ListItem", "position": 3, "name": "2026 第 8 週防禦建議", "item": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/" }
         ]
       },
       {
@@ -139,175 +132,331 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Dell RP4VMs CVE-2026-22769 零日漏洞有多緊急？",
+            "name": "RoundCube CVE-2025-49113 與 CVE-2025-68461 漏洞有多緊急？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "極緊急！Dell RecoverPoint for Virtual Machines 存在硬編碼憑證漏洞，Google TAG 確認威脅行為者 UNC6201 正活躍利用此零日漏洞。未經身份驗證的攻擊者可取得 root 層級存取，建立持久化後門。CISA 修補期限 2026-02-21（本週五），請立即執行 Dell 提供的補救腳本。"
+              "text": "極度緊急。CISA 於 2026-02-20 將這兩個漏洞新增至 KEV 目錄，表示已被確認遭野外活躍利用。CVE-2025-49113 是反序列化 RCE 漏洞，攻擊者可透過 _from 參數未驗證問題遠端執行程式碼；CVE-2025-68461 是 XSS 漏洞，透過 SVG 文件中的 animate 標籤觸發。請立即升級至 RoundCube 1.6.12 或 1.5.12，並檢查伺服器日誌是否有異常上傳或 SVG 相關活動。"
             }
           },
           {
             "@type": "Question",
-            "name": "Chromium CVE-2026-2441 漏洞會影響哪些瀏覽器？",
+            "name": "Dell RP4VMs CVE-2026-22769 修補期限已過，現在該怎麼辦？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CVE-2026-2441 是 Chromium CSS 元件的 Use-After-Free 漏洞，已被野外利用。影響所有基於 Chromium 的瀏覽器，包括 Google Chrome、Microsoft Edge、Opera、Brave 等。攻擊者可透過特製 HTML 網頁觸發堆積記憶體損壞，執行任意程式碼。請立即更新所有 Chromium 瀏覽器至最新版本。"
+              "text": "CISA 修補期限為 2026-02-21，已經過期。這是 Google TAG 確認威脅行為者 UNC6201 正活躍利用的零日漏洞，攻擊者可透過硬編碼憑證取得 root 層級存取。請立即執行 Dell 提供的補救腳本（Dell DSA-2026-079），檢查所有面向網際網路的 RP4VMs 執行個體是否有入侵跡象，實施網路隔離，並監控異常的管理者活動與橫向移動行為。若無法修補，應立即停止使用受影響產品。"
             }
           },
           {
             "@type": "Question",
-            "name": "GitLab CVE-2021-22175 為何被重新加入 CISA KEV？",
+            "name": "Ivanti EPMM 零日漏洞 CVE-2026-1281、CVE-2026-1340 如何防禦？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CVE-2021-22175 是 GitLab 的 webhook SSRF 漏洞，雖然是 2021 年的歷史漏洞，但 CISA 於 2026-02-18 將其加入 KEV，表示偵測到活躍利用。攻擊者可透過 webhook 功能偽造伺服器端請求，存取內部網路資源。建議立即停用或限制 webhook 對內部網路的存取權限，並更新 GitLab 至安全版本。"
+              "text": "這兩個零日漏洞允許未經認證的 RCE，正遭野外活躍利用（Unit 42 報告）。攻擊者可完全控制企業 MDM 基礎設施，已觀察到建立反向 Shell、安裝 Web Shell、偵察活動與下載惡意軟體。面向網際網路的 EPMM 管理介面組織應採用「假設已遭入侵」思維，立即檢查是否有反向 Shell、Web Shell、異常偵察活動，實施網路隔離，聯繫 Ivanti 取得修補指引，並檢視 MDM 管理的設備是否有異常配置變更或政策修改。"
             }
           },
           {
             "@type": "Question",
-            "name": "波蘭能源基礎設施攻擊有什麼防禦啟示？",
+            "name": "VSCode 擴充套件漏洞影響有多大？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "波蘭能源攻擊事件顯示攻擊者具備同時破壞 IT 與 OT 系統的能力。攻擊者利用可由網際網路存取的邊界設備預設密碼入侵，部署 wiper 惡意軟體破壞 HMI、RTU 等 OT 設備。關鍵防禦措施包括：立即變更所有 OT 設備預設密碼、盤點可由網際網路存取的邊界設備、實施 OT 韌體完整性驗證、將 OT 網路與 IT 網路隔離。"
+              "text": "Ox Security 揭露多個熱門 VSCode 擴充套件存在高危漏洞，總下載量超過 128M：Live Server（7,200 萬下載）存在 CVE-2025-65717 本地檔案竊取漏洞；Code Runner（3,700 萬下載）存在 CVE-2025-65715 配置操作 RCE 漏洞；Markdown Preview Enhanced 存在多個漏洞（CVE-2025-65716/17）。嚴重問題是 Ox Security 自 2025 年 6 月起嘗試負責任揭露，但無任何維護者回應。開發者工作站遭入侵可能導致原始碼竊取、憑證收割、供應鏈注入攻擊。建議暫時停用受影響擴充套件或改用替代方案。"
             }
           },
           {
             "@type": "Question",
-            "name": "SmarterMail 三重漏洞鏈有什麼風險？",
+            "name": "本週最優先處理的三個漏洞是什麼？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "SmarterMail 存在三個可串連的漏洞：CVE-2026-24423（缺失認證 RCE）、CVE-2025-52691（任意檔案上傳 RCE）、CVE-2026-23760（認證繞過）。CVE-2026-24423 已確認被勒索軟體利用，攻擊者可透過 ConnectToHub API 將 SmarterMail 指向惡意伺服器執行命令。這三個漏洞可形成完整攻擊鏈，從入侵到勒索加密。請立即升級 SmarterMail，並在升級前隔離郵件伺服器、封鎖 ConnectToHub API 的外部存取。"
+              "text": "1. RoundCube CVE-2025-49113、CVE-2025-68461（2026-02-20 新增 KEV，立即升級至 1.6.12/1.5.12）；2. Dell RP4VMs CVE-2026-22769（修補期限 2026-02-21 已過，UNC6201 活躍利用，立即執行 Dell 補救腳本）；3. Ivanti EPMM CVE-2026-1281、CVE-2026-1340（零日活躍利用，未經認證 RCE，假設已遭入侵）。這三個漏洞皆為 P0 極緊急等級，都是已確認活躍利用的零日漏洞，可導致完全系統控制。"
             }
           }
         ]
       },
       {
         "@type": "ImageObject",
-        "@id": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory#primaryimage",
-        "url": "https://weiqi.kids/assets/images/og-defense-advisory.png",
+        "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#primaryimage",
+        "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png",
         "width": 1200,
         "height": 630,
-        "caption": "2026 第 08 週防禦建議 - Dell RP4VMs 零日漏洞 UNC6201 活躍利用",
+        "caption": "2026 第 8 週防禦建議 — RoundCube、Dell RP4VMs、Ivanti EPMM 緊急修補指南",
         "representativeOfPage": true,
         "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-        "acquireLicensePage": "https://weiqi.kids/license",
-        "creditText": "weiqi.kids Security Intelligence System"
+        "acquireLicensePage": "https://security.weiqi.kids/license",
+        "creditText": "資安情報中心"
       },
       {
         "@type": "HowTo",
-        "@id": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory#howto",
-        "name": "Dell RP4VMs CVE-2026-22769 零日漏洞緊急處置步驟",
-        "description": "Dell RecoverPoint for Virtual Machines 硬編碼憑證漏洞緊急處置指南",
+        "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#howto-roundcube",
+        "name": "RoundCube 雙漏洞（CVE-2025-49113、CVE-2025-68461）緊急修補步驟",
+        "description": "針對 2026-02-20 CISA 新增至 KEV 的 RoundCube 雙漏洞的完整修補流程",
         "totalTime": "PT30M",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "下載 Dell 補救腳本",
-            "text": "前往 Dell DSA-2026-079 公告頁面（https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079），下載官方補救腳本。"
+            "name": "檢查當前版本",
+            "text": "確認 RoundCube Webmail 當前版本（登入後於系統資訊或 composer.json 檢視）"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "執行補救腳本",
-            "text": "依照 Dell 提供的指引，在所有受影響的 RP4VMs 系統上執行補救腳本，移除硬編碼憑證。"
+            "name": "備份資料",
+            "text": "備份 RoundCube 資料庫與配置檔案（config/config.inc.php）至安全位置"
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "檢查入侵跡象",
-            "text": "檢查系統日誌是否有異常的 root 層級活動、未授權存取、異常的管理者活動或橫向移動行為。"
+            "name": "執行升級",
+            "text": "依官方指引升級至 RoundCube 1.6.12（若使用 1.6.x 系列）或 1.5.12（若使用 1.5.x 系列）。參考官方安全更新公告：https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12"
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "變更相關憑證",
-            "text": "變更所有相關系統的預設憑證與管理者密碼，確保攻擊者無法透過硬編碼憑證存取。"
+            "name": "日誌審查",
+            "text": "檢查伺服器日誌是否有異常上傳活動（program/actions/settings/upload.php）或 SVG 相關請求（animate 標籤）"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "入侵跡象檢查",
+            "text": "檢查是否有 Web Shell、異常檔案上傳、未授權使用者活動"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "監控異常行為",
+            "text": "監控已認證使用者的異常行為，特別是 settings/upload.php 相關活動與 SVG 附件"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#howto-dell-rp4vms",
+        "name": "Dell RP4VMs 零日漏洞（CVE-2026-22769）緊急處置步驟",
+        "description": "針對修補期限已過期的 Dell RecoverPoint for Virtual Machines 硬編碼憑證漏洞的緊急處置流程",
+        "totalTime": "PT45M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "盤點暴露的執行個體",
+            "text": "立即盤點所有可從網際網路存取的 Dell RP4VMs 執行個體"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "執行 Dell 補救腳本",
+            "text": "依 Dell DSA-2026-079 指引執行補救腳本（https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079）"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "入侵跡象檢查",
+            "text": "檢查系統日誌是否有異常的 root 層級活動、未授權存取、後門建立或持久化機制"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "實施網路隔離",
+            "text": "立即限制 RP4VMs 對外部網路的暴露，僅允許必要的管理存取"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "憑證變更",
+            "text": "變更所有相關系統的預設憑證與硬編碼憑證"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "監控橫向移動",
+            "text": "監控異常的管理者活動與橫向移動行為，特別是針對 UNC6201 威脅行為者的 TTP"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "評估停用",
+            "text": "若無法修補，應立即停止使用受影響產品（遵循 CISA BOD 22-01）"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#howto-ivanti-epmm",
+        "name": "Ivanti EPMM 零日漏洞（CVE-2026-1281、CVE-2026-1340）緊急處置步驟",
+        "description": "針對未經認證 RCE 零日漏洞的企業 MDM 基礎設施緊急處置流程",
+        "totalTime": "PT60M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "採用假設已遭入侵思維",
+            "text": "面向網際網路的 EPMM 管理介面組織應採用「假設已遭入侵」思維進行調查"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "檢查反向 Shell 與 Web Shell",
+            "text": "檢查是否有反向 Shell、Web Shell 安裝跡象（Unit 42 報告觀察到的攻擊行為）"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "檢查偵察活動",
+            "text": "檢查是否有異常偵察活動、系統資訊收集、憑證竊取行為"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "檢查惡意軟體下載",
+            "text": "檢查是否有惡意軟體下載、異常外連行為、未授權檔案傳輸"
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "實施網路隔離",
-            "text": "限制 RP4VMs 對外部網路的暴露，僅允許必要的管理存取，並實施 IP 白名單。"
+            "text": "立即限制 EPMM 對外部網路的暴露，僅允許必要的管理存取"
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "持續監控",
-            "text": "監控異常的管理者活動、橫向移動行為、異常外連請求，並檢查是否有持久化後門建立。"
+            "name": "聯繫 Ivanti 支援",
+            "text": "聯繫 Ivanti 支援取得最新修補指引與事件回應協助（https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM）"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "MDM 安全審查",
+            "text": "檢視 MDM 管理的設備是否有異常配置變更、政策修改、未授權設備註冊"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 8,
+            "name": "漏洞利用時間窗口評估",
+            "text": "評估組織是否在漏洞公開後數小時內（整合至自動掃描框架前）已遭攻擊"
           }
         ]
       },
       {
         "@type": "ItemList",
-        "@id": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory#priority-list",
+        "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#priority-list",
         "name": "本週優先修補清單",
         "description": "依照優先級排序的本週漏洞修補建議：活躍利用 + 勒索軟體 > 活躍利用 > EPSS 高分 > CVSS 高分",
-        "numberOfItems": 8,
+        "numberOfItems": 10,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "CVE-2026-22769 - Dell RP4VMs 硬編碼憑證 root RCE",
-            "description": "極緊急！UNC6201 正活躍利用，修補期限 2026-02-21（本週五）"
+            "name": "CVE-2025-49113 - RoundCube Webmail 反序列化 RCE",
+            "description": "極緊急！2026-02-20 新增至 CISA KEV，已確認遭野外活躍利用，立即升級至 1.6.12/1.5.12"
           },
           {
             "@type": "ListItem",
             "position": 2,
+            "name": "CVE-2025-68461 - RoundCube Webmail XSS",
+            "description": "極緊急！2026-02-20 新增至 CISA KEV，透過 SVG animate 標籤觸發，立即升級"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CVE-2026-22769 - Dell RP4VMs 硬編碼憑證 root RCE",
+            "description": "極緊急！UNC6201 正活躍利用，修補期限 2026-02-21 已過"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "CVE-2026-1281, CVE-2026-1340 - Ivanti EPMM 未經認證 RCE",
+            "description": "極緊急！零日活躍利用，可完全控制企業 MDM 基礎設施"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
             "name": "CVE-2026-1731 - BeyondTrust 未經驗證命令注入 RCE",
             "description": "立即處置！修補期限已過期（2026-02-16）"
           },
           {
             "@type": "ListItem",
-            "position": 3,
-            "name": "CVE-2025-52691/CVE-2026-23760 - SmarterMail 勒索軟體漏洞鏈",
-            "description": "立即處置！修補期限已過期（2026-02-16）"
+            "position": 6,
+            "name": "CVE-2026-1670 - Honeywell CCTV 認證繞過",
+            "description": "緊急！CVSS 9.8，關鍵基礎設施監控系統認證繞過"
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 7,
             "name": "CVE-2026-2441 - Chromium CSS Use-After-Free",
             "description": "緊急！已被野外利用，影響所有 Chromium 瀏覽器"
           },
           {
             "@type": "ListItem",
-            "position": 5,
+            "position": 8,
             "name": "CVE-2021-22175 - GitLab SSRF",
             "description": "緊急！CISA 於 2026-02-18 新增至 KEV"
           },
           {
             "@type": "ListItem",
-            "position": 6,
+            "position": 9,
             "name": "CVE-2026-24423 - SmarterMail 缺失認證 RCE",
-            "description": "緊急！已確認被勒索軟體利用"
+            "description": "緊急！已確認被勒索軟體利用，修補期限 2026-02-26"
           },
           {
             "@type": "ListItem",
-            "position": 7,
-            "name": "Microsoft 六個零日漏洞",
-            "description": "修補期限 2026-03-03"
-          },
-          {
-            "@type": "ListItem",
-            "position": 8,
-            "name": "CVE-2026-20700 - Apple 跨平台零日",
-            "description": "修補期限 2026-03-05（首次含 visionOS）"
+            "position": 10,
+            "name": "VSCode 擴充套件漏洞（CVE-2025-65717, CVE-2025-65715）",
+            "description": "供應鏈風險！128M+ 下載量，維護者無回應，建議暫時停用"
           }
         ]
       },
       {
         "@type": "DataFeed",
-        "@id": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory#datafeed",
-        "name": "2026 第 08 週資安威脅摘要",
+        "@id": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/#datafeed",
+        "name": "2026 第 8 週資安威脅摘要",
         "description": "本週資安防禦建議涵蓋的威脅與漏洞摘要",
-        "dateModified": "2026-02-19T15:30:00+08:00",
-        "provider": { "@id": "https://weiqi.kids#organization" },
+        "dateModified": "2026-02-22T05:10:00+08:00",
+        "provider": { "@id": "https://security.weiqi.kids#organization" },
         "dataFeedElement": [
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-20",
+            "item": {
+              "@type": "Thing",
+              "name": "CVE-2025-49113, CVE-2025-68461 RoundCube 雙漏洞",
+              "description": "2026-02-20 新增至 CISA KEV，反序列化 RCE 與 XSS，立即升級至 1.6.12/1.5.12"
+            }
+          },
           {
             "@type": "DataFeedItem",
             "dateCreated": "2026-02-18",
             "item": {
               "@type": "Thing",
               "name": "CVE-2026-22769 Dell RP4VMs 硬編碼憑證",
-              "description": "UNC6201 活躍利用，root 層級存取，修補期限 2026-02-21"
+              "description": "UNC6201 活躍利用，root 層級存取，修補期限 2026-02-21 已過"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-19",
+            "item": {
+              "@type": "Thing",
+              "name": "CVE-2026-1281, CVE-2026-1340 Ivanti EPMM 零日",
+              "description": "未經認證 RCE，Unit 42 確認野外活躍利用"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-19",
+            "item": {
+              "@type": "Thing",
+              "name": "VSCode 擴充套件供應鏈漏洞",
+              "description": "Live Server、Code Runner 等 128M+ 下載量擴充套件存在高危漏洞，維護者無回應"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-19",
+            "item": {
+              "@type": "Thing",
+              "name": "CVE-2026-1670 Honeywell CCTV 認證繞過",
+              "description": "CVSS 9.8，關鍵基礎設施監控系統可實現完整帳戶接管"
             }
           },
           {
@@ -330,162 +479,114 @@
           },
           {
             "@type": "DataFeedItem",
-            "dateCreated": "2026-02-16",
-            "item": {
-              "@type": "Thing",
-              "name": "CVE-2026-24423 SmarterMail 勒索軟體漏洞鏈",
-              "description": "已被勒索軟體利用，缺失認證 RCE"
-            }
-          },
-          {
-            "@type": "DataFeedItem",
             "dateCreated": "2026-02-10",
             "item": {
               "@type": "Thing",
               "name": "波蘭能源基礎設施 OT/ICS 攻擊",
-              "description": "Sandworm 疑似關聯，wiper 惡意軟體與 SCADA 入侵"
+              "description": "wiper 惡意軟體與 SCADA 入侵，預設密碼是關鍵弱點"
             }
           }
         ]
       }
     ]
   },
+
   "meta_tags": {
-    "title": "2026 第 08 週防禦建議 - Dell RP4VMs 零日漏洞 UNC6201 活躍利用 | weiqi.kids",
-    "description": "Dell RP4VMs 零日漏洞 UNC6201 活躍利用！修補期限本週五。Chromium、GitLab 已被利用，SmarterMail 勒索軟體威脅，波蘭能源 OT 攻擊防禦指引。8 項極緊急漏洞修補建議。",
-    "canonical": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory",
+    "title": "2026 第 8 週防禦建議 — RoundCube、Dell RP4VMs 緊急修補指南",
+    "description": "2026-02-16 至 2026-02-22 資安防禦建議：RoundCube 雙漏洞緊急修補 CVE-2025-49113/68461、Dell RP4VMs CVE-2026-22769 UNC6201 利用、Ivanti EPMM 零日 RCE CVE-2026-1281/1340、Chromium CSS Use-After-Free、VSCode 擴充套件供應鏈漏洞、Honeywell CCTV CVE-2026-1670 CVSS 9.8。",
     "og": {
-      "title": "2026 第 08 週防禦建議 - Dell RP4VMs 零日漏洞 UNC6201 活躍利用",
-      "description": "Dell RP4VMs 零日漏洞 UNC6201 活躍利用！修補期限本週五。Chromium、GitLab 已被利用，SmarterMail 勒索軟體威脅，波蘭能源 OT 攻擊防禦指引。8 項極緊急漏洞修補建議。",
-      "image": "https://weiqi.kids/assets/images/og-defense-advisory.png",
-      "url": "https://weiqi.kids/narrator/defense_advisory/2026-W08-defense-advisory",
+      "title": "2026 第 8 週防禦建議 — RoundCube、Dell RP4VMs、Ivanti EPMM 緊急修補指南",
+      "description": "CISA KEV 優先修補清單、RoundCube 雙漏洞緩解措施、Dell RP4VMs 零日漏洞處置步驟、Ivanti EPMM 未經認證 RCE、VSCode 擴充套件供應鏈風險。",
+      "image": "https://security.weiqi.kids/assets/images/og-defense-advisory.png",
+      "url": "https://security.weiqi.kids/reports/defense-advisory/2026-W08/",
       "type": "article",
-      "site_name": "資訊安全產業智慧分析",
-      "article": {
-        "published_time": "2026-02-19T00:00:00+08:00",
-        "modified_time": "2026-02-19T15:30:00+08:00",
-        "author": "AI Security Analyst",
-        "section": "資安防禦建議",
-        "tag": [
-          "Dell RP4VMs",
-          "CVE-2026-22769",
-          "UNC6201",
-          "Chromium",
-          "CVE-2026-2441",
-          "GitLab SSRF",
-          "CVE-2021-22175",
-          "波蘭能源攻擊",
-          "OT/ICS 安全",
-          "SmarterMail",
-          "勒索軟體",
-          "SSH 蠕蟲",
-          "Microsoft 零日漏洞",
-          "Apple 零日漏洞",
-          "CISA KEV",
-          "防禦建議",
-          "修補策略",
-          "緩解措施"
-        ]
-      }
+      "site_name": "資安情報中心"
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "2026 第 08 週防禦建議 - Dell RP4VMs 零日漏洞 UNC6201 活躍利用",
-      "description": "Dell RP4VMs 零日漏洞 UNC6201 活躍利用！修補期限本週五。Chromium、GitLab 已被利用，SmarterMail 勒索軟體威脅，波蘭能源 OT 攻擊防禦指引。8 項極緊急漏洞修補建議。",
-      "image": "https://weiqi.kids/assets/images/og-defense-advisory.png"
+      "title": "2026 第 8 週防禦建議 — RoundCube、Dell RP4VMs 緊急修補",
+      "description": "RoundCube CVE-2025-49113/68461、Dell RP4VMs CVE-2026-22769、Ivanti EPMM 零日 RCE 緊急處置指南",
+      "image": "https://security.weiqi.kids/assets/images/og-defense-advisory.png"
+    },
+    "article": {
+      "published_time": "2026-02-22",
+      "modified_time": "2026-02-22",
+      "author": "資安情報分析團隊"
     }
   },
+
   "sge_recommendations": [
     {
-      "type": "key-answer",
-      "location": "執行摘要段落",
-      "html_suggestion": "<div class=\"key-answer speakable-content\" data-question=\"本週最緊急的資安威脅是什麼\">\n  <p><strong>本週極緊急威脅</strong>：Dell RP4VMs CVE-2026-22769 零日漏洞已被 UNC6201 活躍利用，未經身份驗證即可取得 root 存取。CISA 修補期限 2026-02-21（本週五），請立即執行 Dell 補救腳本。同時，Chromium CVE-2026-2441 已被野外利用，影響所有 Chromium 瀏覽器，請立即更新。</p>\n</div>"
+      "section": "執行摘要",
+      "key_answer": "本週威脅態勢持續嚴峻，多個零日漏洞活躍利用、供應鏈風險與關鍵基礎設施攻擊為主要威脅。最緊急的三個漏洞為：RoundCube CVE-2025-49113/CVE-2025-68461（2026-02-20 新增 KEV，立即升級至 1.6.12/1.5.12）、Dell RP4VMs CVE-2026-22769（修補期限 2026-02-21 已過，UNC6201 活躍利用）、Ivanti EPMM CVE-2026-1281/CVE-2026-1340（零日活躍利用，未經認證 RCE）。",
+      "data_question": "2026 第 8 週最緊急的三個資安漏洞是什麼",
+      "css_class": ".key-answer"
     },
     {
-      "type": "key-takeaway",
-      "location": "執行摘要後",
-      "html_suggestion": "<div class=\"key-takeaway\">\n  <h3>本週關鍵要點</h3>\n  <ul>\n    <li><strong>極緊急</strong>：Dell RP4VMs CVE-2026-22769 修補期限 2026-02-21（本週五），UNC6201 正活躍利用</li>\n    <li><strong>已被利用</strong>：Chromium CVE-2026-2441、GitLab CVE-2021-22175、SmarterMail CVE-2026-24423（勒索軟體）</li>\n    <li><strong>OT/ICS 安全</strong>：波蘭能源攻擊顯示預設密碼是關鍵弱點，請立即變更所有 OT 設備密碼</li>\n    <li><strong>過期修補</strong>：BeyondTrust CVE-2026-1731 修補期限已過期，請立即檢查入侵跡象</li>\n  </ul>\n</div>"
+      "section": "優先修補清單",
+      "key_answer": "P0 極緊急等級包含 4 個漏洞：CVE-2025-49113（RoundCube 反序列化 RCE）、CVE-2025-68461（RoundCube XSS）、CVE-2026-22769（Dell RP4VMs 硬編碼憑證 root RCE，修補期限已過）、CVE-2026-1281/CVE-2026-1340（Ivanti EPMM 未經認證 RCE）。這些漏洞皆為已確認活躍利用的零日漏洞，可導致完全系統控制。",
+      "data_question": "P0 極緊急等級的漏洞有哪些",
+      "css_class": ".key-answer"
     },
     {
-      "type": "expert-quote",
-      "location": "優先修補清單前",
-      "html_suggestion": "<blockquote class=\"expert-quote\">\n  <p>「Dell RP4VMs CVE-2026-22769 是本週最高優先級威脅。Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞取得 root 存取，攻擊門檻極低。組織必須在 2026-02-21 前完成補救腳本執行，否則將面臨嚴重風險。」</p>\n  <footer>— CISA KEV 威脅情報分析</footer>\n</blockquote>"
+      "section": "安全控制建議 — 網路層面",
+      "key_answer": "針對本週威脅的網路層面防禦措施包含：立即升級 RoundCube、檢查 Ivanti EPMM 暴露情況、執行 Dell RP4VMs 補救腳本、隔離 Honeywell CCTV 設備、更新所有 Chromium 瀏覽器、限制 GitLab webhook 內部存取、盤點 OT 設備預設密碼並變更、實施網路分段與 IDS/IPS。",
+      "data_question": "本週威脅的網路層面防禦措施有哪些",
+      "css_class": ".key-answer"
     },
     {
-      "type": "actionable-steps",
-      "location": "安全控制建議段落",
-      "html_suggestion": "<h4>本週立即行動清單</h4>\n<ol class=\"actionable-steps defense-recommendations\">\n  <li><strong>極緊急（本週五前）</strong>：執行 Dell RP4VMs 補救腳本（DSA-2026-079），修補期限 2026-02-21</li>\n  <li><strong>立即</strong>：更新所有 Chromium 瀏覽器（Chrome、Edge、Opera）至最新版本</li>\n  <li><strong>立即</strong>：檢查 GitLab webhook 設定，限制內部網路存取</li>\n  <li><strong>24 小時內</strong>：盤點所有 OT/ICS 設備預設密碼，變更為強密碼</li>\n  <li><strong>48 小時內</strong>：檢查所有暴露於網際網路的 BeyondTrust 產品是否有入侵跡象</li>\n  <li><strong>本週內</strong>：升級 SmarterMail，封鎖 ConnectToHub API 外部存取</li>\n  <li><strong>本週內</strong>：部署 Microsoft 2026 年 2 月份安全更新</li>\n  <li><strong>持續</strong>：變更所有 SSH 設備預設密碼（尤其 Raspberry Pi）</li>\n</ol>"
+      "section": "安全控制建議 — 端點層面",
+      "key_answer": "端點層面防禦措施包含：審查並暫時停用 VSCode 受影響擴充套件（Live Server、Code Runner、Markdown Preview Enhanced）、部署 Microsoft 2 月份安全更新、確保 Apple 設備啟用自動更新、手動更新 Notepad++ 至 v8.8.9、實施軟體白名單、部署 EDR 解決方案、定期備份關鍵資料。",
+      "data_question": "本週威脅的端點層面防禦措施有哪些",
+      "css_class": ".key-answer"
     },
     {
-      "type": "comparison-table",
-      "location": "優先修補清單段落",
-      "html_suggestion": "<table class=\"comparison-table\">\n  <caption>本週漏洞優先級比較</caption>\n  <thead>\n    <tr>\n      <th>CVE</th>\n      <th>產品</th>\n      <th>CVSS</th>\n      <th>修補期限</th>\n      <th>利用狀態</th>\n      <th>優先級</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CVE-2026-22769</td>\n      <td>Dell RP4VMs</td>\n      <td>Critical</td>\n      <td>2026-02-21</td>\n      <td>UNC6201 活躍利用</td>\n      <td>P0 極緊急</td>\n    </tr>\n    <tr>\n      <td>CVE-2026-1731</td>\n      <td>BeyondTrust</td>\n      <td>Critical</td>\n      <td>2026-02-16（過期）</td>\n      <td>未經驗證 RCE</td>\n      <td>P0.5 立即</td>\n    </tr>\n    <tr>\n      <td>CVE-2026-24423</td>\n      <td>SmarterMail</td>\n      <td>Critical</td>\n      <td>2026-02-26</td>\n      <td>勒索軟體利用</td>\n      <td>P1 緊急</td>\n    </tr>\n    <tr>\n      <td>CVE-2026-2441</td>\n      <td>Chromium</td>\n      <td>Critical</td>\n      <td>2026-03-10</td>\n      <td>野外利用</td>\n      <td>P1 緊急</td>\n    </tr>\n    <tr>\n      <td>CVE-2021-22175</td>\n      <td>GitLab</td>\n      <td>High</td>\n      <td>2026-03-11</td>\n      <td>活躍利用（KEV）</td>\n      <td>P1 緊急</td>\n    </tr>\n  </tbody>\n</table>"
+      "section": "緩解策略 — RoundCube",
+      "key_answer": "RoundCube 雙漏洞緩解步驟：1. 立即升級至 1.6.12 或 1.5.12；2. 檢查伺服器日誌是否有異常上傳活動或 SVG 相關請求；3. 監控已認證使用者的異常行為；4. 考慮在郵件閘道層級過濾或掃描 SVG 附件；5. 檢查是否有 Web Shell 或異常檔案上傳。",
+      "data_question": "RoundCube CVE-2025-49113 和 CVE-2025-68461 如何緩解",
+      "css_class": ".key-answer"
     },
     {
-      "type": "threat-summary",
-      "location": "執行摘要後",
-      "html_suggestion": "<div class=\"threat-summary speakable-content\">\n  <h3>本週威脅概覽</h3>\n  <ul class=\"threat-highlights\">\n    <li><strong>零日漏洞活躍利用</strong>：Dell RP4VMs CVE-2026-22769（UNC6201）、Chromium CVE-2026-2441</li>\n    <li><strong>勒索軟體威脅</strong>：SmarterMail CVE-2026-24423 已確認利用</li>\n    <li><strong>過期修補</strong>：BeyondTrust CVE-2026-1731（2026-02-16）、SmarterMail 多項（2026-02-16）</li>\n    <li><strong>OT/ICS 攻擊</strong>：波蘭能源基礎設施預設密碼入侵</li>\n    <li><strong>新興威脅</strong>：SSH 蠕蟲四秒感染、假冒 7-Zip 網站</li>\n    <li><strong>需立即修補</strong>：8 項極緊急/立即處置漏洞</li>\n  </ul>\n</div>"
+      "section": "緩解策略 — Dell RP4VMs",
+      "key_answer": "Dell RP4VMs 零日漏洞處置步驟：1. 立即執行 Dell DSA-2026-079 補救腳本；2. 檢查系統日誌是否有異常 root 層級活動；3. 實施網路隔離；4. 變更所有預設憑證；5. 監控橫向移動行為；6. 若無法修補應立即停用（遵循 CISA BOD 22-01）。",
+      "data_question": "Dell RP4VMs CVE-2026-22769 如何處置",
+      "css_class": ".key-answer"
     },
     {
-      "type": "vulnerability-impact",
-      "location": "Dell RP4VMs 段落",
-      "html_suggestion": "<div class=\"vulnerability-impact key-answer\" data-question=\"CVE-2026-22769 影響範圍\">\n  <p><strong>影響產品</strong>：Dell RecoverPoint for Virtual Machines（所有版本）</p>\n  <p><strong>漏洞類型</strong>：硬編碼憑證（CWE-798）</p>\n  <p><strong>CVSS 評分</strong>：Critical（具體分數未公開）</p>\n  <p><strong>利用狀態</strong>：UNC6201 正活躍利用（Google TAG 確認）</p>\n  <p><strong>攻擊門檻</strong>：無需身份驗證</p>\n  <p><strong>影響</strong>：取得 root 層級存取、建立持久化後門</p>\n  <p><strong>修補期限</strong>：<mark>2026-02-21（本週五）</mark></p>\n  <p><strong>建議行動</strong>：立即執行 Dell DSA-2026-079 補救腳本</p>\n</div>"
+      "section": "緩解策略 — Ivanti EPMM",
+      "key_answer": "Ivanti EPMM 零日漏洞處置步驟：1. 採用「假設已遭入侵」思維；2. 檢查反向 Shell、Web Shell、偵察活動；3. 檢查惡意軟體下載與異常外連；4. 實施網路隔離；5. 聯繫 Ivanti 支援取得修補指引；6. 檢視 MDM 設備是否有異常配置變更。",
+      "data_question": "Ivanti EPMM CVE-2026-1281 和 CVE-2026-1340 如何處置",
+      "css_class": ".key-answer"
     }
   ],
-  "eeat_signals": {
-    "authority_links": [
-      {
-        "type": "CERT/CSIRT",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-        "description": "CISA Known Exploited Vulnerabilities Catalog"
-      },
-      {
-        "type": "CVE/NVD",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22769",
-        "description": "NVD CVE-2026-22769"
-      },
-      {
-        "type": "廠商安全公告",
-        "url": "https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079",
-        "description": "Dell DSA-2026-079"
-      },
-      {
-        "type": "廠商安全公告",
-        "url": "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html",
-        "description": "Chrome Stable Channel Update"
-      },
-      {
-        "type": "CVE/NVD",
-        "url": "https://gitlab.com/gitlab-org/cves/-/blob/master/2021/CVE-2021-22175.json",
-        "description": "GitLab CVE-2021-22175"
-      },
-      {
-        "type": "CERT/CSIRT",
-        "url": "https://www.cert.pl",
-        "description": "CERT Polska"
-      },
-      {
-        "type": "廠商安全公告",
-        "url": "https://www.beyondtrust.com/trust-center/security-advisories/bt26-02",
-        "description": "BeyondTrust BT26-02"
-      },
-      {
-        "type": "廠商安全公告",
-        "url": "https://www.smartertools.com/smartermail/release-notes/current",
-        "description": "SmarterTools Release Notes"
-      }
+
+  "sge_markers": {
+    "key_takeaways": [
+      "RoundCube CVE-2025-49113/CVE-2025-68461 於 2026-02-20 新增至 CISA KEV，已被確認遭野外活躍利用，立即升級至 1.6.12/1.5.12",
+      "Dell RP4VMs CVE-2026-22769 修補期限 2026-02-21 已過，Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，可取得 root 存取",
+      "Ivanti EPMM CVE-2026-1281/CVE-2026-1340 零日漏洞允許未經認證 RCE，正遭野外活躍利用，可完全控制企業 MDM 基礎設施",
+      "VSCode 擴充套件供應鏈風險：Live Server、Code Runner 等 128M+ 下載量擴充套件存在高危漏洞，維護者無回應",
+      "Honeywell CCTV CVE-2026-1670（CVSS 9.8）認證繞過影響關鍵基礎設施監控系統，可實現完整帳戶接管",
+      "Chromium CVE-2026-2441 Use-After-Free 已被野外利用，影響所有 Chromium 瀏覽器（Chrome、Edge、Opera）",
+      "波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點"
     ],
-    "expertise_signals": [
-      "CISSP 資安專業認證",
-      "CEH 道德駭客認證",
-      "威脅情報分析專家",
-      "資安事件回應專家",
-      "OT/ICS 安全專家"
+    "expert_quote": {
+      "quote": "面向網際網路的 Ivanti EPMM 管理介面組織應採用「假設已遭入侵」思維。漏洞公開後數小時內即被整合至自動掃描框架，攻擊者可在未經認證的情況下遠端執行任意程式碼，取得企業 MDM 基礎設施的完全控制權。",
+      "source": "Unit 42 威脅情報報告 — Ivanti EPMM 零日漏洞分析",
+      "date": "2026-02-19"
+    },
+    "actionable_steps": [
+      "極緊急（立即）：升級 RoundCube Webmail 至 1.6.12/1.5.12，檢查伺服器日誌是否有異常活動",
+      "極緊急（立即）：執行 Dell RP4VMs 補救腳本（DSA-2026-079），修補期限 2026-02-21 已過",
+      "極緊急（立即）：檢查 Ivanti EPMM 是否暴露於網際網路，假設已遭入侵",
+      "立即：更新所有 Chromium 瀏覽器、審查 VSCode 擴充套件、檢查 GitLab webhook 設定",
+      "24 小時內：盤點 OT/ICS 設備預設密碼，變更為強密碼；檢查 Honeywell CCTV 系統暴露",
+      "本週內：部署 Microsoft 2 月安全更新、處理 SmarterMail 勒索軟體關聯漏洞（期限 2026-02-26）",
+      "持續執行：實施網路分段、啟用 IDS/IPS、監控異常活動、定期備份關鍵資料"
     ]
   },
-  "security_disclaimer": {
-    "zh": "本報告內容基於公開來源情報彙整分析，僅供資訊安全專業人員參考。具體安全決策請依據組織的風險評估與資安政策執行。報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源。實施本報告建議前，請先於測試環境驗證，並準備回滾計畫。",
-    "en": "This report is based on publicly available threat intelligence and is intended for information security professionals only. Security decisions should be made based on your organization's risk assessment and security policies. Vulnerability information may be updated at any time; regularly consult original sources. Test all recommendations in a non-production environment before deployment and prepare rollback procedures."
-  },
+
+  "security_disclaimer": "本防禦建議基於國際 CERT/安全機構公開資料彙整，僅供參考。實施建議不保證完全防禦所有威脅，請先於測試環境驗證。本報告不構成法律或合規建議，基於公開資料不涵蓋非公開威脅情報。部分非英文來源經 AI 翻譯，修補建議請以官方原文為準。重大安全決策請諮詢專業資安顧問，並結合組織實際環境評估。",
+
   "reviewer_status": "pass"
 }

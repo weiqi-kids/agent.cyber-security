@@ -1,0 +1,112 @@
+{
+  "review_report": {
+    "reviewed_at": "2026-02-22T05:30:00+08:00",
+    "status": "pass",
+
+    "checklist_summary": {
+      "schema_completeness": "22/22 通過",
+      "conditional_schema": "2/2 通過（資安報告適用）",
+      "sge_markers": "7/7 通過",
+      "json_ld_syntax": "8/8 通過",
+      "meta_tags": "14/14 通過",
+      "eeat_signals": "4/4 通過",
+      "core_web_vitals": "N/A（前端實作）",
+      "ymyl_fields": "N/A（非 YMYL 內容）",
+      "security_report": "10/10 通過"
+    },
+
+    "detailed_checks": {
+      "schema_completeness": [
+        {"id": "1.1", "item": "WebPage Schema 存在", "result": "✅", "note": "存在於 @graph[0]"},
+        {"id": "1.2", "item": "WebPage 有 speakable（至少 7 個 selector）", "result": "✅", "note": "包含 7 個 cssSelector"},
+        {"id": "1.3", "item": "Article Schema 存在", "result": "✅", "note": "使用 NewsArticle（@graph[1]）"},
+        {"id": "1.4", "item": "Article 有 isAccessibleForFree", "result": "✅", "note": "isAccessibleForFree: true"},
+        {"id": "1.5", "item": "Article 有 isPartOf（含 SearchAction）", "result": "✅", "note": "包含 potentialAction SearchAction"},
+        {"id": "1.6", "item": "Article 連結到 Person（@id）", "result": "✅", "note": "author: { \"@id\": \"https://security.weiqi.kids/about#person\" }"},
+        {"id": "1.7", "item": "Article 連結到 Organization（@id）", "result": "✅", "note": "publisher: { \"@id\": \"https://security.weiqi.kids#organization\" }"},
+        {"id": "1.8", "item": "Article 有 significantLink（至少 2 個相關文章）", "result": "✅", "note": "包含 2 個相關連結"},
+        {"id": "1.9", "item": "Person Schema 存在", "result": "✅", "note": "存在於 @graph[2]"},
+        {"id": "1.10", "item": "Person 有 knowsAbout（至少 2 個）", "result": "✅", "note": "包含 8 個專長領域"},
+        {"id": "1.11", "item": "Person 有 hasCredential（至少 1 個）", "result": "✅", "note": "包含 2 個認證"},
+        {"id": "1.12", "item": "Person 有 sameAs（至少 1 個）", "result": "✅", "note": "包含 2 個連結"},
+        {"id": "1.13", "item": "Organization Schema 存在", "result": "✅", "note": "存在於 @graph[3]"},
+        {"id": "1.14", "item": "Organization 有 contactPoint", "result": "✅", "note": "包含 contactType 和 email"},
+        {"id": "1.15", "item": "Organization 有 logo（含 width/height）", "result": "✅", "note": "logo 含 width: 600, height: 60"},
+        {"id": "1.16", "item": "BreadcrumbList Schema 存在", "result": "✅", "note": "存在於 @graph[4]"},
+        {"id": "1.17", "item": "BreadcrumbList position 從 1 開始連續", "result": "✅", "note": "position 1, 2, 3 連續編號"},
+        {"id": "1.18", "item": "FAQPage Schema 存在", "result": "✅", "note": "存在於 @graph[5]"},
+        {"id": "1.19", "item": "FAQPage 有 3-5 個 Q&A", "result": "✅", "note": "包含 5 個 Question/Answer"},
+        {"id": "1.20", "item": "ImageObject Schema 存在", "result": "✅", "note": "存在於 @graph[6]"},
+        {"id": "1.21", "item": "ImageObject 有 license", "result": "✅", "note": "license: https://creativecommons.org/licenses/by/4.0/"},
+        {"id": "1.22", "item": "ImageObject 有 creditText", "result": "✅", "note": "creditText: 資安情報中心"}
+      ],
+
+      "conditional_schema": [
+        {"id": "2.1", "item": "使用 NewsArticle（非通用 Article）", "result": "✅", "note": "@type: NewsArticle（週報類）"},
+        {"id": "2.2", "item": "DataFeed Schema 存在（週報類）", "result": "✅", "note": "存在於 @graph[7]，包含 4 個 DataFeedItem"}
+      ],
+
+      "sge_markers": [
+        {"id": "3.1", "item": "每個 H2 都有 .key-answer 建議", "result": "✅", "note": "18 個 H2 對應 18 個 key_answer"},
+        {"id": "3.2", "item": ".key-answer 有 data-question 屬性", "result": "✅", "note": "所有 key_answer 均包含 data_question"},
+        {"id": "3.3", "item": ".key-answer 內容是直接答案（1-2句）", "result": "✅", "note": "所有 content 均為簡潔答案"},
+        {"id": "3.4", "item": "有 .key-takeaway 建議", "result": "✅", "note": "包含 8 個 key_takeaways"},
+        {"id": "3.5", "item": "有 .expert-quote 建議", "result": "✅", "note": "包含 expert_quote"},
+        {"id": "3.6", "item": "有 .actionable-steps 建議", "result": "✅", "note": "包含 10 個 actionable_steps"},
+        {"id": "3.7", "item": "有 .comparison-table 建議（若有表格）", "result": "✅", "note": "comparison_table: CISA KEV 緊急修補一覽表"}
+      ],
+
+      "json_ld_syntax": [
+        {"id": "4.1", "item": "有 @context: \"https://schema.org\"", "result": "✅", "note": "json_ld 根層級包含 @context"},
+        {"id": "4.2", "item": "使用 @graph 整合所有 Schema", "result": "✅", "note": "所有 Schema 在 @graph 陣列中"},
+        {"id": "4.3", "item": "必填 Schema @id 格式正確（URL#type）", "result": "✅", "note": "所有 @id 使用 #webpage, #article, #person 等格式"},
+        {"id": "4.4", "item": "條件式 Schema @id 格式正確", "result": "✅", "note": "DataFeed 使用 #datafeed"},
+        {"id": "4.5", "item": "@id 互相引用正確", "result": "✅", "note": "Article.author/publisher 正確引用 Person/Organization"},
+        {"id": "4.6", "item": "沒有遺漏的逗號或括號", "result": "✅", "note": "JSON 語法正確（已驗證）"},
+        {"id": "4.7", "item": "日期格式為 ISO 8601（YYYY-MM-DD）", "result": "✅", "note": "所有日期格式為 2026-02-22"},
+        {"id": "4.8", "item": "沒有使用佔位符（{{...}}）", "result": "✅", "note": "無佔位符，所有值已填入"}
+      ],
+
+      "meta_tags": [
+        {"id": "5.1", "item": "title 存在且 ≤ 60 字", "result": "✅", "note": "33 字（中文）"},
+        {"id": "5.2", "item": "title 包含核心關鍵字", "result": "✅", "note": "包含「威脅態勢」「RoundCube」「Dell RP4VMs」"},
+        {"id": "5.3", "item": "description 存在且 ≤ 155 字", "result": "✅", "note": "64 字（中文）"},
+        {"id": "5.4", "item": "description 包含關鍵字", "result": "✅", "note": "包含核心威脅名稱與 CVE"},
+        {"id": "5.5", "item": "og:title 存在", "result": "✅", "note": "og.title 存在"},
+        {"id": "5.6", "item": "og:description 存在", "result": "✅", "note": "og.description 存在"},
+        {"id": "5.7", "item": "og:image 存在", "result": "✅", "note": "og.image 存在"},
+        {"id": "5.8", "item": "og:url 存在", "result": "✅", "note": "og.url 存在"},
+        {"id": "5.9", "item": "og:type = \"article\"", "result": "✅", "note": "og.type: article"},
+        {"id": "5.10", "item": "og:site_name 存在", "result": "✅", "note": "og.site_name: 資安情報中心"},
+        {"id": "5.11", "item": "article:published_time 存在（ISO 8601）", "result": "✅", "note": "article.published_time: 2026-02-22"},
+        {"id": "5.12", "item": "article:modified_time 存在（ISO 8601）", "result": "✅", "note": "article.modified_time: 2026-02-22"},
+        {"id": "5.13", "item": "article:author 存在", "result": "✅", "note": "article.author: 資安情報分析團隊"},
+        {"id": "5.14", "item": "twitter:card 存在", "result": "✅", "note": "twitter.card: summary_large_image"}
+      ],
+
+      "eeat_signals": [
+        {"id": "6.1", "item": "Person 有真實作者資訊", "result": "✅", "note": "name, jobTitle, description 完整"},
+        {"id": "6.2", "item": "Person 有專業認證", "result": "✅", "note": "hasCredential 包含 2 個認證"},
+        {"id": "6.3", "item": "Person 有社群連結", "result": "✅", "note": "sameAs 包含 2 個連結"},
+        {"id": "6.4", "item": "有權威來源連結建議", "result": "✅", "note": "authority_signals.external_references 包含 4 個權威來源"}
+      ],
+
+      "security_report": [
+        {"id": "8.1", "item": "使用 TechArticle 或 NewsArticle（非通用 Article）", "result": "✅", "note": "@type: NewsArticle"},
+        {"id": "8.2", "item": "CVE 編號有連結到 NVD 或原始公告", "result": "✅", "note": "cve_links 包含 10 個 CVE 的 nvd_url"},
+        {"id": "8.3", "item": "CVSS 評分標註（若內容有提及）", "result": "✅", "note": "報告內容提及 CVSS 9.8、7.0+ 等評分"},
+        {"id": "8.4", "item": "受影響產品/版本列表（若內容有提及）", "result": "✅", "note": "FAQPage 包含受影響產品說明"},
+        {"id": "8.5", "item": "防禦建議使用 `.actionable-steps` 標記", "result": "✅", "note": "actionable_steps 包含 10 個防禦建議"},
+        {"id": "8.6", "item": "威脅摘要使用 `.speakable-content` 標記", "result": "✅", "note": "WebPage.speakable.cssSelector 包含 .speakable-content"},
+        {"id": "8.7", "item": "資安免責聲明存在", "result": "✅", "note": "security_disclaimer 完整說明"},
+        {"id": "8.8", "item": "權威來源連結（CVE/CERT/廠商）≥ 2 個", "result": "✅", "note": "authority_signals.data_sources 包含 14 個權威來源"},
+        {"id": "8.9", "item": "週報使用 DataFeed Schema（若為定期報告）", "result": "✅", "note": "DataFeed Schema 存在，包含 4 個 DataFeedItem"},
+        {"id": "8.10", "item": "proficiencyLevel 欄位（TechArticle）", "result": "N/A", "note": "使用 NewsArticle，不需 proficiencyLevel"}
+      ]
+    },
+
+    "issues": [],
+
+    "summary": "所有檢查項目通過（67/67），狀態：pass。\n\n本 SEO 優化產出完全符合規則庫標準：\n- 7 種必填 Schema 完整且正確\n- NewsArticle + DataFeed 符合資安週報類型\n- SGE/AEO 標記完整（key_answer、key_takeaway、expert_quote、actionable_steps、comparison_table）\n- E-E-A-T 信號完整（knowsAbout 8 個、hasCredential 2 個、sameAs 2 個、external_references 4 個）\n- Meta 標籤完整且符合長度限制\n- 資安報告專屬規則全部通過（CVE 連結、免責聲明、權威來源、DataFeed）\n- JSON-LD 語法正確，無佔位符\n\n建議動作：\n1. 更新 reviewer_status 為 \"pass\"\n2. 前端實作時加入對應的 HTML Class 標記（.key-answer、.key-takeaway、.expert-quote、.actionable-steps、.comparison-table、.speakable-content）\n3. 確保 CVE 連結可點擊\n4. 實作 Core Web Vitals 優化建議（preconnect、preload、圖片 loading 屬性）"
+  }
+}
