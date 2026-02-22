@@ -1,5 +1,15 @@
 [
   {
+    "id": "vulnerability_disclosure-2026-n8n-critical-vulnerabilities-md",
+    "title": "n8n自動化平台存在多項嚴重漏洞,呼籲用戶立即更新版本",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-n8n-critical-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-19-vscode-extensions-vulnerabilities-md",
     "title": "Critical Vulnerabilities in Popular VSCode Extensions (128M+ Downloads)",
     "category": "vulnerability_disclosure",
@@ -30,6 +40,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-19-CVE-2026-26049-CVE-2026-26048-md",
+    "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-CVE-2026-26049-CVE-2026-26048.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-19-CVE-2026-26048-and-others-md",
     "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610",
     "category": "vulnerability_disclosure",
@@ -50,6 +70,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-19-CVE-2026-22885-CVE-2026-20761-md",
+    "title": "EnOcean SmartServer IoT",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-CVE-2026-22885-CVE-2026-20761.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-19-CVE-2026-20761-CVE-2026-22885-md",
     "title": "EnOcean SmartServer IoT",
     "category": "vulnerability_disclosure",
@@ -65,6 +95,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-19-CVE-2025-15577.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-17-CVE-2026-23719-CVE-2026-23716-md",
+    "title": "Siemens Simcenter Femap and Nastran",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-17-CVE-2026-23719-CVE-2026-23716.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -150,11 +190,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-12-CVE-2026-25656-CVE-2026-25655-md",
+    "title": "Siemens SINEC NMS",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-12-CVE-2026-25656-CVE-2026-25655.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-12-CVE-2026-25655-CVE-2026-25656-md",
     "title": "Siemens SINEC NMS",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-12-CVE-2026-25655-CVE-2026-25656.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-12-CVE-2026-22924-CVE-2026-22925-md",
+    "title": "Siemens NX",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-12-CVE-2026-22924-CVE-2026-22925.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -220,6 +280,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-12-CVE-2025-10148-CVE-2024-6197-md",
+    "title": "Siemens SINEC OS",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-12-CVE-2025-10148-CVE-2024-6197.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-12-CVE-2025-0836-md",
     "title": "Siemens Siveillance Video Management Servers",
     "category": "vulnerability_disclosure",
@@ -240,11 +310,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-12-CVE-2024-47875-CVE-2025-10148-md",
+    "title": "Siemens COMOS",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-12-CVE-2024-47875-CVE-2025-10148.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-12-CVE-2023-38545-md",
     "title": "Siemens Desigo CC Product Family and SENTRON Powermanager",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-12-CVE-2023-38545.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-10-CVE-2026-25084-CVE-2026-24789-md",
+    "title": "ZLAN Information Technology Co. ZLAN5143D",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-10-CVE-2026-25084-CVE-2026-24789.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -285,6 +375,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-10-CVE-2025-66602-and-others.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-10-CVE-2025-66595-CVE-2025-66601-md",
+    "title": "Yokogawa FAST/TOOLS",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-10-CVE-2025-66595-CVE-2025-66601.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -2030,11 +2130,91 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-jsac2026-day1-md",
+    "title": "JSAC2026 -Day 1-",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-jsac2026-day1.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-20-isc-stormcast-for-friday-february-20th-2026-httpsi-md",
+    "title": "ISC Stormcast For Friday, February 20th, 2026 https://isc.sans.edu/podcastdetail/9818, (Fri, Feb 20th)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-20-isc-stormcast-for-friday-february-20th-2026-httpsi.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-19-under-the-hood-of-dynowiper-thu-feb-19th-md",
+    "title": "Under the Hood of DynoWiper",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-19-under-the-hood-of-dynowiper-thu-feb-19th.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-19-isc-stormcast-for-thursday-february-19th-2026-http-md",
+    "title": "ISC Stormcast For Thursday, February 19th, 2026 https://isc.sans.edu/podcastdetail/9816, (Thu, Feb 19th)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-19-isc-stormcast-for-thursday-february-19th-2026-http.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-18-isc-stormcast-for-wednesday-february-18th-2026-htt-md",
+    "title": "ISC Stormcast For Wednesday, February 18th, 2026 https://isc.sans.edu/podcastdetail/9814, (Wed, Feb 18th)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-18-isc-stormcast-for-wednesday-february-18th-2026-htt.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-17-isc-stormcast-for-tuesday-february-17th-2026-https-md",
+    "title": "ISC Stormcast For Tuesday, February 17th, 2026 https://isc.sans.edu/podcastdetail/9812, (Tue, Feb 17th)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-17-isc-stormcast-for-tuesday-february-17th-2026-https.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-16-isc-stormcast-for-monday-february-16th-2026-httpsi-md",
+    "title": "ISC Stormcast For Monday, February 16th, 2026 https://isc.sans.edu/podcastdetail/9810, (Mon, Feb 16th)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-16-isc-stormcast-for-monday-february-16th-2026-httpsi.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-02-16-cert-lv-q4-2025-activity-review-md",
     "title": "CERT.LV Activity Review Q4 2025: High Cyber Threat Levels in Latvia",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-02-16-cert-lv-q4-2025-activity-review.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-10-barriers-to-secure-ot-communication-why-johnny-can-md",
+    "title": "​​Barriers to Secure OT Communication: Why Johnny Can’t Authenticate​",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-10-barriers-to-secure-ot-communication-why-johnny-can.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -2120,6 +2300,86 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-yamagoya-monitoring-tool-md",
+    "title": "YAMAGoya: A Real-time Client Monitoring Tool Using Sigma and YARA Rules",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-yamagoya-monitoring-tool.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-tsubame-overflow-q4-2024-md",
+    "title": "TSUBAME Report Overflow (Oct-Dec 2024)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-tsubame-overflow-q4-2024.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-tsubame-overflow-q2-md",
+    "title": "TSUBAME Report Overflow (Apr-Jun 2025)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-tsubame-overflow-q2.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-tsubame-overflow-q1-md",
+    "title": "TSUBAME Report Overflow (Jan-Mar 2025)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-tsubame-overflow-q1.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-lazarus-attribution-challenges-md",
+    "title": "Tempted to Classifying APT Actors: Practical Challenges of Attribution in the Case of Lazarus's Subgroup",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-lazarus-attribution-challenges.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-jsac2025-workshop-lightning-md",
+    "title": "JSAC2025 -Workshop & Lightning Talk-",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-jsac2025-workshop-lightning.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-jsac2025-day1-md",
+    "title": "JSAC2025 -Day 1-",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-jsac2025-day1.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-ics-security-conference-md",
+    "title": "ICS Security Conference 2025",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-ics-security-conference.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-12-30-ncsc-fi-cyber-weather-november-2025-md",
     "title": "Cyber Weather in November 2025",
     "category": "industry_trend",
@@ -2175,6 +2435,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-12-08-uk-ncsc-forgivable-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-12-08-a-method-to-assess-forgivable-vs-unforgivable-vuln-md",
+    "title": "A method to assess 'forgivable' vs 'unforgivable' vulnerabilities",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-08-a-method-to-assess-forgivable-vs-unforgivable-vuln.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -2260,6 +2530,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-08-04-active-cyber-defence-acd-the-third-year-md",
+    "title": "Active Cyber Defence (ACD) - The Third Year",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-08-04-active-cyber-defence-acd-the-third-year.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-08-04-active-cyber-defence-acd-the-fourth-year-md",
+    "title": "Active Cyber Defence (ACD) - the fourth year",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-08-04-active-cyber-defence-acd-the-fourth-year.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-07-21-cyber-weather-june-2025-md",
     "title": "Cyber weather, June 2025",
     "category": "industry_trend",
@@ -2285,6 +2575,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-05-16-uk-ncsc-ai-cyber-threat-2027.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-05-16-impact-of-ai-on-cyber-threat-from-now-to-2027-md",
+    "title": "Impact of AI on cyber threat from now to 2027",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-05-16-impact-of-ai-on-cyber-threat-from-now-to-2027.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -2335,6 +2635,196 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-03-18-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi---112025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-vendor-security-assessment-md",
+    "title": "Vendor Security Assessment",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-vendor-security-assessment.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-threat-report-on-application-stores-md",
+    "title": "Threat report on application stores",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-threat-report-on-application-stores.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-the-threat-from-commercial-cyber-proliferation-md",
+    "title": "The threat from commercial cyber proliferation",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-the-threat-from-commercial-cyber-proliferation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-the-near-term-impact-of-ai-on-the-cyber-threat-md",
+    "title": "The near-term impact of AI on the cyber threat",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-the-near-term-impact-of-ai-on-the-cyber-threat.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-the-cyber-threat-to-universities-md",
+    "title": "The cyber threat to Universities",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-the-cyber-threat-to-universities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-the-cyber-threat-to-uk-business-md",
+    "title": "The Cyber Threat to UK Business",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-the-cyber-threat-to-uk-business.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-the-cyber-threat-to-sports-organisations-md",
+    "title": "The cyber threat to sports organisations",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-the-cyber-threat-to-sports-organisations.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-technical-report-responsible-use-of-the-border-gat-md",
+    "title": "Technical report: Responsible use of the Border Gateway Protocol (BGP) for ISP interworking",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-technical-report-responsible-use-of-the-border-gat.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-summary-of-the-ncsc-analysis-of-may-2020-us-sancti-md",
+    "title": "Summary of the NCSC analysis of May 2020 US sanction",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-summary-of-the-ncsc-analysis-of-may-2020-us-sancti.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-summary-of-ncscs-security-analysis-for-the-uk-tele-md",
+    "title": "Summary of NCSC’s security analysis for the UK telecoms sector",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-summary-of-ncscs-security-analysis-for-the-uk-tele.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-organisational-use-of-enterprise-connected-devices-md",
+    "title": "Organisational use of Enterprise Connected Devices",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-organisational-use-of-enterprise-connected-devices.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-joint-report-on-publicly-available-hacking-tools-md",
+    "title": "Joint report on publicly available hacking tools",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-joint-report-on-publicly-available-hacking-tools.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-incident-trends-report-october-2018-april-2019-md",
+    "title": "Incident trends report (October 2018 - April 2019)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-incident-trends-report-october-2018-april-2019.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-high-level-privacy-and-security-design-for-nhs-cov-md",
+    "title": "High level privacy and security design for NHS COVID-19 contact tracing app",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-high-level-privacy-and-security-design-for-nhs-cov.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-decrypting-diversity-diversity-and-inclusion-in-cy-md",
+    "title": "Decrypting diversity: Diversity and inclusion in cyber security report 2020",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-decrypting-diversity-diversity-and-inclusion-in-cy.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-cyber-threat-report-uk-legal-sector-md",
+    "title": "Cyber Threat Report: UK Legal Sector",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-cyber-threat-report-uk-legal-sector.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-active-cyber-defence-acd-the-second-year-md",
+    "title": "Active Cyber Defence (ACD) - The Second Year",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-active-cyber-defence-acd-the-second-year.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-acd-the-sixth-year-md",
+    "title": "ACD - The Sixth Year",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-acd-the-sixth-year.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-03-12-acd-the-fifth-year-md",
+    "title": "ACD - The Fifth Year",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-03-12-acd-the-fifth-year.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -3155,6 +3645,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2022-05-02-awareness-of-the-vulnerabilities-of-digital-services-more-important-than-ever-vu.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-04-25-malware-analysis-report-on-sparrowdoor-malware-md",
+    "title": "Malware analysis report on SparrowDoor malware",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-04-25-malware-analysis-report-on-sparrowdoor-malware.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -4070,6 +4570,116 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-cline-cli-supply-chain-attack-md",
+    "title": "Cline CLI 2.3.0 Supply Chain Attack Installed OpenClaw on Developer Systems",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-cline-cli-supply-chain-attack.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-21-japanese-language-phishing-emails-sat-feb-21st-md",
+    "title": "Japanese-Language Phishing Emails",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-21-japanese-language-phishing-emails-sat-feb-21st.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-20-CVE-2025-68461-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-20-CVE-2025-68461.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-20-CVE-2025-49113-CVE-2025-68461-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-20-CVE-2025-49113-CVE-2025-68461.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-19-CVE-2026-25715-md",
+    "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-19-CVE-2026-25715.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-19-CVE-2025-15577-md",
+    "title": "Valmet DNA Engineering Web Tools",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-19-CVE-2025-15577.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-18-tracking-malware-campaigns-with-reused-material-we-md",
+    "title": "Tracking Malware Campaigns With Reused Material, (Wed, Feb 18th)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-18-tracking-malware-campaigns-with-reused-material-we.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-18-CVE-2021-22175-CVE-2026-22769-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-18-CVE-2021-22175-CVE-2026-22769.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-17-fake-incident-report-used-in-phishing-campaign-tue-md",
+    "title": "Fake Incident Report Used in Phishing Campaign, (Tue, Feb 17th)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-17-fake-incident-report-used-in-phishing-campaign-tue.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-17-CVE-2026-2441-CVE-2024-7694-md",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-17-CVE-2026-2441-CVE-2024-7694.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-16-2026-64-bits-malware-trend-mon-feb-16th-md",
+    "title": "2026 64-Bits Malware Trend, (Mon, Feb 16th)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-16-2026-64-bits-malware-trend-mon-feb-16th.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-02-13-jpcert-react2shell-exploitation-md",
     "title": "Multiple Threat Actors Rapidly Exploit React2Shell Vulnerability (CVE-2025-55182)",
     "category": "attack_incident",
@@ -4080,11 +4690,51 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-02-13-cve-2026-1731-CVE-2026-1731-md",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-13-cve-2026-1731-CVE-2026-1731.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-12-CVE-2024-43468-CVE-2025-40536-md",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-12-CVE-2024-43468-CVE-2025-40536.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-02-10-poland-energy-sector-cyber-incident-highlights-ot-and-ics-se-md",
     "title": "Poland Energy Sector Cyber Incident Highlights OT and ICS Security Gaps",
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-02-10-poland-energy-sector-cyber-incident-highlights-ot-and-ics-se.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-10-poland-energy-sector-cyber-incident-highlights-ot--md",
+    "title": "Poland Energy Sector Cyber Incident Highlights OT and ICS Security Gaps",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-10-poland-energy-sector-cyber-incident-highlights-ot-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-10-CVE-2025-12699-md",
+    "title": "ZOLL ePCR IOS Mobile Application",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-10-CVE-2025-12699.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -4155,6 +4805,56 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-01-01-digital-signature-disruption.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-jsac2025-day2-phishing-md",
+    "title": "JSAC2025 -Day 2-",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-jsac2025-day2-phishing.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-ivanti-connect-secure-malware-md",
+    "title": "Malware Identified in Attacks Exploiting Ivanti Connect Secure Vulnerabilities",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-ivanti-connect-secure-malware.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-dslogdrat-ivanti-md",
+    "title": "DslogdRAT Malware Installed in Ivanti Connect Secure",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-dslogdrat-ivanti.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-crossc2-cobalt-strike-md",
+    "title": "CrossC2 Expanding Cobalt Strike Beacon to Cross-Platform Attacks",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-crossc2-cobalt-strike.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-apt-c-60-update-md",
+    "title": "Update on Attacks by Threat Group APT-C-60",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-apt-c-60-update.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"

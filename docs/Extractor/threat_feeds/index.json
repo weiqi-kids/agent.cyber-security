@@ -19580,6 +19580,16 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "malware_sample-2026-02-21-malwarebazaar-daily-md",
+    "title": "MalwareBazaar 每日威脅情報彙整 (2026-02-20 ~ 2026-02-21)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-02-21-malwarebazaar-daily.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "malware_sample-2026-02-19-xworm-f0c5a5dc4ab51d8f-md",
     "title": "XWorm 惡意程式樣本",
     "category": "malware_sample",
@@ -248410,6 +248420,16 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "malicious_url-2026-02-22-urlhaus-daily-md",
+    "title": "URLhaus 每日威脅彙整 (2026-02-22)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-02-22-urlhaus-daily.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "malicious_url-2026-02-20-urlhaus-clearfake-3781436-md",
     "title": "ClearFake 惡意程式分發 URL (ID: 3781436)",
     "category": "malicious_url",
@@ -303325,6 +303345,86 @@
     "category": "ioc_indicator",
     "date": "",
     "file": "ioc_indicator/2026-023217ba.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-02-22-unclassified-iocs-md",
+    "title": "未分類與其他惡意程式 IoC 彙總（2026-02-21/22）",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-02-22-unclassified-iocs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-02-22-stealer-family-iocs-md",
+    "title": "Stealer 竊密軟體家族 IoC 彙總（2026-02-21/22）",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-02-22-stealer-family-iocs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-02-22-rat-family-iocs-md",
+    "title": "RAT 惡意程式家族 IoC 彙總（2026-02-21/22）",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-02-22-rat-family-iocs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-02-22-other-malware-iocs-md",
+    "title": "其他惡意程式家族 IoC 彙總（2026-02-21/22）",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-02-22-other-malware-iocs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-02-22-iclickfix-iocs-md",
+    "title": "iClickFix 惡意程式 IoC 彙總（2026-02-21/22）",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-02-22-iclickfix-iocs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-02-22-formbook-iocs-md",
+    "title": "FormBook 惡意程式 IoC 彙總（2026-02-21/22）",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-02-22-formbook-iocs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-02-22-clearfake-iocs-md",
+    "title": "ClearFake 惡意程式 IoC 彙總（2026-02-21/22）",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-02-22-clearfake-iocs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-02-22-attack-tools-iocs-md",
+    "title": "攻擊工具 C2 基礎設施 IoC 彙總（2026-02-21/22）",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-02-22-attack-tools-iocs.md",
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
