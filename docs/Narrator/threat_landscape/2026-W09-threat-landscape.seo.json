@@ -1,0 +1,359 @@
+{
+  "generated_at": "2026-02-23T14:30:00+08:00",
+  "source_file": "docs/Narrator/threat_landscape/2026-W09-threat-landscape.md",
+  "json_ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/#webpage",
+        "url": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/",
+        "name": "2026 第 09 週威脅態勢分析 | RoundCube、BeyondTrust、Dell RP4VMs 零日攻擊",
+        "description": "2026-02-17 至 2026-02-23 資安威脅週報：RoundCube 雙漏洞持續活躍利用、BeyondTrust 勒索軟體攻擊、Dell RP4VMs UNC6201 零日利用、Chromium CVE-2026-2441、React2Shell 供應鏈威脅、波蘭能源基礎設施 OT/ICS 攻擊、FortiWeb SQL 注入 RCE、Redis 8.0.2 RCE PoC。",
+        "inLanguage": "zh-TW",
+        "isPartOf": {
+          "@id": "https://security.weiqi.kids#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/#primaryimage"
+        },
+        "datePublished": "2026-02-23T00:00:00+08:00",
+        "dateModified": "2026-02-23T00:00:00+08:00",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".threat-summary.speakable-content",
+            ".vulnerability-impact.key-answer",
+            ".key-takeaway",
+            ".key-answer",
+            ".defense-recommendations",
+            ".actionable-steps li",
+            ".faq-answer-content"
+          ]
+        }
+      },
+      {
+        "@type": "NewsArticle",
+        "@id": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/#article",
+        "mainEntityOfPage": {
+          "@id": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/#webpage",
+          "significantLink": [
+            "https://security.weiqi.kids/Narrator/threat_landscape/2026-W08-threat-landscape/",
+            "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/"
+          ]
+        },
+        "headline": "2026 第 09 週威脅態勢分析 | RoundCube、BeyondTrust、Dell RP4VMs 零日攻擊",
+        "alternativeHeadline": "2026 Week 09 Threat Landscape Analysis: RoundCube, BeyondTrust, Dell RP4VMs Zero-Day Exploitation",
+        "description": "2026-02-17 至 2026-02-23 資安威脅週報：RoundCube 雙漏洞持續活躍利用、BeyondTrust 勒索軟體攻擊、Dell RP4VMs UNC6201 零日利用、Chromium CVE-2026-2441、React2Shell 供應鏈威脅、波蘭能源基礎設施 OT/ICS 攻擊、FortiWeb SQL 注入 RCE、Redis 8.0.2 RCE PoC。",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://security.weiqi.kids/assets/images/og-threat-landscape.png",
+          "width": 1200,
+          "height": 630
+        },
+        "author": {
+          "@id": "https://security.weiqi.kids/about/team/#person"
+        },
+        "publisher": {
+          "@id": "https://security.weiqi.kids#organization"
+        },
+        "datePublished": "2026-02-23T00:00:00+08:00",
+        "dateModified": "2026-02-23T00:00:00+08:00",
+        "articleSection": "威脅態勢分析",
+        "keywords": "RoundCube 漏洞, BeyondTrust 勒索軟體, Dell RP4VMs 零日, CVE-2025-49113, CVE-2026-1731, CVE-2026-22769, UNC6201, React2Shell, Chromium CVE-2026-2441, CISA KEV, 波蘭能源攻擊, OT/ICS 安全, 威脅態勢週報",
+        "wordCount": 3500,
+        "inLanguage": "zh-TW",
+        "isAccessibleForFree": true,
+        "dateline": "2026 年第 09 週（2026-02-17 至 2026-02-23）",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://security.weiqi.kids#website",
+          "name": "資安情報分析系統",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://security.weiqi.kids/search?q={search_term}",
+            "query-input": "required name=search_term"
+          }
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://security.weiqi.kids/about/team/#person",
+        "name": "資安情報分析團隊",
+        "url": "https://security.weiqi.kids/about/team/",
+        "jobTitle": "資安威脅分析師",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "棋人安全"
+        },
+        "description": "專注於資訊安全威脅情報收集、漏洞分析、攻擊手法研究與防禦策略建議。團隊成員擁有多年資安實戰經驗與國際認證。",
+        "sameAs": [
+          "https://github.com/weiqi-kids"
+        ],
+        "knowsAbout": [
+          "資訊安全威脅情報",
+          "漏洞分析與利用",
+          "MITRE ATT&CK 框架",
+          "事件回應",
+          "惡意軟體分析"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CISSP (Certified Information Systems Security Professional)",
+            "credentialCategory": "Professional Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CEH (Certified Ethical Hacker)",
+            "credentialCategory": "Professional Certificate"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://security.weiqi.kids#organization",
+        "name": "棋人安全",
+        "url": "https://security.weiqi.kids",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://security.weiqi.kids/assets/images/logo.png",
+          "width": 600,
+          "height": 60
+        },
+        "sameAs": [
+          "https://github.com/weiqi-kids"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "security@weiqi.kids"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首頁",
+            "item": "https://security.weiqi.kids"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "威脅態勢分析",
+            "item": "https://security.weiqi.kids/Narrator/threat_landscape/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "2026 第 09 週威脅態勢分析",
+            "item": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "RoundCube 雙漏洞（CVE-2025-49113、CVE-2025-68461）的修補期限是什麼時候？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CISA 已將 RoundCube 的兩個漏洞列入 KEV（Known Exploited Vulnerabilities）清單，要求聯邦機構於 2026 年 3 月 13 日前完成修補。建議所有使用 RoundCube Webmail 的組織立即升級至 1.6.12 或 1.5.12 以上版本。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "BeyondTrust CVE-2026-1731 為何特別危險？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "此漏洞已被勒索軟體組織活躍利用，允許未經認證的攻擊者執行任意 OS 指令。CISA 標記 knownRansomwareCampaignUse: Known，且修補期限已於 2026-02-16 過期。所有對外暴露的 BeyondTrust Remote Support 和 Privileged Remote Access 系統應立即檢查入侵跡象並套用修補程式。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dell RP4VMs 零日漏洞被哪個威脅組織利用？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google Cloud 威脅情報團隊確認 UNC6201 威脅組織正活躍利用 Dell RecoverPoint for VMs（CVE-2026-22769）硬編碼憑證漏洞。該組織專注於虛擬化與備份基礎設施的攻擊，可透過此漏洞獲取 root 層級持久化存取權。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "波蘭能源基礎設施攻擊的主要教訓是什麼？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2025 年 12 月針對波蘭能源部門的攻擊顯示三大教訓：1) 邊界設備必須加強安全防護，避免從網際網路直接存取 OT/ICS 系統；2) 預設憑證必須變更；3) OT/ICS 系統需與 IT 網路適當隔離。攻擊者使用 wiper 惡意軟體破壞再生能源設施，而非進行勒索。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "React2Shell（CVE-2025-55182）為何受到關注？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "React Server Components 的 RCE 漏洞在 2025 年 12 月 3 日揭露後，JPCERT/CC 確認多個獨立威脅行為者在數小時內快速武器化。由於 React 是全球最廣泛使用的 JavaScript 框架之一，此漏洞代表重大供應鏈風險，影響規模難以估計。"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/#primaryimage",
+        "url": "https://security.weiqi.kids/assets/images/og-threat-landscape.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "2026 第 09 週威脅態勢分析 - RoundCube、BeyondTrust、Dell RP4VMs 零日攻擊",
+        "representativeOfPage": true,
+        "license": "https://security.weiqi.kids/license/",
+        "acquireLicensePage": "https://security.weiqi.kids/license/",
+        "creditText": "棋人安全"
+      },
+      {
+        "@type": "DataFeed",
+        "@id": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/#datafeed",
+        "name": "2026 第 09 週威脅情報摘要",
+        "description": "本週新增 70+ 筆資安新聞、500+ 個漏洞追蹤、300+ 個利用程式 PoC、8000+ 個威脅 IoC，涵蓋 RoundCube 雙漏洞、BeyondTrust 勒索軟體利用、Dell RP4VMs 零日攻擊等重大威脅。",
+        "dateModified": "2026-02-23T00:00:00+08:00",
+        "provider": {
+          "@id": "https://security.weiqi.kids#organization"
+        },
+        "dataFeedElement": [
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-20T00:00:00+08:00",
+            "item": {
+              "@type": "Thing",
+              "name": "RoundCube 雙漏洞（CVE-2025-49113、CVE-2025-68461）",
+              "description": "反序列化 RCE 與 XSS 漏洞，CISA KEV 修補期限 2026-03-13"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-13T00:00:00+08:00",
+            "item": {
+              "@type": "Thing",
+              "name": "BeyondTrust RS/PRA OS Command Injection（CVE-2026-1731）",
+              "description": "已確認勒索軟體利用，CVSS Critical，修補期限已過（2026-02-16）"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-18T00:00:00+08:00",
+            "item": {
+              "@type": "Thing",
+              "name": "Dell RP4VMs 零日漏洞（CVE-2026-22769）",
+              "description": "UNC6201 威脅組織活躍利用硬編碼憑證漏洞，可取得 root 層級持久存取"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-17T00:00:00+08:00",
+            "item": {
+              "@type": "Thing",
+              "name": "Chromium CSS Use-After-Free（CVE-2026-2441）",
+              "description": "影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，正遭野外利用"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "dateCreated": "2026-02-13T00:00:00+08:00",
+            "item": {
+              "@type": "Thing",
+              "name": "React2Shell（CVE-2025-55182）",
+              "description": "JPCERT/CC 報告多個威脅行為者快速利用此 React Server Components RCE 漏洞"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "meta_tags": {
+    "title": "2026 第 09 週威脅態勢分析 | RoundCube、BeyondTrust、Dell RP4VMs 零日攻擊",
+    "description": "RoundCube 雙漏洞持續利用（修補期限 3/13）、BeyondTrust 勒索軟體攻擊、Dell RP4VMs UNC6201 零日、Chromium CVE-2026-2441、React2Shell 供應鏈威脅、波蘭 OT/ICS 攻擊。",
+    "og": {
+      "title": "2026 第 09 週威脅態勢分析 | RoundCube、BeyondTrust、Dell RP4VMs 零日攻擊",
+      "description": "2026-02-17 至 2026-02-23 資安威脅週報：RoundCube 雙漏洞持續活躍利用、BeyondTrust 勒索軟體攻擊、Dell RP4VMs UNC6201 零日利用、Chromium CVE-2026-2441、React2Shell 供應鏈威脅、波蘭能源基礎設施 OT/ICS 攻擊。",
+      "image": "https://security.weiqi.kids/assets/images/og-threat-landscape.png",
+      "url": "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/",
+      "type": "article",
+      "site_name": "資安情報分析系統"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "2026 第 09 週威脅態勢分析 | RoundCube、BeyondTrust、Dell RP4VMs 零日攻擊",
+      "description": "RoundCube 雙漏洞持續利用（修補期限 3/13）、BeyondTrust 勒索軟體攻擊、Dell RP4VMs UNC6201 零日、Chromium CVE-2026-2441、React2Shell 供應鏈威脅、波蘭 OT/ICS 攻擊。",
+      "image": "https://security.weiqi.kids/assets/images/og-threat-landscape.png"
+    },
+    "article": {
+      "published_time": "2026-02-23T00:00:00+08:00",
+      "modified_time": "2026-02-23T00:00:00+08:00",
+      "author": "資安情報分析團隊",
+      "section": "威脅態勢分析",
+      "tag": [
+        "RoundCube 漏洞",
+        "BeyondTrust 勒索軟體",
+        "Dell RP4VMs 零日",
+        "UNC6201",
+        "React2Shell",
+        "Chromium 漏洞",
+        "CISA KEV",
+        "OT/ICS 安全"
+      ]
+    }
+  },
+  "sge_recommendations": [
+    {
+      "section": "執行摘要",
+      "marker": ".threat-summary.speakable-content",
+      "example": "<div class=\"threat-summary speakable-content\">\n  <h3>本週威脅概覽</h3>\n  <ul class=\"threat-highlights\">\n    <li><strong>Critical 漏洞：5 個</strong>（RoundCube、BeyondTrust、Dell RP4VMs、Chromium、React2Shell）</li>\n    <li><strong>主動利用中：5 個</strong>（CISA KEV 列管）</li>\n    <li><strong>需立即修補：</strong>CVE-2025-49113、CVE-2025-68461（3/13）、CVE-2026-1731（已過期）、CVE-2026-22769（2/21）、CVE-2026-2441（3/10）</li>\n    <li><strong>勒索軟體利用：</strong>BeyondTrust CVE-2026-1731</li>\n    <li><strong>零日利用：</strong>Dell RP4VMs（UNC6201）</li>\n  </ul>\n</div>"
+    },
+    {
+      "section": "1.1 RoundCube Webmail 雙漏洞",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"RoundCube CVE-2025-49113 影響範圍\">\n  <p><strong>漏洞類型：</strong>反序列化 RCE（CVE-2025-49113）與 XSS（CVE-2025-68461）</p>\n  <p><strong>受影響版本：</strong>1.6.11/1.5.10 之前版本（RCE）、1.6.12/1.5.12 之前版本（XSS）</p>\n  <p><strong>建議行動：</strong>立即升級至 RoundCube 1.6.12 或 1.5.12，CISA 修補期限 2026-03-13</p>\n</div>"
+    },
+    {
+      "section": "1.2 BeyondTrust RS/PRA",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"BeyondTrust CVE-2026-1731 為何危險\">\n  <p><strong>嚴重性：</strong>已確認勒索軟體利用（knownRansomwareCampaignUse: Known）</p>\n  <p><strong>攻擊條件：</strong>未經認證的遠端攻擊者可執行任意 OS 指令</p>\n  <p><strong>緊急性：</strong>修補期限已過（2026-02-16），所有對外暴露系統應立即檢查入侵跡象</p>\n</div>"
+    },
+    {
+      "section": "1.3 Dell RP4VMs 零日漏洞",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"Dell RP4VMs 零日漏洞影響\">\n  <p><strong>威脅行為者：</strong>UNC6201（專注虛擬化與備份基礎設施攻擊）</p>\n  <p><strong>漏洞類型：</strong>硬編碼憑證（CVE-2026-22769）</p>\n  <p><strong>影響：</strong>獲取底層作業系統存取權與 root 層級持久化</p>\n  <p><strong>建議行動：</strong>執行 Dell DSA-2026-079 修補腳本，檢查未授權存取跡象</p>\n</div>"
+    },
+    {
+      "section": "防禦建議",
+      "marker": ".actionable-steps.defense-recommendations",
+      "example": "<ol class=\"actionable-steps defense-recommendations\">\n  <li><strong>立即修補 CISA KEV 漏洞：</strong>RoundCube（3/13）、Chromium（3/10）、BeyondTrust（已過期）、Dell RP4VMs（2/21）</li>\n  <li><strong>檢查 BeyondTrust 系統：</strong>審查日誌偵測未授權指令執行，確認無勒索軟體入侵跡象</li>\n  <li><strong>強化硬編碼憑證檢查：</strong>使用掃描工具偵測韌體與應用程式中的預設憑證</li>\n  <li><strong>OT/ICS 網路分段：</strong>確保邊界設備無法從網際網路直接存取，變更所有預設憑證</li>\n  <li><strong>供應鏈風險管理：</strong>建立 SBOM 追蹤 React 等關鍵框架依賴項，監控異常執行行為</li>\n</ol>"
+    },
+    {
+      "section": "新興威脅識別",
+      "marker": ".key-takeaway",
+      "example": "<div class=\"key-takeaway\">\n  <h4>本週三大威脅趨勢</h4>\n  <ol>\n    <li><strong>硬編碼憑證攻擊鏈：</strong>Dell RP4VMs、BROWAN PrismX、波蘭 OT 攻擊均涉及預設/硬編碼憑證，攻擊者傾向優先利用此類低門檻向量</li>\n    <li><strong>安全產品反成攻擊入口：</strong>BeyondTrust PAM 與 Dell RP4VMs 備份系統的漏洞，顯示特權存取管理工具本身成為高價值目標</li>\n    <li><strong>Web 框架供應鏈威脅：</strong>React2Shell 在揭露後數小時內被多個威脅行為者武器化，影響全球數百萬應用</li>\n  </ol>\n</div>"
+    },
+    {
+      "section": "CISA KEV 修補期限",
+      "marker": ".key-answer",
+      "example": "<div class=\"key-answer\" data-question=\"CISA KEV 修補期限\">\n  <table class=\"comparison-table\">\n    <thead>\n      <tr>\n        <th>CVE</th>\n        <th>產品</th>\n        <th>修補期限</th>\n        <th>狀態</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2025-49113\">CVE-2025-49113</a>、<a href=\"https://nvd.nist.gov/vuln/detail/CVE-2025-68461\">CVE-2025-68461</a></td>\n        <td>RoundCube Webmail</td>\n        <td>2026-03-13</td>\n        <td>進行中</td>\n      </tr>\n      <tr>\n        <td><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-2441\">CVE-2026-2441</a></td>\n        <td>Chromium</td>\n        <td>2026-03-10</td>\n        <td>進行中</td>\n      </tr>\n      <tr style=\"background-color: #ffe6e6;\">\n        <td><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-1731\">CVE-2026-1731</a></td>\n        <td>BeyondTrust RS/PRA</td>\n        <td>2026-02-16</td>\n        <td><strong>已過期（勒索軟體利用中）</strong></td>\n      </tr>\n      <tr>\n        <td><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-22769\">CVE-2026-22769</a></td>\n        <td>Dell RP4VMs</td>\n        <td>2026-02-21</td>\n        <td>進行中</td>\n      </tr>\n    </tbody>\n  </table>\n</div>"
+    },
+    {
+      "section": "專家引言",
+      "marker": ".expert-quote",
+      "example": "<blockquote class=\"expert-quote\">\n  <p>「UNC6201 威脅組織正活躍利用 Dell RecoverPoint for Virtual Machines 零日漏洞，目標為虛擬化與備份基礎設施。」</p>\n  <cite>— Google Cloud 威脅情報團隊</cite>\n</blockquote>"
+    },
+    {
+      "section": "權威來源連結",
+      "marker": ".authority-links",
+      "example": "<div class=\"authority-links\">\n  <h4>權威來源</h4>\n  <ul>\n    <li><a href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\" target=\"_blank\">CISA Known Exploited Vulnerabilities Catalog</a></li>\n    <li><a href=\"https://blogs.jpcert.or.jp/en/2026/02/multiple-threat-actors-rapidly-exploit-react2shell-a-case-study-of-active-compromise.html\" target=\"_blank\">JPCERT/CC React2Shell 報告</a></li>\n    <li><a href=\"https://cloud.google.com/blog/topics/threat-intelligence/unc6201-exploiting-dell-recoverpoint-zero-day\" target=\"_blank\">Google Cloud Threat Intelligence - UNC6201</a></li>\n    <li><a href=\"https://www.beyondtrust.com/trust-center/security-advisories/bt26-02\" target=\"_blank\">BeyondTrust Security Advisory BT26-02</a></li>\n  </ul>\n</div>"
+    },
+    {
+      "section": "資安免責聲明",
+      "marker": ".disclaimer.security-disclaimer",
+      "example": "<div class=\"disclaimer security-disclaimer\">\n  <p>本報告內容基於公開來源情報彙整分析，僅供資訊安全專業人員參考。</p>\n  <p>具體安全決策請依據組織的風險評估與資安政策執行。</p>\n  <p>報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源。</p>\n</div>"
+    }
+  ],
+  "reviewer_status": "pass"
+}

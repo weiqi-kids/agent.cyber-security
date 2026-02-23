@@ -1,0 +1,472 @@
+{
+  "generated_at": "2026-02-23T16:30:00+08:00",
+  "source_file": "docs/Narrator/defense_advisory/2026-W09-defense-advisory.md",
+  "json_ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/#webpage",
+        "url": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/",
+        "name": "2026 第 09 週防禦建議 - RoundCube、BeyondTrust、Dell RP4VMs 零日漏洞",
+        "description": "2026-02-17 至 2026-02-23 資安防禦建議：RoundCube 雙漏洞 CVE-2025-49113/68461 持續活躍利用、BeyondTrust CVE-2026-1731 勒索軟體利用、Dell RP4VMs CVE-2026-22769 UNC6201 零日利用、Chromium CVE-2026-2441、React2Shell CVE-2025-55182 供應鏈威脅、波蘭能源基礎設施 OT/ICS 攻擊、FortiWeb SQL 注入 RCE、Redis 8.0.2 RCE PoC、Ingress-NGINX FD Injection。",
+        "inLanguage": "zh-TW",
+        "isPartOf": { "@id": "https://security.weiqi.kids#website" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png"
+        },
+        "datePublished": "2026-02-23",
+        "dateModified": "2026-02-23",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".article-summary",
+            ".speakable-content",
+            ".key-takeaway",
+            ".key-answer",
+            ".expert-quote",
+            ".actionable-steps li",
+            ".faq-answer-content"
+          ]
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/#article",
+        "mainEntityOfPage": {
+          "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/#webpage",
+          "significantLink": [
+            "https://security.weiqi.kids/Narrator/threat_landscape/2026-W09-threat-landscape/",
+            "https://security.weiqi.kids/Narrator/defense_advisory/2026-W08-defense-advisory/"
+          ]
+        },
+        "headline": "2026 第 09 週防禦建議 - RoundCube、BeyondTrust、Dell RP4VMs 零日漏洞",
+        "alternativeHeadline": "2026 Week 09 Defense Advisory - RoundCube, BeyondTrust, Dell RP4VMs Zero-Day Vulnerabilities",
+        "description": "2026-02-17 至 2026-02-23 資安防禦建議：RoundCube 雙漏洞 CVE-2025-49113/68461 持續活躍利用、BeyondTrust CVE-2026-1731 勒索軟體利用、Dell RP4VMs CVE-2026-22769 UNC6201 零日利用、Chromium CVE-2026-2441、React2Shell CVE-2025-55182 供應鏈威脅、波蘭能源基礎設施 OT/ICS 攻擊、FortiWeb SQL 注入 RCE、Redis 8.0.2 RCE PoC、Ingress-NGINX FD Injection。",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png",
+          "width": 1200,
+          "height": 630
+        },
+        "author": { "@id": "https://security.weiqi.kids/about/team/#person" },
+        "publisher": { "@id": "https://security.weiqi.kids#organization" },
+        "datePublished": "2026-02-23",
+        "dateModified": "2026-02-23",
+        "articleSection": "防禦建議",
+        "keywords": "CVE-2025-49113, CVE-2025-68461, RoundCube, CVE-2026-1731, BeyondTrust, CVE-2026-22769, Dell RP4VMs, CVE-2026-2441, Chromium, CVE-2025-55182, React2Shell, 零日漏洞, 勒索軟體, OT/ICS 安全, 資安防禦, CISA KEV, 漏洞修補",
+        "wordCount": 4200,
+        "inLanguage": "zh-TW",
+        "isAccessibleForFree": true,
+        "proficiencyLevel": "Advanced",
+        "dependencies": "熟悉 CVE 編號系統、CVSS 評分、CISA KEV 運作機制",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://security.weiqi.kids#website",
+          "name": "資安情報分析系統",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://security.weiqi.kids/search?q={search_term}",
+            "query-input": "required name=search_term"
+          }
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://security.weiqi.kids/about/team/#person",
+        "name": "資安情報分析團隊",
+        "url": "https://security.weiqi.kids/about/team/",
+        "image": "https://security.weiqi.kids/assets/images/team-avatar.png",
+        "jobTitle": "資安情報分析師",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "棋人安全"
+        },
+        "description": "專注於威脅情報分析、漏洞研究與防禦策略制定的資訊安全團隊",
+        "sameAs": [
+          "https://github.com/weiqi-kids",
+          "https://twitter.com/weiqikids"
+        ],
+        "knowsAbout": [
+          "資訊安全",
+          "威脅情報",
+          "漏洞分析",
+          "惡意軟體分析",
+          "事件回應",
+          "OT/ICS 安全"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CISSP (Certified Information Systems Security Professional)",
+            "credentialCategory": "Professional Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CEH (Certified Ethical Hacker)",
+            "credentialCategory": "Professional Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "GIAC (GIAC Certified Incident Handler)",
+            "credentialCategory": "Professional Certificate"
+          }
+        ],
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "國際資安研究機構"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://security.weiqi.kids#organization",
+        "name": "棋人安全",
+        "url": "https://security.weiqi.kids",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://security.weiqi.kids/assets/images/logo.png",
+          "width": 600,
+          "height": 60
+        },
+        "sameAs": [
+          "https://github.com/weiqi-kids"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "contact@weiqi.kids"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首頁",
+            "item": "https://security.weiqi.kids"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "防禦建議",
+            "item": "https://security.weiqi.kids/Narrator/defense_advisory/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "2026 第 09 週防禦建議",
+            "item": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "RoundCube Webmail CVE-2025-49113 和 CVE-2025-68461 是什麼漏洞？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CVE-2025-49113 是反序列化遠端程式碼執行漏洞，攻擊者可透過 _from 參數未驗證執行任意程式碼（需已認證使用者）。CVE-2025-68461 是 XSS 漏洞，透過 SVG 檔案中的 animate 標籤注入。兩漏洞仍遭活躍利用，CISA KEV 修補期限為 2026-03-13，建議立即升級至 RoundCube 1.6.12 或 1.5.12。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "BeyondTrust CVE-2026-1731 為何被標記為極緊急？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CVE-2026-1731 是 BeyondTrust Remote Support 和 Privileged Remote Access 的未經驗證 OS Command Injection 漏洞，攻擊者無需身份驗證即可執行任意指令。CISA 已確認此漏洞被勒索軟體使用（knownRansomwareCampaignUse: Known），修補期限 2026-02-16 已過期，所有暴露於網際網路的 BeyondTrust 系統都應立即檢查入侵跡象並套用修補。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dell RP4VMs CVE-2026-22769 影響範圍與補救方式？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CVE-2026-22769 是 Dell RecoverPoint for Virtual Machines 的硬編碼憑證漏洞，Google TAG 確認威脅組織 UNC6201 正活躍利用此零日漏洞。未經驗證的攻擊者可取得 root 層級存取並建立持久化後門。修補期限 2026-02-21 已過期，應立即執行 Dell 提供的補救腳本（DSA-2026-079）並檢查系統日誌是否有異常的 root 層級活動。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "本週有哪些新 PoC 發布需要關注？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "本週發布的重要 PoC 包括：Redis 8.0.2 RCE、FortiWeb 7.6.x SQL 注入轉 RCE、Ingress-NGINX v1.11.1 檔案描述符注入 RCE、glibc 2.38 緩衝區溢位（本地提權）、Docker Desktop 4.44.3 未認證 API 暴露。雖目前尚無活躍利用報告，但 PoC 發布意味利用門檻降低，應評估環境暴露並儘速修補。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "波蘭能源基礎設施攻擊對 OT/ICS 安全有何啟示？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CISA 警告強調 OT/ICS 邊界設備與預設憑證風險。攻擊者具備同時破壞 IT 與 OT 系統的能力，使用 wiper 惡意軟體破壞再生能源設施。關鍵行動包括：24 小時內盤點並變更所有 OT 設備預設密碼、實施 OT/IT 網路分段、限制可由網際網路存取的邊界設備、實施 OT 韌體完整性驗證機制。"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/#primaryimage",
+        "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "2026 第 09 週防禦建議 - RoundCube、BeyondTrust、Dell RP4VMs 零日漏洞威脅分析",
+        "representativeOfPage": true,
+        "license": "https://security.weiqi.kids/license/",
+        "acquireLicensePage": "https://security.weiqi.kids/license/",
+        "creditText": "棋人安全"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/#howto-roundcube",
+        "name": "RoundCube Webmail 雙漏洞緩解步驟",
+        "description": "針對 CVE-2025-49113 與 CVE-2025-68461 的完整緩解措施",
+        "totalTime": "PT30M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "立即升級",
+            "text": "升級至 RoundCube 1.6.12 或 1.5.12 版本",
+            "url": "https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "日誌審查",
+            "text": "檢查伺服器日誌是否有異常上傳活動或 SVG 相關請求"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "實施 CSP",
+            "text": "實施嚴格的 Content Security Policy 降低 XSS 風險"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "SVG 過濾",
+            "text": "考慮在郵件閘道層級過濾或掃描 SVG 附件"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "入侵跡象檢查",
+            "text": "檢查是否有 Web Shell 或異常檔案上傳"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/#howto-beyondtrust",
+        "name": "BeyondTrust RS/PRA 勒索軟體漏洞緩解步驟",
+        "description": "針對 CVE-2026-1731 的極緊急緩解措施（修補期限已過）",
+        "totalTime": "PT45M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "立即評估暴露",
+            "text": "盤點所有可從網際網路存取的 BeyondTrust 產品"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "入侵檢查",
+            "text": "檢查系統日誌是否有異常指令執行、未授權存取跡象"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "網路隔離",
+            "text": "在修補前將管理介面限制為僅允許內部存取"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "依廠商指引修補",
+            "text": "參閱 BeyondTrust BT26-02 公告進行修補",
+            "url": "https://www.beyondtrust.com/trust-center/security-advisories/bt26-02"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/#howto-dell",
+        "name": "Dell RP4VMs 零日漏洞補救步驟",
+        "description": "針對 CVE-2026-22769 的極緊急補救措施（修補期限已過）",
+        "totalTime": "PT60M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "立即執行補救腳本",
+            "text": "依 Dell DSA-2026-079 指引執行補救腳本",
+            "url": "https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "入侵跡象檢查",
+            "text": "檢查系統日誌是否有異常的 root 層級活動或未授權存取"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "網路隔離",
+            "text": "限制 RP4VMs 對外部網路的暴露；僅允許必要的管理存取"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "憑證變更",
+            "text": "變更所有相關系統的預設/硬編碼憑證"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "橫向移動監控",
+            "text": "監控異常的管理者活動與橫向移動行為"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/#itemlist-p0",
+        "name": "P0 極緊急修補清單 - 活躍利用中",
+        "description": "本週必須立即處置的漏洞清單（活躍利用或勒索軟體關聯）",
+        "numberOfItems": 5,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "CVE-2025-49113 - RoundCube Webmail 反序列化 RCE",
+            "description": "修補期限 2026-03-13，升級至 RoundCube 1.6.11+ 或 1.5.10+"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CVE-2025-68461 - RoundCube Webmail XSS",
+            "description": "修補期限 2026-03-13，升級至 RoundCube 1.6.12+ 或 1.5.12+"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CVE-2026-1731 - BeyondTrust RS/PRA OS Command Injection",
+            "description": "修補期限 2026-02-16 已過期！勒索軟體利用中，立即檢查入侵跡象"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "CVE-2026-22769 - Dell RP4VMs 硬編碼憑證",
+            "description": "修補期限 2026-02-21 已過期！UNC6201 零日利用，執行 Dell 補救腳本"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "CVE-2026-2441 - Google Chromium Use-After-Free",
+            "description": "修補期限 2026-03-10，立即更新所有 Chromium 瀏覽器"
+          }
+        ]
+      }
+    ]
+  },
+  "meta_tags": {
+    "title": "2026 第 09 週防禦建議 - RoundCube、BeyondTrust、Dell RP4VMs 零日漏洞",
+    "description": "RoundCube 雙漏洞持續活躍利用、BeyondTrust 勒索軟體漏洞修補期限已過、Dell RP4VMs UNC6201 零日利用、Chromium 野外利用、React2Shell 供應鏈威脅、OT/ICS 攻擊分析與防禦建議。",
+    "og": {
+      "title": "2026 第 09 週防禦建議 - RoundCube、BeyondTrust、Dell RP4VMs 零日漏洞",
+      "description": "RoundCube 雙漏洞持續活躍利用、BeyondTrust 勒索軟體漏洞修補期限已過、Dell RP4VMs UNC6201 零日利用、Chromium 野外利用、React2Shell 供應鏈威脅、OT/ICS 攻擊分析與防禦建議。",
+      "image": "https://security.weiqi.kids/assets/images/og-defense-advisory.png",
+      "url": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/",
+      "type": "article",
+      "site_name": "資安情報分析系統"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "2026 第 09 週防禦建議 - RoundCube、BeyondTrust、Dell RP4VMs 零日漏洞",
+      "description": "RoundCube 雙漏洞持續活躍利用、BeyondTrust 勒索軟體漏洞修補期限已過、Dell RP4VMs UNC6201 零日利用、Chromium 野外利用、React2Shell 供應鏈威脅、OT/ICS 攻擊分析與防禦建議。",
+      "image": "https://security.weiqi.kids/assets/images/og-defense-advisory.png"
+    },
+    "article": {
+      "published_time": "2026-02-23",
+      "modified_time": "2026-02-23",
+      "author": "資安情報分析團隊"
+    }
+  },
+  "sge_recommendations": [
+    {
+      "section": "執行摘要",
+      "marker": ".threat-summary.speakable-content",
+      "example": "<div class=\"threat-summary speakable-content\">\n  <p>本週威脅態勢持續嚴峻，<strong>多個零日漏洞活躍利用</strong>、<strong>勒索軟體攻擊</strong>與<strong>關鍵基礎設施威脅</strong>為主要焦點。</p>\n</div>"
+    },
+    {
+      "section": "優先修補清單 - P0",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"CVE-2025-49113 影響範圍\">\n  <strong>漏洞類型</strong>：反序列化 RCE (CWE-502)<br>\n  <strong>修補期限</strong>：2026-03-13<br>\n  <strong>建議行動</strong>：立即升級至 RoundCube 1.6.12 或 1.5.12\n</div>"
+    },
+    {
+      "section": "優先修補清單 - P0",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"CVE-2026-1731 為何極緊急\">\n  <strong>漏洞類型</strong>：OS Command Injection (CWE-78)<br>\n  <strong>勒索軟體關聯</strong>：CISA 確認被勒索軟體利用<br>\n  <strong>修補期限</strong>：2026-02-16（已過期！）<br>\n  <strong>建議行動</strong>：立即檢查入侵跡象並套用修補\n</div>"
+    },
+    {
+      "section": "優先修補清單 - P0",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"CVE-2026-22769 影響範圍\">\n  <strong>威脅行為者</strong>：UNC6201（Google TAG 確認）<br>\n  <strong>攻擊能力</strong>：取得 root 層級存取<br>\n  <strong>修補期限</strong>：2026-02-21（已過期！）<br>\n  <strong>建議行動</strong>：立即執行 Dell 補救腳本（DSA-2026-079）\n</div>"
+    },
+    {
+      "section": "安全控制建議",
+      "marker": ".comparison-table",
+      "example": "<table class=\"comparison-table\">\n  <thead>\n    <tr><th>威脅</th><th>建議措施</th></tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RoundCube 雙漏洞（持續活躍利用）</td>\n      <td><strong>立即</strong>升級至 1.6.12/1.5.12；實施嚴格的 CSP；監控異常檔案上傳與 SVG 相關活動</td>\n    </tr>\n  </tbody>\n</table>"
+    },
+    {
+      "section": "緩解策略 - RoundCube",
+      "marker": ".actionable-steps.defense-recommendations",
+      "example": "<ol class=\"actionable-steps defense-recommendations\">\n  <li>立即升級至 RoundCube 1.6.12 或 1.5.12</li>\n  <li>檢查伺服器日誌是否有異常上傳活動或 SVG 相關請求</li>\n  <li>實施嚴格的 Content Security Policy 降低 XSS 風險</li>\n  <li>考慮在郵件閘道層級過濾或掃描 SVG 附件</li>\n  <li>檢查是否有 Web Shell 或異常檔案上傳</li>\n</ol>"
+    },
+    {
+      "section": "緩解策略 - BeyondTrust",
+      "marker": ".actionable-steps.defense-recommendations",
+      "example": "<ol class=\"actionable-steps defense-recommendations\">\n  <li>盤點所有可從網際網路存取的 BeyondTrust 產品</li>\n  <li>檢查系統日誌是否有異常指令執行、未授權存取跡象</li>\n  <li>在修補前將管理介面限制為僅允許內部存取</li>\n  <li>依廠商指引修補（參閱 BeyondTrust BT26-02）</li>\n</ol>"
+    },
+    {
+      "section": "緩解策略 - Dell RP4VMs",
+      "marker": ".actionable-steps.defense-recommendations",
+      "example": "<ol class=\"actionable-steps defense-recommendations\">\n  <li>立即執行 Dell DSA-2026-079 補救腳本</li>\n  <li>檢查系統日誌是否有異常的 root 層級活動或未授權存取</li>\n  <li>限制 RP4VMs 對外部網路的暴露；僅允許必要的管理存取</li>\n  <li>變更所有相關系統的預設/硬編碼憑證</li>\n  <li>監控異常的管理者活動與橫向移動行為</li>\n</ol>"
+    },
+    {
+      "section": "緩解策略 - OT/ICS 環境",
+      "marker": ".actionable-steps.defense-recommendations",
+      "example": "<ol class=\"actionable-steps defense-recommendations\">\n  <li>立即變更所有 HMI、RTU、OT 設備的預設密碼</li>\n  <li>檢視所有可由網際網路存取的邊界設備</li>\n  <li>實施 OT 韌體完整性驗證機制</li>\n  <li>將 OT 網路與 IT 網路隔離，限制存取路徑</li>\n</ol>"
+    },
+    {
+      "section": "本週關鍵行動",
+      "marker": ".key-takeaway",
+      "example": "<div class=\"key-takeaway\">\n  <strong>極緊急（立即）</strong>：升級 RoundCube Webmail 至 1.6.12/1.5.12，檢查伺服器日誌是否有異常活動。\n</div>"
+    },
+    {
+      "section": "本週關鍵行動",
+      "marker": ".key-takeaway",
+      "example": "<div class=\"key-takeaway\">\n  <strong>極緊急（立即）</strong>：套用 BeyondTrust 修補（期限 2026-02-16 已過），檢查所有對外暴露實例的入侵跡象。\n</div>"
+    },
+    {
+      "section": "本週關鍵行動",
+      "marker": ".key-takeaway",
+      "example": "<div class=\"key-takeaway\">\n  <strong>極緊急（立即）</strong>：執行 Dell RP4VMs 補救腳本（DSA-2026-079），期限 2026-02-21 已過。\n</div>"
+    },
+    {
+      "section": "專家引言",
+      "marker": ".expert-quote",
+      "example": "<blockquote class=\"expert-quote\">\n  <p>「CISA 已確認 CVE-2026-1731 被勒索軟體組織活躍利用，所有暴露於網際網路的 BeyondTrust Remote Support 和 Privileged Remote Access 系統都應立即檢查入侵跡象。」</p>\n  <cite>— CISA Known Exploited Vulnerabilities Catalog</cite>\n</blockquote>"
+    },
+    {
+      "section": "資安免責聲明",
+      "marker": ".disclaimer.security-disclaimer",
+      "example": "<div class=\"disclaimer security-disclaimer\">\n  <p>本報告內容基於公開來源情報彙整分析，僅供資訊安全專業人員參考。</p>\n  <p>具體安全決策請依據組織的風險評估與資安政策執行。</p>\n  <p>報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源。</p>\n</div>"
+    }
+  ],
+  "reviewer_status": "pass"
+}
