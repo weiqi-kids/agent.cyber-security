@@ -1,21 +1,21 @@
 ---
 layout: seo-report
 title: 2026 第 09 週防禦建議
-description: "2026-02-17 至 2026-02-23 資安防禦建議：RoundCube 雙漏洞 CVE-2025-49113/68461 持續活躍利用、BeyondTrust CVE-2026-1731 勒索軟體利用、Dell RP4VMs CVE-2026-22769 UNC6201 零日利用、Chromium CVE-2026-2441、React2Shell CVE-2025-55182 供應鏈威脅、波蘭能源基礎設施 OT/ICS 攻擊、FortiWeb SQL 注入 RCE、Redis 8.0.2 RCE PoC、Ingress-NGINX FD Injection。"
+description: "2026-02-17 至 2026-02-23 資安防禦建議：Ivanti EPMM 雙零日 CVE-2026-1281/1340 活躍利用、RoundCube 雙漏洞 CVE-2025-49113/68461 持續利用、BeyondTrust CVE-2026-1731 勒索軟體利用、Dell RP4VMs CVE-2026-22769 UNC6201 零日利用、Chromium CVE-2026-2441、React2Shell CVE-2025-55182 供應鏈威脅、波蘭能源基礎設施 OT/ICS 攻擊。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-defense-advisory.png
 author: 資安情報分析團隊
-date: 2026-02-23
+date: 2026-02-24
 ---
 
 # 防禦建議 — 2026 第 09 週
 
 > 涵蓋期間：2026-02-17 至 2026-02-23
 > 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV、CISA KEV
-> 產出時間：2026-02-23
+> 產出時間：2026-02-24
 
 ---
 
@@ -23,16 +23,18 @@ date: 2026-02-23
 
 本週威脅態勢持續嚴峻，**多個零日漏洞活躍利用**、**勒索軟體攻擊**與**關鍵基礎設施威脅**為主要焦點：
 
-1. **RoundCube Webmail 雙漏洞持續活躍利用（極緊急）** — CVE-2025-49113（反序列化 RCE）與 CVE-2025-68461（XSS）仍遭活躍利用，CISA KEV 修補期限 2026-03-13
-2. **BeyondTrust RS/PRA CVE-2026-1731（勒索軟體利用中！修補期限已過）** — 未經驗證的 OS Command Injection，CISA 確認已被勒索軟體利用，修補期限 2026-02-16 已過
-3. **Dell RP4VMs 零日漏洞 CVE-2026-22769（修補期限已過！）** — Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，修補期限 2026-02-21 已過
-4. **Chromium CSS Use-After-Free CVE-2026-2441（Critical）** — 影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，正遭野外利用，修補期限 2026-03-10
-5. **React2Shell CVE-2025-55182（供應鏈威脅）** — JPCERT/CC 確認多威脅行為者快速利用 React Server Components RCE 漏洞
-6. **波蘭能源基礎設施攻擊後續** — CISA 警告強調 OT/ICS 邊界設備與預設憑證風險，wiper 惡意軟體破壞再生能源設施
-7. **SmarterMail 三重漏洞鏈** — CVE-2026-24423 已確認勒索軟體利用，修補期限 2026-02-26
-8. **新 PoC 發布**：Redis 8.0.2 RCE、FortiWeb 7.6.x SQLi to RCE、Ingress-NGINX FD Injection RCE、glibc 2.38 Buffer Overflow、Docker Desktop 4.44.3 未認證 API 暴露
+1. **Ivanti EPMM 雙零日漏洞遭活躍利用（極緊急）** — CVE-2026-1281 與 CVE-2026-1340 被 Unit 42 確認正遭活躍利用，包括反向 shell、web shell 安裝等攻擊行為
+2. **RoundCube Webmail 雙漏洞持續活躍利用（極緊急）** — CVE-2025-49113（反序列化 RCE）與 CVE-2025-68461（XSS）仍遭活躍利用，CISA KEV 修補期限 2026-03-13
+3. **BeyondTrust RS/PRA CVE-2026-1731（勒索軟體利用中！修補期限已過）** — 未經驗證的 OS Command Injection，CISA 確認已被勒索軟體利用，修補期限 2026-02-16 已過
+4. **Dell RP4VMs 零日漏洞 CVE-2026-22769（修補期限已過！）** — Google TAG 確認 UNC6201 正活躍利用硬編碼憑證漏洞，修補期限 2026-02-21 已過
+5. **Chromium CSS Use-After-Free CVE-2026-2441（Critical）** — 影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，正遭野外利用，修補期限 2026-03-10
+6. **React2Shell CVE-2025-55182（供應鏈威脅）** — JPCERT/CC 確認多威脅行為者快速利用 React Server Components RCE 漏洞
+7. **波蘭能源基礎設施攻擊後續** — CISA 警告強調 OT/ICS 邊界設備與預設憑證風險，wiper 惡意軟體破壞再生能源設施
+8. **SmarterMail 三重漏洞鏈** — CVE-2026-24423 已確認勒索軟體利用，修補期限 2026-02-26
+9. **新 PoC 發布**：Redis 8.0.2 RCE、FortiWeb 7.6.x SQLi to RCE、Ingress-NGINX FD Injection RCE、glibc 2.38 Buffer Overflow、Docker Desktop 4.44.3 未認證 API 暴露
 
 **本週關鍵行動**：
+- **極緊急（立即）**：套用 Ivanti EPMM 修補程式，檢查系統是否有反向 shell 或 web shell 跡象
 - **極緊急（立即）**：升級 RoundCube Webmail 至 1.6.12/1.5.12，檢查伺服器日誌是否有異常活動
 - **極緊急（立即）**：套用 BeyondTrust 修補（期限 2026-02-16 已過），檢查所有對外暴露實例的入侵跡象
 - **極緊急（立即）**：執行 Dell RP4VMs 補救腳本（DSA-2026-079），期限 2026-02-21 已過
@@ -50,11 +52,21 @@ date: 2026-02-23
 
 | CVE | 產品 | 漏洞類型 | 修補期限 | 修補建議 |
 |-----|------|----------|----------|----------|
+| **CVE-2026-1281** | Ivanti EPMM | 未認證 RCE（零日） | **立即** | [Ivanti Security Advisory](https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM-CVE-2026-1281-CVE-2026-1340?language=en_US) |
+| **CVE-2026-1340** | Ivanti EPMM | 未認證 RCE（零日） | **立即** | [Ivanti Security Advisory](https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM-CVE-2026-1281-CVE-2026-1340?language=en_US) |
 | **CVE-2025-49113** | RoundCube Webmail | 反序列化 RCE (CWE-502) | **2026-03-13** | [RoundCube 1.6.11+/1.5.10+](https://roundcube.net/news/2025/06/01/security-updates-1.6.11-and-1.5.10) |
 | **CVE-2025-68461** | RoundCube Webmail | XSS (CWE-79) | **2026-03-13** | [RoundCube 1.6.12+/1.5.12+](https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12) |
 | **CVE-2026-1731** | BeyondTrust RS/PRA | OS Command Injection (CWE-78) | **2026-02-16（已過期！勒索軟體）** | [BeyondTrust BT26-02](https://www.beyondtrust.com/trust-center/security-advisories/bt26-02) |
 | **CVE-2026-22769** | Dell RP4VMs | 硬編碼憑證 (CWE-798) | **2026-02-21（已過期！）** | [Dell DSA-2026-079](https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079) |
 | **CVE-2026-2441** | Google Chromium | Use-After-Free (CWE-416) | **2026-03-10** | [Chrome Stable Channel Update](https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html) |
+
+> **極緊急警告 - Ivanti EPMM 雙零日漏洞（CVE-2026-1281、CVE-2026-1340）**：
+> - Palo Alto Networks Unit 42 確認兩個嚴重零日漏洞正被活躍利用
+> - **無需認證即可 RCE**，攻擊者可完全控制 MDM 基礎設施
+> - **觀察到的攻擊行為**：建立反向 shell、安裝 web shell、偵察活動、下載惡意軟體
+> - **關鍵觀察**：漏洞揭露與大規模利用間的時間窗口已有效崩潰，攻擊者在數小時內將新 CVE 整合至自動化掃描框架
+> - **修補方式**：立即套用 [Ivanti 官方修補](https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM-CVE-2026-1281-CVE-2026-1340?language=en_US)，檢查系統是否有反向 shell 或 web shell 跡象
+> - **受影響版本**：EPMM 12.5.0.0、12.5.1.0、12.6.0.0、12.6.1.0、12.7.0.0 及更早版本
 
 > **極緊急警告 - RoundCube Webmail 雙漏洞（持續活躍利用）**：
 > - **CVE-2025-49113**：反序列化 RCE 漏洞，透過 `program/actions/settings/upload.php` 中未驗證的 `_from` 參數實現遠端程式碼執行（需已認證使用者）。受影響版本：1.6.11 及 1.5.10 之前。
@@ -114,6 +126,7 @@ date: 2026-02-23
 
 | 威脅 | 建議措施 |
 |------|----------|
+| **Ivanti EPMM 雙零日漏洞（活躍利用）** | **立即**套用 Ivanti 修補；採「假設已被入侵」心態檢查系統；搜尋反向 shell、web shell 跡象；實施網路分段限制 MDM 系統存取 |
 | **RoundCube 雙漏洞（持續活躍利用）** | **立即**升級至 1.6.12/1.5.12；實施嚴格的 CSP；監控異常檔案上傳與 SVG 相關活動；檢查已認證使用者的異常行為 |
 | **BeyondTrust 勒索軟體漏洞** | **立即**盤點所有暴露於網際網路的 BeyondTrust 產品；修補前限制僅允許內部存取；檢查系統日誌中的異常指令執行 |
 | **Dell RP4VMs 零日** | **立即**執行 Dell 補救腳本；限制 RP4VMs 對外暴露；監控異常 root 層級活動 |
@@ -187,7 +200,22 @@ date: 2026-02-23
 
 針對尚無修補或無法立即更新的情況：
 
-### 3.1 RoundCube Webmail（優先緩解）
+### 3.1 Ivanti EPMM（極緊急 - 零日漏洞活躍利用）
+
+| 措施 | 說明 |
+|------|------|
+| **立即套用修補** | 依 [Ivanti 官方公告](https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM-CVE-2026-1281-CVE-2026-1340?language=en_US) 套用更新 |
+| **假設已被入侵** | 面向網際網路的管理介面應採「假設已被入侵」心態 |
+| **入侵跡象檢查** | 檢查系統是否有反向 shell、web shell 跡象；審查異常程式執行與網路連線 |
+| **網路隔離** | 實施網路分段限制 MDM 系統存取；限制管理介面僅允許內部存取 |
+| **偵察行為監控** | 監控異常的系統列舉、資料收集活動 |
+| **惡意軟體掃描** | 執行完整惡意軟體掃描，搜尋已知 web shell 特徵 |
+
+> **有效期限**：直到完成修補 | **CISA KEV**：CVE-2026-1281 已加入
+> **攻擊組織**：Unit 42 確認多組織活躍利用中
+> **來源**：[Ivanti Security Advisory](https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM-CVE-2026-1281-CVE-2026-1340?language=en_US)、[Unit 42 分析](https://unit42.paloaltonetworks.com/ivanti-cve-2026-1281-cve-2026-1340/)
+
+### 3.2 RoundCube Webmail（優先緩解）
 
 | 措施 | 說明 |
 |------|------|
@@ -200,7 +228,7 @@ date: 2026-02-23
 > **有效期限**：直到完成升級 | **CISA 修補期限**：2026-03-13
 > **來源**：[RoundCube Security Update](https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12)
 
-### 3.2 BeyondTrust RS/PRA（極緊急 - 修補期限已過）
+### 3.3 BeyondTrust RS/PRA（極緊急 - 修補期限已過）
 
 | 措施 | 說明 |
 |------|------|
@@ -212,7 +240,7 @@ date: 2026-02-23
 > **有效期限**：直到完成修補 | **CISA 修補期限**：**2026-02-16（已過期！）**
 > **勒索軟體關聯**：已確認被勒索軟體利用
 
-### 3.3 Dell RP4VMs（極緊急 - 修補期限已過）
+### 3.4 Dell RP4VMs（極緊急 - 修補期限已過）
 
 | 措施 | 說明 |
 |------|------|
@@ -225,7 +253,7 @@ date: 2026-02-23
 > **有效期限**：**2026-02-21（已過期！）** | **威脅行為者**：UNC6201（Google TAG 確認）
 > **來源**：[Dell Remediation Guide](https://www.dell.com/support/kbdoc/en-us/000426742/recoverpoint-for-vms-apply-the-remediation-script-for-dsa)
 
-### 3.4 Chromium 瀏覽器
+### 3.5 Chromium 瀏覽器
 
 | 措施 | 說明 |
 |------|------|
@@ -236,7 +264,7 @@ date: 2026-02-23
 
 > **有效期限**：直到完成更新 | **CISA 修補期限**：2026-03-10
 
-### 3.5 SmarterMail（若無法立即更新）
+### 3.6 SmarterMail（若無法立即更新）
 
 | 措施 | 說明 |
 |------|------|
@@ -248,7 +276,7 @@ date: 2026-02-23
 > **有效期限**：直到完成升級 | **CISA 修補期限**：2026-02-26
 > **勒索軟體關聯**：CVE-2026-24423 已確認被勒索軟體利用
 
-### 3.6 波蘭能源攻擊緩解（OT/ICS 環境）
+### 3.7 波蘭能源攻擊緩解（OT/ICS 環境）
 
 | 措施 | 說明 |
 |------|------|
@@ -259,7 +287,7 @@ date: 2026-02-23
 
 > **有效期限**：持續執行 | **來源**：CISA、CERT Polska（2026-02-10）
 
-### 3.7 Redis 8.0.2（若無法立即更新）
+### 3.8 Redis 8.0.2（若無法立即更新）
 
 | 措施 | 說明 |
 |------|------|
@@ -270,7 +298,7 @@ date: 2026-02-23
 
 > **有效期限**：直到完成更新 | **來源**：[Exploit-DB 52477](https://www.exploit-db.com/exploits/52477)
 
-### 3.8 Kubernetes Ingress-NGINX（若無法立即更新）
+### 3.9 Kubernetes Ingress-NGINX（若無法立即更新）
 
 | 措施 | 說明 |
 |------|------|
@@ -306,14 +334,15 @@ date: 2026-02-23
 
 ### 本週特別警示
 
-1. **RoundCube 雙漏洞持續活躍利用**：CVE-2025-49113（反序列化 RCE）與 CVE-2025-68461（XSS）仍遭活躍利用，**立即升級至 1.6.12/1.5.12**
-2. **BeyondTrust 勒索軟體漏洞**：CVE-2026-1731 修補期限 **2026-02-16 已過期**，未經驗證即可 RCE，**CISA 確認被勒索軟體利用**
-3. **Dell RP4VMs 極緊急**：CVE-2026-22769 修補期限 **2026-02-21 已過期**，UNC6201 正活躍利用
-4. **Chromium 瀏覽器野外利用**：CVE-2026-2441 Use-After-Free 正被野外利用，影響所有 Chromium 瀏覽器
-5. **React2Shell 供應鏈威脅**：CVE-2025-55182 被多威脅行為者快速武器化，影響 React Server Components
-6. **OT/ICS 攻擊**：波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點
-7. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用
-8. **新 PoC 風險**：Redis、FortiWeb、Ingress-NGINX、glibc、Docker Desktop 均有 PoC 發布，利用門檻降低
+1. **Ivanti EPMM 雙零日漏洞（極緊急）**：CVE-2026-1281 與 CVE-2026-1340 正被活躍利用，Unit 42 觀察到反向 shell、web shell 安裝等攻擊行為，**立即套用修補並檢查入侵跡象**
+2. **RoundCube 雙漏洞持續活躍利用**：CVE-2025-49113（反序列化 RCE）與 CVE-2025-68461（XSS）仍遭活躍利用，**立即升級至 1.6.12/1.5.12**
+3. **BeyondTrust 勒索軟體漏洞**：CVE-2026-1731 修補期限 **2026-02-16 已過期**，未經驗證即可 RCE，**CISA 確認被勒索軟體利用**
+4. **Dell RP4VMs 極緊急**：CVE-2026-22769 修補期限 **2026-02-21 已過期**，UNC6201 正活躍利用
+5. **Chromium 瀏覽器野外利用**：CVE-2026-2441 Use-After-Free 正被野外利用，影響所有 Chromium 瀏覽器
+6. **React2Shell 供應鏈威脅**：CVE-2025-55182 被多威脅行為者快速武器化，影響 React Server Components
+7. **OT/ICS 攻擊**：波蘭能源基礎設施攻擊顯示攻擊者具備同時破壞 IT 與 OT 系統的能力，預設密碼是關鍵弱點
+8. **勒索軟體威脅**：SmarterMail CVE-2026-24423 已確認被勒索軟體利用
+9. **新 PoC 風險**：Redis、FortiWeb、Ingress-NGINX、glibc、Docker Desktop 均有 PoC 發布，利用門檻降低
 
 ### 建議的測試步驟
 
@@ -397,8 +426,8 @@ date: 2026-02-23
 
 ---
 
-> 報告產出時間：2026-02-23
-> 資料截止時間：2026-02-23 23:59 UTC
-> 資料來源：CISA KEV、Google TAG、CERT Polska、JPCERT/CC、TWCERT/CC、NCSC-NL、NVD、Exploit-DB、Nuclei Templates、abuse.ch
+> 報告產出時間：2026-02-24
+> 資料截止時間：2026-02-24 UTC
+> 資料來源：CISA KEV、Google TAG、Unit 42、CERT Polska、JPCERT/CC、TWCERT/CC、NCSC-NL、NCSC-FI、Canada Cyber Centre、NVD、Exploit-DB、Nuclei Templates、abuse.ch
 > 分析模型：Claude Opus 4.5
-> Qdrant 語意查詢次數：3
+> Qdrant 語意查詢次數：3（環境限制，實際執行失敗）

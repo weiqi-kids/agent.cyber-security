@@ -8,14 +8,14 @@ nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-02-23
+date: 2026-02-24
 ---
 
 # 威脅態勢分析 — 2026 第 09 週
 
 > 涵蓋期間：2026-02-17 至 2026-02-23
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-02-23
+> 產出時間：2026-02-24
 
 ---
 
@@ -24,14 +24,19 @@ date: 2026-02-23
 本週威脅態勢持續嚴峻，以下為重點摘要：
 
 **最新緊急威脅（2026-02-17 至 2026-02-23）**：
+- **Ivanti EPMM 雙零日漏洞遭活躍利用（CVE-2026-1281、CVE-2026-1340）**：未經認證 RCE，Unit 42 偵測到建立反向 shell、安裝 web shell 等攻擊行為
 - **RoundCube Webmail 雙漏洞持續遭活躍利用（CVE-2025-49113、CVE-2025-68461）**：反序列化 RCE 與 XSS 漏洞，CISA KEV 修補期限 2026-03-13
 - **BeyondTrust RS/PRA OS Command Injection（CVE-2026-1731）**：已確認勒索軟體利用，CVSS Critical，修補期限已過（2026-02-16）
 - **Dell RP4VMs 零日漏洞（CVE-2026-22769）**：UNC6201 威脅組織活躍利用硬編碼憑證漏洞，可取得 root 層級持久存取
 - **Chromium CSS Use-After-Free（CVE-2026-2441）**：影響 Chrome、Edge、Opera 等所有 Chromium 瀏覽器，正遭野外利用
 - **React2Shell（CVE-2025-55182）**：JPCERT/CC 報告多個威脅行為者快速利用此 React Server Components RCE 漏洞
 
-**關鍵基礎設施攻擊**：
+**關鍵基礎設施與進階威脅**：
+- **DynoWiper 分析報告發布（2026-02-19）**：SANS ISC 發布俄羅斯 APT Sandworm 組織使用的 wiper 惡意軟體技術分析，該惡意軟體於 2025 年 12 月攻擊波蘭能源公司
 - **波蘭能源基礎設施攻擊**：CISA 於 2026-02-10 發布警告，確認 2025 年 12 月攻擊針對 OT/ICS 系統，使用 wiper 惡意軟體破壞再生能源設施
+
+**供應鏈與開發環境風險**：
+- **VSCode 熱門擴充套件漏洞揭露**：Ox Security 發現累計下載超過 1.28 億次的擴充套件存在 Critical 漏洞，包括 Live Server（7200 萬次下載）、Code Runner（3700 萬次下載）
 
 **新興 PoC 與漏洞利用**：
 - **Redis 8.0.2 RCE**：Exploit-DB 發布 PoC（2026-02-04）
@@ -42,8 +47,14 @@ date: 2026-02-23
 - **Docker Desktop 4.44.3 未認證 API 暴露**：本地攻擊向量（2026-02-04）
 
 **國家級威脅行為者動態**：
+- **APT Sandworm（俄羅斯）**：SANS ISC 技術分析確認 DynoWiper 惡意軟體與此組織相關，目標為波蘭能源基礎設施
 - **UNC6201**：Google Cloud 威脅情報確認此威脅組織正活躍利用 Dell RP4VMs 零日漏洞
 - **多威脅行為者 React2Shell**：JPCERT/CC 確認多個獨立威脅行為者在漏洞揭露後快速武器化
+- **日文釣魚活動**：SANS ISC 紀錄持續一年的日文釣魚活動，冒充 ANA、DHL、myTOKYOGAS，均使用 .cn 域名與相同 X-mailer 簽章
+
+**威脅饋送統計（W09）**：
+- **惡意 URL**：本週偵測 3,687 筆
+- **主要惡意軟體家族**：Mozi（305 筆）、ClearFake（117 筆）、Mirai（57 筆）、ua-wget（27 筆）
 
 **CISA KEV 修補期限**：
 - **RoundCube CVE-2025-49113、CVE-2025-68461**：2026-03-13
@@ -56,12 +67,20 @@ date: 2026-02-23
 
 | Layer | 本週新增 | 2026 年累計 | 說明 |
 |-------|----------|-------------|------|
-| security_news_facts | **70+** | 4,100+ | 國際資安新聞與事件 |
-| vulnerability_tracking | **500+** | 13,600+ | 漏洞追蹤（含 critical_high、medium、low_info） |
-| exploit_intelligence | **300+** | 5,000+ | 利用程式（active_exploitation: 48+, poc_available: 4,900+） |
-| threat_feeds | **8,000+** | 40,000+ | 威脅饋送（IoC、惡意軟體、C2） |
+| security_news_facts | **56** | 2,414 | 國際資安新聞與事件（attack_incident: 953, industry_trend: 711） |
+| vulnerability_tracking | **500+** | 17,351 | 漏洞追蹤（critical_high: 4,666, medium: 8,456, low_info: 4,229） |
+| exploit_intelligence | **48** | 4,782 | 利用程式（active_exploitation: 58, poc_available: 4,720） |
+| threat_feeds | **3,687** | 34,211 | 威脅饋送（malicious_url: 23,559, malware_sample: 4,479, ioc: 5,939） |
 
-> 統計時間：2026-02-23 UTC
+**W09 威脅饋送惡意軟體家族分布**：
+- Mozi: 305 筆
+- ClearFake: 117 筆
+- Mirai: 57 筆
+- ua-wget: 27 筆
+- ascii: 13 筆
+- Hajime: 8 筆
+
+> 統計時間：2026-02-24 UTC
 
 ---
 
@@ -203,6 +222,110 @@ JPCERT/CC 報告 React Server Components (RSC) 存在嚴重 RCE 漏洞：
 2. 檢查 Web 應用程式是否使用受影響版本
 3. 監控異常的伺服器端執行行為
 
+### 1.7 Ivanti EPMM 雙零日漏洞遭活躍利用（CVE-2026-1281、CVE-2026-1340）
+
+**嚴重程度：Critical | 來源：Unit 42 / Palo Alto Networks | 日期：2026-02-19**
+
+**ATT&CK TTP**：[T1190](https://attack.mitre.org/techniques/T1190/){: .ttp-ref } Exploit Public-Facing Application、[T1505.003](https://attack.mitre.org/techniques/T1505/003/){: .ttp-ref } Web Shell
+
+Ivanti Endpoint Manager Mobile (EPMM) 存在兩個嚴重零日漏洞：
+
+**漏洞詳情**：
+- **CVE-2026-1281、CVE-2026-1340**
+- **攻擊條件**：未經認證遠端攻擊者
+- **影響**：完全控制 MDM 基礎設施
+
+**Unit 42 觀察到的攻擊行為**：
+- 建立反向 shell
+- 安裝 web shell
+- 進行偵察活動
+- 下載惡意軟體
+
+**關鍵觀察**：
+漏洞揭露與大規模利用之間的時間窗口已有效崩潰。攻擊者在漏洞揭露數小時內即將新 CVE 整合至自動化掃描框架。
+
+**防禦建議**：
+1. 立即套用 Ivanti 官方修補
+2. 面向網際網路的管理介面應採「假設已被入侵」心態
+3. 檢查所有 EPMM 系統是否有反向 shell 或 web shell 跡象
+4. 實施網路分段限制 MDM 系統存取
+
+### 1.8 VSCode 熱門擴充套件存在嚴重漏洞（CVE-2025-65717 等）
+
+**嚴重程度：Critical | 來源：Ox Security | 日期：2026-02-19**
+
+**ATT&CK TTP**：[T1204.002](https://attack.mitre.org/techniques/T1204/002/){: .ttp-ref } User Execution: Malicious File、[T1059](https://attack.mitre.org/techniques/T1059/){: .ttp-ref } Command and Scripting Interpreter
+
+累計下載超過 1.28 億次的 VSCode 擴充套件存在嚴重漏洞：
+
+**受影響擴充套件**：
+1. **Live Server（CVE-2025-65717）** — 7,200 萬次下載
+   - 嚴重程度：Critical
+   - 影響：透過惡意網頁重導竊取本地檔案
+
+2. **Code Runner（CVE-2025-65715）** — 3,700 萬次下載
+   - 影響：透過設定檔操作實現 RCE
+
+3. **Markdown Preview Enhanced（CVE-2025-65716、CVE-2025-65717）**
+   - 多個漏洞影響渲染與預覽功能
+
+4. **Microsoft Live Preview** — 漏洞詳情尚未公開
+
+**風險評估**：
+- 開發者工作站是供應鏈攻擊的高價值目標
+- 入侵可導致原始碼竊取、憑證竊取、供應鏈注入攻擊
+
+**防禦建議**：
+1. 檢查並更新受影響的 VSCode 擴充套件
+2. 審核組織使用的擴充套件清單
+3. 考慮限制開發環境可安裝的擴充套件來源
+
+### 1.9 DynoWiper 技術分析：俄羅斯 APT 攻擊波蘭能源
+
+**嚴重程度：High | 來源：SANS ISC | 日期：2026-02-19**
+
+**ATT&CK TTP**：[T1485](https://attack.mitre.org/techniques/T1485/){: .ttp-ref } Data Destruction、[T1134](https://attack.mitre.org/techniques/T1134/){: .ttp-ref } Access Token Manipulation
+
+SANS ISC 發布 DynoWiper 惡意軟體的詳細技術分析：
+
+**威脅歸因**：
+- **組織**：Sandworm（俄羅斯國家級 APT）
+- **目標**：波蘭能源公司（2025 年 12 月攻擊）
+- **評估來源**：ESET 安全研究人員
+
+**技術特徵**：
+- **架構**：32 位元 Windows 可執行檔
+- **SHA-256**：`835b0d87ed2d49899ab6f9479cddb8b4e03f5aeb2365c50a51f9088dcede68d5`
+- **PRNG**：使用 Mersenne Twister (MT19937) 演算法產生隨機資料
+- **無混淆**：程式碼直接明確，重點在於最大化破壞
+
+**攻擊流程**：
+1. **資料損壞階段**：列舉邏輯磁碟、遍歷目錄（排除系統資料夾）、對每個檔案寫入 16 位元組垃圾資料
+2. **資料刪除階段**：使用 `DeleteFileW()` API 移除損壞檔案
+3. **系統重啟**：取得 shutdown 權限後觸發 `ExitWindowsEx()` 重啟系統
+
+**評估**：典型的 wiper 惡意軟體，強調破壞效率而非隱匿性。
+
+### 1.10 日文釣魚活動持續針對企業用戶
+
+**嚴重程度：Medium | 來源：SANS ISC | 日期：2026-02-21**
+
+**ATT&CK TTP**：[T1566.002](https://attack.mitre.org/techniques/T1566/002/){: .ttp-ref } Spearphishing Link
+
+SANS ISC 記錄持續一年的日文釣魚活動：
+
+**攻擊特徵**：
+- **目標**：日文使用者，冒充 ANA（全日空航空）、DHL、myTOKYOGAS
+- **技術指標**：所有郵件使用 `.cn` 頂級域名
+- **X-mailer 簽章**：`Foxmail 6, 13, 102, 15 [cn]`（所有郵件相同）
+- **時區偏移**：+0800
+
+**IOC 範例**：
+- **發送域名**：ncqjw[.]cn、obpwnrl[.]cn、cwqfvzp[.]cn
+- **釣魚 URL**：branchiish.aayjlc[.]cn、decideosity.ykdyrkye[.]cn
+
+**評估**：雖然容易被垃圾郵件過濾器攔截，但持續一年的活動顯示攻擊者仍有足夠的成功率維持運作。
+
 ---
 
 ## 2. 漏洞趨勢分析
@@ -211,12 +334,18 @@ JPCERT/CC 報告 React Server Components (RSC) 存在嚴重 RCE 漏洞：
 
 | CVE | 產品 | CVSS | 類型 | 狀態 |
 |-----|------|------|------|------|
+| CVE-2026-1281 | Ivanti EPMM | Critical | RCE（零日） | 活躍利用 |
+| CVE-2026-1340 | Ivanti EPMM | Critical | RCE（零日） | 活躍利用 |
 | CVE-2025-49113 | RoundCube Webmail | Critical | 反序列化 RCE | KEV 活躍利用 |
 | CVE-2025-68461 | RoundCube Webmail | High | XSS | KEV 活躍利用 |
 | CVE-2026-1731 | BeyondTrust RS/PRA | Critical | OS Command Injection | KEV + 勒索軟體 |
 | CVE-2026-22769 | Dell RP4VMs | Critical | 硬編碼憑證 | KEV + UNC6201 |
 | CVE-2026-2441 | Google Chromium | Critical | Use-After-Free | KEV 活躍利用 |
 | CVE-2025-55182 | React Server Components | Critical | RCE | 多威脅行為者利用 |
+| CVE-2025-65717 | VSCode Live Server | Critical | 本地檔案竊取 | 新揭露 |
+| CVE-2025-65715 | VSCode Code Runner | High | RCE | 新揭露 |
+| CVE-2024-7694 | TeamT5 ThreatSonar | Critical | 任意檔案上傳 | KEV 活躍利用 |
+| CVE-2021-22175 | GitLab | High | SSRF | KEV 活躍利用 |
 | CVE-2026-1221 | BROWAN PrismX MX100 | 9.8 | 硬編碼憑證 | PoC 可用 |
 | CVE-2025-15240 | 廣達 QOCA aim | 8.8 | 任意檔案上傳 | 修補可用 |
 
@@ -267,6 +396,8 @@ JPCERT/CC 報告 React Server Components (RSC) 存在嚴重 RCE 漏洞：
 | CVE-2025-68461 | RoundCube Webmail | 2026-02-20 | 2026-03-13 | 否 |
 | CVE-2026-22769 | Dell RP4VMs | 2026-02-18 | 2026-02-21 | 否 |
 | CVE-2026-2441 | Google Chromium | 2026-02-17 | 2026-03-10 | 否 |
+| CVE-2024-7694 | TeamT5 ThreatSonar | 2026-02-17 | - | 否 |
+| CVE-2021-22175 | GitLab | 2026-02-18 | - | 否 |
 | CVE-2026-1731 | BeyondTrust | 2026-02-13 | 2026-02-16 | **是** |
 
 ### 3.2 新公開 PoC/Exploit（Exploit-DB）
@@ -314,8 +445,22 @@ JPCERT/CC 報告 React Server Components (RSC) 存在嚴重 RCE 漏洞：
 
 ### 4.3 威脅情報饋送趨勢
 
+**W09 惡意 URL 統計**（abuse.ch URLhaus）：
+本週偵測 **3,687 筆**惡意 URL，主要惡意軟體家族分布：
+
+| 家族 | 數量 | 佔比 | 說明 |
+|------|------|------|------|
+| 未歸類 | 819 | 22% | 尚未識別的惡意 URL |
+| Mozi | 305 | 8% | IoT 殭屍網路，利用已知漏洞感染 |
+| ClearFake | 117 | 3% | 偽造瀏覽器更新頁面分發惡意軟體 |
+| Mirai | 57 | 2% | IoT 殭屍網路變種，持續活躍 |
+| ua-wget | 27 | <1% | 下載器類型惡意軟體 |
+| ascii | 13 | <1% | - |
+| Hajime | 8 | <1% | IoT 殭屍網路 |
+
 **惡意軟體家族活躍度**（abuse.ch ThreatFox/MalwareBazaar）：
-- **Mirai 變種**：持續主導，IoT 設備為主要目標
+- **Mozi + Mirai**：IoT 殭屍網路持續主導，本週合計 362 筆
+- **ClearFake**：偽造更新釣魚持續增加，117 筆活躍 URL
 - **RemcosRAT**：多筆樣本偵測（2026-02-16）
 - **Stealer 家族**：Stealc、Lumma Stealer、Fickle Stealer 持續活躍
 - **Cobalt Strike**：C2 指標持續偵測
@@ -396,6 +541,10 @@ BeyondTrust RS/PRA 與 Dell RP4VMs 事件顯示：
 ### 威脅情報
 - [Google Cloud Threat Intelligence - UNC6201](https://cloud.google.com/blog/topics/threat-intelligence/unc6201-exploiting-dell-recoverpoint-zero-day)
 - [JPCERT/CC React2Shell Blog](https://blogs.jpcert.or.jp/en/2026/02/multiple-threat-actors-rapidly-exploit-react2shell-a-case-study-of-active-compromise.html)
+- [Unit 42 - Ivanti EPMM Zero-Day Exploitation](https://unit42.paloaltonetworks.com/ivanti-cve-2026-1281-cve-2026-1340/)
+- [SANS ISC - DynoWiper Analysis](https://isc.sans.edu/diary/rss/32730)
+- [SANS ISC - Japanese-Language Phishing Emails](https://isc.sans.edu/diary/rss/32734)
+- [Ox Security - VSCode Extensions Vulnerabilities](https://www.bleepingcomputer.com/news/security/flaws-in-popular-vscode-extensions-expose-developers-to-attacks/)
 
 ### PoC 資料庫
 - [Exploit-DB](https://www.exploit-db.com/)
@@ -411,6 +560,9 @@ BeyondTrust RS/PRA 與 Dell RP4VMs 事件顯示：
 > 1. "活躍利用 漏洞 CVE 2026" → 20 筆
 > 2. "勒索軟體 ransomware 攻擊事件" → 15 筆
 > 3. "遠端程式碼執行 RCE 漏洞利用" → 15 筆
+> 4. "Ivanti EPMM 零日 exploitation" → 5 筆
+> 5. "供應鏈攻擊 supply chain VSCode" → 8 筆
+> 6. "wiper malware 能源 基礎設施" → 12 筆
 >
-> **產出時間**：2026-02-23
-> **資料來源**：CISA KEV、JPCERT/CC、NCSC-FI、TWCERT/CC、Exploit-DB、abuse.ch
+> **產出時間**：2026-02-24
+> **資料來源**：CISA KEV、JPCERT/CC、NCSC-FI、TWCERT/CC、SANS ISC、Unit 42、Ox Security、Exploit-DB、abuse.ch
