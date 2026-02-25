@@ -1,0 +1,29 @@
+# Cyber Weather October 2024
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2025-01-01 |
+| **來源** | NCSC-FI Security Now! |
+| **分類** | attack_incident |
+| **嚴重程度** | 未評估 |
+| **信心水準** | 中 |
+
+## 摘要
+
+Finnish NCSC weekly security review and guidance.
+
+## 事實內容
+
+The number of cyber incident reports received by the NCSC-FI increased in October compared to levels earlier in the autumn. Autumn weather has included occasional rainy clouds and grey spells because of recent email and SMS phishing and scam campaigns targeting Finnish organisations.
+
+## 受影響系統
+
+- General information (no specific systems mentioned)
+
+## 來源連結
+
+- [Cyber Weather October 2024](https://www.kyberturvallisuuskeskus.fi/en/ajankohtaista/kybersaa_10/2024)
+
+---
+> 萃取時間：2026-02-23 20:19 UTC
+> 資料來源：NCSC-FI Security Now! ncsc-fi-secnow

@@ -1,0 +1,24 @@
+# Identification for our electronic services is changing – enabling Suomi.fi Messages suggested during identification
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-01-01 |
+| **來源** | NCSC-FI (Finland) |
+| **分類** | industry_trend |
+| **嚴重程度** | 低 |
+| **信心水準** | 中 |
+
+## 摘要
+The Digital and Population Data Services Agency (DVV) is reforming Suomi.fi e-Identification. From 12 May 2025 onwards, you may be prompted to enable Suomi.fi Messages when you strongly authenticate y
+
+## 事實內容
+**Weekly Review / Report from NCSC-FI**
+
+The Digital and Population Data Services Agency (DVV) is reforming Suomi.fi e-Identification. From 12 May 2025 onwards, you may be prompted to enable Suomi.fi Messages when you strongly authenticate yourself in an authority’s electronic service. The change also applies to Traficom’s e-services.
+
+## 來源連結
+- [Identification for our electronic services is changing – enabling Suomi.fi Messages suggested during identification](https://traficom.fi/en/news/identification-our-electronic-services-changing-enabling-suomifi-messages-suggested-during)
+
+---
+> 萃取時間：2026-02-24 UTC
+> 資料來源：NCSC-FI (Finland) ncsc-fi
