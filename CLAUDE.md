@@ -54,7 +54,19 @@ done
 對每個 Layer 依序執行：
 
 1. **fetch** — 執行 `core/Extractor/Layers/{layer_name}/fetch.sh` 下載原始資料
-2. **萃取（混合策略：受控平行 + 失敗重試）** — 讀取該 Layer 的 `CLAUDE.md` 和 `core/Extractor/CLAUDE.md`，再對 `docs/Extractor/{layer_name}/raw/` 目錄中的 JSONL 處理：
+2. **萃取前準備（必要）** — 建立已存在檔案索引，避免重複產生檔案：
+   1. 掃描 `docs/Extractor/{layer_name}/` 下所有 `.md` 檔案（排除 `raw/` 和 `index.md`）
+   2. 提取每個檔案的 CVE/識別符（從檔名解析）
+   3. 建立索引 JSON，格式如下：
+      ```json
+      {
+        "by_cve": { "CVE-2026-22769": "active_exploitation/2026-CVE-2026-22769.md" },
+        "by_filename": { "2026-CVE-2026-22769.md": "active_exploitation/2026-CVE-2026-22769.md" }
+      }
+      ```
+   4. **將索引內容傳入每個萃取 Task 的 prompt**
+   > **工具**：使用 `lib/filename.sh` 的 `filename_build_index` 函數
+3. **萃取（混合策略：受控平行 + 失敗重試）** — 讀取該 Layer 的 `CLAUDE.md` 和 `core/Extractor/CLAUDE.md`，再對 `docs/Extractor/{layer_name}/raw/` 目錄中的 JSONL 處理：
    1. 用 `wc -l < {jsonl_file}` 取得總行數，計算批次數量
    2. 用 `sed -n '{start},{end}p' {jsonl_file}` 批次讀取（每批 10-20 行）
    3. **受控平行執行**（詳見「背景執行模式」）：
@@ -64,9 +76,10 @@ done
    4. **失敗重試**：所有背景 Task 完成後，主執行緒同步處理失敗的批次
    5. 萃取 Task 依各 Layer CLAUDE.md 的網頁內容補充規則，決定是否用 MCP fetch_url 抓取原始公告頁面補充資料
    6. 每個 Task 產出 `.md` 檔到 `docs/Extractor/{layer_name}/` 對應的 category 子目錄
+   7. **萃取 Task 必須檢查索引**：若 CVE/識別符已存在，輸出「SKIP: {CVE} 已存在於 {路徑}」並跳過
    > **⛔ 禁止**：不可使用 Read 工具直接讀取 `.jsonl` 檔案（檔案過大會超出 token 上限）。JSONL 檔案一律透過 Bash `sed` 批次讀取。
    > **⚡ 並行規則**：最多 5 個背景 Task，失敗項目由主執行緒同步重試。
-3. **update** — 將步驟 2 產出的 `.md` 檔案路徑作為參數，執行 `core/Extractor/Layers/{layer_name}/update.sh {md_files...}` 寫入 Qdrant 並檢查 REVIEW_NEEDED
+4. **update** — 將步驟 3 產出的 `.md` 檔案路徑作為參數，執行 `core/Extractor/Layers/{layer_name}/update.sh {md_files...}` 寫入 Qdrant 並檢查 REVIEW_NEEDED
 
 #### 步驟二必須輸出（CHECKPOINT-2A/2B/2C）
 
@@ -86,6 +99,9 @@ done
 ```
 [CHECKPOINT-2B] {layer_name} 萃取完成
 - 讀取 CLAUDE.md: ✓
+- 索引建立: ✓
+  - 已存在 CVE: {N} 個
+  - 已存在檔案: {N} 個
 - 總行數: {N}
 - 批次數量: {N}（每批約 15 行）
 - 並行 Task 數: {≤5}
@@ -94,11 +110,12 @@ done
   - running: {N}
   - completed: {N}
   - failed: {N}
+  - skipped（已存在）: {N}
 - 失敗重試: {N} 筆
 - 最終失敗: {N} 筆
 - 產出檔案統計:
-  - {category_1}: {N} 個
-  - {category_2}: {N} 個
+  - {category_1}: {N} 個（新增）
+  - {category_2}: {N} 個（新增）
   - ...
 - 狀態: PASS / PARTIAL / FAIL
 ```

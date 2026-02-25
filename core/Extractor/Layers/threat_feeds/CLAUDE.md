@@ -89,8 +89,32 @@
 每筆 IoC 輸出為一個 Markdown 檔案，存放於：
 
 ```
-docs/Extractor/threat_feeds/{category}/{YYYY}-{描述}.md
+docs/Extractor/threat_feeds/{category}/{YYYY}-{唯一識別符}.md
 ```
+
+#### 檔名生成規則（嚴格優先順序）
+
+1. **有雜湊值（malware_sample）**：`{日期}-{hash_sha256前16位}.md`
+   - 範例：`2026-02-15-a1b2c3d4e5f67890.md`
+   - 使用 SHA256 的前 16 位作為唯一識別符
+
+2. **有 URL/Domain（malicious_url）**：`{日期}-{標準化domain}.md`
+   - 範例：`2026-02-15-evil-example-com.md`
+   - 將 `.` 替換為 `-`，移除 TLD 後的路徑
+
+3. **有 IP（c2_infrastructure）**：`{日期}-{ip格式化}.md`
+   - 範例：`2026-02-15-192-168-1-1.md`
+   - 將 `.` 替換為 `-`
+
+4. **其他（ioc_indicator）**：`{日期}-{來源}-{標準化slug}.md`
+   - 範例：`2026-02-15-threatfox-emotet-c2.md`
+   - slug 標準化規則：全小寫、特殊字元轉 `-`
+
+5. **重複處理**：若檔案已存在（透過索引檢查）
+   - 若相同 IoC 已存在 → **跳過**，輸出「SKIP: {IoC} 已存在於 {路徑}」
+   - 若為同一 IoC 的狀態更新 → 更新現有檔案而非新增
+
+> **強制規則**：萃取 Task 必須先檢查傳入的索引，避免產生重複檔案。IoC 的唯一性由其指標值決定。
 
 檔案格式：
 
@@ -139,6 +163,8 @@ docs/Extractor/threat_feeds/{category}/{YYYY}-{描述}.md
 - [ ] IoC 指標值是否完整正確？
 - [ ] 狀態（online/offline）是否如實記錄？
 - [ ] 分類是否準確？（符合分類規則表）
+- [ ] **檔名是否符合標準化規則？**（使用 hash/domain/IP 作為唯一識別符）
+- [ ] **是否已檢查索引確認無重複？**（跳過已存在的相同 IoC）
 - [ ] 不確定的部分是否有標註？
 - [ ] source 欄位是否正確對應來源對照表？
 
