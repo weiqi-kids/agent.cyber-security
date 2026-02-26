@@ -400,6 +400,326 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-26-wireshark-md",
+    "title": "Multiples vulnérabilités dans Wireshark",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-wireshark.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-vmware-products-md",
+    "title": "Multiples vulnérabilités dans les produits VMware",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-vmware-products.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-spip-md",
+    "title": "Multiples vulnérabilités dans SPIP",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-spip.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-postgresql-md",
+    "title": "Vulnérabilité dans PostgreSQL",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-postgresql.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-microsoft-products-md",
+    "title": "Multiples vulnérabilités dans les produits Microsoft",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-microsoft-products.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-juniper-junos-os-evolved-md",
+    "title": "Vulnérabilité dans Juniper Networks Junos OS Evolved",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-juniper-junos-os-evolved.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-cisco-products-md",
+    "title": "Multiples vulnérabilités dans les produits Cisco",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-cisco-products.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-centreon-products-md",
+    "title": "Multiples vulnérabilités dans les produits Centreon",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-centreon-products.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-CVE-2026-20127-cisco-sd-wan-zero-day-md",
+    "title": "Kritisk nolldagssårbarhet i Cisco Catalyst SD-WAN",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-CVE-2026-20127-cisco-sd-wan-zero-day.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-CVE-2026-20127-cisco-active-exploitation-md",
+    "title": "ALERTĂ: Vulnerabilitate critică exploatată activ în Cisco",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-CVE-2026-20127-cisco-active-exploitation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-CVE-2025-13942-zyxel-md",
+    "title": "ALERTĂ: Vulnerabilitate critică identificată în mai multe echipamente Zyxel",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-CVE-2025-13942-zyxel.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-vmware-products-vulnerabilities-2-md",
+    "title": "Multiple Vulnerabilities in VMware Products (February 25, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-vmware-products-vulnerabilities-2.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-trend-micro-products-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in Trend Micro Products (February 25, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-trend-micro-products-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-synology-products-vulnerability-md",
+    "title": "Vulnerability in Synology Products (February 25, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-synology-products-vulnerability.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-solarwinds-serv-u-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in SolarWinds Serv-U (February 25, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-solarwinds-serv-u-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-mozilla-products-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in Mozilla Products (February 25, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-mozilla-products-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-gitlab-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in GitLab (February 25, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-gitlab-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-cisco-catalyst-sd-wan-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in Cisco Catalyst SD-WAN (February 25, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-cisco-catalyst-sd-wan-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-cisa-kev-cisco-sd-wan-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-cisa-kev-cisco-sd-wan.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-vmware-products-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in VMware Products (February 24, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-vmware-products-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-vmware-multiple-vulnerabilities-md",
+    "title": "ALERTĂ: Vulnerabilități identificate la nivelul VMWare",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-vmware-multiple-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-sonicwall-products-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in SonicWall Products (February 24, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-sonicwall-products-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-schneider-ecostruxure-building-md",
+    "title": "Schneider Electric EcoStruxure Building Operation Workstation Vulnerabilities",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-schneider-ecostruxure-building.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-open-redirects-forgotten-vulnerability-md",
+    "title": "漏洞範例",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-open-redirects-forgotten-vulnerability.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-microsoft-azure-linux-vulnerability-md",
+    "title": "Vulnerability in Microsoft Azure Linux (February 24, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-microsoft-azure-linux-vulnerability.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-mattermost-server-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in Mattermost Server (February 24, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-mattermost-server-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-insat-masterscada-rce-md",
+    "title": "InSAT MasterSCADA BUK-TS Remote Code Execution Vulnerabilities",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-insat-masterscada-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-google-chrome-vulnerabilities-md",
+    "title": "Multiple Vulnerabilities in Google Chrome (February 24, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-google-chrome-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-gardyn-home-kit-md",
+    "title": "Gardyn Home Kit Vulnerabilities",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-gardyn-home-kit.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-cisa-spyware-messaging-apps-warning-md",
+    "title": "",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-cisa-spyware-messaging-apps-warning.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-cisa-kev-soliton-filezen-md",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-cisa-kev-soliton-filezen.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-centreon-open-tickets-vulnerability-md",
+    "title": "Vulnerability in Centreon Open Tickets (February 24, 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-centreon-open-tickets-vulnerability.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-23-multiples-vulnérabilités-dans-microsoft-edge-23-février-2026-md",
     "title": "Multiples vulnérabilités dans Microsoft Edge (23 février 2026)",
     "category": "vulnerability_disclosure",
@@ -425,6 +745,46 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-20-vulnérabilité-dans-traefik-20-février-2026.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-20-ubuntu-linux-kernel-md",
+    "title": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (20 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-20-ubuntu-linux-kernel.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-20-traefik-bypass-md",
+    "title": "Vulnérabilité dans Traefik (20 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-20-traefik-bypass.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-20-suse-linux-kernel-md",
+    "title": "Multiples vulnérabilités dans le noyau Linux de SUSE (20 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-20-suse-linux-kernel.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-20-redhat-linux-kernel-md",
+    "title": "Multiples vulnérabilités dans le noyau Linux de Red Hat (20 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-20-redhat-linux-kernel.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -480,6 +840,46 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-20-ibm-vulnerabilities-md",
+    "title": "Multiples vulnérabilités dans les produits IBM (20 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-20-ibm-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-20-debian-linux-kernel-md",
+    "title": "Multiples vulnérabilités dans le noyau Linux de Debian (20 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-20-debian-linux-kernel.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-20-cisa-kev-roundcube-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-20-cisa-kev-roundcube.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-welker-odoreyes-xl4-md",
+    "title": "Welker OdorEyes EcoSystem Pulse Bypass System with XL4 Controller Vulnerabilities",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-welker-odoreyes-xl4.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-19-vulnérabilité-dans-f5-big-ip-19-février-2026-md",
     "title": "Vulnérabilité dans F5 BIG-IP (19 février 2026)",
     "category": "vulnerability_disclosure",
@@ -495,6 +895,46 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-19-vscode-extensions-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-valmet-dna-engineering-md",
+    "title": "Valmet DNA Engineering Web Tools Vulnerabilities",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-valmet-dna-engineering.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-usr-w610-iot-md",
+    "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 Vulnerabilities",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-usr-w610-iot.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-tenable-security-center-md",
+    "title": "Multiples vulnérabilités dans Tenable Security Center (19 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-tenable-security-center.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-splunk-vulnerabilities-md",
+    "title": "Multiples vulnérabilités dans les produits Splunk (19 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-splunk-vulnerabilities.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -540,6 +980,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-19-microsoft-edge-vulnerabilities-2-md",
+    "title": "Multiples vulnérabilités dans Microsoft Edge (19 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-microsoft-edge-vulnerabilities-2.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-19-ivanti-epmm-zero-days-md",
     "title": "Critical Zero-Day Vulnerabilities in Ivanti EPMM Actively Exploited (CVE-2026-1281, CVE-2026-1340)",
     "category": "vulnerability_disclosure",
@@ -555,6 +1005,46 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-19-honeywell-cctv-auth-bypass.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-google-chrome-vulnerabilities-md",
+    "title": "Multiples vulnérabilités dans Google Chrome (19 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-google-chrome-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-f5-bigip-dos-md",
+    "title": "Vulnérabilité dans F5 BIG-IP (19 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-f5-bigip-dos.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-enocean-smartserver-iot-md",
+    "title": "EnOcean SmartServer IoT Vulnerabilities",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-enocean-smartserver-iot.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-dell-recoverpoint-cvss-10-md",
+    "title": "Kritisk sårbarhet i Dell RecoverPoint for Virtual Machines",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-dell-recoverpoint-cvss-10.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -610,11 +1100,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-19-CVE-2026-1670-honeywell-md",
+    "title": "ALERTĂ: Vulnerabilitate critică la nivelul unor produse Honeywell",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-CVE-2026-1670-honeywell.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-19-CVE-2025-15577-md",
     "title": "Valmet DNA Engineering Web Tools",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-19-CVE-2025-15577.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-18-windows-privilege-escalation-md",
+    "title": "Vulnérabilité dans Microsoft Windows (18 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-18-windows-privilege-escalation.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -660,6 +1170,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-18-spip-vulnerabilities-md",
+    "title": "Multiples vulnérabilités dans SPIP (18 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-18-spip-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-18-multiples-vulnérabilités-dans-tenable-security-center-18-février-2026-md",
     "title": "Multiples vulnérabilités dans Tenable Security Center (18 février 2026)",
     "category": "vulnerability_disclosure",
@@ -685,6 +1205,46 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-18-multiples-vulnérabilités-dans-atlassian-confluence-18-février-2026.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-18-microsoft-edge-vulnerabilities-md",
+    "title": "Multiples vulnérabilités dans Microsoft Edge (18 février 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-18-microsoft-edge-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-18-cisa-kev-gitlab-dell-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-18-cisa-kev-gitlab-dell.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-18-chrome-cve-2026-2441-md",
+    "title": "Chrome Zero-Day Vulnerability CVE-2026-2441",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-18-chrome-cve-2026-2441.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-18-CVE-2026-22769-dell-recoverpoint-md",
+    "title": "ALERTĂ: Vulnerabilitate critică identificată la nivelul Dell RecoverPoint for Virtual Machines",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-18-CVE-2026-22769-dell-recoverpoint.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -745,6 +1305,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-17-CVE-2026-23718-and-others.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-17-CVE-2026-23715-CVE-2026-23716-md",
+    "title": "Siemens Simcenter Femap and Nastran",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-17-CVE-2026-23715-CVE-2026-23716.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1180,11 +1750,41 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-12-CVE-2024-11053-CVE-2024-47875-md",
+    "title": "Siemens COMOS",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-12-CVE-2024-11053-CVE-2024-47875.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-12-CVE-2023-38545-md",
     "title": "Siemens Desigo CC Product Family and SENTRON Powermanager",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-12-CVE-2023-38545.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-12-CVE-2022-48174-CVE-2023-39810-md",
+    "title": "Siemens SINEC OS",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-12-CVE-2022-48174-CVE-2023-39810.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-11-patch-tuesday-february-2026-md",
+    "title": "Patchtisdag februari 2026 – samlad information om månadens säkerhetsuppdateringar",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-11-patch-tuesday-february-2026.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1205,6 +1805,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-10-zlan-5143d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-10-microsofts-patchetirsdag-februar-md",
+    "title": "",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-10-microsofts-patchetirsdag-februar.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -3020,6 +3630,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2026-02-24-etsi-en-304-223-ai-security-standard-md",
+    "title": "",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-02-24-etsi-en-304-223-ai-security-standard.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2026-02-20-ukraine-romania-moldova-cyber-alliance-md",
+    "title": "COMUNICAT DE PRESĂ: Trei state – un vector strategic: Ucraina, România și Republica Moldova înființează Alianța Cibernetică pentru Reziliență Regională",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-02-20-ukraine-romania-moldova-cyber-alliance.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2026-02-18-CVE-2021-22175-CVE-2026-22769-md",
     "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
     "category": "policy_regulation",
@@ -3035,6 +3665,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2026-02-17-CVE-2020-7796-and-others.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2026-02-13-sweden-ukraine-cyber-cooperation-md",
+    "title": "CERT-SE:s veckobrev v.7",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-02-13-sweden-ukraine-cyber-cooperation.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -4690,11 +5330,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "other-2026-02-23-isc-stormcast-monday-md",
+    "title": "ISC Stormcast For Monday, February 23rd, 2026",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-02-23-isc-stormcast-monday.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "other-2026-02-20-nový-evropský-projekt-qarc-zajistí-kvantově-odolnou-bezpečnost-dat-md",
     "title": "Nový evropský projekt QARC zajistí kvantově odolnou bezpečnost dat",
     "category": "other",
     "date": "",
     "file": "other/2026-02-20-nový-evropský-projekt-qarc-zajistí-kvantově-odolnou-bezpečnost-dat.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "other-2026-02-20-isc-stormcast-friday-md",
+    "title": "ISC Stormcast For Friday, February 20th, 2026",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-02-20-isc-stormcast-friday.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -10550,6 +11210,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-02-26-dnsc-cybersecurity-education-webinar-md",
+    "title": "WEBINAR: „Securitate cibernetică în educație - competențe, explorare și oportunități academice\"",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-26-dnsc-cybersecurity-education-webinar.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-25-clair-model-critical-infrastructure-interdependencies-md",
+    "title": "",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-25-clair-model-critical-infrastructure-interdependencies.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-02-24-open-redirects-forgotten-vulnerability-md",
     "title": "Open Redirects: A Forgotten Vulnerability?",
     "category": "industry_trend",
@@ -10570,11 +11250,41 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-02-24-finding-signal-in-noise-honeypot-ai-md",
+    "title": "",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-24-finding-signal-in-noise-honeypot-ai.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-02-23-isc-stormcast-md",
     "title": "ISC Stormcast For Monday, February 23rd, 2026",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-02-23-isc-stormcast.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-23-certfr-weekly-bulletin-md",
+    "title": "Bulletin d'actualité CERTFR-2026-ACT-008 (23 février 2026)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-23-certfr-weekly-bulletin.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-20-novy-evropsky-projekt-qarc-md",
+    "title": "",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-20-novy-evropsky-projekt-qarc.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -10595,6 +11305,26 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-02-20-isc-stormcast-for-friday-february-20th-2026-httpsi.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-20-dnsc-cybersecurity-skills-project-announcement-md",
+    "title": "ANUNȚ PRIVIND LANSAREA APELULUI DE SELECȚIE a categoriei de beneficiari instituții publice în cadrul proiectului „CREAREA DE NOI COMPETENȚE DE SECURITATE CIBERNETICĂ PENTRU SOCIETATE ȘI ECONOMIE\"",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-20-dnsc-cybersecurity-skills-project-announcement.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-20-cert-se-weekly-v8-md",
+    "title": "CERT-SE:s veckobrev v.8",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-20-cert-se-weekly-v8.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -10630,6 +11360,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-02-19-cert-ro-weekly-news-md",
+    "title": "Știrile săptămânii din cybersecurity (19.02.2026)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-19-cert-ro-weekly-news.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-02-18-isc-stormcast-md",
     "title": "ISC Stormcast For Wednesday, February 18th, 2026",
     "category": "industry_trend",
@@ -10650,11 +11390,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-02-18-brasov-online-fraud-campaign-md",
+    "title": "COMUNICAT DE PRESĂ: Peste 500 de persoane din Brașov și-au testat cunoștințele despre fraudele online în cadrul campaniei naționale #SigurantaOnline",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-18-brasov-online-fraud-campaign.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-02-17-isc-stormcast-for-tuesday-february-17th-2026-https-md",
     "title": "ISC Stormcast For Tuesday, February 17th, 2026 https://isc.sans.edu/podcastdetail/9812, (Tue, Feb 17th)",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-02-17-isc-stormcast-for-tuesday-february-17th-2026-https.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-16-latvia-cert-q4-2025-review-md",
+    "title": "CERT.LV Activity Review Q4 2025: High Cyber Threat Level Continues",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-16-latvia-cert-q4-2025-review.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -10675,6 +11435,26 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-02-16-cert-lv-q4-2025-activity-review.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-12-hackultet-2026-open-md",
+    "title": "Hackultet 2026 CTF Competition Registration Open",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-12-hackultet-2026-open.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-11-safer-internet-day-croatia-md",
+    "title": "Safer Internet Day Conference: Institutions and Children Discuss Digital Safety",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-11-safer-internet-day-croatia.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -10705,6 +11485,56 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-02-09-nukib-january-2026-incident-trends.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-09-misp-training-md",
+    "title": "MISP Training 2026",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-09-misp-training.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-09-concert-conference-zagreb-md",
+    "title": "Third ConCERT Cybersecurity Conference Held in Zagreb",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-09-concert-conference-zagreb.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-06-cert-se-weekly-newsletter-md",
+    "title": "CERT-SE Weekly Newsletter v.6",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-06-cert-se-weekly-newsletter.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-05-reditel-nukib-diskutoval-v-bruselu-md",
+    "title": "",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-05-reditel-nukib-diskutoval-v-bruselu.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-05-croatia-cert-annual-report-2025-md",
+    "title": "Croatia National CERT Annual Report 2025: 35.9% Increase in Cyber Incidents",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-05-croatia-cert-annual-report-2025.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -17720,6 +18550,36 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-02-25-cisco-sd-wan-global-exploitation-md",
+    "title": "CISA and Partners Release Guidance for Ongoing Global Exploitation of Cisco SD-WAN Systems",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-25-cisco-sd-wan-global-exploitation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-25-cisco-catalyst-sd-wan-cve-2026-20127-active-exploit-md",
+    "title": "[Alert] Vulnerability in Cisco Catalyst SD-WAN Actively Exploited (CVE-2026-20127)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-25-cisco-catalyst-sd-wan-cve-2026-20127-active-exploit.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-24-notepad-plus-plus-supply-chain-attack-md",
+    "title": "檢查可疑檔案",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-24-notepad-plus-plus-supply-chain-attack.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-02-23-malicious-jpeg-campaign-md",
     "title": "Another day, another malicious JPEG",
     "category": "attack_incident",
@@ -17745,6 +18605,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-02-21-japanese-language-phishing-emails-sat-feb-21st.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-20-croatia-investment-scams-md",
+    "title": "Croatia Under Attack: Investment and Recovery Scams",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-20-croatia-investment-scams.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -17910,6 +18780,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-02-12-CVE-2024-43468-CVE-2025-15556-md",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-12-CVE-2024-43468-CVE-2025-15556.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-02-10-poland-energy-sector-cyber-incident-highlights-ot-and-ics-se-md",
     "title": "Poland Energy Sector Cyber Incident Highlights OT and ICS Security Gaps",
     "category": "attack_incident",
@@ -17950,11 +18830,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-02-09-vydali-jsme-prehled-kybernetickych-incidentu-za-leden-2026-md",
+    "title": "",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-09-vydali-jsme-prehled-kybernetickych-incidentu-za-leden-2026.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-02-05-january-cyber-incidents-md",
     "title": "January Cyber Incidents: Technical Failures Affect Multiple Digital Services",
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-02-05-january-cyber-incidents.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-01-uac-0001-apt28-cve-2026-21509-md",
+    "title": "UAC-0001 (APT28) Cyberattacks Against Ukraine and EU Using CVE-2026-21509 Exploit",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-01-uac-0001-apt28-cve-2026-21509.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -24845,906 +25745,6 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2019-03-14-good-network-performance-and-development-of-iot-security-brought-fair-cyber-weat.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-2026-02-01-uac-0001-apt28-cve-2026-21509-md",
-    "title": "UAC-0001 (APT28) Cyberattacks Against Ukraine and EU Using CVE-2026-21509 Exploit",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/2026-02-01-uac-0001-apt28-cve-2026-21509.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-2026-02-09-vydali-jsme-prehled-kybernetickych-incidentu-za-leden-2026-md",
-    "title": "",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/2026-02-09-vydali-jsme-prehled-kybernetickych-incidentu-za-leden-2026.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-2026-02-12-CVE-2024-43468-CVE-2025-15556-md",
-    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/2026-02-12-CVE-2024-43468-CVE-2025-15556.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-2026-02-20-croatia-investment-scams-md",
-    "title": "Croatia Under Attack: Investment and Recovery Scams",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/2026-02-20-croatia-investment-scams.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-2026-02-24-notepad-plus-plus-supply-chain-attack-md",
-    "title": "檢查可疑檔案",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/2026-02-24-notepad-plus-plus-supply-chain-attack.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-2026-02-25-cisco-catalyst-sd-wan-cve-2026-20127-active-exploit-md",
-    "title": "[Alert] Vulnerability in Cisco Catalyst SD-WAN Actively Exploited (CVE-2026-20127)",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/2026-02-25-cisco-catalyst-sd-wan-cve-2026-20127-active-exploit.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-2026-02-25-cisco-sd-wan-global-exploitation-md",
-    "title": "CISA and Partners Release Guidance for Ongoing Global Exploitation of Cisco SD-WAN Systems",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/2026-02-25-cisco-sd-wan-global-exploitation.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-05-croatia-cert-annual-report-2025-md",
-    "title": "Croatia National CERT Annual Report 2025: 35.9% Increase in Cyber Incidents",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-05-croatia-cert-annual-report-2025.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-05-reditel-nukib-diskutoval-v-bruselu-md",
-    "title": "",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-05-reditel-nukib-diskutoval-v-bruselu.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-06-cert-se-weekly-newsletter-md",
-    "title": "CERT-SE Weekly Newsletter v.6",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-06-cert-se-weekly-newsletter.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-09-concert-conference-zagreb-md",
-    "title": "Third ConCERT Cybersecurity Conference Held in Zagreb",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-09-concert-conference-zagreb.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-09-misp-training-md",
-    "title": "MISP Training 2026",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-09-misp-training.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-11-safer-internet-day-croatia-md",
-    "title": "Safer Internet Day Conference: Institutions and Children Discuss Digital Safety",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-11-safer-internet-day-croatia.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-12-hackultet-2026-open-md",
-    "title": "Hackultet 2026 CTF Competition Registration Open",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-12-hackultet-2026-open.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-16-latvia-cert-q4-2025-review-md",
-    "title": "CERT.LV Activity Review Q4 2025: High Cyber Threat Level Continues",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-16-latvia-cert-q4-2025-review.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-18-brasov-online-fraud-campaign-md",
-    "title": "COMUNICAT DE PRESĂ: Peste 500 de persoane din Brașov și-au testat cunoștințele despre fraudele online în cadrul campaniei naționale #SigurantaOnline",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-18-brasov-online-fraud-campaign.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-19-cert-ro-weekly-news-md",
-    "title": "Știrile săptămânii din cybersecurity (19.02.2026)",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-19-cert-ro-weekly-news.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-20-cert-se-weekly-v8-md",
-    "title": "CERT-SE:s veckobrev v.8",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-20-cert-se-weekly-v8.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-20-dnsc-cybersecurity-skills-project-announcement-md",
-    "title": "ANUNȚ PRIVIND LANSAREA APELULUI DE SELECȚIE a categoriei de beneficiari instituții publice în cadrul proiectului „CREAREA DE NOI COMPETENȚE DE SECURITATE CIBERNETICĂ PENTRU SOCIETATE ȘI ECONOMIE\"",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-20-dnsc-cybersecurity-skills-project-announcement.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-20-novy-evropsky-projekt-qarc-md",
-    "title": "",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-20-novy-evropsky-projekt-qarc.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-23-certfr-weekly-bulletin-md",
-    "title": "Bulletin d'actualité CERTFR-2026-ACT-008 (23 février 2026)",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-23-certfr-weekly-bulletin.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-24-finding-signal-in-noise-honeypot-ai-md",
-    "title": "",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-24-finding-signal-in-noise-honeypot-ai.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-25-clair-model-critical-infrastructure-interdependencies-md",
-    "title": "",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-25-clair-model-critical-infrastructure-interdependencies.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-2026-02-26-dnsc-cybersecurity-education-webinar-md",
-    "title": "WEBINAR: „Securitate cibernetică în educație - competențe, explorare și oportunități academice\"",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/2026-02-26-dnsc-cybersecurity-education-webinar.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "other-2026-02-20-isc-stormcast-friday-md",
-    "title": "ISC Stormcast For Friday, February 20th, 2026",
-    "category": "other",
-    "date": "",
-    "file": "other/2026-02-20-isc-stormcast-friday.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "other-2026-02-23-isc-stormcast-monday-md",
-    "title": "ISC Stormcast For Monday, February 23rd, 2026",
-    "category": "other",
-    "date": "",
-    "file": "other/2026-02-23-isc-stormcast-monday.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "policy_regulation-2026-02-13-sweden-ukraine-cyber-cooperation-md",
-    "title": "CERT-SE:s veckobrev v.7",
-    "category": "policy_regulation",
-    "date": "",
-    "file": "policy_regulation/2026-02-13-sweden-ukraine-cyber-cooperation.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "policy_regulation-2026-02-20-ukraine-romania-moldova-cyber-alliance-md",
-    "title": "COMUNICAT DE PRESĂ: Trei state – un vector strategic: Ucraina, România și Republica Moldova înființează Alianța Cibernetică pentru Reziliență Regională",
-    "category": "policy_regulation",
-    "date": "",
-    "file": "policy_regulation/2026-02-20-ukraine-romania-moldova-cyber-alliance.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "policy_regulation-2026-02-24-etsi-en-304-223-ai-security-standard-md",
-    "title": "",
-    "category": "policy_regulation",
-    "date": "",
-    "file": "policy_regulation/2026-02-24-etsi-en-304-223-ai-security-standard.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-10-microsofts-patchetirsdag-februar-md",
-    "title": "",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-10-microsofts-patchetirsdag-februar.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-11-patch-tuesday-february-2026-md",
-    "title": "Patchtisdag februari 2026 – samlad information om månadens säkerhetsuppdateringar",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-11-patch-tuesday-february-2026.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-12-CVE-2022-48174-CVE-2023-39810-md",
-    "title": "Siemens SINEC OS",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-12-CVE-2022-48174-CVE-2023-39810.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-12-CVE-2024-11053-CVE-2024-47875-md",
-    "title": "Siemens COMOS",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-12-CVE-2024-11053-CVE-2024-47875.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-17-CVE-2026-23715-CVE-2026-23716-md",
-    "title": "Siemens Simcenter Femap and Nastran",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-17-CVE-2026-23715-CVE-2026-23716.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-18-CVE-2026-22769-dell-recoverpoint-md",
-    "title": "ALERTĂ: Vulnerabilitate critică identificată la nivelul Dell RecoverPoint for Virtual Machines",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-18-CVE-2026-22769-dell-recoverpoint.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-18-chrome-cve-2026-2441-md",
-    "title": "Chrome Zero-Day Vulnerability CVE-2026-2441",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-18-chrome-cve-2026-2441.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-18-cisa-kev-gitlab-dell-md",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-18-cisa-kev-gitlab-dell.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-18-microsoft-edge-vulnerabilities-md",
-    "title": "Multiples vulnérabilités dans Microsoft Edge (18 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-18-microsoft-edge-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-18-spip-vulnerabilities-md",
-    "title": "Multiples vulnérabilités dans SPIP (18 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-18-spip-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-18-windows-privilege-escalation-md",
-    "title": "Vulnérabilité dans Microsoft Windows (18 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-18-windows-privilege-escalation.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-CVE-2026-1670-honeywell-md",
-    "title": "ALERTĂ: Vulnerabilitate critică la nivelul unor produse Honeywell",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-CVE-2026-1670-honeywell.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-dell-recoverpoint-cvss-10-md",
-    "title": "Kritisk sårbarhet i Dell RecoverPoint for Virtual Machines",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-dell-recoverpoint-cvss-10.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-enocean-smartserver-iot-md",
-    "title": "EnOcean SmartServer IoT Vulnerabilities",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-enocean-smartserver-iot.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-f5-bigip-dos-md",
-    "title": "Vulnérabilité dans F5 BIG-IP (19 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-f5-bigip-dos.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-google-chrome-vulnerabilities-md",
-    "title": "Multiples vulnérabilités dans Google Chrome (19 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-google-chrome-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-microsoft-edge-vulnerabilities-2-md",
-    "title": "Multiples vulnérabilités dans Microsoft Edge (19 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-microsoft-edge-vulnerabilities-2.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-splunk-vulnerabilities-md",
-    "title": "Multiples vulnérabilités dans les produits Splunk (19 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-splunk-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-tenable-security-center-md",
-    "title": "Multiples vulnérabilités dans Tenable Security Center (19 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-tenable-security-center.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-usr-w610-iot-md",
-    "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 Vulnerabilities",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-usr-w610-iot.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-valmet-dna-engineering-md",
-    "title": "Valmet DNA Engineering Web Tools Vulnerabilities",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-valmet-dna-engineering.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-19-welker-odoreyes-xl4-md",
-    "title": "Welker OdorEyes EcoSystem Pulse Bypass System with XL4 Controller Vulnerabilities",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-19-welker-odoreyes-xl4.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-20-cisa-kev-roundcube-md",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-20-cisa-kev-roundcube.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-20-debian-linux-kernel-md",
-    "title": "Multiples vulnérabilités dans le noyau Linux de Debian (20 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-20-debian-linux-kernel.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-20-ibm-vulnerabilities-md",
-    "title": "Multiples vulnérabilités dans les produits IBM (20 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-20-ibm-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-20-redhat-linux-kernel-md",
-    "title": "Multiples vulnérabilités dans le noyau Linux de Red Hat (20 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-20-redhat-linux-kernel.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-20-suse-linux-kernel-md",
-    "title": "Multiples vulnérabilités dans le noyau Linux de SUSE (20 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-20-suse-linux-kernel.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-20-traefik-bypass-md",
-    "title": "Vulnérabilité dans Traefik (20 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-20-traefik-bypass.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-20-ubuntu-linux-kernel-md",
-    "title": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (20 février 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-20-ubuntu-linux-kernel.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-centreon-open-tickets-vulnerability-md",
-    "title": "Vulnerability in Centreon Open Tickets (February 24, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-centreon-open-tickets-vulnerability.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-cisa-kev-soliton-filezen-md",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-cisa-kev-soliton-filezen.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-cisa-spyware-messaging-apps-warning-md",
-    "title": "",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-cisa-spyware-messaging-apps-warning.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-gardyn-home-kit-md",
-    "title": "Gardyn Home Kit Vulnerabilities",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-gardyn-home-kit.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-google-chrome-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in Google Chrome (February 24, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-google-chrome-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-insat-masterscada-rce-md",
-    "title": "InSAT MasterSCADA BUK-TS Remote Code Execution Vulnerabilities",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-insat-masterscada-rce.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-mattermost-server-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in Mattermost Server (February 24, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-mattermost-server-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-microsoft-azure-linux-vulnerability-md",
-    "title": "Vulnerability in Microsoft Azure Linux (February 24, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-microsoft-azure-linux-vulnerability.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-open-redirects-forgotten-vulnerability-md",
-    "title": "漏洞範例",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-open-redirects-forgotten-vulnerability.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-schneider-ecostruxure-building-md",
-    "title": "Schneider Electric EcoStruxure Building Operation Workstation Vulnerabilities",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-schneider-ecostruxure-building.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-sonicwall-products-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in SonicWall Products (February 24, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-sonicwall-products-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-vmware-multiple-vulnerabilities-md",
-    "title": "ALERTĂ: Vulnerabilități identificate la nivelul VMWare",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-vmware-multiple-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-24-vmware-products-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in VMware Products (February 24, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-24-vmware-products-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-25-cisa-kev-cisco-sd-wan-md",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-25-cisa-kev-cisco-sd-wan.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-25-cisco-catalyst-sd-wan-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in Cisco Catalyst SD-WAN (February 25, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-25-cisco-catalyst-sd-wan-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-25-gitlab-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in GitLab (February 25, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-25-gitlab-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-25-mozilla-products-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in Mozilla Products (February 25, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-25-mozilla-products-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-25-solarwinds-serv-u-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in SolarWinds Serv-U (February 25, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-25-solarwinds-serv-u-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-25-synology-products-vulnerability-md",
-    "title": "Vulnerability in Synology Products (February 25, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-25-synology-products-vulnerability.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-25-trend-micro-products-vulnerabilities-md",
-    "title": "Multiple Vulnerabilities in Trend Micro Products (February 25, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-25-trend-micro-products-vulnerabilities.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-25-vmware-products-vulnerabilities-2-md",
-    "title": "Multiple Vulnerabilities in VMware Products (February 25, 2026)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-25-vmware-products-vulnerabilities-2.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-CVE-2025-13942-zyxel-md",
-    "title": "ALERTĂ: Vulnerabilitate critică identificată în mai multe echipamente Zyxel",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-CVE-2025-13942-zyxel.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-CVE-2026-20127-cisco-active-exploitation-md",
-    "title": "ALERTĂ: Vulnerabilitate critică exploatată activ în Cisco",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-CVE-2026-20127-cisco-active-exploitation.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-CVE-2026-20127-cisco-sd-wan-zero-day-md",
-    "title": "Kritisk nolldagssårbarhet i Cisco Catalyst SD-WAN",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-CVE-2026-20127-cisco-sd-wan-zero-day.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-centreon-products-md",
-    "title": "Multiples vulnérabilités dans les produits Centreon",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-centreon-products.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-cisco-products-md",
-    "title": "Multiples vulnérabilités dans les produits Cisco",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-cisco-products.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-juniper-junos-os-evolved-md",
-    "title": "Vulnérabilité dans Juniper Networks Junos OS Evolved",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-juniper-junos-os-evolved.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-microsoft-products-md",
-    "title": "Multiples vulnérabilités dans les produits Microsoft",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-microsoft-products.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-postgresql-md",
-    "title": "Vulnérabilité dans PostgreSQL",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-postgresql.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-spip-md",
-    "title": "Multiples vulnérabilités dans SPIP",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-spip.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-vmware-products-md",
-    "title": "Multiples vulnérabilités dans les produits VMware",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-vmware-products.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-2026-02-26-wireshark-md",
-    "title": "Multiples vulnérabilités dans Wireshark",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/2026-02-26-wireshark.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
