@@ -1,40 +1,44 @@
 ---
 layout: seo-report
 title: 2026 第 09 週威脅態勢分析
-description: "2026-02-19 至 2026-02-25 資安威脅週報：RoundCube 雙漏洞持續活躍利用、Dell RP4VMs CVE-2026-22769 零日漏洞、React2Shell 供應鏈攻擊、波蘭能源 OT/ICS 後續、PUSR USR-W610 多漏洞、Chromium CSS Use-After-Free、JSAC2026 年會、Mirai 殭屍網路活躍。"
+description: "2026-02-20 至 2026-02-26 資安威脅週報：Cisco SD-WAN 緊急指令 ED 26-03、RoundCube 雙漏洞持續活躍利用、Dell RP4VMs CVE-2026-22769 零日漏洞、Soliton FileZen OS 指令注入、React2Shell 供應鏈攻擊、波蘭能源 OT/ICS 後續、BeyondTrust 勒索軟體關聯、Mirai 殭屍網路活躍。"
 parent: 威脅態勢分析
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-02-25
+date: 2026-02-26
 ---
 
 # 威脅態勢分析 — 2026 第 09 週
 
-> 涵蓋期間：2026-02-19 至 2026-02-25
+> 涵蓋期間：2026-02-20 至 2026-02-26
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-02-25
+> 產出時間：2026-02-26
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢延續上週嚴峻趨勢，重點摘要如下：
+本週威脅態勢持續嚴峻，**CISA 發布緊急指令 ED 26-03 針對 Cisco SD-WAN**，重點摘要如下：
+
+**本週重大事件**：
+- **CISA 緊急指令 ED 26-03**：針對 Cisco SD-WAN Controller/Manager 發布緊急指令，同時新增 CVE-2026-20127（身份驗證繞過）與 CVE-2022-20775（路徑遍歷）至 KEV
+- **Soliton FileZen CVE-2026-25108**：OS 指令注入漏洞（2026-02-24 新增 KEV），影響日本廣泛使用的檔案傳輸系統
+- **BeyondTrust CVE-2026-1731**：已確認用於勒索軟體攻擊活動，修補期限 2026-02-16 已過
 
 **持續活躍利用漏洞（上週延續）**：
 - **RoundCube Webmail 雙漏洞持續活躍利用（CVE-2025-49113、CVE-2025-68461）**：反序列化 RCE 與 XSS 漏洞持續遭利用，需立即升級至 1.6.12+/1.5.12+
 - **Dell RP4VMs CVE-2026-22769**：硬編碼憑證漏洞，Google TAG 確認 UNC6201 活躍利用，CISA 修補期限已過（2026-02-21）
-- **Zimbra CVE-2020-7796**：SSRF 漏洞被加入 CISA KEV（2026-02-17），影響 ZCS WebEx zimlet
-- **TeamT5 ThreatSonar CVE-2024-7694**：任意檔案上傳導致 RCE，資安產品漏洞影響嚴重
 - **Chromium CSS Use-After-Free（CVE-2026-2441）**：影響所有 Chromium 瀏覽器，修補期限 2026-03-10
 
-**本週新增 CISA KEV**：
+**本週新增 CISA KEV**（2026-02-20 至 2026-02-26）：
+- **CVE-2026-20127**：Cisco SD-WAN Controller/Manager 身份驗證繞過（2026-02-25）
+- **CVE-2022-20775**：Cisco SD-WAN 路徑遍歷（2026-02-25）
+- **CVE-2026-25108**：Soliton FileZen OS 指令注入（2026-02-24）
 - **CVE-2025-49113、CVE-2025-68461**：RoundCube Webmail（2026-02-20 新增）
 - **CVE-2026-22769**：Dell RP4VMs 硬編碼憑證
-- **CVE-2021-22175**：GitLab SSRF（歷史漏洞再現）
-- **CVE-2008-0015**：Microsoft Windows Video ActiveX（歷史漏洞仍被利用）
 
 **供應鏈與 RCE 威脅**：
 - **React2Shell（CVE-2025-55182）**：JPCERT/CC 報告多個威脅行為者快速武器化此 RCE 漏洞
@@ -63,13 +67,40 @@ date: 2026-02-25
 | exploit_intelligence | **3,200+** | 5,100+ | 利用程式（active_exploitation: 59+, poc_available: 2,344+ 於 2026 年） |
 | threat_feeds | **8,500+** | 40,600+ | 威脅饋送（malware_sample: 4,914+） |
 
-> 統計時間：2026-02-25 UTC
+> 統計時間：2026-02-26 UTC
 
 ---
 
 ## 近期重大資安事件
 
-### 1. RoundCube Webmail 雙漏洞持續遭活躍利用（CVE-2025-49113、CVE-2025-68461）
+### 1. CISA 緊急指令 ED 26-03：Cisco SD-WAN 系統重大威脅
+
+**嚴重程度：Critical | 來源：CISA | 日期：2026-02-25**
+
+**ATT&CK TTP**：
+- [T1190](https://attack.mitre.org/techniques/T1190/){: .ttp-ref } Exploit Public-Facing Application
+- [T1068](https://attack.mitre.org/techniques/T1068/){: .ttp-ref } Exploitation for Privilege Escalation
+
+CISA 發布緊急指令 ED 26-03，要求聯邦機構立即針對 Cisco SD-WAN 系統採取緩解措施。同日新增兩個相關漏洞至 KEV：
+
+**CVE-2026-20127 — 身份驗證繞過漏洞**：
+- **漏洞類型**：Improper Authentication (CWE-287)
+- **影響產品**：Cisco Catalyst SD-WAN Controller（前身 vSmart）、Manager（前身 vManage）
+- **攻擊條件**：未經身份驗證的遠端攻擊
+- **影響**：攻擊者可存取 NETCONF 操縱整個 SD-WAN 網路配置
+- **嚴重程度**：Critical
+
+**CVE-2022-20775 — 路徑遍歷漏洞**：
+- **漏洞類型**：Path Traversal (CWE-25)
+- **攻擊條件**：經身份驗證的本地攻擊
+- **影響**：以 root 權限執行任意命令
+
+**緊急措施**：
+- 立即遵循 CISA 緊急指令 ED 26-03
+- 參閱 CISA「Cisco SD-WAN 設備獵捕與強化指南」
+- 對所有 SD-WAN 設備進行威脅獵捕
+
+### 2. RoundCube Webmail 雙漏洞持續遭活躍利用（CVE-2025-49113、CVE-2025-68461）
 
 **嚴重程度：Critical | 來源：CISA KEV | 日期：2026-02-20 新增**
 
@@ -262,6 +293,10 @@ Synacor Zimbra Collaboration Suite (ZCS) 存在伺服器端請求偽造漏洞：
 
 | CVE ID | 產品 | PoC 狀態 | 利用難度 | 修補期限 |
 |--------|------|----------|----------|----------|
+| **CVE-2026-20127** | Cisco SD-WAN | 未公開 | 低 | **緊急指令** |
+| **CVE-2022-20775** | Cisco SD-WAN | 有 | 中 | **緊急指令** |
+| **CVE-2026-25108** | Soliton FileZen | 未公開 | 中 | TBD |
+| **CVE-2026-1731** | BeyondTrust RS/PRA | 未公開 | 低 | **已過期** |
 | **CVE-2025-49113** | RoundCube Webmail | 未公開 | 中 | TBD |
 | **CVE-2025-68461** | RoundCube Webmail | 未公開 | 低 | TBD |
 | **CVE-2026-22769** | Dell RP4VMs | 未公開 | 低 | **已過期** |
@@ -333,7 +368,7 @@ FortiWeb 是企業級 Web 應用程式防火牆，此漏洞可能導致攻擊者
 
 ## 威脅情報饋送摘要
 
-**來源：abuse.ch | 日期：2026-02-19 至 2026-02-25**
+**來源：abuse.ch | 日期：2026-02-20 至 2026-02-26**
 
 ### 惡意軟體家族分布
 
@@ -362,7 +397,22 @@ FortiWeb 是企業級 Web 應用程式防火牆，此漏洞可能導致攻擊者
 
 ## 新興威脅識別
 
-### 1. 資安產品成為攻擊目標 [信心水準：高]
+### 1. 企業 SD-WAN 基礎設施成為系統性攻擊目標 [信心水準：高]
+
+**威脅描述**：CISA 於 2026-02-25 發布緊急指令 ED 26-03，針對 Cisco SD-WAN 系統，顯示企業廣域網路基礎設施正面臨系統性攻擊威脅。
+
+**證據支持**：
+- CISA 緊急指令為最高等級威脅警告
+- 同日新增兩個相關漏洞（CVE-2026-20127、CVE-2022-20775）至 KEV
+- 發布專門的「獵捕與強化指南」
+
+**影響評估**：
+- SD-WAN 控制企業關鍵網路流量路由
+- 成功攻擊可能導致整個企業網路被操縱
+- 攻擊者可截聽、修改或阻斷流量
+- 對遠端工作及分支機構連線影響重大
+
+### 2. 資安產品成為攻擊目標 [信心水準：高]
 
 **威脅描述**：TeamT5 ThreatSonar Anti-Ransomware（CVE-2024-7694）漏洞顯示，資安產品本身也可能成為攻擊入口。
 
@@ -499,7 +549,11 @@ FortiWeb 是企業級 Web 應用程式防火牆，此漏洞可能導致攻擊者
 
 | CVE | 產品 | CISA 修補期限 | 嚴重程度 | 狀態 |
 |-----|------|---------------|----------|------|
+| **CVE-2026-20127** | Cisco SD-WAN | **緊急指令** | Critical | **立即處理** |
+| **CVE-2022-20775** | Cisco SD-WAN | **緊急指令** | High | **立即處理** |
+| **CVE-2026-1731** | BeyondTrust RS/PRA | **2026-02-16** | Critical | **已過期** |
 | **CVE-2026-22769** | Dell RP4VMs | **2026-02-21** | Critical | **已過期** |
+| **CVE-2026-25108** | Soliton FileZen | TBD | Critical | 緊急 |
 | **CVE-2026-2441** | Chromium CSS | 2026-03-10 | High | 待修補 |
 | CVE-2025-49113 | RoundCube | TBD | Critical | 緊急 |
 | CVE-2025-68461 | RoundCube | TBD | Critical | 緊急 |
@@ -509,10 +563,13 @@ FortiWeb 是企業級 Web 應用程式防火牆，此漏洞可能導致攻擊者
 | CVE-2008-0015 | Windows Video ActiveX | N/A | High | 歷史漏洞 |
 
 **優先修補建議**：
-1. **立即**：CVE-2026-22769（Dell RP4VMs，修補期限已過）
-2. **緊急**：CVE-2025-49113、CVE-2025-68461（RoundCube，活躍利用中）
-3. **優先**：CVE-2026-2441（Chromium，修補期限 2026-03-10）
-4. **計畫中**：其他 CISA KEV 漏洞
+1. **立即**：CVE-2026-20127、CVE-2022-20775（Cisco SD-WAN，CISA 緊急指令 ED 26-03）
+2. **立即**：CVE-2026-1731（BeyondTrust，勒索軟體關聯，修補期限已過）
+3. **立即**：CVE-2026-22769（Dell RP4VMs，修補期限已過）
+4. **緊急**：CVE-2025-49113、CVE-2025-68461（RoundCube，活躍利用中）
+5. **緊急**：CVE-2026-25108（Soliton FileZen，活躍利用中）
+6. **優先**：CVE-2026-2441（Chromium，修補期限 2026-03-10）
+7. **計畫中**：其他 CISA KEV 漏洞
 
 ---
 
@@ -572,9 +629,9 @@ JPCERT/CC 於 2026 年 1 月 21-23 日舉辦 JSAC2026（Japan Security Analyst C
 
 ---
 
-> 報告產出時間：2026-02-25
-> 資料截止時間：2026-02-25 23:59 UTC
+> 報告產出時間：2026-02-26
+> 資料截止時間：2026-02-26 23:59 UTC
 > 資料來源：CISA (US)、Google TAG、JPCERT/CC (Japan)、TWCERT/CC (Taiwan)、CERT Polska、NCSC-FI (Finland)、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
 > 分析模型：Claude Opus 4.5
 > Qdrant 語意查詢次數：4
-> 版本：2.0（更新涵蓋期間至 2026-02-25）
+> 版本：3.0（更新涵蓋期間至 2026-02-26，新增 Cisco SD-WAN 緊急指令 ED 26-03）
