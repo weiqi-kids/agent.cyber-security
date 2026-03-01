@@ -379328,5 +379328,1025 @@
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
+  },
+  {
+    "id": "c2_infrastructure-2026-03-01-5-83-128-112-3333-md",
+    "title": "AsyncRAT C2 Server: 5.83.128.112:3333",
+    "category": "c2_infrastructure",
+    "date": "",
+    "file": "c2_infrastructure/2026-03-01-5-83-128-112-3333.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "c2_infrastructure-2026-03-01-5-83-128-112-4444-md",
+    "title": "AsyncRAT C2 Server: 5.83.128.112:4444",
+    "category": "c2_infrastructure",
+    "date": "",
+    "file": "c2_infrastructure/2026-03-01-5-83-128-112-4444.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-ax88-day-md",
+    "title": "AsyncRAT C2 Domain: ax88.day",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-ax88-day.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-doll-us-com-md",
+    "title": "AsyncRAT C2 Domain: doll.us.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-doll-us-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-fryd-us-com-md",
+    "title": "AsyncRAT C2 Domain: fryd.us.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-fryd-us-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-in2it-uk-com-md",
+    "title": "AsyncRAT C2 Domain: in2it.uk.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-in2it-uk-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-kcj-uk-com-md",
+    "title": "AsyncRAT C2 Domain: kcj.uk.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-kcj-uk-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-lima-us-com-md",
+    "title": "AsyncRAT C2 Domain: lima.us.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-lima-us-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-malware-deltasteel-za-com-md",
+    "title": "AsyncRAT C2 Domain: malware.deltasteel.za.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-malware-deltasteel-za-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-mans-it-com-md",
+    "title": "AsyncRAT C2 Domain: mans.it.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-mans-it-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-maximoenergiasolar-com-br-md",
+    "title": "StrelaStealer 惡意網域 - maximoenergiasolar.com.br (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-maximoenergiasolar-com-br.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-monnier-com-br-md",
+    "title": "StrelaStealer Payload Delivery Domain: monnier.com.br",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-monnier-com-br.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-monokerka-com-md",
+    "title": "StrelaStealer Payload Delivery Domain: monokerka.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-monokerka-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-monom-cc-md",
+    "title": "StrelaStealer Payload Delivery Domain: monom.cc",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-monom-cc.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-montagnaitalia-it-md",
+    "title": "StrelaStealer Payload Delivery Domain: montagnaitalia.it",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-montagnaitalia-it.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-montagne-emotion-fr-md",
+    "title": "StrelaStealer Payload Delivery Domain: montagne-emotion.fr",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-montagne-emotion-fr.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-montclairholistic-com-md",
+    "title": "StrelaStealer 惡意網域 - montclairholistic.com (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-montclairholistic-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-montgomerypoolservices-com-md",
+    "title": "StrelaStealer 惡意網域 - montgomerypoolservices.com (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-montgomerypoolservices-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-montybaecker-de-md",
+    "title": "StrelaStealer 惡意網域 - montybaecker.de (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-montybaecker-de.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-moonlightmakers-ie-md",
+    "title": "StrelaStealer 惡意網域 - moonlightmakers.ie (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-moonlightmakers-ie.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-moonstonedesignare-com-md",
+    "title": "StrelaStealer 惡意網域 - moonstonedesignare.com (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-moonstonedesignare-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-mop-gr-md",
+    "title": "StrelaStealer 惡意網域 - mop.gr (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-mop-gr.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-morfometal-com-md",
+    "title": "StrelaStealer 惡意網域 - morfometal.com (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-morfometal-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-morganhillmarblepolishing-com-md",
+    "title": "StrelaStealer 惡意網域 - morganhillmarblepolishing.com (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-morganhillmarblepolishing-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-morgans-construction-nitrolic-com-md",
+    "title": "StrelaStealer 惡意網域 - morgans-construction.nitrolic.com (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-morgans-construction-nitrolic-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-mori-bankin-com-md",
+    "title": "StrelaStealer 惡意網域 - mori-bankin.com (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-mori-bankin-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-msi-us-com-md",
+    "title": "StrelaStealer 惡意網域 - msi-us.com (ThreatFox)",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-msi-us-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-mushroomgummies-us-com-md",
+    "title": "AsyncRAT C2 Domain: mushroomgummies.us.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-mushroomgummies-us-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-n188-best-md",
+    "title": "AsyncRAT C2 Domain: n188.best",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-n188-best.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-phishing-deltasteel-za-com-md",
+    "title": "AsyncRAT C2 Domain: phishing.deltasteel.za.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-phishing-deltasteel-za-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-sunwin10-de-com-md",
+    "title": "AsyncRAT C2 Domain: sunwin10.de.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-sunwin10-de-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-xn--eckvaae8v6bolb0cyf-jpn-com-md",
+    "title": "AsyncRAT C2 Domain: xn--eckvaae8v6bolb0cyf.jpn.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-xn--eckvaae8v6bolb0cyf-jpn-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-xn--vcktcwa4eh-jpn-com-md",
+    "title": "AsyncRAT C2 Domain: xn--vcktcwa4eh.jpn.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-xn--vcktcwa4eh-jpn-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-01-threatfox-zx88-de-com-md",
+    "title": "AsyncRAT C2 Domain: zx88.de.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-01-threatfox-zx88-de-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-103-253-146-163-3788198-md",
+    "title": "URLhaus 惡意 URL：103.253.146.163（ID 3788198）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-103-253-146-163-3788198.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-110-37-111-58-3788200-md",
+    "title": "URLhaus 惡意 URL：110.37.111.58（ID 3788200）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-110-37-111-58-3788200.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-110-37-111-58-3788201-md",
+    "title": "URLhaus 惡意 URL：110.37.111.58（ID 3788201）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-110-37-111-58-3788201.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-110-37-30-130-3788219-md",
+    "title": "URLhaus 惡意 URL：110.37.30.130（ID 3788219）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-110-37-30-130-3788219.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-110-37-30-130-3788228-md",
+    "title": "URLhaus 惡意 URL：110.37.30.130（ID 3788228）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-110-37-30-130-3788228.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-110-37-39-234-3788199-md",
+    "title": "URLhaus 惡意 URL：110.37.39.234（ID 3788199）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-110-37-39-234-3788199.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-110-37-39-234-3788205-md",
+    "title": "URLhaus 惡意 URL：110.37.39.234（ID 3788205）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-110-37-39-234-3788205.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-113-237-108-187-3788216-md",
+    "title": "URLhaus 惡意 URL：113.237.108.187（ID 3788216）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-113-237-108-187-3788216.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-115-48-162-64-3788209-md",
+    "title": "URLhaus 惡意 URL：115.48.162.64（ID 3788209）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-115-48-162-64-3788209.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-115-48-162-64-3788217-md",
+    "title": "URLhaus 惡意 URL：115.48.162.64（ID 3788217）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-115-48-162-64-3788217.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-115-56-156-145-3788215-md",
+    "title": "URLhaus 惡意 URL：115.56.156.145（ID 3788215）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-115-56-156-145-3788215.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-115-56-156-145-3788220-md",
+    "title": "URLhaus 惡意 URL：115.56.156.145（ID 3788220）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-115-56-156-145-3788220.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-117-200-125-254-3788206-md",
+    "title": "URLhaus 惡意 URL：117.200.125.254（ID 3788206）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-117-200-125-254-3788206.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-117-200-125-254-3788213-md",
+    "title": "URLhaus 惡意 URL：117.200.125.254（ID 3788213）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-117-200-125-254-3788213.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-117-204-16-64-3788207-md",
+    "title": "URLhaus 惡意 URL：117.204.16.64（ID 3788207）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-117-204-16-64-3788207.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-117-204-16-64-3788214-md",
+    "title": "URLhaus 惡意 URL：117.204.16.64（ID 3788214）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-117-204-16-64-3788214.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-123-10-235-140-3788204-md",
+    "title": "URLhaus 惡意 URL：123.10.235.140（ID 3788204）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-123-10-235-140-3788204.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-123-12-245-58-3788225-md",
+    "title": "URLhaus 惡意 URL：123.12.245.58（ID 3788225）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-123-12-245-58-3788225.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-123-14-38-67-3788211-md",
+    "title": "URLhaus 惡意 URL：123.14.38.67（ID 3788211）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-123-14-38-67-3788211.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-123-14-38-67-3788222-md",
+    "title": "URLhaus 惡意 URL：123.14.38.67（ID 3788222）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-123-14-38-67-3788222.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-125-40-57-193-3788229-md",
+    "title": "URLhaus 惡意 URL：125.40.57.193（ID 3788229）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-125-40-57-193-3788229.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-125-42-33-74-3788218-md",
+    "title": "URLhaus 惡意 URL：125.42.33.74（ID 3788218）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-125-42-33-74-3788218.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-125-43-253-62-3788208-md",
+    "title": "URLhaus 惡意 URL：125.43.253.62（ID 3788208）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-125-43-253-62-3788208.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-130-12-180-43-3788231-md",
+    "title": "URLhaus 惡意 URL：130.12.180.43（ID 3788231）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-130-12-180-43-3788231.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-143-20-185-72-3788203-md",
+    "title": "URLhaus 惡意 URL：143.20.185.72（ID 3788203）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-143-20-185-72-3788203.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-182-120-45-252-3788230-md",
+    "title": "URLhaus 惡意 URL：182.120.45.252（ID 3788230）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-182-120-45-252-3788230.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-182-121-118-237-3788224-md",
+    "title": "URLhaus 惡意 URL：182.121.118.237（ID 3788224）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-182-121-118-237-3788224.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-27-216-184-141-3788223-md",
+    "title": "URLhaus 惡意 URL：27.216.184.141（ID 3788223）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-27-216-184-141-3788223.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-27-220-199-176-3788227-md",
+    "title": "URLhaus 惡意 URL：27.220.199.176（ID 3788227）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-27-220-199-176-3788227.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-42-231-210-44-3788212-md",
+    "title": "URLhaus 惡意 URL：42.231.210.44（ID 3788212）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-42-231-210-44-3788212.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-42-231-210-44-3788226-md",
+    "title": "URLhaus 惡意 URL：42.231.210.44（ID 3788226）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-42-231-210-44-3788226.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-42-239-227-150-3788202-md",
+    "title": "URLhaus 惡意 URL：42.239.227.150（ID 3788202）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-42-239-227-150-3788202.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-42-239-227-150-3788210-md",
+    "title": "URLhaus 惡意 URL：42.239.227.150（ID 3788210）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-42-239-227-150-3788210.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-01-45-13-239-70-3788221-md",
+    "title": "URLhaus 惡意 URL：45.13.239.70（ID 3788221）",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-01-45-13-239-70-3788221.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-0466b095a3a94b22-md",
+    "title": "Mirai ELF 樣本 - csk_mips (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-0466b095a3a94b22.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-0d8758e97610f6e5-md",
+    "title": "Shell Script 樣本 - k.php (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-0d8758e97610f6e5.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-1e8eb60683d92749-md",
+    "title": "Mirai ELF 樣本 - arm7 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-1e8eb60683d92749.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-21b4d985b11622db-md",
+    "title": "Mirai ELF 樣本 - data.aarch64 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-21b4d985b11622db.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-22383d75ec99f8b1-md",
+    "title": "MalwareBazaar 惡意程式樣本：Mirai（data.x86）",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-22383d75ec99f8b1.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-248d7c0e7d6537ac-md",
+    "title": "未識別樣本 - o.xml (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-248d7c0e7d6537ac.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-26373baf132e3182-md",
+    "title": "Mirai ELF 樣本 - data.arm7 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-26373baf132e3182.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-2e04a52530d3ed28-md",
+    "title": "Windows PE 樣本 - SecuriteInfo Win64 Evo-gen (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-2e04a52530d3ed28.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-46dc2f4b0bf67a41-md",
+    "title": "Mirai ELF 樣本 - iran.mips (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-46dc2f4b0bf67a41.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-4776b0c4a847fca9-md",
+    "title": "MalwareBazaar 惡意程式樣本：Mirai（data.powerpc）",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-4776b0c4a847fca9.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-55adc615456b6e86-md",
+    "title": "Windows PE 樣本 - intl.dll (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-55adc615456b6e86.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-58188be8a8586f31-md",
+    "title": "Mirai ELF 樣本 - mpsl (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-58188be8a8586f31.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-59c5e84481158593-md",
+    "title": "MalwareBazaar 惡意程式樣本：Mirai（data.arm6）",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-59c5e84481158593.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-5aafc40dc36ba733-md",
+    "title": "MalwareBazaar 惡意程式樣本：Mirai（iran.arc）",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-5aafc40dc36ba733.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-5fc37eb5f88b5783-md",
+    "title": "Mirai ELF 樣本 - csk_m68k (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-5fc37eb5f88b5783.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-66cb8dee1d681c9c-md",
+    "title": "Gafgyt ELF 樣本 - data.mips (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-66cb8dee1d681c9c.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-701f8225216e462e-md",
+    "title": "Mirai ELF 樣本 - csk_x86_64 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-701f8225216e462e.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-953dbd67e4f1e582-md",
+    "title": "Mirai ELF 樣本 - csk_arm7 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-953dbd67e4f1e582.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-a211bccb67f78624-md",
+    "title": "Mirai ELF 樣本 - data.mips-uclibc (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-a211bccb67f78624.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-a48634bf8cb346d7-md",
+    "title": "MalwareBazaar 惡意程式樣本：Mirai（iran.aarch64）",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-a48634bf8cb346d7.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-a4c5f0841861339d-md",
+    "title": "Mirai ELF 樣本 - csk_arm (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-a4c5f0841861339d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-aebcfce39abd1b98-md",
+    "title": "Mirai ELF 樣本 - csk_mpsl (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-aebcfce39abd1b98.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-b0a2c463408d9238-md",
+    "title": "Mirai ELF 樣本 - csk_ppc (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-b0a2c463408d9238.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-b140160de934a651-md",
+    "title": "Mirai ELF 樣本 - csk_arm5 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-b140160de934a651.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-b620369eb25974c9-md",
+    "title": "Mirai ELF 樣本 - iran.sparc (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-b620369eb25974c9.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-c8770d59ad8eb9f6-md",
+    "title": "ZIP 樣本 - Vоlеcitу UI.zip (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-c8770d59ad8eb9f6.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-cc6f011b9935ba4f-md",
+    "title": "Mirai ELF 樣本 - csk_arm6 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-cc6f011b9935ba4f.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-d1d40595e0fbfa95-md",
+    "title": "Mirai ELF 樣本 - iran.powerpc (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-d1d40595e0fbfa95.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-da435aa17744f95e-md",
+    "title": "ZIP 樣本 - Bootstrappper-9.996.zip (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-da435aa17744f95e.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-e2931cd3783674b7-md",
+    "title": "未識別樣本 - l (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-e2931cd3783674b7.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-e3ff905f1ffd2f43-md",
+    "title": "Mirai ELF 樣本 - csk_x86 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-e3ff905f1ffd2f43.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-eae911fb5ea5cffc-md",
+    "title": "MalwareBazaar 惡意程式樣本：Mirai（iran.mipsel）",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-eae911fb5ea5cffc.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-f83dd3dffc07f9de-md",
+    "title": "Mirai ELF 樣本 - iran.x86_64 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-f83dd3dffc07f9de.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-01-fa83d27c4d2cf70c-md",
+    "title": "Mirai ELF 樣本 - data.x86_64 (MalwareBazaar)",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-01-fa83d27c4d2cf70c.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
   }
 ]
