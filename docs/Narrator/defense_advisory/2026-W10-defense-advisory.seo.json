@@ -1,0 +1,714 @@
+{
+  "generated_at": "2026-03-02T12:00:00+08:00",
+  "source_file": "docs/Narrator/defense_advisory/2026-W10-defense-advisory.md",
+  "json_ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#webpage",
+        "url": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/",
+        "name": "2026 第 10 週防禦建議 - Cisco SD-WAN 緊急指令、Notepad++ 供應鏈攻擊、ICS/OT 漏洞激增",
+        "description": "2026-02-24 至 2026-03-02 資安防禦建議：CISA 緊急指令 ED 26-03 持續要求處置 Cisco SD-WAN（CVE-2026-20127、CVE-2022-20775）、Notepad++ 供應鏈攻擊（Lotus Blossom/Chrysalis 後門）、QuickLens Chrome 擴充套件竊取加密貨幣、ICS/OT 大量新公告（Johnson Controls、Copeland、Yokogawa、EV 充電站）、Microsoft 多個零日漏洞修補期限 3/3、Zyxel CVE-2025-13942 CVSS 9.8。",
+        "inLanguage": "zh-TW",
+        "isPartOf": {
+          "@id": "https://security.weiqi.kids#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png"
+        },
+        "datePublished": "2026-03-02",
+        "dateModified": "2026-03-02",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".article-summary",
+            ".speakable-content",
+            ".key-takeaway",
+            ".key-answer",
+            ".expert-quote",
+            ".actionable-steps li",
+            ".faq-answer-content"
+          ]
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#article",
+        "mainEntityOfPage": {
+          "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#webpage",
+          "significantLink": [
+            "https://security.weiqi.kids/Narrator/threat_landscape/2026-W10-threat-landscape/",
+            "https://security.weiqi.kids/Narrator/defense_advisory/2026-W09-defense-advisory/"
+          ]
+        },
+        "headline": "2026 第 10 週防禦建議 - Cisco SD-WAN 緊急指令、Notepad++ 供應鏈攻擊、ICS/OT 漏洞激增",
+        "alternativeHeadline": "2026 Week 10 Defense Advisory - Cisco SD-WAN Emergency Directive, Notepad++ Supply Chain Attack, ICS/OT Vulnerabilities Surge",
+        "description": "2026-02-24 至 2026-03-02 資安防禦建議：CISA 緊急指令 ED 26-03 持續要求處置 Cisco SD-WAN（CVE-2026-20127、CVE-2022-20775）、Notepad++ 供應鏈攻擊（Lotus Blossom/Chrysalis 後門）、QuickLens Chrome 擴充套件竊取加密貨幣、ICS/OT 大量新公告（Johnson Controls、Copeland、Yokogawa、EV 充電站）、Microsoft 多個零日漏洞修補期限 3/3、Zyxel CVE-2025-13942 CVSS 9.8。",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png",
+          "width": 1200,
+          "height": 630
+        },
+        "author": {
+          "@id": "https://security.weiqi.kids/about/team/#person"
+        },
+        "publisher": {
+          "@id": "https://security.weiqi.kids#organization"
+        },
+        "datePublished": "2026-03-02",
+        "dateModified": "2026-03-02",
+        "articleSection": "防禦建議",
+        "keywords": "CVE-2026-20127, CVE-2022-20775, Cisco SD-WAN, CISA ED 26-03, Notepad++ 供應鏈攻擊, Lotus Blossom, Chrysalis 後門, CVE-2025-13942, Zyxel, CVE-2026-21513, Microsoft 零日漏洞, Johnson Controls, Copeland XWEB, ICS/OT 安全, EV 充電站, CVE-2026-1731, BeyondTrust, QuickLens Chrome, 勒索軟體, CISA KEV, 漏洞修補",
+        "wordCount": 5200,
+        "inLanguage": "zh-TW",
+        "isAccessibleForFree": true,
+        "proficiencyLevel": "Advanced",
+        "dependencies": "熟悉 CVE 編號系統、CVSS 評分、CISA KEV 運作機制、ICS/OT 安全基礎知識",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://security.weiqi.kids#website",
+          "name": "資安情報分析系統",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://security.weiqi.kids/search?q={search_term}",
+            "query-input": "required name=search_term"
+          }
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://security.weiqi.kids/about/team/#person",
+        "name": "資安情報分析團隊",
+        "url": "https://security.weiqi.kids/about/team/",
+        "image": "https://security.weiqi.kids/assets/images/team-avatar.png",
+        "jobTitle": "資安情報分析師",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "棋人安全"
+        },
+        "description": "專注於威脅情報分析、漏洞研究與防禦策略制定的資訊安全團隊，持續追蹤 CISA KEV、ICS/OT 安全公告與國際 APT 組織活動",
+        "sameAs": [
+          "https://github.com/weiqi-kids",
+          "https://twitter.com/weiqikids"
+        ],
+        "knowsAbout": [
+          "資訊安全",
+          "威脅情報",
+          "漏洞分析",
+          "惡意軟體分析",
+          "事件回應",
+          "OT/ICS 安全",
+          "供應鏈安全",
+          "APT 威脅分析"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CISSP (Certified Information Systems Security Professional)",
+            "credentialCategory": "Professional Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CEH (Certified Ethical Hacker)",
+            "credentialCategory": "Professional Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "GIAC GCED (GIAC Certified Enterprise Defender)",
+            "credentialCategory": "Professional Certificate"
+          }
+        ],
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "國際資安研究機構"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://security.weiqi.kids#organization",
+        "name": "棋人安全",
+        "url": "https://security.weiqi.kids",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://security.weiqi.kids/assets/images/logo.png",
+          "width": 600,
+          "height": 60
+        },
+        "sameAs": [
+          "https://github.com/weiqi-kids"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "contact@weiqi.kids"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首頁",
+            "item": "https://security.weiqi.kids"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "防禦建議",
+            "item": "https://security.weiqi.kids/Narrator/defense_advisory/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "2026 第 10 週防禦建議",
+            "item": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "CISA 緊急指令 ED 26-03 要求對 Cisco SD-WAN 採取哪些行動？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CISA 緊急指令 ED 26-03 針對全球持續遭受攻擊的 Cisco SD-WAN 系統。攻擊者利用 CVE-2026-20127（身份驗證繞過）取得初始存取後，再利用 CVE-2022-20775（路徑遍歷）以 root 權限執行命令並建立持久化後門。必要行動包括：1) 盤點所有 Cisco SD-WAN 系統；2) 收集虛擬快照和日誌進行威脅獵捕；3) 完整修補 Cisco SD-WAN 系統；4) 依 CISA 獵捕與強化指南檢查入侵跡象；5) 實施強化措施（隔離 VPN 512 介面、替換自簽憑證、使用配對金鑰、限制會話逾時、轉發日誌至遠端 syslog 伺服器）。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Notepad++ 供應鏈攻擊如何運作？Chrysalis 後門的技術特徵為何？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "中國 APT 組織 Lotus Blossom（又稱 Violet Typhoon/Billbug）於 2025 年 6 月攻陷 Notepad++ 使用的代管主機服務商，掌控內部憑證與簽章金鑰，劫持 WinGUp 自動更新機制。Chrysalis 後門技術特徵：C2 通訊偽裝為 Deepseek API 端點格式、利用 DLL Side-Loading 技術載入惡意模組、濫用 Microsoft Warbird 程式碼保護框架規避 EDR 偵測、RC4 加密 C2 通訊。2025 年 6-12 月使用自動更新的所有使用者均受影響。必要行動：停用自動更新、手動升級至 v8.9.2、執行 IoC 掃描（%appdata%\\Bluetooth\\、%appdata%\\ProShow、%appdata%\\Adobe\\Scripts），封鎖惡意 IP 與網域。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "本週 Microsoft 5 個零日漏洞修補期限為何？如何立即處置？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Microsoft 5 個活躍利用漏洞的 CISA 修補期限為 2026-03-03。受影響漏洞：CVE-2026-21513（Windows MSHTML 安全機制失效）、CVE-2026-21510（Windows Shell 安全機制失效）、CVE-2026-21519（Windows DWM 類型混淆）、CVE-2026-21533（Windows RDS 不當權限管理）、CVE-2026-21514（Office Word 不受信任輸入）。立即行動：部署 Microsoft 2026 年 2 月安全更新至所有受影響的 Windows 系統與 Office 產品，啟用 Office 受保護檢視模式，限制 Remote Desktop Services 存取，啟用 NLA。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "本週 ICS/OT 漏洞有哪些最嚴重的項目需要優先處置？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "本週 CISA 發布大量 ICS 公告，最嚴重項目：1) Johnson Controls Frick Quantum HD（CVE-2026-21654 等 6 個 CVE，CVSS 9.1）：預認證即可利用 OS 指令注入和程式碼注入，影響食品農業冷鏈系統，聯繫 Johnson Controls 取得更新；2) Copeland XWEB/XWEB Pro（23 個 CVE）：包含身份驗證繞過、記憶體損壞、任意程式碼執行，影響商業冷凍和 HVAC 系統；3) EV Energy ev.energy（CVE-2026-27772，CVSS 9.4）：WebSocket 端點缺乏認證，可未授權控制充電站。OT 環境修補需經完整測試，先確保網路隔離。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "QuickLens Chrome 擴充套件攻擊如何影響使用者？應採取什麼行動？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "QuickLens Chrome 擴充套件遭竄改，版本 5.8（2026-02-17 發布）包含惡意程式碼，約 7,000 名使用者受影響。惡意版本包含 ClickFix 社交工程攻擊腳本與加密貨幣錢包竊取功能。Google 已從 Chrome Web Store 移除該擴充套件。立即行動：若已安裝 QuickLens，立即移除並檢查加密貨幣錢包是否有異常交易，審查所有已安裝的 Chrome 擴充套件，移除不必要或可疑的擴充套件，監控瀏覽器擴充套件權限變更。"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#primaryimage",
+        "url": "https://security.weiqi.kids/assets/images/og-defense-advisory.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "2026 第 10 週防禦建議 - Cisco SD-WAN 緊急指令、Notepad++ 供應鏈攻擊、ICS/OT 漏洞激增威脅分析",
+        "representativeOfPage": true,
+        "license": "https://security.weiqi.kids/license/",
+        "acquireLicensePage": "https://security.weiqi.kids/license/",
+        "creditText": "棋人安全"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#howto-cisco-sdwan",
+        "name": "Cisco SD-WAN CISA 緊急指令 ED 26-03 處置步驟",
+        "description": "針對 CVE-2026-20127 與 CVE-2022-20775 的完整緩解措施，符合 CISA 緊急指令要求",
+        "totalTime": "PT120M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "盤點 Cisco SD-WAN 系統",
+            "text": "清查所有 Cisco Catalyst SD-WAN Controller/Manager 與 SD-WAN 設備"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "收集虛擬快照和日誌",
+            "text": "進行威脅獵捕，依 CISA 獵捕與強化指南檢查入侵跡象",
+            "url": "https://www.cisa.gov/news-events/directives/supplemental-direction-ed-26-03-hunt-and-hardening-guidance-cisco-sd-wan-systems"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "隔離 VPN 512 介面",
+            "text": "使用 IP 封鎖限制 VPN 512 介面的存取來源"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "替換自簽憑證",
+            "text": "替換所有 SD-WAN Manager 自簽憑證，改用可信任的 CA 簽發憑證"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "完整修補系統",
+            "text": "套用 Cisco 安全更新，修補 CVE-2026-20127 和 CVE-2022-20775",
+            "url": "https://www.cisa.gov/news-events/directives/ed-26-03-mitigate-vulnerabilities-cisco-sd-wan-systems"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "轉發日誌至遠端 syslog",
+            "text": "設定所有 SD-WAN 設備的日誌轉發至遠端 syslog 伺服器，確保日誌完整性"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#howto-notepadpp",
+        "name": "Notepad++ 供應鏈攻擊 Chrysalis 後門緩解步驟",
+        "description": "針對 Lotus Blossom APT 組織透過 WinGUp 更新機制散布 Chrysalis 後門的完整緩解措施",
+        "totalTime": "PT60M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "停用 Notepad++ 自動更新",
+            "text": "Settings → Preferences → Update → 取消勾選「Enable Notepad++ auto-updater」"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "手動升級至 v8.9.2",
+            "text": "從官方網站下載 v8.9.2 並驗證 SHA-256 雜湊值",
+            "url": "https://notepad-plus-plus.org/"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "執行 IoC 掃描",
+            "text": "檢查 %appdata%\\Bluetooth\\、%appdata%\\ProShow、%appdata%\\Adobe\\Scripts 是否存在可疑檔案"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "封鎖惡意 IP 與網域",
+            "text": "封鎖 IP：95.179.213.0、61.4.102.97、59.110.7.32、124.222.137.114；封鎖網域：api[.]skycloudcenter[.]com、api[.]wiresguard[.]com"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "更新 EDR 規則",
+            "text": "加入 Chrysalis 後門 IoC 雜湊值至偵測規則，偵測 DLL Side-Loading 與 Warbird 濫用行為"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#howto-ics-ot",
+        "name": "ICS/OT 設備漏洞緩解步驟",
+        "description": "針對 Johnson Controls Frick、Copeland XWEB、EV 充電站等本週大量新公告的緩解措施",
+        "totalTime": "PT90M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "盤點 ICS 設備",
+            "text": "確認組織是否使用 Johnson Controls Frick Quantum HD、Copeland XWEB、Yokogawa CENTUM VP、InSAT MasterSCADA 等受影響設備"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "實施網路隔離",
+            "text": "確保所有 ICS 設備不可由網際網路直接存取，實施 OT/IT 網路嚴格分段"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "變更預設憑證",
+            "text": "變更所有 ICS 設備的預設密碼和硬編碼憑證"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "審查 EV 充電站暴露",
+            "text": "審查 ev.energy 等 EV 充電管理平台的部署情況與網路暴露，限制 WebSocket 端點存取"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "套用廠商更新",
+            "text": "依 CISA ICS 公告套用韌體更新，必須先在測試環境驗證再部署至生產環境",
+            "url": "https://www.cisa.gov/news-events/ics-advisories"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#itemlist-priority",
+        "name": "本週優先修補清單 - 依緊急程度排序",
+        "description": "2026 第 10 週必須優先處置的漏洞清單，依 CISA 緊急指令、修補期限與攻擊嚴重性排序",
+        "numberOfItems": 8,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "CVE-2026-20127 + CVE-2022-20775 - Cisco SD-WAN（CISA 緊急指令 ED 26-03 持續）",
+            "description": "CISA 緊急指令持續生效，全球性攻擊活動，6 個國際機構聯合發布指引，必須立即遵循 ED 26-03 所有要求"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CVE-2026-21513/21510/21519/21533/21514 - Microsoft 5 個零日漏洞",
+            "description": "修補期限 2026-03-03（明天），活躍利用中，立即部署 Microsoft 2026 年 2 月安全更新"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CVE-2026-1731 - BeyondTrust RS/PRA OS 指令注入",
+            "description": "修補期限 2026-02-16 已過期 14 天，勒索軟體關聯，未認證遠端執行指令，立即檢查入侵跡象"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "CVE-2026-22769 - Dell RP4VMs 硬編碼憑證",
+            "description": "修補期限 2026-02-21 已過期 9 天，UNC6201 活躍利用，可取得 root 存取，執行 Dell 補救腳本"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Notepad++ 供應鏈攻擊（CVE-2025-15556）",
+            "description": "Lotus Blossom APT 散布 Chrysalis 後門，影響 2025/6-12 月自動更新使用者，立即停用自動更新並升級至 v8.9.2"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "CVE-2025-13942 - Zyxel 多款設備 OS 指令注入",
+            "description": "CVSS 9.8，影響多款 Zyxel 設備，立即盤點並套用修補，修補前限制管理介面存取"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "CVE-2026-21654 等 - Johnson Controls Frick Quantum HD",
+            "description": "CVSS 9.1，預認證 RCE，影響冷鏈關鍵基礎設施，聯繫 Johnson Controls 取得更新"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "CVE-2026-20700 - Apple 多產品記憶體緩衝區溢位",
+            "description": "修補期限 2026-03-05，影響 iOS、macOS、tvOS、watchOS、visionOS，安裝最新 Apple 安全更新"
+          }
+        ]
+      },
+      {
+        "@type": "Table",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#table-threat-defense",
+        "name": "威脅與防禦措施對照表",
+        "about": "威脅與防禦措施對照表",
+        "description": "2026 第 10 週主要威脅項目與對應防禦建議的結構化對照",
+        "url": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/"
+      },
+      {
+        "@type": "DataFeed",
+        "@id": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/#datafeed",
+        "name": "2026 第 10 週防禦建議資料摘要",
+        "description": "本週資安防禦建議的結構化資料摘要",
+        "dateModified": "2026-03-02T00:00:00+08:00",
+        "provider": {
+          "@id": "https://security.weiqi.kids#organization"
+        },
+        "dataFeedElement": [
+          {
+            "@type": "DataFeedItem",
+            "item": {
+              "@type": "Thing",
+              "name": "CVE-2026-20127 + CVE-2022-20775 - Cisco SD-WAN（CISA 緊急指令 ED 26-03）",
+              "description": "身份驗證繞過與路徑遍歷漏洞組合攻擊鏈，CISA 緊急指令 ED 26-03 持續生效，全球性攻擊活動"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "item": {
+              "@type": "Thing",
+              "name": "Notepad++ 供應鏈攻擊（CVE-2025-15556）",
+              "description": "Lotus Blossom APT 組織透過 WinGUp 更新機制散布 Chrysalis 後門，影響 2025/6-12 月自動更新使用者"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "item": {
+              "@type": "Thing",
+              "name": "Microsoft 5 個零日漏洞（修補期限 2026-03-03）",
+              "description": "CVE-2026-21513/21510/21519/21533/21514，活躍利用中，修補期限 2026-03-03"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "item": {
+              "@type": "Thing",
+              "name": "ICS/OT 漏洞激增",
+              "description": "Johnson Controls Frick Quantum HD（CVSS 9.1）、Copeland XWEB（23 個 CVE）、EV Energy ev.energy（CVSS 9.4）、Yokogawa CENTUM VP、InSAT MasterSCADA"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "item": {
+              "@type": "Thing",
+              "name": "CVE-2025-13942 - Zyxel 多款設備 OS 指令注入",
+              "description": "CVSS 9.8，影響多款 Zyxel 設備，CERT.RO 緊急公告"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "item": {
+              "@type": "Thing",
+              "name": "CVE-2026-1731 - BeyondTrust RS/PRA（修補期限已過、勒索軟體關聯）",
+              "description": "CISA 修補期限 2026-02-16 已過期 14 天，已確認被勒索軟體攻擊利用"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "item": {
+              "@type": "Thing",
+              "name": "CVE-2026-22769 - Dell RP4VMs（UNC6201 活躍利用）",
+              "description": "硬編碼憑證漏洞，修補期限 2026-02-21 已過期 9 天，UNC6201 正活躍利用"
+            }
+          },
+          {
+            "@type": "DataFeedItem",
+            "item": {
+              "@type": "Thing",
+              "name": "QuickLens Chrome 擴充套件供應鏈攻擊",
+              "description": "約 7,000 名使用者受影響，包含 ClickFix 攻擊與加密貨幣竊取功能，Google 已下架"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "meta_tags": {
+    "title": "2026 第 10 週防禦建議 - Cisco SD-WAN 緊急指令 Notepad++ 供應鏈攻擊",
+    "description": "CISA 緊急指令 ED 26-03 持續要求處置 Cisco SD-WAN 漏洞、Lotus Blossom APT 透過 Notepad++ 散布 Chrysalis 後門、Microsoft 5 個零日漏洞修補期限 3/3、ICS/OT 漏洞激增（CVSS 9.1 預認證 RCE）、Zyxel CVSS 9.8 完整防禦建議。",
+    "og": {
+      "title": "2026 第 10 週防禦建議 - Cisco SD-WAN 緊急指令、Notepad++ 供應鏈攻擊、ICS/OT 漏洞激增",
+      "description": "CISA 緊急指令 ED 26-03 持續要求處置 Cisco SD-WAN 漏洞、Lotus Blossom APT 透過 Notepad++ 散布 Chrysalis 後門、Microsoft 5 個零日漏洞修補期限 3/3、ICS/OT 漏洞激增（CVSS 9.1 預認證 RCE）、Zyxel CVSS 9.8 完整防禦建議。",
+      "image": "https://security.weiqi.kids/assets/images/og-defense-advisory.png",
+      "url": "https://security.weiqi.kids/Narrator/defense_advisory/2026-W10-defense-advisory/",
+      "type": "article",
+      "site_name": "資安情報分析系統"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "2026 第 10 週防禦建議 - Cisco SD-WAN 緊急指令、Notepad++ 供應鏈攻擊、ICS/OT 漏洞激增",
+      "description": "CISA 緊急指令 ED 26-03 持續要求處置 Cisco SD-WAN 漏洞、Lotus Blossom APT 透過 Notepad++ 散布 Chrysalis 後門、Microsoft 5 個零日漏洞修補期限 3/3、ICS/OT 漏洞激增（CVSS 9.1 預認證 RCE）、Zyxel CVSS 9.8 完整防禦建議。",
+      "image": "https://security.weiqi.kids/assets/images/og-defense-advisory.png"
+    },
+    "article": {
+      "published_time": "2026-03-02T00:00:00+08:00",
+      "modified_time": "2026-03-02T00:00:00+08:00",
+      "author": "資安情報分析團隊"
+    }
+  },
+  "sge_recommendations": [
+    {
+      "section": "執行摘要",
+      "marker": ".threat-summary.speakable-content",
+      "example": "<div class=\"threat-summary speakable-content\">\n  <p>本週威脅態勢持續嚴峻，<strong>CISA 緊急指令 ED 26-03 針對 Cisco SD-WAN 仍為最高優先事項</strong>，同時出現重大供應鏈攻擊（Notepad++ Chrysalis 後門）、<strong>ICS/OT 漏洞大幅增加</strong>及多個 Microsoft 零日漏洞修補期限迫近。</p>\n</div>"
+    },
+    {
+      "section": "執行摘要",
+      "marker": ".key-answer",
+      "data-question": "2026 第 10 週最重要的資安防禦優先事項是什麼",
+      "example_html": "<div class=\"key-answer\" data-question=\"2026 第 10 週最重要的資安防禦優先事項是什麼\"><p>本週最高優先為 CISA 緊急指令 ED 26-03 持續要求處置 Cisco SD-WAN 漏洞（CVE-2026-20127，CVSS 10.0），同時需立即因應 Notepad++ 供應鏈攻擊（Lotus Blossom APT）。</p><p>此外需於 2026-03-03 前完成 Microsoft 5 個零日漏洞修補，並緊急處理 ICS/OT 設備大量新公告與 Zyxel CVSS 9.8 漏洞。</p></div>"
+    },
+    {
+      "section": "優先修補清單 - P0 CISA 緊急指令",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"CISA 緊急指令 ED 26-03 要求哪些行動\">\n  <strong>攻擊鏈</strong>：CVE-2026-20127 身份驗證繞過 → CVE-2022-20775 路徑遍歷取得 root 權限 → 建立持久化後門。<strong>建議行動</strong>：立即遵循 CISA ED 26-03 所有要求，執行威脅獵捕。\n</div>"
+    },
+    {
+      "section": "優先修補清單 - P0+ Microsoft 零日漏洞",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"Microsoft 5 個零日漏洞修補期限是何時\">\n  <strong>修補期限</strong>：2026-03-03（明天！），受影響產品：Windows MSHTML、Shell、DWM、RDS 及 Office Word。<strong>建議行動</strong>：立即部署 Microsoft 2026 年 2 月安全更新。\n</div>"
+    },
+    {
+      "section": "優先修補清單 - P3 供應鏈攻擊警示",
+      "marker": ".vulnerability-impact.key-answer",
+      "example": "<div class=\"vulnerability-impact key-answer\" data-question=\"Notepad++ 供應鏈攻擊影響哪些使用者\">\n  <strong>攻擊者</strong>：Lotus Blossom（中國 APT），攻擊期間 2025/6-12 月，Chrysalis 後門偽裝 Deepseek API 並利用 DLL Side-Loading 規避偵測。<strong>建議行動</strong>：立即停用自動更新，手動升級至 v8.9.2，執行 IoC 掃描。\n</div>"
+    },
+    {
+      "section": "安全控制建議",
+      "marker": ".key-answer",
+      "example": "<div class=\"key-answer\" data-question=\"本週針對主要威脅的安全控制建議為何\">\n  網路層面應封鎖 Cisco SD-WAN VPN 512 介面、封鎖 Notepad++ Chrysalis 後門 IoC，並對所有 ICS/OT 設備實施 OT/IT 嚴格分段。端點層面應立即部署 Microsoft 2 月安全更新、更新 EDR 規則以偵測 DLL Side-Loading，並審查所有已安裝的 Chrome 擴充套件。\n</div>"
+    },
+    {
+      "section": "緩解策略",
+      "marker": ".key-answer",
+      "example": "<div class=\"key-answer\" data-question=\"尚無修補或無法立即更新時應採取哪些緩解策略\">\n  針對各主要威脅的緩解措施包括：Cisco SD-WAN 須遵循 CISA ED 26-03 並隔離 VPN 512 介面；Notepad++ 須停用自動更新並封鎖惡意 IP/網域；ICS/OT 設備須確保網路隔離並變更預設憑證。所有措施均應標記有效期限，直到完成正式修補為止。\n</div>"
+    },
+    {
+      "section": "注意事項",
+      "marker": ".key-answer",
+      "example": "<div class=\"key-answer\" data-question=\"實施本週防禦建議時有哪些注意事項\">\n  本建議為通用性質，基於 2026-02-24 至 2026-03-02 期間公開資訊，OT/ICS 環境修補需特別謹慎，必須先在測試環境驗證再部署至生產環境。具體安全決策請依據組織環境及風險評估調整執行。\n</div>"
+    },
+    {
+      "section": "免責聲明",
+      "marker": ".key-answer",
+      "example": "<div class=\"key-answer\" data-question=\"本防禦建議的適用範圍與免責說明\">\n  本報告基於公開來源情報彙整，不保證完全防禦所有威脅，建議在正式環境部署前於測試環境驗證。重大安全決策請諮詢專業資安顧問，並結合組織實際環境評估。\n</div>"
+    },
+    {
+      "section": "自我審核 Checklist",
+      "marker": ".key-answer",
+      "example": "<div class=\"key-answer\" data-question=\"本報告的品質審核項目有哪些\">\n  本報告已完成 8 項自我審核：包含完整免責聲明、修補建議全部來自官方來源（CISA/NVD/廠商公告）、清楚區分通用與針對性建議、緩解策略標注有效期限。所有審核項目均已通過檢查。\n</div>"
+    },
+    {
+      "section": "安全控制建議 - 網路層面",
+      "marker": ".comparison-table",
+      "example": "<table class=\"comparison-table\">\n  <thead>\n    <tr><th>威脅</th><th>建議措施</th></tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cisco SD-WAN（緊急指令持續）</td>\n      <td><strong>持續</strong>遵循 CISA ED 26-03；隔離 VPN 512 介面；替換自簽憑證；使用配對金鑰；限制會話逾時；轉發日誌至遠端 syslog；執行威脅獵捕</td>\n    </tr>\n    <tr>\n      <td>Notepad++ 供應鏈攻擊</td>\n      <td>封鎖 IoC 中的惡意 IP 與網域；監控類似 Deepseek API 端點的異常 HTTPS 流量模式</td>\n    </tr>\n    <tr>\n      <td>ICS/OT 設備漏洞</td>\n      <td>盤點所有面向網際網路的 ICS 設備；實施 OT/IT 網路嚴格分段；限制 ICS 設備僅允許內部管理存取</td>\n    </tr>\n  </tbody>\n</table>"
+    },
+    {
+      "section": "緩解策略 - Cisco SD-WAN",
+      "marker": ".actionable-steps.defense-recommendations",
+      "example": "<ol class=\"actionable-steps defense-recommendations\">\n  <li>盤點所有 Cisco SD-WAN 系統</li>\n  <li>收集虛擬快照和日誌進行威脅獵捕</li>\n  <li>依 CISA 獵捕與強化指南檢查入侵跡象</li>\n  <li>隔離 VPN 512 介面並使用 IP 封鎖</li>\n  <li>替換自簽憑證，使用配對金鑰</li>\n  <li>限制會話逾時，轉發日誌至遠端 syslog</li>\n  <li>完整修補 Cisco SD-WAN 系統</li>\n</ol>"
+    },
+    {
+      "section": "緩解策略 - Notepad++ 供應鏈攻擊",
+      "marker": ".actionable-steps.defense-recommendations",
+      "example": "<ol class=\"actionable-steps defense-recommendations\">\n  <li>停用 Notepad++ 自動更新（Settings → Preferences → Update）</li>\n  <li>從官方網站下載 v8.9.2 並驗證 SHA-256 雜湊值</li>\n  <li>執行 IoC 掃描：檢查 %appdata%\\Bluetooth\\、%appdata%\\ProShow、%appdata%\\Adobe\\Scripts</li>\n  <li>封鎖 IP：95.179.213.0、61.4.102.97、59.110.7.32、124.222.137.114</li>\n  <li>封鎖網域：api[.]skycloudcenter[.]com、api[.]wiresguard[.]com</li>\n  <li>更新 EDR 規則，偵測 DLL Side-Loading 與 Warbird 濫用行為</li>\n</ol>"
+    },
+    {
+      "section": "緩解策略 - ICS/OT 設備",
+      "marker": ".actionable-steps.defense-recommendations",
+      "example": "<ol class=\"actionable-steps defense-recommendations\">\n  <li>盤點組織使用的 Johnson Controls Frick、Copeland XWEB、Yokogawa CENTUM VP、InSAT MasterSCADA 等設備</li>\n  <li>確保所有 ICS 設備不可由網際網路直接存取</li>\n  <li>實施 OT/IT 網路嚴格分段，限制存取路徑</li>\n  <li>變更所有 ICS 設備的預設密碼和硬編碼憑證</li>\n  <li>部署 OT 網路監控工具，偵測異常通訊</li>\n  <li>依廠商公告套用更新（必須先在測試環境驗證）</li>\n</ol>"
+    },
+    {
+      "section": "本週關鍵行動 - 執行摘要",
+      "marker": ".key-takeaway",
+      "example": "<div class=\"key-takeaway\">\n  <strong>最高優先（緊急指令）</strong>：持續遵循 CISA ED 26-03，完整處置所有 Cisco SD-WAN 系統的 CVE-2026-20127 和 CVE-2022-20775 漏洞。\n</div>"
+    },
+    {
+      "section": "本週關鍵行動 - 供應鏈攻擊",
+      "marker": ".key-takeaway",
+      "example": "<div class=\"key-takeaway\">\n  <strong>立即行動（供應鏈攻擊）</strong>：停用 Notepad++ 自動更新，手動升級至 v8.9.2，執行 IoC 掃描，封鎖 Chrysalis 後門 C2 通訊的惡意 IP 與網域。\n</div>"
+    },
+    {
+      "section": "本週關鍵行動 - Microsoft 零日漏洞",
+      "marker": ".key-takeaway",
+      "example": "<div class=\"key-takeaway\">\n  <strong>緊急（修補期限 3/3）</strong>：立即套用 Microsoft 2026 年 2 月安全更新，處置 5 個活躍利用零日漏洞（CVE-2026-21513、CVE-2026-21510、CVE-2026-21519、CVE-2026-21533、CVE-2026-21514）。\n</div>"
+    },
+    {
+      "section": "專家引言",
+      "marker": ".expert-quote",
+      "example": "<blockquote class=\"expert-quote\">\n  <p>「國際合作夥伴（NSA、ASD's ACSC、Canadian Cyber Centre、NCSC-NZ、NCSC-UK）已觀察到惡意行為者在全球範圍內持續攻擊和入侵 Cisco SD-WAN 系統。所有組織應立即遵循 CISA 緊急指令 ED 26-03，執行完整威脅獵捕並強化 SD-WAN 系統。」</p>\n  <cite>— CISA 緊急指令 ED 26-03 及國際合作夥伴聯合公告，2026-02-25</cite>\n</blockquote>"
+    },
+    {
+      "section": "資安免責聲明",
+      "marker": ".disclaimer.security-disclaimer",
+      "example": "<div class=\"disclaimer security-disclaimer\">\n  <p>本報告內容基於公開來源情報彙整分析，僅供資訊安全專業人員參考。</p>\n  <p>具體安全決策請依據組織的風險評估與資安政策執行。</p>\n  <p>報告中提及的漏洞資訊可能隨時更新，建議定期查閱原始來源。</p>\n</div>"
+    },
+    {
+      "section": "CVE NVD 連結建議",
+      "marker": ".nvd-cve-links",
+      "recommendation": "為報告中每個 CVE 編號補充 NVD 連結，格式為 https://nvd.nist.gov/vuln/detail/CVE-XXXX-XXXXX，確保讀者可快速查閱 CVSS 評分、CWE 類型及官方描述。",
+      "example": "<p>本週重要 CVE 的 NVD 連結：</p>\n<ul class=\"nvd-cve-links\">\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-20127\" rel=\"noopener noreferrer\">CVE-2026-20127</a> - Cisco SD-WAN 身份驗證繞過</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2022-20775\" rel=\"noopener noreferrer\">CVE-2022-20775</a> - Cisco SD-WAN 路徑遍歷</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-21513\" rel=\"noopener noreferrer\">CVE-2026-21513</a> - Microsoft Windows MSHTML</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-21510\" rel=\"noopener noreferrer\">CVE-2026-21510</a> - Microsoft Windows Shell</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-21519\" rel=\"noopener noreferrer\">CVE-2026-21519</a> - Microsoft Windows DWM</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-21533\" rel=\"noopener noreferrer\">CVE-2026-21533</a> - Microsoft Windows RDS</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-21514\" rel=\"noopener noreferrer\">CVE-2026-21514</a> - Microsoft Office Word</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2025-13942\" rel=\"noopener noreferrer\">CVE-2025-13942</a> - Zyxel OS 指令注入（CVSS 9.8）</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-1731\" rel=\"noopener noreferrer\">CVE-2026-1731</a> - BeyondTrust RS/PRA OS 指令注入</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-22769\" rel=\"noopener noreferrer\">CVE-2026-22769</a> - Dell RP4VMs 硬編碼憑證</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-21654\" rel=\"noopener noreferrer\">CVE-2026-21654</a> - Johnson Controls Frick Quantum HD（CVSS 9.1）</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-27772\" rel=\"noopener noreferrer\">CVE-2026-27772</a> - EV Energy ev.energy（CVSS 9.4）</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-20700\" rel=\"noopener noreferrer\">CVE-2026-20700</a> - Apple 多產品記憶體緩衝區溢位</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2025-15556\" rel=\"noopener noreferrer\">CVE-2025-15556</a> - Notepad++ 供應鏈攻擊</li>\n  <li><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-2441\" rel=\"noopener noreferrer\">CVE-2026-2441</a> - Google Chromium Use-After-Free</li>\n</ul>"
+    }
+  ],
+  "cwv_recommendations": {
+    "images": {
+      "hero_image": {
+        "loading": "eager",
+        "fetchpriority": "high",
+        "width": 1200,
+        "height": 630,
+        "alt": "2026 第 10 週防禦建議 - Cisco SD-WAN 緊急指令、Notepad++ 供應鏈攻擊與 ICS/OT 漏洞激增威脅分析圖"
+      },
+      "below_fold_images": {
+        "loading": "lazy",
+        "note": "報告中無其他嵌入圖片，表格與文字為主要內容格式"
+      }
+    },
+    "preconnect": [
+      "<link rel=\"preconnect\" href=\"https://security.weiqi.kids\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>"
+    ],
+    "preload": [
+      "<link rel=\"preload\" href=\"/assets/images/og-defense-advisory.png\" as=\"image\">",
+      "<link rel=\"preload\" href=\"/assets/css/main.css\" as=\"style\">"
+    ],
+    "url_optimization": {
+      "current_slug": "/Narrator/defense_advisory/2026-W10-defense-advisory/",
+      "status": "良好",
+      "notes": "URL slug 使用英文小寫與連字號，包含年份週次識別，符合 SEO 最佳實踐"
+    }
+  },
+  "priority_actions": [
+    {
+      "priority": 1,
+      "action": "加入完整 JSON-LD Schema（TechArticle + HowTo + ItemList）",
+      "impact": "high",
+      "effort": "medium",
+      "notes": "本報告包含防禦建議步驟（觸發 HowTo）與優先修補清單（觸發 ItemList），必須包含條件式 Schema"
+    },
+    {
+      "priority": 2,
+      "action": "為每個 H2 加入 .key-answer 標記含 data-question 屬性",
+      "impact": "high",
+      "effort": "low",
+      "notes": "報告包含多個 H2 段落（優先修補清單、安全控制建議、緩解策略、注意事項、免責聲明、自我審核 Checklist），每個都需要 .key-answer"
+    },
+    {
+      "priority": 3,
+      "action": "在執行摘要加入 .threat-summary.speakable-content 標記",
+      "impact": "high",
+      "effort": "low",
+      "notes": "語音搜尋優化需要 speakable 標記，執行摘要是最適合的位置"
+    },
+    {
+      "priority": 4,
+      "action": "在緩解策略步驟加入 .actionable-steps.defense-recommendations 標記",
+      "impact": "high",
+      "effort": "low",
+      "notes": "每個緩解策略章節（3.1-3.10）都有步驟清單，需要標記為可執行步驟"
+    },
+    {
+      "priority": 5,
+      "action": "在關鍵行動清單加入 .key-takeaway 標記",
+      "impact": "medium",
+      "effort": "low",
+      "notes": "執行摘要中的本週關鍵行動清單是重點摘要的理想位置"
+    },
+    {
+      "priority": 6,
+      "action": "在安全控制建議表格加入 .comparison-table 標記",
+      "impact": "medium",
+      "effort": "low",
+      "notes": "報告包含多個威脅與建議措施對照表，適合標記為比較表格"
+    },
+    {
+      "priority": 7,
+      "action": "加入資安免責聲明的 .disclaimer.security-disclaimer 標記",
+      "impact": "medium",
+      "effort": "low",
+      "notes": "報告已包含免責聲明，需加入 CSS class 以符合 schema.org 規範"
+    },
+    {
+      "priority": 8,
+      "action": "加入至少一個引用 CISA 或廠商官方公告的 .expert-quote 標記",
+      "impact": "medium",
+      "effort": "low",
+      "notes": "CISA 聯合指引引言可作為專家引言，提升 E-E-A-T 信號"
+    }
+  ],
+  "reviewer_status": "pass"
+}
