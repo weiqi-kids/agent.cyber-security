@@ -16640,16 +16640,6 @@
     "source_layer": "security_news_facts"
   },
   {
-    "id": "index-md",
-    "title": "資安新聞事實 (Security News Facts)",
-    "category": "other",
-    "date": "",
-    "file": "index.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
     "id": "attack_incident-2026-zoll-epcr-ios-mobile-application-md",
     "title": "ZOLL ePCR IOS Mobile Application",
     "category": "attack_incident",
@@ -26785,6 +26775,66 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2019-03-14-good-network-performance-and-development-of-iot-security-brought-fair-cyber-weat.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-index-md",
+    "title": "攻擊事件 (Attack Incident)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "index-md",
+    "title": "資安新聞事實 (Security News Facts)",
+    "category": "other",
+    "date": "",
+    "file": "index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-index-md",
+    "title": "產業動態 (Industry Trend)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "other-index-md",
+    "title": "其他 (Other)",
+    "category": "other",
+    "date": "",
+    "file": "other/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-index-md",
+    "title": "政策法規 (Policy & Regulation)",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-index-md",
+    "title": "漏洞揭露 (Vulnerability Disclosure)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/index.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
