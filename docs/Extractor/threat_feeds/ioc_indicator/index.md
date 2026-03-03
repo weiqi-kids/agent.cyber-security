@@ -5,6 +5,7 @@ parent: 威脅情報饋送
 grand_parent: Extractor
 nav_order: 4
 render_with_liquid: true
+sitemap: true
 ---
 
 # IoC 指標 (IoC Indicator)

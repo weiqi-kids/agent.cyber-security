@@ -5,6 +5,7 @@ parent: 資安新聞事實
 grand_parent: Extractor
 nav_order: 4
 render_with_liquid: true
+sitemap: true
 ---
 
 # 產業動態 (Industry Trend)

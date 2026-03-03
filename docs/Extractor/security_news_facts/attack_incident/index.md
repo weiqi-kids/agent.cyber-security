@@ -5,6 +5,7 @@ parent: 資安新聞事實
 grand_parent: Extractor
 nav_order: 1
 render_with_liquid: true
+sitemap: true
 ---
 
 # 攻擊事件 (Attack Incident)

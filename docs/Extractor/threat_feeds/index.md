@@ -6,6 +6,7 @@ nav_exclude: true
 has_children: true
 permalink: /docs/Extractor/threat_feeds/
 render_with_liquid: true
+sitemap: true
 ---
 
 # 威脅情報饋送 (Threat Feeds)

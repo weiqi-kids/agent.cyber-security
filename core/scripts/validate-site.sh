@@ -4,7 +4,7 @@
 #
 # 檢查項目：
 # 1. 每個含 .md 的 Extractor 子目錄是否有 index.md
-# 2. 每個 Extractor index.md 是否含 render_with_liquid: true
+# 2. 每個 Extractor index.md 是否含 render_with_liquid: true 和 sitemap: true
 # 3. 內容檔案是否含未跳脫的 {{ }} Liquid 語法（警告）
 #
 # Exit codes:
@@ -57,25 +57,31 @@ fi
 echo ""
 
 # ------------------------------------------
-# 檢查 2：index.md 是否有 render_with_liquid: true
+# 檢查 2：index.md 是否有必要的 front matter 設定
 # ------------------------------------------
-echo "--- 檢查 2：render_with_liquid 設定 ---"
+echo "--- 檢查 2：index.md front matter 設定 ---"
 
 check2_errors=0
 while IFS= read -r idx; do
+  rel="${idx#"$PROJECT_ROOT"/}"
   # 讀取 front matter（--- 到 --- 之間的內容）
   frontmatter=$(awk '/^---$/{c++; if(c==2) exit} c==1{print}' "$idx")
 
   if ! echo "$frontmatter" | grep -q "render_with_liquid: true"; then
-    rel="${idx#"$PROJECT_ROOT"/}"
     echo "  ERROR: $rel 缺少 render_with_liquid: true"
+    errors=$((errors + 1))
+    check2_errors=$((check2_errors + 1))
+  fi
+
+  if ! echo "$frontmatter" | grep -q "sitemap: true"; then
+    echo "  ERROR: $rel 缺少 sitemap: true"
     errors=$((errors + 1))
     check2_errors=$((check2_errors + 1))
   fi
 done < <(find "$EXTRACTOR_DIR" -name "index.md" -type f 2>/dev/null)
 
 if [ $check2_errors -eq 0 ]; then
-  echo "  OK: 所有 index.md 都有 render_with_liquid: true"
+  echo "  OK: 所有 index.md 都有 render_with_liquid: true 和 sitemap: true"
 fi
 echo ""
 

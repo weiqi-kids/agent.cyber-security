@@ -6,6 +6,7 @@ nav_exclude: true
 has_children: true
 permalink: /docs/Extractor/security_news_facts/
 render_with_liquid: true
+sitemap: true
 ---
 
 # 資安新聞事實 (Security News Facts)
