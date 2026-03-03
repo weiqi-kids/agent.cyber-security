@@ -39,6 +39,7 @@ back_to_top_text: "回到頂端"
 # Defaults for pages - exclude all content from nav, only index.md files have nav
 defaults:
   # Extractor docs: exclude from search (1,800+ CVE entries would bloat the index)
+  # render_with_liquid: false prevents Jekyll from interpreting {{ }} in CVE/PoC content as Liquid tags
   - scope:
       path: "docs/Extractor"
       type: "pages"
@@ -46,6 +47,7 @@ defaults:
       layout: default
       nav_exclude: true
       search_exclude: true
+      render_with_liquid: false
   # Narrator reports: include in search, use SEO-optimized layout
   - scope:
       path: "docs/Narrator"

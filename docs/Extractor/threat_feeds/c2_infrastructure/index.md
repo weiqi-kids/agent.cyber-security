@@ -4,6 +4,7 @@ title: C2 基礎設施
 parent: 威脅情報饋送
 grand_parent: Extractor
 nav_order: 3
+render_with_liquid: true
 ---
 
 # C2 基礎設施 (C2 Infrastructure)

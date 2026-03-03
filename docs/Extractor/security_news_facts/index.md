@@ -5,6 +5,7 @@ nav_order: 6
 nav_exclude: true
 has_children: true
 permalink: /docs/Extractor/security_news_facts/
+render_with_liquid: true
 ---
 
 # 資安新聞事實 (Security News Facts)
@@ -26,4 +27,5 @@ permalink: /docs/Extractor/security_news_facts/
 - [attack_incident](attack_incident/) - 攻擊事件
 - [vulnerability_disclosure](vulnerability_disclosure/) - 漏洞揭露
 - [policy_regulation](policy_regulation/) - 政策法規
-- [industry_trend](industry_trend/) - 產業趨勢
+- [industry_trend](industry_trend/) - 產業動態
+- [other](other/) - 其他

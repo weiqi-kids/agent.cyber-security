@@ -5,6 +5,7 @@ nav_order: 2
 nav_exclude: true
 has_children: true
 permalink: /docs/Extractor/
+render_with_liquid: true
 ---
 
 # Extractor 萃取層
