@@ -9,6 +9,7 @@ on:
       - '_data/**'
       - '_config.yml'
       - 'Gemfile'
+      - 'core/scripts/validate-site.sh'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -39,6 +40,9 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
+
+      - name: Validate site structure
+        run: bash core/scripts/validate-site.sh
 
       - name: Build with Jekyll
         run: bundle exec jekyll build

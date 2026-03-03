@@ -21,8 +21,11 @@
 3. 建立目錄 `core/Extractor/Layers/{layer_name}/`
 4. 產生 `fetch.sh`、`update.sh`、`CLAUDE.md`（依模板）
 5. 建立 `docs/Extractor/{layer_name}/` 及 category 子目錄
-6. 更新 `docs/explored.md`「已採用」表格
-7. 告知使用者需要在 `.env` 補充的設定（若有）
+6. **為每個 category 子目錄建立 `index.md`**（含 Liquid 模板列出該分類下的資料）
+   - front matter 必須包含 `render_with_liquid: true`（覆蓋 `_config.yml` 的全域 `render_with_liquid: false`）
+   - 參考 `docs/Extractor/exploit_intelligence/active_exploitation/index.md` 格式
+7. 更新 `docs/explored.md`「已採用」表格
+8. 告知使用者需要在 `.env` 補充的設定（若有）
 
 #### 修改 Layer
 

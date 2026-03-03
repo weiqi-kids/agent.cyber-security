@@ -149,13 +149,24 @@ echo "Update completed: $LAYER_NAME"
 
 ```
 docs/Extractor/{layer_name}/
+├── index.md                       # Layer 首頁（需 render_with_liquid: true）
 ├── raw/                           # 原始資料（fetch.sh 輸出，.gitignore）
 │   ├── rss-*.xml                  # 下載的 RSS XML
 │   └── rss-*.jsonl                # 轉換後的 JSONL（每行一筆 JSON，萃取用）
-└── {category}/{年份}-{描述}.md     # 結構化事實文件
+└── {category}/
+    ├── index.md                   # 分類首頁（需 render_with_liquid: true）
+    └── {年份}-{描述}.md            # 結構化事實文件
 ```
 
 > **注意**：`index.json` 由 GitHub Actions 自動產生（`.github/workflows/build-index.yml`），不由 update.sh 或萃取流程處理。
+
+### index.md 規則（Jekyll 相容性）
+
+`_config.yml` 對 `docs/Extractor/` 全域設定了 `render_with_liquid: false`，防止 CVE/PoC 內容中的 `{{ }}` 被 Jekyll 誤解為 Liquid 標籤。因此：
+
+- **每個 index.md** 都必須在 front matter 中加入 `render_with_liquid: true`，否則 Liquid 模板（如 `{% for %}` 列表）不會被渲染
+- **新增 Layer 或 category 時**，必須同步建立對應的 `index.md`
+- 驗證工具：`bash core/scripts/validate-site.sh` 可檢查所有 index.md 是否正確設定
 
 ## 自我審核 Checklist
 
@@ -165,5 +176,7 @@ docs/Extractor/{layer_name}/
 - [ ] 輸出格式是否結構化且一致？
 - [ ] update.sh 是否包含 Issue 回報機制？
 - [ ] CLAUDE.md 是否包含完整定義表和審核清單？
+- [ ] 每個 category 子目錄是否有 `index.md`？（含 `render_with_liquid: true`）
+- [ ] `bash core/scripts/validate-site.sh` 是否通過？
 
 若任一項未通過，在輸出開頭加上 `[REVIEW_NEEDED]` 標記。
