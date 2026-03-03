@@ -1,0 +1,31 @@
+# [MàJ] Vulnérabilité dans Cisco Catalyst SD-WAN (25 février 2026)
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-02-25 |
+| **來源** | CERT-FR |
+| **分類** | attack_incident |
+| **嚴重程度** | 高 |
+| **信心水準** | 中 |
+
+## 摘要
+Vulnerability discovered in Cisco Catalyst SD-WAN. CERT-FR advisory published.
+
+## 事實內容
+**Active exploitation confirmed.**
+CERT-FR has published an advisory regarding vulnerabilities in Cisco Catalyst SD-WAN.
+- Security policy bypass possible
+- Actively exploited in the wild (CVE-2026-20127)
+
+## 受影響系統
+- Cisco Catalyst SD-WAN
+- Cisco
+- SD-WAN
+
+## 來源連結
+- [[MàJ] Vulnérabilité dans Cisco Catalyst SD-WAN (25 février 2026)](https://www.cert.ssi.gouv.fr/alerte/CERTFR-2026-ALE-002/)
+
+---
+> 萃取時間：2026-03-02 UTC
+> 資料來源：CERT-FR (cert-fr)
+> Note: Original source in French (fr). Content translated to English.
