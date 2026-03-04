@@ -1,51 +1,54 @@
 ---
 layout: seo-report
 title: 2026 第 10 週防禦建議
-description: "2026-02-24 至 2026-03-02 資安防禦建議週報：Cisco SD-WAN 緊急修補（CISA ED 26-03）、伊朗 Operation Epic Fury 五大 APT 組織同步動員防禦對策、Notepad++ Chrysalis 後門供應鏈攻擊應變、BeyondTrust 勒索軟體關聯漏洞緊急處置、14 項 CISA KEV 活躍利用漏洞修補指引、SolarWinds WHD 雙漏洞修補、供應鏈攻擊防禦（eslint-config-prettier、React Native CLI）、ICS/OT 系統強化建議、VMware Cloud Foundation Critical 修補。"
+description: "2026-03-02 至 2026-03-08 資安防禦建議週報：VMware Aria Operations 命令注入零日漏洞活躍利用（CVE-2026-22719）、Cisco SD-WAN 緊急指令持續生效（CISA ED 26-03）、Qualcomm 晶片組記憶體損毀漏洞影響 Android 裝置（CVE-2026-21385）、Juniper Junos OS Evolved PTX 系列未授權 RCE PoC 公開（CVE-2026-21902）、WordPress Microsoft 365 SSO 認證繞過 CVSS 9.8（CVE-2026-2628）、伊朗地緣政治網路戰升級及五大 APT 動員、Linux 核心多平台重大安全更新、Apple 多平台修補期限到期。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-defense-advisory.png
 author: 資安情報分析團隊
-date: 2026-03-03
+date: 2026-03-04
 ---
 
-# 防禦建議 — 2026 第 10 週
+# 防禦建議 -- 2026 第 10 週
 
-> 涵蓋期間：2026-02-24 至 2026-03-02
-> 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV、CISA ICS Advisories
-> 產出時間：2026-03-03
+> 涵蓋期間：2026-03-02 至 2026-03-08
+> 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV、CISA ICS Advisories、PoC-in-GitHub
+> 產出時間：2026-03-04
+> 上週報告：[2026 第 9 週防禦建議](../2026-W09-defense-advisory/)
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢持續嚴峻，**CISA 緊急指令 ED 26-03 針對 Cisco SD-WAN 仍為最高優先事項**，同時伊朗地緣政治網路戰全面升級、多項供應鏈攻擊揭露、14 項活躍利用漏洞列入 CISA KEV，以及 ICS/OT 漏洞大幅增加：
+本週（W10）威脅態勢維持高度嚴峻。在地緣政治衝突催化下，伊朗網路攻擊活動全面升級，多國 CERT 發布聯合警告；兩項新增 CISA KEV 活躍利用漏洞、多項 PoC 公開使企業面臨即時攻擊風險。以下為本週關鍵防禦要點：
 
-1. **CISA 緊急指令 ED 26-03 持續生效（最高優先級）** -- 全球性攻擊活動針對 Cisco SD-WAN 系統，CVE-2026-20127（CVSS 10.0 身份驗證繞過）與 CVE-2022-20775（路徑遍歷）仍在活躍利用中，國際多國 CERT（NSA、ACSC、NCSC-UK、CERT-FR、CERT.RO、NCSC-NL、Canadian Cyber Centre）聯合發布指引
-2. **伊朗 Operation Epic Fury 網路戰全面升級** -- 五大 APT 組織（MuddyWater、APT33、APT34、Charming Kitten、Moses Staff）同步動員，MuddyWater 部署 5 個全新惡意程式家族（含 Rust 工具），加拿大、芬蘭等多國 CERT 發布伊朗網路威脅公告，關鍵基礎設施為主要目標
-3. **Notepad++ 供應鏈攻擊（重大）** -- 中國 APT 組織 Lotus Blossom（Violet Typhoon）攻陷代管服務商，透過 WinGUp 更新器散布 Chrysalis 後門，濫用 Microsoft Warbird 框架規避 EDR，影響 2025 年 6-12 月期間使用自動更新的所有使用者
-4. **兩個漏洞已確認勒索軟體關聯且修補期限已過** -- CVE-2026-1731（BeyondTrust）和 CVE-2026-24423（SmarterMail）
-5. **14 項 CISA KEV 活躍利用漏洞** -- 本週涵蓋的活躍利用清單包含 RoundCube 雙漏洞、SolarWinds WHD 雙漏洞、Cisco UCM、Sangoma FreePBX、Zimbra ZCS 等，含三項供應鏈攻擊（eslint-config-prettier、React Native CLI、Notepad++）
-6. **ICS/OT 漏洞激增** -- CISA 發布 10 項 ICS 公告：Johnson Controls（CVSS 9.1 預認證 RCE）、Copeland XWEB（23 CVE）、EV 充電站平台（CVSS 9.4）、Yokogawa CENTUM VP
-7. **企業級 Critical 新揭露** -- VMware Cloud Foundation（3 CVE）、SonicWall Gen7/Gen8、SolarWinds Serv-U、Zyxel（CVSS 9.8）
-8. **QuickLens Chrome 擴充套件遭竄改** -- 約 7,000 名使用者受 ClickFix 攻擊與加密貨幣竊取影響
+1. **VMware Aria Operations 命令注入零日漏洞（CVE-2026-22719，Critical）** -- CISA KEV 2026-03-03 新增，未經身份驗證的遠端攻擊者可執行任意命令，已確認活躍利用，修補截止日 2026-03-24
+2. **Qualcomm 多晶片組記憶體損毀漏洞（CVE-2026-21385，High）** -- CISA KEV 2026-03-03 新增，影響 Android 裝置，已列入 2026 年 3 月 Android 安全公告，修補截止日 2026-03-24
+3. **CISA 緊急指令 ED 26-03 持續生效（最高優先級）** -- Cisco SD-WAN CVE-2026-20127（CVSS 10.0）與 CVE-2022-20775 持續活躍利用，多國聯合公告確認全球性攻擊
+4. **Juniper Junos OS Evolved PTX 系列 RCE PoC 公開（CVE-2026-21902，CVSS 9.3）** -- watchTowr Labs 已發布 Python PoC，未經認證即可 root 權限執行任意程式碼，利用門檻極低
+5. **WordPress Microsoft 365 SSO 認證繞過（CVE-2026-2628，CVSS 9.8）** -- PoC 已公開，可完全接管管理員帳號，影響所有使用此外掛的 WordPress 網站
+6. **伊朗 Operation Epic Fury 網路戰全面升級** -- 美國/以色列軍事打擊後，加拿大 Cyber Centre 發布伊朗網路威脅公告，Dust Specter APT 新型惡意軟體、SloppyLemming 間諜活動揭露
+7. **BeyondTrust CVE-2026-1731 勒索軟體關聯（修補期限已過期 17 天）** -- 持續活躍利用中，與勒索軟體攻擊活動直接關聯
+8. **Apple 多平台 CVE-2026-20700 修補期限到期（2026-03-05）** -- 記憶體緩衝區漏洞活躍利用中
+9. **Linux 核心重大安全更新** -- SUSE、Red Hat、Ubuntu 同步發布核心安全修補，涵蓋 RCE、權限提升、資訊洩露等多種漏洞
+10. **Django 安全釋出（CVE-2026-25673、CVE-2026-25674）** -- DoS 與權限漏洞，建議 Web 開發團隊立即更新
 
 **本週關鍵行動**：
-- **立即（緊急指令）**：持續遵循 CISA ED 26-03 處置所有 Cisco SD-WAN 系統
-- **立即（勒索軟體關聯、已過期）**：BeyondTrust CVE-2026-1731 修補、SmarterMail CVE-2026-24423 修補
-- **立即（供應鏈攻擊）**：停用 Notepad++ 自動更新，手動升級至 v8.9.2，執行 IoC 檢查；檢查 npm 依賴是否使用受影響版本的 eslint-config-prettier
-- **緊急（3 天內）**：Apple CVE-2026-20700（修補期限 2026-03-05）、Soliton FileZen CVE-2026-25108（新增 KEV）
-- **優先**：VMware Cloud Foundation 升級至 9.0.2.0+、SonicWall 韌體更新、SolarWinds Serv-U 升級至 15.5.4+
-- **優先（ICS/OT）**：評估 Johnson Controls、Copeland、EV 充電站設備暴露風險
-- **持續**：伊朗 APT 威脅獵捕、IoT 殭屍網路 IoC 封鎖
+- **立即（CISA 緊急指令）**：持續遵循 CISA ED 26-03 處置所有 Cisco SD-WAN 系統
+- **立即（新增 KEV 活躍利用）**：VMware Aria Operations CVE-2026-22719 修補（截止 2026-03-24）、Android 2026-03-01 安全更新
+- **立即（勒索軟體關聯、已過期）**：BeyondTrust CVE-2026-1731 修補
+- **緊急（3 天內）**：Apple CVE-2026-20700（修補期限 2026-03-05）、Soliton FileZen CVE-2026-25108
+- **優先（PoC 已公開）**：Juniper Junos OS Evolved CVE-2026-21902 修補、WordPress SSO 外掛 CVE-2026-2628 更新
+- **優先（Linux 核心）**：SUSE、Red Hat、Ubuntu 核心安全更新
+- **持續**：伊朗 APT 威脅獵捕、Chrome/Firefox/Edge 瀏覽器更新
 
 ---
 
 ## 1. 優先修補清單
 
-依照優先級排序：**CISA 緊急指令 > 活躍利用且有勒索軟體關聯（修補期限已過） > 活躍利用（修補期限即將到期或新增 KEV） > CVSS Critical 新揭露 > 供應鏈攻擊 > 活躍利用持續追蹤**
+依照優先級排序：**CISA 緊急指令 > 活躍利用且有勒索軟體關聯（修補期限已過） > 活躍利用（新增 KEV） > PoC 已公開且 Critical > CVSS Critical 新揭露 > 活躍利用持續追蹤**
 
 ### P0 -- 最高優先（CISA 緊急指令 ED 26-03）
 
@@ -62,8 +65,8 @@ date: 2026-03-03
 > **CISA 緊急指令 ED 26-03 -- 持續生效中**
 >
 > 國際合作夥伴（NSA、ASD ACSC、Canadian Cyber Centre、NCSC-NZ、NCSC-UK、CERT-FR、CERT.RO、NCSC-NL）已觀察到惡意行為者在全球範圍內持續攻擊和入侵 Cisco SD-WAN 系統。
->
-> **Qdrant 跨 Layer 關聯**：查詢「Cisco SD-WAN mitigation patch remediation」返回 10 筆結果（最高相似度 0.6292），荷蘭 NCSC（NCSC-2026-0071）、加拿大 Cyber Centre（AL26-004）均已發布獨立修補公告，exploit_intelligence 與 vulnerability_tracking 兩個 Layer 均有高密度記錄。
+
+> **針對本週威脅**：GovCERT.HK 於 2026-02-26 發布 A26-02-33 高威脅安全警告，涵蓋 Cisco FXOS、NX-OS、UCS Manager 等多款產品的新漏洞，應一併排程修補。
 
 **修補版本（來自 Cisco 官方安全公告）**：
 
@@ -75,8 +78,6 @@ date: 2026-03-03
 | 20.12.6 | 20.12.6.1 |
 | 20.15 | 20.15.4.2 |
 | 20.18 | 20.18.2.1 |
-
-**受影響部署類型**：On-Prem Deployment、Cisco Hosted SD-WAN Cloud（Cisco Managed）、Cisco Hosted SD-WAN Cloud（FedRAMP）、Cisco Hosted SD-WAN Cloud
 
 **必要行動（來自 CISA Hunt & Hardening Guidance）**：
 1. 盤點所有 Cisco SD-WAN 系統
@@ -105,9 +106,7 @@ date: 2026-03-03
 | **影響產品** | BeyondTrust Remote Support (RS)、Privileged Remote Access (PRA) |
 | **利用狀態** | **持續活躍利用** -- 未經驗證的遠端攻擊者可執行任意 OS 指令 |
 | **勒索軟體** | **Known** -- CISA 已確認被勒索軟體攻擊活動利用 |
-| **修補期限** | **2026-02-16（已過期 15 天）** |
-
-> **Qdrant 跨 Layer 關聯**：查詢「authentication bypass remote code execution defense」返回 BeyondTrust Products RCE Vulnerability（相似度 0.5622），確認跨 vulnerability_tracking 與 exploit_intelligence 兩個 Layer 均有記錄。
+| **修補期限** | **2026-02-16（已過期 17 天）** |
 
 **修補方式（來自 BeyondTrust 官方公告 BT26-02）**：
 1. 立即套用 BeyondTrust 提供的安全更新
@@ -124,46 +123,56 @@ date: 2026-03-03
 - [BeyondTrust Security Advisory BT26-02](https://www.beyondtrust.com/trust-center/security-advisories/bt26-02)
 - [NVD - CVE-2026-1731](https://nvd.nist.gov/vuln/detail/CVE-2026-1731)
 
-#### SmarterTools SmarterMail -- CVE-2026-24423
+### P1 -- 緊急（本週新增 CISA KEV 活躍利用）
+
+#### VMware Aria Operations -- CVE-2026-22719（本週新增 KEV）
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2026-24423（CWE-306 Missing Authentication for Critical Function） |
-| **影響產品** | SmarterTools SmarterMail |
-| **利用狀態** | **持續活躍利用** -- ConnectToHub API 缺乏認證，可導向惡意 HTTP 伺服器執行 OS 命令 |
-| **勒索軟體** | **Known** -- CISA 已確認被勒索軟體攻擊活動利用 |
-| **修補期限** | **2026-02-26（已過期）** |
+| **CVE** | CVE-2026-22719（CWE-77 命令注入） |
+| **影響產品** | VMware Aria Operations（前 vRealize Operations / vROps）8.x、VMware Cloud Foundation 4.x/5.x/9.x、VMware Telco Cloud Platform 4.x/5.x、VMware Telco Cloud Infrastructure 2.x/3.x、VMware vSphere Foundation 9.x |
+| **利用狀態** | **活躍利用** -- 2026-03-03 新加入 CISA KEV |
+| **嚴重程度** | **Critical** |
+| **修補截止日** | 2026-03-24 |
 
-> **Qdrant 跨 Layer 關聯**：查詢「authentication bypass remote code execution defense」返回 SmarterMail RCE Active Exploitation（相似度 0.5554），NCSC-NL（NCSC-2026-0040）已發布獨立公告。
+> **針對本週威脅**：此漏洞為未經身份驗證的遠端命令注入，攻擊門檻極低。GovCERT.HK A26-02-31 特別標註此 CVE 正在被活躍利用。Qdrant 跨 Layer 查詢確認 vulnerability_tracking 與 exploit_intelligence 兩個 Layer 均有記錄，且與先前 VMware 產品漏洞（A26-02-36）屬同一產品線。
 
-**修補方式（來自 SmarterTools 官方公告）**：
-1. 升級至 SmarterMail 最新版本（參閱 SmarterTools Release Notes）
-2. 若無法立即升級，限制 ConnectToHub API 的網路存取
-3. 遵循 BOD 22-01 指引
+**修補方式（來自 Broadcom 官方安全公告 #36947）**：
+1. **立即套用修補**：依廠商指示套用 Broadcom Security Advisory #36947 提供的緩解措施或更新至修補版本
+2. **網路隔離**：若無法立即修補，限制對 VMware Aria Operations 管理介面的網路存取，僅允許受信任的管理網段連線
+3. **停用產品**：若無法套用緩解措施，依 CISA 建議停止使用受影響的產品
+4. **監控異常指令執行**：監控系統日誌，識別非預期的命令執行活動，特別注意與支援輔助遷移相關的異常行為
 
 **參考連結**：
-- [SmarterTools Release Notes](https://www.smartertools.com/smartermail/release-notes/current)
-- [NVD - CVE-2026-24423](https://nvd.nist.gov/vuln/detail/CVE-2026-24423)
+- [CISA KEV - CVE-2026-22719](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+- [Broadcom Security Advisory #36947](https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36947)
+- [Broadcom Knowledge Article #430349](https://knowledge.broadcom.com/external/article/430349)
+- [GovCERT.HK Alert A26-02-31](https://www.govcert.gov.hk/en/alerts_detail.php?id=1774)
 
-#### Dell RP4VMs -- CVE-2026-22769
+#### Qualcomm 多晶片組 -- CVE-2026-21385（本週新增 KEV）
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2026-22769（CWE-798 硬編碼憑證） |
-| **影響產品** | Dell RecoverPoint for Virtual Machines (RP4VMs) |
-| **利用狀態** | **持續活躍利用** -- Google TAG 確認威脅組織 UNC6201 正活躍利用 |
-| **修補期限** | **2026-02-21（已過期 10 天）** |
+| **CVE** | CVE-2026-21385（CWE-190 整數溢位導致記憶體損毀） |
+| **影響產品** | Qualcomm 多款晶片組（依 2026-03-01 Android Security Bulletin） |
+| **利用狀態** | **活躍利用** -- 2026-03-03 新加入 CISA KEV |
+| **嚴重程度** | **High** |
+| **修補截止日** | 2026-03-24 |
 
-**修補方式（來自 Dell 官方公告 DSA-2026-079）**：
-1. 執行 [Dell 補救腳本](https://www.dell.com/support/kbdoc/en-us/000426742/recoverpoint-for-vms-apply-the-remediation-script-for-dsa)
-2. 檢查系統日誌是否有異常的 root 層級活動
-3. 限制 RP4VMs 對外部網路暴露
+> **針對本週威脅**：此漏洞影響大量 Android 裝置。HKCERT 與 GovCERT.HK 已同步發布安全警告（A26-03-02），Samsung 亦發布 2026 年 3 月安全更新公告涵蓋此修補。
+
+**修補方式（來自 Android Security Bulletin 2026-03-01）**：
+1. **套用 Android 安全更新**：立即套用 2026 年 3 月 Android 安全公告中的修補程式（安全修補等級 2026-03-05 或更新）
+2. **企業裝置管理**：透過 MDM（行動裝置管理）解決方案強制推送安全更新至所有受管理的 Android 裝置
+3. **廠商韌體更新**：聯絡裝置製造商取得針對受影響 Qualcomm 晶片組的韌體或驅動程式更新
+4. **停用受影響產品**：若無法取得修補，依 BOD 22-01 指引評估是否停止使用受影響裝置，或限制其存取企業資源
+5. **監控裝置完整性**：強化對行動裝置的安全監控，偵測異常行為或特權提升嘗試
 
 **參考連結**：
-- [Dell DSA-2026-079](https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079)
-- [Google Threat Intelligence](https://cloud.google.com/blog/topics/threat-intelligence/unc6201-exploiting-dell-recoverpoint-zero-day)
-
-### P1 -- 緊急（活躍利用、修補期限即將到期或新增 KEV）
+- [Android Security Bulletin - March 2026](https://source.android.com/docs/security/bulletin/2026/2026-03-01)
+- [Samsung Security Updates](https://security.samsungmobile.com/securityUpdate.smsb)
+- [GovCERT.HK Alert A26-03-02](https://www.govcert.gov.hk/en/alerts_detail.php?id=1781)
+- [NVD - CVE-2026-21385](https://nvd.nist.gov/vuln/detail/CVE-2026-21385)
 
 #### Apple 多平台 -- CVE-2026-20700（修補期限 2026-03-05）
 
@@ -172,20 +181,42 @@ date: 2026-03-03
 | **CVE** | CVE-2026-20700（CWE-119 記憶體緩衝區操作不當） |
 | **影響產品** | iOS、macOS、tvOS、watchOS、visionOS |
 | **利用狀態** | **活躍利用** |
-| **修補期限** | **2026-03-05（剩餘 2 天）** |
+| **修補期限** | **2026-03-05（剩餘 1 天）** |
 
-**修補方式（來自 Apple 官方安全更新）**：安裝最新安全更新。
+**修補方式（來自 Apple 官方安全更新）**：立即安裝最新 Apple 安全更新。
 
 **參考連結**：
-- [Apple Security Update 126346](https://support.apple.com/en-us/126346)、[126348](https://support.apple.com/en-us/126348)、[126351](https://support.apple.com/en-us/126351)、[126352](https://support.apple.com/en-us/126352)、[126353](https://support.apple.com/en-us/126353)
+- [Apple Security Update 126346](https://support.apple.com/en-us/126346)
+- [Apple Security Update 126348](https://support.apple.com/en-us/126348)
+- [Apple Security Update 126351](https://support.apple.com/en-us/126351)
+- [Apple Security Update 126352](https://support.apple.com/en-us/126352)
+- [Apple Security Update 126353](https://support.apple.com/en-us/126353)
 
-#### Soliton FileZen -- CVE-2026-25108（本週新增 KEV）
+#### Dell RP4VMs -- CVE-2026-22769（修補期限已過期）
+
+| 項目 | 內容 |
+|------|------|
+| **CVE** | CVE-2026-22769（CWE-798 硬編碼憑證） |
+| **影響產品** | Dell RecoverPoint for Virtual Machines (RP4VMs) |
+| **利用狀態** | **持續活躍利用** -- Google TAG 確認威脅組織 UNC6201 正活躍利用 |
+| **修補期限** | **2026-02-21（已過期 12 天）** |
+
+**修補方式（來自 Dell 官方公告 DSA-2026-079）**：
+1. 執行 [Dell 補救腳本](https://www.dell.com/support/kbdoc/en-us/000426742/recoverpoint-for-vms-apply-the-remediation-script-for-dsa)
+2. 檢查系統日誌是否有異常的 root 層級活動
+3. 限制 RP4VMs 對外部網路暴露
+
+**參考連結**：
+- [Dell DSA-2026-079](https://www.dell.com/support/kbdoc/en-us/000426773/dsa-2026-079)
+- [Google Threat Intelligence - UNC6201](https://cloud.google.com/blog/topics/threat-intelligence/unc6201-exploiting-dell-recoverpoint-zero-day)
+
+#### Soliton FileZen -- CVE-2026-25108
 
 | 項目 | 內容 |
 |------|------|
 | **CVE** | CVE-2026-25108（OS Command Injection） |
 | **影響產品** | Soliton Systems K.K FileZen |
-| **利用狀態** | **活躍利用** -- 2026-02-24 新加入 CISA KEV |
+| **利用狀態** | **活躍利用** -- 2026-02-24 加入 CISA KEV |
 
 **修補方式（來自 JVN 公告）**：依照廠商指示套用安全更新。若無法立即修補，限制 FileZen 管理介面的網路存取。
 
@@ -193,654 +224,425 @@ date: 2026-03-03
 - [JVN - JVN#84622767](https://jvn.jp/en/jp/JVN84622767/)
 - [NVD - CVE-2026-25108](https://nvd.nist.gov/vuln/detail/CVE-2026-25108)
 
-#### RoundCube Webmail -- CVE-2025-49113 + CVE-2025-68461
+#### Google Chromium CSS -- CVE-2026-2441
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2025-49113（反序列化 RCE）、CVE-2025-68461（XSS via SVG animate tag） |
-| **影響產品** | RoundCube Webmail |
-| **利用狀態** | **持續活躍利用** |
-
-> **Qdrant 跨 Layer 關聯**：查詢「RoundCube Webmail vulnerability exploitation remediation」確認加拿大 CERT 安全建議與 CISA KEV 同步追蹤，HKCERT 亦發布安全公告。
-
-**修補方式（來自 RoundCube 官方安全更新）**：
-
-| 漏洞 | 修補版本（1.6.x） | 修補版本（1.5.x） |
-|------|-------------------|-------------------|
-| CVE-2025-49113 | 1.6.11+ | 1.5.10+ |
-| CVE-2025-68461 | 1.6.12+ | 1.5.12+ |
-
-建議直接升級至 RoundCube **1.6.12** 或 **1.5.12** 可同時修復兩個漏洞。
-
-**參考連結**：
-- [RoundCube Security Update 1.6.12/1.5.12](https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12)
-
-#### SolarWinds Web Help Desk -- CVE-2025-40536 + CVE-2025-40551
-
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2025-40536（CWE-693 Protection Mechanism Failure，認證繞過）、CVE-2025-40551（反序列化 RCE） |
-| **影響產品** | SolarWinds Web Help Desk |
-| **利用狀態** | **活躍利用** -- 兩者均列入 CISA KEV |
-| **嚴重程度** | Critical |
-
-> **Qdrant 跨 Layer 關聯**：SolarWinds WHD 漏洞同時出現於 HKCERT 與加拿大 CERT 安全公告（Canadian Cyber Centre AV26-162 相似度 0.5813），與 CISA KEV 交叉確認。
-
-**修補方式（來自 SolarWinds 官方安全公告）**：
-1. 升級 SolarWinds Web Help Desk 至最新版本
-2. 若無法立即升級，限制 Web Help Desk 管理介面的網路存取
-3. 遵循 BOD 22-01 指引
-
-**參考連結**：
-- [SolarWinds Security Advisory CVE-2025-40536](https://www.solarwinds.com/trust-center/security-advisories/CVE-2025-40536)
-- [SolarWinds Web Help Desk Release Notes](https://documentation.solarwinds.com/en/success_center/whd/content/release_notes/whd_2026-1_release_notes.htm)
-- [NVD - CVE-2025-40536](https://nvd.nist.gov/vuln/detail/CVE-2025-40536)
-- [NVD - CVE-2025-40551](https://nvd.nist.gov/vuln/detail/CVE-2025-40551)
-
-#### SmarterTools SmarterMail -- CVE-2025-52691（無限制檔案上傳）
-
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2025-52691（CWE-434 Unrestricted Upload of File with Dangerous Type） |
-| **影響產品** | SmarterTools SmarterMail |
+| **CVE** | CVE-2026-2441（CWE-416 Use-After-Free） |
+| **影響產品** | Google Chromium（影響 Chrome、Edge、Opera 等瀏覽器） |
 | **利用狀態** | **活躍利用** -- 列入 CISA KEV |
-| **嚴重程度** | Critical |
+| **嚴重程度** | High |
 
-> **Qdrant 跨 Layer 關聯**：查詢「SmarterMail RCE active exploitation」確認多個安全建議同步追蹤，與 CVE-2026-24423（P0+ 勒索軟體關聯）為同一產品不同漏洞。
+> **針對本週威脅**：HKCERT 於 2026-02-20 發布 Google Chrome 多重漏洞安全公告，Firefox/Thunderbird 同時段亦有 RCE 修補。建議企業統一排程瀏覽器更新。
 
-**修補方式（來自 SmarterTools 官方公告）**：
-1. 升級至 SmarterMail 最新版本（參閱 SmarterTools Release Notes）
-2. 確認所有上傳功能已實施嚴格的檔案類型白名單驗證
-3. 遵循 BOD 22-01 指引
-
-**參考連結**：
-- [SmarterTools Release Notes](https://www.smartertools.com/smartermail/release-notes/current)
-- [NVD - CVE-2025-52691](https://nvd.nist.gov/vuln/detail/CVE-2025-52691)
-
-#### Cisco Unified Communications -- CVE-2026-20045
-
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2026-20045（CWE-94 Code Injection） |
-| **影響產品** | Cisco Unified Communications Manager (Unified CM)、Unified CM SME、Unified CM IM & Presence Service、Unity Connection、Webex Calling Dedicated Instance |
-| **利用狀態** | **活躍利用** -- 列入 CISA KEV |
-| **嚴重程度** | Critical |
-| **修補期限** | **2026-02-11（已過期）** |
-
-**修補方式（來自 Cisco 官方安全公告）**：
-1. 依照 Cisco Security Advisory cisco-sa-voice-rce-mORhqY4b 套用更新
-2. 攻擊者可獲取使用者層級存取權限後提權至 root，應優先處理面向網際網路的實例
-3. 遵循 BOD 22-01 指引
+**修補方式（來自 Google/HKCERT 公告）**：
+1. 立即更新所有基於 Chromium 的瀏覽器至最新版本（Chrome 145.0.7632.109/110+、Linux 144.0.7559.109+）
+2. 啟用瀏覽器自動更新功能
+3. 在企業環境中，透過群組原則強制瀏覽器版本更新
+4. 配置網路閘道過濾已知的惡意網站
 
 **參考連結**：
-- [Cisco Security Advisory cisco-sa-voice-rce-mORhqY4b](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-voice-rce-mORhqY4b)
-- [NVD - CVE-2026-20045](https://nvd.nist.gov/vuln/detail/CVE-2026-20045)
+- [HKCERT - Google Chrome Multiple Vulnerabilities](https://www.hkcert.org/security-bulletin/google-chrome-multiple-vulnerabilities_20260220)
+- [NVD - CVE-2026-2441](https://nvd.nist.gov/vuln/detail/CVE-2026-2441)
 
-#### Sangoma FreePBX -- CVE-2025-64328
+### P2 -- 優先（PoC 已公開、利用門檻極低）
+
+#### Juniper Junos OS Evolved PTX Series -- CVE-2026-21902（PoC 公開）
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2025-64328（CWE-78 OS Command Injection） |
-| **影響產品** | Sangoma FreePBX Endpoint Manager |
-| **利用狀態** | **活躍利用** -- 列入 CISA KEV |
-| **嚴重程度** | Critical |
+| **CVE** | CVE-2026-21902（CWE-732 錯誤權限分配） |
+| **影響產品** | Juniper Networks Junos OS Evolved，PTX Series 路由器 |
+| **CVSS** | **9.3（CVSS 4.0）** |
+| **受影響版本** | 25.4R1-EVO 至 25.4R1-S1-EVO、25.4R2-EVO 之前 |
+| **PoC 狀態** | **watchTowr Labs 已發布 Python PoC** -- 大幅降低攻擊門檻 |
+| **活躍利用** | 尚未確認，但因 PoC 公開應視為高度近期風險 |
 
-**修補方式（來自 Sangoma 官方安全公告）**：
-1. 依照 Sangoma 安全公告更新 FreePBX Endpoint Manager 至修補版本
-2. 若無法立即更新，限制 FreePBX 管理介面的網路存取
-3. 遵循 BOD 22-01 指引
+> **針對本週威脅**：此漏洞允許未經認證的網路攻擊者以 root 身份執行任意程式碼。On-Box 異常偵測框架預設啟用且透過外部埠暴露，無需特定配置即可觸發。watchTowr Labs 的 PoC 已於 2026-02-28 至 2026-03-03 持續更新，企業應視為即將被活躍利用的漏洞優先處理。
+
+**修補方式（來自 Juniper 官方安全公告）**：
+1. **立即升級**至 Junos OS Evolved **25.4R1-S1-EVO** 或 **25.4R2-EVO** 以上版本
+2. **防火牆規則**：在補丁部署前，封鎖外部對 On-Box 異常偵測框架服務埠的存取
+3. **存取控制**：確認內部路由實例存取控制，限制僅允許合法內部進程連線
+4. 監控 Juniper 官方安全公告（JSA 系列）以取得最新緩解措施
 
 **參考連結**：
-- [Sangoma Security Advisory](https://www.sangoma.com/security/)
-- [NVD - CVE-2025-64328](https://nvd.nist.gov/vuln/detail/CVE-2025-64328)
+- [PoC Repository (watchTowr Labs)](https://github.com/watchtowrlabs/watchTowr-vs-JunosEvolved-CVE-2026-21902)
+- [NVD - CVE-2026-21902](https://nvd.nist.gov/vuln/detail/CVE-2026-21902)
 
-#### Zimbra Collaboration Suite -- CVE-2025-68645
+#### WordPress Microsoft 365 SSO -- CVE-2026-2628（PoC 公開）
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2025-68645（PHP Remote File Inclusion） |
-| **影響產品** | Synacor Zimbra Collaboration Suite (ZCS) |
-| **利用狀態** | **活躍利用** -- 列入 CISA KEV |
-| **修補期限** | **2026-02-12（已過期 19 天）** |
+| **CVE** | CVE-2026-2628（CWE-288 使用替代路徑繞過身份驗證） |
+| **影響產品** | All-in-One Microsoft 365 & Entra ID / Azure AD SSO Login plugin for WordPress，版本 ≤ 2.2.5 |
+| **CVSS** | **9.8（CVSS 3.1，Critical）** |
+| **PoC 狀態** | **PoC 已公開** -- 2026-03-03 |
+| **活躍利用** | 尚未確認 |
 
-**修補方式（來自 Zimbra 官方安全中心）**：
-1. 依照 Zimbra Security Center 公告套用修補
-2. 若無法立即修補，限制 PHP 遠端檔案包含功能
-3. 遵循 BOD 22-01 指引
+> **針對本週威脅**：此漏洞允許未經認證的遠端攻擊者以任意使用者（包括管理員）身份登入 WordPress。CVSS 為最高級別的 9.8，無需認證、無需使用者互動、低攻擊複雜度。所有使用 Microsoft 365 / Entra ID / Azure AD SSO 的 WordPress 網站均面臨完全接管風險。
+
+**修補方式**：
+1. **立即更新**外掛至 **2.2.6** 或以上版本（請確認官方 WordPress Plugin 目錄的修補版本）
+2. 若無法立即更新，應**暫時停用該外掛**
+3. 審查 WordPress 管理員帳號，確認是否有異常登入或帳號被建立
+4. 啟用 WordPress 登入日誌記錄，監控異常身份驗證行為
+5. 對使用 Microsoft 365 / Entra ID / Azure AD SSO 的 WordPress 網站進行緊急安全稽核
+6. 實施多因素驗證（MFA）作為額外防護層
 
 **參考連結**：
-- [Zimbra Security Center](https://wiki.zimbra.com/wiki/Security_Center)
-- [NVD - CVE-2025-68645](https://nvd.nist.gov/vuln/detail/CVE-2025-68645)
+- [PoC Repository](https://github.com/b1gchoi/CVE-2026-2628-PoC)
 
-#### Fortinet 多產品 -- CVE-2026-24858
+### P3 -- 重要（Critical/High 新揭露，尚無活躍利用確認）
 
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2026-24858（Authentication Bypass Using Alternate Path） |
-| **影響產品** | FortiAnalyzer、FortiManager、FortiOS、FortiProxy |
-| **利用狀態** | **活躍利用** |
-
-**修補方式**：依照 Fortinet 指示套用更新。若啟用 FortiCloud SSO 認證，立即檢查跨帳戶未授權登入。
-
-### P1-SC -- 緊急（供應鏈攻擊）
-
-#### eslint-config-prettier -- CVE-2025-54313（嵌入惡意程式碼）
+#### Trend Micro Apex One / Vision One Endpoint
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2025-54313（Embedded Malicious Code） |
-| **影響產品** | Prettier eslint-config-prettier npm 套件 |
-| **利用狀態** | **活躍利用** -- 列入 CISA KEV |
-| **攻擊類型** | 供應鏈攻擊 -- 受信任的 npm 套件被植入惡意程式碼 |
+| **來源** | GovCERT.HK A26-03-01 |
+| **日期** | 2026-03-02 |
+| **影響產品** | Trend Micro Apex One、Trend Vision One Endpoint |
+| **嚴重程度** | High |
+| **風險** | 遠端程式碼執行、權限提升 |
 
-**修補方式（來自 npm 安全公告）**：
-1. 檢查專案 `package.json` 及 `package-lock.json` 中 `eslint-config-prettier` 的版本
-2. 移除或降級受影響版本，更新至安全版本
-3. 執行 `npm audit` 掃描所有依賴項目
-4. 檢查 CI/CD 管線是否自動安裝了受影響版本
+**修補方式**：套用 Trend Micro 官方安全修補。
 
 **參考連結**：
-- [npm Security Advisory](https://www.npmjs.com/advisories)
-- [NVD - CVE-2025-54313](https://nvd.nist.gov/vuln/detail/CVE-2025-54313)
+- [GovCERT.HK Alert A26-03-01](https://www.govcert.gov.hk/en/alerts_detail.php?id=1780)
 
-#### React Native CLI -- CVE-2025-11953（OS Command Injection）
+#### SonicWall 多產品漏洞
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2025-11953（OS Command Injection） |
-| **影響產品** | React Native Community CLI（Metro Development Server） |
-| **利用狀態** | **活躍利用** -- 列入 CISA KEV |
-| **攻擊類型** | 供應鏈攻擊 -- 開發工具鏈中的命令注入 |
+| **來源** | GovCERT.HK A26-02-32 |
+| **日期** | 2026-02-25 |
+| **影響產品** | SonicWall 系統 |
+| **嚴重程度** | High |
+| **風險** | 遠端程式碼執行、認證繞過、資訊洩露 |
 
-**修補方式（來自 React Native Community 公告）**：
-1. 更新 React Native CLI 至修補版本
-2. 在開發環境中限制 Metro Development Server 的網路存取
-3. 檢查開發環境是否有異常的系統命令執行紀錄
+> **針對本週威脅**：Qdrant 查詢「firewall network device security update」返回歷史 Zyxel、FortiOS、WatchGuard 等防火牆漏洞記錄，SonicWall 漏洞屬同類型網路設備風險，應與 Cisco、Juniper 設備一併排程修補。
+
+**修補方式**：套用 SonicWall 官方安全修補。
 
 **參考連結**：
-- [React Native Community CLI GitHub](https://github.com/react-native-community/cli)
-- [NVD - CVE-2025-11953](https://nvd.nist.gov/vuln/detail/CVE-2025-11953)
+- [GovCERT.HK Alert A26-02-32](https://www.govcert.gov.hk/en/alerts_detail.php?id=1775)
 
-#### Notepad++ -- CVE-2025-15556（WinGUp 更新器完整性缺失）
+#### VMware 產品額外漏洞
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2025-15556（Code Download Without Integrity Check） |
-| **影響產品** | Notepad++（WinGUp updater） |
-| **利用狀態** | **活躍利用** -- 列入 CISA KEV，已知被 Lotus Blossom APT 利用 |
-| **攻擊類型** | 供應鏈攻擊 -- 自動更新機制遭劫持 |
+| **來源** | GovCERT.HK A26-02-36 |
+| **日期** | 2026-02-27 |
+| **影響產品** | VMware 產品 |
+| **嚴重程度** | High |
+| **風險** | 遠端程式碼執行、權限提升、跨站腳本攻擊 |
 
-**修補方式（來自 Notepad++ 官方及 TWCERT/CC）**：
-1. 立即停用 Notepad++ 自動更新功能（Settings > Preferences > Update）
-2. 手動從官方網站下載 v8.9.2 並驗證 SHA-256 雜湊值
-3. 執行 IoC 檢查（詳見「緩解策略 3.2」）
+**修補方式**：套用 VMware/Broadcom 官方安全修補。
 
 **參考連結**：
-- [Notepad++ 官方網站](https://notepad-plus-plus.org/)
-- [TWCERT/CC 公告](https://www.twcert.org.tw/tw/cp-104-10725-feaeb-1.html)
-- [NVD - CVE-2025-15556](https://nvd.nist.gov/vuln/detail/CVE-2025-15556)
+- [GovCERT.HK Alert A26-02-36](https://www.govcert.gov.hk/en/alerts_detail.php?id=1779)
 
-### P2 -- 優先處理（CVSS Critical 新揭露）
-
-#### VMware Cloud Foundation / vSphere Foundation -- CVE-2026-22720/22719/22721
+#### Django 安全釋出 -- CVE-2026-25673、CVE-2026-25674
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2026-22720、CVE-2026-22719、CVE-2026-22721 |
-| **影響產品** | VMware Cloud Foundation（< 9.0.2.0）、VMware vSphere Foundation（< 9.0.2.0）、VMware Aria Operations |
-| **嚴重程度** | Critical |
+| **CVE** | CVE-2026-25673（CVSS 7.5，Windows URLField DoS）、CVE-2026-25674（檔案系統權限不正確） |
+| **影響產品** | Django 4.2.x（< 4.2.29）、5.2.x（< 5.2.12）、6.0.x（< 6.0.3） |
+| **嚴重程度** | High |
 
-**修補方式（來自 VMware/Broadcom 官方公告及 Canadian Cyber Centre AV26-162）**：
-1. 更新 VMware Cloud Foundation 至 **9.0.2.0** 或更高版本
-2. 更新 VMware vSphere Foundation 至 **9.0.2.0** 或更高版本
-
-**參考連結**：[Canadian Cyber Centre AV26-162](https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-162)
-
-#### SonicWall Gen7/Gen8 Firewalls -- AV26-161
-
-| 項目 | 內容 |
-|------|------|
-| **影響產品** | Gen7 hardware Firewalls（<= 7.0.1-5169）、Gen7 NSv（<= 7.3.1-7013）、Gen8 Firewalls |
-| **嚴重程度** | Critical |
-
-**修補方式（來自 SonicWall 官方公告及 Canadian Cyber Centre AV26-161）**：
-1. Gen7 hardware Firewalls：升級至 7.0.1-5169 以上版本
-2. Gen7 NSv：升級至 7.3.1-7013 以上版本
-3. Gen8 Firewalls：參閱官方公告取得對應修補版本
-
-**參考連結**：[Canadian Cyber Centre AV26-161](https://cyber.gc.ca/en/alerts-advisories/sonicwall-security-advisory-av26-161)
-
-#### SolarWinds Serv-U -- CVE-2025-40538
-
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2025-40538 |
-| **影響產品** | SolarWinds Serv-U（< 15.5.4） |
-| **嚴重程度** | Critical |
-
-**修補方式**：更新 SolarWinds Serv-U 至 **15.5.4** 或更高版本。
-
-**參考連結**：[Canadian Cyber Centre AV26-165](https://cyber.gc.ca/en/alerts-advisories/solarwinds-security-advisory-av26-165)
-
-#### Zyxel 多型號 -- CVE-2025-13942（CVSS 9.8）
-
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2025-13942 |
-| **影響產品** | Zyxel 多型號設備 |
-| **嚴重程度** | Critical（CVSS 9.8）-- OS 命令注入，遠端未認證利用 |
-
-**修補方式**：立即盤點所有 Zyxel 設備，依照廠商指示套用安全更新。若無可用修補，隔離受影響設備。
-
-#### Vite.js -- CVE-2025-31125
-
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2025-31125（Improper Access Control） |
-| **影響產品** | Vite Vitejs |
-| **利用狀態** | **活躍利用** -- 列入 CISA KEV |
-| **修補期限** | **2026-02-12（已過期）** |
-
-**修補方式**：升級至 Vite.js 修補版本。參閱 Vite 官方安全公告。
+**修補方式（來自 Django 官方安全公告）**：
+1. Django 4.2.x → 升級至 **4.2.29**
+2. Django 5.2.x → 升級至 **5.2.12**
+3. Django 6.0.x → 升級至 **6.0.3**
 
 **參考連結**：
-- [Vite GitHub Security Advisory](https://github.com/vitejs/vite/security/advisories)
-- [NVD - CVE-2025-31125](https://nvd.nist.gov/vuln/detail/CVE-2025-31125)
+- [Django Security Releases](https://www.djangoproject.com/weblog/2026/mar/03/security-releases/)
 
-#### Versa Concerto -- CVE-2025-34026
+#### Linux 核心安全更新（SUSE、Red Hat、Ubuntu）
 
 | 項目 | 內容 |
 |------|------|
-| **CVE** | CVE-2025-34026（Improper Authentication） |
-| **影響產品** | Versa Concerto |
-| **利用狀態** | **活躍利用** -- 列入 CISA KEV |
-| **修補期限** | **2026-02-12（已過期）** |
+| **日期** | 2026-03-02 至 2026-03-03 |
+| **影響產品** | SUSE Linux Enterprise Server 11-15 SP7、openSUSE Leap 15.4-15.6；Red Hat Enterprise Linux 8/9/10；Ubuntu 22.04 LTS / 24.04 LTS |
+| **嚴重程度** | High |
+| **風險** | 遠端程式碼執行、拒絕服務、權限提升、資訊洩露、資料操縱 |
 
-**修補方式**：依照 Versa Networks 廠商指示套用更新。
+**修補方式**：
+- **SUSE**：套用 SUSE-SU-2026:0674-1 至 SUSE-SU-2026:0748-1 系列更新
+- **Red Hat**：套用 RHSA-2026:3388、RHSA-2026:3464、RHSA-2026:3488、RHSA-2026:3520、RHSA-2026:3579
+- **Ubuntu**：套用 USN-8059-6
 
 **參考連結**：
-- [NVD - CVE-2025-34026](https://nvd.nist.gov/vuln/detail/CVE-2025-34026)
+- [SUSE Security Updates](https://www.suse.com/support/update/announcement/2026/)
+- [Red Hat RHSA-2026:3388](https://access.redhat.com/errata/RHSA-2026:3388)
+- [Ubuntu USN-8059-6](https://ubuntu.com/security/notices/USN-8059-6)
 
-### P3 -- 持續追蹤（活躍利用、修補期限已過期）
+#### 瀏覽器安全更新（Chrome、Firefox、Edge）
 
-以下漏洞修補期限均已過期，若尚未修補，應立即優先處理：
+| 項目 | 內容 |
+|------|------|
+| **影響產品** | Google Chrome < 145.0.7632.109/110、Firefox < 147.0.4、Firefox ESR < 115.32.1 / 140.7.1、Thunderbird < 140.7.2 / 147.0.2、Microsoft Edge |
+| **嚴重程度** | High |
+| **風險** | 遠端程式碼執行、資訊洩露、拒絕服務 |
 
-| CVE | 產品 | 修補期限 | 修補方式 |
+**修補方式**：
+- Chrome：更新至 145.0.7632.109/110+（Windows/Mac）或 144.0.7559.109+（Linux）
+- Firefox：更新至 147.0.4+
+- Firefox ESR：更新至 115.32.1+ 或 140.7.1+
+- Thunderbird：更新至 140.7.2+ 或 147.0.2+
+- Edge：套用最新安全更新
+
+**參考連結**：
+- [HKCERT - Google Chrome](https://www.hkcert.org/security-bulletin/google-chrome-multiple-vulnerabilities_20260220)
+- [HKCERT - Mozilla Products](https://www.hkcert.org/security-bulletin/mozilla-products-multiple-vulnerabilities_20260220)
+- [HKCERT - Microsoft Edge](https://www.hkcert.org/security-bulletin/microsoft-edge-multiple-vulnerabilities_20260220)
+
+### P3-TW -- 台灣本地產品漏洞（TWCERT/CC）
+
+以下漏洞由 TWCERT/CC 揭露，主要影響台灣本地部署的產品系統：
+
+| TVN 編號 | 廠商/產品 | 漏洞數 | 嚴重程度 | 風險 |
+|----------|-----------|--------|----------|------|
+| TVN-202602017 | 廣達電腦 QOCA aim AI醫療雲平台 | 6 | High | SQL Injection、越權存取、資訊洩露 |
+| TVN-202602013 | 金諄資訊 警政統計資料庫系統 | 4 | High | SQL Injection、任意檔案讀取 |
+| TVN-202602011 | 普羅通信 PrismX MX100 AP Controller | 3 | High | 命令注入、認證繞過 |
+| TVN-202602010 | 哈瑪星科技 MeetingHub 無紙化會議 | 3 | High | SQL Injection、檔案上傳漏洞 |
+| TVN-202602008 | 葳橋資訊 單一簽入暨電子目錄服務系統 | 3 | High | 認證繞過、SQL Injection、XSS |
+
+**修補方式**：請參閱各 TWCERT/CC 官方公告，聯繫廠商取得安全更新。
+
+**參考連結**：
+- [TWCERT/CC 漏洞公告](https://www.twcert.org.tw/tw/lp-132-1.html)
+
+### P4 -- 持續追蹤（活躍利用，上週已通報）
+
+以下漏洞於上週（W09）已通報，本週仍持續活躍利用中，尚未修補的組織應立即處理：
+
+| CVE | 產品 | 利用狀態 | 修補期限 |
 |-----|------|----------|----------|
-| CVE-2026-21509 | Microsoft Office | 2026-02-16（已過期） | Office 2021 套用最終修補；Office 2019/2016 套用臨時緩解 |
-| CVE-2026-24061 | GNU InetUtils | 2026-02-16（已過期） | 依照廠商指示套用更新 |
-| CVE-2026-23760 | SmarterMail | 2026-02-16（已過期） | 升級至最新版本 |
+| CVE-2026-24423 | SmarterTools SmarterMail | 活躍利用 + **勒索軟體關聯** | 已過期 |
+| CVE-2025-49113 | RoundCube Webmail（反序列化 RCE） | 活躍利用 | 已過期 |
+| CVE-2025-68461 | RoundCube Webmail（XSS） | 活躍利用 | 已過期 |
+| CVE-2025-40536 | SolarWinds Web Help Desk（認證繞過） | 活躍利用 | 已過期 |
+| CVE-2025-40551 | SolarWinds Web Help Desk（反序列化 RCE） | 活躍利用 | 已過期 |
+| CVE-2025-52691 | SmarterMail（檔案上傳） | 活躍利用 | -- |
+| CVE-2026-20045 | Cisco Unified Communications Manager | 活躍利用 | 已過期 |
+| CVE-2025-64328 | Sangoma FreePBX | 活躍利用 | -- |
 
 ---
 
 ## 2. 安全控制建議
 
-### 網路層面
+### 2.1 網路層面
 
 #### 針對本週威脅
 
-**Cisco SD-WAN 攻擊鏈防禦**：
-1. 將 SD-WAN 控制平面（VPN 512）與管理平面完全隔離，僅允許必要的管理存取
-2. 限制 NETCONF（port 830）僅可從受信任的管理網段存取，實施嚴格的 ACL
-3. 定期檢查 SD-WAN 網路結構配置，確認無未授權的 peer 節點
-4. 替換所有自簽憑證為由可信 CA 簽發的憑證
-5. 將所有 SD-WAN 設備日誌轉發至 SIEM，設定針對認證繞過和權限提升的告警規則
-
-**伊朗 APT 組織網路防禦**：
-6. 對關鍵基礎設施實施強化的網路監控，特別關注五大 APT 組織（MuddyWater、APT33、APT34、Charming Kitten、Moses Staff）的已知 C2 基礎設施
-7. 加強邊界設備（防火牆、VPN、負載平衡器）的日誌記錄與即時告警
-8. 封鎖已知伊朗 APT 相關 IoC（IP、域名、雜湊值），持續更新威脅情報饋送
-
-**ICS/OT 網路防禦（CISA 10 項 ICS 公告）**：
-9. 確保 ICS/OT 系統與 IT 網路完全分離，使用工業級防火牆與 DMZ
-10. 若部署 EV 充電管理平台（EV Energy、Mobility46、Chargemap、CloudCharge、Switch、EV2go），立即檢視 WebSocket 認證配置、暴力破解防護、Session 管理設定
-11. Johnson Controls Frick Quantum HD 和 Copeland XWEB 系統應完全隔離於 IT 網路之外，禁止直接暴露於網際網路
-
-> **Qdrant 關聯**：查詢「ICS OT industrial control system defense hardening 2026」返回 10 筆結果（最高相似度 0.5813），Canadian Cyber Centre 於 2026-01-14 發布的「Joint guidance on secure connectivity principles for operational technology」（相似度 0.5577）提供 OT 安全連線原則，建議搭配參閱。
-
-**Notepad++ C2 封鎖**：
-12. 封鎖已知惡意網域：`api[.]skycloudcenter[.]com`、`api[.]wiresguard[.]com`
-13. 封鎖已知惡意 IP：`95.179.213.0`、`61.4.102.97`、`59.110.7.32`、`124.222.137.114`
-14. 監控異常 HTTPS 流量，特別是模仿 DeepSeek API 端點格式（`/a/chat/s/{GUID}`）的 C2 通訊
-
-**IoT 殭屍網路防禦**：
-15. 封鎖已知 Mirai Botnet C2 伺服器（如 `143.20.185.59:15154`）
-16. 注意使用 `.shop`、`.top`、`.bond` TLD 的可疑 FormBook C2 網域（本週 388 個 IoC）
-
-**供應鏈攻擊網路偵測**：
-17. 監控開發環境的異常對外連線，特別是 npm 套件安裝過程中的非預期 HTTP/HTTPS 請求
-18. 封鎖來自 CI/CD 管線的非預期對外連線
+| 建議 | 對應威脅 | 優先級 |
+|------|----------|--------|
+| 封鎖對 Cisco SD-WAN VPN 512 介面的非授權存取 | CVE-2026-20127 / CVE-2022-20775 (CISA ED 26-03) | P0 |
+| 限制 VMware Aria Operations 管理介面的網路存取至受信任管理網段 | CVE-2026-22719 活躍利用 | P1 |
+| 封鎖外部對 Juniper PTX On-Box 異常偵測框架服務埠的存取 | CVE-2026-21902 PoC 公開 | P2 |
+| 限制 BeyondTrust RS/PRA 面向網際網路的存取 | CVE-2026-1731 勒索軟體關聯 | P0+ |
+| 限制 Dell RP4VMs 對外部網路暴露 | CVE-2026-22769 活躍利用 | P1 |
+| 封鎖已知伊朗 APT 組織（MuddyWater、APT33、APT34）的 C2 IP 與網域 | Operation Epic Fury | 持續 |
+| 監控 SD-WAN 網路是否有未授權的 rogue peers 加入 | CISA ED 26-03 Hunt Guidance | P0 |
 
 #### 通用建議
 
-- 實施網路分段，限制橫向移動
-- 確保邊界設備（防火牆、VPN、負載平衡器、SD-WAN）已更新
-- 啟用 IDS/IPS 並更新特徵碼，加入本週 IoC
-- 部署 DNS 過濾封鎖已知惡意網域
-- 對所有面向網際網路的服務進行攻擊面盤點
+- 實施網路分段（Network Segmentation），隔離管理平面與資料平面
+- 部署入侵偵測/防禦系統（IDS/IPS），更新至最新威脅規則
+- 啟用完整封包日誌記錄，確保威脅獵捕可用的日誌保留期間
+- 定期檢視防火牆規則，移除不必要的開放埠
+- 將日誌轉發至集中式 SIEM 系統進行即時監控
 
-### 端點層面
+### 2.2 端點層面
 
 #### 針對本週威脅
 
-**Notepad++ Chrysalis 後門防禦**：
-1. **停用 Notepad++ 自動更新**（Settings > Preferences > Update）
-2. **手動更新至 v8.9.2** 並從官方網站下載，驗證 SHA-256 雜湊值
-3. **IoC 掃描**：檢查 `%appdata%\Bluetooth\`、`%appdata%\ProShow\`、`%appdata%\Adobe\Scripts\` 是否存在可疑檔案
-4. **EDR 強化**：關注 Microsoft Warbird 框架的異常使用，監控 `NtQuerySystemInformation` 的 `SystemCodeFlowTransition (0xB9)` 呼叫
-5. **DLL Side-Loading 偵測**：監控合法 Bitdefender 執行檔（BluetoothService.exe）載入非預期 DLL（特別是 log.dll）的行為
-
-**QuickLens Chrome 擴充套件防禦**：
-6. 檢查組織內所有 Chrome 瀏覽器是否安裝 QuickLens 擴充套件（v5.8 為惡意版本），若有立即移除
-7. 實施 Chrome 擴充套件白名單政策，僅允許經審核的擴充套件
-8. 教育使用者識別 ClickFix 社交工程手法
-
-**伊朗 APT 組織偵測**：
-9. 針對 MuddyWater、APT33、APT34、Charming Kitten、Moses Staff 的已知 TTP 進行主動威脅獵捕
-10. 特別關注異常的 Rust 二進位執行和非預期的 C2 回連模式（MuddyWater 已部署 5 個全新惡意程式家族含 Rust 基礎工具）
-11. 監控勒索軟體行為前兆（大量檔案加密、影子複本刪除）
-12. 注意伊朗國家級行為者越來越多地採用犯罪戰術（勒索軟體 + 破壞性攻擊組合），需同時具備 APT 偵測與勒索軟體防禦能力
-
-**開發環境供應鏈防禦**：
-13. 掃描所有 npm 專案依賴項目，確認是否使用受影響版本的 `eslint-config-prettier`
-14. 審查 React Native 專案的 `@react-native-community/cli` 版本，確認已更新至修補版本
-15. 啟用 npm/yarn 的 audit 功能並整合至 CI/CD 管線
-
-**威脅情報饋送 IoC 更新**：
-16. 將本週 Top 惡意程式家族的 IoC 更新至 EDR：Vidar (109 筆)、IClickFix (69 筆)、AsyncRAT (65 筆)、ClearFake (64 筆)、Cobalt Strike (41 筆)、StrelaStealer (36 筆)、NetSupportManager RAT (32 筆)
+| 建議 | 對應威脅 | 優先級 |
+|------|----------|--------|
+| 透過 MDM 強制推送 Android 2026-03-05 安全更新 | CVE-2026-21385 活躍利用 | P1 |
+| 強制更新所有 Chromium 瀏覽器至最新版本 | CVE-2026-2441 活躍利用 | P1 |
+| 更新 Firefox/Thunderbird 至最新版本 | RCE 漏洞 | P3 |
+| 確認所有 Apple 裝置已安裝最新安全更新 | CVE-2026-20700 修補期限到期 | P1 |
+| 套用 Linux 核心安全更新（SUSE/RHEL/Ubuntu） | 多重漏洞 | P3 |
+| 掃描端點是否有 Dust Specter APT 惡意軟體 IoC（SPLITDROP、TWINTASK、TWINTALK、GHOSTFORM） | 伊朗 APT 攻擊 | 持續 |
+| 掃描端點是否有 SHADOWSNIFF、SALATSTEALER 竊取程式 | UAC-0252 攻擊 | 持續 |
 
 #### 通用建議
 
-- 確保 EDR 解決方案已部署並保持最新
+- 維持 EDR/XDR 解決方案處於最新狀態
+- 確保所有端點啟用安全開機（Secure Boot）
+- 實施應用程式白名單政策
+- 啟用瀏覽器沙箱隔離機制
+
+### 2.3 身分認證層面
+
+#### 針對本週威脅
+
+| 建議 | 對應威脅 | 優先級 |
+|------|----------|--------|
+| 審查所有 WordPress 管理員帳號是否有異常登入 | CVE-2026-2628（WordPress SSO 認證繞過） | P2 |
+| 停用受影響的 WordPress Microsoft 365 SSO 外掛或更新至 2.2.6+ | CVE-2026-2628 | P2 |
+| 強化 SD-WAN 對等身份驗證機制，替換自簽憑證 | CISA ED 26-03 | P0 |
+| 對 Dell RP4VMs 執行硬編碼憑證補救腳本 | CVE-2026-22769 | P1 |
+| 限制 SmarterMail ConnectToHub API 的網路存取 | CVE-2026-24423 勒索軟體關聯 | P0+ |
+| 加強 SIM 卡安全設定（PIN 碼、帳號警報） | 杜拜 SIM-Swap 攻擊 | 持續 |
+
+#### 通用建議
+
+- 對所有管理介面和遠端存取啟用多因素驗證（MFA）
+- 定期審查特權帳號使用情況
+- 實施條件式存取政策（Conditional Access）
+- 教育員工識別社會工程攻擊（尤其偽冒政府機構的釣魚電話）
+
+### 2.4 資料保護層面
+
+#### 針對本週威脅
+
+| 建議 | 對應威脅 | 優先級 |
+|------|----------|--------|
+| 確認醫療雲平台（QOCA aim）未暴露於公開網路 | TVN-202602017（6 漏洞） | P3-TW |
+| 確認警政系統資料庫不受 SQL Injection 影響 | TVN-202602013（4 漏洞） | P3-TW |
+| 檢查加密貨幣錢包安全，移除 QuickLens 擴充套件 | Chrome 供應鏈攻擊 | P3 |
+| 確認 FortiGate SSL VPN 設備未被植入符號連結後門 | FortiGate 持久化攻擊 | 持續 |
+
+#### 通用建議
+
+- 實施資料加密（靜態加密 + 傳輸加密）
 - 定期備份關鍵資料並測試還原程序
-- 軟體更新驗證：所有軟體更新必須驗證數位簽章和雜湊值
-- 更新防毒軟體偵測特徵，涵蓋 Mirai、FormBook、Remcos、ClearFake、AsyncRAT、Stealc、Vidar 等家族
-
-### 身分認證層面
-
-#### 針對本週威脅
-
-1. **Fortinet FortiCloud SSO 檢查**（CVE-2026-24858）：若啟用 FortiCloud SSO 認證，檢查是否有跨帳戶的未授權登入活動
-2. **BeyondTrust 存取審計**：檢查所有 BeyondTrust RS/PRA 系統的存取日誌，特別關注 OS 命令注入跡象
-3. **Dell RP4VMs 硬編碼憑證**（CVE-2026-22769）：立即執行 Dell 提供的修復腳本或隔離受影響系統
-4. **Cisco SD-WAN 管理帳號**：審查 SD-WAN 管理帳號，實施 MFA，限制存取來源 IP
-5. **SmarterMail ConnectToHub API**：限制 API 存取來源，檢查未授權存取紀錄
-6. **SolarWinds WHD 認證**：檢查 Web Help Desk 系統是否有異常的認證繞過跡象（CVE-2025-40536）
-7. **Cisco UCM 帳號審查**（CVE-2026-20045）：審查 Unified Communications Manager 存取權限，注意使用者層級存取提權至 root 的可能性
-
-#### 通用建議
-
-- 在所有管理介面和遠端存取系統上強制啟用 MFA
-- 審查特權帳戶使用情況，縮小特權帳戶數量
-- 縮短所有管理介面的 Session Timeout
-- 定期輪替服務帳號密碼
-
-### 資料保護與監控
-
-#### 針對本週威脅
-
-1. **勒索軟體防備**（CVE-2026-1731、CVE-2026-24423 勒索軟體關聯）：驗證備份完整性與可復原性，實施 3-2-1 備份策略
-2. **IoC 整合**：將本週 threat_feeds 新增的 2,659 筆惡意 URL、1,748 筆惡意軟體樣本、2,781 筆 IoC 指標整合至 SIEM/SOAR
-3. **伊朗 APT 監控升級**：若組織屬於能源、金融、政府、國防領域，應提升監控層級至最高；加拿大 Cyber Centre 評估伊朗「幾乎確定」（very likely）將使用網路能力進行報復
-4. **供應鏈攻擊後調查**：若曾在 2025 年 6 月至 2026 年 2 月使用 Notepad++ 自動更新，需回溯檢查過去 9 個月的網路流量日誌
-5. **UAC-0252 釣魚攻擊防範**：教育使用者識別冒充政府機構要求更新行動應用程式的釣魚電子郵件，參閱 CERT-UA#20032 完整公告
-
-#### 通用建議
-
-- 加密敏感資料（靜態與傳輸中）
-- 監控異常資料外傳行為
-- 定期進行資料備份，將備份隔離於生產網路之外
+- 實施資料外洩防護（DLP）策略
+- 監控異常資料存取模式
 
 ---
 
 ## 3. 緩解策略
 
-### 3.1 Cisco SD-WAN（無法立即升級時）
+### 3.1 VMware Aria Operations 暫時緩解（CVE-2026-22719）
 
-| 措施 | 說明 |
+| 項目 | 內容 |
 |------|------|
-| **VPN 512 隔離** | 使用 ACL 限制僅允許已知合法 peer IP 連線 |
-| **停用 NETCONF** | 若不需要外部 NETCONF 管理，暫時關閉 |
-| **加強監控** | 在 SIEM 中設定針對 SD-WAN 認證事件的即時告警 |
-| **配置快照** | 定期建立 SD-WAN 設備配置快照，偵測未授權變更 |
-| **憑證替換** | 替換所有 SD-WAN Manager 自簽憑證 |
+| **適用情境** | 無法立即套用 Broadcom 修補的環境 |
+| **緩解措施** | 1. 透過防火牆限制 Aria Operations 管理介面的網路存取，僅允許受信任的管理網段連線<br>2. 監控系統日誌中的異常命令執行<br>3. 若無法實施緩解，依 CISA 建議停止使用受影響產品 |
+| **有效期限** | **建議 2026-03-24 前完成修補**（CISA KEV 修補截止日） |
+| **重新評估** | 若 2026-03-11 前仍未修補，應評估停用產品 |
 
-> **有效期限**：臨時措施最多維持至下一個維護窗口（建議不超過 7 天），應儘速完成正式修補。
-> **來源**：[CISA ED 26-03](https://www.cisa.gov/news-events/directives/ed-26-03-mitigate-vulnerabilities-cisco-sd-wan-systems)
+### 3.2 Juniper PTX 暫時緩解（CVE-2026-21902）
 
-### 3.2 Notepad++ 供應鏈攻擊後處置
-
-| 措施 | 說明 |
+| 項目 | 內容 |
 |------|------|
-| **停用自動更新** | Settings > Preferences > Update > 取消勾選 |
-| **手動升級** | 從官方網站下載 v8.9.2 並驗證 SHA-256 |
-| **IoC 全面掃描** | 使用 EDR 或 YARA 規則掃描所有端點的 Chrysalis 後門指標 |
-| **C2 封鎖** | 在 DNS 和防火牆層級封鎖已知惡意基礎設施 |
-| **流量回溯** | 回溯檢查過去 9 個月的網路流量日誌 |
-| **DLL 完整性** | 驗證 BluetoothService.exe 是否載入非預期的 DLL |
+| **適用情境** | 無法立即升級至 25.4R1-S1-EVO 或 25.4R2-EVO 的環境 |
+| **緩解措施** | 1. 透過 ACL/防火牆規則封鎖外部對 On-Box 異常偵測框架服務埠的存取<br>2. 確認內部路由實例存取控制僅允許合法內部進程連線<br>3. 監控網路流量是否有異常存取模式 |
+| **有效期限** | **建議 2026-03-14 前完成修補**（PoC 公開後 2 週內，利用風險快速攀升） |
+| **重新評估** | 每日監控是否有活躍利用報告 |
 
-> **有效期限**：立即執行，持續監控至少 30 天。
-> **若確認受害**：立即隔離系統、保存證據、根除威脅、變更敏感帳戶密碼、通報主管機關。
-> **來源**：[TWCERT/CC 公告](https://www.twcert.org.tw/tw/cp-104-10725-feaeb-1.html)
+### 3.3 WordPress SSO 外掛暫時緩解（CVE-2026-2628）
 
-### 3.3 BeyondTrust RS/PRA（修補期限嚴重過期、勒索軟體關聯）
-
-| 措施 | 說明 |
+| 項目 | 內容 |
 |------|------|
-| **立即評估暴露** | 盤點所有可從網際網路存取的 BeyondTrust 產品 |
-| **入侵檢查** | 檢查系統日誌是否有異常指令執行、未授權存取跡象 |
-| **網路隔離** | 在修補前將管理介面限制為僅允許內部存取 |
-| **修補** | 參閱 [BeyondTrust BT26-02](https://www.beyondtrust.com/trust-center/security-advisories/bt26-02) |
+| **適用情境** | 無法立即更新外掛的 WordPress 網站 |
+| **緩解措施** | 1. **暫時停用** All-in-One Microsoft 365 & Entra ID / Azure AD SSO Login 外掛<br>2. 啟用替代身份驗證方式<br>3. 審查管理員帳號是否有異常<br>4. 啟用 WAF 規則過濾可疑認證請求 |
+| **有效期限** | **立即更新至 2.2.6+**，不建議長期使用停用外掛作為緩解 |
+| **重新評估** | 更新外掛後重新啟用 |
 
-> **有效期限**：直到完成修補。**CISA 修補期限 2026-02-16 已過期 15 天**。
-> **勒索軟體關聯**：延遲修補將大幅增加被攻擊風險。
+### 3.4 伊朗 APT 威脅緩解
 
-### 3.4 伊朗 APT 威脅升級應對（Operation Epic Fury 後續）
-
-| 措施 | 說明 |
+| 項目 | 內容 |
 |------|------|
-| **威脅獵捕** | 針對 MuddyWater、APT33、APT34、Charming Kitten、Moses Staff 的 TTP 進行獵捕 |
-| **異常流量監控** | 關注異常 Rust 二進位執行、非預期 C2 回連模式 |
-| **勒索軟體防備** | 驗證備份、測試復原程序；注意伊朗國家級行為者正結合勒索軟體與破壞性攻擊 |
-| **態勢感知** | 持續追蹤伊朗網路戰態勢發展 |
-| **資訊戰防備** | 監控行動 App 推播通知基礎設施，防範心理戰操作 |
-| **網路封鎖應變** | 若組織有伊朗業務，準備網路連線中斷應變計畫 |
+| **適用情境** | 所有位於加拿大及盟邦國家的組織（特別是航空航天、能源、國防、電信產業） |
+| **緩解措施** | 1. 強化 MFA 部署，優先保護電子郵件和 VPN<br>2. 加強對 LinkedIn 等社群媒體的社會工程警覺（伊朗 APT 慣用手法）<br>3. 掃描公開暴露設備是否存在已知漏洞<br>4. 確認所有面向網際網路的服務已停用預設密碼<br>5. 部署 DDoS 防護，特別是面向公眾的網站<br>6. 封鎖已知伊朗 APT 組織的 IoC（IP、域名、惡意檔案雜湊值） |
+| **有效期限** | **持續至地緣政治緊張局勢緩和**（預計至少 4-8 週） |
+| **重新評估** | 每週根據 CISA/CCCS/NCSC 公告更新 IoC 清單 |
 
-> **有效期限**：持續執行。Operation Epic Fury 導致網路威脅態勢可能在短期內快速變化。
-> **適用對象**：美國及以色列盟友政府機構、能源基礎設施、金融機構、國防承包商。加拿大 Cyber Centre 評估親伊朗駭客主義者可能鎖定加拿大為低技術破壞性攻擊目標。
-> **來源**：Canadian Cyber Centre 伊朗網路威脅公告（2026-03-02）、NCSC-FI 公告
+### 3.5 Chrome 擴充套件供應鏈攻擊緩解
 
-### 3.5 Soliton FileZen（等待廠商修補指引時）
-
-| 措施 | 說明 |
+| 項目 | 內容 |
 |------|------|
-| **限制存取** | FileZen 管理介面僅可從內部網路存取 |
-| **WAF 防護** | 在 WAF/反向代理上設定規則，過濾異常 HTTP 請求 |
-| **日誌監控** | 加強 FileZen 存取日誌監控 |
-
-> **有效期限**：直到廠商發布明確修補版本並完成套用。
-
-### 3.6 ICS/OT 系統（Johnson Controls / Copeland / EV 充電站 / Yokogawa）
-
-| 措施 | 說明 |
-|------|------|
-| **網路隔離** | 確保 ICS 系統完全與企業 IT 網路隔離 |
-| **移除網際網路存取** | 斷開所有 ICS 系統的直接網際網路連線 |
-| **VPN 存取** | 若需遠端管理，僅透過 VPN 並搭配 MFA |
-| **變更預設認證** | 更改所有預設密碼與帳戶 |
-| **實體安全** | 限制 ICS 設備的實體存取權限 |
-
-> **有效期限**：直到廠商發布修補並完成套用。OT 環境修補必須經過完整測試，避免影響生產。
-> **來源**：[CISA ICS Advisories](https://www.cisa.gov/news-events/ics-advisories)
-
-### 3.7 供應鏈攻擊防禦（npm / 開發工具鏈）
-
-| 措施 | 說明 |
-|------|------|
-| **依賴審計** | 對所有 npm 專案執行 `npm audit`，檢查是否使用受影響版本的 eslint-config-prettier |
-| **鎖定版本** | 使用 `package-lock.json` 或 `yarn.lock` 固定依賴版本 |
-| **CI/CD 掃描** | 在 CI/CD 管線中整合 SCA（Software Composition Analysis）工具 |
-| **開發環境隔離** | Metro Development Server 不應暴露於公網 |
-| **網路監控** | 監控 npm 安裝過程中的異常對外連線 |
-
-> **有效期限**：持續執行。供應鏈攻擊是長期威脅。
-> **重新評估時間**：每次更新依賴項目時重新審計。
-
-### 3.8 SolarWinds WHD 雙漏洞緩解
-
-| 措施 | 說明 |
-|------|------|
-| **限制管理介面存取** | Web Help Desk 管理介面僅可從受信任的內部網段存取 |
-| **WAF 規則** | 在 WAF 上設定規則，阻擋異常的認證繞過嘗試 |
-| **日誌審查** | 檢查 WHD 存取日誌是否有未授權存取跡象 |
-| **反序列化防護** | 若可能，在應用層防火牆限制序列化物件的傳輸 |
-
-> **有效期限**：直到完成升級至最新版本。
-> **來源**：[SolarWinds Security Advisory](https://www.solarwinds.com/trust-center/security-advisories/CVE-2025-40536)
+| **適用情境** | 曾安裝 QuickLens 擴充套件的使用者 |
+| **緩解措施** | 1. 立即移除 QuickLens 擴充套件<br>2. 檢查加密貨幣錢包是否有異常交易<br>3. 更改在受影響瀏覽器中使用的所有密碼<br>4. 企業環境中限制擴充套件安裝權限，僅允許白名單內的擴充套件 |
+| **有效期限** | 立即執行 |
+| **重新評估** | 不適用（一次性處理） |
 
 ---
 
 ## 4. 注意事項
 
-### 適用範圍
+### 4.1 建議適用範圍與限制
 
-1. **Cisco SD-WAN 修補**適用於所有部署類型（On-Prem、Cisco Hosted、FedRAMP），但不同部署類型的修補步驟可能不同。Cisco Hosted 環境需透過 Cisco TAC 協調。
-2. **伊朗 APT 防禦建議**主要針對可能成為地緣政治目標的組織，特別是美國、以色列及其盟友（包含加拿大）的政府機構、能源基礎設施、金融機構和國防承包商。一般企業仍應注意伊朗行為者採用勒索軟體作為攻擊手段的趨勢。
-3. **ICS/OT 緩解措施**主要針對使用 Johnson Controls Frick Quantum HD 冷凍控制系統、Copeland XWEB/XWEB Pro、Yokogawa CENTUM VP 以及 EV 充電管理平台的食品、農業、商業設施和運輸基礎設施。其他 ICS 環境應參閱對應的 CISA ICS Advisory。
-4. **Notepad++ 供應鏈攻擊 IoC**主要適用於 Windows 環境。macOS/Linux 使用者不受此特定攻擊影響。
-5. **勒索軟體關聯漏洞**（CVE-2026-1731、CVE-2026-24423）對所有使用相關產品且暴露於網際網路的組織均適用。
-6. **供應鏈攻擊防禦**（CVE-2025-54313、CVE-2025-11953）適用於所有使用 npm 生態系統的開發團隊。
-7. **SolarWinds WHD 修補**適用於所有部署 SolarWinds Web Help Desk 的組織，兩個漏洞（認證繞過 + 反序列化 RCE）可形成攻擊鏈。
+- **環境差異**：本報告提供的修補建議基於廠商官方公告，適用於標準部署環境。高度客製化或老舊系統可能需要額外評估。
+- **修補優先級**：依據 CISA KEV、CVSS 分數、活躍利用狀態和勒索軟體關聯性排序，各組織應依據自身資產暴露情況調整優先級。
+- **台灣本地產品**：TWCERT/CC 揭露的漏洞（TVN 系列）部分未提供 CVE 編號和 CVSS 評分，信心水準標記為「中」，建議聯繫廠商取得詳細技術資訊。
+- **地緣政治威脅**：伊朗 APT 威脅評估基於加拿大 Cyber Centre 公開情報，實際攻擊範圍可能更廣或更窄。
 
-### 已知限制與副作用
+### 4.2 可能的副作用
 
-| 建議措施 | 可能副作用 | 替代方案 |
-|----------|------------|----------|
-| SD-WAN VPN 512 隔離 | 可能影響正常 peer 通訊 | 確認所有合法 peer IP 已加入白名單 |
-| 停用 Notepad++ 自動更新 | 後續修補需手動套用 | 透過 GPO/MDM 集中管理 |
-| ICS 網路隔離 | 可能影響遠端監控能力 | 評估營運影響後實施 |
-| Chrome 擴充套件白名單 | 可能影響使用者生產力 | 先調查需求再實施 |
-| BeyondTrust 修補 | 可能需重啟遠端存取服務 | 安排維護窗口 |
-| ICS/OT 設備修補 | **高風險** -- 可能影響生產控制系統 | 必須在測試環境驗證；安排計劃性停機 |
-| SolarWinds Serv-U 修補 | 可能影響檔案傳輸服務 | 安排維護窗口 |
-| npm 套件降級 | 可能影響建置流程 | 在 staging 環境先測試後再部署 |
-| Metro Server 網路限制 | 可能影響開發者遠端除錯 | 使用 VPN 連線至開發網路 |
-| SolarWinds WHD 管理介面限制 | 遠端管理功能受限 | 安排維護窗口進行升級 |
+- **Cisco SD-WAN 修補**：升級 SD-WAN Controller 可能需要計畫性停機；隔離 VPN 512 介面可能暫時影響遠端管理存取。
+- **VMware Aria Operations 網路隔離**：限制管理介面存取可能影響監控和維運團隊的日常操作。
+- **Linux 核心更新**：核心更新需要重啟系統，生產環境應安排維護窗口。
+- **WordPress 外掛停用**：停用 SSO 外掛將影響使用 Microsoft 365 帳號登入的所有使用者，需預先設定替代登入方式。
+- **瀏覽器強制更新**：企業中強制更新瀏覽器版本可能影響特定 Web 應用程式的相容性，建議先在測試環境驗證。
 
-### 測試建議
+### 4.3 建議的測試步驟
 
-1. **修補測試**：所有 Critical 修補在部署至生產環境前，應在測試環境中驗證相容性
-2. **SD-WAN 修補**：特別注意升級過程中的網路中斷風險，建議在維護窗口內執行
-3. **ICS 修補**：工業控制系統修補必須在模擬環境中充分測試，確認不影響製程安全
-4. **回滾計畫**：所有修補操作前必須建立回滾計畫和系統快照
-5. **IoC 掃描**：在套用修補前，先執行入侵跡象檢查
-6. **供應鏈修補**：npm 依賴更新後，需完整執行 CI/CD 測試流程，確認應用程式功能不受影響
-7. **SolarWinds WHD 升級**：升級前備份完整資料庫與設定檔
+1. **修補前**：在非生產環境（staging/dev）完成修補驗證
+2. **修補中**：逐批次套用，先從非關鍵系統開始，監控服務可用性
+3. **修補後**：執行功能驗證測試，確認服務正常運行；檢查系統日誌是否有異常
+4. **緩解措施**：驗證防火牆規則和 ACL 變更是否正確生效，確認合法管理存取未受阻
 
 ---
 
-## 修補期限總覽表
+## 5. 本週威脅情報摘要
 
-| 優先級 | CVE | 產品 | 修補期限 | 勒索軟體 | 建議行動 |
-|--------|-----|------|----------|----------|----------|
-| **P0** | CVE-2026-20127 | Cisco SD-WAN | ED 26-03 | Unknown | 立即修補 + 威脅獵捕 |
-| **P0** | CVE-2022-20775 | Cisco SD-WAN | ED 26-03 | Unknown | 立即修補 + 威脅獵捕 |
-| **P0+** | CVE-2026-1731 | BeyondTrust RS/PRA | 2026-02-16（逾期） | **Known** | 立即修補 + 入侵檢查 |
-| **P0+** | CVE-2026-24423 | SmarterMail | 2026-02-26（逾期） | **Known** | 立即修補 |
-| **P0+** | CVE-2026-22769 | Dell RP4VMs | 2026-02-21（逾期） | N/A | 執行修復腳本 |
-| **P1** | CVE-2026-20700 | Apple 多平台 | 2026-03-05 | 未確認 | 2 天內完成修補 |
-| **P1** | CVE-2026-25108 | Soliton FileZen | TBD | N/A | 儘速修補 |
-| **P1** | CVE-2025-49113 | RoundCube | TBD | N/A | 升級至 1.6.12 |
-| **P1** | CVE-2025-68461 | RoundCube | TBD | N/A | 升級至 1.6.12 |
-| **P1** | CVE-2025-40536 | SolarWinds WHD | 2026-02-15（逾期） | N/A | 升級至最新版本 |
-| **P1** | CVE-2025-40551 | SolarWinds WHD | TBD | N/A | 升級至最新版本 |
-| **P1** | CVE-2025-52691 | SmarterMail | TBD | N/A | 升級至最新版本 |
-| **P1** | CVE-2026-20045 | Cisco UCM | 2026-02-11（逾期） | Unknown | 依 Cisco 公告更新 |
-| **P1** | CVE-2025-64328 | Sangoma FreePBX | TBD | N/A | 依廠商公告更新 |
-| **P1** | CVE-2025-68645 | Zimbra ZCS | 2026-02-12（逾期） | Unknown | 套用修補 |
-| **P1** | CVE-2026-24858 | Fortinet | BOD 22-01 | N/A | 套用更新 |
-| **P1-SC** | CVE-2025-54313 | eslint-config-prettier | TBD | N/A | 移除受影響版本 |
-| **P1-SC** | CVE-2025-11953 | React Native CLI | TBD | N/A | 更新至修補版本 |
-| **P1-SC** | CVE-2025-15556 | Notepad++ WinGUp | TBD | N/A | 停用自動更新 + 手動升級 |
-| **P2** | CVE-2026-22720/19/21 | VMware CF/vSF | N/A | N/A | 升級至 9.0.2.0+ |
-| **P2** | N/A | SonicWall Gen7/8 | N/A | N/A | 升級韌體 |
-| **P2** | CVE-2025-40538 | SolarWinds Serv-U | N/A | N/A | 升級至 15.5.4+ |
-| **P2** | CVE-2025-13942 | Zyxel | N/A | N/A | 套用修補 |
-| **P2** | CVE-2025-31125 | Vite.js | 2026-02-12（逾期） | N/A | 升級版本 |
-| **P2** | CVE-2025-34026 | Versa Concerto | 2026-02-12（逾期） | N/A | 套用更新 |
-| **P3** | CVE-2026-21509 | Microsoft Office | 2026-02-16（逾期） | N/A | 套用安全更新 |
-| **P3** | CVE-2026-24061 | GNU InetUtils | 2026-02-16（逾期） | N/A | 套用更新 |
-| **P3** | CVE-2026-23760 | SmarterMail | 2026-02-16（逾期） | N/A | 升級版本 |
+### 5.1 地緣政治網路威脅
 
----
+| 事件 | 日期 | 重點 |
+|------|------|------|
+| 伊朗 Operation Epic Fury 網路戰 | 2026-02-28 起 | 美國/以色列軍事打擊引發伊朗全面網路反擊；加拿大 Cyber Centre 發布專項公告；目標：關鍵基礎設施、國防、能源、電信 |
+| 伊朗近全面網路封鎖 | 2026-02-28 | 網路連通性降至 4%，為近年最大規模政府主導斷網 |
+| Dust Specter APT 攻擊伊拉克政府 | 2026-03-03 | 疑似伊朗關聯 APT，使用 SPLITDROP/TWINTASK/TWINTALK/GHOSTFORM 四種新型惡意軟體 |
+| SloppyLemming 間諜活動 | 2026-03-03 | 印度關聯威脅行為者，一年期間諜活動，目標巴基斯坦/孟加拉/斯里蘭卡政府及關鍵基礎設施 |
+| CERT-UA UAC-0252 攻擊 | 2026-03-02 | 釣魚郵件冒充烏克蘭政府機關，部署 SHADOWSNIFF/SALATSTEALER 竊取程式 |
+| 杜拜 SIM-Swap 攻擊 | 2026-03-03 | 伊朗飛彈攻擊後數小時，詐騙者冒充「杜拜危機管理」部門對市民發動 SIM 卡交換攻擊 |
 
-## Qdrant 跨 Layer 關聯分析摘要
+### 5.2 供應鏈攻擊
 
-本報告執行 5 次 Qdrant 語意查詢，為防禦建議提供跨 Layer 情境脈絡：
+| 事件 | 日期 | 重點 |
+|------|------|------|
+| QuickLens Chrome 擴充套件遭竄改 | 2026-03-01 | 約 7,000 使用者受 ClickFix 攻擊與加密貨幣竊取影響；v5.8 於 2026-02-17 釋出惡意程式碼 |
+| FortiGate SSL VPN 符號連結持久化 | 持續中 | 攻擊者利用三個已知漏洞植入符號連結後門，修補後仍持續存在；全球數千台設備受影響 |
 
-| # | 查詢內容 | 結果筆數 | 最高相似度 | 關鍵發現 |
-|---|----------|----------|------------|----------|
-| 1 | "Cisco SD-WAN mitigation patch remediation" | 10 | 0.6292 | 荷蘭 NCSC（NCSC-2026-0071）、加拿大 Cyber Centre（AL26-004）均已發布獨立修補公告；exploit_intelligence Layer 記錄 CVE-2022-20775 路徑遍歷（0.5549） |
-| 2 | "critical vulnerability remediation patch 2026 February" | 10 | 0.6701 | Microsoft 2 月安全更新包含 6 個活躍利用 CVE（0.6555）；Oracle 1 月季度更新仍需關注（0.6383）；Palo Alto Networks 公告（0.6319） |
-| 3 | "authentication bypass remote code execution defense" | 10 | 0.5622 | BeyondTrust RCE（0.5622）與 SmarterMail RCE Active Exploitation（0.5554）為認證繞過 + RCE 最高風險組合；Ivanti EPMM 歷史案例（0.5163）可供參考防禦策略 |
-| 4 | "ICS OT industrial control system defense hardening 2026" | 10 | 0.5813 | CISA ICS 公告 AV26-151（0.5813）、OT 安全連線原則聯合指引（0.5577）、愛沙尼亞電力基礎設施演習（0.5426）、Siemens Industrial Edge 漏洞（0.5420） |
-| 5 | "SolarWinds Web Help Desk RoundCube exploitation remediation" | 10 | 0.5944 | HKCERT + 加拿大 CERT 均發布 SolarWinds WHD 安全公告，與 CISA KEV 交叉確認；RoundCube 活躍利用跨多個安全建議追蹤 |
+### 5.3 Qdrant 跨 Layer 關聯分析
+
+本週執行的 Qdrant 語意查詢結果摘要：
+
+| 查詢 | 結果筆數 | 關鍵發現 |
+|------|----------|----------|
+| 「actively exploited critical vulnerability patch urgent」 | 10 | WSUS CVE-2025-59287 活躍利用（TWCERT）、Ivanti EPMM 零日漏洞（CVE-2026-1281/1340）、PUSR USR-W610 多重漏洞（CISA ICS）、n8n 自動化平台 Critical 漏洞 |
+| 「firewall network device security update firmware vulnerability」 | 10 | Zyxel 防火牆漏洞（歷史）、D-Link DWR-M960 漏洞（CVE-2026-2881）、WatchGuard Fireware 漏洞（CVE-2026-3344）、FortiOS 歷史漏洞 |
+| 「authentication bypass credential theft identity access management」 | 10 | Ivanti EPM 認證繞過、Microsoft Entra ID 認證繞過（CVE-2026-3224）、OneUptime WebAuthn 2FA 繞過、Drupal 認證繞過（CVE-2026-0948）、SmarterMail 認證繞過 |
+
+**跨 Layer 關聯洞察**：
+- **認證繞過漏洞激增趨勢**：本週 Qdrant 查詢顯示身分認證相關漏洞密集出現，跨 vulnerability_tracking 與 exploit_intelligence 兩個 Layer，包括 WordPress SSO（CVE-2026-2628）、Cisco SD-WAN（CVE-2026-20127）、Microsoft Entra ID（CVE-2026-3224），建議強化 MFA 部署作為防線
+- **網路設備漏洞持續高發**：防火牆/VPN 設備漏洞（Cisco、Juniper、SonicWall、WatchGuard、FortiGate）跨多個 Layer 反覆出現，反映攻擊者對網路邊界設備的持續關注
+- **活躍利用漏洞與勒索軟體關聯**：BeyondTrust CVE-2026-1731 和 SmarterMail CVE-2026-24423 均確認勒索軟體關聯，建議將勒索軟體防護納入修補優先級考量
 
 ---
 
 ## 免責聲明
 
-本防禦建議報告基於公開可取得的資訊來源編製，包括但不限於：CISA Known Exploited Vulnerabilities (KEV) Catalog、CISA Emergency Directives、National Vulnerability Database (NVD)、各國 CERT/CSIRT 公告（NSA、ACSC、NCSC-UK、CERT-FR、CERT.RO、Canadian Cyber Centre、NCSC-NL、NCSC-FI、CERT-SE、CERT-EE、JPCERT/CC、TWCERT/CC、CERT-UA）、廠商官方安全公告，以及 abuse.ch 威脅情報饋送。
+本防禦建議基於國際 CERT/安全機構公開資料彙整，請注意：
 
-**重要聲明**：
+1. **非保證**：實施建議不保證完全防禦所有威脅
+2. **環境差異**：建議為通用性質，可能不適用於所有環境
+3. **請先測試**：在正式環境部署前，請先於測試環境驗證
+4. **非法律建議**：本報告不構成法律或合規建議
+5. **資料限制**：基於公開資料，不涵蓋非公開威脅情報
+6. **翻譯風險**：部分非英文來源經 AI 翻譯，修補建議請以官方原文為準
+7. **時效性**：本報告資料截至 2026-03-04，後續可能有新的漏洞或修補發布
 
-1. **非完整評估**：本報告不構成完整的安全評估或滲透測試結果。組織應根據自身環境和風險承受能力制定具體的修補和防禦計畫。
-
-2. **修補建議來源**：所有修補建議均引用自廠商官方安全公告或權威 CERT 機構指引，本報告不自行編造修補方式。實際修補步驟請以廠商最新公告為準。
-
-3. **時效性**：本報告資料收集截至 2026-03-02。安全態勢可能在報告發布後快速變化，特別是伊朗 APT 活動態勢和新漏洞揭露。建議持續追蹤相關 CERT 公告。
-
-4. **環境差異**：每個組織的 IT 環境、資產清單和風險承受能力不同。本報告的優先級排序基於通用風險評估，組織應依據自身暴露面調整優先級。
-
-5. **測試責任**：所有修補操作前應在測試環境中驗證，並備妥回滾計畫。因修補操作導致的服務中斷或系統問題，責任由實施者自行承擔。
-
-6. **ICS/OT 特殊考量**：工業控制系統的修補必須考慮製程安全和可用性需求，不應在未經充分測試的情況下套用至生產環境。
-
-7. **地緣政治風險**：伊朗網路威脅評估基於多國 CERT 公開情報，實際威脅可能因地緣政治發展而快速升級或改變方向。
-
-8. **供應鏈風險**：npm 生態系統的惡意套件可能持續出現新變體，本報告僅涵蓋已知的受影響版本。
-
-9. **地理偏差**：資料來源以歐美和亞太地區的 CERT 機構為主，非洲、南美洲等地區的特有威脅覆蓋不足。
-
-10. **Qdrant 查詢限制**：語意查詢結果的相似度分數反映語意距離，不等同於實際威脅關聯性或防禦有效性。
-
-11. **非法律建議**：本報告不構成法律或合規建議。
-
-本報告僅供參考，不構成安全保證。重大安全決策請結合多方情資來源，並諮詢合格的資訊安全專業人員。
+重大安全決策請諮詢專業資安顧問，並結合組織實際環境評估。
 
 ---
 
-## 自我審核 Checklist
-
-- [x] 修補建議是否均來自官方來源（廠商公告、CERT 指引）？
-- [x] 是否包含完整免責聲明？
-- [x] 是否標註「通用建議」vs「針對本週威脅」？
-- [x] 優先修補清單是否依正確優先級排序（活躍利用 > EPSS > CVSS）？
-- [x] 每筆修補是否包含：漏洞描述、影響產品、修補方式、利用狀態？
-- [x] 安全控制建議是否分類（網路/端點/身分認證/資料保護）？
-- [x] 緩解策略是否標註有效期限？
-- [x] 注意事項是否包含適用範圍、限制、副作用、測試步驟？
-- [x] 是否執行至少 3 次 Qdrant 語意查詢？（實際 5 次，50 筆結果）
-- [x] 報告是否 > 10KB？
-- [x] 所有 14 項 CISA KEV 活躍利用漏洞是否均已涵蓋？
-- [x] 伊朗 APT 威脅是否有獨立的緩解策略段落？
-- [x] 供應鏈攻擊是否有獨立的優先級分類（P1-SC）？
-
----
-
-> 報告產出時間：2026-03-03
-> 資料截止時間：2026-03-02 23:59 UTC
-> 資料來源：CISA (US)、NSA (US)、ACSC (AU)、NCSC-UK (UK)、CERT-FR (FR)、CERT.RO (RO)、Canadian Cyber Centre (CA)、NCSC-NL (NL)、NCSC-FI (FI)、CERT-SE (SE)、CERT-EE (EE)、CERT-UA (UA)、JPCERT/CC (JP)、TWCERT/CC (TW)、NVD、Exploit-DB、abuse.ch
-> 分析模型：Claude Opus 4.6
-> Qdrant 語意查詢次數：5
-> 版本：3.0
+> 產出時間：2026-03-04 UTC
+> 資料來源：CISA KEV、NVD、GovCERT.HK、HKCERT、TWCERT/CC、NCSC-FI、Canadian Centre for Cyber Security、CERT-UA、CERT.at、PoC-in-GitHub、Qdrant 向量資料庫語意查詢

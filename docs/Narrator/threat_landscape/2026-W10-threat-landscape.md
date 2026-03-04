@@ -1,73 +1,74 @@
 ---
 layout: seo-report
 title: 2026 第 10 週威脅態勢分析
-description: "2026-02-24 至 2026-03-02 資安威脅週報：伊朗 Operation Epic Fury 後全國網路降至 4% 五大 APT 組織同步動員、Notepad++ Chrysalis 後門供應鏈攻擊、UAC-0252 冒充烏克蘭政府部署 SHADOWSNIFF 竊取程式、Cisco SD-WAN 零日漏洞全球性利用 CISA ED 26-03、CISA 10 項 ICS 公告涵蓋 EV 充電站與冷鏈系統、QuickLens Chrome 擴充套件 ClickFix 竊取加密貨幣、Kimwolf 全球最大殭屍網路主控者身份曝光、Vidar 與 AsyncRAT 主導威脅情報饋送。"
+description: "2026-03-02 至 2026-03-08 資安威脅週報：伊朗 Operation Epic Fury 後五大 APT 同步動員、APT28 利用 CVE-2026-21513 MSHTML 零日漏洞、Notepad++ Chrysalis 後門供應鏈攻擊、Dust Specter APT 伊拉克政府攻擊、SloppyLemming 南亞間諜活動、UAC-0252 SHADOWSNIFF 竊取程式、Cisco SD-WAN CISA ED 26-03 持續、CISA 新增 Qualcomm/VMware KEV、Chrome Gemini CVE-2026-0628、CrushFTP 暴力破解掃描、Vidar 與 AsyncRAT 主導威脅饋送。"
 parent: 威脅態勢分析
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-03-03
+date: 2026-03-04
 ---
 
 # 威脅態勢分析 — 2026 第 10 週
 
-> 涵蓋期間：2026-02-24 至 2026-03-02
+> 涵蓋期間：2026-03-02 至 2026-03-08
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-03-03
+> 產出時間：2026-03-04（週中更新，資料截至 2026-03-04 UTC）
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢呈現多面向急劇升級態勢，**地緣政治網路戰達到前所未有規模、供應鏈攻擊手法持續精進、活躍利用漏洞數量大幅攀升、國家級行為者與資訊竊取活動同步擴張**四大主軸交織，攻擊面達到 2026 年以來最高水準。重點摘要如下：
+本週威脅態勢呈現**地緣政治驅動的國家級網路戰全面升級**，結合**供應鏈攻擊持續精進**、**多國 APT 組織活躍**與**活躍利用漏洞持續擴張**四大主軸。Operation Epic Fury（2026-02-28）引發的伊朗網路報復威脅成為本週主導議題，同時多個新的國家級 APT 行動被揭露。重點摘要如下：
 
 **本週重大事件**：
-- **伊朗 Operation Epic Fury 網路戰全面升級**：2026-02-28 伊朗全國網路連線降至正常水準的 4%（NetBlocks 監測），五大伊朗 APT 組織（MuddyWater、APT33、APT34、Charming Kitten、Moses Staff）於 2026-02-27 同步動員，MuddyWater 部署 5 個全新惡意程式家族（含 Rust 基礎工具），加拿大、芬蘭等多國 CERT 發布伊朗網路威脅公告
-- **Notepad++ Chrysalis 後門供應鏈攻擊**：中國 APT 組織 Lotus Blossom（Violet Typhoon）於 2025 年 6-12 月攻陷 Notepad++ 代管主機服務商，劫持自動更新機制散布高度客製化後門 Chrysalis，濫用 Microsoft Warbird 程式碼保護框架規避 EDR 偵測
-- **UAC-0252 冒充烏克蘭政府釣魚攻擊**：CERT-UA 揭露自 2026 年 1 月起的釣魚攻擊活動，冒充烏克蘭中央與地方政府機構，部署 SHADOWSNIFF 和 SALATSTEALER 竊取程式，鎖定軍民系統行動應用程式使用者
-- **Cisco SD-WAN 全球性利用持續（CISA ED 26-03）**：CVE-2026-20127（CVSS 10.0）與 CVE-2022-20775 攻擊鏈持續活躍，國際多國 CERT 發出聯合警報
+- **伊朗 Operation Epic Fury 網路戰全面升級**：五大伊朗 APT 組織（MuddyWater、APT33、APT34、Charming Kitten、Moses Staff）於 2026-02-27 同步動員，伊朗全國網路降至 4%（NetBlocks），加拿大、芬蘭等多國 CERT 發布伊朗網路威脅公告，Check Point Research 發布伊朗網路能力全面概述
+- **APT28 利用 CVE-2026-21513 MSHTML 零日漏洞**：Akamai 分析確認俄羅斯 APT28 積極利用 Windows MSHTML 安全功能繞過漏洞（CVSS 8.8），影響所有 Windows 版本
+- **Dust Specter APT 攻擊伊拉克政府**：Zscaler 揭露疑似伊朗關聯 APT 組織使用 SPLITDROP、TWINTASK、TWINTALK、GHOSTFORM 四種新型惡意軟體攻擊伊拉克政府官員
+- **SloppyLemming 南亞間諜活動**：Arctic Wolf 揭露印度關聯威脅行為者對巴基斯坦、孟加拉、斯里蘭卡政府與關鍵基礎設施的一年期間諜活動
+- **Notepad++ Chrysalis 後門供應鏈攻擊**：中國 APT 組織 Lotus Blossom 攻陷代管服務商，劫持自動更新機制散布 Chrysalis 後門，濫用 Microsoft Warbird 繞過 EDR
+- **CISA 新增 KEV**：CVE-2026-21385（Qualcomm 記憶體損壞）與 CVE-2026-22719（VMware Aria Operations 命令注入）於 2026-03-03 加入 KEV
 
-**本週新增 CISA KEV 重點**（14 個活躍利用漏洞追蹤）：
-- **CVE-2026-1731** — BeyondTrust Remote Support/PRA OS 命令注入（Critical，**已用於勒索軟體**）
-- **CVE-2026-20045** — Cisco Unified Communications 程式碼注入（Critical）
-- **CVE-2025-49113** — RoundCube Webmail 反序列化 RCE（Critical）
-- **CVE-2025-68461** — RoundCube Webmail SVG XSS（Critical）
-- **CVE-2025-40536** — SolarWinds Web Help Desk 身份驗證繞過（Critical）
-- **CVE-2025-40551** — SolarWinds Web Help Desk 反序列化 RCE（Critical）
-- **CVE-2025-52691** — SmarterTools SmarterMail 無限制檔案上傳（Critical）
-- **CVE-2025-54313** — Prettier eslint-config-prettier 嵌入惡意程式碼
-- **CVE-2025-64328** — Sangoma FreePBX OS 命令注入（Critical）
-- **CVE-2025-68645** — Zimbra ZCS PHP 遠端檔案包含
-- **CVE-2025-31125** — Vite Vitejs 不當存取控制
-- **CVE-2025-34026** — Versa Concerto 不當身份驗證
-- **CVE-2025-11953** — React Native CLI OS 命令注入
-- **CVE-2025-15556** — Notepad++ 下載程式碼未驗證完整性
+**本週新增/持續 CISA KEV 重點**：
+- **CVE-2026-21385** — Qualcomm 多晶片記憶體損壞（2026-03-03 新增 KEV）
+- **CVE-2026-22719** — Broadcom VMware Aria Operations 命令注入（2026-03-03 新增 KEV）
+- **CVE-2026-21513** — Microsoft MSHTML 安全功能繞過（CVSS 8.8，APT28 利用）
+- **CVE-2026-20127** — Cisco SD-WAN 身份驗證繞過（CISA ED 26-03 持續）
+- **CVE-2026-1731** — BeyondTrust RS/PRA OS 命令注入（**已用於勒索軟體**，修補期限已過期）
 
-**供應鏈與瀏覽器擴充套件威脅**：
-- **QuickLens Chrome 擴充套件**：約 7,000 用戶受影響，v5.8 植入 ClickFix 攻擊與加密貨幣竊取功能
-- **韓國國稅局種子詞外洩**：公開照片意外曝光冷錢包助記詞，導致約 480 萬美元加密貨幣遭竊
+**新揭露 ICS/OT 漏洞**（CISA 2026-03-03 發布）：
+- Hitachi Energy Relion REB500（繼電器保護）
+- Hitachi Energy RTU500（遠端終端單元）
+- Mitsubishi Electric MELSEC iQ-F Series EtherNet/IP
+- Labkotec Lid-3300IP（液位偵測）
+- Portwell Engineering 工具套件
+- EV 充電站後端（ePower、Everon OCPP、Mobiliti-E/MobiHu）
 
-**威脅情報饋送統計**：
-- URLhaus 惡意 URL：2,659 筆
-- MalwareBazaar 惡意軟體樣本：1,748 筆
-- ThreatFox IoC 指標：2,781 筆
-- C2 基礎設施：2 筆
-- Top 惡意程式家族：Vidar (109)、IClickFix (69)、AsyncRAT (65)、ClearFake (64)、Cobalt Strike (41)、StrelaStealer (36)、NetSupportManager RAT (32)
+**Chrome 與 AI 安全新威脅**：
+- **CVE-2026-0628**：Palo Alto Unit 42 揭露 Chrome Gemini 面板漏洞，惡意擴充功能可劫持 Gemini AI 並存取本機檔案系統
+- **CrushFTP 暴力破解掃描**：SANS ISC 偵測到針對 CrushFTP 的活躍掃描，關聯三個已知高風險 CVE
+
+**威脅情報饋送統計**（2026-03-02 至 2026-03-04）：
+- URLhaus 惡意 URL：992 筆（3 月至今）
+- MalwareBazaar 惡意軟體樣本：508 筆（3 月至今）
+- ThreatFox IoC 指標：1,398 筆（3 月至今）
+- C2 基礎設施：2 筆（AsyncRAT）
+- Top 惡意程式家族：AsyncRAT (72)、IClickFix (69)、ClearFake (56)、Vidar (109, URL+domain)、Cobalt Strike (44)、StrelaStealer (39)、NetSupportManager RAT (27)
 
 ---
 
 ## 資料來源統計
 
-| Layer | 本週累計 | 說明 |
-|-------|----------|------|
-| security_news_facts | attack_incident: **631**, vulnerability_disclosure: **285**, policy_regulation: **158**, industry_trend: **518**, other: **254** | 國際資安新聞與事件 |
-| vulnerability_tracking | critical_high: **1,715**, medium: **1,281**, low_info: **1,193** | 漏洞追蹤 |
-| exploit_intelligence | active_exploitation: **11**, poc_available: **633** | 活躍利用與 PoC 情報 |
-| threat_feeds | malicious_url: **2,659**, malware_sample: **1,748**, ioc_indicator: **2,781**, c2_infrastructure: **2** | 威脅饋送 |
+| Layer | 2026 年累計 | 3 月至今 | 說明 |
+|-------|-------------|----------|------|
+| security_news_facts | attack_incident: **338**, vulnerability_disclosure: **21**(3月) | 16+21+8+3+3=51 | 國際資安新聞與事件 |
+| vulnerability_tracking | critical_high: **2,605**, medium: **8,884+** | 持續更新 | 漏洞追蹤 |
+| exploit_intelligence | active_exploitation: **53**, poc_available: **2,263+** | 持續更新 | 活躍利用與 PoC 情報 |
+| threat_feeds | malicious_url: **26,222**, malware_sample: **6,004**, ioc_indicator: **8,385**, c2_infrastructure: **223** | Mar: 992+508+1,398+2 | 威脅饋送 |
 
-> 統計時間：2026-03-03 UTC
+> 統計時間：2026-03-04 UTC
 
 ---
 
@@ -75,7 +76,7 @@ date: 2026-03-03
 
 ### 1. 伊朗 Operation Epic Fury — 網路戰全面升級
 
-**嚴重程度：Critical | 來源：NCSC-FI、NetBlocks、WIRED、Anomali、Halcyon、Canadian Cyber Centre | 日期：2026-02-28 至 2026-03-02**
+**嚴重程度：Critical | 來源：NCSC-FI、NetBlocks、WIRED、Anomali、Halcyon、Canadian Cyber Centre、Check Point Research | 日期：2026-02-28 至 2026-03-03**
 
 **ATT&CK TTP**：
 - <a href="https://attack.mitre.org/techniques/T1498/" class="ttp-badge" target="_blank">T1498</a> Network Denial of Service
@@ -84,7 +85,7 @@ date: 2026-03-03
 - <a href="https://attack.mitre.org/techniques/T1486/" class="ttp-badge" target="_blank">T1486</a> Data Encrypted for Impact
 - <a href="https://attack.mitre.org/techniques/T1059/" class="ttp-badge" target="_blank">T1059</a> Command and Scripting Interpreter
 
-本週最具地緣政治影響力的事件——五起高度關聯事件凸顯國家級網路戰達到前所未有的規模：
+本週最具地緣政治影響力的事件——多起高度關聯事件凸顯國家級網路戰達到前所未有的規模：
 
 **事件 A：伊朗全國網路封鎖**
 - **時間**：2026-02-28 07:00 UTC 起
@@ -110,15 +111,85 @@ date: 2026-03-03
 - Operation Epic Fury 消除伊朗常規軍事選項後，網路行動成為唯一剩餘的非對稱報復工具
 - 預期目標：美國與以色列盟友、全球關鍵基礎設施、政府實體
 
-**事件 E：加拿大 Cyber Centre 發布伊朗威脅公告**
-- **日期**：2026-03-02（基於 2026-02-28 情報）
-- **評估**：伊朗「幾乎確定」（very likely）將使用其網路能力對美國/以色列及盟國進行報復
-- **預期威脅類型**：關鍵基礎設施攻擊、網路資訊戰、軍事人員在線騷擾、僑民壓制
-- **加拿大特定風險**：因公開支持美以行動，親伊朗駭客主義者可能鎖定加拿大為低技術破壞性攻擊目標
+**事件 E：多國 CERT 發布伊朗威脅公告**
+- **加拿大 Cyber Centre**（2026-03-02）：評估伊朗「幾乎確定」將使用網路能力報復美以盟國
+- **Check Point Research**（2026-03-03）：發布伊朗網路能力全面概述，涵蓋 IRGC/MOIS 組織架構與 TTPs
+- **SK-CERT 斯洛伐克**（2026-03-04）：針對 Cisco SD-WAN 零日漏洞發布緊急警告
+- **預期威脅類型**：關鍵基礎設施攻擊、網路資訊戰、軍事人員線上騷擾、僑民壓制
+
+**Check Point 伊朗網路能力分析摘要**：
+- 伊朗網路生態系統分為 IRGC 關聯組織、MOIS 關聯組織、可否認性操作者、駭客主義團體
+- 主要目標：間諜、破壞/摧毀（DDoS、偽勒索軟體、資料清除器）、資訊操作
+- 評估：活動將在中東、美國及盟友國家「加劇與擴大」
 
 **影響評估**：此週事件標誌著國家級網路戰的重要里程碑——軍事行動、網路封鎖、行動 App 心理戰、多 APT 組織協調動員同步發生，網路作戰與實體軍事行動的融合程度達到新高。
 
-### 2. Notepad++ Chrysalis 後門供應鏈攻擊
+### 2. APT28 利用 CVE-2026-21513 MSHTML 零日漏洞
+
+**嚴重程度：High | 來源：Akamai、NCSC-FI | 日期：2026-03-03**
+
+**ATT&CK TTP**：
+- <a href="https://attack.mitre.org/techniques/T1203/" class="ttp-badge" target="_blank">T1203</a> Exploitation for Client Execution
+- <a href="https://attack.mitre.org/techniques/T1566/001/" class="ttp-badge" target="_blank">T1566.001</a> Phishing: Spearphishing Attachment
+- <a href="https://attack.mitre.org/techniques/T1221/" class="ttp-badge" target="_blank">T1221</a> Template Injection
+
+Akamai 研究員使用 PatchDiff-AI 分析 **CVE-2026-21513**（Windows MSHTML 安全功能繞過，CVSS 8.8），確認俄羅斯國家支持的 **APT28（Fancy Bear / Sofacy）**正積極利用此漏洞於野外攻擊。
+
+**漏洞細節**：
+- **影響範圍**：所有 Windows 版本的 MSHTML 框架
+- **修補**：2026 年 2 月 Patch Tuesday 已修補
+- **攻擊向量**：透過文件誘餌（Office 文件、HTML 檔案）
+- **利用效果**：安全功能繞過，可能導致任意程式碼執行
+
+**防禦建議**：
+- 立即套用 2026 年 2 月 Patch Tuesday 更新
+- 檢閱 Akamai 發布的 IoC 進行偵測與獵捕
+- 加強對 MSHTML 相關文件渲染的監控
+
+### 3. Dust Specter APT 攻擊伊拉克政府官員
+
+**嚴重程度：High | 來源：Zscaler ThreatLabz、NCSC-FI | 日期：2026-03-03（攻擊發生於 2026 年 1 月）**
+
+**ATT&CK TTP**：
+- <a href="https://attack.mitre.org/techniques/T1059/" class="ttp-badge" target="_blank">T1059</a> Command and Scripting Interpreter
+- <a href="https://attack.mitre.org/techniques/T1105/" class="ttp-badge" target="_blank">T1105</a> Ingress Tool Transfer
+- <a href="https://attack.mitre.org/techniques/T1041/" class="ttp-badge" target="_blank">T1041</a> Exfiltration Over C2 Channel
+
+Zscaler ThreatLabz 揭露疑似伊朗關聯 APT 組織 **Dust Specter** 針對伊拉克政府官員的攻擊行動：
+
+**新型惡意軟體家族**：
+1. **SPLITDROP** — Dropper（首次記錄）
+2. **TWINTASK** — 後門程式
+3. **TWINTALK** — 後門程式（與 TWINTASK 並用）
+4. **GHOSTFORM** — 遠端存取木馬（RAT）
+
+**兩種攻擊鏈**：
+- **攻擊鏈 1**：SPLITDROP dropper → TWINTASK + TWINTALK 後門 → 持久化存取、遠端指令執行
+- **攻擊鏈 2**：GHOSTFORM RAT → 遠端存取、監控、資料外洩
+
+**歸因**：伊朗關聯（中至高信心），基於與已知伊朗 APT 組織在 TTPs、工具與受害者選擇上的顯著重疊。
+
+### 4. SloppyLemming 南亞間諜活動
+
+**嚴重程度：High | 來源：Arctic Wolf、NCSC-FI | 日期：2026-03-03（活動自 2025 年 1 月起）**
+
+**ATT&CK TTP**：
+- <a href="https://attack.mitre.org/techniques/T1566/001/" class="ttp-badge" target="_blank">T1566.001</a> Phishing: Spearphishing Attachment
+- <a href="https://attack.mitre.org/techniques/T1113/" class="ttp-badge" target="_blank">T1113</a> Screen Capture
+- <a href="https://attack.mitre.org/techniques/T1056/001/" class="ttp-badge" target="_blank">T1056.001</a> Input Capture: Keylogging
+
+Arctic Wolf 揭露印度關聯威脅行為者 **SloppyLemming** 對南亞三國的長期間諜活動：
+
+**攻擊規模**：
+- **目標國家**：巴基斯坦、孟加拉、斯里蘭卡
+- **目標類型**：政府機構、關鍵基礎設施營運者
+- **活動期間**：2025 年 1 月至 2026 年初（約一年）
+
+**兩種攻擊手法**：
+1. **BurrowShell 後門**：透過惡意 PDF 文件投遞，具備截圖與檔案系統操作功能
+2. **Excel 惡意軟體**：透過惡意 Excel 文件投遞，具備鍵盤記錄與偵察功能
+
+### 5. Notepad++ Chrysalis 後門供應鏈攻擊
 
 **嚴重程度：Critical | 來源：TWCERT/CC、Rapid7、卡巴斯基 | 日期：2026-02-24 揭露**
 
@@ -135,14 +206,6 @@ date: 2026-03-03
 - **2026 年 2 月**：Rapid7 Labs 與 Rapid7 MDR 公開揭露攻擊細節
 - **緊急應變**：Notepad++ 官方釋出 v8.9.2
 
-**三種攻擊鏈演進**：
-
-| 階段 | 時間 | 特徵 |
-|------|------|------|
-| 第一鏈 | 2025 年 7-8 月 | 基礎系統偵察（whoami、tasklist）、舊漏洞載入 payload |
-| 第二鏈 | 2025 年 9 月 | 擴展偵察範圍（加入 systeminfo、netstat）、目標位置更新 |
-| 第三鏈 | 2025 年 10 月 | **Chrysalis 後門**：DLL Side-Loading 透過合法 Bitdefender 執行檔 |
-
 **Chrysalis 後門技術特徵**：
 - **C2 偽裝**：刻意模仿 DeepSeek API 端點格式（`/a/chat/s/{GUID}`），混入正常 AI 應用流量
 - **加密通訊**：RC4 內容加密 + HTTPS，使用合法 Chrome User Agent
@@ -150,24 +213,14 @@ date: 2026-03-03
 - **Microsoft Warbird 濫用**：透過 `NtQuerySystemInformation` 的 `SystemCodeFlowTransition (0xB9)` 類別，在合法微軟簽章檔（clipc.dll）記憶體空間執行惡意 Shellcode，繞過 EDR 記憶體掃描
 - **DLL Side-Loading**：利用合法 Bitdefender 執行檔（BluetoothService.exe）載入惡意 log.dll
 
-**C2 伺服器**：
-- `api[.]skycloudcenter[.]com`
-- `api[.]wiresguard[.]com`
-
-**惡意 IP**：
-- `95[.]179[.]213[.]0`
-- `61[.]4[.]102[.]97`
-- `59[.]110[.]7[.]32`
-- `124[.]222[.]137[.]114`
+**C2 伺服器**：`api[.]skycloudcenter[.]com`、`api[.]wiresguard[.]com`
 
 **緊急措施**：
 1. 立即停用 Notepad++ 自動更新功能（Settings > Preferences > Update）
 2. 手動更新至 v8.9.2 並驗證 SHA-256 雜湊值
 3. 執行 IoC 檢查（%appdata%\Bluetooth\、%appdata%\ProShow\、%appdata%\Adobe\Scripts\）
-4. 封鎖已知惡意 IP/網域
-5. 監控異常 HTTPS 流量（模仿 DeepSeek API 端點格式）
 
-### 3. UAC-0252 冒充烏克蘭政府部署 SHADOWSNIFF 與 SALATSTEALER
+### 6. UAC-0252 冒充烏克蘭政府部署 SHADOWSNIFF 與 SALATSTEALER
 
 **嚴重程度：High | 來源：CERT-UA | 日期：2026-03-02（活動自 2026 年 1 月起）**
 
@@ -179,93 +232,78 @@ date: 2026-03-03
 CERT-UA 發布 CERT-UA#20032 公告，揭露威脅行為者 UAC-0252 自 2026 年 1 月起發動的持續性釣魚攻擊活動：
 
 **攻擊手法**：
-- **社交工程**：冒充烏克蘭中央政府機構與地方行政機關（обласних адміністрацій），發送釣魚電子郵件
+- **社交工程**：冒充烏克蘭中央政府機構與地方行政機關，發送釣魚電子郵件
 - **誘餌內容**：敦促收件人更新軍民系統使用的行動應用程式
-- **惡意程式家族**：
-  - **SHADOWSNIFF**：資訊竊取程式，專門竊取網路通訊憑證
-  - **SALATSTEALER**：資訊竊取程式，目標為儲存的密碼與認證資料
-- **目標對象**：烏克蘭政府人員與軍事人員，特別是使用軍民行動應用程式的使用者
+- **惡意程式**：SHADOWSNIFF（網路通訊憑證竊取）、SALATSTEALER（密碼與認證資料竊取）
+- **目標**：烏克蘭政府人員與軍事人員
 
-**攻擊持續時間**：自 2026 年 1 月至今，已持續約 2 個月
+### 7. Cisco SD-WAN 全球性利用活動持續（CISA ED 26-03）
 
-**防禦建議**：
-- 警惕以「應用程式更新」為名的政府通訊
-- 驗證所有應用程式更新來源的真實性
-- 監控端點上是否出現 SHADOWSNIFF 或 SALATSTEALER 相關 IoC
-- 參閱 CERT-UA#20032 完整公告：https://cert.gov.ua/article/6287707
-
-### 4. Cisco SD-WAN 全球性利用活動持續（CISA ED 26-03）
-
-**嚴重程度：Critical | 來源：CISA、NSA、ACSC、NCSC-UK、CERT-FR、CERT.RO、Canadian Cyber Centre | 日期：2026-02-25 持續**
+**嚴重程度：Critical | 來源：CISA、NSA、ACSC、NCSC-UK、CERT-FR、SK-CERT | 日期：持續中**
 
 **ATT&CK TTP**：
 - <a href="https://attack.mitre.org/techniques/T1190/" class="ttp-badge" target="_blank">T1190</a> Exploit Public-Facing Application
 - <a href="https://attack.mitre.org/techniques/T1068/" class="ttp-badge" target="_blank">T1068</a> Exploitation for Privilege Escalation
 - <a href="https://attack.mitre.org/techniques/T1556/" class="ttp-badge" target="_blank">T1556</a> Modify Authentication Process
 
-延續上週發布的 CISA 緊急指令 ED 26-03，本週國際聯合公告進一步確認攻擊的全球性影響。Qdrant 跨 Layer 查詢確認此漏洞在 vulnerability_tracking 與 exploit_intelligence 兩個 Layer 均有高密度記錄（相似度 0.72）。
+CISA 緊急指令 ED 26-03 持續生效。本週 SK-CERT（斯洛伐克）於 2026-03-04 發布依法律第 69/2018 號的正式警告，確認 Cisco Catalyst SD-WAN 零日漏洞在全球範圍內持續被積極利用。
 
 **攻擊鏈**：
-1. **初始入侵**：CVE-2026-20127（CWE-287 不當身份驗證，CVSS 10.0）— 未經認證的遠端攻擊者可繞過 peering 認證機制
-2. **NETCONF 存取**：攻擊者以高權限帳戶登入，操縱 SD-WAN 網路結構配置
-3. **權限提升**：CVE-2022-20775（CWE-25 路徑遍歷 + CWE-282 不當權限管理）— 以 root 執行任意命令
-4. **持久化**：添加惡意 rogue peers 至 SD-WAN 網路配置，建立長期駐留
+1. **初始入侵**：CVE-2026-20127（CWE-287 不當身份驗證，CVSS 10.0）
+2. **NETCONF 存取**：攻擊者以高權限帳戶操縱 SD-WAN 網路結構
+3. **權限提升**：CVE-2022-20775（路徑遍歷 + 不當權限管理）
+4. **持久化**：添加惡意 rogue peers 至 SD-WAN 配置
 
-**國際聯合夥伴**：NSA（美國）、ASD ACSC（澳洲）、Canadian Cyber Centre（加拿大）、NCSC-NZ（紐西蘭）、NCSC-UK（英國）、CERT-FR（法國）、CERT.RO（羅馬尼亞）、NCSC-NL（荷蘭）
+**國際聯合夥伴**：NSA（美國）、ASD ACSC（澳洲）、Canadian Cyber Centre（加拿大）、NCSC-NZ（紐西蘭）、NCSC-UK（英國）、CERT-FR（法國）、CERT.RO（羅馬尼亞）、SK-CERT（斯洛伐克）
 
-**受影響部署類型**：On-Prem Deployment、Cisco Hosted SD-WAN Cloud - Cisco Managed、Cisco Hosted SD-WAN Cloud - FedRAMP Environment、Cisco Hosted SD-WAN Cloud
+### 8. CISA 新增 Qualcomm 與 VMware KEV
 
-**修補版本**：
-| Release | 修補版本 |
-|---------|----------|
-| < 20.9 | 遷移至受支援版本 |
-| 20.9 | 20.9.8.2 |
-| 20.12.5 | 20.12.5.3 |
-| 20.12.6 | 20.12.6.1 |
-| 20.15 | 20.15.4.2 |
-| 20.18 | 20.18.2.1 |
+**嚴重程度：High | 來源：CISA | 日期：2026-03-03**
 
-**強化建議**：
-- 隔離 VPN 512 介面，使用 IP 封鎖
-- 替換自簽憑證為可信 CA 憑證
-- 使用 pairwise keys 強化控制與資料平面
-- 縮短 session timeout 至最短可行時間
-- 將日誌轉發至遠端 syslog 伺服器
-- 收集虛擬快照與日誌進行威脅獵捕
+CISA 於 2026-03-03 新增兩個漏洞至 KEV 目錄，確認正被活躍利用：
 
-### 5. QuickLens Chrome 擴充套件 ClickFix 攻擊竊取加密貨幣
+| CVE | 產品 | 漏洞類型 |
+|-----|------|----------|
+| **CVE-2026-21385** | Qualcomm 多晶片 | 記憶體損壞 |
+| **CVE-2026-22719** | Broadcom VMware Aria Operations | 命令注入 |
 
-**嚴重程度：High | 來源：BleepingComputer | 日期：2026-02-17 植入、2026-03-01 報導**
+這兩個 KEV 新增顯示行動晶片（Qualcomm）與虛擬化管理平台（VMware）均面臨活躍利用威脅。
+
+### 9. Chrome Gemini AI 面板漏洞（CVE-2026-0628）
+
+**嚴重程度：High | 來源：Palo Alto Unit 42 | 日期：2026-03-03**
+
+**ATT&CK TTP**：
+- <a href="https://attack.mitre.org/techniques/T1176/" class="ttp-badge" target="_blank">T1176</a> Browser Extensions
+- <a href="https://attack.mitre.org/techniques/T1005/" class="ttp-badge" target="_blank">T1005</a> Data from Local System
+
+Palo Alto Unit 42 揭露 **CVE-2026-0628**，Chrome 瀏覽器 Gemini AI 功能中的高嚴重性漏洞：
+- 惡意擴充功能可劫持 Gemini Live 面板
+- 可存取使用者本機檔案系統
+- 突顯瀏覽器整合 AI 功能帶來的新攻擊面
+
+**更廣泛意義**：隨著瀏覽器整合 AI 助手（Agentic AI），被入侵的 AI 面板可成為存取敏感本地資料的跳板，代表新型漏洞類別的出現。
+
+### 10. QuickLens Chrome 擴充套件 ClickFix 攻擊
+
+**嚴重程度：High | 來源：BleepingComputer | 日期：2026-03-01**
 
 **ATT&CK TTP**：
 - <a href="https://attack.mitre.org/techniques/T1176/" class="ttp-badge" target="_blank">T1176</a> Browser Extensions
 - <a href="https://attack.mitre.org/techniques/T1204/002/" class="ttp-badge" target="_blank">T1204.002</a> User Execution: Malicious File
-- <a href="https://attack.mitre.org/techniques/T1539/" class="ttp-badge" target="_blank">T1539</a> Steal Web Session Cookie
 
-Chrome 擴充套件「QuickLens - Search Screen with Google Lens」遭供應鏈攻擊：
+Chrome 擴充套件「QuickLens」（約 7,000 使用者，獲 Google 精選徽章）遭供應鏈攻擊，2026-02-17 釋出的 v5.8 植入 ClickFix 攻擊腳本與加密貨幣竊取功能。Google 已下架。
 
-**事件經過**：
-- 原本為合法的 Google Lens 搜尋工具，約 7,000 使用者，獲 Google 精選徽章
-- 2026-02-17 釋出惡意版本 v5.8
-- 植入 ClickFix 攻擊腳本（社交工程誘騙使用者執行惡意命令）
-- 竊取加密貨幣錢包資料
-- Google 已從 Chrome Web Store 下架
-
-### 6. 韓國國稅局冷錢包種子詞外洩事件
+### 11. 韓國國稅局冷錢包種子詞外洩（480 萬美元失竊）
 
 **嚴重程度：High | 來源：BleepingComputer | 日期：2026-03-01**
 
 **ATT&CK TTP**：
 - <a href="https://attack.mitre.org/techniques/T1552/004/" class="ttp-badge" target="_blank">T1552.004</a> Unsecured Credentials: Private Keys
 
-韓國國稅局在查獲逃稅者（124 名高額逃稅者，沒收約 81 億韓元數位資產）的加密貨幣後，公開照片意外暴露了已沒收 Ledger 冷錢包的助記詞（mnemonic seed phrase）。攻擊者發現照片中的種子詞後，轉走約 480 萬美元加密貨幣。
+韓國國稅局查獲逃稅者（124 名，沒收約 81 億韓元數位資產）後，公開照片意外暴露 Ledger 冷錢包助記詞，攻擊者轉走約 480 萬美元加密貨幣。
 
-**操作安全教訓**：
-1. 禁止在硬體錢包附近書寫/列印種子詞
-2. 禁止拍攝包含敏感密碼學材料的照片
-3. 發布照片前必須審查並遮蔽敏感資訊
-
-### 7. Kimwolf 殭屍網路主控者「Dort」身份調查
+### 12. Kimwolf 殭屍網路主控者「Dort」身份調查
 
 **嚴重程度：High | 來源：KrebsOnSecurity | 日期：2026-03-01**
 
@@ -273,34 +311,35 @@ Chrome 擴充套件「QuickLens - Search Screen with Google Lens」遭供應鏈�
 - <a href="https://attack.mitre.org/techniques/T1583/005/" class="ttp-badge" target="_blank">T1583.005</a> Acquire Infrastructure: Botnet
 - <a href="https://attack.mitre.org/techniques/T1498/" class="ttp-badge" target="_blank">T1498</a> Network Denial of Service
 
-KrebsOnSecurity 公布對 Kimwolf 殭屍網路主控者「Dort」的調查。Kimwolf 被描述為 2026 年初**全球最大且最具破壞力的殭屍網路**。在 2026 年 1 月身份曝光後，Dort 發動持續報復行動：
-- DDoS 攻擊
-- 人肉搜索（doxing）
-- 電郵轟炸
-- 對揭露者實施 SWAT 攻擊（導致特警出動）
+KrebsOnSecurity 公布全球最大殭屍網路 Kimwolf 主控者「Dort」的調查。身份曝光後 Dort 發動 DDoS、人肉搜索、電郵轟炸與 SWAT 攻擊等報復行動。
 
-此案凸顯資安研究人員在揭露威脅基礎設施時面臨的人身安全風險。
+### 13. CrushFTP 暴力破解掃描與多 CVE 利用
 
-### 8. 惡意 JPEG 攻擊活動與 FedEx 惡意郵件
-
-**嚴重程度：Medium | 來源：SANS ISC | 日期：2026-02-23 至 2026-02-27**
+**嚴重程度：High | 來源：SANS ISC | 日期：2026-03-03**
 
 **ATT&CK TTP**：
-- <a href="https://attack.mitre.org/techniques/T1566/001/" class="ttp-badge" target="_blank">T1566.001</a> Phishing: Spearphishing Attachment
-- <a href="https://attack.mitre.org/techniques/T1204/002/" class="ttp-badge" target="_blank">T1204.002</a> User Execution: Malicious File
+- <a href="https://attack.mitre.org/techniques/T1190/" class="ttp-badge" target="_blank">T1190</a> Exploit Public-Facing Application
+- <a href="https://attack.mitre.org/techniques/T1110/" class="ttp-badge" target="_blank">T1110</a> Brute Force
 
-本週 SANS ISC 報導兩起攻擊活動：
-- **惡意 JPEG 攻擊**（2026-02-23）：使用「MSI image」技術在 JPEG 圖片中內嵌惡意 payload，從客戶電子郵件代理伺服器攔截
-- **假冒 FedEx 郵件派送惡意軟體**（2026-02-27）：偏離典型釣魚模式（不導向假登入頁面），直接派送 dropper 或 info-stealer
+SANS ISC 偵測到針對 CrushFTP 檔案傳輸系統的活躍暴力破解掃描，關聯三個高風險漏洞：
+- **CVE-2024-4040**：Template injection → VFS 沙箱逃逸 → RCE
+- **CVE-2025-31161**：認證繞過（取得 crushadmin 帳戶）
+- **CVE-2025-54309**：零日漏洞（2025 年 7 月揭露時已在野外利用）
 
-### 9. 芬蘭 Deepfake 假藥詐騙
+### 14. SIM 卡交換攻擊利用伊朗飛彈危機
+
+**嚴重程度：Medium | 來源：NCSC-FI | 日期：2026-03-03**
+
+伊朗飛彈攻擊杜拜數小時後，詐騙者冒充「杜拜危機管理」部門發動 SIM 卡交換攻擊，試圖存取銀行帳戶。此事件展示地緣政治危機如何被犯罪分子迅速利用為社交工程機會。
+
+### 15. 芬蘭 Deepfake 假藥詐騙
 
 **嚴重程度：Medium | 來源：NCSC-FI | 日期：2026-03-02**
 
 **ATT&CK TTP**：
 - <a href="https://attack.mitre.org/techniques/T1585/001/" class="ttp-badge" target="_blank">T1585.001</a> Establish Accounts: Social Media Accounts
 
-AI 生成的 Deepfake 影片冒充芬蘭醫師與名人，在社群媒體推廣聲稱能治癒癌症和關節炎的假藥。受冒充者包括知名醫師 Atte Virolainen 與歌手 Tarja Turunen。此為北歐國家 Deepfake 詐騙趨勢的一部分。
+AI 生成 Deepfake 影片冒充芬蘭醫師與名人推廣假藥，北歐國家 Deepfake 詐騙趨勢的一部分。
 
 ---
 
@@ -308,122 +347,103 @@ AI 生成的 Deepfake 影片冒充芬蘭醫師與名人，在社群媒體推廣�
 
 ### 本週漏洞統計
 
-| 嚴重程度 | 本週累計數量 | 說明 |
+| 嚴重程度 | 2026 年累計 | 說明 |
 |----------|-------------|------|
-| Critical/High | 1,715 | vulnerability_tracking/critical_high 目錄 |
-| Medium | 1,281 | vulnerability_tracking/medium 目錄 |
-| Low/Info | 1,193 | vulnerability_tracking/low_info 目錄 |
-| 活躍利用 (KEV) | 11 | exploit_intelligence/active_exploitation |
-| PoC 可用 | 633 | exploit_intelligence/poc_available |
+| Critical/High | 2,605 | vulnerability_tracking/critical_high |
+| Medium | 8,884+ | vulnerability_tracking/medium |
+| 活躍利用 (KEV) | 53 | exploit_intelligence/active_exploitation |
+| PoC 可用 | 2,263+ | exploit_intelligence/poc_available |
 
-**漏洞嚴重程度分布觀察**：
-- Critical/High 佔全部漏洞的 **41%**（1,715/4,189），比例偏高，反映本週揭露的漏洞以高風險為主
-- 633 個新 PoC 公開，顯示攻擊者武器化速度持續加快
-- 11 個活躍利用漏洞中，多個修補期限已過期
+### 本週新增/持續活躍利用漏洞
 
-### 本週重點漏洞揭露
+#### CISA 新增 KEV（2026-03-03）
 
-#### ICS/OT 漏洞大量揭露（CISA 10 項 ICS Advisory，2026-02-26）
+| CVE | 產品 | 類型 | 嚴重程度 |
+|-----|------|------|----------|
+| **CVE-2026-21385** | Qualcomm 多晶片 | 記憶體損壞 | High |
+| **CVE-2026-22719** | Broadcom VMware Aria Operations | 命令注入 | High |
 
-本週 CISA 於 2026-02-26 集中發布 10 項 ICS 公告，涵蓋多個關鍵基礎設施領域：
+#### APT28 活躍利用
 
-| ICS Advisory | 產品 | CVE 數 | CVSS | 關鍵基礎設施領域 |
-|-------------|------|--------|------|-----------------|
-| **ICSA-26-057-01** | Johnson Controls Frick Quantum HD | 6 | **9.1** | 食品與農業（冷鏈） |
-| **ICSA-26-057-02** | Pelco Sarix Pro 3 IP Camera | 1 | 7.5 | 國防、政府、醫療 |
-| **ICSA-26-057-05** | Chargemap EV Charging | - | - | 能源、交通 |
-| **ICSA-26-057-07** | EV Energy ev.energy | 4 | **9.4** | 能源、交通 |
-| **ICSA-26-057-08** | Mobility46 mobility46.se | 4 | **9.4** | 能源、交通 |
-| **ICSA-26-057-09** | Yokogawa CENTUM VP R6/R7 | 6 | 6.9 | 關鍵製造、能源 |
-| **ICSA-26-057-10** | Copeland XWEB/XWEB Pro | **23** | - | 商業設施、食品 |
-| ICSA-26-055-01 | InSAT MasterSCADA BUK-TS | 2 | - | 製造業 |
-| ICSA-26-055-02 | Schneider EcoStruxure Building | - | - | 商業設施 |
+| CVE | 產品 | 類型 | 嚴重程度 | 威脅行為者 |
+|-----|------|------|----------|------------|
+| **CVE-2026-21513** | Microsoft MSHTML | 安全功能繞過 | High (8.8) | APT28（Russia） |
+
+#### 持續活躍利用（延續前週）
+
+| CVE | 產品 | 利用難度 | 修補期限 | 勒索軟體 | 狀態 |
+|-----|------|----------|----------|----------|------|
+| **CVE-2026-20127** | Cisco SD-WAN | 低 | **ED 26-03** | Unknown | **持續活躍** |
+| **CVE-2026-1731** | BeyondTrust RS/PRA | 低 | **2026-02-16（已過期）** | **Known** | **逾期** |
+| **CVE-2026-20045** | Cisco UCM | 低 | **2026-02-11（已過期）** | Unknown | **逾期** |
+| **CVE-2026-25108** | Soliton FileZen | 低 | ED 相關 | Unknown | **持續** |
+| **CVE-2026-22769** | Dell RP4VMs | 低 | **2026-02-21（已過期）** | Unknown | **逾期** |
+| **CVE-2026-2441** | Google Chromium CSS | 中 | **2026-03-10** | Unknown | **接近期限** |
+| **CVE-2025-49113** | RoundCube Webmail | 中 | TBD | N/A | **持續** |
+| **CVE-2025-68461** | RoundCube Webmail | 低 | TBD | N/A | **持續** |
+
+### ICS/OT 漏洞揭露（CISA 2026-03-03 新發布）
+
+本週 CISA 持續發布 ICS 安全公告，重點涵蓋能源基礎設施與工業控制系統：
+
+| ICS Advisory | 產品 | 領域 | 說明 |
+|-------------|------|------|------|
+| 新增 | Hitachi Energy Relion REB500 | 電力保護 | 繼電器保護系統漏洞 |
+| 新增 | Hitachi Energy RTU500 | 電力/能源 | 遠端終端單元漏洞 |
+| 新增 | Mitsubishi MELSEC iQ-F EtherNet/IP | 製造業 | PLC 通訊漏洞 |
+| 新增 | Labkotec Lid-3300IP | 環境監控 | 液位偵測系統 |
+| 新增 | Portwell Engineering 工具套件 | 工業製造 | 工程工具漏洞 |
+| 新增 | ePower/Everon OCPP/Mobiliti-E | EV 充電 | 充電站後端平台 |
 
 **關鍵觀察**：
-- **EV 充電站平台集中揭露**：5 個不同平台（EV Energy、Mobility46、Chargemap、CloudCharge、Switch、EV2go）存在類似漏洞模式（WebSocket 缺乏認證、暴力破解、session 逾期不足）
-- **冷鏈系統高風險**：Johnson Controls Frick Quantum HD 冷凍控制系統存在 6 個預認證 RCE 漏洞（CVSS 9.1），影響食品安全供應鏈
-- **Copeland XWEB 23 個 CVE**：冷凍與 HVAC 控制系統存在大量漏洞，攻擊面廣泛
+- **EV 充電站平台持續曝光**：繼上週 5+ 平台後，本週再新增 ePower、Everon OCPP、Mobiliti-E/MobiHu 三個平台，顯示 EV 充電基礎設施安全問題為系統性
+- **電力系統設備**：Hitachi Energy 的 Relion 繼電器與 RTU500 影響關鍵電力保護與控制系統
+- **工業 PLC**：Mitsubishi MELSEC iQ-F EtherNet/IP 模組漏洞影響製造業自動化環境
 
-#### 企業級產品重大漏洞
-
-| CVE | 產品 | 嚴重程度 | 類型 | 說明 |
-|-----|------|----------|------|------|
-| **CVE-2026-22720/22719/22721** | VMware Cloud Foundation / vSphere Foundation | **Critical** | 多種 | 版本 < 9.0.2.0 受影響 |
-| **SonicWall AV26-161** | SonicWall Gen7/Gen8 Firewalls | **Critical** | 多種 | Gen7 ≤ 7.0.1-5169, Gen7 NSv ≤ 7.3.1-7013 |
-| **CVE-2025-40536** | SolarWinds Web Help Desk | **Critical** | 身份驗證繞過 | 已列入 CISA KEV |
-| **CVE-2025-40551** | SolarWinds Web Help Desk | **Critical** | 反序列化 RCE | 已列入 CISA KEV |
-| **CVE-2025-40538** | SolarWinds Serv-U | **Critical** | 未公開 | 版本 < 15.5.4 受影響 |
-| **CVE-2025-13942** | Zyxel 多型號 | **Critical (9.8)** | OS 命令注入 | 遠端未認證利用 |
-| **CVE-2025-52691** | SmarterTools SmarterMail | **Critical** | 無限制檔案上傳 | 已列入 CISA KEV |
-| **CVE-2025-64328** | Sangoma FreePBX | **Critical** | OS 命令注入 | 已列入 CISA KEV |
-
-### 廠商漏洞分布（本週）
+### 廠商漏洞分布
 
 | 廠商 | 漏洞公告數 | 重點 |
 |------|-----------|------|
-| **Cisco** | 3+ | SD-WAN 零日（持續）、Catalyst SD-WAN、UCM |
-| **SolarWinds** | 3（多 CVE） | Web Help Desk 雙漏洞 + Serv-U Critical |
-| **VMware (Broadcom)** | 1（3 CVE） | Cloud Foundation / vSphere Foundation Critical |
-| **SonicWall** | 1 | Gen7/Gen8 Firewall Critical |
-| **SmarterTools** | 2+ | SmarterMail 無限制檔案上傳、已確認勒索軟體利用 |
-| **Johnson Controls** | 1（6 CVE） | 冷凍控制系統 RCE |
-| **Copeland** | 1（23 CVE） | XWEB/XWEB Pro HVAC |
-| **EV 充電站平台** | 5+ | EV Energy、Mobility46 等 |
-| **Zyxel** | 1 | 多型號 OS 命令注入 |
-| **Yokogawa** | 1（6 CVE） | CENTUM VP DCS |
-| **Sangoma** | 1 | FreePBX OS 命令注入 |
+| **Cisco** | 3+（持續） | SD-WAN 零日 CISA ED 26-03 |
+| **Microsoft** | 2+ | MSHTML CVE-2026-21513（APT28 利用）、Patch Tuesday |
+| **Qualcomm** | 1 | 多晶片記憶體損壞（KEV） |
+| **Broadcom/VMware** | 2+ | Aria Operations 命令注入（KEV）、Cloud Foundation |
+| **Hitachi Energy** | 2 | Relion REB500、RTU500 |
+| **Mitsubishi Electric** | 1 | MELSEC iQ-F EtherNet/IP |
+| **Google** | 2 | Chrome Gemini CVE-2026-0628、Android 安全公告 |
+| **Docker** | 1 | Desktop 安全更新（CERT-FR） |
+| **EV 充電站平台** | 3+ | ePower、Everon OCPP、Mobiliti-E |
 
 ---
 
 ## 活躍利用與 PoC 動態
 
-### 已確認活躍利用漏洞（CISA KEV 本週重點 + 持續追蹤）
+### 已確認活躍利用漏洞匯總
 
-| CVE ID | 產品 | 利用難度 | 修補期限 | 勒索軟體關聯 | 狀態 |
-|--------|------|----------|----------|-------------|------|
-| **CVE-2026-1731** | BeyondTrust RS/PRA | 低 | **2026-02-16（已過期）** | **Known** | **勒索軟體關聯** |
-| **CVE-2026-20045** | Cisco Unified Communications | 低 | **2026-02-11（已過期）** | Unknown | **持續活躍** |
-| **CVE-2026-20127** | Cisco SD-WAN | 低 | **ED 26-03** | Unknown | **持續活躍** |
-| **CVE-2022-20775** | Cisco SD-WAN | 中 | **ED 26-03** | Unknown | **持續活躍** |
-| **CVE-2025-49113** | RoundCube Webmail | 中 | TBD | N/A | **持續活躍** |
-| **CVE-2025-68461** | RoundCube Webmail | 低 | TBD | N/A | **持續活躍** |
-| **CVE-2025-40536** | SolarWinds Web Help Desk | 低 | TBD | N/A | **新增** |
-| **CVE-2025-40551** | SolarWinds Web Help Desk | 中 | TBD | N/A | **新增** |
-| **CVE-2025-52691** | SmarterTools SmarterMail | 低 | TBD | N/A | **新增** |
-| **CVE-2025-54313** | eslint-config-prettier | 低 | TBD | N/A | **供應鏈** |
-| **CVE-2025-64328** | Sangoma FreePBX | 低 | TBD | N/A | **新增** |
-| **CVE-2025-68645** | Zimbra ZCS | 中 | **2026-02-12（已過期）** | N/A | **持續** |
-| **CVE-2025-31125** | Vite.js | 中 | **2026-02-12（已過期）** | N/A | **持續** |
-| **CVE-2025-34026** | Versa Concerto | 中 | **2026-02-12（已過期）** | N/A | **持續** |
-| **CVE-2025-11953** | React Native CLI | 中 | TBD | N/A | **供應鏈** |
-| **CVE-2025-15556** | Notepad++ | 中 | TBD | N/A | **供應鏈** |
+| CVE ID | 產品 | 類型 | 修補期限 | 勒索軟體 | 本週狀態 |
+|--------|------|------|----------|----------|----------|
+| **CVE-2026-21385** | Qualcomm | 記憶體損壞 | TBD | N/A | **新增 KEV** |
+| **CVE-2026-22719** | VMware Aria | 命令注入 | TBD | N/A | **新增 KEV** |
+| **CVE-2026-21513** | Microsoft MSHTML | 安全繞過 | 已修補 | N/A | **APT28 利用** |
+| **CVE-2026-20127** | Cisco SD-WAN | 認證繞過 | **ED 26-03** | Unknown | **持續** |
+| **CVE-2026-1731** | BeyondTrust | OS 命令注入 | **已過期** | **Known** | **逾期** |
+| **CVE-2026-20045** | Cisco UCM | 程式碼注入 | **已過期** | Unknown | **逾期** |
+| **CVE-2026-25108** | Soliton FileZen | OS 命令注入 | ED 相關 | Unknown | **持續** |
+| **CVE-2026-22769** | Dell RP4VMs | 硬編碼憑證 | **已過期** | Unknown | **逾期** |
+| **CVE-2026-2441** | Chromium CSS | UAF RCE | 2026-03-10 | Unknown | **接近期限** |
+| **CVE-2026-24423** | SmarterMail | 認證缺失→RCE | **已過期** | **Known** | **逾期** |
 
 **重要觀察**：
-- 本週追蹤 14 個活躍利用漏洞，其中多個修補期限已過期
-- **CVE-2026-1731**（BeyondTrust）已確認用於勒索軟體攻擊活動
-- SolarWinds Web Help Desk 同時出現兩個 Critical 漏洞（CVE-2025-40536 身份驗證繞過 + CVE-2025-40551 反序列化 RCE），構成完整攻擊鏈
-- **供應鏈相關 KEV**：CVE-2025-54313（eslint-config-prettier 惡意程式碼）、CVE-2025-11953（React Native CLI）、CVE-2025-15556（Notepad++）標誌著開發者工具鏈成為攻擊目標
+- 本週新增 2 個 KEV（Qualcomm、VMware），加上 APT28 確認利用 MSHTML 漏洞
+- 多個修補期限已過期的 KEV 仍在活躍利用中（BeyondTrust、Cisco UCM、Dell RP4VMs）
+- **勒索軟體關聯**：CVE-2026-1731（BeyondTrust）與 CVE-2026-24423（SmarterMail）均已確認用於勒索軟體
 
 ### 新公開 PoC 追蹤
 
-本週新增 **633 個** PoC（exploit_intelligence/poc_available），顯示漏洞武器化速度極高。重點 PoC 項目涵蓋：
-
-| CVE | 產品/技術 | 說明 |
-|-----|----------|------|
-| CVE-2026-3395 | 待確認 | 2026 年新 CVE |
-| CVE-2026-28372 | 待確認 | 2026 年新 CVE |
-| CVE-2026-28207 | 待確認 | 2026 年新 CVE |
-| CVE-2026-27831 | 待確認 | 2026 年新 CVE |
-| CVE-2026-27825 | 待確認 | 2026 年新 CVE |
-| CVE-2026-3171 | 待確認 | 2026 年新 CVE |
-| CVE-2026-3098 | 待確認 | 2026 年新 CVE |
-| CVE-2026-3062 | 待確認 | 2026 年新 CVE |
-| CVE-2025-0108 | Palo Alto | 已知高風險漏洞 PoC 公開 |
-| CVE-2025-0282 | Ivanti | 已知高風險漏洞 PoC 公開 |
-| CVE-2025-1094 | PostgreSQL | 已知高風險漏洞 PoC 公開 |
-| CVE-2025-1974 | Ingress-NGINX | Kubernetes 叢集 RCE |
-
-**PoC 年度分布**：633 個 PoC 橫跨 2010 年至 2026 年，涵蓋大量歷史漏洞的新 PoC 釋出，顯示攻擊者持續針對未修補的歷史漏洞開發利用工具。
+2026 年累計 2,263+ 個 PoC（exploit_intelligence/poc_available），本週新增 PoC 涵蓋 2026 年新 CVE：
+- CVE-2026-4821、CVE-2026-3395、CVE-2026-3171、CVE-2026-3098 等
+- Windows NTLM Hash Disclosure PoC
+- RPi-Jukebox-RFID Stored XSS PoC
 
 ---
 
@@ -435,257 +455,199 @@ AI 生成的 Deepfake 影片冒充芬蘭醫師與名人，在社群媒體推廣�
 
 | 攻擊類型 | 佔比 | 趨勢 | 對應 ATT&CK TTP |
 |----------|------|------|-----------------|
-| 零日漏洞利用 | 25% | 穩定（高位） | <a href="https://attack.mitre.org/techniques/T1190/" class="ttp-badge" target="_blank">T1190</a> |
-| 供應鏈攻擊 | 20% | **顯著上升** | <a href="https://attack.mitre.org/techniques/T1195/" class="ttp-badge" target="_blank">T1195</a> |
-| 認證繞過/硬編碼憑證 | 20% | 穩定 | <a href="https://attack.mitre.org/techniques/T1078/" class="ttp-badge" target="_blank">T1078</a> |
-| 國家級網路戰/心理戰 | 15% | **急劇上升** | <a href="https://attack.mitre.org/techniques/T1498/" class="ttp-badge" target="_blank">T1498</a> |
-| 社交工程/釣魚/ClickFix | 10% | **上升** | <a href="https://attack.mitre.org/techniques/T1566/" class="ttp-badge" target="_blank">T1566</a> <a href="https://attack.mitre.org/techniques/T1204/" class="ttp-badge" target="_blank">T1204</a> |
-| OT/ICS 攻擊 | 10% | **上升** | <a href="https://attack.mitre.org/techniques/T1133/" class="ttp-badge" target="_blank">T1133</a> |
+| 國家級網路戰/APT | 30% | **急劇上升** | <a href="https://attack.mitre.org/techniques/T1588/" class="ttp-badge" target="_blank">T1588</a> |
+| 零日漏洞利用 | 20% | 穩定（高位） | <a href="https://attack.mitre.org/techniques/T1190/" class="ttp-badge" target="_blank">T1190</a> |
+| 供應鏈攻擊 | 15% | **持續上升** | <a href="https://attack.mitre.org/techniques/T1195/" class="ttp-badge" target="_blank">T1195</a> |
+| 社交工程/釣魚/ClickFix | 15% | **上升** | <a href="https://attack.mitre.org/techniques/T1566/" class="ttp-badge" target="_blank">T1566</a> |
+| 認證繞過/硬編碼憑證 | 10% | 穩定 | <a href="https://attack.mitre.org/techniques/T1078/" class="ttp-badge" target="_blank">T1078</a> |
+| OT/ICS 攻擊 | 10% | **持續上升** | <a href="https://attack.mitre.org/techniques/T1133/" class="ttp-badge" target="_blank">T1133</a> |
 
 ### 本週攻擊手法深度分析
 
+#### 國家級 APT 行動密度達歷史新高
+
+本週至少有五個國家關聯的 APT 行動被揭露或持續追蹤，橫跨四個國家：
+
+**伊朗關聯行動**：
+- [T1498](https://attack.mitre.org/techniques/T1498/){: .ttp-ref } Network DoS — 全國網路封鎖
+- [T1583.006](https://attack.mitre.org/techniques/T1583.006/){: .ttp-ref } Mobile Application Compromise — BadeSaba 心戰
+- [T1486](https://attack.mitre.org/techniques/T1486/){: .ttp-ref } Data Encrypted for Impact — 勒索軟體作為國家工具
+- 五大 APT 組織同步動員（MuddyWater、APT33、APT34、Charming Kitten、Moses Staff）
+- **Dust Specter** 攻擊伊拉克政府（SPLITDROP/TWINTASK/TWINTALK/GHOSTFORM 四種新工具）
+
+**俄羅斯關聯行動**：
+- **APT28** 利用 CVE-2026-21513 MSHTML 零日漏洞攻擊 Windows 系統
+- [T1203](https://attack.mitre.org/techniques/T1203/){: .ttp-ref } Exploitation for Client Execution
+
+**印度關聯行動**：
+- **SloppyLemming** 對南亞三國政府的長期間諜活動
+- [T1566.001](https://attack.mitre.org/techniques/T1566.001/){: .ttp-ref } Spearphishing Attachment
+
+**中國關聯行動**（持續追蹤）：
+- **Lotus Blossom** Notepad++ 供應鏈攻擊
+- [T1195.002](https://attack.mitre.org/techniques/T1195.002/){: .ttp-ref } Supply Chain Compromise
+
+**烏克蘭相關行動**：
+- **UAC-0252** 冒充烏克蘭政府部署竊取程式
+- [T1036](https://attack.mitre.org/techniques/T1036/){: .ttp-ref } Masquerading
+
 #### 供應鏈攻擊手法演進
 
-本週供應鏈攻擊佔比顯著上升，呈現四種不同型態：
+本週供應鏈攻擊呈現四種不同型態：
 
 **型態一：基礎設施供應鏈攻擊（Notepad++ / Lotus Blossom）**
-- [T1195.002](https://attack.mitre.org/techniques/T1195/002/){: .ttp-ref } Compromise Software Supply Chain
-- [T1574.002](https://attack.mitre.org/techniques/T1574/002/){: .ttp-ref } DLL Side-Loading
-- [T1027.013](https://attack.mitre.org/techniques/T1027/013/){: .ttp-ref } Encrypted/Encoded File（RC4 加密）
-- 攻擊者不篡改原始碼，而是攻陷代管服務商，控制更新機制
-- Chrysalis 後門濫用 Microsoft Warbird 框架，在合法簽章記憶體空間執行 Shellcode
+- 攻擊者不篡改原始碼，改為攻陷代管服務商，控制更新機制
+- Chrysalis 後門濫用 Microsoft Warbird 框架繞過 EDR
 
 **型態二：瀏覽器擴充套件供應鏈（QuickLens）**
-- [T1176](https://attack.mitre.org/techniques/T1176/){: .ttp-ref } Browser Extensions
-- [T1204.002](https://attack.mitre.org/techniques/T1204/002/){: .ttp-ref } Malicious File（ClickFix 手法）
-- 攻擊者更新已獲 Google 精選徽章的合法擴充套件，植入惡意程式碼
+- 更新已獲 Google 精選徽章的合法擴充套件，植入 ClickFix + 加密貨幣竊取
 
-**型態三：開發者工具鏈投毒（eslint-config-prettier、React Native CLI）**
-- [T1195.002](https://attack.mitre.org/techniques/T1195/002/){: .ttp-ref } Compromise Software Supply Chain
-- CVE-2025-54313 eslint-config-prettier 嵌入惡意程式碼
-- CVE-2025-11953 React Native CLI OS 命令注入
-- 鎖定開發者常用的 npm 套件與 CLI 工具，影響範圍極廣
+**型態三：AI 功能新攻擊面（Chrome Gemini CVE-2026-0628）**
+- 瀏覽器 AI 整合創造新攻擊向量，惡意擴充功能可劫持 AI 面板存取本機資料
 
-**型態四：操作安全失誤導致的供應鏈洩漏（韓國國稅局）**
-- [T1552.004](https://attack.mitre.org/techniques/T1552/004/){: .ttp-ref } Unsecured Credentials: Private Keys
-- 非傳統技術攻擊，而是機構操作安全流程失誤
-- 公開照片暴露敏感密碼學材料，導致直接財務損失（480 萬美元）
+**型態四：操作安全失誤（韓國國稅局種子詞外洩）**
+- 機構操作安全流程失誤，公開照片暴露敏感密碼學材料
 
-#### 國家級網路戰手法升級
+#### 勒索軟體生態系統變化
 
-本週展現兩個獨立但高度相關的國家級網路行動：
+本週三個關鍵信號顯示勒索軟體生態系統正在變化：
 
-**伊朗多維度網路戰**：
-- [T1498](https://attack.mitre.org/techniques/T1498/){: .ttp-ref } Network Denial of Service（全國網路封鎖）
-- [T1583.006](https://attack.mitre.org/techniques/T1583/006/){: .ttp-ref } Mobile Application Compromise（心戰宣傳）
-- [T1486](https://attack.mitre.org/techniques/T1486/){: .ttp-ref } Data Encrypted for Impact（勒索軟體作為國家工具）
-- 五大 APT 組織同步動員（IRGC 統一指揮）
-- 新惡意程式家族加速部署（MuddyWater 5 個新工具）
-- 勒索軟體與國家級破壞行動的界線持續模糊
-
-**UAC-0252 針對烏克蘭的資訊竊取活動**：
-- [T1566.001](https://attack.mitre.org/techniques/T1566/001/){: .ttp-ref } Spearphishing Attachment
-- [T1036](https://attack.mitre.org/techniques/T1036/){: .ttp-ref } Masquerading（冒充政府機構）
-- 部署 SHADOWSNIFF 與 SALATSTEALER 兩種竊取程式
-- 鎖定軍民系統使用者，以行動應用程式更新為誘餌
-- 活動持續 2 個月以上
-
-#### ClickFix 攻擊手法持續蔓延
-
-ClickFix 是近期快速蔓延的社交工程技術，本週出現在多個場景：
-- [T1204.002](https://attack.mitre.org/techniques/T1204/002/){: .ttp-ref } User Execution: Malicious File
-- QuickLens Chrome 擴充套件中的 ClickFix 攻擊
-- FedEx 惡意郵件活動中的 ClickFix 風格派送
-- 已從獨立網頁擴散至瀏覽器擴充套件與電郵生態系統
-- 威脅情報饋送中 IClickFix 以 69 筆指標排名第二，顯示此手法正快速擴張
-
-#### 勒索軟體「榮譽準則」崩壞
-
-**來源：NCSC-FI / Mikko Hypponen | 日期：2026-03-02**
-
-資安專家 Mikko Hypponen 警告勒索軟體犯罪集團的「榮譽準則」已崩壞：
-- 過去：付贖金可確保資料不被公開，犯罪集團維護「信用」
-- 現在：**ShinyHunters** 等組織收取贖金後仍然出售竊取的資料
-- 影響：付款不再保證任何資料保護，組織應將所有勒索軟體事件視為完整資料外洩
-- 此行為轉變根本改變了勒索軟體受害者的風險評估方程式
+1. **「榮譽準則」崩壞**（Mikko Hypponen 警告）：ShinyHunters 等組織收取贖金後仍出售資料，付款不再保證任何保護
+2. **支付金額停滯**（Chainalysis 報告）：2025 年總支付金額降 8% 至 8.2 億美元，但攻擊次數增加 50%，中位數支付金額暴增 368%
+3. **國家-犯罪融合**：伊朗國家級行為者採用勒索軟體戰術作為破壞性攻擊的掩護
 
 ---
 
 ## 威脅情報饋送摘要
 
-**來源：abuse.ch | 日期：2026-02-24 至 2026-03-02**
+**來源：abuse.ch | 日期：2026-03-01 至 2026-03-04**
 
 ### 本週威脅饋送統計
 
-| 類別 | 本週數量 | 說明 |
-|------|----------|------|
-| 惡意 URL | 2,659 | URLhaus 惡意 URL |
-| 惡意軟體樣本 | 1,748 | MalwareBazaar 惡意軟體樣本 |
-| IoC 指標 | 2,781 | ThreatFox IoC 指標 |
-| C2 基礎設施 | 2 | C2 伺服器 |
+| 類別 | 3 月至今數量 | 2026 年累計 | 說明 |
+|------|------------|-------------|------|
+| 惡意 URL | 992 | 26,222 | URLhaus 惡意 URL |
+| 惡意軟體樣本 | 508 | 6,004 | MalwareBazaar |
+| IoC 指標 | 1,398 | 8,385 | ThreatFox IoC |
+| C2 基礎設施 | 2 | 223 | C2 伺服器 |
 
-### 惡意軟體家族分布（Top 家族）
+### 惡意軟體家族分布（3 月至今 IoC Top 家族）
 
 | 家族 | IoC 數量 | 類型 | 威脅描述 |
 |------|----------|------|----------|
-| **Vidar** | 109 | 資訊竊取 | 本週最活躍家族，大量 C2 通訊與竊取活動 |
-| **IClickFix** | 69 | 社交工程/下載器 | ClickFix 手法的自動化分發工具，持續擴張 |
-| **AsyncRAT** | 65 | 遠端存取木馬 | .NET 開發，企業環境持續威脅 |
-| **ClearFake** | 64 | 注入攻擊 | 網頁注入、假瀏覽器更新，大量 C2 網域 |
-| **Cobalt Strike** | 41 | 攻擊框架 | 持續被 APT 與犯罪組織濫用 |
-| **StrelaStealer** | 36 | 資訊竊取 | 專門竊取 Outlook/Thunderbird 郵件帳號 |
-| **NetSupportManager RAT** | 32 | RAT | 合法遠端管理工具被濫用 |
-| **FormBook** | 高 | 資訊竊取 | 大量 C2 網域使用 .shop/.top/.bond TLD |
-| **Mirai** | 持續活躍 | 殭屍網路 | IoT 威脅主力，多架構編譯 |
-| **Remcos** | 活躍 | RAT | 企業環境威脅，C2 在 AS9009 M247 |
-| **DCRat** | 活躍 | RAT | 多個 C2 IP 與網域活躍 |
-| **XWorm** | 活躍 | RAT | 持續透過多種管道散布 |
+| **Vidar** | 109（URL+domain+IP） | 資訊竊取 | 竊取瀏覽器密碼、加密貨幣錢包、2FA 資料 |
+| **AsyncRAT** | 72 | 遠端存取木馬 | C2 使用多個網域，企業環境持續威脅 |
+| **IClickFix** | 69 | 社交工程/下載器 | ClickFix 手法自動化分發工具 |
+| **ClearFake** | 56 | 注入攻擊 | 假瀏覽器更新頁面散布惡意程式 |
+| **Cobalt Strike** | 44 | 攻擊框架 | 持續被 APT 與犯罪組織濫用 |
+| **StrelaStealer** | 39 | 資訊竊取 | 專門竊取 Outlook/Thunderbird 郵件帳號 |
+| **NetSupportManager RAT** | 27 | RAT | 合法遠端管理工具被濫用 |
+| **Quasar RAT** | 18 | RAT | 開源 RAT 持續被使用 |
+| **Meterpreter** | 13 | 攻擊框架 | Metasploit payload |
+| **Remcos** | 12 | RAT | 企業環境威脅 |
 
-### 威脅情報饋送重點觀察
+### C2 基礎設施觀察
 
-**Vidar 資訊竊取程式成為本週最活躍威脅**：
-- 109 筆 IoC 指標為各家族之首
-- Vidar 是一種以竊取瀏覽器密碼、加密貨幣錢包、二步驟驗證資料為目標的惡意程式
-- 大量 C2 使用 URL 與 domain 指標，顯示分散式基礎設施
+本週 C2 基礎設施新增 2 筆（AsyncRAT），但 2 月累計 214 筆 C2 資料顯示活躍 C2 家族分布：
 
-**IClickFix 快速崛起**：
-- 69 筆 IoC 指標排名第二
-- 與 QuickLens Chrome 擴充套件事件及 FedEx 惡意郵件活動呼應
-- ClickFix 從手動社交工程手法演進為自動化分發工具
+| 家族 | 2 月 C2 數量 | 說明 |
+|------|-------------|------|
+| **XWorm** | 35 | 最活躍 C2 家族 |
+| **Remcos** | 19 | 企業環境持續威脅 |
+| **AsyncRAT** | 19 | .NET RAT |
+| **Unknown Malware** | 18 | 未歸因樣本 |
+| **Unknown Stealer** | 13 | 未歸因竊取程式 |
+| **Aisuru** | 12 | IoT 殭屍網路 |
+| **Havoc** | 11 | C2 框架 |
+| **Vidar** | 9 | 資訊竊取 C2 |
+| **Meterpreter** | 9 | Metasploit 後門 |
+| **Sliver** | 8 | 開源 C2 框架 |
 
-**ClearFake 注入攻擊大規模活動**：
-- 64 筆 IoC 指標，大量 ClearFake 網域於本週活躍
-- ThreatFox 記錄超過 80 個 ClearFake 相關網域
-- 持續使用假瀏覽器更新頁面散布惡意程式
+### Cobalt Strike C2 活動觀察
 
-### IoT 殭屍網路活動（Qdrant 跨 Layer 分析）
-
-Qdrant 語意查詢「IoT botnet Mirai Mozi malware」返回高相似度結果（0.70-0.71），確認 Mirai 變種持續主導 IoT 威脅格局：
-
-| 指標類型 | 範例 | 來源 | 日期 |
-|----------|------|------|------|
-| 惡意軟體樣本 | Mirai iran.mipsel / iran.arc / data.arm6 / data.x86 | MalwareBazaar | 2026-03-01 |
-| C2 伺服器 | 143.20.185.59:15154 | ThreatFox | 2026-02-15 |
-| 殭屍網路 C2 | 多個 Mirai Botnet CC | ThreatFox | 2026-02-16 |
-
-**觀察**：
-- Mirai 變種命名中包含「iran」前綴，可能暗示與伊朗相關的 IoT 殭屍網路基礎設施（推測，信心水準：低）
-- 多架構編譯（mipsel、arc、arm6、x86）顯示攻擊者目標廣泛的 IoT 設備
+Qdrant 查詢（查詢 5）返回大量近期 Cobalt Strike C2 伺服器指標：
+- 多個 IP（156.234.21.x、43.249.175.x、43.240.239.x）在連接埠 3093 活躍
+- 日期均為 2026-03-03，顯示攻擊者在本週活躍建立新 C2 基礎設施
+- Cobalt Strike 持續作為 APT 與犯罪組織共用的首選攻擊框架
 
 ---
 
 ## 新興威脅識別
 
-### 1. 伊朗五大 APT 組織協調動員 — 前所未有的網路戰升級 [信心水準：高]
+### 1. 伊朗多維度網路戰升級至前所未有規模 [信心水準：高]
 
-**威脅描述**：Operation Epic Fury 消除伊朗常規軍事選項後，網路作戰成為其唯一剩餘的非對稱報復工具。五大 APT 組織同步動員為歷來首見。加拿大 Cyber Centre 評估伊朗「幾乎確定」將以網路能力進行報復。
+**威脅描述**：Operation Epic Fury 消除伊朗常規軍事選項後，網路作戰成為唯一剩餘的非對稱報復工具。五大 APT 組織同步動員為歷來首見，Dust Specter 進一步展示伊朗持續擴展新 APT 組織與新惡意軟體家族。
 
 **證據支持**：
-- 2026-02-27 五大 APT 組織同步活動：MuddyWater、APT33、APT34、Charming Kitten、Moses Staff
+- 2026-02-27 五大 APT 組織同步活動
+- Dust Specter 部署 4 種全新惡意軟體家族攻擊伊拉克
 - MuddyWater 部署 5 個全新惡意程式家族（含 Rust 基礎工具）
-- 伊朗國家級行為者採用勒索軟體作為破壞工具的掩護
-- 加拿大 Cyber Centre 於 2026-03-02 發布專門伊朗威脅公告
-- Qdrant 查詢「Iran cyber threats」：歷史資料顯示 pro-Russian hacktivists 攻擊關鍵基礎設施（2025-12）、加拿大 CERT 2025-07 已發布伊朗網路威脅公告（相似度 0.60+）
+- 加拿大 Cyber Centre（2026-03-02）與 Check Point Research（2026-03-03）均發布專題分析
+- Qdrant 查詢（查詢 1）「勒索軟體 ransomware 攻擊事件」：歷史勒索軟體趨勢資料提供背景支持（相似度 0.57），顯示國家-犯罪融合趨勢有歷史脈絡
 
 **影響評估**：
-- 全球關鍵基礎設施（能源、金融、政府）面臨升高的伊朗網路威脅
-- 勒索軟體-國家行為者界線持續模糊，歸因更加困難
-- 預期 MuddyWater 新工具將在未來數週出現在更多目標環境
-- 加拿大、芬蘭等美以盟國面臨針對性低技術破壞攻擊風險
+- 全球關鍵基礎設施面臨升高的伊朗網路威脅
+- 新 APT 組織（Dust Specter）的出現意味著伊朗網路能力持續擴張
+- 中東地區國家政府面臨高度針對性攻擊
 
-### 2. EV 充電站基礎設施面臨系統性風險 [信心水準：高]
+### 2. 多國 APT 同時活躍 — 地緣政治驅動的網路空間軍事化 [信心水準：高]
 
-**威脅描述**：CISA 於 2026-02-26 集中發布 5 個以上 EV 充電站管理平台的 ICS 安全公告，揭示電動車充電基礎設施存在系統性安全設計缺陷。
+**威脅描述**：本週至少五個國家關聯的 APT 組織同時活躍（伊朗 5+ 組織、俄羅斯 APT28、印度 SloppyLemming、中國 Lotus Blossom、烏克蘭相關 UAC-0252），顯示網路空間正經歷前所未有的軍事化程度。
 
 **證據支持**：
-- EV Energy（ICSA-26-057-07，CVSS 9.4）
-- Mobility46（ICSA-26-057-08，CVSS 9.4）
-- Chargemap（ICSA-26-057-05）
-- CloudCharge、Switch、EV2go 等平台
-- 漏洞模式高度一致：WebSocket 缺乏認證、暴力破解、session 管理不當、憑證保護不足
+- 伊朗：5 大 APT + Dust Specter（新揭露）
+- 俄羅斯：APT28 利用 MSHTML 零日（Akamai 分析確認）
+- 印度：SloppyLemming 一年期南亞間諜活動（Arctic Wolf 揭露）
+- 中國：Lotus Blossom Notepad++ 供應鏈攻擊（持續追蹤）
+- UAC-0252：持續冒充烏克蘭政府的釣魚活動
+- Qdrant 查詢（查詢 3）「供應鏈攻擊 supply chain compromise APT」：歷史案例（依賴混淆 0.57、PRC 國家行為者 0.55）提供長期脈絡
+
+### 3. AI 功能整合創造瀏覽器新攻擊面 [信心水準：中-高]
+
+**威脅描述**：CVE-2026-0628 揭示瀏覽器整合 AI 功能帶來全新攻擊面類別——惡意擴充功能可透過劫持 AI 面板存取使用者本機檔案系統，將 AI 助手從生產力工具轉變為攻擊跳板。
+
+**證據支持**：
+- Palo Alto Unit 42 確認 CVE-2026-0628（Chrome Gemini 面板漏洞）
+- QuickLens ClickFix 事件展示擴充套件生態系統的脆弱性
+- AI 功能通常具有更高的系統權限（存取檔案系統、執行程式碼）
 
 **影響評估**：
-- 攻擊者可取得充電站完整管理控制權
-- 可發動大規模 DoS 中斷充電服務
-- 影響能源與交通兩大關鍵基礎設施領域
-- 隨著 EV 普及率提升，攻擊面將持續擴大
+- 隨著更多瀏覽器整合 AI 助手，類似漏洞將持續出現
+- AI 面板的權限範圍可能成為攻擊者的首要目標
+- 預期更多研究者將揭露 Agentic AI 相關漏洞
 
-### 3. APT 供應鏈攻擊手法持續精進 — Warbird 濫用與更新機制劫持 [信心水準：高]
+### 4. 勒索軟體信用體系崩壞改變風險方程式 [信心水準：高]
 
-**威脅描述**：Lotus Blossom 攻擊 Notepad++ 展現了 APT 組織在供應鏈攻擊手法上的持續精進，特別是對軟體更新基礎設施的攻擊。
-
-**證據支持**：
-- 攻擊者不篡改原始碼（GitHub 乾淨），改為攻陷代管服務商
-- Chrysalis 後門使用 Microsoft Warbird 框架繞過 EDR
-- C2 偽裝為 DeepSeek API 流量
-- 攻擊持續 6 個月才被發現
-- Qdrant 查詢「supply chain attack software compromise」發現歷史案例：依賴混淆（Dependency confusion，相似度 0.63）、3CX 供應鏈攻擊（0.56）、工業系統供應商入侵（0.55）
-
-**防禦建議**：
-- 代管服務商應列為供應鏈風險評估重點
-- 軟體更新機制應實施端對端完整性驗證
-- EDR 供應商應關注 Warbird 框架的異常使用
-- 組織應監控模仿 AI 服務端點的異常流量
-
-### 4. ClickFix 攻擊手法從網頁擴散至瀏覽器與開發者生態系統 [信心水準：中-高]
-
-**威脅描述**：ClickFix 社交工程手法從獨立惡意網頁擴散至瀏覽器擴充套件與開發者工具鏈，透過已獲信任的擴充套件與 npm 套件傳播，大幅降低使用者警覺。IClickFix 威脅情報指標（69 筆）顯示此手法已自動化工具化。
+**威脅描述**：ShinyHunters 等組織收取贖金後仍出售竊取資料，結合 Chainalysis 數據顯示支付金額停滯但攻擊次數增加 50%，勒索軟體生態系統正經歷結構性轉變。
 
 **證據支持**：
-- QuickLens Chrome 擴充套件（獲 Google 精選徽章，7,000 使用者）
-- FedEx 惡意郵件 ClickFix 風格派送
-- CVE-2025-54313 eslint-config-prettier 嵌入惡意程式碼
-- 威脅饋送中 IClickFix 69 筆 IoC 排名第二
-- 結合加密貨幣竊取功能
+- Mikko Hypponen（2026-03-02）公開警告「榮譽準則」崩壞
+- Chainalysis 2026 報告：2025 年支付金額降 8% 至 8.2 億美元，攻擊次數增 50%
+- 中位數支付金額暴增 368% 至約 6 萬美元
+- 伊朗國家級行為者使用勒索軟體作為破壞工具的趨勢
+- Qdrant 查詢（查詢 1）：歷史勒索軟體趨勢資料（Petrwrap 防禦 0.58、勒索軟體持續攻擊 0.57）支持此為長期演變
 
 **影響評估**：
-- 瀏覽器擴充套件享有使用者信任，ClickFix 在此管道效果更佳
-- 開發者工具鏈受影響範圍極廣
-- 預期更多 ClickFix 變體將出現在其他擴充套件或應用程式商店
+- 組織應將所有勒索軟體事件視為完整資料外洩，不論是否支付贖金
+- 網路保險政策假設需重新評估
+- 事件應變計劃需更新以反映新現實
 
-### 5. 食品冷鏈系統成為高價值攻擊目標 [信心水準：高]
+### 5. EV 充電基礎設施安全問題持續系統性曝光 [信心水準：高]
 
-**威脅描述**：Johnson Controls Frick Quantum HD（CVSS 9.1）與 Copeland XWEB（23 CVE）的漏洞揭露，顯示食品供應鏈中的冷鏈冷凍控制系統面臨嚴重安全風險。
-
-**證據支持**：
-- Johnson Controls Frick Quantum HD：6 個預認證 RCE 漏洞
-- Copeland XWEB/XWEB Pro：23 個 CVE
-- 兩者均部署於全球食品與農業關鍵基礎設施
-
-**影響評估**：
-- 成功攻擊可導致冷鏈中斷，引發食品安全事故
-- 預認證攻擊門檻低
-- 這些系統通常缺乏安全監控與更新機制
-
-### 6. Vidar 資訊竊取程式活躍度顯著攀升 [信心水準：高]
-
-**威脅描述**：Vidar 以 109 筆 IoC 指標成為本週最活躍惡意程式家族，顯示資訊竊取程式活動持續升溫，與勒索軟體生態系統的關聯值得關注。
+**威脅描述**：繼上週 5+ 平台 ICS 漏洞後，本週再新增 ePower、Everon OCPP、Mobiliti-E/MobiHu 三個 EV 充電站平台的安全公告，確認此為系統性問題而非個別事件。
 
 **證據支持**：
-- ThreatFox 本週記錄 109 筆 Vidar 相關 IoC（URL + domain）
-- 分散式 C2 基礎設施，使用多個網域
-- 與 StrelaStealer（36 筆）共同構成資訊竊取威脅主力
-- Qdrant 查詢「RCE active exploitation」確認多個 RCE 漏洞（SmarterMail RCE、CISA 持續更新 KEV 清單）可作為 Vidar 的投遞管道
+- 上週：EV Energy（CVSS 9.4）、Mobility46（CVSS 9.4）、Chargemap、CloudCharge、Switch、EV2go
+- 本週新增：ePower、Everon OCPP Backends、Mobiliti-E/MobiHu
+- 漏洞模式一致：WebSocket 缺乏認證、暴力破解、session 管理不當
 
-**影響評估**：
-- 資訊竊取程式為勒索軟體攻擊的前置階段
-- 竊取的憑證可能用於後續的目標性攻擊
-- 企業應加強端點偵測與回應（EDR）對資訊竊取行為的偵測
+### 6. CrushFTP 檔案傳輸系統成為攻擊焦點 [信心水準：高]
 
-### 7. UAC-0252 持續性政府冒充攻擊 [信心水準：高]
-
-**威脅描述**：UAC-0252 自 2026 年 1 月起持續冒充烏克蘭政府機構進行釣魚攻擊，部署兩種專用竊取程式（SHADOWSNIFF、SALATSTEALER），鎖定軍民系統使用者。
+**威脅描述**：SANS ISC 偵測到針對 CrushFTP 的活躍暴力破解掃描，關聯三個高風險 CVE（含零日），延續近年來檔案傳輸系統持續被攻擊的趨勢（MOVEit、GoAnywhere、Accellion、FileZen）。
 
 **證據支持**：
-- CERT-UA 官方公告 CERT-UA#20032（2026-03-02）
-- 攻擊持續 2 個月以上
-- 使用兩種專門開發的竊取程式家族
-- 以行動應用程式更新為精心設計的誘餌
-
-**影響評估**：
-- 烏克蘭軍民系統使用者面臨高度風險
-- 竊取的憑證可能用於後續橫向移動或情報蒐集
-- 冒充政府機構的手法可能被其他威脅行為者效仿
+- CVE-2024-4040（RCE）、CVE-2025-31161（認證繞過）、CVE-2025-54309（零日）
+- Qdrant 查詢（查詢 2）「RCE critical vulnerability」：多個檔案傳輸與企業應用 RCE 漏洞（SmarterMail 0.70、motionEye 0.70、Redis 0.69）顯示 RCE 攻擊面持續擴大
 
 ---
 
@@ -695,86 +657,75 @@ Qdrant 語意查詢「IoT botnet Mirai Mozi malware」返回高相似度結果�
 
 本週執行 5 次 Qdrant 語意查詢，用於跨 Layer 關聯分析：
 
-#### 查詢 1：「Iran cyber threats retaliation」— 跨 Layer 關聯
+#### 查詢 1：「勒索軟體 ransomware 攻擊事件 2026」— 10 筆結果
 
 | 相似度 | 標題 | Layer | 分類 |
 |--------|------|-------|------|
-| **0.72+** | Critical Vulnerability in Cisco Catalyst SD-WAN | vulnerability_tracking | critical_high |
-| **0.60+** | Ransomware Threat Outlook 2025-2027 | security_news_facts | industry_trend |
-| **0.60+** | Pro-Russian hacktivists attack critical infrastructure (2025-12) | security_news_facts | attack_incident |
-| 0.55+ | Canadian Cyber Centre Iranian Cyber Threat Bulletin 2025-07 | security_news_facts | policy_regulation |
+| **0.5755** | Defences against "Petrwrap" Ransomware Attack | vulnerability_tracking | medium |
+| **0.5739** | Active ransomware attacks continue (2020) | security_news_facts | attack_incident |
+| **0.5698** | Ask us about ransomware! (2022) | security_news_facts | attack_incident |
+| **0.5606** | New actors and methods in ransomware (2023) | security_news_facts | attack_incident |
+| **0.5528** | Defences against "WannaCry" Ransomware Attack | vulnerability_tracking | medium |
 
-**關聯發現**：伊朗網路威脅具有歷史縱深——加拿大 CERT 早在 2025 年 7 月已發布伊朗網路威脅公告。pro-Russian hacktivists 攻擊關鍵基礎設施的模式，與伊朗預期使用的低技術破壞性攻擊手法高度一致。勒索軟體展望報告特別提及國家-犯罪融合趨勢，為本週伊朗使用勒索軟體戰術的分析提供背景支持。
+**關聯發現**：勒索軟體威脅具有深厚歷史脈絡，從 WannaCry（2017）至今持續演進。本週伊朗國家級行為者採用勒索軟體戰術的趨勢，與歷史資料中「新行為者與新操作方法」（2023）的觀察一致，顯示勒索軟體生態系統持續吸引國家級參與者。
 
-#### 查詢 2：「supply chain attack software compromise 2026」— 10 筆結果
-
-| 相似度 | 標題 | Layer | 分類 |
-|--------|------|-------|------|
-| **0.6311** | Dependency confusion exposes to attacks | security_news_facts | attack_incident |
-| **0.5587** | Supply chain attack on 3CXDesktopApp | security_news_facts | attack_incident |
-| 0.5542 | Stanley malware toolkit with Chrome Web Store guarantee | security_news_facts | attack_incident |
-| 0.5478 | Malware Identified in Attacks Exploiting Ivanti Connect Secure | security_news_facts | vulnerability_disclosure |
-
-**關聯發現**：供應鏈攻擊手法持續演進——從 Dependency confusion（2021）、3CX（2023）到本週 Notepad++ 和 QuickLens。「Stanley malware toolkit with Chrome Web Store guarantee」（2026-01-28）揭示了 6,000 美元即可購買含 Chrome Web Store 上架保證的惡意程式套件，為 QuickLens 事件提供了地下市場脈絡。
-
-#### 查詢 3：「RCE active exploitation CISA KEV 2026」— 10 筆結果
+#### 查詢 2：「遠端程式碼執行 RCE critical vulnerability active exploitation」— 10 筆結果
 
 | 相似度 | 標題 | Layer | 分類 |
 |--------|------|-------|------|
-| **0.72+** | AL26-004 Critical Vulnerability Affecting Cisco Catalyst SD-WAN | vulnerability_tracking | critical_high |
-| **0.70+** | Cisco SD-WAN Path Traversal Vulnerability | exploit_intelligence | active_exploitation |
-| 0.66+ | SmarterMail RCE | exploit_intelligence | active_exploitation |
-| 0.65+ | SolarWinds Web Help Desk vulnerabilities | vulnerability_tracking | critical_high |
+| **0.7176** | Critical RCE Vulnerability React2Shell Under Mass Exploitation | security_news_facts | vulnerability_disclosure |
+| **0.7051** | FreeBSD rtsold RCE via DNSSL | exploit_intelligence | poc_available |
+| **0.7018** | motionEye 0.43.1b4 RCE | exploit_intelligence | poc_available |
+| **0.6943** | Redis 8.0.2 RCE | exploit_intelligence | poc_available |
 
-**關聯發現**：CISA 持續更新 KEV 清單（2026-01 至 02 共多批新增）。SolarWinds Web Help Desk 同時出現身份驗證繞過（CVE-2025-40536）與反序列化 RCE（CVE-2025-40551），多國 CERT（HKCERT、加拿大 CERT）均發布獨立公告，形成跨地區的漏洞追蹤網路。
+**關聯發現**：RCE 漏洞在 exploit_intelligence Layer 中呈現高密度（相似度 0.70+），確認 RCE 利用工具（PoC）的快速武器化是當前主要威脅模式。React2Shell 大規模利用（0.72）驗證了供應鏈 RCE 漏洞的嚴重性。
 
-#### 查詢 4：「Botnet C2 infrastructure Mirai」— 10 筆結果
-
-| 相似度 | 標題 | Layer | 分類 |
-|--------|------|-------|------|
-| **0.7113** | MalwareBazaar：Mirai（iran.mipsel） | threat_feeds | malware_sample |
-| **0.7088** | MalwareBazaar：Mirai（data.arm6） | threat_feeds | malware_sample |
-| **0.7046** | MalwareBazaar：Mirai（iran.arc） | threat_feeds | malware_sample |
-| **0.7044** | Mirai Botnet C2 伺服器 143.20.185.59:15154 | threat_feeds | ioc_indicator |
-| **0.7004** | ThreatFox IoC: Mirai - Botnet CC | threat_feeds | ioc_indicator |
-
-**關聯發現**：Mirai 變種在 threat_feeds Layer 中呈現極高密度（所有結果相似度 > 0.70），確認 IoT 殭屍網路為當前最活躍的持續性威脅之一。ThreatFox 同時追蹤到 Meterpreter、DeimosC2、AdaptixC2 等 C2 基礎設施，顯示攻擊者使用多種 C2 框架。
-
-#### 查詢 5：「SolarWinds RoundCube patch vulnerability disclosure」— 跨 Layer 關聯
+#### 查詢 3：「供應鏈攻擊 supply chain compromise APT」— 10 筆結果
 
 | 相似度 | 標題 | Layer | 分類 |
 |--------|------|-------|------|
-| 0.65+ | SolarWinds WHD 多個漏洞 | vulnerability_tracking | critical_high |
-| 0.63+ | HKCERT SolarWinds 安全公告 | vulnerability_tracking | critical_high |
-| 0.60+ | CA CERT SolarWinds 安全公告 | security_news_facts | vulnerability_disclosure |
-| 0.58+ | Roundcube 安全更新 | vulnerability_tracking | critical_high |
-| 0.55+ | CA CERT Roundcube 安全公告 | security_news_facts | vulnerability_disclosure |
+| **0.5721** | 半導體戰略背後的網路戰–攻擊鎖定設計、生產與財經分析師 | security_news_facts | attack_incident |
+| **0.5483** | PRC state-sponsored worldwide network compromises | security_news_facts | attack_incident |
+| **0.5425** | Dependency confusion exposes to attacks | security_news_facts | attack_incident |
 
-**關聯發現**：SolarWinds Web Help Desk 與 RoundCube 漏洞均獲得多國 CERT 關注，HKCERT（香港）、CA CERT（加拿大）均發布獨立安全公告，顯示這些漏洞影響範圍跨越多個地區。
+**關聯發現**：供應鏈攻擊手法持續演進——PRC 國家行為者全球性網路入侵（0.55）、依賴混淆攻擊（0.54）與本週 Notepad++（Lotus Blossom）和 QuickLens 事件形成連續脈絡。半導體產業供應鏈攻擊（0.57）揭示產業鏈的脆弱性。
+
+#### 查詢 4：「Iran cyber retaliation APT MuddyWater destructive wiper」— 10 筆結果
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| **0.5450** | Malware in Attacks Exploiting Ivanti Connect Secure | security_news_facts | attack_incident |
+| **0.5159** | PRC state-sponsored worldwide network compromises | security_news_facts | attack_incident |
+| **0.5091** | HoneyMyte updates CoolClient, deploys stealers | security_news_facts | other |
+
+**關聯發現**：伊朗 APT 利用的漏洞類型（VPN 設備、遠端存取系統）與 Ivanti Connect Secure 攻擊（0.55）呈現相似攻擊模式——均鎖定企業邊界設備作為初始入侵向量。
+
+#### 查詢 5：「Chrome extension cryptocurrency malware botnet DDoS」— 10 筆結果
+
+| 相似度 | 標題 | Layer | 分類 |
+|--------|------|-------|------|
+| **0.5119** | MalwareBazaar: DiscordRAT | threat_feeds | malware_sample |
+| **0.4945** | MalwareBazaar: AsyncRAT | threat_feeds | malware_sample |
+| **0.4822** | ThreatFox: Cobalt Strike C2 — 156.234.21.203:3093 | threat_feeds | ioc_indicator |
+| **0.4822** | ThreatFox: Cobalt Strike C2 — 156.234.21.204:3093 | threat_feeds | ioc_indicator |
+
+**關聯發現**：威脅饋送中大量 Cobalt Strike C2 指標（日期 2026-03-03）與 AsyncRAT/DiscordRAT 樣本，為 QuickLens 供應鏈攻擊和殭屍網路基礎設施提供 IoC 交叉驗證。多個 Cobalt Strike C2 使用相同連接埠 3093，暗示統一的攻擊者基礎設施。
 
 ### 跨 Layer 關聯總結
 
 **伊朗網路戰跨 Layer 關聯**：
-- **security_news_facts/attack_incident**：5 起直接相關事件（網路封鎖、App 心戰、APT 動員、犯罪戰術、加拿大威脅公告）
-- **threat_feeds/malware_sample**：Mirai「iran」前綴樣本（待進一步確認關聯）
-- **Qdrant**：勒索軟體展望報告（0.60）呼應國家-犯罪融合趨勢、歷史伊朗威脅公告
+- **security_news_facts/attack_incident**：7+ 起直接相關事件（網路封鎖、App 心戰、APT 動員、犯罪戰術、Dust Specter、加拿大威脅公告、SIM-swap 利用危機）
+- **security_news_facts/industry_trend**：Check Point 伊朗能力分析（2026-03-03）
+- **Qdrant**：歷史攻擊模式（Ivanti 漏洞利用、PRC 國家行為者）呈現類似邊界設備入侵手法
 
-**Notepad++ 供應鏈攻擊跨 Layer 關聯**：
-- **security_news_facts/attack_incident**：TWCERT/CC 詳細報導攻擊鏈
-- **exploit_intelligence/active_exploitation**：CVE-2025-15556（Notepad++ 下載未驗證完整性）列入 CISA KEV
-- **threat_feeds/ioc_indicator**：C2 網域與 IP 可交叉比對
-- **Qdrant**：歷史供應鏈攻擊案例（依賴混淆 0.63、3CX 0.56、Stanley 工具 0.55）
+**國家級 APT 跨 Layer 關聯**：
+- APT28 MSHTML 利用 → vulnerability_tracking（2 月 Patch Tuesday）→ exploit_intelligence（活躍利用確認）
+- Dust Specter → 新增 4 種惡意程式至 security_news_facts/attack_incident
+- SloppyLemming → 南亞政府/關鍵基礎設施受影響（跨 Layer 地理維度）
 
-**SolarWinds/RoundCube 漏洞跨 Layer 關聯**：
-- **exploit_intelligence/active_exploitation**：CVE-2025-40536、CVE-2025-40551（SolarWinds WHD）與 CVE-2025-49113、CVE-2025-68461（RoundCube）均列入 CISA KEV
-- **vulnerability_tracking/critical_high**：多國 CERT（HKCERT、CA CERT）發布獨立公告
-- **security_news_facts/vulnerability_disclosure**：CERT-FR、CERT.RO 等歐洲 CERT 發布漏洞揭露通告
-
-**IoT 殭屍網路跨 Layer 關聯**：
-- **threat_feeds/malware_sample**：Mirai 多架構樣本持續新增
-- **threat_feeds/ioc_indicator**：活躍 C2 伺服器、DeimosC2、AdaptixC2
-- **vulnerability_tracking/critical_high**：EV 充電站 ICS 漏洞擴大 IoT 攻擊面
-- **Qdrant 相似度**：threat_feeds Layer 高達 0.71，為五次查詢中最高密度
+**CISA KEV 跨 Layer 關聯**：
+- CVE-2026-21385（Qualcomm）與 CVE-2026-22719（VMware）同時加入 KEV → 行動晶片與虛擬化管理平台雙線威脅
+- Cisco SD-WAN（CVE-2026-20127）持續在 vulnerability_tracking、exploit_intelligence、security_news_facts 三個 Layer 高密度出現
 
 ---
 
@@ -786,69 +737,57 @@ Qdrant 語意查詢「IoT botnet Mirai Mozi malware」返回高相似度結果�
 | **CVE-2022-20775** | Cisco SD-WAN | **緊急指令 ED 26-03** | High | Unknown | **立即處理** |
 | **CVE-2026-1731** | BeyondTrust RS/PRA | **2026-02-16（已過期）** | Critical | **Known** | **逾期** |
 | **CVE-2026-20045** | Cisco UCM | **2026-02-11（已過期）** | Critical | N/A | **逾期** |
+| **CVE-2026-22769** | Dell RP4VMs | **2026-02-21（已過期）** | Critical | N/A | **逾期** |
 | **CVE-2025-68645** | Zimbra ZCS | **2026-02-12（已過期）** | Critical | N/A | **逾期** |
-| **CVE-2025-31125** | Vite.js | **2026-02-12（已過期）** | Medium | N/A | **逾期** |
-| **CVE-2025-34026** | Versa Concerto | **2026-02-12（已過期）** | High | N/A | **逾期** |
-| **CVE-2025-40536** | SolarWinds Web Help Desk | TBD | Critical | N/A | **緊急** |
-| **CVE-2025-40551** | SolarWinds Web Help Desk | TBD | Critical | N/A | **緊急** |
-| **CVE-2025-52691** | SmarterTools SmarterMail | TBD | Critical | N/A | **緊急** |
-| **CVE-2025-64328** | Sangoma FreePBX | TBD | Critical | N/A | **緊急** |
-| **CVE-2025-54313** | eslint-config-prettier | TBD | High | N/A | **緊急（供應鏈）** |
-| **CVE-2025-49113** | RoundCube | TBD | Critical | N/A | **緊急** |
-| **CVE-2025-68461** | RoundCube | TBD | Critical | N/A | **緊急** |
-| **CVE-2025-11953** | React Native CLI | TBD | High | N/A | **緊急（供應鏈）** |
-| **CVE-2025-15556** | Notepad++ | TBD | High | N/A | **緊急（供應鏈）** |
+| **CVE-2026-2441** | Chromium CSS | **2026-03-10** | High | Unknown | **接近期限** |
+| **CVE-2026-21385** | Qualcomm 多晶片 | TBD | High | N/A | **新增 KEV** |
+| **CVE-2026-22719** | VMware Aria Ops | TBD | High | N/A | **新增 KEV** |
+| **CVE-2026-21513** | Microsoft MSHTML | 已修補 | High (8.8) | N/A | **APT28 利用** |
+| **CVE-2025-49113** | RoundCube | TBD | Critical | N/A | **持續** |
+| **CVE-2025-68461** | RoundCube | TBD | Critical | N/A | **持續** |
+| **CVE-2026-24423** | SmarterMail | **已過期** | Critical | **Known** | **逾期** |
 
 **優先修補建議**：
-1. **立即**：CVE-2026-20127、CVE-2022-20775（Cisco SD-WAN，CISA 緊急指令 ED 26-03）
-2. **立即**：CVE-2026-1731（BeyondTrust，已確認被勒索軟體利用，修補期限已過期）
-3. **緊急**：CVE-2025-40536、CVE-2025-40551（SolarWinds Web Help Desk 攻擊鏈）
-4. **緊急**：CVE-2025-49113、CVE-2025-68461（RoundCube，活躍利用中）
-5. **緊急**：CVE-2025-52691（SmarterMail 無限制檔案上傳）
-6. **緊急（供應鏈）**：CVE-2025-54313、CVE-2025-11953、CVE-2025-15556（開發者工具鏈）
-7. **優先**：VMware Cloud Foundation、SonicWall Firewall、SolarWinds Serv-U（Critical 等級新揭露）
-8. **優先**：Johnson Controls Frick Quantum HD、Copeland XWEB（ICS 系統）
-9. **逾期未修補**：所有已過期修補期限的 CISA KEV 漏洞（5 個以上），應立即處理
+1. **立即**：CVE-2026-20127、CVE-2022-20775（Cisco SD-WAN，CISA ED 26-03）
+2. **立即**：CVE-2026-1731（BeyondTrust，已確認被勒索軟體利用）
+3. **立即**：CVE-2026-21513（MSHTML，APT28 活躍利用，已有修補）
+4. **緊急**：CVE-2026-21385、CVE-2026-22719（新增 KEV）
+5. **緊急**：CVE-2026-2441（Chromium，2026-03-10 期限）
+6. **逾期未修補**：所有已過期 CISA KEV 漏洞應立即處理
 
 ---
 
 ## 產業動態
 
-### ETSI EN 304 223 人工智慧安全標準
+### Check Point 伊朗網路能力全面概述
 
-**來源**：TWCERT/CC | 日期：2026-02-24
+**來源**：Check Point Research | 日期：2026-03-03
 
-歐洲電信標準協會（ETSI）發布 EN 304 223 標準，為 AI 模型與系統建立資安基準：
-- 涵蓋 AI 生命週期 5 大階段、13 項核心安全原則
-- 明確劃分供應鏈各方責任（開發者、營運商、資料保管者、終端使用者）
-- 可能成為歐盟 AI 法案的協調標準
+Check Point Research 發布伊朗網路威脅生態系統全面概述，涵蓋 IRGC 與 MOIS 關聯組織的 TTPs。報告結構性地分析了伊朗間諜、破壞性攻擊與資訊操作三大目標，為防禦者提供針對伊朗相關威脅的優先防護依據。
 
-### OpenAI 發布 AI 惡意使用威脅報告
+### Chainalysis 2026 勒索軟體報告
 
-**來源**：NCSC-FI | 日期：2026-03-02
+**來源**：Chainalysis | 日期：2026-03-01
 
-OpenAI 發布關於 AI 模型惡意使用的威脅報告，記錄威脅行為者如何結合 AI 與傳統工具進行影響力操作、浪漫詐騙和網路攻擊：
-- 中國影響力操作使用多個 AI 模型於不同階段
-- 文件記錄多起被瓦解的威脅活動，包括 Operation Date Bait、Operation Trolling Stone 等
-- 關鍵發現：威脅行為者通常將 AI 與其他傳統工具結合使用，而非單獨使用 AI
+2025 年勒索軟體鏈上支付總額降 8% 至 8.2 億美元，攻擊次數卻增加 50%。IAB（初始存取代理商）活動為勒索軟體攻擊的領先指標（約 30 天提前量）。犯罪與國家行為者共享防彈主機與代理基礎設施。
 
 ### 勒索軟體「榮譽準則」崩壞
 
 **來源**：NCSC-FI / Mikko Hypponen | 日期：2026-03-02
 
-資安專家 Mikko Hypponen 警告 ShinyHunters 等組織收取贖金後仍出售竊取資料，勒索軟體犯罪集團的信用體系已崩壞。此趨勢將根本改變組織面對勒索軟體時的應對策略。
+ShinyHunters 等組織收取贖金後仍出售竊取資料，勒索軟體犯罪集團的信用體系已崩壞。組織應將所有勒索軟體事件視為完整資料外洩。
 
-### 愛沙尼亞部署 Smart-ID+ 國家認證服務
+### OpenAI 發布 AI 惡意使用威脅報告
 
-**來源**：CERT-EE（愛沙尼亞）| 日期：2026-02-26
+**來源**：NCSC-FI | 日期：2026-03-02
 
-愛沙尼亞資訊系統管理局（RIA）正式啟用 Smart-ID+ 國家認證服務，導入更安全的政府電子服務登入流程。
+OpenAI 文件記錄威脅行為者如何結合 AI 與傳統工具進行影響力操作與網路攻擊，包括 Operation Date Bait、Operation Trolling Stone 等被瓦解的活動。
 
-### CLAIR 模型：關鍵基礎設施相互依賴性映射
+### CISA ICS 公告持續擴大
 
-**來源**：SANS ISC | 日期：2026-02-25
+**來源**：CISA | 日期：2026-03-03
 
-SANS Internet Storm Center 介紹 CLAIR 模型，提供系統化方法映射關鍵基礎設施間的依賴關係，有助於識別連鎖風險。
+本週 CISA 發布多項 ICS 公告涵蓋 Hitachi Energy、Mitsubishi Electric、EV 充電站等關鍵基礎設施產品，延續上週 10 項 ICS 公告的趨勢。
 
 ---
 
@@ -856,52 +795,23 @@ SANS Internet Storm Center 介紹 CLAIR 模型，提供系統化方法映射關�
 
 本報告基於以下資料來源，存在已知限制：
 
-1. **來源範圍**：基於國際 CERT/安全機構公開資料與 abuse.ch 威脅情報，但不涵蓋所有威脅情資。可能存在未被公開揭露的威脅活動。主要來源包括 CISA (US)、NSA (US)、CERT-UA (Ukraine)、CERT-SE (Sweden)、CERT-FR (France)、CERT.RO (Romania)、CERT-EE (Estonia)、JPCERT/CC (Japan)、TWCERT/CC (Taiwan)、NCSC-FI (Finland)、Canadian Cyber Centre (Canada)、NCSC-NL (Netherlands)、HKCERT (Hong Kong)、KrebsOnSecurity、BleepingComputer、Anomali、Halcyon、WIRED。
+1. **來源範圍**：基於國際 CERT/安全機構公開資料與 abuse.ch 威脅情報，但不涵蓋所有威脅情資。主要來源包括 CISA (US)、NSA (US)、CERT-UA (Ukraine)、CERT-FR (France)、CERT.RO (Romania)、SK-CERT (Slovakia)、JPCERT/CC (Japan)、TWCERT/CC (Taiwan)、NCSC-FI (Finland)、Canadian Cyber Centre (Canada)、NCSC-UK (UK)、KrebsOnSecurity、BleepingComputer、Anomali、Halcyon、Check Point Research、Arctic Wolf、Zscaler ThreatLabz、Akamai、Palo Alto Unit 42、WIRED、Chainalysis。
 
-2. **時效性**：資料收集截至 2026-03-02，後續發展可能影響分析結論。特別是伊朗網路戰態勢可能在報告發布後快速演變。
+2. **時效性**：資料收集截至 2026-03-04（週中），本週（至 2026-03-08）後半段的事件尚未涵蓋。特別是伊朗網路戰態勢可能在報告發布後快速演變。本報告將依需要更新。
 
-3. **地理偏差**：本週資料來自歐美與亞太地區。中東地區事件（伊朗）依賴西方媒體與安全研究機構報導，可能存在視角偏差。非洲、南美洲等地區特有威脅覆蓋不足。烏克蘭 UAC-0252 資訊來自 CERT-UA 原始公告（烏克蘭文），經翻譯可能存在細節偏差。
+3. **地理偏差**：本週資料以中東（伊朗-以色列衝突）、歐美及南亞地區為主。中東事件依賴西方媒體與安全研究機構報導，可能存在視角偏差。CERT-UA 資訊為烏克蘭文翻譯、SK-CERT 為斯洛伐克文翻譯，可能存在細節偏差。
 
 4. **信心水準說明**：
-   - **高**：基於官方公告、確認的 KEV 列表、多來源交叉驗證（如 CISA ED 26-03、多國 CERT 聯合公告、CERT-UA 官方公告、Qdrant 跨 Layer 高相似度驗證）
-   - **中-高**：基於可信來源的報導、模式分析（如 ClickFix 擴散趨勢、Vidar 活躍度上升）
-   - **中**：基於單一來源報導或有限樣本推斷（如 CERT-SE 間諜活動摘要）
-   - **低**：推測性關聯（如 Mirai「iran」前綴命名與伊朗 APT 活動的關係）
+   - **高**：基於官方公告、確認的 KEV 列表、多來源交叉驗證（如 CISA ED 26-03、Akamai APT28 分析、CERT-UA 官方公告、Qdrant 跨 Layer 驗證）
+   - **中-高**：基於可信來源報導、模式分析（如 AI 功能攻擊面趨勢、ClickFix 擴散、EV 充電站系統性問題）
+   - **中**：基於單一來源報導或有限樣本推斷（如 SK-CERT 斯洛伐克文來源）
+   - **低**：推測性關聯（如俄羅斯駭客組織監控攝影機宣稱 — 可能為宣傳操作）
 
-5. **完整性**：未包含非公開威脅情報、暗網情資、付費情報服務等來源。Qdrant 語意查詢結果受限於已收錄資料的範圍。
+5. **完整性**：未包含非公開威脅情報、暗網情資、付費情報服務等來源。Qdrant 語意查詢結果受限於已收錄資料範圍。
 
-6. **翻譯風險**：部分非英文來源（烏克蘭文、瑞典文、法文、羅馬尼亞文、愛沙尼亞文、日文、芬蘭文）經 AI 翻譯，可能存在語義偏差。
+6. **翻譯風險**：部分非英文來源（烏克蘭文、斯洛伐克文、法文、羅馬尼亞文、芬蘭文、日文）經 AI 翻譯，可能存在語義偏差。
 
-7. **ICS 漏洞評估限制**：本週 10 項 ICS 公告中，部分公告的詳細 CVE 資訊需至 CISA 原始頁面查閱，本報告基於可取得的摘要資料分析。
+7. **分析局限**：趨勢分析基於公開資料樣本，攻擊手法佔比為估計值（基於本週事件加權），統計推論應謹慎解讀。國家級 APT 行動密度的「歷史新高」判斷基於公開揭露的活動，實際活動可能更多或更少。
 
-8. **Qdrant 查詢限制**：語意查詢結果的相似度分數反映語意距離，不等同於實際威脅關聯性。跨 Layer 關聯分析基於可用資料，可能遺漏未收錄的情報。
-
-本報告僅供參考，不構成完整的威脅評估。重大安全決策請結合多方情資來源。
-
----
-
-## 自我審核 Checklist
-
-- [x] 是否包含「資料限制與免責聲明」？
-- [x] 所有事件是否標註來源與日期？
-- [x] 趨勢分析是否基於足夠樣本？
-  - security_news_facts: attack_incident 631, vulnerability_disclosure 285, policy_regulation 158, industry_trend 518, other 254
-  - vulnerability_tracking: critical_high 1,715, medium 1,281, low_info 1,193
-  - exploit_intelligence: active_exploitation 11, poc_available 633
-  - threat_feeds: malicious_url 2,659, malware_sample 1,748, ioc_indicator 2,781, c2_infrastructure 2
-- [x] 新興威脅識別是否標註信心水準？（7 項新興威脅均已標註）
-- [x] 攻擊手法是否已標註對應的 ATT&CK TTP？（20+ 個 TTP 引用，使用 ttp-badge 與 ttp-ref 格式）
-- [x] 是否有未經證實的推論需標註為「推測」？（已於相關段落標註信心水準，Mirai「iran」前綴標註為「推測，信心水準：低」）
-- [x] 統計數據是否準確？（已核對各 Layer 數量，與提供的數據摘要一致）
-- [x] 格式是否符合目標受眾閱讀習慣？
-- [x] 是否有使用 Qdrant 進行跨 Layer 關聯分析？（已執行 5 次語意查詢）
-- [x] ATT&CK TTP 是否使用正確的 badge/ref 格式？
-
----
-
-> 報告產出時間：2026-03-03
-> 資料截止時間：2026-03-02 23:59 UTC
-> 資料來源：CISA (US)、NSA (US)、CERT-UA (Ukraine)、CERT-SE (Sweden)、CERT-FR (France)、CERT.RO (Romania)、CERT-EE (Estonia)、JPCERT/CC (Japan)、TWCERT/CC (Taiwan)、NCSC-FI (Finland)、Canadian Cyber Centre (Canada)、NCSC-NL (Netherlands)、HKCERT (Hong Kong)、KrebsOnSecurity、BleepingComputer、Anomali、Halcyon、WIRED、Rapid7、OpenAI、abuse.ch (MalwareBazaar, ThreatFox, URLhaus)、Exploit-DB、PoC-in-GitHub
-> 分析模型：Claude Opus 4.6
-> Qdrant 語意查詢次數：5
-> 版本：3.0（更新涵蓋期間至 2026-03-03，新增 UAC-0252、更新統計數據、擴充 CISA KEV 清單、新增 Vidar/IClickFix 威脅饋送分析）
+本報告僅供參考，不構成完整的威脅評估。
+重大安全決策請結合多方情資來源。
