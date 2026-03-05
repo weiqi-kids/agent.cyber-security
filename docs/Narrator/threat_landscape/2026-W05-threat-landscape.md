@@ -1,5 +1,6 @@
 ---
 layout: seo-report
+last_modified_at: 2026-02-19T23:17:45+08:00
 title: 2026 第 05 週威脅態勢分析
 description: "2026-01-22 至 2026-01-28 資安威脅週報"
 parent: 威脅態勢分析

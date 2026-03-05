@@ -1,5 +1,6 @@
 ---
 layout: seo-report
+last_modified_at: 2026-03-05T13:11:10+08:00
 title: 2026 第 10 週威脅態勢分析
 description: "2026-02-26 至 2026-03-05 資安威脅週報：伊朗 Operation Epic Fury 後多 APT 同步動員、APT28 利用 CVE-2026-21513 MSHTML 零日漏洞、Dust Specter 伊拉克政府攻擊、SloppyLemming 南亞間諜活動、UAC-0252 SHADOWSNIFF 竊取程式、Cisco SD-WAN ED 26-03 持續、CISA 新增 Qualcomm/VMware KEV、Chrome Gemini CVE-2026-0628、EV 充電站系統性漏洞、CrushFTP 暴力破解掃描、Vidar 與 AsyncRAT 主導威脅饋送。"
 parent: 威脅態勢分析

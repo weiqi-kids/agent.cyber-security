@@ -1,5 +1,6 @@
 ---
 layout: seo-report
+last_modified_at: 2026-03-05T13:11:10+08:00
 title: 2026 第 10 週防禦建議
 description: "2026-02-26 至 2026-03-05 資安防禦建議週報：VMware Aria Operations 命令注入活躍利用（CVE-2026-22719）、Qualcomm 晶片組記憶體損毀（CVE-2026-21385）、Windows MSHTML 被 APT28 利用（CVE-2026-21513）、Cisco SD-WAN 零日漏洞全球攻擊（CVE-2026-20127）、ICS/SCADA 多重漏洞（Hitachi Energy、Mitsubishi Electric、Schneider Electric）、伊朗 APT 全面升級、EV 充電基礎設施 OCPP 後端漏洞、1867 筆威脅指標。"
 parent: 防禦建議

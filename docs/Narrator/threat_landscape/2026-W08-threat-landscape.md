@@ -1,5 +1,6 @@
 ---
 layout: seo-report
+last_modified_at: 2026-02-22T04:47:49+08:00
 title: 2026 第 08 週威脅態勢分析
 description: "2026-02-16 至 2026-02-22 資安威脅週報：RoundCube 雙漏洞遭活躍利用、Dell RP4VMs CVE-2026-22769 UNC6201 利用、VSCode 擴充套件供應鏈風險、Chromium CSS Use-After-Free、波蘭能源基礎設施 OT/ICS 攻擊、Honeywell CCTV 認證繞過、React2Shell 供應鏈威脅。"
 parent: 威脅態勢分析

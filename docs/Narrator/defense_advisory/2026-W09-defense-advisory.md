@@ -1,5 +1,6 @@
 ---
 layout: seo-report
+last_modified_at: 2026-02-26T23:43:02+08:00
 title: 2026 第 09 週防禦建議
 description: "2026-02-20 至 2026-02-26 資安防禦建議：CISA 緊急指令 ED 26-03 針對 Cisco SD-WAN（CVE-2026-20127、CVE-2022-20775）、RoundCube Webmail 雙漏洞持續活躍利用、Dell RP4VMs CVE-2026-22769 零日漏洞（修補期限已過）、Soliton FileZen CVE-2026-25108 OS 指令注入、BeyondTrust 勒索軟體關聯漏洞。"
 parent: 防禦建議

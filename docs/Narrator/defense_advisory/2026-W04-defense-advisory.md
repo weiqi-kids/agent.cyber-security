@@ -1,5 +1,6 @@
 ---
 layout: seo-report
+last_modified_at: 2026-02-19T23:18:05+08:00
 title: 2026 第 04 週防禦建議
 description: "2026-01-21 至 2026-01-27 資安防禦建議"
 parent: 防禦建議

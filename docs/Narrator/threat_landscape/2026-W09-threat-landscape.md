@@ -1,5 +1,6 @@
 ---
 layout: seo-report
+last_modified_at: 2026-02-26T23:43:02+08:00
 title: 2026 第 09 週威脅態勢分析
 description: "2026-02-20 至 2026-02-26 資安威脅週報：Cisco SD-WAN 緊急指令 ED 26-03、RoundCube 雙漏洞持續活躍利用、Dell RP4VMs CVE-2026-22769 零日漏洞、Soliton FileZen OS 指令注入、React2Shell 供應鏈攻擊、波蘭能源 OT/ICS 後續、BeyondTrust 勒索軟體關聯、Mirai 殭屍網路活躍。"
 parent: 威脅態勢分析

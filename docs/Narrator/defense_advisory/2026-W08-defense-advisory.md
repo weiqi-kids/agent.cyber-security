@@ -1,5 +1,6 @@
 ---
 layout: seo-report
+last_modified_at: 2026-02-22T04:47:49+08:00
 title: 2026 第 08 週防禦建議
 description: "2026-02-16 至 2026-02-22 資安防禦建議：RoundCube 雙漏洞緊急修補 CVE-2025-49113/68461、Dell RP4VMs CVE-2026-22769 UNC6201 利用、Ivanti EPMM 零日 RCE CVE-2026-1281/1340、Chromium CSS Use-After-Free、VSCode 擴充套件供應鏈漏洞、Honeywell CCTV CVE-2026-1670 CVSS 9.8、波蘭能源基礎設施 OT/ICS 防禦、SmarterMail 勒索軟體漏洞鏈。"
 parent: 防禦建議

@@ -7,6 +7,7 @@ has_children: true
 permalink: /docs/Extractor/security_news_facts/
 render_with_liquid: true
 sitemap: true
+last_modified_at: 2026-03-03T14:53:21+08:00
 ---
 
 # 資安新聞事實 (Security News Facts)

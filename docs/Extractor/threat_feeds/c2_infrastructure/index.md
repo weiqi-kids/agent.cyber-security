@@ -6,6 +6,7 @@ grand_parent: Extractor
 nav_order: 3
 render_with_liquid: true
 sitemap: true
+last_modified_at: 2026-03-03T14:53:21+08:00
 ---
 
 # C2 基礎設施 (C2 Infrastructure)
