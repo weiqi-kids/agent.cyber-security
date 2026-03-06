@@ -1,0 +1,34 @@
+# malware_download 惡意程式分發 URL (ID: 3789151)
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-03-03 |
+| **來源** | abuse.ch URLhaus |
+| **分類** | malicious_url |
+| **威脅類型** | malware |
+| **惡意程式家族** | malware_download |
+| **狀態** | offline |
+| **威脅等級** | 中 |
+| **信心水準** | 高 |
+
+## 威脅描述
+
+此 URL 與惡意程式下載相關，當前狀態為已離線。雖然 URL 已離線，仍建議保留於封鎖清單中以防範可能的重新上線。
+
+## IoC 指標
+
+| 類型 | 值 |
+|------|-----|
+| url | `hxxps://bittere63e[.]gcjc7ulfg8zc[.]workers[.]dev/PrbUa-02-03/gasped/opera/outdoor/3/2/2026/ram188618.yuv` |
+
+## 標籤
+
+N/A
+
+## 來源連結
+
+- [URLhaus Report](https://urlhaus.abuse.ch/url/3789151/)
+
+---
+> 萃取時間：2026-03-04 UTC
+> 資料來源：abuse.ch URLhaus urlhaus-recent

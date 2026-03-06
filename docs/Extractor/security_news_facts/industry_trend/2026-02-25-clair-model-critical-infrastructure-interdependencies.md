@@ -1,121 +1,45 @@
 ---
 title: "The CLAIR Model: A Synthesized Conceptual Framework for Mapping Critical Infrastructure Interdependencies"
-published: 2026-02-25
-source_url: "https://isc.sans.edu/diary/rss/32748"
-category: "industry_trend"
-source_layer: "security_news_facts"
-source_feed: "sans-isc"
-severity: "低"
-confidence: "中"
+date: 2026-02-25
+extracted_at: 2026-03-04T00:00:00Z
+source: SANS ISC
+feed_id: sans-isc
+language: en
+category: industry_trend
+confidence: 高
+link: https://isc.sans.edu/diary/rss/32748
+tags:
+  - critical-infrastructure
+  - CLAIR-model
+  - framework
+  - interdependency-mapping
+  - risk-analysis
+  - resilience
 ---
 
-## 摘要
+## Summary
 
-SANS ISC客座日誌介紹CLAIR模型，一個用於映射關鍵基礎設施相互依賴性的綜合概念框架，有助於理解與管理基礎設施之間的連鎖風險。
+A guest diary entry on SANS ISC presenting the "CLAIR Model" — a synthesized conceptual framework for mapping and analyzing interdependencies within critical infrastructure. The model provides a structured methodology to understand how failures or attacks on one infrastructure sector can cascade to others.
 
-## 詳細內容
+## Key Details
 
-SANS Internet Storm Center發布客座日誌，介紹「CLAIR Model」（CLAIR模型），這是一個專門設計用來映射與分析關鍵基礎設施（Critical Infrastructure, CI）相互依賴性的概念框架。
+- **Framework name**: CLAIR Model
+- **Purpose**: Mapping critical infrastructure interdependencies
+- **Type**: Conceptual/analytical framework for risk and resilience planning
+- Addresses the challenge of cascading failures across interconnected infrastructure sectors (power, water, communications, transportation, etc.)
+- Useful for national-level cybersecurity planners, critical infrastructure operators, and policy makers
 
-### 關鍵基礎設施相互依賴性
+## Relevance
 
-現代社會的關鍵基礎設施高度互聯，形成複雜的依賴網路：
+- Critical infrastructure protection is a top priority for CERTs and national security agencies worldwide
+- Provides a structured lens for understanding cyber-physical dependencies
+- Complements existing frameworks (NIST CSF, ICS-CERT guidance) with interdependency mapping
 
-**電力與通訊**：
-- 通訊網路依賴電力供應
-- 電力調度系統依賴通訊網路
+## Notes
 
-**金融與IT**：
-- 金融服務依賴資訊系統與網路連線
-- 資料中心需要電力與冷卻系統
-
-**供水與電力**：
-- 供水系統的幫浦與控制系統需要電力
-- 電廠需要冷卻水
-
-### CLAIR模型的目標
-
-CLAIR模型旨在提供系統化方法，協助：
-
-1. **識別依賴關係**：映射不同基礎設施之間的依賴鏈
-2. **分析連鎖風險**：評估單一基礎設施故障可能引發的骨牌效應
-3. **優先級排序**：識別最關鍵的依賴節點
-4. **韌性規劃**：制定減緩相互依賴風險的策略
-
-### 網路安全視角
-
-從網路安全角度，基礎設施相互依賴性帶來以下風險：
-
-**橫向擴散**：
-- 攻擊者入侵單一基礎設施後，可透過依賴關係橫向移動至其他系統
-- 如：透過供應商VPN入侵電力公司，再攻擊依賴該電力的資料中心
-
-**級聯故障**：
-- 針對關鍵節點的攻擊可引發連鎖反應
-- 如：攻擊通訊網路導致電力調度失靈，進而影響交通、金融、醫療等系統
-
-**供應鏈風險**：
-- 基礎設施共享供應商或技術平台
-- 單一漏洞可能影響多個基礎設施
-
-### 應用場景
-
-CLAIR模型可應用於：
-
-- **國家安全規劃**：政府評估關鍵基礎設施保護優先級
-- **企業風險管理**：企業評估供應鏈與基礎設施依賴風險
-- **事件應變**：預測基礎設施中斷的影響範圍
-- **韌性演練**：設計桌面推演情境，測試應變能力
-
-## 相關指標
-
-- **文章類型**：技術日誌（Guest Diary）
-- **模型名稱**：CLAIR Model
-- **主題**：關鍵基礎設施相互依賴性映射
-- **發布平台**：SANS Internet Storm Center
-- **發布日期**：2026-02-25
-
-## 安全性建議
-
-組織應關注基礎設施相互依賴性風險：
-
-### 1. 依賴性映射
-
-- **盤點外部依賴**：識別組織依賴的基礎設施（電力、網路、供水等）
-- **評估第三方服務**：雲端服務商、SaaS供應商、資料中心等
-- **繪製依賴圖**：使用工具（如CLAIR模型）視覺化依賴關係
-
-### 2. 風險評估
-
-- **單點失效分析**：識別最關鍵的依賴節點，評估其故障影響
-- **情境模擬**：設計「如果X失效，會影響哪些系統？」的情境
-- **連鎖風險量化**：評估級聯故障的可能性與衝擊
-
-### 3. 韌性強化
-
-- **冗餘設計**：對關鍵依賴建立備援方案（如備用電力、多重網路路徑）
-- **多供應商策略**：避免過度依賴單一供應商
-- **隔離與分段**：限制故障的擴散範圍
-- **緊急應變計畫**：針對基礎設施中斷情境制定劇本
-
-### 4. 資訊共享
-
-- **參與ISAC**：加入產業資訊分享與分析中心，掌握基礎設施威脅情資
-- **跨部門協作**：與依賴方或被依賴方建立溝通機制
-- **政府合作**：參與國家關鍵基礎設施保護計畫
-
-### 5. 持續監控
-
-- **依賴狀態監控**：即時監控關鍵依賴的健康狀態
-- **異常偵測**：設定警報，及早偵測依賴失效
-- **定期審查**：隨業務變化更新依賴性地圖
-
-## 附註
-
-- **資料來源**：SANS Internet Storm Center
-- **完整文章連結**：https://isc.sans.edu/diary/32748
-- **相關概念**：
-  - **關鍵基礎設施16部門**（美國定義）：化學、商業設施、通訊、關鍵製造、水壩、國防工業基地、緊急服務、能源、金融、食品與農業、政府設施、醫療與公衛、資訊技術、核能、交通、供水與污水處理
-  - **級聯故障案例**：2003年美加大停電（軟體錯誤 → 電力中斷 → 5千萬人受影響）
-  - **網路攻擊案例**：2015/2016烏克蘭電網攻擊（惡意軟體 → 電力中斷 → 民生影響）
-- **資料完整性注意**：原始RSS僅提供標題與日期，建議前往原文閱讀CLAIR模型的完整方法論與案例研究
+- Source: SANS ISC Guest Diary (English)
+- Published as part of SANS ISC's broader coverage of critical infrastructure security
+- RSS description was empty; title and link provide primary context
+- Full content available at the ISC diary URL
+---
+*Extracted: 2026-03-04 UTC | Source: SANS ISC | Confidence: 高*
