@@ -1,5 +1,15 @@
 [
   {
+    "id": "vulnerability_disclosure-index-md",
+    "title": "漏洞揭露 (Vulnerability Disclosure)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-未知日期-cisa-cisa-adds-one-known-exploited-vulnerability-to-cat-md",
     "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
     "category": "vulnerability_disclosure",
@@ -400,8 +410,208 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-03-05-delta-electronics-cncsoftg2-md",
+    "title": "Delta Electronics CNCSoft-G2",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-05-delta-electronics-cncsoftg2.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-05-cisa-adds-five-known-exploited-vulnerabilities-md",
+    "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-05-cisa-adds-five-known-exploited-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-05-cert-ro-cisco-secure-firewall-management-center-md",
+    "title": "CERT-RO Alert: Critical Vulnerabilities in Cisco Secure Firewall Management Center",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-05-cert-ro-cisco-secure-firewall-management-center.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-04-cisco-catalyst-sd-wan-zero-day-active-exploitation-md",
+    "title": "",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-04-cisco-catalyst-sd-wan-zero-day-active-exploitation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-portwell-engineering-toolkits-md",
+    "title": "Portwell Engineering Toolkits",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-portwell-engineering-toolkits.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-mobiliti-e-mobihu-md",
+    "title": "Mobiliti e-mobi.hu",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-mobiliti-e-mobihu.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-mitsubishi-electric-melsec-iq-f-series-ethernetip-md",
+    "title": "Mitsubishi Electric MELSEC iQ-F Series EtherNet/IP module and Ethernet module",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-mitsubishi-electric-melsec-iq-f-series-ethernetip.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-labkotec-lid-3300ip-md",
+    "title": "Labkotec LID-3300IP",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-labkotec-lid-3300ip.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-hitachi-energy-rtu500-product-md",
+    "title": "Hitachi Energy RTU500 Product",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-hitachi-energy-rtu500-product.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-hitachi-energy-relion-reb500-product-md",
+    "title": "Hitachi Energy Relion REB500 Product",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-hitachi-energy-relion-reb500-product.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-everon-ocpp-backends-md",
+    "title": "Everon OCPP Backends",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-everon-ocpp-backends.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-epower-epowerie-md",
+    "title": "ePower epower.ie",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-epower-epowerie.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-cve-2026-21513-mshtml-apt28-exploit-md",
+    "title": "CVE-2026-21513: In-the-Wild MSHTML Exploit by APT28 Analyzed by Akamai",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-cve-2026-21513-mshtml-apt28-exploit.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-crushftp-bruteforce-scans-md",
+    "title": "",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-crushftp-bruteforce-scans.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-cisa-adds-two-known-exploited-vulnerabilities-to-c-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-cisa-adds-two-known-exploited-vulnerabilities-to-c.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-chrome-gemini-cve-2026-0628-md",
+    "title": "Taming Agentic Browsers: CVE-2026-0628 Chrome Extension Hijacks New Gemini Panel",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-chrome-gemini-cve-2026-0628.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-certfr-2026-avi-0232-microsoft-md",
+    "title": "",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-certfr-2026-avi-0232-microsoft.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-certfr-2026-avi-0231-google-android-md",
+    "title": "",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-certfr-2026-avi-0231-google-android.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-certfr-2026-avi-0230-docker-desktop-md",
+    "title": "",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-certfr-2026-avi-0230-docker-desktop.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-03-cert-ro-android-security-bulletin-march-2026-md",
+    "title": "ALERT: Security Fixes Available for Multiple Android Vulnerabilities — March 2026",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-03-cert-ro-android-security-bulletin-march-2026.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-03-02-wireshark-4-6-4-released-md",
-    "title": "Wireshark 4.6.4 Released",
+    "title": "",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-02-wireshark-4-6-4-released.md",
@@ -690,6 +900,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-26-switch-ev-swtchenergycom-md",
+    "title": "SWITCH EV swtchenergy.com",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-switch-ev-swtchenergycom.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-26-switch-ev-charging-station-vulnerabilities-md",
     "title": "SWITCH EV swtchenergy.com EV Charging Station Vulnerabilities (ICSA-26-057-06)",
     "category": "vulnerability_disclosure",
@@ -790,6 +1010,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-26-mobility46-mobility46se-md",
+    "title": "Mobility46 mobility46.se",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-mobility46-mobility46se.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-26-mobility46-ev-charging-station-vulnerabilities-md",
     "title": "Mobility46 mobility46.se EV Charging Station Vulnerabilities (ICSA-26-057-08)",
     "category": "vulnerability_disclosure",
@@ -830,6 +1060,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-26-johnson-controls-inc-frick-controls-quantum-hd-md",
+    "title": "Johnson Controls, Inc. Frick Controls Quantum HD",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-johnson-controls-inc-frick-controls-quantum-hd.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-26-johnson-controls-frick-quantum-hd-rce-md",
     "title": "Johnson Controls Frick Controls Quantum HD Remote Code Execution Vulnerabilities (ICSA-26-057-01)",
     "category": "vulnerability_disclosure",
@@ -840,11 +1080,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-26-ev2go-ev2goio-md",
+    "title": "EV2GO ev2go.io",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-ev2go-ev2goio.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-26-ev2go-ev-charging-station-vulnerabilities-md",
     "title": "EV2GO ev2go.io EV Charging Station Vulnerabilities (ICSA-26-057-04)",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-26-ev2go-ev-charging-station-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-ev-energy-evenergy-md",
+    "title": "EV Energy ev.energy",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-ev-energy-evenergy.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -885,6 +1145,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-26-cloudcharge-ev-charging-station-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-cloudcharge-cloudchargese-md",
+    "title": "CloudCharge cloudcharge.se",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-cloudcharge-cloudchargese.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -945,6 +1215,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-26-certfr-2026-avi-0211-wireshark.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-26-cert-ro-cisco-active-exploitation-cve-2026-20127-md",
+    "title": "CERT-RO Alert: Critical Vulnerability Actively Exploited in Cisco (CVE-2026-20127)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-26-cert-ro-cisco-active-exploitation-cve-2026-20127.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1120,6 +1400,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-25-joint-guidance-on-malicious-cyber-threats-to-sd-wan-networks-md",
+    "title": "Joint guidance on malicious cyber threats to SD-WAN networks",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-joint-guidance-on-malicious-cyber-threats-to-sd-wan-networks.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-25-gitlab-vulnerabilities-md",
     "title": "Multiple Vulnerabilities in GitLab (February 25, 2026)",
     "category": "vulnerability_disclosure",
@@ -1145,6 +1435,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-25-cisa-kev-cisco-sd-wan.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-25-cisa-adds-two-known-exploited-vulnerabilities-to-c-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-25-cisa-adds-two-known-exploited-vulnerabilities-to-c.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1195,6 +1495,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-24-sonicwall-products-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-schneider-electric-ecostruxure-building-operation-md",
+    "title": "Schneider Electric EcoStruxure Building Operation Workstation",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-schneider-electric-ecostruxure-building-operation.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1290,6 +1600,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-24-insat-masterscada-buk-ts-md",
+    "title": "InSAT MasterSCADA BUK-TS",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-insat-masterscada-buk-ts.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-24-google-chrome-vulnerabilities-md",
     "title": "Multiple Vulnerabilities in Google Chrome (February 24, 2026)",
     "category": "vulnerability_disclosure",
@@ -1325,6 +1645,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-24-cisa-kev-soliton-filezen.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-24-cisa-adds-one-known-exploited-vulnerability-to-cat-md",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-24-cisa-adds-one-known-exploited-vulnerability-to-cat.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1520,11 +1850,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-20-cisa-adds-two-known-exploited-vulnerabilities-to-c-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-20-cisa-adds-two-known-exploited-vulnerabilities-to-c.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-02-19-welker-odoreyes-xl4-md",
     "title": "Welker OdorEyes EcoSystem Pulse Bypass System with XL4 Controller Vulnerabilities",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-19-welker-odoreyes-xl4.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-welker-odoreyes-ecosystem-pulse-bypass-system-with-md",
+    "title": "Welker OdorEyes EcoSystem Pulse Bypass System with XL4 Controller",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-welker-odoreyes-ecosystem-pulse-bypass-system-with.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1555,6 +1905,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-19-valmet-dna-engineering.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-valmet-dna-engineering-web-tools-md",
+    "title": "Valmet DNA Engineering Web Tools",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-valmet-dna-engineering-web-tools.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1635,6 +1995,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-02-19-microsoft-edge-vulnerabilities-2.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-02-19-jinan-usr-iot-technology-limited-pusr-usr-w610-md",
+    "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-19-jinan-usr-iot-technology-limited-pusr-usr-w610.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -2575,6 +2945,26 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-01-30-twcert-n8n-critical-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-01-27-threat-actors-use-forticloud-sso-bypass-to-collect-ldap-connection--md",
+    "title": "Threat actors use FortiCloud SSO bypass to collect LDAP connection passwords",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-01-27-threat-actors-use-forticloud-sso-bypass-to-collect-ldap-connection-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-01-22-look-at-forticloud-sso-bypass-exploitation-cve-2025-59718-59719-md",
+    "title": "Look at FortiCloud SSO Bypass Exploitation (CVE-2025-59718/59719)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-01-22-look-at-forticloud-sso-bypass-exploitation-cve-2025-59718-59719.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -3660,6 +4050,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-index-md",
+    "title": "政策法規 (Policy & Regulation)",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2026-vendor-security-assessment-md",
     "title": "Vendor Security Assessment",
     "category": "policy_regulation",
@@ -4290,6 +4690,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2026-03-04-kyber2026-nis2-conference-slovakia-md",
+    "title": "",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-03-04-kyber2026-nis2-conference-slovakia.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2026-03-03-german-investment-scam-conviction-md",
+    "title": "German Court Convicts Mastermind Behind Global Online Investment Scam Network",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-03-03-german-investment-scam-conviction.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2026-03-02-tehran-two-tiered-internet-danger-md",
     "title": "Why Tehran's Two-Tiered Internet Is So Dangerous",
     "category": "policy_regulation",
@@ -4340,6 +4760,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2026-02-25-cisa-and-partners-release-guidance-for-ongoing-glo-md",
+    "title": "CISA and Partners Release Guidance for Ongoing Global Exploitation of Cisco SD-WAN Systems",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-02-25-cisa-and-partners-release-guidance-for-ongoing-glo.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2026-02-24-etsi-en-304-223-ai-security-standard-md",
     "title": "",
     "category": "policy_regulation",
@@ -4355,6 +4785,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2026-02-20-ukraine-romania-moldova-cyber-alliance.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2026-02-18-lawful-access-to-encrypted-data-general-considerations-md",
+    "title": "Lawful access to encrypted data: General Considerations",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-02-18-lawful-access-to-encrypted-data-general-considerations.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -4395,6 +4835,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2026-02-13-eu-ict-supply-chain-security-toolbox.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2026-02-12-lawful-access-to-encrypted-data-why-is-this-so-hard-to-do-md",
+    "title": "Lawful access to encrypted data: why is this so hard to do?",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-02-12-lawful-access-to-encrypted-data-why-is-this-so-hard-to-do.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -4445,6 +4895,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2026-02-05-ředitel-núkib-diskutoval-v-bruselu-o-vývoji-evropské-kb-legislativy.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2026-01-21-a-patch-for-the-nis2-directive-md",
+    "title": "A patch for the NIS2 Directive",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-01-21-a-patch-for-the-nis2-directive.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -4790,6 +5250,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2025-11-03-kyber2025-ai-and-future-of-cybersecurity-conference-md",
+    "title": "",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-11-03-kyber2025-ai-and-future-of-cybersecurity-conference.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2025-10-31-new-id-card-november-md",
     "title": "PPA to Issue New Design ID Cards in Mid-November",
     "category": "policy_regulation",
@@ -4835,6 +5305,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2025-10-24-ncsc-fi-windows-10-eol-instant-payments.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2025-10-16-a-review-of-the-concluding-report-of-the-high-level-group-on-access-md",
+    "title": "A review of the \"Concluding report of the High-Level Group on access to data for effective law enforcement\"",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-10-16-a-review-of-the-concluding-report-of-the-high-level-group-on-access.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -4910,11 +5390,41 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2025-07-01-encryption-vs-lawful-interception-eu-policy-news-md",
+    "title": "Encryption vs. Lawful Interception: EU policy news",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-07-01-encryption-vs-lawful-interception-eu-policy-news.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2025-06-17-new-eu-funding-opportunities-under-the-digital-europe-and-horizon-europe-program-md",
     "title": "New EU funding opportunities under the Digital Europe and Horizon Europe Programmes are open",
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2025-06-17-new-eu-funding-opportunities-under-the-digital-europe-and-horizon-europe-program.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2025-06-11-cra-vulnerability-reports-why-would-we-not-share-them-with-other-cs-md",
+    "title": "CRA Vulnerability Reports: why would we not share them with other CSIRTs?",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-06-11-cra-vulnerability-reports-why-would-we-not-share-them-with-other-cs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2025-06-09-kyber2025-conference-what-is-happening-md",
+    "title": "",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-06-09-kyber2025-conference-what-is-happening.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -4945,6 +5455,26 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2025-04-08-cybersecurity-act-passed-by-parliament-obligations-under-the-nis-2-directive-ent.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2025-03-04-a-revision-of-the-eu-cybersecurity-blueprint-md",
+    "title": "A Revision of the EU Cybersecurity Blueprint",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-03-04-a-revision-of-the-eu-cybersecurity-blueprint.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2025-02-14-chat-control-vs-file-sharing-md",
+    "title": "Chat Control vs. File Sharing",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-02-14-chat-control-vs-file-sharing.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -5730,6 +6260,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "other-index-md",
+    "title": "其他 (Other)",
+    "category": "other",
+    "date": "",
+    "file": "other/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "other-2026-verify-documents-tax-declaration-md",
     "title": "Verify Document Validity and PIN Codes Before Tax Declaration",
     "category": "other",
@@ -6035,6 +6575,46 @@
     "category": "other",
     "date": "",
     "file": "other/2026-cert-ee-eesti-app-restored.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "other-2026-03-05-isc-stormcast-thursday-march-5-md",
+    "title": "ISC Stormcast For Thursday, March 5th, 2026",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-03-05-isc-stormcast-thursday-march-5.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "other-2026-03-04-kyber2026-gdpr-privacy-policy-registration-md",
+    "title": "",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-03-04-kyber2026-gdpr-privacy-policy-registration.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "other-2026-03-04-isc-stormcast-wednesday-march-4-md",
+    "title": "ISC Stormcast For Wednesday, March 4th, 2026",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-03-04-isc-stormcast-wednesday-march-4.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "other-2026-03-03-isc-stormcast-tuesday-march-3-md",
+    "title": "",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-03-03-isc-stormcast-tuesday-march-3.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -10080,6 +10660,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-index-md",
+    "title": "產業動態 (Industry Trend)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-yamagoya-realtime-monitoring-tool-md",
     "title": "YAMAGoya: A Real-time Client Monitoring Tool Using Sigma and YARA Rules",
     "category": "industry_trend",
@@ -11970,6 +12560,46 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-03-05-whitelist-illusion-billion-dollar-attack-path-md",
+    "title": "The Whitelist Illusion: When Your Trusted List Becomes a Billion Dollar Attack Path",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-05-whitelist-illusion-billion-dollar-attack-path.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-05-differentiating-targeted-intrusion-automated-scanning-md",
+    "title": "Differentiating Between a Targeted Intrusion and an Automated Opportunistic Scanning",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-05-differentiating-targeted-intrusion-automated-scanning.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-05-cert-ro-weekly-cybersecurity-news-march-5-md",
+    "title": "CERT-RO Weekly Cybersecurity News (05.03.2026)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-05-cert-ro-weekly-cybersecurity-news-march-5.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-03-iran-cyber-capabilities-overview-md",
+    "title": "What Defenders Need to Know About Iran's Cyber Capabilities",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-03-iran-cyber-capabilities-overview.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-03-02-smart-tv-web-crawler-ai-bright-data-md",
     "title": "Smart TVs Being Used as Web Crawlers for AI via Bright Data SDK",
     "category": "industry_trend",
@@ -12090,6 +12720,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-02-26-cert-ro-weekly-cybersecurity-news-feb-26-md",
+    "title": "CERT-RO Weekly Cybersecurity News (26.02.2026)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-26-cert-ro-weekly-cybersecurity-news-feb-26.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-02-25-clair-model-critical-infrastructure-interdependencies-md",
     "title": "",
     "category": "industry_trend",
@@ -12155,6 +12795,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-02-23-bulletin-dactualite-certfr-2026-act-008-23-fevrier.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-22-incident-reporting-eu-wide-statistics-md",
+    "title": "Incident Reporting: EU-Wide Statistics",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-22-incident-reporting-eu-wide-statistics.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -12980,6 +13630,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-12-02-dont-say-jehova-to-an-llm-md",
+    "title": "Don't say \"Jehova\" to an LLM",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-02-dont-say-jehova-to-an-llm.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-11-25-ncsc-fi-cyber-weather-october-2025-md",
     "title": "Cyber Weather in October 2025",
     "category": "industry_trend",
@@ -13005,6 +13665,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-11-14-volunteer-service-eesti-ee.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-29-how-typosquatting-tricked-me-a-bit-md",
+    "title": "How typosquatting tricked me (a bit)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-29-how-typosquatting-tricked-me-a-bit.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -13415,6 +14085,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-01-29-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi---042025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-01-22-llms-as-lossy-compression-of-information-md",
+    "title": "LLMs as Lossy Compression of Information",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-01-22-llms-as-lossy-compression-of-information.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -16640,6 +17320,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "index-md",
+    "title": "資安新聞事實 (Security News Facts)",
+    "category": "other",
+    "date": "",
+    "file": "index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-index-md",
+    "title": "攻擊事件 (Attack Incident)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/index.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-zoll-epcr-ios-mobile-application-md",
     "title": "ZOLL ePCR IOS Mobile Application",
     "category": "attack_incident",
@@ -19430,6 +20130,146 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-03-05-tycoon-2fa-phishing-platform-takedown-md",
+    "title": "Global Phishing-as-a-Service Platform Tycoon 2FA Taken Down",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-tycoon-2fa-phishing-platform-takedown.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-05-signed-malware-workplace-apps-rmm-backdoors-md",
+    "title": "Signed Malware Impersonating Workplace Apps Deploys RMM Backdoors",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-signed-malware-workplace-apps-rmm-backdoors.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-05-russian-hackers-badpaw-meowmeow-ukraine-md",
+    "title": "Russian Hackers Deploy New Malware in Phishing Campaign Targeting Ukraine",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-russian-hackers-badpaw-meowmeow-ukraine.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-05-leakbase-hacker-forum-dismantled-md",
+    "title": "United States Leads Dismantlement of LeakBase Hacker Forum",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-leakbase-hacker-forum-dismantled.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-05-iran-ip-camera-targeting-physical-warfare-md",
+    "title": "Interplay between Iranian Targeting of IP Cameras and Physical Warfare in the Middle East",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-iran-ip-camera-targeting-physical-warfare.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-05-iran-cyber-risk-escalation-march-2026-md",
+    "title": "Threat Brief: March 2026 Escalation of Cyber Risk Related to Iran",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-iran-cyber-risk-escalation-march-2026.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-05-hacktivist-ddos-operation-epic-fury-roaring-lion-md",
+    "title": "Retaliatory Hacktivist DDoS Activity Following Operation Epic Fury/Roaring Lion",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-hacktivist-ddos-operation-epic-fury-roaring-lion.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-05-fake-tech-support-havoc-c2-framework-md",
+    "title": "Exorcising Demons: Fake Tech Support Delivers Havoc Command & Control",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-fake-tech-support-havoc-c2-framework.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-05-149-hacktivist-ddos-attacks-middle-east-md",
+    "title": "149 Hacktivist DDoS Attacks Hit 110 Organizations in 16 Countries After Middle East Conflict",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-05-149-hacktivist-ddos-attacks-middle-east.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-04-want-more-xworm-malware-md",
+    "title": "Want More XWorm? Multi-Technology Malware Delivery",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-04-want-more-xworm-malware.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-03-venalaisryhma-sim-swap-md",
+    "title": "Russian Group Claims to Surveil Finnish Homes via Compromised Cameras",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-03-venalaisryhma-sim-swap.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-03-india-nexus-sloppylemming-espionage-md",
+    "title": "India-Nexus SloppyLemming Espionage Campaign Targeted Pakistan, Bangladesh, Sri Lanka",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-03-india-nexus-sloppylemming-espionage.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-03-dust-specter-apt-iraq-md",
+    "title": "Dust Specter APT Targets Government Officials in Iraq with Novel Malware",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-03-dust-specter-apt-iraq.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-03-dubai-sim-swap-iran-missiles-md",
+    "title": "SIM-Swap Scammers Target Dubai Citizens Hours After Iranian Missile Strikes",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-03-dubai-sim-swap-iran-missiles.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-03-02-israel-in-focus-iran-retaliatory-posture-md",
     "title": "Israel in Focus: Iran Retaliatory Posture",
     "category": "attack_incident",
@@ -19455,6 +20295,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-03-02-finland-deepfake-medicine-fraud-social-media.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-02-cyber-threat-bulletin-iranian-cyber-threat-response-us-israel-stri-md",
+    "title": "Cyber threat bulletin: Iranian Cyber Threat Response to US/Israel strikes, February 2026",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-02-cyber-threat-bulletin-iranian-cyber-threat-response-us-israel-stri.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19545,6 +20395,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-02-27-fake-fedex-email-malware-donuts.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-27-fake-fedex-email-delivers-donuts-malware-md",
+    "title": "Fake Fedex Email Delivers Donuts Malware",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-27-fake-fedex-email-delivers-donuts-malware.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -21355,6 +22215,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2025-04-25-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi---172025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-04-16-multiple-fortigate-devices-compromised-with-a-persistent-read-only--md",
+    "title": "Multiple FortiGate devices compromised with a persistent read-only access",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-04-16-multiple-fortigate-devices-compromised-with-a-persistent-read-only-.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -26775,66 +27645,6 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2019-03-14-good-network-performance-and-development-of-iot-security-brought-fair-cyber-weat.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "attack_incident-index-md",
-    "title": "攻擊事件 (Attack Incident)",
-    "category": "attack_incident",
-    "date": "",
-    "file": "attack_incident/index.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "index-md",
-    "title": "資安新聞事實 (Security News Facts)",
-    "category": "other",
-    "date": "",
-    "file": "index.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "industry_trend-index-md",
-    "title": "產業動態 (Industry Trend)",
-    "category": "industry_trend",
-    "date": "",
-    "file": "industry_trend/index.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "other-index-md",
-    "title": "其他 (Other)",
-    "category": "other",
-    "date": "",
-    "file": "other/index.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "policy_regulation-index-md",
-    "title": "政策法規 (Policy & Regulation)",
-    "category": "policy_regulation",
-    "date": "",
-    "file": "policy_regulation/index.md",
-    "source": "",
-    "severity": "",
-    "source_layer": "security_news_facts"
-  },
-  {
-    "id": "vulnerability_disclosure-index-md",
-    "title": "漏洞揭露 (Vulnerability Disclosure)",
-    "category": "vulnerability_disclosure",
-    "date": "",
-    "file": "vulnerability_disclosure/index.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
