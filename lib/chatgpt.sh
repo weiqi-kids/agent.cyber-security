@@ -306,8 +306,11 @@ chatgpt_embed_batch() {
     echo "📦 [chatgpt_embed_batch] 批次 ${batch_num}: 第 ${start}–${end} 筆（共 ${total_lines}）" >&2
 
     # 用 sed 取出本批次行，每行已是 JSON string，組成 JSON array
+    # 截斷過長文字：text-embedding-3-small 上限 8191 tokens
+    # 中文約 1.5-2 tokens/char，英文約 0.25 tokens/char
+    # 保守截斷：4000 字元（中文最差 ~8000 tokens，英文 ~1000 tokens）
     local batch_texts
-    batch_texts="$(sed -n "${start},${end}p" "$input_file" | jq -sc '.')"
+    batch_texts="$(sed -n "${start},${end}p" "$input_file" | jq -sc '[.[] | if length > 4000 then .[:4000] else . end]')"
 
     local tmp_payload tmp_body http_code
     tmp_payload="$(mktemp)"
