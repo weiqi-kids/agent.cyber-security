@@ -408958,5 +408958,955 @@
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-DonPasci-146-190-17-255-4321-md",
+    "title": "AdaptixC2 IoC: 146.190.17.255:4321",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-DonPasci-146-190-17-255-4321.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-DonPasci-16-28-95-123-503-md",
+    "title": "Meterpreter IoC: 16.28.95.123:503",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-DonPasci-16-28-95-123-503.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-DonPasci-18-230-151-170-1521-md",
+    "title": "Meterpreter IoC: 18.230.151.170:1521",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-DonPasci-18-230-151-170-1521.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-DonPasci-18-230-151-170-5671-md",
+    "title": "Meterpreter IoC: 18.230.151.170:5671",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-DonPasci-18-230-151-170-5671.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-DonPasci-199-101-111-131-3790-md",
+    "title": "Meterpreter IoC: 199.101.111.131:3790",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-DonPasci-199-101-111-131-3790.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-DonPasci-20-94-46-10-8088-md",
+    "title": "AdaptixC2 IoC: 20.94.46.10:8088",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-DonPasci-20-94-46-10-8088.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-DonPasci-46-8-68-4-80-md",
+    "title": "Bashlite IoC: 46.8.68.4:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-DonPasci-46-8-68-4-80.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-DonPasci-76-13-106-90-3333-md",
+    "title": "IoC: 76.13.106.90:3333",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-DonPasci-76-13-106-90-3333.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-alba-route-albanianpetun-in-net-md",
+    "title": "ClearFake IoC: alba-route.albanianpetun.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-alba-route-albanianpetun-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-alba-v77-albanianpetun-in-net-md",
+    "title": "ClearFake IoC: alba-v77.albanianpetun.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-alba-v77-albanianpetun-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-cism-base-draniercism-in-net-md",
+    "title": "ClearFake IoC: cism-base.draniercism.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-cism-base-draniercism-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-cism-flow-draniercism-in-net-md",
+    "title": "ClearFake IoC: cism-flow.draniercism.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-cism-flow-draniercism-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-dance-v9-dancingvcr-in-net-md",
+    "title": "ClearFake IoC: dance-v9.dancingvcr.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-dance-v9-dancingvcr-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-dance-vcr-dancingvcr-in-net-md",
+    "title": "ClearFake IoC: dance-vcr.dancingvcr.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-dance-vcr-dancingvcr-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-dran-optic-draniercism-in-net-md",
+    "title": "ClearFake IoC: dran-optic.draniercism.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-dran-optic-draniercism-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-dran02-draniercism-in-net-md",
+    "title": "ClearFake IoC: dran02.draniercism.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-dran02-draniercism-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-hors-link-horspresence-in-net-md",
+    "title": "ClearFake IoC: hors-link.horspresence.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-hors-link-horspresence-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-hors05-horspresence-in-net-md",
+    "title": "ClearFake IoC: hors05.horspresence.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-hors05-horspresence-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-lupkow-pl-md",
+    "title": "StrelaStealer IoC: lupkow.pl",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-lupkow-pl.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-lvlenergy-pl-md",
+    "title": "StrelaStealer IoC: lvlenergy.pl",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-lvlenergy-pl.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-lxbrands-se-md",
+    "title": "StrelaStealer IoC: lxbrands.se",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-lxbrands-se.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-move-node-dancingvcr-in-net-md",
+    "title": "ClearFake IoC: move-node.dancingvcr.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-move-node-dancingvcr-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-petun-data-albanianpetun-in-net-md",
+    "title": "ClearFake IoC: petun-data.albanianpetun.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-petun-data-albanianpetun-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-petun-sys-albanianpetun-in-net-md",
+    "title": "ClearFake IoC: petun-sys.albanianpetun.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-petun-sys-albanianpetun-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-pres-gate-horspresence-in-net-md",
+    "title": "ClearFake IoC: pres-gate.horspresence.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-pres-gate-horspresence-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-pres-mode-horspresence-in-net-md",
+    "title": "ClearFake IoC: pres-mode.horspresence.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-pres-mode-horspresence-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-rein-dock-reinsurundock-in-net-md",
+    "title": "ClearFake IoC: rein-dock.reinsurundock.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-rein-dock-reinsurundock-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-rein-v44-reinsurundock-in-net-md",
+    "title": "ClearFake IoC: rein-v44.reinsurundock.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-rein-v44-reinsurundock-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-sur-sync-reinsurundock-in-net-md",
+    "title": "ClearFake IoC: sur-sync.reinsurundock.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-sur-sync-reinsurundock-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-07-threatcat-ch-vcr-logic-dancingvcr-in-net-md",
+    "title": "ClearFake IoC: vcr-logic.dancingvcr.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-07-threatcat-ch-vcr-logic-dancingvcr-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-113-239-127-20-40270-md",
+    "title": "Mozi - Malicious URL: 113.239.127.20",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-113-239-127-20-40270.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-115-50-47-213-50338-md",
+    "title": "Mozi - Malicious URL: 115.50.47.213",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-115-50-47-213-50338.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-115-52-29-206-48762-md",
+    "title": "Mozi - Malicious URL: 115.52.29.206",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-115-52-29-206-48762.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-115-57-233-214-48305-md",
+    "title": "Mozi - Malicious URL: 115.57.233.214",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-115-57-233-214-48305.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-115-58-165-160-56849-md",
+    "title": "Mozi - Malicious URL: 115.58.165.160",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-115-58-165-160-56849.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-123-11-10-195-44098-md",
+    "title": "Mozi - Malicious URL: 123.11.10.195",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-123-11-10-195-44098.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-175-173-93-137-47108-md",
+    "title": "Mozi - Malicious URL: 175.173.93.137",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-175-173-93-137-47108.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-182-116-15-170-59239-md",
+    "title": "Mozi - Malicious URL: 182.116.15.170",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-182-116-15-170-59239.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-182-116-86-221-60894-md",
+    "title": "Mozi - Malicious URL: 182.116.86.221",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-182-116-86-221-60894.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-182-121-84-135-39767-md",
+    "title": "Mozi - Malicious URL: 182.121.84.135",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-182-121-84-135-39767.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-42-232-227-79-32981-md",
+    "title": "Mozi - Malicious URL: 42.232.227.79",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-42-232-227-79-32981.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-42-235-53-106-43319-md",
+    "title": "Mozi - Malicious URL: 42.235.53.106",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-42-235-53-106-43319.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-42-86-164-225-50559-md",
+    "title": "Mozi - Malicious URL: 42.86.164.225",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-42-86-164-225-50559.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-cism-base-draniercism-in-net-md",
+    "title": "ClearFake - Malicious URL: cism-base.draniercism.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-cism-base-draniercism-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-cism-flow-draniercism-in-net-md",
+    "title": "ClearFake - Malicious URL: cism-flow.draniercism.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-cism-flow-draniercism-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-dance-v9-dancingvcr-in-net-md",
+    "title": "ClearFake - Malicious URL: dance-v9.dancingvcr.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-dance-v9-dancingvcr-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-dance-vcr-dancingvcr-in-net-md",
+    "title": "ClearFake - Malicious URL: dance-vcr.dancingvcr.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-dance-vcr-dancingvcr-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-dran-optic-draniercism-in-net-md",
+    "title": "ClearFake - Malicious URL: dran-optic.draniercism.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-dran-optic-draniercism-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-dran02-draniercism-in-net-md",
+    "title": "ClearFake - Malicious URL: dran02.draniercism.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-dran02-draniercism-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-move-node-dancingvcr-in-net-md",
+    "title": "ClearFake - Malicious URL: move-node.dancingvcr.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-move-node-dancingvcr-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-rein-dock-reinsurundock-in-net-md",
+    "title": "ClearFake - Malicious URL: rein-dock.reinsurundock.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-rein-dock-reinsurundock-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-rein-v44-reinsurundock-in-net-md",
+    "title": "ClearFake - Malicious URL: rein-v44.reinsurundock.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-rein-v44-reinsurundock-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-sur-sync-reinsurundock-in-net-md",
+    "title": "ClearFake - Malicious URL: sur-sync.reinsurundock.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-sur-sync-reinsurundock-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-sur-vault-reinsurundock-in-net-md",
+    "title": "ClearFake - Malicious URL: sur-vault.reinsurundock.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-sur-vault-reinsurundock-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-07-vcr-logic-dancingvcr-in-net-md",
+    "title": "ClearFake - Malicious URL: vcr-logic.dancingvcr.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-07-vcr-logic-dancingvcr-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-0782c2520a476fb9-md",
+    "title": "Malware Sample: cache",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-0782c2520a476fb9.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-094e9d6ee057d38f-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-094e9d6ee057d38f.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-0e331a3e7fd3d6ba-md",
+    "title": "Malware Sample: SecuriteInfo.com.Trojan.GenericKD.79643133.1427.4763",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-0e331a3e7fd3d6ba.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-0f3b6cea0bf1a53f-md",
+    "title": "Gafgyt Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-0f3b6cea0bf1a53f.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-154e1a90d2a10c17-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-154e1a90d2a10c17.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-15779f5361fe4224-md",
+    "title": "Malware Sample: SecuriteInfo.com.X97M.DownLoader.2343.19025.22015",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-15779f5361fe4224.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-19d872e13e242f6d-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-19d872e13e242f6d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-6700075bf252fbc0-md",
+    "title": "DarkVisionRAT Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-6700075bf252fbc0.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-6d1721fff5c74d2d-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-6d1721fff5c74d2d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-85f14e5b653e95e4-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-85f14e5b653e95e4.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-9c8c14784dc66d7d-md",
+    "title": "Gafgyt Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-9c8c14784dc66d7d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-9e92ca9e42081b09-md",
+    "title": "ValleyRAT Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-9e92ca9e42081b09.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-a557d96f80d3cbe6-md",
+    "title": "CobaltStrike Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-a557d96f80d3cbe6.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-ac4f283f65513160-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-ac4f283f65513160.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-b5ed6f13acd8271d-md",
+    "title": "Gafgyt Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-b5ed6f13acd8271d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-b7baebce1e80a690-md",
+    "title": "Malware Sample: file",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-b7baebce1e80a690.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-c61d2ad5c13b82dd-md",
+    "title": "Gafgyt Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-c61d2ad5c13b82dd.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-e2e6aef5b49a801d-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-e2e6aef5b49a801d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-eca46aa0994f2c5f-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-eca46aa0994f2c5f.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-06-f995aeb621b7b8df-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-06-f995aeb621b7b8df.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-073933625bf9f2f7-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-073933625bf9f2f7.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-0c6d4e9924545dbe-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-0c6d4e9924545dbe.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-1cdb1a474d1aa730-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-1cdb1a474d1aa730.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-40ecc5dfd9303a36-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-40ecc5dfd9303a36.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-4a86fae08a2ca6ef-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-4a86fae08a2ca6ef.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-7a3267f244ea2a3e-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-7a3267f244ea2a3e.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-7c25983d8fbcca69-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-7c25983d8fbcca69.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-858d9659183cb8ea-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-858d9659183cb8ea.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-92f285cbad9d112a-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-92f285cbad9d112a.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-9d06ee531c3857aa-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-9d06ee531c3857aa.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-a440e99058ffc701-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-a440e99058ffc701.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-a6373452bf6d8007-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-a6373452bf6d8007.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-a6d8c472a507c244-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-a6d8c472a507c244.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-b0635a6f452c4ccb-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-b0635a6f452c4ccb.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-b22a444bb34943a3-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-b22a444bb34943a3.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-cd139883e7c08001-md",
+    "title": "Malware Sample: SecuriteInfo.com.FileRepMalware.57442841",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-cd139883e7c08001.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-da5c870b9d7d7d4c-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-da5c870b9d7d7d4c.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-e90b8cbcfba56c57-md",
+    "title": "Malware Sample: file",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-e90b8cbcfba56c57.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-ed946e15160678e1-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-ed946e15160678e1.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-07-ee6d44c6b5f2411f-md",
+    "title": "Mirai Sample",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-07-ee6d44c6b5f2411f.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
   }
 ]

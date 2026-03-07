@@ -27648,5 +27648,155 @@
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-abusing-arpa-tld-dns-abuse-md",
+    "title": "Abusing .arpa: Threat Actors Exploit the TLD That Isn't Supposed to Host Anything",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-abusing-arpa-tld-dns-abuse.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-apt36-transparent-tribe-vibeware-md",
+    "title": "APT36 (Transparent Tribe) Pivots to AI-Driven \"Vibeware\" Malware Development",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-apt36-transparent-tribe-vibeware.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-fake-lastpass-support-phishing-md",
+    "title": "Fake LastPass Support Email Threads Try to Steal Vault Passwords",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-fake-lastpass-support-phishing.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-finland-tax-phishing-campaign-md",
+    "title": "Highly Convincing Tax Authority Phishing Campaign Targets Finnish Citizens",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-finland-tax-phishing-campaign.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-israel-strikes-iran-cyber-warfare-hq-md",
+    "title": "Israel Says It Knocked Out Iran's Cyber Warfare Headquarters",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-israel-strikes-iran-cyber-warfare-hq.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-malicious-ai-assistant-browser-extensions-md",
+    "title": "Malicious AI Assistant Browser Extensions Harvest LLM Chat Histories Across 20,000+ Enterprise Tenants",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-malicious-ai-assistant-browser-extensions.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-openclaw-ghostsocks-fake-github-repos-md",
+    "title": "Fake OpenClaw GitHub Installers Distribute GhostSocks and Information Stealers via Stealth Packer",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-openclaw-ghostsocks-fake-github-repos.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-seedworm-iran-apt-us-targets-md",
+    "title": "Seedworm (MuddyWater) Iranian APT Active on U.S. Bank, Airport, and Software Company Networks",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-seedworm-iran-apt-us-targets.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-06-uat-9244-china-apt-south-america-telecom-md",
+    "title": "UAT-9244: China-Nexus APT Targets South American Telecom Providers with Three New Malware Implants",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-uat-9244-china-apt-south-america-telecom.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-06-finland-physical-security-guide-md",
+    "title": "Finland's National Emergency Supply Agency Publishes Physical Security Guide",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-06-finland-physical-security-guide.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-06-google-2025-zero-day-review-md",
+    "title": "2025 Zero-Days in Review: Enterprise Exploitation Reaches All-Time High",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-06-google-2025-zero-day-review.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-06-jsac2026-workshop-lt-panel-md",
+    "title": "JSAC2026 Workshop, Lightning Talk, and Panel Discussion Sessions",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-06-jsac2026-workshop-lt-panel.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-06-latam-2x-more-cyberattacks-than-us-md",
+    "title": "Latin America Now Faces 2x More Cyberattacks Than the United States",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-06-latam-2x-more-cyberattacks-than-us.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-06-mfa-coverage-gaps-windows-auth-md",
+    "title": "Where Multi-Factor Authentication Stops and Credential Abuse Starts",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-06-mfa-coverage-gaps-windows-auth.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "other-2026-03-06-isc-stormcast-friday-march-6-md",
+    "title": "ISC Stormcast For Friday, March 6th, 2026",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-03-06-isc-stormcast-friday-march-6.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
   }
 ]
