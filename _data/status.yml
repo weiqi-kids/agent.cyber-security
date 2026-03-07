@@ -1,19 +1,19 @@
 # 系統狀態 - 由執行流程自動更新
 # 請勿手動編輯
 
-last_execution: "2026-03-06T11:00:00+08:00"
-last_execution_display: "2026-03-06 11:00 (UTC+8)"
+last_execution: "2026-03-07T12:00:00+08:00"
+last_execution_display: "2026-03-07 12:00 (UTC+8)"
 
 layers:
   exploit_intelligence:
-    last_fetch: "2026-03-06T03:00:00Z"
-    items_count: 4971
+    last_fetch: "2026-03-07T03:00:00Z"
+    items_count: 5116
   security_news_facts:
-    last_fetch: "2026-03-06T03:00:00Z"
-    items_count: 2759
+    last_fetch: "2026-03-07T03:00:00Z"
+    items_count: 2780
   threat_feeds:
-    last_fetch: "2026-03-06T03:00:00Z"
-    items_count: 40891
+    last_fetch: "2026-03-07T03:00:00Z"
+    items_count: 40991
   vulnerability_tracking:
-    last_fetch: "2026-03-06T03:00:00Z"
-    items_count: 17675
+    last_fetch: "2026-03-07T03:00:00Z"
+    items_count: 17766
