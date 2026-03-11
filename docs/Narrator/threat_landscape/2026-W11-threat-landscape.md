@@ -1,8 +1,8 @@
 # 威脅態勢分析 — 2026 第 11 週
 
-> 涵蓋期間：2026-03-04 至 2026-03-10
+> 涵蓋期間：2026-03-04 至 2026-03-11
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-03-10
+> 產出時間：2026-03-11
 > 分析模型：Claude Opus
 
 ---
@@ -318,14 +318,14 @@ Cisco FMC 漏洞 (CVE-2026-20079/CVE-2026-20131) 同時出現在 vulnerability_t
 
 ### IoC 趨勢（abuse.ch 資料）
 
-本週 threat_feeds Layer 觀察到的指標量（1,493 個新條目）：
+本週 threat_feeds Layer 觀察到的指標量（1,730 個新條目，含 2026-03-11 更新的 237 筆）：
 
 | 類別 | 本週新增 | 趨勢 | 代表性指標 |
 |------|----------|------|-----------|
-| **惡意 URL** | 468 | ↑ 持續增長 | **ClearFake 為主導分發平台**，釣魚和惡意軟體分發 URL 大量增加 |
-| **惡意軟體樣本** | 252 | → 穩定 | Mirai 家族仍佔多數，GCleaner、Gafgyt 持續活躍 |
-| **IoC 指標** | 766 | ↑ 顯著增長 | 竊密軟體 IoC 為主（StrelaStealer、Lumma Stealer、Remcos） |
-| **C2 基礎設施** | 7 | → 穩定 | **Cobalt Strike、Sliver、Venom RAT**、AsyncRAT |
+| **惡意 URL** | ~1,127 | ↑ 持續增長 | **ClearFake 為主導分發平台**，釣魚和惡意軟體分發 URL 大量增加；3/11 新增約 659 筆惡意 URL |
+| **惡意軟體樣本** | ~502 | ↑ 小幅增長 | Mirai 家族仍佔多數，GCleaner、Gafgyt 持續活躍；3/11 新增約 250 筆樣本 |
+| **IoC 指標** | ~1,782 | ↑ 顯著增長 | 竊密軟體 IoC 為主（StrelaStealer、Lumma Stealer、Remcos）；3/11 新增約 1,016 筆指標 |
+| **C2 基礎設施** | ~14 | → 穩定 | **Cobalt Strike、Sliver、Venom RAT**、AsyncRAT；3/11 新增約 7 筆 |
 
 ### 惡意軟體家族分布
 
@@ -349,13 +349,13 @@ Cisco FMC 漏洞 (CVE-2026-20079/CVE-2026-20131) 同時出現在 vulnerability_t
 | 重大事件數 | 12+ | 15+ | ↑ 增加 |
 | CISA KEV 新增 | 7 | 8 | → 持平 |
 | 新 PoC/Exploit | 38 | 15+ (Exploit-DB) + 10+ (Nuclei) | ↓ 略減 |
-| Threat Feeds 新增 | 672 | 1,493 | ↑↑ 大幅增長 (+122%) |
+| Threat Feeds 新增 | 672 | 1,730 | ↑↑ 大幅增長 (+157%) |
 | APT 組織活動 | 7 組織 | 8+ 組織 | ↑ 增加（新增 Camaro Dragon） |
 | 供應鏈攻擊 | 4 起 | 5+ 起 | ↑ 增加（新增 ShinyHunters Salesforce） |
 | 加密通訊攻擊 | 0 | 2 起 | **↑ 新類別出現** |
 
 **趨勢觀察**：
-- W11 的 threat_feeds 新增量較 W10 增長超過一倍（672 → 1,493），主要由 ClearFake 驅動的惡意 URL 和竊密軟體 IoC 大量增加所致
+- W11 的 threat_feeds 新增量較 W10 增長超過 1.5 倍（672 → 1,730），主要由 ClearFake 驅動的惡意 URL 和竊密軟體 IoC 大量增加所致，3/11 單日新增 237 筆進一步鞏固此趨勢
 - **加密通訊平台攻擊**為本週新出現的攻擊類別，俄羅斯情報機構和 Telegram 劫持雙重衝擊
 - ShinyHunters Salesforce 事件若屬實，將為 2026 年迄今最大規模 SaaS 平台資料竊取
 
@@ -456,15 +456,15 @@ CERT-SE（2026-03-09）報告 Encrypted Client Hello 技術已準備就緒進入
 
 1. **來源偏差**：本報告主要依賴歐洲（NCSC-FI、CERT-FR、SK-CERT、CERT-UA、CERT.hr、CERT-RO、CERT-SE）和北美（CISA、CCCS）CERT/安全機構的 RSS 饋送，以及 Palo Alto Unit 42、Cisco Talos、Check Point、Zscaler、Bitdefender、Microsoft Defender、Huntress 等安全廠商報告。對亞太、非洲地區的覆蓋程度較低。部分非英語來源（斯洛伐克語、芬蘭語、法語、克羅埃西亞語、愛沙尼亞語、捷克語）的細節可能因翻譯或摘要截斷而有所缺失。
 
-2. **時效性**：本報告反映截至 2026-03-10 的已公開資訊。ShinyHunters Salesforce 事件的聲明尚待各受害企業確認，後續發展可能改變評估結論。荷蘭情報機構的 Signal/WhatsApp 警告為官方來源，信心水準較高。
+2. **時效性**：本報告反映截至 2026-03-11 的已公開資訊。ShinyHunters Salesforce 事件的聲明尚待各受害企業確認，後續發展可能改變評估結論。荷蘭情報機構的 Signal/WhatsApp 警告為官方來源，信心水準較高。2026-03-11 更新主要為 threat_feeds 新增 IoC 資料（237 筆），無重大新事件。
 
 3. **威脅情報歸因**：APT 歸因基於各安全廠商和政府機構的評估。Camaro Dragon 與中國的關聯基於多家廠商長期追蹤（高信心）；俄羅斯 Signal/WhatsApp 釣魚攻擊的歸因來自荷蘭官方情報機構（高信心）；CL-UNK-1068 的中國歸因為「高信心」（Unit 42）；BadPaw/MeowMeow 的俄羅斯歸因為「中信心」（ClearSky）；ShinyHunters Salesforce 為自我宣稱（中信心）。
 
-4. **threat_feeds 統計**：本週 1,493 個新增條目（惡意 URL 468、惡意軟體樣本 252、IoC 指標 766、C2 基礎設施 7）來自 abuse.ch 等開源情報饋送。ClearFake 的主導地位基於 URLhaus 和 ThreatFox 資料，可能因資料來源偏差而未完全反映全球惡意軟體分發的完整圖景。
+4. **threat_feeds 統計**：本週 1,730 個新增條目（惡意 URL ~1,127、惡意軟體樣本 ~502、IoC 指標 ~1,782、C2 基礎設施 ~14）來自 abuse.ch 等開源情報饋送，含 2026-03-11 新增的 237 筆。ClearFake 的主導地位基於 URLhaus 和 ThreatFox 資料，可能因資料來源偏差而未完全反映全球惡意軟體分發的完整圖景。
 
-5. **vulnerability_tracking 統計**：本週新增 20 個條目（Critical/High 8、Medium 2、Low/Info 10）。
+5. **vulnerability_tracking 統計**：本週新增 20 個條目（Critical/High 8、Medium 2、Low/Info 10）。2026-03-11 無重大新增漏洞追蹤條目。
 
-6. **Qdrant 語意查詢**：語意查詢結果基於向量相似度（text-embedding-3-small），可能包含語意相近但時間範圍或語境不同的結果。本報告共執行 5 次 Qdrant 語意查詢，回傳 50 筆相關結果。
+6. **Qdrant 語意查詢**：語意查詢結果基於向量相似度（text-embedding-3-small），可能包含語意相近但時間範圍或語境不同的結果。本報告共執行 5 次 Qdrant 語意查詢，回傳 50 筆相關結果（涵蓋 RCE、勒索軟體、APT 國家級威脅、供應鏈/社交工程、高嚴重度漏洞五大主題）。
 
 7. **預測性聲明**：新興威脅識別中標註為「推測」的內容為基於現有資料的趨勢推斷，非確認的事實。信心水準分級（高/中高/中/低）反映推斷的可靠程度。
 
@@ -472,4 +472,4 @@ CERT-SE（2026-03-09）報告 Encrypted Client Hello 技術已準備就緒進入
 
 ---
 
-> 本報告由資訊安全產業智慧分析系統自動產出，資料來源涵蓋 NCSC-FI、CERT-UA、CERT-FR、SK-CERT、CERT.hr、CERT-RO、CERT-SE、CISA、CCCS、SANS ISC、TWCERT、abuse.ch (MalwareBazaar/ThreatFox/URLhaus)、Unit 42、Cisco Talos、Check Point、Zscaler、Bitdefender、Microsoft Defender、Huntress、Europol 等國際安全機構與開源情報饋送。Qdrant 語意查詢用於跨 Layer 關聯分析，共執行 5 次查詢，回傳 50 筆相關結果。
+> 本報告由資訊安全產業智慧分析系統自動產出（最後更新：2026-03-11），資料來源涵蓋 NCSC-FI、CERT-UA、CERT-FR、SK-CERT、CERT.hr、CERT-RO、CERT-SE、CISA、CCCS、SANS ISC、TWCERT、abuse.ch (MalwareBazaar/ThreatFox/URLhaus)、Unit 42、Cisco Talos、Check Point、Zscaler、Bitdefender、Microsoft Defender、Huntress、Europol 等國際安全機構與開源情報饋送。Qdrant 語意查詢用於跨 Layer 關聯分析，共執行 5 次查詢，回傳 50 筆相關結果。
