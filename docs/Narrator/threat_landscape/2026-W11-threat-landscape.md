@@ -1,64 +1,70 @@
 ---
 layout: seo-report
-last_modified_at: 2026-03-12T10:00:00+08:00
+last_modified_at: 2026-03-13T10:00:00+08:00
 title: 2026 第 11 週威脅態勢分析
-description: "2026-03-05 至 2026-03-11 資安威脅週報：伊朗網路衝突持續升級、APT28 以 BEARDSHELL+COVENANT 攻擊烏克蘭、三個中國 APT 行動同步揭露、ShinyHunters Salesforce 百企資料竊取、BeyondTrust CVE-2026-1731 勒索軟體武器化、Kadnap 殭屍網路感染 14,000 台路由器。"
+description: "2026-03-06 至 2026-03-13 資安威脅週報：伊朗多面向網路攻擊全面升級（Handala/Void Manticore 破壞性攻擊、Wiper 攻擊 Stryker、入侵阿爾巴尼亞國會、Instagram 影響力操作）、APT28 以 BeardShell+Covenant 攻擊烏克蘭、Camaro Dragon PlugX 攻擊卡達、ShinyHunters Salesforce 百企資料竊取、SocksEscort 代理網路遭國際執法打擊、KadNap DHT-P2P 殭屍網路感染 14,000 台路由器、CISA 新增 n8n RCE 至 KEV、28 筆新增 Critical/High 漏洞。"
 parent: 威脅態勢分析
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-03-12
+date: 2026-03-13
 ---
 
 # 威脅態勢分析 — 2026 第 11 週
 
-> 涵蓋期間：2026-03-05 至 2026-03-11
+> 涵蓋期間：2026-03-06 至 2026-03-13
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-03-12
+> 產出時間：2026-03-13
 > 分析模型：Claude Opus
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢以**中東地緣衝突持續驅動網路攻擊升級、多國 APT 同步活躍、以及雲端 SaaS 平台與遠端存取基礎設施遭大規模攻擊**為三大主軸。全球網路攻擊量於 2026 年 2 月創歷史新高（NCSC-FI），本週態勢延續此趨勢。
+本週威脅態勢以**伊朗多面向網路攻擊全面升級、多國 APT 同步活躍、以及雲端 SaaS 平台與通訊平台遭大規模攻擊**為三大主軸。全球網路攻擊量於 2026 年 2 月維持歷史高位（NCSC-FI），本週態勢持續升溫。
 
 **國家級威脅行為者動態**：
-- **APT28/Sednit（俄羅斯）**以全新 BEARDSHELL + COVENANT 雙植入架構對烏克蘭政府進行長期監控（ESET / CERT-UA, 2026-03-11）
-- **三個中國關聯 APT 行動同步揭露**：CL-UNK-1068（六年未偵測，七大產業）、UAT-9244（南美電信，三款新惡意軟體）、Camaro Dragon（PlugX 攻擊卡達）
-- **Seedworm/MuddyWater（伊朗）**以 Dindoor 後門活躍於美國銀行、機場及國防軟體公司
-- 荷蘭 AIVD/MIVD 警告**俄羅斯大規模 Signal/WhatsApp 帳號劫持行動**，全球鎖定政府官員
+- **伊朗多線攻擊全面升級**：Handala（Void Manticore）破壞性 Wiper 攻擊與洩密行動鎖定美以組織、宣告 Google/Amazon/Microsoft/Palantir/IBM/Nvidia/Oracle 為「合法目標」（2026-03-13）；Wiper 攻擊 Stryker 醫療器材（2026-03-12）、入侵阿爾巴尼亞國會電子郵件（2026-03-12）、Instagram 假帳號影響力操作（2026-03-12）、MOIS-犯罪融合分析（2026-03-11）、Seedworm/Dindoor 持續入侵美國關鍵基礎設施
+- **APT28/Sednit（俄羅斯）**以全新 BeardShell + Covenant 雙植入架構對烏克蘭軍事人員進行長期監控（ESET, 2026-03-11）
+- **中國關聯 APT 雙線擴展**：Camaro Dragon（PlugX 攻擊卡達，2026-03-10）、UAT-9244（南美電信，三款新惡意軟體）
+- 荷蘭 AIVD/MIVD 警告**俄羅斯大規模 Signal/WhatsApp 帳號劫持行動**，全球鎖定政府官員（2026-03-10）
 - **APT36（巴基斯坦）**首創 AI 驅動「Vibeware」惡意軟體量產模式
-- **伊朗 MOIS 與網路犯罪融合**加速，國家—犯罪邊界持續模糊化
 
 **網路犯罪與資料洩露**：
 - **ShinyHunters** 透過 Salesforce 平台竊取約 100 家企業資料，另有犯罪集團利用 Salesforce Guest Account 配置弱點進行資料勒索
-- **CVE-2026-1731（BeyondTrust RS/PRA）**被積極利用於勒索軟體攻擊行動，Critical 等級 OS 命令注入
-- **Kadnap 殭屍網路**以 Kademlia DHT P2P 架構劫持逾 14,000 台 ASUS 路由器
+- **KadNap 殭屍網路**以 Kademlia DHT P2P 架構劫持逾 14,000 台 ASUS 路由器
 - **Microsoft Teams 釣魚**部署全新 A0Backdoor 攻擊金融與醫療機構
+- **Viking Line 資料外洩**：芬蘭渡輪業者分包商遭入侵，預訂客戶資料外洩（2026-03-13）
+- **KongTuke ClickFix**利用受感染 WordPress 網站散布惡意軟體（2026-03-12）
+- **假履歷惡意軟體**殺死 EDR 後竊取資料
+
+**執法打擊行動**：
+- **Operation Lightning**：國際執法打擊 SocksEscort 住宅代理網路，扣押 34 個網域、23 台伺服器，凍結 350 萬美元加密貨幣（2026-03-13）
 
 **關鍵漏洞與利用**：
-- CISA 本週新增 6+ 個 KEV，含 CVE-2025-26399（SolarWinds WHD 反序列化 RCE，修補截止 03-12）
-- FortiCloud SSO 繞過漏洞（CVE-2025-59718/59597）持續被國家級行為者利用收集 LDAP 憑證
-- exploit_intelligence 新增 14 個檔案，包含多個新 PoC 和活躍利用條目
-- 本週 2,159 個新惡意 URL（threat_feeds），與中東衝突升級直接相關
+- 2026 年度累積 Critical/High 8,246 筆、活躍利用 59 筆、PoC 可用 2,347 筆
+- **CISA 新增 n8n RCE 至 KEV**——n8n 工作流程自動化平台 RCE 漏洞確認遭積極利用（2026-03-13）
+- 本週新增 28 筆 Critical/High 漏洞公告（Apple、Fortinet、GitHub、Chrome、HPE、Mozilla、Cisco IOS XR、Erlang/OTP、GitLab、F5OS、Splunk、Veeam、Zoom 等）
+- FortiCloud SSO 繞過漏洞（CVE-2025-59718/59719）持續被利用收集 LDAP 憑證
+- CERT-FR 發布多項重要漏洞公告（Apple、Cisco IOS XR、GitLab、GLPI RCE、Chrome、Edge、Microsoft、Palo Alto Networks、Splunk、Veeam Backup）
+- Google 2025 零日回顧：企業技術零日佔比 48% 創歷史新高
 
-**資料規模**：security_news_facts 91 筆、vulnerability_tracking 921 筆、exploit_intelligence 14 筆、threat_feeds 852 筆新增項目。
+**資料規模**：security_news_facts（W11 新增：attack_incident 49、industry_trend 28、vulnerability_disclosure 79、other 12、policy_regulation 8）、vulnerability_tracking 21,772 筆（Critical/High 8,246）、exploit_intelligence 2,406 筆（active 59 + PoC 2,347）、threat_feeds 46,000 筆。
 
 ---
 
 ## 資料來源統計
 
-| Layer | 本週新增 | 說明 |
-|-------|----------|------|
-| security_news_facts | 91 | 82+ 攻擊事件、49+ 產業趨勢、15+ 政策法規 |
-| vulnerability_tracking | 921 | 2,203 Critical/High、4,843 Medium、2,670 Low/Info（累積） |
-| exploit_intelligence | 14 | 活躍利用 + PoC 公開 |
-| threat_feeds | 852 | 2,159 惡意 URL、C2 指標、惡意軟體樣本 |
+| Layer | 2026 年度累積 | W11 新增 | 說明 |
+|-------|-------------|---------|------|
+| security_news_facts | 493+ | 176 | attack_incident 49、vulnerability_disclosure 79、industry_trend 28、policy_regulation 8、other 12 |
+| vulnerability_tracking | 21,772 | — | Critical/High 8,246、Medium 9,632、Low/Info 3,894 |
+| exploit_intelligence | 2,406 | — | 活躍利用 59 + PoC 可用 2,347 |
+| threat_feeds | 46,000 | — | 惡意 URL、惡意軟體樣本、IoC 指標、C2 基礎設施 |
 
-> 統計時間：2026-03-12 UTC
+> 統計時間：2026-03-13 UTC（2026 年度累積數據）
 
 ---
 
@@ -82,7 +88,17 @@ date: 2026-03-12
 
 - **MOIS 與網路犯罪融合**：Check Point Research 分析伊朗情報安全部（MOIS）越來越頻繁地透過犯罪工具和基礎設施追求國家目標，使用商業化犯罪工具執行國家間諜任務，提供可否認性。（來源：Check Point Research, 2026-03-11）
 
-**Qdrant 跨層關聯分析**：語意查詢「active exploitation ransomware critical vulnerability March 2026」回傳高度相關結果，確認 BeyondTrust CVE-2026-1731 已被用於勒索軟體行動，顯示國家級衝突與犯罪動機的網路攻擊正同步加劇。歷史比對顯示，自 2026 年 2 月底以來伊朗相關網路威脅活動密集程度為近年之最。
+- **2026-03-12——伊朗三線同步攻擊**：
+  - **Wiper 攻擊 Stryker 醫療器材**：伊朗支持的駭客宣稱對美國醫療器材大廠 Stryker 發動破壞性 Wiper 攻擊，刻意銷毀目標系統資料。Stryker 為全球主要醫療器材製造商，目標選擇具戰略意義，對醫療供應鏈安全構成嚴重威脅。（來源：KrebsOnSecurity, 2026-03-12）
+  - **入侵阿爾巴尼亞國會電子郵件**：與伊朗關聯的駭客宣稱成功入侵阿爾巴尼亞國會電子郵件系統，延續自 2022 年起因阿爾巴尼亞收容伊朗反對組織 MEK 而發動的系列網路攻擊。（來源：The Record, 2026-03-12）
+  - **Instagram 假帳號影響力操作**：Meta 宣布瓦解伊朗影響力操作網路，該行動使用假冒個人身份在 Instagram 上針對美國用戶，目的包含散布特定政治訊息和操縱輿論。（來源：The Record / Meta, 2026-03-12）
+
+- **2026-03-13——Handala（Void Manticore）全面威脅升級**（本週最新動態）：
+  - **Handala（Void Manticore）深度分析**：Google 威脅情報團隊發布伊朗威脅組織 Handala 的全面分析報告。Handala 為伊朗情報安全部（MOIS）關聯的破壞性威脅組織，專精 Wiper 攻擊與 hack-and-leak 行動，目標鎖定美國和以色列組織。該組織公開宣告 **Google、Amazon、Microsoft、Palantir、IBM、Nvidia、Oracle** 為「合法目標」，標誌著伊朗網路攻擊目標從傳統地緣政治對手擴展至全球科技巨頭。（來源：Google Threat Intelligence, 2026-03-13）
+
+**態勢評估**：伊朗本週的網路行動呈現「全方位」特徵——間諜活動（Seedworm/Dindoor）、破壞性攻擊（Stryker Wiper、Handala Wiper）、政治攻擊（阿爾巴尼亞國會）和資訊戰（Meta 假帳號操作）同時推進。Handala 將七大科技巨頭列為合法目標，代表威脅範圍的重大擴展。CERT-FR 同週發布的 2025 年網路威脅全景報告（2026-03-11）指出「國家行為者與網路犯罪集團之間的傳統界限持續侵蝕」，伊朗正是此趨勢的典型代表。
+
+**Qdrant 跨層關聯分析**：語意查詢「APT nation-state cyber attack March 2026」回傳 5 筆結果（UAC-0001/APT28、伊朗網路威脅簡報、Camaro Dragon），確認伊朗網路攻擊活動已從間諜活動擴展至破壞性攻擊和資訊戰。Handala/Void Manticore 將七大科技巨頭列為合法目標，進一步升級威脅範圍。歷史比對顯示，自 2026 年 2 月底以來伊朗相關網路威脅活動密集程度為近年之最。
 
 ### 2. 多國 APT 行動同步揭露——中國、俄羅斯、巴基斯坦
 
@@ -170,6 +186,8 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 
 - **Telegram 帳號劫持**：芬蘭出現利用未設密碼語音信箱漏洞劫持 Telegram 帳號的攻擊手法。（來源：NCSC-FI, 2026-03-10）
 
+- **KongTuke ClickFix（2026-03-12 更新）**：Trend Micro MDR 分析 KongTuke 利用 ClickFix 社交工程技術濫用受感染 WordPress 網站散布惡意軟體。ClickFix 攻擊顯示假錯誤訊息誘使用戶執行 PowerShell 腳本，此模式在 2025-2026 年間快速增長，成為主要威脅向量。（來源：Trend Micro MDR, 2026-03-12）
+
 ### 7. 供應鏈攻擊持續加劇
 
 **嚴重程度：高 | 來源：SK-CERT / Huntress / Push Security | 日期：2026-03-06 至 03-09**
@@ -188,6 +206,7 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 
 | 日期 | 行動 | 目標 | 成果 | 來源 |
 |------|------|------|------|------|
+| 2026-03-13 | **Operation Lightning**（國際聯合） | SocksEscort 住宅代理網路 | 扣押 34 個網域、23 台伺服器，凍結 350 萬美元加密貨幣。住宅代理網路被犯罪分子用於匿名化惡意流量 | 國際執法聯合 |
 | 2026-03-05 | Europol EC3 協調 | Tycoon 2FA PhaaS | 扣押 330 個核心網域，六國參與 | Europol / Microsoft |
 | 2026-03-03~04 | 美國 DOJ 主導 | LeakBase 駭客論壇 | 14 國同步關閉，14.2 萬會員、21.5 萬訊息 | U.S. DOJ |
 | 2026-03-11 | 波蘭執法 | DDoS 攻擊套件販售 | 7 名青少年（12-16 歲）販賣 DDoS 套件遭移送，凸顯攻擊工具取得門檻持續降低 | 波蘭警方 / NCSC-FI |
@@ -206,6 +225,16 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 | 2026-03-07 | 斯洛伐克 VoZP 健保釣魚簡訊 (Smishing) 攻擊 | SK-CERT | 中 |
 | 2026-03-07 | Cisco IOS XE 零日主動利用警告（SK-CERT 緊急通報） | SK-CERT | 高 |
 | 2026-03-09 | NUKIB 捷克 2 月網路事件概覽發布 | NUKIB | 中 |
+| 2026-03-12 | KongTuke ClickFix 利用受感染 WordPress 網站散布惡意軟體，ClickFix 社交工程技術在 2025-2026 年間快速增長 | Trend Micro MDR | 高 |
+| 2026-03-12 | 芬蘭大規模詐騙浪潮警報 | NCSC-FI | 中 |
+| 2026-03-12 | SANS ISC IoT 設備管理登入安全分析 | SANS ISC | 中 |
+| 2026-03-12 | Meta 清除數百萬詐騙廣告 | Meta / NCSC-FI | 中（正面） |
+| 2026-03-13 | Handala（Void Manticore）破壞性攻擊分析：宣告七大科技巨頭為「合法目標」 | Google Threat Intelligence | 極高 |
+| 2026-03-13 | Operation Lightning 打擊 SocksEscort 住宅代理網路（34 網域、23 伺服器、$3.5M 加密貨幣） | 國際執法聯合 | 高（正面） |
+| 2026-03-13 | Viking Line 芬蘭渡輪業者分包商遭入侵，預訂客戶資料外洩 | NCSC-FI | 中 |
+| 2026-03-13 | React-based 釣魚：利用 React 應用程式進行憑證竊取 | SANS ISC | 中 |
+| 2026-03-13 | Verifone 資料外洩宣稱（伊朗駭客主義者，爭議中） | 安全研究報告 | 低（未驗證） |
+| 2026-03-13 | SANS ISC Zombie ZIP（CVE-2026-0866）分析 | SANS ISC | 中 |
 
 ---
 
@@ -215,19 +244,20 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 
 本週漏洞追蹤系統收錄資料概覽：
 
-- **vulnerability_tracking 累積收錄**：Critical/High 2,203 筆、Medium 4,843 筆、Low/Info 2,670 筆
-- **本週 W11 新增**：921 個新檔案（較上週 W10: 863 增加約 6.7%）
-- **exploit_intelligence 新增**：14 個檔案（活躍利用 + PoC 公開）
+- **vulnerability_tracking 累積收錄**（2026 年度）：Critical/High 8,246 筆、Medium 9,632 筆、Low/Info 3,894 筆
+- **W11 新增 Critical/High**：73 筆
+- **exploit_intelligence 累積**：活躍利用 59 筆 + PoC 可用 2,347 筆
+- **security_news_facts/vulnerability_disclosure**：W11 新增 79 個漏洞揭露報告
 
 #### 嚴重程度分布
 
-| 嚴重程度 | 累積數量 | 本週新增估計 | 佔比 |
-|----------|----------|-------------|------|
-| Critical/High | 2,203 | 200+ | 22.7% |
-| Medium | 4,843 | 400+ | 49.8% |
-| Low/Info | 2,670 | 300+ | 27.5% |
+| 嚴重程度 | 2026 年度累積 | 佔比 |
+|----------|-------------|------|
+| Critical/High | 8,246 | 37.9% |
+| Medium | 9,632 | 44.2% |
+| Low/Info | 3,894 | 17.9% |
 
-**趨勢觀察**：本週新增 921 個漏洞檔案，較上週增加 6.7%，維持穩定增長趨勢。Google 2025 年零日回顧（2026-03-07）確認企業技術零日利用佔比（48%）創歷史新高，邊緣裝置和安全設備為重點攻擊目標。Cisco Talos 2025 年 CVE 回顧報告顯示全年 48,196 個 CVE（每日 132 個），KEV 數量 241 個較 2024 年增長 30%。
+**趨勢觀察**：2026 年度至今已累積超過 21,000 個漏洞追蹤項目，增長速度維持高位。本週新增 28 筆 Critical/High 漏洞公告，涵蓋 Apple（AV26-233）、Fortinet、GitHub（AV26-230）、Chrome、HPE（AV26-234）、Mozilla Firefox、Cisco IOS XR、Erlang/OTP、GitLab、F5OS、Splunk、Veeam、Zoom 及多個 NCSC-NL advisories（0087-0098）。Google 2025 年零日回顧（2026-03-06）確認企業技術零日利用佔比（48%）創歷史新高，邊緣裝置和安全設備為重點攻擊目標。Cisco Talos 2025 年 CVE 回顧報告（2026-03-07）顯示全年 48,196 個 CVE（每日 132 個），KEV 數量 241 個較 2024 年增長 30%。Kaspersky Q4 2025 報告確認為歷史上最密集的高影響漏洞揭露季度。
 
 ### CISA KEV 更新
 
@@ -240,6 +270,9 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 - **CVE-2021-22054**（VMware Workspace ONE Access SSRF）：2021 年漏洞首次確認遭活躍利用，時隔 5 年
 - **CVE-2025-26399**（SolarWinds Web Help Desk 反序列化 RCE）：修補截止日 **2026-03-12**（緊急）
 - **CVE-2026-22719**（Broadcom VMware Aria Operations 命令注入）：Critical，未經認證遠端 RCE
+
+**2026-03-13 批次**：
+- **n8n RCE**：CISA 將 n8n 工作流程自動化平台 RCE 漏洞新增至 KEV，確認遭積極利用。n8n 廣泛用於企業自動化工作流程，遭利用後攻擊者可在自動化平台上執行任意程式碼，進而存取整合的第三方服務和敏感資料
 
 ### 重點漏洞詳述
 
@@ -259,6 +292,20 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 - 部分受影響設備的入侵可追溯至 2024 年
 - CISA 與合作夥伴已發布聯合指導（來源：CERT-NZ / NCSC / CISA, 2026-01-22 至 03-05）
 
+**n8n 工作流程自動化 RCE（CISA KEV, 2026-03-13）**
+- n8n 為流行的工作流程自動化工具，企業常用於整合多個 SaaS 服務
+- 遭利用後攻擊者可存取所有已整合的第三方服務憑證和資料
+- **建議：立即修補**，已確認遭積極利用
+
+**CERT-FR 批次漏洞公告（2026-03-12~13）**
+- Apple 產品多個漏洞、Cisco IOS XR、GitLab、GLPI RCE、Chrome、Edge、Microsoft 產品、Palo Alto Networks、Splunk、Veeam Backup
+- 涉及多個企業核心基礎設施組件
+- **建議：參照 CERT-FR 公告逐一評估修補優先級**
+
+**Zombie ZIP（CVE-2026-0866, SANS ISC 分析, 2026-03-13）**
+- SANS ISC 分析 Zombie ZIP 漏洞利用技術
+- 利用 ZIP 檔案格式特性進行攻擊
+
 **Cisco FMC/SCC 雙 CVSS 10.0（CVE-2026-20079、CVE-2026-20131）**
 - 影響 Cisco Secure Firewall Management Center 與 Security Cloud Control
 - 防火牆管理平台遭入侵將導致整體網路安全架構崩潰
@@ -277,8 +324,20 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 | **VMware/Broadcom** | 2 | Critical | CVE-2026-22719 Aria Operations、CVE-2021-22054 Workspace ONE |
 | **Fortinet** | 2+ | Critical | FortiCloud SSO 繞過，FortiGate 持久後門 |
 | **Cisco** | 5+ | Critical | FMC/SCC 雙 10.0、SD-WAN 積極利用 |
-| **Microsoft** | 8+ | High | Patch Tuesday + Edge |
-| **HPE Aruba** | 1 | High | CVE-2026-23813 AOS-CX 認證繞過 |
+| **n8n** | 1 (KEV) | Critical | 工作流程自動化 RCE，**CISA KEV 2026-03-13** |
+| **Apple** | 1+ (AV26-233) | High-Critical | CERT-FR 多漏洞公告 |
+| **GitHub** | 1 (AV26-230) | High | Critical/High 漏洞公告 |
+| **Chrome/Edge** | 2+ | High | CERT-FR 公告 |
+| **GitLab** | 1+ | High | CERT-FR 公告 |
+| **Erlang/OTP** | 1+ | High | Critical/High 漏洞 |
+| **F5OS** | 1+ | High | Critical/High 漏洞 |
+| **Splunk** | 1+ | High | CERT-FR 公告 |
+| **Veeam Backup** | 1+ | High | CERT-FR 公告 |
+| **Palo Alto Networks** | 1+ | High | CERT-FR 公告 |
+| **Mozilla Firefox** | 1+ | High | Critical/High 漏洞 |
+| **Zoom** | 1+ | High | Critical/High 漏洞 |
+| **Microsoft** | 8+ | High | Patch Tuesday + Edge + CERT-FR 公告 |
+| **HPE** | 1+ (AV26-234) | High | HPE Aruba AOS-CX 認證繞過 |
 | **Johnson Controls** | 1 | High | Frick Controls Quantum HD ICS |
 | **Pelco** | 1 | High | Sarix Pro 3 IP 攝影機 |
 | **Zyxel** | 1 | High | CVE-2025-13942（CERT-RO） |
@@ -294,7 +353,7 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 - **Lantronix EDS 序列設備伺服器**：認證繞過與 Root 權限 RCE，工業序列設備伺服器遭入侵可作為 OT 跳板
 - **EV 充電基礎設施**：6+ 個平台漏洞（Chargemap、CloudCharge、EV Energy、EV2GO、Mobility46、Switch EV），凸顯新興能源基礎設施安全風險
 
-**Qdrant 跨層關聯分析**：語意查詢「defense mitigation patch critical vulnerability」回傳多筆 CVE 修補資訊，確認 BeyondTrust、SolarWinds、Fortinet 等關鍵基礎設施軟體的漏洞修補具有最高優先級。
+**Qdrant 跨層關聯分析**：語意查詢「critical vulnerability actively exploited zero-day CVE 2026」回傳 5 筆結果（Chrome CVE-2026-2441、Cisco CVE-2026-20045、MS Office CVE-2026-21509），確認 BeyondTrust、SolarWinds、Fortinet、n8n 等關鍵基礎設施軟體的漏洞修補具有最高優先級。本週 CISA 新增 n8n 至 KEV 進一步擴大了需緊急修補的範圍。
 
 ---
 
@@ -312,6 +371,7 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 | 2026-03-09 | CVE-2021-22054 | VMware Workspace ONE Access | SSRF | High |
 | 2026-03-09 | CVE-2025-26399 | SolarWinds Web Help Desk | 反序列化 RCE | Critical |
 | 2026-03-11 | CVE-2026-22719 | VMware Aria Operations | 命令注入 RCE | Critical |
+| 2026-03-13 | n8n RCE | n8n 工作流程自動化 | RCE | Critical |
 
 ### 積極利用中的漏洞
 
@@ -322,6 +382,7 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 | CVE-2021-22054 (VMware WS ONE) | 不明 | 身分認證基礎設施 | 2021 年漏洞，時隔 5 年首次確認活躍利用 |
 | CVE-2025-59718/59597 (FortiCloud SSO) | 國家級行為者（推測） | FortiGate 設備 | 持久後門，部分入侵追溯至 2024 年 |
 | CVE-2026-22719 (VMware Aria) | 不明 | VMware Aria Operations | CISA KEV，Critical |
+| n8n RCE | 不明 | 工作流程自動化平台 | **CISA KEV 2026-03-13**，可存取整合服務憑證 |
 | Cisco SD-WAN 零日 | 國家級行為者（推測） | 企業 WAN 基礎設施 | CISA 聯合指導已發布 |
 
 ### 新公開 PoC / Exploit 動態
@@ -375,6 +436,7 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 | CVE-2025-26399 | PoC available | **已確認** | **極高** — 修補截止今日 |
 | CVE-2021-22054 | Public exploit | **已確認** | **高** — 歷史漏洞持續利用 |
 | CVE-2026-27944 | PoC just published | 監控中 | **高** — CVSS 9.8 |
+| n8n RCE | Exploit available | **已確認** | **極高** — CISA KEV 2026-03-13 |
 | CVE-2026-27971 | PoC just published | 監控中 | **高** — PoC 公開後利用機率上升 |
 
 ---
@@ -383,7 +445,7 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 
 ### ATT&CK 技術分布
 
-基於本週 91 筆 security_news_facts、14 筆 exploit_intelligence 和 852 筆 threat_feeds 資料，歸納攻擊手法如下：
+基於本週 176 筆 security_news_facts（W11）、14 筆 exploit_intelligence 和 threat_feeds 資料，歸納攻擊手法如下：
 
 #### 初始存取 (Initial Access)
 
@@ -435,6 +497,7 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 |-----|----------|-----------|-----------|
 | <a href="https://attack.mitre.org/techniques/T1498/" class="ttp-badge" target="_blank">T1498</a> | Network Denial of Service | 149+ | 駭客主義 DDoS（16 國、110 組織、60 團體） |
 | <a href="https://attack.mitre.org/techniques/T1486/" class="ttp-badge" target="_blank">T1486</a> | Data Encrypted for Impact | 多起 | 勒索軟體利用 CVE-2026-1731、LockBit 5.0 跨平台 |
+| [T1485](https://attack.mitre.org/techniques/T1485/){: .ttp-ref } | Data Destruction | 2+ | Handala/Void Manticore Wiper 攻擊、Stryker Wiper |
 | [T1021](https://attack.mitre.org/techniques/T1021/){: .ttp-ref } | Remote Services | 3+ | BeyondTrust PRA 利用、Quick Assist 遠端存取濫用 |
 
 ### 攻擊類型統計
@@ -480,8 +543,11 @@ Seedworm 自 2026 年 2 月初以來持續活躍於美國銀行、機場、國�
 | **GhostSocks** | 代理/反偵測 | 活躍 | OpenClaw 偽造安裝器分發 |
 | **Mozi** | IoT 殭屍網路 | 持續 | 下載 URL 仍活躍（threat_feeds） |
 | **Phantom Stealer** | 竊密軟體 | 活躍 | C2 指標持續增長（ThreatFox） |
+| **KongTuke/ClickFix** | 社交工程惡意軟體投遞 | 活躍 | 受感染 WordPress 站點散布，2025-2026 快速增長 |
+| **Handala/Void Manticore Wiper** | 破壞性 Wiper | 活躍 | 伊朗 MOIS 關聯，hack-and-leak + 資料銷毀 |
+| **React-based Credential Stealer** | 釣魚/竊密 | 新觀察 | SANS ISC 報告，利用 React 應用程式竊取憑證 |
 
-**Qdrant 跨層關聯分析**：語意查詢「phishing social engineering credential theft DDoS botnet」回傳社交工程雲端服務攻擊、愛沙尼亞 DDoS 趨勢等結果，確認社交工程攻擊（特別是針對企業通訊平台 Teams、Signal、WhatsApp 的攻擊）和殭屍網路驅動的 DDoS 活動為本週並行的兩大威脅主軸。
+**Qdrant 跨層關聯分析**：語意查詢「ransomware malware trojan new variant 2026」回傳 5 筆結果（SalatStealer、加拿大勒索軟體展望 2025-2027），確認勒索軟體和竊密軟體家族持續演進。社交工程攻擊（特別是針對企業通訊平台 Teams、Signal、WhatsApp 的攻擊以及 React-based 釣魚）和殭屍網路驅動的 DDoS 活動為本週並行的兩大威脅主軸。
 
 ---
 
@@ -608,11 +674,32 @@ Kaspersky Securelist（2026-03-07）報告 2025 年 Q4 為歷史上最密集的�
 | 葡萄牙網路安全法規公眾諮詢 | CNCS PT | 03-10 | 國家網路安全法規徵求公眾意見 |
 | NIS2/CRA 實施進展 | 斯洛伐克 Kyber2026 | 03-07 | NIS2 與 CRA 在歐盟的實施討論 |
 
+### 數位主權與雲端信任
+
+芬蘭 NCSC-FI 將美國雲端服務信任問題納入每日資安新聞（2026-03-12），探討歐洲組織依賴美國雲端服務的風險。結合歐盟數位主權政策持續推進，雲端服務提供商的地緣政治風險正成為企業資安策略的新考量維度。
+
+### JPCERT/CC Rust 逆向工程研究
+
+JPCERT/CC（2026-03-12）發布 Rust 編譯二進位檔的逆向工程技術研究，反映越來越多惡意軟體（包括勒索軟體）採用 Rust 語言開發，傳統逆向工程工具和方法面臨新挑戰。此研究與 APT36 使用 Nim、Zig、Crystal 等冷門語言的趨勢一致，攻擊者正系統性地利用非主流語言規避安全分析。
+
+### Meta 大規模詐騙廣告清理
+
+Meta（2026-03-12）宣布清除數百萬筆詐騙廣告，反映社群平台上的詐騙廣告規模已達前所未有的程度。此行動與 NCSC-FI 同日報告的芬蘭大規模詐騙浪潮相互印證。
+
+### NCSC-FI 網路安全戰略管理指引
+
+NCSC-FI（2026-03-12）發布網路安全戰略管理指引，為組織提供將網路安全融入企業治理架構的實務建議。
+
+### CERT-FR 2025 年網路威脅全景報告
+
+CERT-FR（2026-03-11）發布 2025 年度報告（CERTFR-2026-CTI-002），核心發現為國家行為者與網路犯罪集團的界限持續模糊化，使歸因更加複雜。此報告與 Check Point 同週發布的伊朗 MOIS-犯罪關聯分析相互印證。
+
 ### 工具與資源
 
 - **YARA-X 1.14.0**（2026-03-07）：新版本發布，改進惡意軟體規則引擎
 - **Differentiating Targeted Intrusion vs Opportunistic**（2026-03-05）：區分針對性入侵與機會主義攻擊的實用指南
 - **Proactive Preparation Against Destructive Attacks**（2026-03-07）：Google Cloud Threat Intelligence 破壞性攻擊防禦指南
+- **CERT-AT lock-the-ghost PyPI 套件移除**（2026-03-10）：惡意 PyPI 套件針對 AI/ML 開發者
 
 ---
 
@@ -622,7 +709,7 @@ Kaspersky Securelist（2026-03-07）報告 2025 年 Q4 為歷史上最密集的�
 
 1. **來源範圍**：基於國際 CERT/安全機構公開資料與 abuse.ch 威脅情報，但不涵蓋所有威脅情資。主要依賴歐洲（NCSC-FI、CERT-FR、SK-CERT、CERT-UA、CERT.hr、CERT-SE、CERT-RO、CERT-LV）和北美（CISA、CCCS）CERT 的 RSS 饋送，對亞太、非洲、拉丁美洲地區的第一手覆蓋程度較低。
 
-2. **時效性**：資料可能存在數小時至數天的延遲。本報告反映截至 2026-03-11 的已公開資訊。CISA KEV 於 2026-03-05 新增的部分 CVE 技術細節仍待完整確認。
+2. **時效性**：資料可能存在數小時至數天的延遲。本報告反映截至 2026-03-13 的已公開資訊。
 
 3. **完整性**：未包含非公開威脅情報、暗網情資、付費情報服務等來源。
 
@@ -630,13 +717,13 @@ Kaspersky Securelist（2026-03-07）報告 2025 年 Q4 為歷史上最密集的�
 
 5. **翻譯風險**：部分非英文來源（芬蘭語、瑞典語、克羅埃西亞語、捷克語、斯洛伐克語、羅馬尼亞語、愛沙尼亞語、葡萄牙語）經 AI 翻譯，可能存在語義偏差。
 
-6. **未驗證聲明**：ShinyHunters 受害者名單為攻擊者自稱，已標註為中等信心水準。
+6. **未驗證聲明**：ShinyHunters 受害者名單為攻擊者自稱，已標註為中等信心水準。Verifone 資料外洩宣稱（伊朗駭客主義者）尚有爭議，已標註為低信心水準。
 
 7. **威脅情報歸因**：APT 歸因基於各安全廠商的評估（ESET、Cisco Talos、Check Point、Palo Alto Unit 42、Bitdefender 等），歸因結論可能隨後續調查而調整。CL-UNK-1068 的中國歸因為「高信心」；APT28/Sednit 歸因來自 CERT-UA 與 ESET 的聯合研究。
 
-8. **threat_feeds 統計**：本週新增 852 個檔案，惡意 URL 2,159 個為本週新增。部分 IoC 和惡意軟體樣本為歷史資料的持續追蹤。
+8. **threat_feeds 統計**：2026 年度累積約 46,000 筆。部分 IoC 和惡意軟體樣本為歷史資料的持續追蹤。
 
-9. **Qdrant 語意查詢**：向量搜尋結果基於語意相似度，可能包含語意相近但時間範圍不同的結果。本報告共執行 6 次語意查詢，所有結果已標註查詢內容和摘要。
+9. **Qdrant 語意查詢**：向量搜尋結果基於語意相似度，可能包含語意相近但時間範圍不同的結果。本報告共執行 9 次語意查詢（原有 6 次 + 更新 3 次），所有結果已標註查詢內容和摘要。
 
 10. **新興威脅**：信心水準評估基於多來源交叉驗證。標註「推測」的內容為分析師基於已知趨勢的推理，非經驗證的事實。
 
@@ -661,6 +748,7 @@ Kaspersky Securelist（2026-03-07）報告 2025 年 Q4 為歷史上最密集的�
 | [T1102](https://attack.mitre.org/techniques/T1102/){: .ttp-ref } | Web Service | 中 |
 | <a href="https://attack.mitre.org/techniques/T1498/" class="ttp-badge" target="_blank">T1498</a> | Network Denial of Service | 高（149+ 事件） |
 | <a href="https://attack.mitre.org/techniques/T1486/" class="ttp-badge" target="_blank">T1486</a> | Data Encrypted for Impact | 中 |
+| [T1485](https://attack.mitre.org/techniques/T1485/){: .ttp-ref } | Data Destruction | 低-中（Handala/Void Manticore Wiper） |
 | [T1562.001](https://attack.mitre.org/techniques/T1562/001/){: .ttp-ref } | Disable or Modify Tools | 低 |
 | [T1553.002](https://attack.mitre.org/techniques/T1553/002/){: .ttp-ref } | Code Signing | 低 |
 | [T1027](https://attack.mitre.org/techniques/T1027/){: .ttp-ref } | Obfuscated Files or Information | 低 |
@@ -672,4 +760,4 @@ Kaspersky Securelist（2026-03-07）報告 2025 年 Q4 為歷史上最密集的�
 
 ---
 
-> 本報告由資訊安全產業智慧分析系統自動產出，資料來源涵蓋 NCSC-FI、CERT-UA、CERT-FR、SK-CERT、CERT.hr、CERT-SE、CERT-RO、CERT-LV、CISA、CCCS、JPCERT/CC、SANS ISC、abuse.ch (MalwareBazaar/ThreatFox/URLhaus/Feodo Tracker) 等國際安全機構與開源情報饋送。Qdrant 語意查詢用於跨 Layer 關聯分析，共執行 6 次查詢。本週資料涵蓋 security_news_facts 91 筆、vulnerability_tracking 921 筆、exploit_intelligence 14 筆、threat_feeds 852 筆新增項目。
+> 本報告由資訊安全產業智慧分析系統自動產出，資料來源涵蓋 NCSC-FI、CERT-UA、CERT-FR、SK-CERT、CERT.hr、CERT-SE、CERT-RO、CERT-LV、CISA、CCCS、JPCERT/CC、SANS ISC、abuse.ch (MalwareBazaar/ThreatFox/URLhaus/Feodo Tracker) 等國際安全機構與開源情報饋送。Qdrant 語意查詢用於跨 Layer 關聯分析，共執行 9 次查詢。2026 年度資料累積涵蓋 security_news_facts 493+ 筆、vulnerability_tracking 21,772 筆、exploit_intelligence 2,406 筆、threat_feeds 約 46,000 筆。涵蓋期間更新至 2026-03-13，包含 Handala（Void Manticore）威脅分析、Operation Lightning 執法行動、CISA n8n KEV 更新、Viking Line 資料外洩、28 筆新增 Critical/High 漏洞等最新事件。

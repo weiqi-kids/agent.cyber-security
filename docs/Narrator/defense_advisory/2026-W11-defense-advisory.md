@@ -1,59 +1,64 @@
 ---
 layout: seo-report
-last_modified_at: 2026-03-12T10:00:00+08:00
+last_modified_at: 2026-03-13T10:00:00+08:00
 title: 2026 第 11 週防禦建議
-description: "2026-03-05 至 2026-03-11 資安防禦建議：BeyondTrust CVE-2026-1731 遭勒索軟體積極利用、SolarWinds Web Help Desk CVE-2025-26399 活躍利用（CISA KEV 截止 2026-03-12）、VMware Workspace ONE Access SSRF CVE-2021-22054 活躍利用、Cisco FMC/SCC 雙 CVSS 10.0 漏洞、Microsoft Teams 釣魚植入 A0Backdoor、Kadnap 殭屍網路感染 14,000 台 ASUS 路由器、NPM 大規模供應鏈感染、FortiCloud SSO 繞過利用收集 LDAP 憑證、伊朗駭客主義 DDoS 149 次攻擊 16 國、全球網路攻擊量歷史新高。"
+description: "2026-03-05 至 2026-03-13 資安防禦建議：BeyondTrust CVE-2026-1731 遭勒索軟體積極利用、n8n RCE 新增 CISA KEV、SolarWinds Web Help Desk CVE-2025-26399 活躍利用、VMware Workspace ONE Access SSRF CVE-2021-22054 活躍利用、Cisco FMC/SCC 雙 CVSS 10.0 漏洞、Handala/Void Manticore 伊朗破壞性攻擊升級鎖定美國 7 大科技巨頭、Operation Lightning 住宅代理殭屍網路拆除、Kadnap 殭屍網路感染 14,000 台 ASUS 路由器、Viking Line 供應鏈資料外洩、React 釣魚攻擊、Apple/Fortinet/GitLab/Chrome/Firefox/Cisco IOS XR/Erlang OTP/GLPI/Palo Alto/Splunk/Veeam/F5OS/HPE/Zoom 多產品漏洞群。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-defense-advisory.png
 author: 資安情報分析團隊
-date: 2026-03-12
+date: 2026-03-13
 ---
 
 # 防禦建議 — 2026 第 11 週
 
-> 涵蓋期間：2026-03-05 至 2026-03-11
+> 涵蓋期間：2026-03-05 至 2026-03-13
 > 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV、CISA KEV
-> 產出時間：2026-03-12
+> 產出時間：2026-03-13
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢以**勒索軟體利用遠端存取工具漏洞**、**多國 APT 同步活動**及**大規模供應鏈/平台型攻擊**為主軸。BeyondTrust 遠端存取工具遭勒索軟體集團積極利用，SolarWinds Web Help Desk CISA KEV 修補截止日迫在眉睫，同時伊朗駭客主義活動升級至 16 國規模，全球網路攻擊量達 2026 年 2 月歷史新高：
+本週威脅態勢以**勒索軟體利用遠端存取工具漏洞**、**伊朗破壞性攻擊升級**、**多國 APT 同步活動**及**大規模供應鏈/平台型攻擊**為主軸。BeyondTrust 遠端存取工具遭勒索軟體集團積極利用，n8n 工作流程自動化平台 RCE 漏洞新增至 CISA KEV，Handala/Void Manticore 宣布將美國 7 大科技巨頭列為「合法目標」，同時多家主要軟體供應商發布緊急安全更新：
 
 1. **CVE-2026-1731 BeyondTrust RS/PRA 命令注入（勒索軟體活躍利用）** -- 未經認證的遠端程式碼執行漏洞，已被勒索軟體集團積極利用於攻擊活動鏈中，列入 CISA KEV
-2. **CVE-2025-26399 SolarWinds Web Help Desk 反序列化 RCE（CISA KEV 截止 2026-03-12）** -- 活躍利用中，CISA 修補截止日為本報告發布當日，聯邦機構必須立即完成修補
-3. **CVE-2021-22054 VMware Workspace ONE Access SSRF（活躍利用）** -- 2021 年漏洞仍遭持續利用，列入 CISA KEV
-4. **CVE-2026-20079 / CVE-2026-20131 Cisco FMC/SCC（CVSS 10.0 x 2）** -- SQL Injection 導致 RCE，CERT-SE、CERT-RO、CERT-FR 同步警告
-5. **CISA KEV 新增**：2026-03-05 新增 5 個 + 2026-03-11 新增 1 個，含 Hikvision、Rockwell ICS、Apple 多產品、Qualcomm 晶片組
-6. **Kadnap 殭屍網路感染 14,000 台 ASUS 路由器** -- 使用 P2P Kademlia 協定建立去中心化 C2
-7. **Microsoft Teams 釣魚 → A0Backdoor** -- 針對金融及醫療產業的精準攻擊
-8. **俄羅斯 Signal/WhatsApp 大規模帳號劫持** -- 荷蘭 AIVD/MIVD 警告針對全球政府官員、記者、軍事人員
-9. **ShinyHunters Salesforce 資料竊取** -- 宣稱竊取約 100 家企業資料
-10. **FortiCloud SSO 繞過利用** -- 攻擊者收集 LDAP 連線字串，即使修補後仍可能維持持久性存取
-11. **NPM 大規模供應鏈感染** -- 持續中的軟體生態系統威脅
-12. **伊朗駭客主義 DDoS 升級** -- 149 次攻擊、110 個組織、16 國受影響
-13. **全球網路攻擊量 2026 年 2 月創歷史新高** -- NCSC-FI 確認
+2. **n8n RCE（CISA KEV 新增）** -- n8n 工作流程自動化平台遠端程式碼執行漏洞，已被實際利用，CISA 要求聯邦機構修補
+3. **CVE-2025-26399 SolarWinds Web Help Desk 反序列化 RCE（CISA KEV 截止已過 2026-03-12）** -- 活躍利用中，CISA 修補截止日已過，尚未修補的組織應立即行動
+4. **CVE-2021-22054 VMware Workspace ONE Access SSRF（活躍利用）** -- 2021 年漏洞仍遭持續利用，列入 CISA KEV
+5. **CVE-2026-20079 / CVE-2026-20131 Cisco FMC/SCC（CVSS 10.0 x 2）** -- SQL Injection 導致 RCE，CERT-SE、CERT-RO、CERT-FR 同步警告
+6. **Handala/Void Manticore 伊朗破壞性攻擊升級** -- 宣布 7 家美國科技巨頭為「合法目標」，建議加強破壞性攻擊偵測（MITRE T1485）
+7. **CISA KEV 新增**：2026-03-05 新增 5 個 + 2026-03-11 新增 1 個 + n8n RCE，含 Hikvision、Rockwell ICS、Apple 多產品、Qualcomm 晶片組
+8. **Operation Lightning / SocksEscort 住宅代理殭屍網路拆除** -- 涉及 ASUS 路由器，建議檢查路由器韌體和配置
+9. **Kadnap 殭屍網路感染 14,000 台 ASUS 路由器** -- 使用 P2P Kademlia 協定建立去中心化 C2
+10. **多產品漏洞群（3/12-3/13 新增）** -- Apple、Fortinet、GitLab、Chrome、Firefox、Cisco IOS XR、Erlang/OTP、GLPI、Palo Alto Networks、Splunk、Veeam、F5OS、HPE、Zoom 均發布安全更新
+11. **Viking Line 供應商資料外洩** -- 供應鏈風險，第三方供應商安全管理再受考驗
+12. **React 釣魚攻擊** -- 使用 React 應用進行憑證竊取，繞過傳統偵測
+13. **FortiCloud SSO 繞過利用** -- 攻擊者收集 LDAP 連線字串，即使修補後仍可能維持持久性存取
+14. **NPM 大規模供應鏈感染** -- 持續中的軟體生態系統威脅
+15. **全球網路攻擊量 2026 年 2 月創歷史新高** -- NCSC-FI 確認
 
 **本週關鍵行動**：
 - **立即**：套用 BeyondTrust 緩解措施或停止使用（CVE-2026-1731，勒索軟體活躍利用）
-- **立即（截止 2026-03-12）**：升級 SolarWinds Web Help Desk 至 12.8.7 Hotfix 1+（CVE-2025-26399）
+- **立即**：修補 n8n 工作流程自動化平台 RCE 漏洞（CISA KEV 新增，活躍利用）
+- **立即（截止已過）**：升級 SolarWinds Web Help Desk 至 12.8.7 Hotfix 1+（CVE-2025-26399，CISA KEV 截止 2026-03-12 已過）
 - **立即**：修補 VMware Workspace ONE Access（CVE-2021-22054）
 - **立即**：套用 Cisco FMC/SCC 修補（CVE-2026-20079/CVE-2026-20131，CVSS 10.0）
-- **立即**：推送 Android 2026 年 3 月安全更新（含 Qualcomm 晶片組修補）
-- **立即**：更新所有 Apple 裝置（CISA KEV 新增 3 個活躍利用漏洞）
-- **緊急**：檢查 ASUS 路由器韌體版本，防範 Kadnap 殭屍網路
-- **緊急**：審查 Microsoft Teams 外部存取政策，防範 A0Backdoor 釣魚
-- **緊急**：發布 Signal/WhatsApp 帳號安全警告，啟用註冊鎖定
+- **立即**：更新所有 Apple 裝置（CISA KEV + AV26-233 多漏洞公告）
+- **立即**：套用 Fortinet 產品安全更新（多漏洞）
+- **立即**：更新 Google Chrome 和 Mozilla Firefox 至最新版本（多漏洞）
+- **緊急**：套用 GitLab、Cisco IOS XR、Erlang/OTP、GLPI、Palo Alto Networks、Splunk、Veeam、F5OS、HPE 安全更新
+- **緊急**：檢查 ASUS 路由器韌體版本（Kadnap 殭屍網路 + Operation Lightning/SocksEscort）
+- **緊急**：部署 Handala/Void Manticore 破壞性攻擊偵測規則（MITRE T1485 資料銷毀偵測）
+- **緊急**：審查 Microsoft Teams 外部存取政策，防範 A0Backdoor 釣魚及 React 釣魚攻擊
 - **緊急**：審查 FortiCloud/FortiGate 配置，輪換 LDAP 憑證
-- **緊急**：審計 Salesforce 帳號配置，停用不必要的 Guest 帳號
+- **緊急**：審查供應商安全管理（Viking Line 供應鏈外洩事件）
 - **優先**：封鎖 Feodo Tracker 已知 C2 IP
 - **優先**：部署 DDoS 緩解措施（伊朗駭客主義升級）
-- **優先**：審計瀏覽器擴充功能，移除惡意 AI 助手擴充
 - **優先**：審計 NPM 專案相依性及 GitHub Actions 流水線完整性
+- **優先**：更新 Zoom 至最新版本（AV26-231 多漏洞）
 
 ---
 
@@ -130,11 +135,32 @@ date: 2026-03-12
 4. 盤點所有 VMware Workspace ONE Access 部署，確認版本狀態
 5. 參閱 [NVD -- CVE-2021-22054](https://nvd.nist.gov/vuln/detail/CVE-2021-22054)
 
+#### 1.4 n8n 工作流程自動化平台 RCE（CISA KEV 新增）
+
+| 項目 | 內容 |
+|------|------|
+| **影響產品** | n8n 工作流程自動化平台 |
+| **嚴重程度** | Critical |
+| **利用狀態** | **活躍利用**（CISA KEV 新增） |
+| **修補狀態** | 修補可用 |
+
+**漏洞描述**：n8n 工作流程自動化平台存在遠端程式碼執行漏洞，已被確認遭實際利用。n8n 廣泛用於 IT 自動化和 DevOps 流程，攻擊者入侵後可取得對自動化工作流程的完整控制，可能影響連接的所有第三方服務和 API。CISA 已要求聯邦機構優先修補。
+
+**修補方式**：
+1. **立即**升級 n8n 至最新修補版本 -- 參閱 [n8n 官方安全公告](https://n8n.io/)
+2. 限制 n8n 管理介面的網路存取，僅允許受信任的管理網段
+3. 審查 n8n 工作流程中儲存的認證憑證和 API 金鑰
+4. 檢查 n8n 執行日誌，搜尋異常的工作流程執行或未授權存取
+5. 盤點 n8n 連接的所有第三方服務，評估影響範圍
+6. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+
+> **自動化平台風險**：n8n 等工作流程自動化平台通常連接多個內部和外部服務，儲存大量 API 金鑰和認證憑證。一旦遭入侵，攻擊者可利用這些憑證橫向移動至所有連接的系統。Qdrant 語意查詢「patch priority critical vulnerability March 2026」確認 2026 年 3 月持續出現多個 Critical 漏洞集中爆發趨勢。
+
 ---
 
 ### P1 -- 極緊急（CVSS 10.0 / 多國 CERT 同步警告 / CISA KEV 新增）
 
-#### 1.4 CVE-2026-20079 / CVE-2026-20131 -- Cisco Secure Firewall Management Center (FMC) 與 Security Cloud Control (SCC)
+#### 1.5 CVE-2026-20079 / CVE-2026-20131 -- Cisco Secure Firewall Management Center (FMC) 與 Security Cloud Control (SCC)
 
 | 項目 | 內容 |
 |------|------|
@@ -157,22 +183,24 @@ date: 2026-03-12
 
 > **重要**：FMC/SCC 為防火牆管理核心元件，若遭入侵可能導致攻擊者修改防火牆規則、停用安全策略、存取所有受管設備配置。建議將此漏洞視為**基礎設施保護最高優先級**。
 
-#### 1.5 Cisco 多產品漏洞群
+#### 1.6 Cisco 多產品漏洞群（含 Cisco IOS XR 新增）
 
 | CVE | 產品 | 嚴重程度 | 利用狀態 |
 |-----|------|----------|----------|
 | CVE-2026-20045 | Cisco 網路產品 | High | PoC 公開 |
 | CVE-2026-20127 | Cisco SD-WAN（延續上週 CISA ED 26-03） | High | 活躍利用中 |
 | CVE-2026-20700 | Cisco 網路產品 | High | PoC 公開 |
+| 多個 | **Cisco IOS XR（3/12 新增）** | High | 含特權提升和 DoS |
 
 **修補方式**：
 1. 參閱 [Cisco PSIRT](https://www.cisco.com/c/en/us/products/security/service-listing.html) 官方安全公告，套用對應修補
-2. 限制管理介面暴露面
-3. 持續追蹤 Cisco SD-WAN 全球利用事件（延續上週 CISA 緊急指令 ED 26-03）
+2. **新增**：套用 Cisco IOS XR 安全更新，修補特權提升和 DoS 漏洞
+3. 限制管理介面暴露面
+4. 持續追蹤 Cisco SD-WAN 全球利用事件（延續上週 CISA 緊急指令 ED 26-03）
 
-#### 1.6 CISA 2026-03-05 新增 5 個 KEV + 2026-03-11 新增 1 個
+#### 1.7 CISA KEV 持續新增（2026-03-05 至 2026-03-13）
 
-本週 CISA 共新增 6 個已知遭積極利用漏洞至 KEV 目錄：
+本週 CISA 持續新增已知遭積極利用漏洞至 KEV 目錄，含 n8n RCE（見 1.4）：
 
 **2026-03-05 新增（5 個）**：
 
@@ -197,7 +225,7 @@ date: 2026-03-12
 
 > **Apple 裝置統一行動建議**：本週 CISA 新增 3 個 Apple 漏洞至 KEV，均已有修補可用。建議統一盤點組織內所有 Apple 裝置，確保全部更新至最新系統版本。透過 MDM 強制推送更新為最有效的方式。
 
-#### 1.7 CVE-2026-21385 -- Qualcomm 多晶片組記憶體損毀
+#### 1.8 CVE-2026-21385 -- Qualcomm 多晶片組記憶體損毀
 
 | 項目 | 內容 |
 |------|------|
@@ -214,7 +242,7 @@ date: 2026-03-12
 2. 透過 MDM 強制推送安全更新至所有受管理的 Android 裝置
 3. 參閱 [CERT-RO 警告](https://dnsc.ro/citeste/alerta-remedieri-disponibile-pentru-multiple-vulnerabilitati-de-securitate-android)
 
-#### 1.8 CVE-2026-22719 -- Broadcom VMware Aria Operations 命令注入
+#### 1.9 CVE-2026-22719 -- Broadcom VMware Aria Operations 命令注入
 
 | 項目 | 內容 |
 |------|------|
@@ -234,7 +262,7 @@ date: 2026-03-12
 
 ### P2 -- 緊急（CVSS Critical / 公開 PoC / 活躍利用）
 
-#### 1.9 FortiCloud SSO 繞過（CVE-2025-59718/59597）-- 持續追蹤
+#### 1.10 FortiCloud SSO 繞過（CVE-2025-59718/59597）-- 持續追蹤 + Fortinet 多產品新漏洞
 
 | 項目 | 內容 |
 |------|------|
@@ -246,7 +274,7 @@ date: 2026-03-12
 **漏洞描述**：攻擊者利用 FortiCloud SSO 繞過漏洞入侵 FortiGate 設備，收集 LDAP 連線字串，可能取得 Active Directory 認證資訊。本週新增研究揭示攻擊者利用持久性讀取存取機制，即使設備已修補仍可維持存取。多個歐洲 CERT（CERT.at、CERT-SE、NSM-NCSC）已發布警告。JPCERT 報告 React2Shell 多威脅行為者活動亦涉及 Fortinet 設備利用。
 
 **修補方式**：
-1. **立即**套用 Fortinet 發布的所有安全更新
+1. **立即**套用 Fortinet 發布的所有安全更新（含 3/12 新增 Fortinet 多產品漏洞修補）
 2. 審查 FortiGate 設備是否存在未授權的管理者帳號或設定變更
 3. 檢查 LDAP 連線設定，輪換所有可能遭竊的 LDAP 認證憑證
 4. 審查 FortiGate 日誌中 `/remote/saml/login` 的異常請求
@@ -255,7 +283,7 @@ date: 2026-03-12
 
 > **持久性威脅**：即使套用修補，攻擊者可能已建立持久性存取。建議執行完整的 FortiGate 設備鑑識，包括檢查設定備份、管理者帳號、VPN 配置等。
 
-#### 1.10 CVE-2026-29000 -- pac4j JWT 認證繞過（CVSS 10.0）
+#### 1.11 CVE-2026-29000 -- pac4j JWT 認證繞過（CVSS 10.0）
 
 | 項目 | 內容 |
 |------|------|
@@ -271,7 +299,7 @@ date: 2026-03-12
 3. 監控認證日誌中的異常 JWT 認證嘗試
 4. 參閱 [CERT.hr 安全公告](https://www.cert.hr/upozorenje-kriticna-ranjivost-jwtauthenticatora-u-pac4j-modulu-cve-2026-29000/)
 
-#### 1.11 FortiClient EMS SQL 注入
+#### 1.12 FortiClient EMS SQL 注入
 
 | 項目 | 內容 |
 |------|------|
@@ -283,7 +311,7 @@ date: 2026-03-12
 1. 參閱 [Fortinet PSIRT](https://www.fortiguard.com/psirt) 套用修補
 2. 限制 FortiClient EMS 管理介面暴露
 
-#### 1.12 Zoom Workplace 嚴重漏洞
+#### 1.13 Zoom Workplace 多漏洞（AV26-231）
 
 | 項目 | 內容 |
 |------|------|
@@ -295,22 +323,23 @@ date: 2026-03-12
 1. 更新 Zoom Workplace 至最新版本
 2. 參閱 [Zoom Security Bulletin](https://explore.zoom.us/en/trust/security/security-bulletin/)
 
-#### 1.13 HPE Aruba Networking AOS-CX -- 多重漏洞
+#### 1.14 HPE 多產品漏洞（AV26-234 + Aruba AOS-CX）
 
 | 項目 | 內容 |
 |------|------|
-| **影響產品** | HPE Aruba Networking AOS-CX |
+| **影響產品** | HPE Aruba Networking AOS-CX、HPE 多產品（AV26-234 新增） |
 | **嚴重程度** | High（含多個漏洞） |
 
 **修補方式**：
 1. 參閱 [CERT-FR 公告](https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0235/) 取得受影響版本與修補資訊
 2. 套用 HPE Aruba 官方提供的韌體更新
+3. **新增（AV26-234）**：參閱 HPE 官方安全公告，套用 HPE 多產品安全更新
 
 ---
 
 ### P3 -- 重要（ICS/OT 漏洞群 / 廣泛影響）
 
-#### 1.14 ICS/OT 漏洞群 -- Delta Electronics、Mitsubishi Electric、Siemens、Schneider Electric、Moxa
+#### 1.15 ICS/OT 漏洞群 -- Delta Electronics、Mitsubishi Electric、Siemens、Schneider Electric、Moxa
 
 本週 CISA 及各國 CERT 發布多項 ICS 安全公告：
 
@@ -334,15 +363,26 @@ date: 2026-03-12
 
 > **Qdrant 跨層關聯**：語意查詢「ICS OT industrial control system vulnerability」確認 ICS/OT 環境在 2026 年 1-3 月持續面臨高風險，Rockwell 產品有 5+ 個安全公告（CompactLogix、ArmorStart、ControlLogix、FactoryTalk），Hitachi Energy RTU500 本週新增漏洞。
 
-#### 1.15 其他高優先修補項目
+#### 1.16 其他高優先修補項目（含 3/12-3/13 新增）
 
 | 產品 | 嚴重程度 | 修補參考 |
 |------|----------|----------|
 | Microsoft 2026 年 3 月 Patch Tuesday | Critical/High | [Microsoft Security Update Guide](https://msrc.microsoft.com/update-guide/) |
+| **Apple 多產品（AV26-233，3/12 新增）** | Critical/High | [Apple Security Releases](https://support.apple.com/en-us/100100) |
+| **Fortinet 多產品（3/12 新增）** | Critical/High | [Fortinet PSIRT](https://www.fortiguard.com/psirt) |
+| **GitLab 多漏洞（3/12 新增）** | Critical/High | [GitLab Security Releases](https://about.gitlab.com/releases/categories/releases/) |
+| **Google Chrome 多漏洞（3/12 新增）** | High | [Chrome Releases](https://chromereleases.googleblog.com/) |
+| **Mozilla Firefox 多漏洞（3/12 新增）** | High | [Mozilla Security Advisories](https://www.mozilla.org/en-US/security/advisories/) |
+| **Erlang/OTP 多漏洞（3/12 新增）** | High | [Erlang/OTP Security](https://www.erlang.org/) |
+| **GLPI RCE -- IT 資產管理平台（3/12 新增）** | Critical | [GLPI Security Advisories](https://glpi-project.org/security/) |
+| **Palo Alto Networks 多漏洞（3/12 新增）** | High | [Palo Alto Security Advisories](https://security.paloaltonetworks.com/) |
+| **Splunk 多漏洞（3/12 新增）** | High | [Splunk Security Advisories](https://advisory.splunk.com/) |
+| **Veeam Backup & Replication（3/12 新增）** | High | [Veeam Security Advisories](https://www.veeam.com/kb4649) |
+| **F5OS 漏洞（3/12 新增）** | High | [F5 Security Advisories](https://my.f5.com/manage/s/article/) |
+| **Zombie ZIP CVE-2026-0866（3/13 SANS ISC 分析）** | Medium | [SANS ISC](https://isc.sans.edu/) |
 | SAP 多產品 | High | [SAP Security Notes](https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html) |
 | Apache ZooKeeper | High | [Apache ZooKeeper 安全公告](https://zookeeper.apache.org/security.html) |
 | IBM 多產品 | High | [IBM Security Bulletins](https://www.ibm.com/support/pages/bulletin/) |
-| Google Chrome 多重漏洞 | Medium | [CERT-FR 公告](https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0239/) |
 
 ---
 
@@ -366,6 +406,9 @@ date: 2026-03-12
 | **加強 SD-WAN 設備監控** -- 持續追蹤 Cisco SD-WAN 全球利用事件（延續 CISA ED 26-03） | CVE-2026-20127 持續利用 | 持續 |
 | **監控 IP 攝影機流量** -- 對所有 IP 攝影機的異常入站/出站連線建立警報規則 | 伊朗 IP 攝影機攻擊 + CVE-2017-7921 (Hikvision KEV) | 高 |
 | **ICS/OT 網路分段強化** -- 確認 Rockwell、Hitachi Energy、Delta Electronics、Mitsubishi Electric 設備位於隔離 OT 網段 | ICS 漏洞叢 + CVE-2021-22681 (Rockwell KEV) | 高 |
+| **隔離 n8n 自動化平台** -- 限制 n8n 管理介面存取，審查工作流程中的認證憑證 | n8n RCE（CISA KEV） | 極緊急 |
+| **部署 Handala/Void Manticore 破壞性攻擊偵測規則** -- 監控 MITRE T1485（資料銷毀）行為、磁碟覆寫操作、MBR/VBR 修改 | Handala/Void Manticore 伊朗破壞性攻擊升級 | 緊急 |
+| **檢查路由器韌體（Operation Lightning）** -- 驗證 ASUS 及其他消費級路由器是否遭 SocksEscort 住宅代理殭屍網路感染 | Operation Lightning 殭屍網路拆除 | 緊急 |
 
 #### 通用建議
 
@@ -389,6 +432,8 @@ date: 2026-03-12
 | **監控 Deno runtime 異常執行** -- Seedworm Dindoor 後門使用 Deno runtime 規避偵測 | Seedworm/MuddyWater 攻擊 | 高 |
 | **偵測異常 Microsoft Teams 連線** -- 監控 Teams 中來自外部組織的可疑訊息和檔案分享 | Microsoft Teams 釣魚 → A0Backdoor | 緊急 |
 | **驗證程式碼簽署證書** -- 在 EDR 中啟用對不明簽署者的可執行檔警報 | 資訊竊取軟體使用合法簽署 | 高 |
+| **偵測 React 釣魚應用** -- 加強對使用 React 框架建立的憑證竊取頁面偵測，監控異常 JavaScript bundle 載入行為 | React 應用憑證竊取攻擊 | 高 |
+| **更新瀏覽器** -- 立即更新 Chrome 和 Firefox 至最新版本，修補多個安全漏洞 | Chrome/Firefox 多漏洞（3/12 新增） | 立即 |
 
 #### 通用建議
 
@@ -432,7 +477,9 @@ date: 2026-03-12
 | **NPM 相依性鎖定檔案審查** -- 驗證所有 Node.js 專案的 `package-lock.json` / `yarn.lock` 完整性 | NPM 大規模供應鏈感染 | 緊急 |
 | **GitHub Actions 流水線完整性** -- 審查 CI/CD pipeline，釘選 Action 版本至特定 commit hash | GitHub 惡意倉庫 + 供應鏈攻擊 | 高 |
 | **限制 LLM/AI 工具的敏感資料輸入** -- 制定 AI 工具使用政策，禁止在 LLM 中輸入機密程式碼、認證憑證、策略文件 | 惡意 AI 助手擴充功能竊取 LLM 對話 | 高 |
-| **審計第三方供應商存取權限** -- Ericsson 事件顯示第三方服務供應商為重要攻擊面 | Ericsson 資料外洩 | 優先 |
+| **審計第三方供應商存取權限** -- Ericsson 和 Viking Line 事件均顯示第三方服務供應商為重要攻擊面 | Ericsson 資料外洩 + Viking Line 供應商資料外洩 | 緊急 |
+| **審查 IT 資產管理平台安全** -- GLPI RCE 漏洞凸顯 IT 資產管理平台風險，確認 GLPI 已更新至修補版本 | GLPI RCE（3/12 新增） | 緊急 |
+| **審查備份系統安全** -- Veeam Backup & Replication 新漏洞增加備份系統被攻擊風險 | Veeam 漏洞（3/12 新增） | 緊急 |
 
 #### 通用建議
 
@@ -605,6 +652,46 @@ date: 2026-03-12
 5. 對管理員帳號強制啟用 MFA
 6. 啟用 Salesforce 登入歷史監控
 
+### 3.11 Handala/Void Manticore 破壞性攻擊升級
+
+**有效期限**：持續執行，直到伊朗-美國緊張局勢緩和 | **重新評估時間**：每週評估（至少至 2026-04-15）
+
+**問題**：Handala/Void Manticore（伊朗關聯破壞性攻擊組織）宣布將 7 家美國科技巨頭列為「合法目標」，標誌著從傳統 DDoS/資料竊取升級至破壞性 wiper 攻擊。此組織過去曾對以色列目標部署 wiper 惡意軟體，現擴大攻擊範圍至美國科技產業。Qdrant 語意查詢「defense mitigation remediation strategy」關聯到 Google Cloud 2026 年 3 月發布的「Proactive Preparation and Hardening Against Destructive Attacks: 2026 Edition」指導文件。
+
+**暫時緩解措施**：
+1. **部署 MITRE T1485（資料銷毀）偵測規則** -- 監控異常磁碟覆寫操作、MBR/VBR 修改、大量檔案刪除
+2. **加強離線備份策略** -- 確保關鍵系統有可靠的離線備份，備份系統與生產環境實體隔離
+3. **部署防 wiper 端點保護** -- 在 EDR 中啟用對磁碟直接存取（raw disk access）的偵測和阻擋
+4. **審查事件應變計畫** -- 確認災難復原程序涵蓋 wiper 攻擊情境，包括完整系統重建能力
+5. **監控 Void Manticore IOC** -- 關注安全廠商發布的最新 IOC 和 YARA 規則
+6. 參閱 [Google Cloud -- Proactive Preparation and Hardening Against Destructive Attacks](https://cloud.google.com/blog/topics/threat-intelligence/preparation-hardening-destructive-attacks/)
+
+### 3.12 供應鏈安全強化（Viking Line 事件）
+
+**有效期限**：至完成供應商安全審查 | **重新評估日期**：2026-03-27
+
+**問題**：Viking Line 供應商資料外洩事件再次凸顯第三方供應商安全管理的重要性。結合本週 Ericsson 第三方供應商外洩和 ShinyHunters Salesforce 事件，供應鏈攻擊面持續擴大。Qdrant 語意查詢「supply chain third party breach」確認供應鏈外洩為 2023-2026 年持續升溫的威脅，歷史關聯包括 2023 年工業系統供應商外洩、3CX 供應鏈攻擊、dependency confusion 攻擊等。
+
+**暫時緩解措施**：
+1. **審查所有第三方供應商的資安合約條款** -- 確認資料保護義務、事件通報時限、審計權
+2. **盤點供應商存取權限** -- 對所有第三方供應商持有的存取權限進行最小化審查
+3. **要求供應商提供安全認證** -- SOC 2 Type II、ISO 27001 或同等認證
+4. **建立供應商事件通報機制** -- 確保供應商有義務在發現資安事件後及時通報
+5. **監控供應商網路連線** -- 對供應商 VPN 和 API 連線建立異常行為偵測
+
+### 3.13 n8n 自動化平台安全強化
+
+**有效期限**：至完成修補和憑證輪換 | **重新評估日期**：2026-03-20
+
+**問題**：n8n 工作流程自動化平台 RCE 漏洞已被實際利用並列入 CISA KEV。自動化平台通常儲存大量 API 金鑰和認證憑證，攻擊者可利用這些憑證存取所有連接的服務。
+
+**暫時緩解措施**：
+1. **立即升級 n8n** 至最新修補版本
+2. 若無法立即升級，**暫時停用 n8n 的外部存取**
+3. **輪換所有儲存在 n8n 中的認證憑證和 API 金鑰**
+4. 審查 n8n 工作流程執行日誌，搜尋異常執行
+5. 隔離 n8n 至專用管理網段
+
 ---
 
 ## 4. 注意事項
@@ -634,6 +721,10 @@ date: 2026-03-12
 | Apple 裝置更新（3 個 KEV） | MDM profile 需重新驗證 | 1. 測試裝置群組先更新 2. 驗證 MDM 和企業 App 3. 全面推送 |
 | pac4j-jwt 升級（CVE-2026-29000） | 認證邏輯可能需調整 | 1. 開發環境完整測試 JWT 流程 2. 驗證既有 token 相容性 3. 確認無認證中斷後部署 |
 | ICS/OT 修補（Rockwell、Hitachi Energy、Delta、Mitsubishi） | **高風險 -- 可能影響生產系統** | 1. **必須**在隔離測試環境完整驗證 2. 確認備援系統可用 3. 停機維護窗口 4. 回退方案就緒 |
+| n8n 自動化平台升級 | 工作流程暫時中斷、需重新驗證憑證 | 1. 備份 n8n 設定和工作流程 2. 測試環境驗證升級 3. 確認所有工作流程正常運作 4. 輪換儲存的認證憑證 |
+| GitLab 安全更新（3/12 新增） | CI/CD 管線可能需要重新觸發 | 1. 非尖峰時段執行 2. 確認 runner 相容性 3. 驗證管線執行正常 |
+| Veeam Backup & Replication 更新（3/12 新增） | **高風險 -- 備份排程可能中斷** | 1. 確認近期備份完整 2. 測試環境先行驗證 3. 維護窗口執行 4. 驗證備份還原功能 |
+| GLPI 更新（3/12 新增） | IT 資產管理服務暫時中斷 | 1. 備份資料庫 2. 確認自訂外掛相容性 3. 驗證資產查詢功能 |
 
 ### 4.3 指標與偵測資源
 
@@ -653,6 +744,9 @@ date: 2026-03-12
 | abuse.ch MalwareBazaar | Mozi、info stealer IOC | [MalwareBazaar](https://bazaar.abuse.ch/) |
 | JPCERT React2Shell 報告 | 多威脅行為者 TTPs | [JPCERT/CC](https://www.jpcert.or.jp/) |
 | AIVD/MIVD 俄羅斯通訊劫持警告 | Signal/WhatsApp 帳號安全 | [報導](https://www.theregister.com/2026/03/09/dutch_spies_say_russian_cybercrims/) |
+| Google Cloud 破壞性攻擊防禦指南 | Handala/Void Manticore wiper 防禦 | [Google Cloud](https://cloud.google.com/blog/topics/threat-intelligence/preparation-hardening-destructive-attacks/) |
+| n8n 官方安全公告 | n8n RCE 修補指引 | [n8n](https://n8n.io/) |
+| SANS ISC Zombie ZIP 分析 | CVE-2026-0866 技術細節 | [SANS ISC](https://isc.sans.edu/) |
 
 ### 4.4 全球威脅態勢升級提醒
 
@@ -662,7 +756,7 @@ date: 2026-03-12
 2. **Google 報告企業零日利用 2025 年達歷史新高** -- 邊緣裝置和安全設備持續為國家級 APT 的主要目標
 3. **拉丁美洲網路攻擊率為美國的 2 倍** -- 在拉美有業務的組織需特別加強防護
 4. **AI 被武器化** -- 威脅行為者正利用 AI 提升攻擊效率，包括社交工程、惡意軟體生成、偵察自動化
-5. **三大國家級 APT 同步活動** -- APT28（俄羅斯）、Camaro Dragon（中國）、Seedworm（伊朗）同時啟動攻擊行動
+5. **四大國家級/準國家級威脅行為者同步活動** -- APT28（俄羅斯）、Camaro Dragon（中國）、Seedworm（伊朗）、Handala/Void Manticore（伊朗，破壞性攻擊）同時啟動攻擊行動
 
 **建議**：
 - 審查事件應變計畫的完整性和時效性
@@ -683,13 +777,14 @@ date: 2026-03-12
 
 ### 4.6 APT 活動態勢與防禦優先級
 
-本週觀察到三大國家級威脅行為者同步活動，建議依組織屬性調整防禦優先級：
+本週觀察到四大國家級/準國家級威脅行為者同步活動，建議依組織屬性調整防禦優先級：
 
 | 威脅行為者 | 國家歸屬 | 本週活動 | 高風險目標產業 |
 |-----------|----------|----------|-------------|
 | Sednit / APT28 | 俄羅斯 | BeardShell + Covenant 攻擊烏克蘭軍方；Signal/WhatsApp 帳號劫持 | 政府、軍事、媒體 |
 | Camaro Dragon | 中國 | PlugX + Cobalt Strike 攻擊卡達，24 小時內利用中東衝突升級 | 政府、戰略產業 |
 | Seedworm / MuddyWater | 伊朗 | Dindoor 後門入侵美國關鍵基礎設施；149 次 DDoS 攻擊 16 國 | 金融、航空、軟體 |
+| **Handala / Void Manticore** | **伊朗** | **破壞性 wiper 攻擊升級；宣布 7 家美國科技巨頭為「合法目標」** | **科技、IT 基礎設施** |
 
 ### 4.7 供應鏈安全持續提醒
 
@@ -702,15 +797,21 @@ date: 2026-03-12
 | **瀏覽器擴充功能** | 惡意 AI 助手擴充功能 | 20,000+ 企業租戶 |
 | **社交工程** | 假求職申請 → EDR-Killer + 資料竊取 | 定向攻擊 |
 | **雲端平台** | ShinyHunters 利用 Salesforce Guest 帳號 | 100+ 企業 |
+| **第三方供應商** | Viking Line 供應商資料外洩 + Ericsson 服務供應商入侵 | 供應鏈上下游企業 |
 | **即時通訊** | 俄羅斯 Signal/WhatsApp 帳號劫持 | 全球政府官員 |
+| **自動化平台** | n8n RCE（CISA KEV） | 使用 n8n 的 DevOps 團隊 |
 
 ### 4.8 本週威脅情報數據
 
-本週新增威脅指標統計：
+本週新增威脅指標統計（更新至 2026-03-13）：
 
 | 類型 | 數量 |
 |------|------|
-| 新惡意 URL（URLhaus） | 2,159 |
+| W11 Critical/High 漏洞 | **73 筆**（3/12-3/13 新增 28 筆） |
+| 累計 Critical/High | 8,246 |
+| 活躍利用 | 59 筆 |
+| PoC 可用 | 2,347 筆 |
+| 新惡意 URL（URLhaus） | 2,159+ |
 | 活躍 Mozi 殭屍網路下載 URL | 持續活躍 |
 | Info stealer C2 伺服器 | 多個 |
 | Feodo Tracker C2 指標 | 持續更新 |
@@ -724,21 +825,28 @@ date: 2026-03-12
 | 時間框架 | 行動項目 | 對應威脅 |
 |----------|----------|----------|
 | **立即（24 小時內）** | 套用 BeyondTrust 緩解措施或停止使用 | CVE-2026-1731（勒索軟體） |
-| **立即（今日截止）** | 升級 SolarWinds Web Help Desk 至 12.8.7 Hotfix 1+ | CVE-2025-26399（CISA KEV 截止 2026-03-12） |
+| **立即（24 小時內）** | 修補 n8n 工作流程自動化平台 | n8n RCE（CISA KEV 新增） |
+| **立即（截止已過）** | 升級 SolarWinds Web Help Desk 至 12.8.7 Hotfix 1+ | CVE-2025-26399（CISA KEV 截止 2026-03-12 已過） |
 | **立即（24 小時內）** | 修補 VMware Workspace ONE Access | CVE-2021-22054 |
 | **立即（24 小時內）** | 套用 Cisco FMC/SCC 修補 | CVE-2026-20079/20131（CVSS 10.0） |
+| **立即（24 小時內）** | 更新所有 Apple 裝置 | CISA KEV + AV26-233 |
+| **立即（24 小時內）** | 套用 Fortinet 多產品安全更新 | Fortinet 多漏洞（3/12 新增） |
+| **立即（24 小時內）** | 更新 Chrome 和 Firefox | 多漏洞（3/12 新增） |
 | **立即（24 小時內）** | 封鎖 Feodo Tracker C2 IP | 勒索軟體/C2 基礎設施 |
-| **立即（24 小時內）** | 發布 Signal/WhatsApp 帳號安全警告 | 俄羅斯帳號劫持 |
 | **立即（24 小時內）** | 推送 Android 2026-03 安全更新 | CVE-2026-21385 |
-| **立即（24 小時內）** | 更新所有 Apple 裝置 | CVE-2021-30952, CVE-2023-41974, CVE-2023-43000 |
-| **緊急（72 小時內）** | 限制 Microsoft Teams 外部存取 | Teams 釣魚 → A0Backdoor |
+| **緊急（72 小時內）** | 部署 Handala/Void Manticore 破壞性攻擊偵測規則 | 伊朗 wiper 攻擊升級（MITRE T1485） |
+| **緊急（72 小時內）** | 套用 GitLab、Cisco IOS XR、Erlang/OTP、GLPI、Palo Alto、Splunk、Veeam、F5OS 安全更新 | 多產品漏洞群（3/12-3/13 新增） |
+| **緊急（72 小時內）** | 限制 Microsoft Teams 外部存取 | Teams 釣魚 + React 釣魚攻擊 |
 | **緊急（72 小時內）** | 審查 FortiGate 設備配置、輪換 LDAP 憑證 | FortiCloud SSO 繞過 |
 | **緊急（72 小時內）** | 審計 Salesforce 帳號配置、停用 Guest 帳號 | ShinyHunters 資料竊取 |
-| **緊急（72 小時內）** | 檢查/更新 ASUS 路由器韌體 | Kadnap 殭屍網路 |
+| **緊急（72 小時內）** | 檢查/更新 ASUS 路由器韌體 | Kadnap + Operation Lightning/SocksEscort |
+| **緊急（72 小時內）** | 審查供應商安全管理 | Viking Line 供應鏈外洩 |
 | **緊急（72 小時內）** | 審計瀏覽器擴充功能 | 惡意 AI 助手擴充功能 |
 | **緊急（72 小時內）** | 執行 NPM 供應鏈安全審計 | NPM 大規模感染 |
 | **緊急（72 小時內）** | 升級 pac4j-jwt（若使用） | CVE-2026-29000（CVSS 10.0） |
 | **本週內** | 套用 VMware Aria Operations 修補 | CVE-2026-22719 |
+| **本週內** | 更新 Zoom 至最新版本 | AV26-231 多漏洞 |
+| **本週內** | 套用 HPE 安全更新 | AV26-234 多漏洞 |
 | **本週內** | 部署 DDoS 緩解措施 | 伊朗駭客主義 DDoS |
 | **本週內** | 盤點遠端存取工具並強化安全配置 | BeyondTrust 勒索軟體利用趨勢 |
 | **本週內** | 部署 Seedworm/Dindoor 偵測規則 | 伊朗 APT 威脅 |
@@ -755,7 +863,7 @@ date: 2026-03-12
 
 ## 6. Qdrant 跨層關聯分析摘要
 
-本報告產出過程中執行了 6 次 Qdrant 語意查詢，用於跨 Layer 關聯分析：
+本報告產出過程中執行了 9 次 Qdrant 語意查詢，用於跨 Layer 關聯分析：
 
 1. **「active exploitation ransomware critical vulnerability」** -- 確認 BeyondTrust CVE-2026-1731 與近期勒索軟體攻擊活動高度關聯。歷史關聯包括 LockBit 5.0 跨平台勒索軟體（2025-10-28）、社交工程利用雲端服務和短期證書的新型攻擊模式（2025-10-29）。勒索軟體利用遠端存取工具的趨勢持續上升。
 
@@ -768,6 +876,12 @@ date: 2026-03-12
 5. **「defense mitigation patch remediation zero-day」** -- 關聯到各國 CERT 的修補指引和防禦最佳實踐。確認核心防禦原則（修補、MFA、網路分段、端點保護、備份）長期有效，但攻擊面的擴大需要持續更新防禦策略。
 
 6. **「IoC C2 infrastructure botnet router」** -- 關聯到 Kadnap 殭屍網路（14,000 台 ASUS 路由器）、Mozi 殭屍網路活躍下載 URL、Operation WrtHug（ASUS 路由器針對性攻擊，2025-11-25）、Phantom Stealer C2 伺服器。路由器和邊緣裝置持續為殭屍網路基礎設施的主要目標。
+
+7. **「patch priority critical vulnerability March 2026」**（2026-03-13 新增）-- 確認 2026 年 3 月為漏洞高峰月份，Microsoft Patch Tuesday 修補 93 個漏洞含 8 個 Critical、CERT-FR 同步發布 Cisco/Microsoft/Trend Micro 多產品漏洞警告。n8n、GLPI、Erlang/OTP 等非傳統目標亦出現 Critical 漏洞。
+
+8. **「defense mitigation remediation strategy」**（2026-03-13 新增）-- 關聯到 Google Cloud 2026 年 3 月發布的「Proactive Preparation and Hardening Against Destructive Attacks: 2026 Edition」指導文件，NCSC UK「forgivable vs unforgivable vulnerabilities」評估方法，及加拿大 CCCS「Modern Defensible Architecture」聯合指導。破壞性攻擊防禦需要結合偵測（T1485）、備份驗證及災難復原演練。
+
+9. **「supply chain third party breach」**（2026-03-13 新增）-- 關聯到 Viking Line 供應商外洩、Ericsson 第三方服務供應商入侵（2026-03-10）、2023 年工業系統供應商外洩影響下游客戶、3CX 供應鏈攻擊（2023）、dependency confusion 攻擊。第三方供應商安全管理為 2023-2026 年持續升溫的攻擊面。
 
 ---
 
@@ -782,7 +896,7 @@ date: 2026-03-12
 5. **資料限制**：基於公開資料，不涵蓋非公開威脅情報
 6. **翻譯風險**：部分非英文來源經 AI 翻譯，修補建議請以官方原文為準
 7. **ICS/OT 修補風險**：工業控制系統修補可能影響生產運行。在套用 ICS/OT 修補前，必須在隔離的測試環境完整驗證，並準備回退方案
-8. **漏洞資訊時效性**：本報告反映截至 2026-03-12 的已公開資訊。部分漏洞的具體技術細節可能在報告產出後才獲得完整揭露
+8. **漏洞資訊時效性**：本報告反映截至 2026-03-13 的已公開資訊。部分漏洞的具體技術細節可能在報告產出後才獲得完整揭露
 9. **威脅行為者歸因**：APT 歸因（APT28/Fancy Bear、Seedworm/MuddyWater、Camaro Dragon 等）基於各安全廠商的評估，歸因結論可能隨後續調查而調整
 10. **勒索軟體態勢快速變化**：勒索軟體利用鏈可能在短時間內切換至新的入口點，建議持續關注威脅情報更新
 11. **ShinyHunters 聲明未經獨立驗證**：ShinyHunters 宣稱的受害企業名單為其自行公布，建議各組織獨立評估自身曝露風險
@@ -794,12 +908,12 @@ date: 2026-03-12
 ## 自我審核 Checklist
 
 - [x] 包含完整免責聲明（11 項，含固定模板 6 項及補充 5 項）
-- [x] 修補建議全部來自官方來源（CISA、BeyondTrust、SolarWinds、VMware/Broadcom、Cisco、Fortinet、HPE/Aruba、Microsoft、Apple、Rockwell、各國 CERT）
+- [x] 修補建議全部來自官方來源（CISA、BeyondTrust、SolarWinds、VMware/Broadcom、Cisco、Fortinet、HPE/Aruba、Microsoft、Apple、Rockwell、n8n、GitLab、Mozilla、Palo Alto、Splunk、Veeam、F5、Erlang/OTP、GLPI、各國 CERT）
 - [x] 清楚區分「通用建議」與「針對本週威脅」（每個安全控制層面均有標註）
-- [x] 緩解策略標註有效期限和重新評估時間（10 項緩解策略均已標註）
+- [x] 緩解策略標註有效期限和重新評估時間（13 項緩解策略均已標註）
 - [x] 無「保證安全」措辭（免責聲明第 1 項明確說明）
 - [x] 標註適用範圍與限制（注意事項第 4.1 節）
-- [x] CVE 編號正確（CVE-2026-1731、CVE-2025-26399、CVE-2021-22054、CVE-2026-20079、CVE-2026-20131、CVE-2026-21385、CVE-2026-22719、CVE-2026-29000、CVE-2025-59718、CVE-2025-59597、CVE-2026-20045、CVE-2026-20127、CVE-2026-20700、CVE-2017-7921、CVE-2021-22681、CVE-2021-30952、CVE-2023-41974、CVE-2023-43000、CVE-2026-3094、CVE-2026-1874/1875/1876）
+- [x] CVE 編號正確（CVE-2026-1731、CVE-2025-26399、CVE-2021-22054、CVE-2026-20079、CVE-2026-20131、CVE-2026-21385、CVE-2026-22719、CVE-2026-29000、CVE-2025-59718、CVE-2025-59597、CVE-2026-20045、CVE-2026-20127、CVE-2026-20700、CVE-2017-7921、CVE-2021-22681、CVE-2021-30952、CVE-2023-41974、CVE-2023-43000、CVE-2026-3094、CVE-2026-1874/1875/1876、CVE-2026-0866）
 - [x] 格式適合 IT/資安管理人員快速閱讀（分級排序、表格、行動時間表）
 - [x] 無 `[REVIEW_NEEDED]` 標記
 
@@ -809,13 +923,21 @@ date: 2026-03-12
 
 ### 漏洞公告
 - [BeyondTrust Trust Center -- 安全公告](https://www.beyondtrust.com/trust-center/security-advisories)
+- [n8n 官方網站](https://n8n.io/)
 - [SolarWinds Trust Center -- 安全公告](https://www.solarwinds.com/trust-center/security-advisories)
 - [VMware/Broadcom Security Advisories](https://www.vmware.com/security/advisories.html)
 - [CERT-SE -- Cisco FMC/SCC 嚴重漏洞](https://www.cert.se/2026/03/kritiska-sarbarheter-i-cisco-fmc-och-cisco-scc.html)
 - [CERT-RO -- Cisco FMC 嚴重漏洞](https://dnsc.ro/citeste/alert-vulnerabilit-i-critice-n-cisco-secure-firewall-management-center)
 - [CERT-FR -- Cisco 多漏洞](https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0242/)
 - [CISA -- 新增 5 個 KEV（2026-03-05）](https://www.cisa.gov/news-events/alerts/2026/03/05/cisa-adds-five-known-exploited-vulnerabilities-catalog)
+- [Apple Security Releases](https://support.apple.com/en-us/100100)
 - [Fortinet PSIRT](https://www.fortiguard.com/psirt)
+- [GitLab Security Releases](https://about.gitlab.com/releases/categories/releases/)
+- [Mozilla Security Advisories](https://www.mozilla.org/en-US/security/advisories/)
+- [GLPI Security Advisories](https://glpi-project.org/security/)
+- [Palo Alto Security Advisories](https://security.paloaltonetworks.com/)
+- [Splunk Security Advisories](https://advisory.splunk.com/)
+- [Veeam Security Advisories](https://www.veeam.com/kb4649)
 - [CERT.at -- FortiCloud SSO 利用分析](https://www.cert.at/en/blog/2026/1/look-at-forticloud-sso-bypass-exploitation)
 - [CISA ICS -- Delta Electronics CNCSoft-G2](https://www.cisa.gov/news-events/ics-advisories/icsa-26-064-01)
 - [CISA ICS -- Mitsubishi Electric MELSEC iQ-F](https://www.cisa.gov/news-events/ics-advisories/icsa-26-62-01)
@@ -823,11 +945,15 @@ date: 2026-03-12
 ### 攻擊事件
 - [AIVD/MIVD -- 俄羅斯 Signal/WhatsApp 帳號劫持](https://www.theregister.com/2026/03/09/dutch_spies_say_russian_cybercrims/)
 - [Check Point -- Camaro Dragon PlugX 攻擊卡達](https://blog.checkpoint.com/research/china-nexus-activity-against-qatar-observed-amid-expanding-regional-tensions/)
+- [Handala/Void Manticore -- 伊朗破壞性攻擊升級](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+- [Operation Lightning / SocksEscort 殭屍網路拆除](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+- [Viking Line 供應商資料外洩](https://www.kyberturvallisuuskeskus.fi/)
 - [ShinyHunters Salesforce 資料竊取](https://www.theregister.com/2026/03/09/shinyhunters_claims_more_highprofile_victims/)
 - [BoryptGrab GitHub 散布](https://securityaffairs.com/189110/malware/massive-github-malware-operation-spreads-boryptgrab-stealer.html)
 - [Ericsson 第三方資料外洩](https://www.bleepingcomputer.com/news/security/ericsson-us-discloses-data-breach-after-service-provider-hack/)
 - [ASUS 產品安全公告](https://www.asus.com/content/asus-product-security-advisory/)
 - [JPCERT React2Shell 報告](https://www.jpcert.or.jp/)
+- [Google Cloud -- Proactive Preparation and Hardening Against Destructive Attacks](https://cloud.google.com/blog/topics/threat-intelligence/preparation-hardening-destructive-attacks/)
 
 ### CISA 持續追蹤
 - [CISA/NSA -- Cisco SD-WAN 全球利用指南](https://www.cisa.gov/news-events/alerts/2026/02/25/cisa-and-partners-release-guidance-ongoing-global-exploitation-cisco-sd-wan-systems)
@@ -836,5 +962,5 @@ date: 2026-03-12
 
 ---
 
-> 本報告由資訊安全產業智慧分析系統自動產出，資料來源涵蓋 CISA、NCSC-FI、CERT-FR、CERT-SE、SK-CERT、CERT-RO、CERT.hr、CERT.at、JPCERT/CC、CCCS、NSM-NCSC、SANS ISC、abuse.ch 等國際安全機構與開源情報饋送。Qdrant 語意查詢用於跨 Layer 關聯分析，共執行 6 次查詢。
-> 下次更新：2026-03-19（第 12 週）
+> 本報告由資訊安全產業智慧分析系統自動產出，資料來源涵蓋 CISA、NCSC-FI、CERT-FR、CERT-SE、SK-CERT、CERT-RO、CERT.hr、CERT.at、JPCERT/CC、CCCS、NSM-NCSC、SANS ISC、abuse.ch 等國際安全機構與開源情報饋送。Qdrant 語意查詢用於跨 Layer 關聯分析，共執行 9 次查詢。
+> 最後更新：2026-03-13 | 下次更新：2026-03-19（第 12 週）
