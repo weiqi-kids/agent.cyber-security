@@ -78,5 +78,13 @@
     "period": "2026-03-16 至 2026-03-22",
     "file": "2026-W12-threat-landscape.md",
     "source_mode": "threat_landscape"
+  },
+  {
+    "id": "2026-W13-threat-landscape-md",
+    "title": "威脅態勢分析 — 2026 第 13 週",
+    "date": "2026-W13",
+    "period": "2026-03-16 至 2026-03-23",
+    "file": "2026-W13-threat-landscape.md",
+    "source_mode": "threat_landscape"
   }
 ]
