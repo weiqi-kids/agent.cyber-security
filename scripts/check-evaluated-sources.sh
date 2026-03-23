@@ -102,10 +102,10 @@ while IFS= read -r line || [[ -n "$line" ]]; do
       if [[ $consec -ge $FAILURE_THRESHOLD ]]; then
         status="待排除"
         ((pending_count++))
-        echo "  ⛔ $name → HTTP $http_code（連續 ${consec} 天，已標記待排除）"
+        echo "  ⛔ $name → HTTP ${http_code}（連續 ${consec} 天，已標記待排除）"
       else
         status="連線失敗"
-        echo "  ❌ $name → HTTP $http_code（連續 ${consec}/${FAILURE_THRESHOLD} 天）"
+        echo "  ❌ $name → HTTP ${http_code}（連續 ${consec}/${FAILURE_THRESHOLD} 天）"
       fi
     fi
 
