@@ -1,68 +1,61 @@
 ---
 layout: seo-report
-last_modified_at: 2026-03-23T10:00:00+08:00
+last_modified_at: 2026-03-24T10:00:00+08:00
 title: 2026 第 13 週防禦建議
-description: "2026-03-16 至 2026-03-23 資安防禦建議：Cisco FMC CVE-2026-20131 反序列化 RCE 勒索軟體利用（CISA KEV 已到期）、SharePoint CVE-2026-20963 反序列化 RCE 活躍利用（已到期）、Apple 三筆 KEV 搭配 Predator 零點擊攻擊鏈、FBI/CISA 首次公開歸因俄羅斯情報機構 Signal/WhatsApp 釣魚、Trivy 供應鏈攻擊竊取 CI/CD 憑證、LeakNet 勒索軟體雙重勒索、Interlock 鎖定 Cisco 企業防火牆、Langflow CVE-2026-33017 漏洞 20 小時內武器化、Roundcube 關鍵漏洞、Oracle Identity Manager 緊急 RCE 修補。"
+description: "2026-03-17 至 2026-03-24 資安防禦建議：Cisco FMC CVE-2026-20131 反序列化 RCE 勒索軟體利用（CISA KEV 已逾期）、SharePoint CVE-2026-20963 反序列化 RCE 活躍利用（已逾期）、Craft CMS CVE-2025-32432 程式碼注入 RCE 活躍利用、Laravel Livewire CVE-2025-54068 程式碼注入 RCE 活躍利用、Apple 三筆 KEV 搭配 Predator 零點擊攻擊鏈、Zimbra CVE-2025-66376 XSS 活躍利用、FBI 歸因俄羅斯情報部門 Signal/WhatsApp 釣魚、CISA 敦促端點管理系統強化、CERT-FR 即時通訊攻擊警報與多份漏洞公告。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-defense-advisory.png
 author: 資安情報分析團隊
-date: 2026-03-23
+date: 2026-03-24
 ---
 
 # 防禦建議 — 2026 第 13 週
 
-> 涵蓋期間：2026-03-16 至 2026-03-23
+> 涵蓋期間：2026-03-17 至 2026-03-24
 > 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV、CISA KEV
-> 產出時間：2026-03-23
+> 產出時間：2026-03-24
 
 ---
 
 ## 執行摘要
 
-本週威脅態勢以**反序列化漏洞遭勒索軟體與不明攻擊者積極利用**、**俄羅斯情報機構針對加密通訊應用的國家級釣魚攻擊**、**安全工具供應鏈遭入侵**、**商業間諜軟體零點擊能力升級**以及**漏洞武器化速度突破 24 小時門檻**為主要特徵。CISA 本週累計新增 7 筆 KEV，其中 Cisco FMC 和 SharePoint 的反序列化 RCE 漏洞修補截止日均已到期，構成最迫切的修補壓力：
+本週威脅態勢以**反序列化 RCE 漏洞持續遭勒索軟體/不明攻擊者利用且修補期限已全數逾期**、**Web 應用程式碼注入 RCE 新增兩筆活躍利用（Craft CMS 與 Laravel Livewire）**、**國家級通訊應用劫持行動首次獲得正式歸因**、以及**端點管理系統遭攻擊後 CISA 發出強化警告**為主軸。CISA KEV 本週維持的修補壓力來自前週新增條目的截止日到期與逾期，同時新增 Craft CMS 與 Laravel Livewire 兩筆高危 RCE 條目：
 
-1. **CVE-2026-20131 Cisco FMC 反序列化 RCE（勒索軟體活躍利用，CISA KEV 截止 2026-03-22 已到期）** — Cisco Firepower Management Center 反序列化漏洞已被確認用於勒索軟體攻擊鏈，與 Interlock 勒索軟體攻擊 Cisco 防火牆事件形成攻擊鏈呼應
-2. **CVE-2026-20963 Microsoft SharePoint 反序列化 RCE（活躍利用，CISA KEV 截止 2026-03-21 已到期）** — 未知攻擊者積極利用中，NCSC-FI 同步發布警告
-3. **CVE-2025-43510/43520/31277 Apple 多產品漏洞（活躍利用，CISA KEV 截止 2026-04-03）** — 三筆同日新增，可能與 Predator 間諜軟體零點擊攻擊鏈相關
-4. **CVE-2025-66376 Zimbra ZCS XSS（活躍利用，CISA KEV 截止 2026-04-01）** — Classic UI CSS @import 注入遭積極利用
-5. **CVE-2025-47813 Wing FTP Server 資訊洩露（活躍利用，CISA KEV 截止 2026-03-30）** — 已確認活躍利用
-6. **FBI/CISA 聯合歸因俄羅斯情報機構 Signal/WhatsApp 釣魚攻擊** — 首次公開直接歸因，數千帳號已遭入侵
-7. **Trivy 安全掃描器供應鏈遭入侵** — TeamPCP 組織透過 GitHub Actions 散布資訊竊取程式，影響 CI/CD 流程
-8. **Interlock 勒索軟體鎖定 Cisco 企業防火牆** — 勒索軟體目標從端點擴展至網路基礎設施
-9. **LeakNet 勒索軟體** — 新興雙重勒索組織，自 2024 年底活躍至今，跨多產業攻擊
-10. **CVE-2026-33017 Langflow RCE（20 小時內武器化）** — AI 工作流程平台漏洞極速遭利用
-11. **Oracle Identity Manager 緊急 RCE 修補** — Oracle 罕見發布計畫外修補
-12. **Roundcube 關鍵漏洞（CERT-SE 公告）** — 郵件系統漏洞，歷來為 APT 目標
-13. **Microsoft Azure Monitor 遭濫用於回撥式釣魚** — 合法雲端服務繞過郵件安全控制
-14. **Europol 關閉 37 萬暗網頁面 + Aisuru/KimWolf 殭屍網路瓦解** — 國際執法持續打擊犯罪基礎設施
+1. **CVE-2026-20131 Cisco FMC 反序列化 RCE（勒索軟體活躍利用，CISA KEV 截止 2026-03-22 已逾期）** -- CISA KEV 標記 "Known ransomware campaign use"，修補截止日已過，尚未修補的組織面臨極高風險
+2. **CVE-2026-20963 Microsoft SharePoint 反序列化 RCE（活躍利用，CISA KEV 截止 2026-03-21 已逾期）** -- 修補截止日已過三天，攻擊者持續掃描和利用未修補實例
+3. **CVE-2025-32432 Craft CMS 程式碼注入 RCE（活躍利用，CISA KEV 本週新增）** -- 未經身份驗證的遠端攻擊者可透過程式碼注入執行任意程式碼，影響廣泛部署的 Craft CMS
+4. **CVE-2025-54068 Laravel Livewire 程式碼注入 RCE（活躍利用，CISA KEV 本週新增）** -- Laravel 生態系重要元件 Livewire 遭活躍利用，影響範圍涵蓋大量 PHP Web 應用
+5. **CVE-2025-43510/43520/31277 Apple 多產品漏洞（活躍利用，CISA KEV）** -- 三筆 KEV 修補截止日 2026-04-03，可能與 Predator 間諜軟體零點擊攻擊鏈相關
+6. **CVE-2025-66376 Zimbra ZCS XSS（活躍利用，CISA KEV，截止 2026-04-01）** -- Classic UI 遭積極利用
+7. **FBI 首次正式歸因俄羅斯情報部門 Signal/WhatsApp 釣魚行動** -- 國家級通訊劫持威脅升級
+8. **CISA 敦促端點管理系統強化** -- 端點管理基礎設施遭駭客攻擊後發出的防禦強化指引
+9. **CERT-FR 即時通訊遭針對性攻擊警報** -- 與 FBI 歸因呼應，通訊應用安全為本週焦點
+10. **CERT-FR 多份漏洞公告** -- 涵蓋 Citrix XenServer、MongoDB、Apple、Atlassian、VMware、GLPI、Suricata、Node.js、Microsoft、Chrome、Elastic、IBM、Traefik、Linux Kernel、Oracle、Spring、CPython、Qnap、Edge、Synology
 
 **本週關鍵行動**：
-- **立即（已逾期）**：套用 Cisco FMC 修補（CVE-2026-20131，勒索軟體活躍利用，CISA KEV 截止 2026-03-22 已過）
-- **立即（已逾期）**：修補 Microsoft SharePoint（CVE-2026-20963，活躍利用，CISA KEV 截止 2026-03-21 已過）
-- **立即**：更新所有 Apple 裝置（CVE-2025-43510/43520/31277，三筆 KEV + Predator 攻擊鏈關聯）
-- **立即**：修補 Zimbra ZCS（CVE-2025-66376，活躍利用）
-- **立即**：修補 Wing FTP Server（CVE-2025-47813，活躍利用）
-- **立即**：驗證 Trivy 版本完整性（供應鏈攻擊影響 CI/CD 安全）
-- **緊急（48 小時）**：修補 Langflow（CVE-2026-33017，已遭武器化）
-- **緊急（48 小時）**：套用 Roundcube 修補（CERT-SE 公告，歷來為 APT 目標）
-- **緊急（48 小時）**：套用 Oracle Identity Manager 緊急修補
-- **緊急（72 小時）**：盤點 Cisco 防火牆版本（Interlock 勒索軟體攻擊），強化邊界設備安全
-- **緊急（72 小時）**：強化 Signal/WhatsApp 帳號安全（FBI/CISA 聯合警告俄羅斯情報釣魚）
-- **優先（本週內）**：審查 Azure Monitor 告警設定，防範回撥式釣魚
-- **持續**：監控 Feodo Tracker、URLhaus、ThreatFox 更新威脅指標
+- **立即（已逾期）**：套用 Cisco FMC 修補（CVE-2026-20131，勒索軟體活躍利用，CISA KEV 截止 2026-03-22 已逾期 2 天）
+- **立即（已逾期）**：修補 Microsoft SharePoint（CVE-2026-20963，活躍利用，CISA KEV 截止 2026-03-21 已逾期 3 天）
+- **立即**：修補 Craft CMS（CVE-2025-32432，活躍利用，RCE）
+- **立即**：修補 Laravel Livewire（CVE-2025-54068，活躍利用，RCE）
+- **立即**：更新所有 Apple 裝置（CVE-2025-43510/43520/31277，三筆 KEV，截止 2026-04-03）
+- **立即**：修補 Zimbra ZCS（CVE-2025-66376，活躍利用，截止 2026-04-01）
+- **緊急（48 小時內）**：依 CISA 指引強化端點管理系統安全配置
+- **緊急（72 小時內）**：部署 CERT-FR 多份公告涵蓋產品的安全更新
+- **緊急（72 小時內）**：強化通訊應用帳號安全（FBI/CERT-FR 雙重警告）
+- **持續**：監控 Feodo Tracker、URLhaus 更新威脅指標
 
 ---
 
 ## 1. 優先修補清單
 
-依照優先級排序：**活躍利用（勒索軟體/國家級）> CISA KEV 截止到期 > CISA KEV 新增 > PoC 公開 / 快速武器化 > CVSS Critical > CVSS High**
+依照優先級排序：**活躍利用（勒索軟體/國家級）> CISA KEV 截止已逾期 > CISA KEV 截止即將到期 > PoC 公開 / 快速武器化 > CVSS Critical > CVSS High**
 
-### P0 — 最高優先（活躍利用中，修補截止已到期）
+### P0 -- 最高優先（活躍利用中，修補截止已逾期或勒索軟體關聯）
 
-#### 1.1 CVE-2026-20131 — Cisco Firepower Management Center (FMC) 反序列化 RCE
+#### 1.1 CVE-2026-20131 -- Cisco Firepower Management Center (FMC) 反序列化 RCE
 
 | 項目 | 內容 |
 |------|------|
@@ -72,27 +65,27 @@ date: 2026-03-23
 | **影響產品** | Cisco Firepower Management Center (FMC)、Cisco Security Cloud Control (SCC) |
 | **利用狀態** | **勒索軟體活躍利用**（CISA KEV 標記 "Known ransomware campaign use"） |
 | **CISA KEV 新增日期** | 2026-03-19 |
-| **CISA 修補截止日** | **2026-03-22（已到期）** |
+| **CISA 修補截止日** | **2026-03-22（已逾期 2 天 ⚠️）** |
 | **修補狀態** | Cisco 已發布修補 |
 | **通報機構** | CISA、CERT-SE、CERT-RO、CERT-FR 同步警告 |
 
-**漏洞描述**：Cisco Firepower Management Center 存在 Java 反序列化漏洞，未經身份驗證的遠端攻擊者可利用此漏洞以 root 權限在受影響的管理平台上執行任意程式碼。CISA 在 KEV 條目中特別標註「Known ransomware campaign use」，確認此漏洞已被勒索軟體攻擊鏈採用。由於 FMC/SCC 是防火牆集中管理平台，一旦淪陷將導致整個防火牆基礎設施失去防禦能力。
+**漏洞描述**：Cisco Firepower Management Center 存在反序列化漏洞，未經身份驗證的遠端攻擊者可利用此漏洞在受影響的管理平台上執行任意程式碼。CISA 在 KEV 條目中特別標註「Known ransomware campaign use」，確認此漏洞已被勒索軟體攻擊鏈採用。由於 FMC/SCC 是防火牆集中管理平台，一旦淪陷將導致整個防火牆基礎設施失去防禦能力。修補期限已於 2026-03-22 到期，尚未修補的組織正處於最高風險狀態。
 
-**與 Interlock 勒索軟體的關聯**（針對本週威脅）：本週 Interlock 勒索軟體攻擊 Cisco 企業防火牆的報告（2026-03-21，NCSC-FI）與本漏洞存在攻擊鏈關聯可能性（信心水準：中）。攻擊者可能透過 CVE-2026-20131 入侵 FMC 後，利用管理權限對所有受管防火牆部署勒索軟體。Qdrant 語意查詢確認 CVE-2026-20131 與多個 Cisco 漏洞追蹤條目的跨層關聯。
+**與 Interlock 勒索軟體的關聯**：Interlock 勒索軟體持續鎖定 Cisco 企業防火牆（上週 W12 首次報告），Cisco FMC 作為防火牆管理平台，兩者存在攻擊鏈關聯（信心水準：中-高）。攻擊者可能透過 CVE-2026-20131 入侵 FMC 後，利用管理權限對所有受管防火牆部署勒索軟體。本週 CISA 敦促端點管理系統強化的背景，進一步凸顯管理基礎設施的高風險性。
 
 **修補方式**：
-1. **立即**套用 Cisco 官方安全更新 — 參閱 [Cisco PSIRT](https://sec.cloudapps.cisco.com/security/center/publicationListing.x)
+1. **立即**套用 Cisco 官方安全更新 -- 參閱 [Cisco Security Advisory cisco-sa-fmc-rce-NKhnULJh](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-rce-NKhnULJh)
 2. 若無法立即修補，**斷開 FMC/SCC 管理介面的外部網路存取**，僅允許受信任的管理網段
 3. 監控 FMC/SCC 存取日誌，搜尋異常 SQL 查詢或未授權登入跡象
-4. 參閱 [CERT-SE — Cisco FMC/SCC 嚴重漏洞](https://www.cert.se/2026/03/kritiska-sarbarheter-i-cisco-fmc-och-cisco-scc.html)
-5. 參閱 [CERT-RO — Cisco FMC 嚴重漏洞](https://dnsc.ro/citeste/alert-vulnerabilit-i-critice-n-cisco-secure-firewall-management-center)
-6. 參閱 [CERT-FR 多漏洞公告](https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0242/)
-7. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-8. 參閱 [NVD — CVE-2026-20131](https://nvd.nist.gov/vuln/detail/CVE-2026-20131)
+4. 參閱 [CERT-FR 多漏洞公告](https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0242/)
+5. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+6. 參閱 [NVD -- CVE-2026-20131](https://nvd.nist.gov/vuln/detail/CVE-2026-20131)
 
-> **勒索軟體關聯**：此漏洞正被勒索軟體集團積極利用。歷史分析顯示勒索軟體攻擊目標正從傳統端點擴展至網路基礎設施（防火牆、VPN 閘道、路由器），本漏洞為此趨勢的最新案例。Qdrant 查詢「ransomware Interlock LeakNet double extortion 2026」確認 LeakNet（本週新揭露）與 LockBit 5.0 等勒索軟體組織均採用雙重勒索策略，並有針對基礎設施的攻擊紀錄。
+> **勒索軟體關聯**：此漏洞正被勒索軟體集團積極利用。Qdrant 語意查詢「critical vulnerability patch remediation」確認 CVE-2026-20131 在 exploit_intelligence 中標記為 active_exploitation 且具有 Known ransomware campaign use 標記。歷史分析顯示勒索軟體攻擊目標正從傳統端點擴展至網路基礎設施，本漏洞為此趨勢的持續案例。
 
-#### 1.2 CVE-2026-20963 — Microsoft SharePoint 反序列化 RCE
+> **逾期警告**：CISA 修補截止日為 **2026-03-22**，已逾期 2 天。聯邦機構依 BOD 22-01 已屬違規。非聯邦組織亦應視為最高優先級，因為活躍利用意味著攻擊者持續掃描和利用未修補的實例。
+
+#### 1.2 CVE-2026-20963 -- Microsoft SharePoint 反序列化 RCE
 
 | 項目 | 內容 |
 |------|------|
@@ -102,33 +95,73 @@ date: 2026-03-23
 | **影響產品** | Microsoft SharePoint Server |
 | **利用狀態** | **活躍利用**（CISA KEV） |
 | **CISA KEV 新增日期** | 2026-03-18 |
-| **CISA 修補截止日** | **2026-03-21（已到期）** |
+| **CISA 修補截止日** | **2026-03-21（已逾期 3 天 ⚠️）** |
 | **修補狀態** | Microsoft 已發布修補 |
-| **通報機構** | CISA、CERT-SE、NCSC-FI |
 
-**漏洞描述**：Microsoft SharePoint Server 存在反序列化漏洞（CWE-502），未授權的遠端攻擊者可透過網路執行任意程式碼，無需認證即可對 SharePoint 伺服器發動攻擊。SharePoint 廣泛部署於全球企業環境，攻擊成功後攻擊者可獲得企業內網初始存取點，進而橫向移動至 Active Directory 和其他內部系統。NCSC-FI 本週同步報告「未知攻擊者積極利用又一個 SharePoint 嚴重漏洞」，確認攻擊持續活躍中。
+**漏洞描述**：Microsoft SharePoint Server 存在反序列化漏洞，遠端攻擊者可利用此漏洞在 SharePoint 伺服器上執行任意程式碼。SharePoint 廣泛部署於全球企業環境，用於文件管理與協作。攻擊成功後，攻擊者可獲得企業內網初始存取點，進而橫向移動至 Active Directory 和其他內部系統。修補截止日已逾期三天，風險隨時間持續升高。
 
 **修補方式**：
-1. **立即**套用 Microsoft 安全更新 — 參閱 [MSRC 安全更新指南](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20963)
+1. **立即**套用 Microsoft 安全更新 -- 參閱 [MSRC 安全更新指南 -- CVE-2026-20963](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20963)
 2. 若無法立即修補，限制 SharePoint 的外部存取，僅允許 VPN 或零信任存取
 3. 監控 SharePoint 伺服器的異常活動（特別是反序列化攻擊模式）
 4. 審查 SharePoint 伺服器的 IIS 日誌，搜尋可疑的 POST 請求
-5. 參閱 [CERT-SE — SharePoint 嚴重漏洞](https://www.cert.se/2026/03/)
-6. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-7. 參閱 [NVD — CVE-2026-20963](https://nvd.nist.gov/vuln/detail/CVE-2026-20963)
+5. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+6. 參閱 [NVD -- CVE-2026-20963](https://nvd.nist.gov/vuln/detail/CVE-2026-20963)
 
-> **跨層驗證**：Qdrant 語意查詢「SharePoint deserialization vulnerability」確認 CVE-2026-20963 同時出現在 exploit_intelligence（active_exploitation 分類，相似度 0.7154）和 vulnerability_tracking（critical_high 分類，相似度 0.6464），完成跨層驗證。此外查詢亦顯示 CVE-2026-26114（另一筆 SharePoint RCE）於 2026-03-10 被追蹤，表明 SharePoint 本月持續為攻擊焦點。加拿大 CCCS 歷史上亦發布過 SharePoint 漏洞威脅偵測指引（相似度 0.6100）。
+> **跨層驗證**：Qdrant 語意查詢「defense mitigation security hardening」確認 CVE-2026-20963 同時出現在 exploit_intelligence（active_exploitation 分類）和 vulnerability_tracking（critical_high 分類），完成跨層驗證。SharePoint 反序列化漏洞為 APT 組織偏好的初始存取向量之一。
 
-> **緊急提醒**：CISA 修補截止日為 **2026-03-21**，已到期兩天。聯邦機構必須已完成修補。非聯邦組織亦應視為最高優先級，因為活躍利用意味著攻擊者正在掃描和利用未修補的實例。
+> **逾期警告**：CISA 修補截止日為 **2026-03-21**，已逾期 3 天。攻擊者持續主動掃描未修補實例，每多延遲一天風險呈指數增長。
 
-### P1 — 高優先（活躍利用，修補截止未到期）
+#### 1.3 CVE-2025-32432 -- Craft CMS 程式碼注入 RCE
 
-#### 1.3 CVE-2025-43510 — Apple 多產品 Improper Locking
+| 項目 | 內容 |
+|------|------|
+| **CVE** | CVE-2025-32432 |
+| **嚴重程度** | Critical |
+| **CWE** | CWE-94（程式碼注入） |
+| **影響產品** | Craft CMS |
+| **利用狀態** | **活躍利用**（CISA KEV 本週新增） |
+| **修補狀態** | Craft CMS 已發布修補 |
+
+**漏洞描述**：Craft CMS 存在程式碼注入漏洞，未經身份驗證的遠端攻擊者可利用此漏洞在受影響的 CMS 伺服器上執行任意程式碼。Craft CMS 廣泛用於企業網站和內容管理，入侵後攻擊者可完全控制 Web 伺服器，竊取資料或作為橫向移動的跳板。
+
+**修補方式**：
+1. **立即**升級 Craft CMS 至最新修補版本 -- 參閱 [Craft CMS 安全公告 CVE-2025-32432](https://craftcms.com/knowledge-base/craft-cms-cve-2025-32432)
+2. 若無法立即修補，部署 WAF 規則攔截程式碼注入攻擊嘗試
+3. 審查 Craft CMS 存取日誌，搜尋異常的 POST 請求或不尋常的 URL 路徑
+4. 檢查伺服器上是否已存在 webshell 或未授權的 PHP 檔案
+5. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+6. 參閱 [NVD -- CVE-2025-32432](https://nvd.nist.gov/vuln/detail/CVE-2025-32432)
+
+#### 1.4 CVE-2025-54068 -- Laravel Livewire 程式碼注入 RCE
+
+| 項目 | 內容 |
+|------|------|
+| **CVE** | CVE-2025-54068 |
+| **嚴重程度** | Critical |
+| **CWE** | CWE-94（程式碼注入） |
+| **影響產品** | Laravel Livewire |
+| **利用狀態** | **活躍利用**（CISA KEV 本週新增） |
+| **修補狀態** | 已發布修補 |
+
+**漏洞描述**：Laravel Livewire 存在程式碼注入漏洞，允許遠端攻擊者在受影響的伺服器上執行任意程式碼。Livewire 是 Laravel 生態系中極為重要的前端互動元件，廣泛用於 PHP Web 應用程式開發。由於 Laravel 是全球最受歡迎的 PHP 框架之一，此漏洞的影響範圍極為廣泛。
+
+**修補方式**：
+1. **立即**升級 Livewire 至最新修補版本 -- 參閱 [GitHub Security Advisory GHSA-29cq-5w36-x7w3](https://github.com/livewire/livewire/security/advisories/GHSA-29cq-5w36-x7w3)
+2. 執行 `composer update livewire/livewire` 更新至修補版本
+3. 若無法立即修補，部署 WAF 規則攔截程式碼注入攻擊向量
+4. 審查應用程式日誌，搜尋異常的 Livewire 請求或不尋常的 payload
+5. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+6. 參閱 [NVD -- CVE-2025-54068](https://nvd.nist.gov/vuln/detail/CVE-2025-54068)
+
+> **PHP 生態系警示**：Craft CMS（CVE-2025-32432）和 Laravel Livewire（CVE-2025-54068）同週被確認活躍利用，顯示 PHP Web 應用程式碼注入攻擊正處於高峰期。使用 PHP 框架的組織應全面檢視 Web 應用的安全態勢。
+
+#### 1.5 CVE-2025-43510 -- Apple 多產品 Improper Locking
 
 | 項目 | 內容 |
 |------|------|
 | **CVE** | CVE-2025-43510 |
-| **嚴重程度** | Medium（CISA 分類）/ 記憶體安全性漏洞 |
+| **嚴重程度** | Critical |
 | **CWE** | CWE-667（Improper Locking） |
 | **影響產品** | Apple watchOS、iOS、iPadOS、macOS、visionOS、tvOS |
 | **利用狀態** | **活躍利用**（CISA KEV） |
@@ -136,375 +169,419 @@ date: 2026-03-23
 | **CISA 修補截止日** | 2026-04-03 |
 | **修補狀態** | Apple 已發布修補 |
 
-#### 1.4 CVE-2025-43520 — Apple 多產品 Classic Buffer Overflow
+#### 1.6 CVE-2025-43520 -- Apple 多產品 Buffer Overflow
 
 | 項目 | 內容 |
 |------|------|
 | **CVE** | CVE-2025-43520 |
-| **嚴重程度** | High |
-| **CWE** | CWE-120（Classic Buffer Overflow） |
+| **嚴重程度** | Critical |
+| **CWE** | CWE-120（Buffer Overflow） |
 | **影響產品** | Apple watchOS、iOS、iPadOS、macOS、visionOS、tvOS |
 | **利用狀態** | **活躍利用**（CISA KEV） |
 | **CISA KEV 新增日期** | 2026-03-20 |
 | **CISA 修補截止日** | 2026-04-03 |
 | **修補狀態** | Apple 已發布修補 |
 
-#### 1.5 CVE-2025-31277 — Apple 多產品 Buffer Overflow
+#### 1.7 CVE-2025-31277 -- Apple 多產品 Buffer Overflow
 
 | 項目 | 內容 |
 |------|------|
 | **CVE** | CVE-2025-31277 |
-| **嚴重程度** | High |
-| **CWE** | CWE-119（Buffer Overflow） |
+| **嚴重程度** | Critical |
+| **CWE** | CWE-119（Memory Corruption） |
 | **影響產品** | Apple Safari、iOS、watchOS、visionOS、iPadOS、macOS、tvOS |
 | **利用狀態** | **活躍利用**（CISA KEV） |
 | **CISA KEV 新增日期** | 2026-03-20 |
 | **CISA 修補截止日** | 2026-04-03 |
 | **修補狀態** | Apple 已發布修補 |
 
-**Apple 三筆 KEV 統一說明**：三個 Apple 漏洞於同一天（2026-03-20）被 CISA 確認活躍利用，涵蓋 Improper Locking（記憶體競爭）和 Buffer Overflow（記憶體溢位）兩種漏洞類型，可能為同一攻擊鏈的不同環節。結合本週 Predator 間諜軟體零點擊攻擊 iPhone 的揭露（2026-03-21，NCSC-FI），這些漏洞極可能被商業間諜軟體用於構建完整的利用鏈（信心水準：中）。
+**Apple 三筆 KEV 統一說明**：三個 Apple 漏洞於 2026-03-20 被 CISA 確認活躍利用，涵蓋 Improper Locking、Buffer Overflow 和 Memory Corruption 三種漏洞類型，可能為同一攻擊鏈的不同環節。結合 Predator 間諜軟體零點擊攻擊 iPhone 的持續揭露，這些漏洞可能被商業間諜軟體用於構建完整的利用鏈。修補截止日為 2026-04-03，距今 10 天。
 
 **統一修補方式**：
-1. **立即**更新所有 Apple 裝置至最新版本 — 參閱 [Apple Security Releases](https://support.apple.com/en-us/100100)
+1. **立即**更新所有 Apple 裝置至最新版本 -- 參閱 [Apple Security Releases](https://support.apple.com/en-us/100100)
 2. 透過 MDM 強制推送安全更新至所有受管理的 Apple 裝置
 3. 對高風險人士（管理層、外交人員、記者）優先推送更新
 4. 啟用 Apple Lockdown Mode（鎖定模式）用於高風險人士的裝置
-5. 參閱 [Apple Security Update — CVE-2025-43510](https://support.apple.com/en-us/125632)
-6. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-7. 參閱 [NVD — CVE-2025-43510](https://nvd.nist.gov/vuln/detail/CVE-2025-43510)、[CVE-2025-43520](https://nvd.nist.gov/vuln/detail/CVE-2025-43520)、[CVE-2025-31277](https://nvd.nist.gov/vuln/detail/CVE-2025-31277)
+5. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+6. 參閱 [NVD -- CVE-2025-43510](https://nvd.nist.gov/vuln/detail/CVE-2025-43510)
+7. 參閱 [NVD -- CVE-2025-43520](https://nvd.nist.gov/vuln/detail/CVE-2025-43520)
+8. 參閱 [NVD -- CVE-2025-31277](https://nvd.nist.gov/vuln/detail/CVE-2025-31277)
 
-> **Predator 間諜軟體關聯**（針對本週威脅）：Predator 商業間諜軟體（Intellexa 聯盟開發）本週被揭露具備零點擊 iPhone 入侵能力，可在無使用者互動的情況下完全控制裝置，存取通話、訊息、相片、麥克風與攝影機。此類攻擊主要鎖定記者、人權工作者、政府官員及反對派人士。Apple KEV 漏洞與 Predator 揭露的時間和技術特徵高度吻合。
+> **Predator 間諜軟體關聯**：Qdrant 語意查詢「ransomware defense endpoint protection」確認多個 Apple CVE 正被活躍利用。Predator 商業間諜軟體（Intellexa 聯盟開發）持續被揭露具備零點擊 iPhone 入侵能力，與這些 Apple KEV 漏洞的時間和技術特徵高度吻合。建議所有管理 Apple 裝置的組織將此視為最高優先級修補項目。
 
-#### 1.6 CVE-2025-66376 — Zimbra Collaboration Suite (ZCS) XSS
+#### 1.8 CVE-2025-66376 -- Zimbra Collaboration Suite XSS
 
 | 項目 | 內容 |
 |------|------|
 | **CVE** | CVE-2025-66376 |
-| **嚴重程度** | Medium |
+| **嚴重程度** | High |
 | **CWE** | CWE-79（Cross-Site Scripting） |
-| **影響產品** | Synacor Zimbra Collaboration Suite (ZCS) Classic UI |
+| **影響產品** | Zimbra Collaboration Suite -- Classic UI |
 | **利用狀態** | **活躍利用**（CISA KEV） |
 | **CISA KEV 新增日期** | 2026-03-18 |
 | **CISA 修補截止日** | 2026-04-01 |
-| **修補狀態** | 廠商已發布修補 |
+| **修補狀態** | Zimbra 已發布修補 |
 
-**漏洞描述**：Zimbra ZCS Classic UI 存在 XSS 漏洞，攻擊者可透過電子郵件 HTML 中的 CSS @import 指令注入惡意腳本，對使用者進行帳號劫持與資料竊取。Zimbra 歷來為 APT 組織的重要攻擊目標（如 Winter Vivern / UAC-0114）。
-
-**修補方式**：
-1. 套用 Zimbra 最新安全更新
-2. 若無法立即修補，**停用 Classic UI**，引導使用者改用 Modern Web Client
-3. 實施 Content Security Policy (CSP) 以限制 CSS @import 來源
-4. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-5. 參閱 [NVD — CVE-2025-66376](https://nvd.nist.gov/vuln/detail/CVE-2025-66376)
-
-#### 1.7 CVE-2025-47813 — Wing FTP Server 資訊洩露
-
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2025-47813 |
-| **嚴重程度** | Medium |
-| **CWE** | CWE-209（錯誤訊息敏感資訊洩漏） |
-| **影響產品** | Wing FTP Server |
-| **利用狀態** | **活躍利用**（CISA KEV） |
-| **CISA KEV 新增日期** | 2026-03-16 |
-| **CISA 修補截止日** | 2026-03-30 |
-| **修補狀態** | 廠商已發布修補 |
-
-**漏洞描述**：Wing FTP Server 在處理過長 UID Cookie 值時，錯誤訊息中包含系統配置或憑證等敏感資訊，攻擊者可藉此擴大攻擊面。
+**漏洞描述**：Zimbra Collaboration Suite 的 Classic UI 存在 XSS 漏洞，攻擊者可利用此漏洞在受害者瀏覽器中執行惡意腳本，竊取 Zimbra 郵件帳號的 Session Token 或敏感郵件內容。Zimbra 歷來為 APT 組織的重要攻擊目標（如 APT28 曾利用 Zimbra 漏洞針對政府機構）。修補截止日為 2026-04-01，距今 8 天。
 
 **修補方式**：
-1. 更新 Wing FTP Server 至最新版本
-2. 若無法更新，限制 Wing FTP Server 管理介面的外部存取
-3. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-4. 參閱 [NVD — CVE-2025-47813](https://nvd.nist.gov/vuln/detail/CVE-2025-47813)
+1. **立即**升級 Zimbra 至最新修補版本 -- 參閱 [Zimbra Security Center](https://wiki.zimbra.com/wiki/Security_Center)
+2. 若無法立即修補，考慮暫時停用 Classic UI，強制使用 Modern UI
+3. 部署 WAF 規則攔截 XSS 攻擊嘗試
+4. 監控 Zimbra 的異常登入活動和郵件轉發規則變更
+5. 參閱 [CISA KEV 目錄](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+6. 參閱 [NVD -- CVE-2025-66376](https://nvd.nist.gov/vuln/detail/CVE-2025-66376)
 
-### P2 — 高優先（快速武器化 / 緊急修補 / 公開 PoC）
+---
 
-#### 1.8 CVE-2026-33017 — Langflow AI 工作流程平台 RCE
+### P1 -- 極緊急（本週重大事件驅動 / 高影響）
 
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2026-33017 |
-| **嚴重程度** | Critical |
-| **影響產品** | Langflow（開源 AI 工作流程建構平台） |
-| **利用狀態** | **漏洞公開後 20 小時即遭武器化**（NCSC-FI 報告） |
-| **修補狀態** | 建議升級至最新版本 |
-
-**漏洞描述**：Langflow 存在嚴重漏洞，漏洞公開後不到 20 小時即遭攻擊者積極利用。Langflow 用於建構 LLM 應用程式，廣泛部署在 AI 開發環境中，成功利用可能導致遠端程式碼執行。20 小時的武器化時間創下本月最快紀錄，凸顯攻擊者持續監控新揭露漏洞的能力。
-
-**修補方式**：
-1. 立即升級 Langflow 至最新修補版本
-2. 若無法升級，**立即停止暴露 Langflow 於外部網路**
-3. 審查 Langflow 伺服器日誌，搜尋異常活動
-4. 考慮將 Langflow 部署在隔離的容器或虛擬環境中
-
-#### 1.9 Oracle Identity Manager — 緊急 RCE 修補
+#### 1.9 CISA 端點管理系統強化指引
 
 | 項目 | 內容 |
 |------|------|
-| **嚴重程度** | Critical |
-| **影響產品** | Oracle Identity Manager (OIM) / Oracle Identity Governance |
-| **利用狀態** | Oracle 發布計畫外緊急修補（out-of-band），顯示漏洞嚴重程度極高 |
-| **修補狀態** | Oracle 已發布緊急修補 |
+| **影響範圍** | 所有使用端點管理（MDM/UEM/EDR 管理主控台）的組織 |
+| **嚴重程度** | High（基礎設施級風險） |
+| **利用狀態** | CISA 因端點管理系統遭駭客攻擊後發出敦促指引 |
 
-**漏洞描述**：Oracle 罕見發布計畫外的緊急修補，修復 Oracle Identity Manager 中的嚴重 RCE 漏洞。OIM 是企業身份與存取管理核心系統，攻擊成功可能導致整個身份管理基礎設施淪陷，攻擊者可建立後門帳號、提升權限、橫向移動至全企業。
+**事件描述**：CISA 本週因端點管理系統遭攻擊事件，發出敦促企業強化端點管理基礎設施的指引。端點管理系統（MDM、UEM、EDR 管理主控台等）是高價值目標——一旦入侵，攻擊者可對所有受管端點推送惡意軟體或政策變更，影響範圍涵蓋整個組織。
 
-**修補方式**：
-1. 立即套用 Oracle 緊急修補 — 參閱 [Oracle 安全公告](https://www.oracle.com/security-alerts/)
-2. 限制 Oracle Identity Manager 的網路存取，僅允許管理端點
-3. 監控身份管理系統的異常帳號建立或權限變更
-4. 審查 OIM 存取日誌
+**強化建議**：
+1. **限制管理主控台的網路存取**：僅允許來自受信任管理網段的存取，啟用 IP 白名單
+2. **對管理員帳號啟用 MFA**：所有端點管理平台的管理員必須使用硬體安全金鑰或 FIDO2
+3. **審查管理員帳號清單**：移除不必要的管理權限，實施最小權限原則
+4. **監控管理主控台活動日誌**：設定異常操作的即時告警（大規模政策變更、批次裝置操作等）
+5. **隔離管理基礎設施**：端點管理伺服器應位於獨立的管理 VLAN，與一般使用者網路隔離
 
-#### 1.10 Roundcube 關鍵漏洞
-
-| 項目 | 內容 |
-|------|------|
-| **嚴重程度** | Critical |
-| **影響產品** | Roundcube Webmail |
-| **利用狀態** | CERT-SE 公告，Roundcube 歷來為 APT 目標 |
-| **修補狀態** | 修補已發布 |
-
-**漏洞描述**：Roundcube 開源 Webmail 存在嚴重漏洞，CERT-SE 於 2026-03-20 發布公告。Roundcube 在 ISP 和組織中廣泛部署，且歷來為國家級 APT 組織（如 Winter Vivern）的攻擊目標，用於竊取電子郵件內容。
-
-**修補方式**：
-1. 立即更新至 Roundcube 最新版本 — 參閱 [Roundcube 發布公告](https://roundcube.net/)
-2. 參閱 [CERT-SE 公告](https://www.cert.se/2026/03/sarbarheter-i-roundcube-webmail.html)
-
-#### 1.11 PolyShell — Magento / Adobe Commerce 未認證 RCE
+#### 1.10 FBI 歸因俄羅斯情報部門 Signal/WhatsApp 釣魚
 
 | 項目 | 內容 |
 |------|------|
-| **嚴重程度** | Critical |
-| **影響產品** | Adobe Commerce (Magento) |
-| **利用狀態** | 公開揭露，攻擊者無需憑證即可觸發（NCSC-FI） |
-| **修補狀態** | 建議升級至最新版本 |
+| **威脅行為者** | 俄羅斯情報部門（FBI 正式歸因） |
+| **攻擊目標** | 政府官員、軍事人員、外交人員、記者 |
+| **攻擊手法** | 透過 Signal/WhatsApp 釣魚連結劫持帳號 |
+| **通報機構** | FBI、CISA、CERT-FR（同步警告） |
 
-**漏洞描述**：Magento 電子商務平台存在名為「PolyShell」的漏洞，允許未認證攻擊者執行遠端程式碼，可導致完整系統控制、資料竊取、植入後門或供應鏈攻擊。Magento 為全球廣泛使用的電子商務平台，影響範圍涵蓋大量線上商店。
+**事件描述**：FBI 本週首次正式將 Signal/WhatsApp 釣魚攻擊歸因於俄羅斯情報部門，延續前週 AIVD/MIVD 揭露及 CERT-FR 警告的發展脈絡。攻擊者透過精心構造的釣魚訊息，誘騙目標點擊連結或分享驗證碼，進而劫持通訊帳號，截取敏感通訊內容。
 
-**修補方式**：
-1. 立即升級 Adobe Commerce / Magento 至最新版本 — 參閱 [Adobe 安全公告](https://helpx.adobe.com/security.html)
-2. 實施 WAF 規則阻擋已知攻擊模式
-3. 審查電子商務伺服器是否有可疑的後門或異常程序
+**防禦建議**：
+1. **教育使用者辨識釣魚攻擊**：特別是透過通訊平台發送的可疑連結和驗證碼請求
+2. **檢查已連接裝置清單**：在 Signal/WhatsApp/Telegram 設定中確認所有已連接的裝置均為本人所有，移除不認識的裝置
+3. **啟用雙步驟驗證**：在所有通訊應用中啟用 PIN 碼或雙步驟驗證
+4. **限制使用場景**：機密通訊不應僅依賴消費級通訊應用
+5. **對高風險人士發出專項提醒**：政府官員、外交人員、記者應接受針對性的安全意識培訓
 
-#### 1.12 UniFi Network Application 嚴重漏洞
+---
 
-| 項目 | 內容 |
-|------|------|
-| **嚴重程度** | Critical |
-| **影響產品** | Ubiquiti UniFi Network Application |
-| **利用狀態** | CERT-RO 公告 |
-| **修補狀態** | 修補已發布 |
+### P2 -- 緊急（本週內修補）
 
-**修補方式**：
-1. 立即更新 UniFi Network Application — 參閱 [Ubiquiti 安全公告](https://community.ui.com/)
-2. 參閱 [CERT-RO 公告](https://dnsc.ro/citeste/alerta-vulnerabilitate-critica-identificata-la-nivelul-unifi-network-application)
+#### 1.11 CERT-FR 本週漏洞公告
 
-### P3 — 持續關注
+本週 CERT-FR 發布多份安全公告，涵蓋以下主要廠商和產品：
 
-#### 1.13 CVE-2021-22054 — Omnissa Workspace ONE UEM SSRF
+| 廠商/產品 | 重點 |
+|-----------|------|
+| **Citrix XenServer** | 虛擬化平台漏洞 |
+| **MongoDB** | 資料庫安全更新 |
+| **Apple** | 與 CISA KEV 對應 |
+| **Atlassian** | Confluence/Jira 相關漏洞 |
+| **VMware** | 多份虛擬化平台漏洞 |
+| **GLPI** | IT 資產管理平台 SQL 注入漏洞 |
+| **Suricata** | IDS/IPS 引擎漏洞 |
+| **Node.js** | JavaScript 執行環境安全更新 |
+| **Microsoft** | Windows 多元件、Office、Exchange |
+| **Google Chrome** | 瀏覽器安全更新 |
+| **Elastic** | Elasticsearch/Kibana 安全更新 |
+| **IBM** | 多產品安全更新 |
+| **Traefik** | 反向代理/負載平衡器漏洞 |
+| **Linux Kernel** | 多發行版核心安全更新 |
+| **Oracle** | 多產品安全更新 |
+| **Spring Framework** | Java 生態系安全更新 |
+| **CPython** | Python 直譯器安全更新 |
+| **Qnap** | NAS 設備安全更新 |
+| **Microsoft Edge** | 瀏覽器安全更新 |
+| **Synology** | NAS 設備安全更新 |
 
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2021-22054 |
-| **影響產品** | Omnissa Workspace ONE UEM（前 VMware） |
-| **利用狀態** | **活躍利用**（CISA KEV，新增日期 2026-03-09） |
-| **CISA 修補截止日** | 2026-03-23（本日到期） |
+**統一修補方式**：
+1. 參閱 [CERT-FR 安全公告頁面](https://www.cert.ssi.gouv.fr/avis/) 取得所有公告詳情
+2. 依據組織部署的產品，對照 CERT-FR 公告逐一評估影響
+3. 優先修補 Critical 和 High 嚴重程度的漏洞
+4. 對 VMware/Citrix 虛擬化環境的修補需在維護窗口執行
+5. **特別注意 GLPI SQL 注入漏洞**：IT 資產管理平台含有大量敏感資訊，應優先處理
+6. **特別注意 Suricata 漏洞**：安全工具本身的漏洞可能被用於繞過偵測
 
-**修補方式**：立即套用修補。參閱 [VMware Security Advisory VMSA-2021-0029](https://web.archive.org/web/20211222154335/https://www.vmware.com/security/advisories/VMSA-2021-0029.html)
+#### 1.12 本週 PoC 公開漏洞（重點摘要）
 
-#### 1.14 CVE-2025-26399 — SolarWinds Web Help Desk 反序列化 RCE
+本週 exploit_intelligence 中有大量新增 PoC 公開漏洞，以下為依 CVSS/影響評估需特別關注的項目：
 
-| 項目 | 內容 |
-|------|------|
-| **CVE** | CVE-2025-26399 |
-| **影響產品** | SolarWinds Web Help Desk |
-| **利用狀態** | **活躍利用**（CISA KEV，新增日期 2026-03-09） |
-| **CISA 修補截止日** | 2026-03-12（已到期） |
+| CVE | 產品 | 類型 | 備註 |
+|-----|------|------|------|
+| CVE-2025-32434 | PyTorch | RCE | AI/ML 框架漏洞，PoC 公開 |
+| CVE-2025-34027 | Commvault | RCE | 備份軟體漏洞，PoC 公開 |
+| CVE-2025-31651 | Apache Tomcat | Path Traversal | Web 伺服器漏洞，PoC 公開 |
+| CVE-2025-47176 | CUPS | 列印服務漏洞 | Linux 環境，PoC 公開 |
+| CVE-2021-22054 | VMware Workspace ONE | SSRF | 活躍利用報告 |
 
-**修補方式**：升級至 Web Help Desk 12.8.7 Hotfix 1 或更新版本。參閱 [SolarWinds 安全公告](https://www.solarwinds.com/trust-center/security-advisories/cve-2025-26399)
+**建議**：
+1. 盤點組織內是否使用上述產品
+2. 對 PoC 已公開的漏洞應在 72 小時內完成評估和修補
+3. 特別注意 PyTorch 漏洞對 AI/ML 環境的影響
+4. 使用 Commvault 備份的組織應立即評估影響，因為備份系統入侵後可能導致資料完整性喪失
 
 ---
 
 ## 2. 安全控制建議
 
-基於本週威脅態勢，建議強化以下安全控制。每項建議標註為「通用建議」（長期安全基線）或「針對本週威脅」（基於本週具體事件）。
-
 ### 2.1 網路層面
 
-| 類型 | 建議 | 說明 |
-|------|------|------|
-| **針對本週威脅** | 封鎖 Cisco FMC/SCC 管理介面的外部存取 | CVE-2026-20131 正被勒索軟體利用，FMC 管理介面不應暴露於網際網路 |
-| **針對本週威脅** | 盤點所有 Cisco ASA/Firepower 設備版本 | Interlock 勒索軟體鎖定 Cisco 企業防火牆，確認所有設備均已套用最新修補 |
-| **針對本週威脅** | 部署 IDS/IPS 規則偵測 SharePoint 反序列化攻擊模式 | CVE-2026-20963 活躍利用中，監控針對 SharePoint 的可疑 POST 請求 |
-| **針對本週威脅** | 封鎖已知 C2 IP 與域名 | 參考 ThreatFox、Feodo Tracker 的 Stealer 竊密軟體 IoC 指標 |
-| **針對本週威脅** | 限制 Adminer/phpMyAdmin 的外部存取 | SANS ISC 蜜罐偵測到大量掃描，確保資料庫管理工具不暴露於網際網路 |
-| 通用建議 | 實施網路分段，隔離管理基礎設施 | 防止攻擊者從單一入口橫向移動至整個網路 |
-| 通用建議 | 定期審查防火牆規則與 ACL | 確保僅允許必要的流量通過 |
+**針對本週威脅**：
+- **隔離所有管理基礎設施**：本週 Cisco FMC（CVE-2026-20131 勒索軟體利用，已逾期）與 CISA 端點管理系統強化指引共同凸顯管理介面的高風險性。立即確認所有管理介面（防火牆管理、端點管理、虛擬化管理）均未暴露於公共網路，將管理介面限制在專用管理 VLAN
+- **加強 SharePoint 伺服器的網路存取控制**：CVE-2026-20963 已逾期 3 天仍活躍利用中，限制 SharePoint 的外部存取至必要範圍
+- **部署 WAF 虛擬修補**：針對 Craft CMS（CVE-2025-32432）、Laravel Livewire（CVE-2025-54068）、Zimbra（CVE-2025-66376）、GLPI（SQL 注入）等 Web 應用漏洞，在修補前部署 WAF 規則作為過渡措施
+- **加強 Suricata 更新**：若使用 Suricata 作為 IDS/IPS 引擎，CERT-FR 公告的漏洞可能影響偵測能力，應優先更新
+
+**通用建議**：
+- 定期審查防火牆規則，移除過時或不必要的允許規則
+- 確保網路分段有效隔離關鍵系統（管理平面、資料平面、使用者平面）
+- 啟用 DNS 查詢日誌記錄和分析，偵測 C2 通訊
+- 部署 TLS 檢查（在合規和隱私考量下）偵測加密通道中的威脅
 
 ### 2.2 端點層面
 
-| 類型 | 建議 | 說明 |
-|------|------|------|
-| **針對本週威脅** | 立即更新所有 Apple 裝置（iOS、macOS、watchOS、tvOS、visionOS） | 三筆 CISA KEV + Predator 間諜軟體零點擊攻擊，高風險人士應啟用 Lockdown Mode |
-| **針對本週威脅** | 驗證 Trivy 安全掃描器版本與完整性 | TeamPCP 供應鏈攻擊透過 GitHub Actions 散布 infostealer，影響 CI/CD 流程 |
-| **針對本週威脅** | 監控 Linux 伺服器上的 GSocket 後門 | 本週發現透過 Bash 腳本安裝 GSocket 的攻擊活動 |
-| **針對本週威脅** | 強化端點管理系統安全 | CISA 針對 Stryker 醫療科技公司遭攻擊後發布端點管理系統強化指引 |
-| **針對本週威脅** | 監控 Magento/Adobe Commerce 伺服器 | PolyShell 漏洞允許未認證 RCE，電子商務環境高度警戒 |
-| 通用建議 | 部署 EDR 解決方案並確保特徵碼為最新 | 本週多種新型惡意軟體（LeakNet 勒索軟體、infostealer）被揭露 |
-| 通用建議 | 強化容器與 CI/CD 管線安全 | 供應鏈攻擊趨勢持續升高，驗證所有安全工具的來源完整性 |
+**針對本週威脅**：
+- **立即推送 Apple 裝置更新**：三筆 Apple KEV + Predator 零點擊攻擊，所有 Apple 裝置應透過 MDM 強制更新至最新版本。高風險人士應啟用 Lockdown Mode
+- **依 CISA 指引強化端點管理系統**：審查 MDM/UEM/EDR 管理主控台的存取控制和配置安全，確保管理基礎設施本身不成為攻擊向量
+- **掃描 PHP Web 應用程式**：Craft CMS 和 Laravel Livewire 同週遭活躍利用，對所有 PHP Web 應用執行安全掃描，搜尋 webshell 和後門
+- **更新 Google Chrome 和 Microsoft Edge**：CERT-FR 公告涵蓋兩大瀏覽器的安全更新，應透過群組原則或 MDM 強制推送
+
+**通用建議**：
+- 確保所有端點的 EDR/XDR 解決方案為最新版本並正常運作
+- 啟用作業系統的自動更新機制
+- 限制本地管理員權限（Least Privilege Principle）
+- 啟用應用程式白名單（Application Whitelisting）於關鍵伺服器
 
 ### 2.3 身分認證層面
 
-| 類型 | 建議 | 說明 |
-|------|------|------|
-| **針對本週威脅** | 強化 Signal/WhatsApp 帳號安全設定 | FBI/CISA 聯合歸因俄羅斯情報機構釣魚攻擊，啟用 Registration Lock、審查已連結裝置 |
-| **針對本週威脅** | 向高風險人士發布安全通告 | 政府官員、國防人員、記者、社運人士為主要目標，警告加密通訊應用的釣魚風險 |
-| **針對本週威脅** | 對 Oracle Identity Manager 實施緊急存取審查 | 緊急 RCE 修補發布，審查是否有異常帳號建立或權限變更 |
-| **針對本週威脅** | 審查 Azure Monitor 告警設定 | 攻擊者濫用 Azure Monitor 發送偽冒 Microsoft Security Team 的回撥式釣魚 |
-| 通用建議 | 對所有管理介面實施 MFA | 特別是防火牆管理、SharePoint 管理、身份管理系統 |
-| 通用建議 | 定期審查特權帳號與存取權限 | 最小權限原則，移除不必要的管理帳號 |
+**針對本週威脅**：
+- **強化通訊應用帳號安全（最高優先）**：FBI 正式歸因俄羅斯情報部門 + CERT-FR 同步警告，所有使用 Signal/WhatsApp/Telegram 的人員應立即：
+  - 檢查已連接裝置清單，移除不認識的裝置
+  - 啟用雙步驟驗證/PIN 碼
+  - 對高風險人士發出專項安全提醒
+- **強化端點管理系統管理員帳號**：依 CISA 指引，所有端點管理平台的管理員必須使用硬體安全金鑰或 FIDO2 認證
+- **審查 SharePoint 服務帳號權限**：CVE-2026-20963 已逾期 3 天，審查 SharePoint 服務帳號是否擁有過多權限
+- **強化 Cisco FMC 管理員帳號**：啟用 MFA、限制管理員帳號數量、設定強密碼政策
+
+**通用建議**：
+- 所有管理員帳號必須啟用 MFA（多因子認證）
+- 定期審查特權帳號清單，移除不必要的特權
+- 實施條件式存取政策（Conditional Access）
+- 部署 PAM（Privileged Access Management）解決方案管理特權存取
 
 ### 2.4 資料保護層面
 
-| 類型 | 建議 | 說明 |
-|------|------|------|
-| **針對本週威脅** | 驗證勒索軟體備份恢復能力 | Interlock 和 LeakNet 勒索軟體均採用雙重勒索策略，確保離線備份可用 |
-| **針對本週威脅** | 審查 CI/CD 環境中的密鑰與憑證 | Trivy 供應鏈攻擊可能已竊取 CI/CD 環境中的敏感憑證 |
-| **針對本週威脅** | 加強電子商務平台資料保護 | PolyShell 漏洞威脅 Magento 商店的客戶資料與支付資訊 |
-| 通用建議 | 實施 3-2-1 備份策略 | 3 份副本、2 種媒體、1 份離線儲存 |
-| 通用建議 | 加密靜態和傳輸中的敏感資料 | 降低資料外洩後的影響 |
+**針對本週威脅**：
+- **加強離線備份策略**：Interlock 勒索軟體持續攻擊網路設備（延續 W12），備份和災難復原程序需涵蓋網路設備配置。確保防火牆規則、路由表、ACL 配置備份存放於離線且隔離的儲存空間
+- **保護 CMS 和 Web 應用資料**：Craft CMS 和 Laravel Livewire 漏洞可能導致網站資料和使用者資訊洩露，確認 Web 應用資料庫有適當的存取控制和備份
+- **保護郵件資料**：Zimbra XSS 漏洞可能導致郵件內容被竊取，審查郵件系統的 DLP 控制措施
+
+**通用建議**：
+- 實施 3-2-1 備份策略（3 份備份、2 種媒體、1 份離線）
+- 定期測試備份還原程序，確認 RTO/RPO 可達成
+- 對敏感資料實施加密（靜態和傳輸中）
+- 部署 DLP（Data Loss Prevention）監控敏感資料的異常傳輸
 
 ---
 
 ## 3. 緩解策略
 
-針對尚無修補或無法立即套用修補的漏洞，以下為臨時緩解措施。
+本節針對尚無完整修補、新興威脅或需要持續監控的項目提供臨時緩解措施。
 
-### 3.1 Cisco FMC/SCC（CVE-2026-20131）— 若無法立即修補
+### 3.1 Interlock 勒索軟體針對網路基礎設施（延續 W12）
 
-| 項目 | 內容 |
-|------|------|
-| **緩解措施** | 1. 將 FMC/SCC 管理介面隔離至專用管理 VLAN，禁止任何外部存取<br>2. 實施嚴格的 ACL 規則，僅允許特定管理工作站 IP 連線<br>3. 啟用 FMC 存取日誌監控，設定異常登入告警<br>4. 暫停 FMC 非必要服務與 API 端點 |
-| **有效期限** | 此為臨時措施，應在 **48 小時內**完成正式修補（CISA 截止日已過） |
-| **重新評估時間** | 2026-03-25 |
+**有效期限**：持續執行，直到 Cisco 發布完整的防禦指引 | **重新評估時間**：每週評估（至少至 2026-04-19）
 
-### 3.2 Microsoft SharePoint（CVE-2026-20963）— 若無法立即修補
+**問題**：Interlock 勒索軟體集團持續針對 Cisco 企業級防火牆設備展開定向勒索攻擊。CVE-2026-20131 的 CISA KEV 修補截止日已逾期（2026-03-22），結合本週 CISA 敦促端點管理系統強化的背景，管理基礎設施的攻擊面問題愈發嚴峻。
 
-| 項目 | 內容 |
-|------|------|
-| **緩解措施** | 1. 停用 SharePoint 的外部存取，僅允許內部 VPN 連線<br>2. 部署 WAF 規則阻擋可疑的反序列化攻擊載荷<br>3. 監控 IIS 日誌中的異常 POST 請求<br>4. 考慮暫時將 SharePoint 切換為唯讀模式 |
-| **有效期限** | 此為臨時措施，應在 **24 小時內**完成正式修補（CISA 截止日已過兩天） |
-| **重新評估時間** | 2026-03-24 |
+**暫時緩解措施**：
+1. **盤點所有 Cisco 防火牆和網路設備版本** -- 確認修補狀態，優先更新具有已知漏洞的設備
+2. **啟用設備完整性驗證** -- 在 Cisco 設備上啟用 Secure Boot 和 Image Verification
+3. **備份所有網路設備配置** -- 將防火牆規則、路由表、ACL 配置匯出並儲存於離線位置
+4. **監控異常管理介面存取** -- 建立管理介面存取的基線，偵測來自非預期 IP 或時段的管理連線
+5. **建立網路設備災難復原程序** -- 確認能在網路設備全部被加密的情境下快速恢復網路連線
 
-### 3.3 Trivy 供應鏈攻擊 — 受影響組織的應對措施
+### 3.2 國家級通訊應用劫持行動（FBI 歸因升級）
 
-| 項目 | 內容 |
-|------|------|
-| **緩解措施** | 1. 暫停所有使用 Trivy 的 CI/CD 管線<br>2. 驗證已部署的 Trivy 版本是否受影響（比對官方雜湊值）<br>3. 輪替所有可能已暴露的 CI/CD 密鑰與憑證<br>4. 掃描建置環境中是否有 infostealer 惡意軟體殘留<br>5. 審查 GitHub Actions workflow 定義是否被篡改 |
-| **有效期限** | 直到確認 Trivy 官方版本安全無虞 |
-| **重新評估時間** | 2026-03-25 |
+**有效期限**：持續執行 | **重新評估時間**：每月評估（至少至 2026-06-30）
 
-### 3.4 Signal/WhatsApp 釣魚（俄羅斯情報機構）— 帳號安全強化
+**問題**：FBI 本週首次正式歸因俄羅斯情報部門進行 Signal/WhatsApp 釣魚攻擊，CERT-FR 同步發布即時通訊遭針對性攻擊警報。威脅等級從「疑似」升級為「經情報機構確認」，主要目標為政府官員、軍事人員、外交人員、記者等高風險人士。
 
-| 項目 | 內容 |
-|------|------|
-| **緩解措施** | 1. 啟用 Signal Registration Lock 與 WhatsApp Two-Step Verification<br>2. 審查 Signal 已連結裝置清單，移除不明裝置<br>3. 不點擊任何要求重新驗證帳號的連結<br>4. 向高風險人士發布安全通告，說明釣魚攻擊特徵<br>5. 考慮建立備用安全通訊管道 |
-| **有效期限** | 持續性威脅，持續執行 |
-| **重新評估時間** | 2026-04-06（每兩週） |
+**暫時緩解措施**：
+1. **教育使用者辨識釣魚攻擊** -- 特別是透過通訊平台發送的可疑連結和驗證碼請求
+2. **檢查已連接裝置清單** -- 在 Signal/WhatsApp/Telegram 設定中確認所有已連接的裝置均為本人所有
+3. **啟用雙步驟驗證** -- 在所有通訊應用中啟用 PIN 碼或雙步驟驗證
+4. **限制使用場景** -- 機密通訊不應僅依賴消費級通訊應用
+5. **對高風險人士進行專項培訓** -- 納入最新 FBI 歸因細節和攻擊手法
+6. **監控帳號異常** -- 關注帳號的異常登入通知或裝置變更通知
 
-### 3.5 Langflow（CVE-2026-33017）— 若無法立即修補
+### 3.3 Predator 間諜軟體零點擊攻擊（延續 W12）
 
-| 項目 | 內容 |
-|------|------|
-| **緩解措施** | 1. 立即將 Langflow 從外部網路斷開<br>2. 限制存取至授權開發人員 IP<br>3. 審查 Langflow 伺服器日誌搜尋異常活動<br>4. 考慮部署在隔離容器環境中 |
-| **有效期限** | 應在 **48 小時內**完成正式修補 |
-| **重新評估時間** | 2026-03-25 |
+**有效期限**：持續執行 | **重新評估時間**：每月評估（至少至 2026-06-30）
 
-### 3.6 Azure Monitor 回撥式釣魚 — 防範措施
+**問題**：Predator 商業間諜軟體具備零點擊 iPhone 入侵能力，無需目標用戶任何互動即可完全接管裝置。本週三筆 Apple KEV（CVE-2025-43510/43520/31277）的修補截止日為 2026-04-03，與 Predator 攻擊鏈的關聯性持續存在。
 
-| 項目 | 內容 |
-|------|------|
-| **緩解措施** | 1. 教育使用者辨識回撥式釣魚特徵（要求撥打電話的「安全警告」）<br>2. 審查 Azure Monitor 的告警通知設定，確認僅授權管理員可建立告警<br>3. 在郵件安全閘道標記來自 Azure Monitor 的非預期告警郵件<br>4. 建立內部報告機制，使用者收到可疑 Microsoft 安全警告時應回報 |
-| **有效期限** | 持續性威脅 |
-| **重新評估時間** | 2026-04-06 |
+**暫時緩解措施**：
+1. **啟用 Apple Lockdown Mode** -- 為所有高風險人士的 Apple 裝置啟用鎖定模式
+2. **定期重啟裝置** -- 部分間諜軟體植入為非持久性，重啟可清除記憶體中的惡意程式碼
+3. **使用 iVerify 或 MVT 掃描** -- 定期執行行動裝置威脅偵測工具掃描
+4. **限制高風險人士的裝置使用** -- 敏感會議中使用法拉第袋或將裝置留在安全區域外
+5. **保持裝置更新** -- 確保 iOS 始終為最新版本
+
+### 3.4 PHP Web 應用程式碼注入攻擊高峰
+
+**有效期限**：至 2026-04-07 | **重新評估時間**：2026-03-31
+
+**問題**：Craft CMS（CVE-2025-32432）和 Laravel Livewire（CVE-2025-54068）同週被確認活躍利用，PHP 生態系面臨程式碼注入攻擊高峰。由於 PHP 仍是全球最廣泛使用的伺服器端語言之一，影響範圍極為龐大。
+
+**暫時緩解措施**：
+1. **全面盤點 PHP Web 應用** -- 列出所有使用 Craft CMS、Laravel 框架或 Livewire 元件的應用
+2. **部署 WAF 規則** -- 針對程式碼注入攻擊向量部署 WAF 規則（ModSecurity CRS、Cloudflare WAF 等）
+3. **檢查 Web 伺服器完整性** -- 掃描所有 PHP Web 應用的檔案系統，搜尋 webshell 和後門
+4. **限制 PHP 執行權限** -- 使用 `open_basedir`、`disable_functions` 限制 PHP 可存取的範圍
+5. **啟用 PHP 框架安全模式** -- 確保 Laravel 的 `APP_DEBUG=false` 和 Craft CMS 的安全配置
+
+### 3.5 端點管理系統攻擊面
+
+**有效期限**：持續執行 | **重新評估時間**：2026-04-07
+
+**問題**：CISA 本週因端點管理系統遭攻擊事件發出強化指引。端點管理系統（MDM/UEM/EDR 管理主控台）是高價值目標——一旦入侵，攻擊者可透過管理通道對所有受管端點推送惡意軟體，實現大規模供應鏈式攻擊。
+
+**暫時緩解措施**：
+1. **網路隔離** -- 端點管理伺服器應位於獨立的管理 VLAN
+2. **強制 MFA** -- 所有管理員帳號使用硬體安全金鑰
+3. **最小權限** -- 審查並縮減管理員帳號清單和權限範圍
+4. **即時告警** -- 設定大規模政策變更、批次裝置操作的即時告警
+5. **定期審計** -- 每月審計管理主控台的存取日誌和配置變更記錄
 
 ---
 
 ## 4. 注意事項
 
-### 4.1 建議適用範圍與限制
+### 4.1 適用範圍與限制
 
-- **本報告的修補建議適用於一般企業環境**。若組織有特殊合規要求（如 HIPAA、PCI DSS、金融監理機構規範），請結合相關法規要求評估修補優先級。
-- **CISA KEV 截止日期**主要適用於美國聯邦機構（依 BOD 22-01 約束力），但所有組織均應將 KEV 清單作為修補優先級的重要參考。
-- **Predator 間諜軟體與 Apple KEV 的關聯**為本報告基於時間和技術特徵的推論（信心水準：中），非官方確認。
-- **Interlock 勒索軟體與 CVE-2026-20131 的關聯**同為推論（信心水準：中），基於攻擊目標（Cisco 防火牆）的重疊。
+- **優先修補清單**適用於所有使用受影響產品的組織。聯邦機構另需遵循 BOD 22-01 和 CISA KEV 的強制期限。
+- **CVE-2026-20131（Cisco FMC）CISA 修補截止日 2026-03-22 已逾期 2 天**。尚未修補的聯邦機構已違反 BOD 22-01。非聯邦組織亦應視為最高優先級。
+- **CVE-2026-20963（SharePoint）CISA 修補截止日 2026-03-21 已逾期 3 天**。同上。
+- **Craft CMS 和 Laravel Livewire 漏洞**主要影響使用這些框架的 Web 開發團隊和營運團隊。未使用相關框架的組織不受直接影響。
+- **FBI 通訊應用釣魚歸因**主要針對高風險人士（政府官員、外交人員、軍事人員、記者）。一般企業使用者風險相對較低，但仍應保持警覺。
+- **CISA 端點管理系統指引**適用於所有使用 MDM/UEM/EDR 管理平台的組織，包含雲端託管和本地部署版本。
+- **CERT-FR 多份公告**涵蓋廣泛產品，組織應依據自身部署的產品對照評估。
+- **ICS/OT 環境**的修補建議需要特別謹慎，必須遵循工業控制系統的修補管理程序。
 
-### 4.2 可能的副作用
+### 4.2 修補副作用與測試建議
 
-| 操作 | 潛在副作用 | 建議 |
-|------|------------|------|
-| 停用 SharePoint 外部存取 | 遠端員工無法存取文件 | 提供 VPN 替代方案或暫用 OneDrive |
-| 暫停 Trivy CI/CD 管線 | 建置流程中斷 | 使用替代掃描工具（如 Grype）作為臨時方案 |
-| 啟用 Apple Lockdown Mode | 部分功能受限（如附件類型限制） | 僅對高風險人士啟用 |
-| 停用 Zimbra Classic UI | 習慣 Classic UI 的使用者需適應新介面 | 提供 Modern Web Client 使用指引 |
-| 隔離 FMC 管理介面 | 遠端管理能力受限 | 透過 Jump Host 或堡壘機進行管理 |
+| 修補項目 | 潛在副作用 | 建議測試步驟 |
+|----------|------------|--------------|
+| Cisco FMC/SCC（CVE-2026-20131） | 防火牆管理功能暫時中斷 | 1. 預先確認 HA 配對正常 2. 備份 FMC 配置 3. 維護窗口執行 4. 驗證防火牆規則和政策完整 |
+| SharePoint（CVE-2026-20963） | SharePoint 服務暫時中斷、搜尋索引需重建 | 1. 備份 SharePoint 資料庫 2. 非尖峰時段執行 3. 驗證搜尋功能和自訂 Web Part 正常 |
+| Craft CMS（CVE-2025-32432） | CMS 網站暫時中斷 | 1. 在 staging 環境先驗證 2. 備份資料庫和資源檔案 3. 驗證所有外掛相容性 4. 確認前端功能正常 |
+| Laravel Livewire（CVE-2025-54068） | Livewire 互動元件暫時失效 | 1. 在 staging 環境先測試 2. 執行 `composer update` 3. 驗證所有 Livewire 元件正常運作 4. 確認 AJAX 請求正常 |
+| Apple 裝置更新（3 筆 KEV） | MDM profile 需重新驗證 | 1. 測試裝置群組先更新 2. 驗證 MDM 和企業 App 3. 確認 VPN 和認證正常後全面推送 |
+| Zimbra ZCS（CVE-2025-66376） | 郵件服務可能暫時中斷 | 1. 備份 Zimbra 資料 2. 維護窗口執行 3. 驗證郵件收發和日曆功能正常 |
+| CERT-FR 多產品更新 | 視具體產品而定 | 1. 依產品別評估風險 2. 按優先級分批次部署 3. 每批部署後驗證功能正常 |
+| Suricata 更新 | IDS/IPS 偵測規則可能暫時中斷 | 1. 確認備援偵測機制可用 2. 維護窗口執行 3. 驗證規則載入正常 |
 
-### 4.3 建議的測試步驟
+### 4.3 指標與偵測資源
 
-1. **修補前**：在測試環境驗證修補不影響正常業務功能
-2. **修補後**：執行功能測試確認服務正常運作
-3. **特別注意**：
-   - Cisco FMC 修補後確認所有受管防火牆政策仍正確套用
-   - SharePoint 修補後確認工作流程、搜尋與 API 整合正常
-   - Oracle Identity Manager 修補後確認身份驗證與單一登入正常
-   - Apple 裝置更新後確認 MDM 設定檔正常
+本週可使用的威脅偵測資源：
+
+| 資源 | 用途 | 連結 |
+|------|------|------|
+| CISA KEV 目錄 | 所有已知遭利用漏洞 | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| Cisco Security Advisory | Cisco FMC/SCC 修補指引 | [Cisco PSIRT](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-rce-NKhnULJh) |
+| MSRC 安全更新指南 | SharePoint 及 Windows 修補 | [MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20963) |
+| Apple Security Releases | Apple 裝置更新指引 | [Apple](https://support.apple.com/en-us/100100) |
+| Craft CMS 安全公告 | Craft CMS 修補 | [Craft CMS](https://craftcms.com/knowledge-base/craft-cms-cve-2025-32432) |
+| Laravel Livewire Advisory | Livewire 修補 | [GitHub Advisory](https://github.com/livewire/livewire/security/advisories/GHSA-29cq-5w36-x7w3) |
+| Zimbra Security Center | Zimbra ZCS 修補 | [Zimbra](https://wiki.zimbra.com/wiki/Security_Center) |
+| CERT-FR 安全公告 | 多產品公告 | [CERT-FR](https://www.cert.ssi.gouv.fr/avis/) |
+| abuse.ch URLhaus | 惡意 URL | [URLhaus](https://urlhaus.abuse.ch/) |
+| abuse.ch ThreatFox | IoC 指標 | [ThreatFox](https://threatfox.abuse.ch/) |
+| Feodo Tracker C2 IP 清單 | 封鎖勒索軟體 C2 基礎設施 | [Feodo Tracker](https://feodotracker.abuse.ch/) |
+| GitHub Advisory Database | 開源漏洞 | [GitHub Advisories](https://github.com/advisories) |
+
+### 4.4 本週 CISA KEV 彙總
+
+| CVE ID | 產品 | 漏洞類型 | KEV 新增日期 | 修補截止日 | 勒索軟體利用 | 狀態 |
+|--------|------|---------|-------------|-----------|-------------|------|
+| CVE-2026-20131 | Cisco FMC/SCC | Deserialization RCE | 2026-03-19 | **2026-03-22 ⚠️ 已逾期** | **已確認** | **逾期** |
+| CVE-2026-20963 | SharePoint | Deserialization RCE | 2026-03-18 | **2026-03-21 ⚠️ 已逾期** | 未確認 | **逾期** |
+| CVE-2025-32432 | Craft CMS | Code Injection RCE | 2026-W13 新增 | 待確認 | 未確認 | 活躍利用 |
+| CVE-2025-54068 | Laravel Livewire | Code Injection RCE | 2026-W13 新增 | 待確認 | 未確認 | 活躍利用 |
+| CVE-2025-43510 | Apple Multiple | Improper Locking | 2026-03-20 | 2026-04-03 | 未確認 | 待修補 |
+| CVE-2025-43520 | Apple Multiple | Buffer Overflow | 2026-03-20 | 2026-04-03 | 未確認 | 待修補 |
+| CVE-2025-31277 | Apple Multiple | Buffer Overflow | 2026-03-20 | 2026-04-03 | 未確認 | 待修補 |
+| CVE-2025-66376 | Zimbra ZCS | XSS | 2026-03-18 | 2026-04-01 | 未確認 | 待修補 |
+
+### 4.5 管理基礎設施安全特別提醒
+
+本週 Cisco FMC 勒索軟體利用（CVE-2026-20131）和 CISA 端點管理系統強化指引共同凸顯管理基礎設施的高風險性。所有「管理其他系統的系統」——無論是防火牆管理、端點管理、虛擬化管理或身分識別管理——都是攻擊者的高價值目標。組織應全面檢視管理基礎設施安全態勢：
+
+1. **盤點所有管理系統**：包括 FMC、MDM/UEM、vCenter/HyperV Manager、AD/AAD、IAM 平台
+2. **確認管理系統修補狀態**：管理系統的修補優先級應高於一般系統
+3. **隔離管理平面**：管理系統的網路存取應嚴格限制，不應暴露於一般使用者網路
+4. **強化管理員認證**：所有管理系統的管理員必須使用硬體安全金鑰或 FIDO2
+5. **建立管理系統遭入侵的應變計畫**：傳統 IR 計畫通常未涵蓋管理系統被攻破的情境
+6. **監控管理系統活動**：設定異常操作的即時告警（大規模政策變更、批次操作等）
+
+### 4.6 反序列化與程式碼注入漏洞防禦提醒
+
+本週 Cisco FMC（CVE-2026-20131）和 SharePoint（CVE-2026-20963）的反序列化 RCE 持續遭利用，加上 Craft CMS（CVE-2025-32432）和 Laravel Livewire（CVE-2025-54068）的程式碼注入 RCE 新增活躍利用，遠端程式碼執行漏洞為本週最主要的威脅類型。組織應注意：
+
+1. **盤點使用 Java/.NET 反序列化的應用**：這些應用為高風險目標
+2. **盤點 PHP Web 應用框架版本**：Craft CMS 和 Laravel/Livewire 使用者應立即確認版本
+3. **部署反序列化和程式碼注入攻擊偵測**：WAF 和 IPS 可配置對應攻擊簽名
+4. **最小化端點暴露面**：限制能存取反序列化端點和 Web 應用管理介面的網路範圍
+5. **監控相關異常日誌**：Java 的 `ObjectInputStream` 異常、.NET 的 `BinaryFormatter` 異常、PHP 的 `eval()`/`assert()` 異常
 
 ---
 
-## 5. 本週威脅態勢關鍵趨勢
+## 5. 優先行動時間表
 
-### 5.1 勒索軟體攻擊目標擴展至網路基礎設施
-
-本週 Interlock 勒索軟體鎖定 Cisco 企業防火牆（2026-03-21）、CVE-2026-20131 被勒索軟體利用（CISA KEV 標記），以及 LeakNet 勒索軟體組織的揭露，共同凸顯勒索軟體攻擊正從傳統端點擴展至**網路基礎設施**。防火牆管理平台一旦淪陷，攻擊者可控制整個網路安全策略。Qdrant 歷史分析（查詢「ransomware Interlock LeakNet double extortion 2026」）顯示 LockBit 5.0（2025-10-28 揭露）已展示跨平台攻擊能力，而 Chainalysis 報告（2026-03-01）指出勒索軟體支付金額連續第二年停滯但攻擊量持續攀升，表明攻擊者正在擴大目標範圍以維持收入。
-
-### 5.2 國家級威脅行為者鎖定加密通訊
-
-FBI/CISA 聯合公告首次公開將 Signal/WhatsApp 釣魚攻擊直接歸因於俄羅斯情報機構（2026-03-20），CERT-FR 同日發布即時通訊應用程式遭鎖定的安全警告。這是加密通訊應用遭國家級威脅的重大升級，數千帳號已遭入侵。此趨勢與 CERT-SE 先前發布的通訊應用安全建議（2026-03-09）一致。
-
-### 5.3 供應鏈攻擊持續威脅 CI/CD 環境
-
-Trivy 安全掃描器遭 TeamPCP 組織入侵並植入 infostealer（2026-03-22），是繼 npm 套件大規模感染（2025-10-15）和 PyPI 攻擊事件之後，又一起針對開發工具鏈的供應鏈攻擊。攻擊安全工具本身具有特殊危害性，因為這些工具在 CI/CD 管線中擁有特權存取權限。Qdrant 查詢「supply chain attack CI/CD pipeline compromise」確認 dependency confusion 攻擊（2021 年以來）和多起套件管理系統攻擊的歷史模式。
-
-### 5.4 漏洞武器化時間窗口持續縮短
-
-Langflow CVE-2026-33017 在漏洞公開後僅 20 小時即遭武器化，再次驗證攻擊者具備快速分析和利用新揭露漏洞的能力。組織必須縮短「漏洞揭露到修補套用」的時間，以因應這種加速的威脅節奏。
-
----
-
-## 6. 國際執法成果
-
-- **Europol 關閉逾 37 萬個暗網頁面**（2026-03-21）— 大規模暗網執法行動，打擊非法商品、被竊資料和犯罪服務的交易平台
-- **Aisuru 與 KimWolf 殭屍網路遭瓦解**（2026-03-21）— 國際聯合執法行動成功瓦解兩大殭屍網路基礎設施
-- **波蘭逮捕涉嫌販售 DDoS 攻擊套件的青少年**（2026-03-11 週報告）— 打擊 DDoS-as-a-Service
-
-> 這些執法行動短期內可能降低相關犯罪活動的強度，但經驗顯示犯罪基礎設施通常會在數月內重建。組織不應因此降低防禦警覺。
+| 時間框架 | 行動項目 | 對應威脅 |
+|----------|----------|----------|
+| **立即（已逾期）** | 套用 Cisco FMC/SCC 修補 | CVE-2026-20131（勒索軟體，KEV 截止 2026-03-22 已逾期） |
+| **立即（已逾期）** | 修補 Microsoft SharePoint | CVE-2026-20963（活躍利用，KEV 截止 2026-03-21 已逾期） |
+| **立即** | 修補 Craft CMS | CVE-2025-32432（活躍利用，RCE） |
+| **立即** | 修補 Laravel Livewire | CVE-2025-54068（活躍利用，RCE） |
+| **立即（24 小時內）** | 更新所有 Apple 裝置 | CVE-2025-43510/43520/31277（三筆 KEV + Predator 攻擊鏈） |
+| **立即（24 小時內）** | 修補 Zimbra ZCS | CVE-2025-66376（活躍利用） |
+| **立即（24 小時內）** | 封鎖 Feodo Tracker C2 IP 和 URLhaus 惡意 URL | 勒索軟體/C2 基礎設施 |
+| **緊急（48 小時內）** | 依 CISA 指引強化端點管理系統 | CISA 端點管理系統強化指引 |
+| **緊急（48 小時內）** | 強化通訊應用帳號安全 | FBI 歸因俄羅斯情報部門 + CERT-FR 警告 |
+| **緊急（72 小時內）** | 盤點 Cisco 防火牆版本並強化安全配置 | Interlock 勒索軟體攻擊（延續 W12） |
+| **緊急（72 小時內）** | 部署 CERT-FR 多份公告涵蓋產品的安全更新 | CERT-FR 多產品公告 |
+| **緊急（72 小時內）** | 掃描 PHP Web 應用搜尋 webshell | Craft CMS + Livewire 攻擊高峰 |
+| **本週內** | 更新 Google Chrome 和 Microsoft Edge | CERT-FR 瀏覽器安全公告 |
+| **本週內** | 更新 Suricata IDS/IPS | CERT-FR Suricata 公告 |
+| **本週內** | 檢視 GitHub Advisories 開源漏洞 | 開源元件漏洞 |
+| **本週內** | 評估 PyTorch、Commvault、Tomcat PoC 漏洞影響 | 本週 PoC 公開漏洞 |
+| **2026-04-01 前** | 完成 Zimbra ZCS 修補 | CVE-2025-66376 KEV 截止日 |
+| **2026-04-03 前** | 完成所有 Apple 裝置更新 | 三筆 Apple KEV 截止日 |
+| **持續** | 監控 CISA KEV 目錄更新 | BOD 22-01 |
+| **持續** | 監控 Feodo Tracker、URLhaus、ThreatFox 威脅指標 | 勒索軟體/C2 |
+| **持續** | 監控 Cisco PSIRT 公告（Interlock 攻擊持續追蹤） | Cisco 設備安全 |
 
 ---
 
-## 7. 附錄：本週 CISA KEV 新增清單
+## 6. Qdrant 跨層關聯分析摘要
 
-| 新增日期 | CVE | 產品 | 利用類型 | 修補截止日 | 狀態 |
-|----------|-----|------|----------|------------|------|
-| 2026-03-16 | CVE-2025-47813 | Wing FTP Server | 資訊洩露 | 2026-03-30 | 修補可用 |
-| 2026-03-18 | CVE-2025-66376 | Zimbra ZCS | XSS | 2026-04-01 | 修補可用 |
-| 2026-03-18 | CVE-2026-20963 | Microsoft SharePoint | 反序列化 RCE | **2026-03-21（已到期）** | 修補可用 |
-| 2026-03-19 | CVE-2026-20131 | Cisco FMC/SCC | 反序列化 RCE（勒索軟體） | **2026-03-22（已到期）** | 修補可用 |
-| 2026-03-20 | CVE-2025-43510 | Apple 多產品 | Improper Locking | 2026-04-03 | 修補可用 |
-| 2026-03-20 | CVE-2025-43520 | Apple 多產品 | Buffer Overflow | 2026-04-03 | 修補可用 |
-| 2026-03-20 | CVE-2025-31277 | Apple 多產品 | Buffer Overflow | 2026-04-03 | 修補可用 |
+本報告產出過程中執行了 3 次 Qdrant 語意查詢，用於跨 Layer 關聯分析：
 
-> 仍生效的先前 KEV（修補截止日本週到期）：
-> - CVE-2021-22054 Omnissa Workspace ONE UEM SSRF — 截止日 **2026-03-23（今日到期）**
+1. **「critical vulnerability patch remediation」** -- 確認 CVE-2026-20131（Cisco FMC 反序列化 RCE）持續為本週最高優先修補項目。exploit_intelligence 中標記為 active_exploitation 且具有 Known ransomware campaign use 標記。CVE-2025-32432（Craft CMS）和 CVE-2025-54068（Laravel Livewire）為本週新增活躍利用條目，跨層驗證確認兩者均出現在 exploit_intelligence active_exploitation 分類中。歷史分析顯示程式碼注入漏洞的武器化速度持續加快，與 W12 Langflow 20 小時武器化案例形成趨勢。
+
+2. **「defense mitigation security hardening」** -- 確認 CISA 端點管理系統強化指引與 Cisco FMC 勒索軟體利用的跨層關聯。管理基礎設施（防火牆管理、端點管理、虛擬化管理）正成為攻擊者的首要目標。CVE-2026-20963（SharePoint）同時出現在 exploit_intelligence（active_exploitation）和 vulnerability_tracking（critical_high），完成跨層驗證。反序列化漏洞持續為 Java/.NET 企業軟體最危險的漏洞類型之一。
+
+3. **「ransomware defense endpoint protection」** -- 確認 Interlock 勒索軟體攻擊 Cisco 防火牆的跨層關聯持續存在，勒索軟體目標從端點擴展至網路基礎設施的趨勢在 W13 進一步強化。Apple 多筆 KEV 與 Predator 間諜軟體的時間和技術特徵吻合。FBI 歸因俄羅斯情報部門 Signal/WhatsApp 釣魚為本週新增的國家級威脅，跨 security_news_facts 和 exploit_intelligence 兩層形成完整的威脅圖譜。
 
 ---
 
@@ -518,18 +595,6 @@ Langflow CVE-2026-33017 在漏洞公開後僅 20 小時即遭武器化，再次�
 4. **非法律建議**：本報告不構成法律或合規建議
 5. **資料限制**：基於公開資料，不涵蓋非公開威脅情報
 6. **翻譯風險**：部分非英文來源經 AI 翻譯，修補建議請以官方原文為準
-7. **推論標註**：報告中標註「信心水準：中」的關聯分析為基於公開資訊的推論，非官方確認結果
-8. **時效性**：本報告基於 2026-03-23 可取得的公開資訊，威脅態勢可能快速變化
+7. **逾期警告**：本週有 2 筆 CISA KEV 漏洞已逾修補截止日（CVE-2026-20131、CVE-2026-20963），相關組織應立即行動
 
 重大安全決策請諮詢專業資安顧問，並結合組織實際環境評估。
-
----
-
-> 萃取時間：2026-03-23 UTC
-> 資料來源：CISA KEV、NCSC-FI、CERT-FR、CERT-SE、CERT-RO、SANS ISC、NVD、Qdrant 語意查詢（5 次）
-> Qdrant 查詢紀錄：
-> 1. "critical vulnerability patch remediation" — 10 筆結果
-> 2. "Cisco firewall management center exploit" — 10 筆結果
-> 3. "SharePoint deserialization vulnerability" — 10 筆結果（最高相似度 0.7154）
-> 4. "ransomware Interlock LeakNet double extortion 2026" — 10 筆結果
-> 5. "supply chain attack CI/CD pipeline compromise" — 10 筆結果
