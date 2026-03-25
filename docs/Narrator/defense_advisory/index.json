@@ -8,6 +8,38 @@
     "source_mode": "defense_advisory"
   },
   {
+    "id": "2026-W13-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 13 週",
+    "date": "2026-W13",
+    "period": "2026-03-19 至 2026-03-25",
+    "file": "2026-W13-defense-advisory.md",
+    "source_mode": "defense_advisory"
+  },
+  {
+    "id": "2026-W12-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 12 週",
+    "date": "2026-W12",
+    "period": "2026-03-16 至 2026-03-22",
+    "file": "2026-W12-defense-advisory.md",
+    "source_mode": "defense_advisory"
+  },
+  {
+    "id": "2026-W11-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 11 週",
+    "date": "2026-W11",
+    "period": "2026-03-05 至 2026-03-13",
+    "file": "2026-W11-defense-advisory.md",
+    "source_mode": "defense_advisory"
+  },
+  {
+    "id": "2026-W10-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 10 週",
+    "date": "2026-W10",
+    "period": "2026-03-02 至 2026-03-08",
+    "file": "2026-W10-defense-advisory.md",
+    "source_mode": "defense_advisory"
+  },
+  {
     "id": "2026-W09-defense-advisory-md",
     "title": "防禦建議 — 2026 第 09 週",
     "date": "2026-W09",
@@ -53,38 +85,6 @@
     "date": "2026-W04",
     "period": "2026-01-21 至 2026-01-27",
     "file": "2026-W04-defense-advisory.md",
-    "source_mode": "defense_advisory"
-  },
-  {
-    "id": "2026-W10-defense-advisory-md",
-    "title": "防禦建議 — 2026 第 10 週",
-    "date": "2026-W10",
-    "period": "2026-03-02 至 2026-03-08",
-    "file": "2026-W10-defense-advisory.md",
-    "source_mode": "defense_advisory"
-  },
-  {
-    "id": "2026-W11-defense-advisory-md",
-    "title": "防禦建議 — 2026 第 11 週",
-    "date": "2026-W11",
-    "period": "2026-03-05 至 2026-03-13",
-    "file": "2026-W11-defense-advisory.md",
-    "source_mode": "defense_advisory"
-  },
-  {
-    "id": "2026-W12-defense-advisory-md",
-    "title": "防禦建議 — 2026 第 12 週",
-    "date": "2026-W12",
-    "period": "2026-03-16 至 2026-03-22",
-    "file": "2026-W12-defense-advisory.md",
-    "source_mode": "defense_advisory"
-  },
-  {
-    "id": "2026-W13-defense-advisory-md",
-    "title": "防禦建議 — 2026 第 13 週",
-    "date": "2026-W13",
-    "period": "2026-03-17 至 2026-03-24",
-    "file": "2026-W13-defense-advisory.md",
     "source_mode": "defense_advisory"
   }
 ]
