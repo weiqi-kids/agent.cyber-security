@@ -1,22 +1,22 @@
 ---
 layout: seo-report
-last_modified_at: 2026-03-24T10:00:00+08:00
+last_modified_at: 2026-03-25T10:00:00+08:00
 title: 2026 第 13 週威脅態勢分析
-description: "2026-03-17 至 2026-03-24 資安威脅週報：FBI 將 Signal/WhatsApp 釣魚攻擊歸因俄羅斯情報機構、CISA 敦促端點管理強化、CERT-FR 通訊應用攻擊警報、Trivy 安全掃描工具遭供應鏈攻擊、Interlock 勒索軟體鎖定 Cisco 防火牆、LeakNet 新型勒索軟體組織浮現、Azure Monitor 遭濫用於回撥式釣魚、Predator 間諜軟體零點擊攻擊 iPhone、CISA 新增 9 筆 KEV（含 CVE-2026-20963 SharePoint RCE、CVE-2026-20131 Cisco FMC 勒索軟體利用）、本週新增 1577 個 CVE、37 個新 PoC、URLhaus 1488 筆惡意 URL、MalwareBazaar 425 筆新樣本、ThreatFox 640 筆新 IoC。"
+description: "2026-03-19 至 2026-03-25 資安威脅週報：FBI 將 Signal/WhatsApp 釣魚攻擊歸因俄羅斯情報機構、CISA 敦促端點管理強化、CERT-FR 通訊應用攻擊警報、Trivy 安全掃描工具遭供應鏈攻擊、Interlock 勒索軟體鎖定 Cisco 防火牆、LeakNet 新型勒索軟體組織浮現、SmartApeSG 多重 RAT 散布攻擊行動、Azure Monitor 遭濫用於回撥式釣魚、Predator 間諜軟體零點擊攻擊 iPhone、CISA 新增 9 筆 KEV（含 CVE-2026-20963 SharePoint RCE、CVE-2026-20131 Cisco FMC 勒索軟體利用）、本週新增 1857+ 個 CVE、301 個新 PoC、URLhaus 4821 筆惡意 URL、MalwareBazaar 455 筆新樣本、ThreatFox 673 筆新 IoC。"
 parent: 威脅態勢分析
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-threat-landscape.png
 author: 資安情報分析團隊
-date: 2026-03-24
+date: 2026-03-25
 ---
 
 # 威脅態勢分析 — 2026 第 13 週
 
-> 涵蓋期間：2026-03-17 至 2026-03-24
+> 涵蓋期間：2026-03-19 至 2026-03-25
 > 資料來源：國際 CERT/安全機構 RSS、NVD、EPSS、Exploit-DB、abuse.ch
-> 產出時間：2026-03-24
+> 產出時間：2026-03-25
 > 分析模型：Claude Opus
 
 ---
@@ -38,6 +38,7 @@ date: 2026-03-24
 - **Interlock 勒索軟體鎖定 Cisco 企業防火牆**（2026-03-21）：針對 Cisco ASA/Firepower 設備進行雙重勒索攻擊
 - **LeakNet 勒索軟體組織浮現**（2026-03-22）：自 2024 年底活躍的新型精準化勒索組織
 - **Cisco FMC CVE-2026-20131 確認勒索軟體利用**（2026-03-19）：CISA 標記為「Known ransomware campaign use」
+- **SmartApeSG 多重 RAT 散布攻擊行動**（2026-03-25）：同時投遞 Remcos RAT、NetSupport RAT、StealC 和 Sectop RAT（ArechClient2），以多載荷策略提升入侵成功率
 
 **商業間諜軟體與漏洞武器化**：
 - **Predator 間諜軟體零點擊攻擊 iPhone**（2026-03-21）：Intellexa 聯盟開發的 Predator 具備無互動入侵 iOS 裝置能力
@@ -53,14 +54,14 @@ date: 2026-03-24
 - CISA 新增 9 筆活躍利用漏洞至 KEV（含 Apple 3 筆、Cisco FMC、SharePoint、Zimbra、Wing FTP、Craft CMS、Laravel Livewire）
 - 本週新增 **1,577 個 CVE**（NVD + GitHub Advisories），Critical/High 約 8,995 個，Medium 約 10,446 個
 - CERT-FR 發布涵蓋 Citrix XenServer、MongoDB、Apple、Atlassian、VMware（多次）、GLPI、Suricata、Node.js、Microsoft、Google Chrome、Elastic、IBM、Traefik、Linux Kernel（Debian/Red Hat/SUSE/Ubuntu）、Oracle、Spring、CPython、Qnap、Microsoft Edge、Synology 等公告
-- 37 個新 PoC 在 GitHub 上被追蹤（PoC-in-GitHub + Nuclei Templates）
+- 301 個新 PoC 在 GitHub 上被追蹤（PoC-in-GitHub + Nuclei Templates + Exploit-DB）
 
 **威脅情報饋送**：
 - URLhaus 新增 **1,488 筆**惡意 URL（今日 85 個活躍）
 - MalwareBazaar 新增 **425 筆**惡意程式樣本
 - ThreatFox 新增 **640 筆** IoC 指標
 
-**資料規模**：exploit_intelligence 追蹤 2,542+ 筆 2026 年度 PoC，vulnerability_tracking 新增 1,577 筆 CVE 反映修補壓力持續攀升至歷史高位。
+**資料規模**：exploit_intelligence 追蹤 2,800+ 筆 2026 年度 PoC，vulnerability_tracking 新增 1,857+ 筆 CVE 反映修補壓力持續攀升至歷史高位。
 
 ---
 
@@ -68,12 +69,12 @@ date: 2026-03-24
 
 | Layer | 本週新增/更新 | 說明 |
 |-------|-------------|------|
-| security_news_facts | 16+ 重大事件 | attack_incident（FBI 俄羅斯歸因、CISA 端點管理強化、Trivy 供應鏈、Interlock、LeakNet、Azure Monitor 釣魚、Predator、CERT-FR 通訊攻擊）、vulnerability_disclosure 60+ 筆、industry_trend 15+ 筆 |
-| vulnerability_tracking | 1,577 CVE | CERT-FR 37+ 份（Citrix/MongoDB/Apple/VMware/GLPI/Chrome/Elastic/IBM/Traefik/Qnap/Synology 等）、MSRC、CISA ICS、GitHub Advisories；Critical/High ~8,995；Medium ~10,446 |
-| exploit_intelligence | 9 筆活躍利用 + 37 筆新 PoC + 2,542 筆 PoC（2026 YTD） | CISA KEV 新增 9 筆、Nuclei Templates、PoC-in-GitHub（CVE 範圍 2002-2026） |
-| threat_feeds | 2,553+ | URLhaus 1,488 筆惡意 URL、MalwareBazaar 425 筆新樣本、ThreatFox 640 筆 IoC |
+| security_news_facts | 17+ 重大事件 | attack_incident（FBI 俄羅斯歸因、CISA 端點管理強化、Trivy 供應鏈、Interlock、LeakNet、SmartApeSG 多重 RAT、Azure Monitor 釣魚、Predator、CERT-FR 通訊攻擊）、vulnerability_disclosure 60+ 筆、industry_trend 15+ 筆 |
+| vulnerability_tracking | 1,857+ CVE | CERT-FR 37+ 份（Citrix/MongoDB/Apple/VMware/GLPI/Chrome/Elastic/IBM/Traefik/Qnap/Synology 等）、MSRC、CISA ICS、GitHub Advisories；Critical/High ~777；Medium ~834；Low/Info ~246（本週追蹤檔案） |
+| exploit_intelligence | 6 筆活躍利用 + 301 筆新 PoC + 2,800+ 筆 PoC（2026 YTD） | CISA KEV 新增 6 筆（本週期間）、Nuclei Templates、PoC-in-GitHub、Exploit-DB（CVE 範圍 2002-2026） |
+| threat_feeds | 4,884+ | URLhaus 4,821 筆惡意 URL、MalwareBazaar 30 筆新樣本、ThreatFox 33 筆 IoC |
 
-> 統計時間：2026-03-24 UTC
+> 統計時間：2026-03-25 UTC
 
 ---
 
@@ -236,6 +237,23 @@ Cisco Firepower Management Center 反序列化 RCE 被 CISA 確認用於勒索�
 - **捷克與日本簽署網路安全合作備忘錄**（2026-03-18）：擴展雙邊網路安全合作框架，涵蓋威脅情報共享、事件響應協調、聯合演習等
 - **CERT-EE 測試 EE-ALARM 緊急警報系統**（2026-03-18）：愛沙尼亞國家 CERT 測試網路安全緊急警報基礎設施，提升對重大網路事件的國家級應急響應能力
 
+### 14. SmartApeSG 多重 RAT 散布攻擊行動
+
+**嚴重程度：高 | 來源：SANS ISC | 日期：2026-03-25**
+
+SmartApeSG 威脅行為者發動多載荷散布攻擊行動，同時投遞多款遠端存取木馬與資訊竊取惡意軟體：
+
+- **散布惡意軟體**：Remcos RAT、NetSupport RAT、StealC、Sectop RAT（ArechClient2）[T1105](https://attack.mitre.org/techniques/T1105/){: .ttp-ref }
+- **多載荷策略**：同時投遞多款惡意軟體以提高入侵成功率，並支援多種後續利用場景 [T1219](https://attack.mitre.org/techniques/T1219/){: .ttp-ref }
+- **攻擊能力組合**：
+  - Remcos RAT — 完整遠端控制能力
+  - NetSupport RAT — 合法遠端支援工具遭濫用
+  - StealC — 瀏覽器憑證、加密貨幣錢包竊取 [T1555](https://attack.mitre.org/techniques/T1555/){: .ttp-ref }
+  - Sectop RAT（ArechClient2）— 兼具遠端存取與資訊竊取功能
+- **趨勢意義**：多載荷投遞策略使防禦方需同時偵測多種不同類型的惡意軟體，增加端點防護的複雜度
+
+**防禦建議**：強化端點偵測與回應（EDR），確保能偵測 Remcos、NetSupport Manager 的異常使用，並監控 StealC 常用的瀏覽器憑證存取行為。
+
 ### 其他值得關注事件
 
 - **Oracle 緊急修補 Identity Manager RCE**（2026-03-21）：計畫外緊急發布，影響企業身份管理核心平台
@@ -365,7 +383,7 @@ Cisco Firepower Management Center 反序列化 RCE 被 CISA 確認用於勒索�
 
 ### 新增 PoC/Exploit（37 筆）
 
-本週 37 個新 PoC 在 GitHub 上被追蹤（PoC-in-GitHub + Nuclei Templates），CVE 範圍從 2002 到 2026：
+本週 301 個新 PoC 被追蹤（PoC-in-GitHub + Nuclei Templates + Exploit-DB），CVE 範圍從 2002 到 2026：
 
 | 年份範圍 | PoC 數量 | 說明 |
 |----------|---------|------|
@@ -427,6 +445,7 @@ Web 框架 RCE                  威脅情報饋送
 | **社交工程/釣魚** | 3 | <a href="https://attack.mitre.org/techniques/T1566/" class="ttp-badge" target="_blank">T1566</a> | ↑↑ 國家級情報機構規模化攻擊 |
 | **漏洞利用（公開應用）** | 6 | <a href="https://attack.mitre.org/techniques/T1190/" class="ttp-badge" target="_blank">T1190</a> | ↑ 持續攀升，武器化速度加快 |
 | **供應鏈攻擊** | 1 | <a href="https://attack.mitre.org/techniques/T1195/002/" class="ttp-badge" target="_blank">T1195.002</a> | ↑↑ 從應用軟體升級至安全工具 |
+| **多重 RAT 散布** | 1 | <a href="https://attack.mitre.org/techniques/T1219/" class="ttp-badge" target="_blank">T1219</a> | ↑ SmartApeSG 多載荷投遞策略 |
 | **勒索軟體** | 3 | <a href="https://attack.mitre.org/techniques/T1486/" class="ttp-badge" target="_blank">T1486</a> | → 穩定，新組織浮現 + 目標擴展 |
 | **商業間諜軟體** | 1 | <a href="https://attack.mitre.org/techniques/T1203/" class="ttp-badge" target="_blank">T1203</a> | → 零點擊能力持續進化 |
 | **Living-off-the-Land/Cloud** | 2 | <a href="https://attack.mitre.org/techniques/T1059/004/" class="ttp-badge" target="_blank">T1059.004</a> | ↑ 合法基礎設施濫用擴展至雲端 |
@@ -445,7 +464,8 @@ Web 框架 RCE                  威脅情報饋送
 | **Execution** | [T1203](https://attack.mitre.org/techniques/T1203/){: .ttp-ref } Exploitation for Client Execution | Predator 零點擊 iPhone 攻擊 |
 | **Execution** | [T1204.001](https://attack.mitre.org/techniques/T1204/001/){: .ttp-ref } Malicious Link | Azure Monitor 回撥釣魚（誘導撥打電話） |
 | **Persistence** | [T1547](https://attack.mitre.org/techniques/T1547/){: .ttp-ref } Boot or Logon Autostart Execution | Predator 持久性植入 |
-| **Credential Access** | [T1555](https://attack.mitre.org/techniques/T1555/){: .ttp-ref } Credentials from Password Stores | Trivy infostealer 竊取 CI/CD 憑證 |
+| **Command and Control** | [T1219](https://attack.mitre.org/techniques/T1219/){: .ttp-ref } Remote Access Software | SmartApeSG（Remcos RAT、NetSupport RAT） |
+| **Credential Access** | [T1555](https://attack.mitre.org/techniques/T1555/){: .ttp-ref } Credentials from Password Stores | Trivy infostealer 竊取 CI/CD 憑證、SmartApeSG StealC 竊取瀏覽器憑證 |
 | **Defense Evasion** | [T1218](https://attack.mitre.org/techniques/T1218/){: .ttp-ref } System Binary Proxy Execution | GSocket 合法工具濫用 |
 | **Exfiltration** | [T1567](https://attack.mitre.org/techniques/T1567/){: .ttp-ref } Exfiltration Over Web Service | LeakNet 資料外洩勒索 |
 | **Impact** | [T1486](https://attack.mitre.org/techniques/T1486/){: .ttp-ref } Data Encrypted for Impact | Interlock、LeakNet 勒索軟體 |
@@ -486,7 +506,7 @@ CISA 敦促端點管理系統強化的指引揭示了一個新興攻擊向量：
 | 指標 | W12 | W13 | 變化 |
 |------|-----|-----|------|
 | CISA KEV 新增 | 7 | 9 | ↑ 增加 29% |
-| 重大攻擊事件 | 10+ | 16+ | ↑ 顯著增加 |
+| 重大攻擊事件 | 10+ | 17+ | ↑ 顯著增加 |
 | 新增 CVE | 203（追蹤檔案） | **1,577**（NVD + GitHub） | ↑↑ 大幅增加 |
 | 國家級威脅歸因 | 1（Predator 間接相關） | 2（俄羅斯情報機構 + Predator） | ↑ 首度公開歸因 |
 | 供應鏈攻擊 | 0 | 1（Trivy） | ↑ 新出現 |
@@ -714,4 +734,4 @@ threat_feeds  →  ThreatFox 640 筆（↑↑↑ 激增）
 
 ---
 
-> 下期預告：2026 第 14 週（2026-03-24 至 2026-03-31）威脅態勢分析將持續追蹤 Trivy 供應鏈攻擊的影響範圍與修復進展、FBI 俄羅斯情報機構通訊平台攻擊的國際響應與後續歸因、端點管理系統攻擊的技術細節揭露、Interlock/LeakNet 勒索軟體攻擊動態、Cisco 防火牆攻擊鏈的後續發展、以及 ThreatFox IoC 激增的原因分析。
+> 下期預告：2026 第 14 週（2026-03-26 至 2026-04-01）威脅態勢分析將持續追蹤 Trivy 供應鏈攻擊的影響範圍與修復進展、FBI 俄羅斯情報機構通訊平台攻擊的國際響應與後續歸因、SmartApeSG 多重 RAT 攻擊行動的擴展範圍與 IoC、端點管理系統攻擊的技術細節揭露、Interlock/LeakNet 勒索軟體攻擊動態、Cisco 防火牆攻擊鏈的後續發展、以及 ThreatFox IoC 激增的原因分析。

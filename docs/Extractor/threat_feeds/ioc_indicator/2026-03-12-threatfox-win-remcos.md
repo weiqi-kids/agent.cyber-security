@@ -1,0 +1,30 @@
+# ThreatFox: win.remcos - domain
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-03-12 |
+| **來源** | abuse.ch ThreatFox |
+| **分類** | ioc_indicator |
+| **威脅類型** | botnet_cc |
+| **惡意程式家族** | win.remcos |
+| **狀態** | unknown |
+| **威脅等級** | High |
+| **信心水準** | 高 |
+
+## 威脅描述
+
+ThreatFox IoC: win.remcos (botnet_cc). Tags: C2,domain,rat,remcos,triage.
+
+## IoC 指標
+
+| 類型 | 值 |
+|------|-----|
+| domain | `ngrokhi2.ddns.net` |
+
+## 來源連結
+
+- [ThreatFox - 1763328](https://threatfox.abuse.ch/ioc/1763328/)
+
+---
+> 萃取時間：2026-03-11 23:52 UTC
+> 資料來源：abuse.ch ThreatFox threatfox-recent

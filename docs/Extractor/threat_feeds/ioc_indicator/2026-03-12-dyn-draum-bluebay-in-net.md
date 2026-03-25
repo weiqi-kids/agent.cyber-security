@@ -1,0 +1,34 @@
+# ThreatFox: ClearFake IoC
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-03-12 |
+| **來源** | abuse.ch ThreatFox |
+| **分類** | ioc_indicator |
+| **威脅類型** | payload_delivery |
+| **惡意程式家族** | ClearFake |
+| **狀態** | unknown |
+| **威脅等級** | Medium |
+| **信心水準** | 高 |
+
+## 威脅描述
+
+IoC: payload_delivery. Malware: ClearFake. Confidence: 100%.
+
+## IoC 指標
+
+| 類型 | 值 |
+|------|-----|
+| domain | `dyn-draum.bluebay.in.net` |
+
+## 關聯分析
+
+Tags: 1, 2, M, a, r, c, h, 2, 0, 2, 6, ,, C, l, e, a, r, F, a, k, e, ,, C, o, m, m, a, n, d, l, i, n, e, ,, W, i, n, d, o, w, s
+
+## 來源連結
+
+- [ThreatFox](https://threatfox.abuse.ch/ioc/1764052)
+
+---
+> 萃取時間：2026-03-13 13:31 UTC
+> 資料來源：abuse.ch ThreatFox threatfox-recent

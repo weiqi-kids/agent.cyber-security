@@ -1,0 +1,30 @@
+# ThreatFox: elf.bashlite - domain
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-03-12 |
+| **來源** | abuse.ch ThreatFox |
+| **分類** | ioc_indicator |
+| **威脅類型** | botnet_cc |
+| **惡意程式家族** | elf.bashlite |
+| **狀態** | unknown |
+| **威脅等級** | High |
+| **信心水準** | 高 |
+
+## 威脅描述
+
+ThreatFox IoC: elf.bashlite (botnet_cc). Tags: AS13335,C2,censys,CLOUDFLARENET,Gafgyt,open-dir.
+
+## IoC 指標
+
+| 類型 | 值 |
+|------|-----|
+| domain | `narutothelast.online` |
+
+## 來源連結
+
+- [ThreatFox - 1763675](https://threatfox.abuse.ch/ioc/1763675/)
+
+---
+> 萃取時間：2026-03-11 23:52 UTC
+> 資料來源：abuse.ch ThreatFox threatfox-recent
