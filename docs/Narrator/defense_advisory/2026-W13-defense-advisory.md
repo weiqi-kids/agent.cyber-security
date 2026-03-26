@@ -1,29 +1,29 @@
 ---
 layout: seo-report
-last_modified_at: 2026-03-25T22:30:00+08:00
+last_modified_at: 2026-03-26T12:00:00+08:00
 title: 2026 第 13 週防禦建議
-description: "2026-03-19 至 2026-03-25 資安防禦建議：TeamPCP 供應鏈攻擊入侵 Trivy/LiteLLM CI/CD 管線、FBI/CISA 歸因俄羅斯情報機構 Signal/WhatsApp 大規模帳號劫持、Tycoon2FA PhaaS 平台打擊後數日恢復運作、CISA 新增 6 筆 KEV（Cisco FMC CVE-2026-20131 已逾期 / SharePoint CVE-2026-20963 已逾期 / Apple 三筆 / Craft CMS）、Citrix NetScaler CVE-2026-3055 CVSS 9.3、Kubernetes ingress-nginx CVE-2026-4342 Critical、Spring Boot CVE-2026-22731 認證繞過、Langflow CVE-2026-33017 揭露 20 小時遭武器化、PolyShell Magento 未認證 RCE、Interlock 勒索軟體鎖定 Cisco 防火牆、LeakNet 勒索軟體浮現、SmartApeSG 多重 RAT 散布、301 個新 PoC。"
+description: "2026-03-19 至 2026-03-26 資安防禦建議：TeamPCP 供應鏈攻擊入侵 Trivy/LiteLLM CI/CD 管線、FBI/CISA 歸因俄羅斯情報機構 Signal/WhatsApp 大規模帳號劫持、Tycoon2FA PhaaS 平台打擊後數日恢復運作、CISA 新增 7 筆 KEV（Cisco FMC CVE-2026-20131 已逾期 / SharePoint CVE-2026-20963 已逾期 / Apple 三筆 / Craft CMS / Langflow CVE-2026-33017）、Citrix NetScaler CVE-2026-3055 CVSS 9.3、Kubernetes ingress-nginx CVE-2026-4342 Critical、Spring Boot CVE-2026-22731 認證繞過、Langflow CVE-2026-33017 揭露 20 小時遭武器化並列入 KEV、Apple 2026 年 3 月修補涵蓋 85 項漏洞、PolyShell Magento 未認證 RCE、Interlock 勒索軟體鎖定 Cisco 防火牆、LeakNet 勒索軟體浮現、SmartApeSG 多重 RAT 散布、新增 PoC 含 Langflow CVE-2026-21445 / Budibase CVE-2026-31816 / Mastodon CVE-2026-33868。"
 parent: 防禦建議
 nav_order: 1
 nav_exclude: false
 seo_json: true
 image: /assets/images/og-defense-advisory.png
 author: 資安情報分析團隊
-date: 2026-03-25
+date: 2026-03-26
 ---
 
 # 防禦建議 — 2026 第 13 週
 
-> 涵蓋期間：2026-03-19 至 2026-03-25
+> 涵蓋期間：2026-03-19 至 2026-03-26
 > 資料來源：國際 CERT/安全機構、NVD、EPSS、Exploit-DB、VulnCheck KEV、CISA KEV
-> 產出時間：2026-03-25
+> 產出時間：2026-03-26
 > 分析模型：Claude Opus
 
 ---
 
 ## 執行摘要
 
-本週防禦建議聚焦於四大緊迫威脅軸線：**安全掃描工具 Trivy 遭供應鏈攻擊並連鎖感染 LiteLLM Python 套件**、**FBI/CISA 首度公開歸因俄羅斯情報機構大規模劫持加密通訊帳號**、**多個 Critical 漏洞修補截止日已逾期或迫近**、以及**CaaS 平台展現超乎預期的基礎設施韌性使執法打擊效果大減**。CISA 本週新增 6 筆 KEV，加上前週延續的 Cisco FMC KEV 已逾期，構成最迫切的修補壓力。另有 Citrix NetScaler（CVSS 9.3）、Kubernetes ingress-nginx、Spring Boot 認證繞過等 Critical 漏洞本週公告，PoC 已公開或預期短期內遭利用。
+本週防禦建議聚焦於四大緊迫威脅軸線：**安全掃描工具 Trivy 遭供應鏈攻擊並連鎖感染 LiteLLM Python 套件**、**FBI/CISA 首度公開歸因俄羅斯情報機構大規模劫持加密通訊帳號**、**多個 Critical 漏洞修補截止日已逾期或迫近**、以及**CaaS 平台展現超乎預期的基礎設施韌性使執法打擊效果大減**。CISA 本週新增 7 筆 KEV（含 2026-03-25 新增的 Langflow CVE-2026-33017），加上前週延續的 Cisco FMC KEV 已逾期，構成最迫切的修補壓力。另有 Citrix NetScaler（CVSS 9.3）、Kubernetes ingress-nginx、Spring Boot 認證繞過等 Critical 漏洞本週公告，PoC 已公開或預期短期內遭利用。
 
 **本週關鍵行動**：
 
@@ -37,7 +37,7 @@ date: 2026-03-25
 | **立即** | 修補 Zimbra ZCS CVE-2025-66376（活躍利用） | KEV 截止 2026-04-01 |
 | **立即** | 修補 Wing FTP Server CVE-2025-47813（活躍利用） | KEV 截止 2026-03-30 |
 | **緊急（48 小時）** | 修補 Craft CMS CVE-2025-32432（活躍利用）與 Laravel Livewire CVE-2025-54068 | KEV 截止 2026-04-03 |
-| **緊急（48 小時）** | 修補 Langflow CVE-2026-33017（20 小時內遭武器化） | 即刻 |
+| **立即** | 修補 Langflow CVE-2026-33017（20 小時內遭武器化，**已列入 CISA KEV**） | KEV 截止 2026-04-08 |
 | **緊急（48 小時）** | 升級 Citrix NetScaler ADC/Gateway（CVE-2026-3055 CVSS 9.3） | 48 小時內 |
 | **緊急（48 小時）** | 升級 Kubernetes ingress-nginx（CVE-2026-4342 Critical） | 48 小時內 |
 | **緊急（48 小時）** | 修補 Spring Boot CVE-2026-22731 認證繞過 | 48 小時內 |
@@ -122,7 +122,7 @@ date: 2026-03-25
 - **CVE-2025-43520**（Classic Buffer Overflow）：可導致核心層級的任意程式碼執行
 - **CVE-2025-31277**（Buffer Overflow）：處理惡意網頁內容時觸發記憶體損毀
 
-三筆漏洞於 2026-03-20 同日被 CISA 確認活躍利用，高度可能構成同一攻擊鏈的不同環節。結合本週 Predator 間諜軟體（Intellexa 聯盟）具備零點擊 iPhone 入侵能力的揭露，Apple 裝置攻擊面持續擴大。HKCERT 於 2026-03-25 發布最新 Apple 多產品安全公告，涵蓋 iOS 26.4、macOS Tahoe 26.4 等多項更新。
+三筆漏洞於 2026-03-20 同日被 CISA 確認活躍利用，高度可能構成同一攻擊鏈的不同環節。結合本週 Predator 間諜軟體（Intellexa 聯盟）具備零點擊 iPhone 入侵能力的揭露，Apple 裝置攻擊面持續擴大。Apple 2026 年 3 月安全更新批次修補共計 **85 項漏洞**，涵蓋 iOS 26.4、iPadOS 26.4、macOS Tahoe 26.4、macOS Sequoia 15.7.5、macOS Sonoma 14.8.5、watchOS 26.4、tvOS 26.4、visionOS 26.4 及 Safari 26.4。HKCERT 於 2026-03-25 發布對應多產品安全公告。
 
 **修補方式**：
 - 更新至最新版 iOS 26.4 / iPadOS 26.4 / macOS Tahoe 26.4 / macOS Sequoia 15.7.5 / macOS Sonoma 14.8.5 / watchOS 26.4 / tvOS 26.4 / visionOS 26.4 / Safari 26.4
@@ -254,12 +254,13 @@ date: 2026-03-25
 | 項目 | 內容 |
 |------|------|
 | **嚴重程度** | Critical |
-| **利用狀態** | **公開後 20 小時內遭武器化**，PoC 已公開（PoC-in-GitHub） |
-| **漏洞類型** | RCE |
+| **利用狀態** | **活躍利用**（CISA KEV，2026-03-25 新增）+ **公開後 20 小時內遭武器化**，PoC 已公開（PoC-in-GitHub） |
+| **CISA KEV 截止** | 2026-04-08 |
+| **漏洞類型** | CWE-94 Code Injection RCE |
 | **影響產品** | Langflow |
 | **攻擊條件** | 未認證遠端攻擊 |
 
-**描述**：AI 工作流程平台 Langflow 嚴重 RCE 漏洞在公開後僅 20 小時即遭積極利用，為本年度最快武器化案例之一。Langflow 用於建構 LLM 應用，部署環境通常可存取敏感 AI 模型、API 金鑰與訓練資料。
+**描述**：AI 工作流程平台 Langflow 嚴重 RCE 漏洞在公開後僅 20 小時即遭積極利用，為本年度最快武器化案例之一。CISA 於 2026-03-25 將此漏洞列入 KEV 目錄，確認活躍利用，修補截止日為 2026-04-08。Langflow 用於建構 LLM 應用，部署環境通常可存取敏感 AI 模型、API 金鑰與訓練資料。
 
 **修補方式**：
 - 立即升級 Langflow 至最新修補版本
@@ -267,6 +268,7 @@ date: 2026-03-25
 - 檢查是否有異常的遠端程式碼執行跡象
 
 **官方連結**：
+- [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 - [NVD - CVE-2026-33017](https://nvd.nist.gov/vuln/detail/CVE-2026-33017)
 
 ---
@@ -327,6 +329,9 @@ date: 2026-03-25
 | HKCERT 公告 | Mozilla Firefox / Firefox ESR / Thunderbird | High | 多項 RCE、權限提升、安全限制繞過漏洞 |
 | HKCERT 公告 | TP-Link 路由器（多型號） | High | RCE、權限提升、資料洩露漏洞 |
 | PolyShell | Adobe Commerce / Magento | Critical | 未認證 RCE，影響全球大量電商網站 |
+| CVE-2026-21445 | Langflow | High | Broken access control，PoC 已公開（2026-03-26 新增） |
+| CVE-2026-31816 | Budibase | High | Authentication bypass，PoC 已公開（2026-03-26 新增） |
+| CVE-2026-33868 | Mastodon | Medium | Open redirect，PoC 已公開（2026-03-26 新增） |
 | CISA ICS 公告（11 筆） | Schneider Electric（5 筆，含 Modicon PLC、EcoStruxure）、Mitsubishi Electric CNC、Automated Logic、CTEK、IGL Technologies、Pharos Controls、GDCM | 多種 | OT 環境需特別評估，Schneider Electric 占 5/11 |
 | CERT-FR 公告 | Citrix、MongoDB、VMware、Spring、Microsoft、Chrome 等 | 多種 | 涵蓋極廣泛產品線，建議依環境盤點逐一評估 |
 
@@ -591,7 +596,7 @@ date: 2026-03-25
 ---
 
 > 本報告由資安情報分析團隊基於公開來源情報自動彙整產出。
-> 產出時間：2026-03-25 22:30 UTC+8
+> 產出時間：2026-03-26 12:00 UTC+8
 > 分析模型：Claude Opus
 > Qdrant 語意查詢次數：3 次（critical vulnerability patch / active exploitation KEV / defense mitigation workaround）
 > 下次更新：2026-04-01（第 14 週）

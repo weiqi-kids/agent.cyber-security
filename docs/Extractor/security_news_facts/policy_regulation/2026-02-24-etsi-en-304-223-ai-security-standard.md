@@ -1,144 +1,40 @@
----
-title: "ETSI發布EN 304 223標準，強化人工智慧模型與系統資安防護"
-published: 2026-02-24
-source_url: "https://www.twcert.org.tw/tw/cp-104-10727-665e8-1.html"
-category: "policy_regulation"
-source_layer: "security_news_facts"
-source_feed: "rss-104"
-severity: "中"
-confidence: "高"
----
+# ETSI Publishes EN 304 223 Standard to Strengthen AI Model and System Cybersecurity
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-02-24 |
+| **來源** | TWCERT/CC |
+| **分類** | policy_regulation |
+| **嚴重程度** | 未評估 |
+| **信心水準** | 中 |
 
 ## 摘要
 
-歐洲電信標準協會（ETSI）正式發布ETSI EN 304 223標準，為人工智慧模型與系統建立全球通用的資安基準，涵蓋AI生命週期13項核心安全原則，並明確劃分供應鏈各方資安責任。
+ETSI officially published ETSI EN 304 223 standard establishing global cybersecurity baseline for AI models and systems, covering 13 core principles across five lifecycle stages.
 
-## 詳細內容
+## 事實內容
 
-ETSI於2026年2月發布ETSI EN 304 223標準，此標準經歐洲各國國家標準組織投票通過，具高度權威性與國際適用性，被視為AI資安治理的重要里程碑。
+The European Telecommunications Standards Institute (ETSI) has officially published the ETSI EN 304 223 standard, establishing a globally applicable cybersecurity baseline for AI models and systems. The standard was approved by voting among national standards bodies across European countries.
 
-### 背景與必要性
+Key aspects of the standard:
+- Applies a full lifecycle approach defining 13 core principles and requirements across five stages: secure design, development, deployment, maintenance, and decommissioning
+- Addresses risks in data pipelines, model behavior, and operational environments including data poisoning, model confusion, indirect prompt injection, and supply chain vulnerabilities
+- Aligned with internationally recognized AI lifecycle models for compatibility with existing standards
+- Applies to AI systems using deep neural networks (including generative AI) deployed in operational environments; explicitly excludes academic research-only systems
+- Clearly delineates cybersecurity responsibilities among stakeholders: Developers, System Operators, Data Custodians, and End-users
 
-隨著AI技術（特別是深度神經網路與生成式AI）廣泛導入關鍵服務與產業場域，傳統資安防護已不足以因應新型威脅。ETSI指出，AI系統的風險不僅源自程式本身，更涵蓋：
+The standard serves as a common reference for vendors and system integrators to strengthen cross-organizational AI security governance.
 
-- **資料管線（Data Pipeline）**：資料毒化（data poisoning）攻擊
-- **模型行為**：模型混淆（model confusion）、對抗樣本攻擊
-- **提示注入**：間接提示注入（indirect prompt injection）
-- **訓練與部署流程**：複雜的MLOps流程衍生的潛在弱點
+## 受影響系統
 
-### 標準核心內容
+- AI systems using deep neural networks deployed in production environments
+- Generative AI systems in operational use
 
-**適用範圍**
+## 來源連結
 
-- **適用**：採用深度神經網路（含生成式AI），且實際部署於營運環境的AI系統
-- **排除**：僅供學術研究用途的AI系統
+- [ETSI發布EN 304 223標準，強化人工智慧模型與系統資安防護 - TWCERT/CC](https://www.twcert.org.tw/tw/cp-104-10727-665e8-1.html)
 
-**全生命週期方法**
-
-ETSI EN 304 223採用全生命週期方法，定義5大階段：
-
-1. **安全設計（Secure Design）**
-2. **開發（Development）**
-3. **部署（Deployment）**
-4. **維護（Maintenance）**
-5. **終止營運（Decommissioning）**
-
-**13項核心原則與要求**
-
-標準定義13項核心安全原則，涵蓋：
-
-- AI模型的對抗韌性（adversarial robustness）
-- 資料完整性與隱私保護
-- 模型可解釋性與透明度
-- 供應鏈安全管理
-- 事件偵測與回應機制
-- 持續監控與更新流程
-
-這些原則與國際公認的AI生命週期模型對齊（如NIST AI RMF、ISO/IEC 23894），確保與既有標準的相容性與互通性。
-
-**供應鏈責任劃分**
-
-標準明確劃分AI供應鏈中各方利害關係人的資安責任：
-
-| 角色 | 責任範圍 |
-|------|----------|
-| **開發者（Developers）** | 模型設計、訓練資料安全、對抗性測試 |
-| **系統營運商（System Operators）** | 部署安全、監控、事件應變、補丁管理 |
-| **資料保管者（Data Custodians）** | 資料品質、隱私保護、資料毒化防護 |
-| **終端使用者（End-users）** | 安全使用、異常回報、提示注入防範 |
-
-此劃分作為供應商與系統整合商的共同依據，強化跨組織與跨產業的資安治理能力。
-
-### 戰略意義
-
-ETSI EN 304 223為AI系統安全奠定一致且嚴謹的基礎，在AI日益融入關鍵基礎設施與核心服務的趨勢下：
-
-- 提供清晰且可落實的資安指引
-- 有助於提升AI系統的韌性與可信度
-- 落實「安全即設計」（secure by design）理念
-- 成為未來AI資安治理與合規的重要參考
-
-## 相關指標
-
-- **標準名稱**：ETSI EN 304 223
-- **發布機構**：歐洲電信標準協會（ETSI）
-- **標準性質**：歐洲標準（EN），具高度權威性
-- **適用技術**：深度神經網路、生成式AI
-- **核心原則數**：13項
-- **生命週期階段**：5階段
-
-## 安全性建議
-
-組織應將此標準納入AI系統的安全管理：
-
-### 1. 評估現有AI系統
-
-- 盤點組織內所有AI系統（特別是深度學習與生成式AI）
-- 依照標準檢查清單，評估各系統的安全成熟度
-- 識別與標準要求的差距
-
-### 2. 建立AI安全治理框架
-
-- 制定AI安全政策，涵蓋設計、開發、部署、維護全週期
-- 指派AI安全責任人（如AI Security Officer）
-- 建立跨部門協作機制（IT、資安、法務、業務）
-
-### 3. 強化供應鏈管理
-
-- 要求AI供應商提供符合ETSI EN 304 223的安全聲明
-- 在採購合約中加入標準要求（如對抗性測試報告、模型SBOM）
-- 評估供應商的AI安全成熟度
-
-### 4. 實施技術防護措施
-
-- **資料安全**：資料毒化偵測、資料來源驗證、差分隱私
-- **模型安全**：對抗性訓練、模型水印、輸入驗證
-- **部署安全**：模型加密、推論環境隔離、API速率限制
-- **監控與應變**：異常行為偵測、模型漂移監控、事件回應劇本
-
-### 5. 持續教育與訓練
-
-- 對開發團隊提供AI安全訓練（如OWASP Top 10 for LLM）
-- 對使用者宣導提示注入等風險
-- 參與產業AI安全社群與最佳實務分享
-
-### 6. 合規準備
-
-- 追蹤歐盟AI法案（AI Act）與ETSI EN 304 223的關聯
-- 準備合規文件（如AI系統風險評估報告、技術文件）
-- 考慮第三方稽核與認證
-
-## 附註
-
-- **資料來源**：台灣TWCERT/CC
-- **相關標準**：
-  - NIST AI Risk Management Framework (AI RMF)
-  - ISO/IEC 23894 (AI Risk Management)
-  - ISO/IEC 42001 (AI Management System)
-  - OWASP Top 10 for LLM
-- **歐盟AI法案關聯**：ETSI EN 304 223可能成為歐盟AI法案的協調標準（harmonized standard），符合該標準可推定符合AI法案的安全要求
-- **技術背景**：
-  - **對抗樣本攻擊**：刻意設計的輸入導致模型錯誤判斷
-  - **資料毒化**：在訓練資料中植入惡意樣本，影響模型行為
-  - **模型混淆**：透過大量查詢推斷模型結構與參數
-  - **提示注入**：操縱LLM的輸入提示，繞過安全限制
+---
+> 萃取時間：2026-03-25 09:00 UTC
+> 資料來源：TWCERT/CC rss-104
+> Notes: Original language: Traditional Chinese (TWCERT/CC). Translated to English for extraction.
