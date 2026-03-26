@@ -30170,6 +30170,156 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "malware_sample-2026-03-26-d29deee2e8bec85d-md",
+    "title": "MalwareBazaar: py Sample - d29deee2e8bec85d",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-26-d29deee2e8bec85d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-26-a78a5ee8a3b887b9-md",
+    "title": "MalwareBazaar: exe Sample - a78a5ee8a3b887b9",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-26-a78a5ee8a3b887b9.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-26-8f4bfcc12f452b7a-md",
+    "title": "MalwareBazaar: Mirai (elf) Sample - 8f4bfcc12f452b7a",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-26-8f4bfcc12f452b7a.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-26-710ed04620dd7b4f-md",
+    "title": "MalwareBazaar: py Sample - 710ed04620dd7b4f",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-26-710ed04620dd7b4f.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-26-6aa919de55ae9691-md",
+    "title": "MalwareBazaar: exe Sample - 6aa919de55ae9691",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-26-6aa919de55ae9691.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-26-087d8ad89e86a067-md",
+    "title": "MalwareBazaar: Mirai (elf) Sample - 087d8ad89e86a067",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-26-087d8ad89e86a067.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-de99bb9a24b88794-md",
+    "title": "MalwareBazaar: QuasarRAT (exe) Sample - de99bb9a24b88794",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-de99bb9a24b88794.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-c704c5a89ab62238-md",
+    "title": "MalwareBazaar: sh Sample - c704c5a89ab62238",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-c704c5a89ab62238.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-bd245b4fe3aaf778-md",
+    "title": "MalwareBazaar: sh Sample - bd245b4fe3aaf778",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-bd245b4fe3aaf778.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-a20c9a9232db0bc4-md",
+    "title": "MalwareBazaar: Mirai (elf) Sample - a20c9a9232db0bc4",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-a20c9a9232db0bc4.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-816979d4a129677d-md",
+    "title": "MalwareBazaar: js Sample - 816979d4a129677d",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-816979d4a129677d.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-7ec62f0e53d34c35-md",
+    "title": "MalwareBazaar: exe Sample - 7ec62f0e53d34c35",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-7ec62f0e53d34c35.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-66c7089f7f889e3b-md",
+    "title": "MalwareBazaar: js Sample - 66c7089f7f889e3b",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-66c7089f7f889e3b.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-622eed4ccdb6b0a8-md",
+    "title": "MalwareBazaar: Mirai (elf) Sample - 622eed4ccdb6b0a8",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-622eed4ccdb6b0a8.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malware_sample-2026-03-25-27d4a835b61920d0-md",
+    "title": "MalwareBazaar: Mirai (elf) Sample - 27d4a835b61920d0",
+    "category": "malware_sample",
+    "date": "",
+    "file": "malware_sample/2026-03-25-27d4a835b61920d0.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "malware_sample-2026-03-25-1543b9b955e4de15-md",
     "title": "MalwareBazaar 樣本：解封软件.exe（未知家族）",
     "category": "malware_sample",
@@ -292050,6 +292200,2626 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "malicious_url-2026-03-26-cl4path-sunnode-in-net-md",
+    "title": "URLhaus: Malicious URL - cl4path.sunnode.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-cl4path-sunnode-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-cl3view-sunnode-in-net-md",
+    "title": "URLhaus: Malicious URL - cl3view.sunnode.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-cl3view-sunnode-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-cl2point-sunnode-in-net-md",
+    "title": "URLhaus: Malicious URL - cl2point.sunnode.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-cl2point-sunnode-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-cl1proc-sunnode-in-net-md",
+    "title": "URLhaus: Malicious URL - cl1proc.sunnode.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-cl1proc-sunnode-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-61-53-98-138-md",
+    "title": "URLhaus: Malicious URL - 61.53.98.138",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-61-53-98-138.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-59-98-82-57-md",
+    "title": "URLhaus: Malicious URL - 59.98.82.57",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-59-98-82-57.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-59-97-181-87-md",
+    "title": "URLhaus: Malicious URL - 59.97.181.87",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-59-97-181-87.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-27-37-85-76-md",
+    "title": "URLhaus: Malicious URL - 27.37.85.76",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-27-37-85-76.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-219-157-154-32-md",
+    "title": "URLhaus: Malicious URL - 219.157.154.32",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-219-157-154-32.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-175-165-82-231-md",
+    "title": "URLhaus: Malicious URL - 175.165.82.231",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-175-165-82-231.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-158-94-208-168-md",
+    "title": "URLhaus: Malicious URL - 158.94.208.168",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-158-94-208-168.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-117-204-167-10-md",
+    "title": "URLhaus: Malicious URL - 117.204.167.10",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-117-204-167-10.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-115-56-159-66-md",
+    "title": "URLhaus: Malicious URL - 115.56.159.66",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-115-56-159-66.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-110-39-235-67-md",
+    "title": "URLhaus: Malicious URL - 110.39.235.67",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-110-39-235-67.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-26-110-39-233-226-md",
+    "title": "URLhaus: Malicious URL - 110.39.233.226",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-26-110-39-233-226.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-zonawood-org-md",
+    "title": "惡意 URL IoC — zonawood-org (3804660)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-zonawood-org.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-zonawood-org-3804659-md",
+    "title": "惡意 URL IoC — zonawood-org (3804659)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-zonawood-org-3804659.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-zonawood-org-3804658-md",
+    "title": "惡意 URL IoC — zonawood-org (3804658)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-zonawood-org-3804658.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-zonawood-org-3804657-md",
+    "title": "惡意 URL IoC — zonawood-org (3804657)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-zonawood-org-3804657.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-zonawood-org-3804656-md",
+    "title": "惡意 URL IoC — zonawood-org (3804656)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-zonawood-org-3804656.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-www-pastebin-cz-md",
+    "title": "惡意 URL IoC — www-pastebin-cz (3804665)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-www-pastebin-cz.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-wwklydao-amber-drift-in-net-md",
+    "title": "惡意 URL IoC — wwklydao-amber-drift-in-net (3804704)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-wwklydao-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-vtto2izc-starapi-digital-md",
+    "title": "惡意 URL：vtto2izc.starapi.digital (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-vtto2izc-starapi-digital.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-vorvenen2-dawnspire-in-net-md",
+    "title": "惡意 URL IoC — vorvenen2-dawnspire-in-net (3804693)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-vorvenen2-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-vorfluxet-gl1mmeroak-in-net-md",
+    "title": "惡意 URL：vorfluxet.gl1mmeroak.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-vorfluxet-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-velmarka-velorune-in-net-md",
+    "title": "惡意 URL：velmarka.velorune.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-velmarka-velorune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-transdea-crestfall-in-net-md",
+    "title": "惡意 URL：transdea.crestfall.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-transdea-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-timbe-well-velorune-in-net-md",
+    "title": "惡意 URL：timbe-well.velorune.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-timbe-well-velorune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-the0-drive-brimvale-in-net-md",
+    "title": "惡意 URL: the0-drive-brimvale-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-the0-drive-brimvale-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-talven8ex-q7ravo-in-net-md",
+    "title": "惡意 URL IoC — talven8ex-q7ravo-in-net (3804669)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-talven8ex-q7ravo-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc4static-petrographyflow-in-net-md",
+    "title": "惡意 URL：svc4static.petrographyflow.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc4static-petrographyflow-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc4sat-rhyolitenodehub-in-net-md",
+    "title": "惡意 URL: svc4sat-rhyolitenodehub-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc4sat-rhyolitenodehub-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc4link-magmaticbuffer-in-net-md",
+    "title": "惡意 URL：svc4link.magmaticbuffer.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc4link-magmaticbuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc3user-magmaticbuffer-in-net-md",
+    "title": "惡意 URL：svc3user.magmaticbuffer.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc3user-magmaticbuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc3core-rhyolitenodehub-in-net-md",
+    "title": "惡意 URL: svc3core-rhyolitenodehub-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc3core-rhyolitenodehub-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc2steel-rhyolitenodehub-in-net-md",
+    "title": "惡意 URL: svc2steel-rhyolitenodehub-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc2steel-rhyolitenodehub-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc2base-magmaticbuffer-in-net-md",
+    "title": "惡意 URL：svc2base.magmaticbuffer.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc2base-magmaticbuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc1proc-rhyolitenodehub-in-net-md",
+    "title": "惡意 URL: svc1proc-rhyolitenodehub-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc1proc-rhyolitenodehub-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-svc1infra-magmaticbuffer-in-net-md",
+    "title": "惡意 URL：svc1infra.magmaticbuffer.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-svc1infra-magmaticbuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-survebroa-dawnspire-in-net-md",
+    "title": "惡意 URL IoC — survebroa-dawnspire-in-net (3804690)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-survebroa-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-sub-vv1ld-n1mbleoak-in-net-md",
+    "title": "惡意 URL: sub-vv1ld-n1mbleoak-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-sub-vv1ld-n1mbleoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-solarpri-crestfall-in-net-md",
+    "title": "惡意 URL：solarpri.crestfall.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-solarpri-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-shape-mesh-graincrest-in-net-md",
+    "title": "惡意 URL IoC — shape-mesh-graincrest-in-net (3804651)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-shape-mesh-graincrest-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-sermark0um-brimvale-in-net-md",
+    "title": "惡意 URL: sermark0um-brimvale-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-sermark0um-brimvale-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-rout3-glow-skyl0om-in-net-md",
+    "title": "惡意 URL IoC — rout3-glow-skyl0om-in-net (3804643)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-rout3-glow-skyl0om-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-rende6-trace-rivermint-in-net-md",
+    "title": "惡意 URL IoC — rende6-trace-rivermint-in-net (3804636)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-rende6-trace-rivermint-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-quot-isle-amber-drift-in-net-md",
+    "title": "惡意 URL IoC — quot-isle-amber-drift-in-net (3804700)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-quot-isle-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-quorcoreix1-thistlecore-in-net-md",
+    "title": "惡意 URL IoC — quorcoreix1-thistlecore-in-net (3804675)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-quorcoreix1-thistlecore-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-quantbin-graincrest-in-net-md",
+    "title": "惡意 URL IoC — quantbin-graincrest-in-net (3804645)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-quantbin-graincrest-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-qiauhat-dawnspire-in-net-md",
+    "title": "惡意 URL IoC — qiauhat-dawnspire-in-net (3804688)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-qiauhat-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-qfvn0y-gl1mmeroak-in-net-md",
+    "title": "惡意 URL：qfvn0y.gl1mmeroak.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-qfvn0y-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-qclju-larkspin-in-net-md",
+    "title": "惡意 URL: qclju-larkspin-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-qclju-larkspin-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-pxmghr-duskforge-in-net-md",
+    "title": "惡意 URL IoC — pxmghr-duskforge-in-net (3804633)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-pxmghr-duskforge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ph0to3-stack-tr4cefox-in-net-md",
+    "title": "惡意 URL: ph0to3-stack-tr4cefox-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ph0to3-stack-tr4cefox-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-payloadcinema-crestfall-in-net-md",
+    "title": "惡意 URL：payloadcinema.crestfall.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-payloadcinema-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-patte-span-crestfall-in-net-md",
+    "title": "惡意 URL：patte-span.crestfall.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-patte-span-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-oxfordmobilexray-com-md",
+    "title": "惡意 URL: oxfordmobilexray-com (未知威脅)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-oxfordmobilexray-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-oqtxen-stone-blink-in-net-md",
+    "title": "惡意 URL IoC — oqtxen-stone-blink-in-net (3804682)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-oqtxen-stone-blink-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ooj9q4-mirthbay-in-net-md",
+    "title": "惡意 URL: ooj9q4-mirthbay-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ooj9q4-mirthbay-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-offvisual-stone-blink-in-net-md",
+    "title": "惡意 URL IoC — offvisual-stone-blink-in-net (3804680)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-offvisual-stone-blink-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-neuralclip-larkspin-in-net-md",
+    "title": "惡意 URL: neuralclip-larkspin-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-neuralclip-larkspin-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-neo-cany0n-mirthbay-in-net-md",
+    "title": "惡意 URL: neo-cany0n-mirthbay-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-neo-cany0n-mirthbay-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-neo-5un-crestfall-in-net-md",
+    "title": "惡意 URL：neo-5un.crestfall.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-neo-5un-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-nabfk-amber-drift-in-net-md",
+    "title": "惡意 URL IoC — nabfk-amber-drift-in-net (3804698)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-nabfk-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-mermeshor-velvet-dune-in-net-md",
+    "title": "惡意 URL: mermeshor-velvet-dune-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-mermeshor-velvet-dune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-mer-nexal-rivermint-in-net-md",
+    "title": "惡意 URL IoC — mer-nexal-rivermint-in-net (3804635)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-mer-nexal-rivermint-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-m0nit7-layer-dawnspire-in-net-md",
+    "title": "惡意 URL IoC — m0nit7-layer-dawnspire-in-net (3804696)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-m0nit7-layer-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-lidx4-dawnspire-in-net-md",
+    "title": "惡意 URL IoC — lidx4-dawnspire-in-net (3804689)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-lidx4-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-hasteb-in-md",
+    "title": "惡意 URL IoC — hasteb-in (3804663)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-hasteb-in.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-gu8xe-frost-echo-in-net-md",
+    "title": "惡意 URL IoC — gu8xe-frost-echo-in-net (3804653)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-gu8xe-frost-echo-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-glyph-panel-gl1mmeroak-in-net-md",
+    "title": "惡意 URL：glyph-panel.gl1mmeroak.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-glyph-panel-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ficjog-velvet-dune-in-net-md",
+    "title": "惡意 URL: ficjog-velvet-dune-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ficjog-velvet-dune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-f4ith-chain-duskforge-in-net-md",
+    "title": "惡意 URL IoC — f4ith-chain-duskforge-in-net (3804631)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-f4ith-chain-duskforge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-f1xegu-q7ravo-in-net-md",
+    "title": "惡意 URL IoC — f1xegu-q7ravo-in-net (3804671)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-f1xegu-q7ravo-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-f1er6-lab-n1mbleoak-in-net-md",
+    "title": "惡意 URL: f1er6-lab-n1mbleoak-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-f1er6-lab-n1mbleoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-extractwho-flare-path-in-net-md",
+    "title": "惡意 URL IoC — extractwho-flare-path-in-net (3804638)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-extractwho-flare-path-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext4view-feldspargateway-in-net-md",
+    "title": "惡意 URL：ext4view.feldspargateway.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext4view-feldspargateway-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext4sync-lithosphereduct-in-net-md",
+    "title": "惡意 URL：ext4sync.lithosphereduct.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext4sync-lithosphereduct-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext4point-stratagraphic-in-net-md",
+    "title": "惡意 URL: ext4point-stratagraphic-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext4point-stratagraphic-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext3ghost-feldspargateway-in-net-md",
+    "title": "惡意 URL：ext3ghost.feldspargateway.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext3ghost-feldspargateway-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext3gate-lithosphereduct-in-net-md",
+    "title": "惡意 URL：ext3gate.lithosphereduct.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext3gate-lithosphereduct-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext3data-stratagraphic-in-net-md",
+    "title": "惡意 URL: ext3data-stratagraphic-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext3data-stratagraphic-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext2proxy-stratagraphic-in-net-md",
+    "title": "惡意 URL: ext2proxy-stratagraphic-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext2proxy-stratagraphic-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext2proc-lithosphereduct-in-net-md",
+    "title": "惡意 URL：ext2proc.lithosphereduct.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext2proc-lithosphereduct-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext2core-feldspargateway-in-net-md",
+    "title": "惡意 URL：ext2core.feldspargateway.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext2core-feldspargateway-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext1proc-feldspargateway-in-net-md",
+    "title": "惡意 URL：ext1proc.feldspargateway.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext1proc-feldspargateway-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext1meta-lithosphereduct-in-net-md",
+    "title": "惡意 URL：ext1meta.lithosphereduct.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext1meta-lithosphereduct-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ext1infra-stratagraphic-in-net-md",
+    "title": "惡意 URL: ext1infra-stratagraphic-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ext1infra-stratagraphic-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-e3t525-flare-path-in-net-md",
+    "title": "惡意 URL IoC — e3t525-flare-path-in-net (3804642)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-e3t525-flare-path-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-dev4work-tectonicstream-in-net-md",
+    "title": "惡意 URL：dev4work.tectonicstream.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-dev4work-tectonicstream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-dev4space-pyroxenetrace-in-net-md",
+    "title": "惡意 URL: dev4space-pyroxenetrace-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-dev4space-pyroxenetrace-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-dev3local-tectonicstream-in-net-md",
+    "title": "惡意 URL：dev3local.tectonicstream.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-dev3local-tectonicstream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-dev2power-tectonicstream-in-net-md",
+    "title": "惡意 URL：dev2power.tectonicstream.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-dev2power-tectonicstream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-dev2outer-pyroxenetrace-in-net-md",
+    "title": "惡意 URL: dev2outer-pyroxenetrace-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-dev2outer-pyroxenetrace-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-dev1proc-tectonicstream-in-net-md",
+    "title": "惡意 URL：dev1proc.tectonicstream.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-dev1proc-tectonicstream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-dev1proc-pyroxenetrace-in-net-md",
+    "title": "惡意 URL：dev1proc.pyroxenetrace.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-dev1proc-pyroxenetrace-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-designtrigger-gl1mmeroak-in-net-md",
+    "title": "惡意 URL：designtrigger.gl1mmeroak.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-designtrigger-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-d3ep-cast-amber-drift-in-net-md",
+    "title": "惡意 URL IoC — d3ep-cast-amber-drift-in-net (3804705)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-d3ep-cast-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-cl4path-obsidianmatrix-in-net-md",
+    "title": "惡意 URL：cl4path.obsidianmatrix.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-cl4path-obsidianmatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-cl4link-sedimentmetrics-in-net-md",
+    "title": "惡意 URL：cl4link.sedimentmetrics.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-cl4link-sedimentmetrics-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-cl3view-obsidianmatrix-in-net-md",
+    "title": "惡意 URL：cl3view.obsidianmatrix.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-cl3view-obsidianmatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-cl3dev-sedimentmetrics-in-net-md",
+    "title": "惡意 URL：cl3dev.sedimentmetrics.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-cl3dev-sedimentmetrics-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-cl2remote-sedimentmetrics-in-net-md",
+    "title": "惡意 URL：cl2remote.sedimentmetrics.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-cl2remote-sedimentmetrics-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-cl2point-obsidianmatrix-in-net-md",
+    "title": "惡意 URL：cl2point.obsidianmatrix.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-cl2point-obsidianmatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-cl1store-sedimentmetrics-in-net-md",
+    "title": "惡意 URL：cl1store.sedimentmetrics.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-cl1store-sedimentmetrics-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-cl1proc-obsidianmatrix-in-net-md",
+    "title": "惡意 URL：cl1proc.obsidianmatrix.in.net",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-cl1proc-obsidianmatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-chinasite-com-br-md",
+    "title": "惡意 URL IoC — chinasite-com-br (3804661)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-chinasite-com-br.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-c1ea7-hinge-tr4cefox-in-net-md",
+    "title": "惡意 URL: c1ea7-hinge-tr4cefox-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-c1ea7-hinge-tr4cefox-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-brandpackage-cobalt-ridge-in-net-md",
+    "title": "惡意 URL: brandpackage-cobalt-ridge-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-brandpackage-cobalt-ridge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-ashtes-cl0verrun-in-net-md",
+    "title": "惡意 URL IoC — ashtes-cl0verrun-in-net (3804684)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-ashtes-cl0verrun-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-arkfluxos9-gl1mmeroak-in-net-md",
+    "title": "惡意 URL：arkfluxos9.gl1mmeroak.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-arkfluxos9-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-95-165-187-102:56551-md",
+    "title": "惡意 URL：95.165.187.102:56551 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-95-165-187-102:56551.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-94-154-32-49-md",
+    "title": "惡意 URL IoC — 94-154-32-49 (3804647)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-94-154-32-49.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-91-92-241-94-md",
+    "title": "惡意 URL：91.92.241.94",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-91-92-241-94.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-87-255-10-22-md",
+    "title": "惡意 URL IoC — 87-255-10-22 (3804666)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-87-255-10-22.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-87-255-10-22-3804649-md",
+    "title": "惡意 URL IoC — 87-255-10-22 (3804649)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-87-255-10-22-3804649.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-7lluqhl-hollow-spark-in-net-md",
+    "title": "惡意 URL IoC — 7lluqhl-hollow-spark-in-net (3804630)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-7lluqhl-hollow-spark-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-79-50-155-57:55911-md",
+    "title": "惡意 URL：79.50.155.57:55911 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-79-50-155-57:55911.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-77-236-74-65:35180-md",
+    "title": "惡意 URL: 77-236-74-65:35180 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-77-236-74-65:35180.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-77-236-74-65-md",
+    "title": "惡意 URL IoC — 77-236-74-65 (3804629)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-77-236-74-65.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-6slp-thistlecore-in-net-md",
+    "title": "惡意 URL IoC — 6slp-thistlecore-in-net (3804678)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-6slp-thistlecore-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-53-84-107:43646-md",
+    "title": "惡意 URL：61.53.84.107:43646 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-53-84-107:43646.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-52-96-210:35684-md",
+    "title": "惡意 URL：61.52.96.210:35684 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-52-96-210:35684.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-52-62-111:50655-md",
+    "title": "惡意 URL: 61-52-62-111:50655 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-52-62-111:50655.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-52-59-8:50449-md",
+    "title": "惡意 URL: 61-52-59-8:50449 (Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-52-59-8:50449.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-52-59-8-50449-md",
+    "title": "惡意 URL：61.52.59.8:50449",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-52-59-8-50449.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-52-5-43-md",
+    "title": "惡意 URL IoC — 61-52-5-43 (3804673)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-52-5-43.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-52-5-43-3804662-md",
+    "title": "惡意 URL IoC — 61-52-5-43 (3804662)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-52-5-43-3804662.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-52-118-171-md",
+    "title": "惡意 URL IoC — 61-52-118-171 (3804668)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-52-118-171.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-61-52-118-171-3804646-md",
+    "title": "惡意 URL IoC — 61-52-118-171 (3804646)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-61-52-118-171-3804646.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-5pectra-plate-cobalt-ridge-in-net-md",
+    "title": "惡意 URL: 5pectra-plate-cobalt-ridge-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-5pectra-plate-cobalt-ridge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-59-97-183-97-md",
+    "title": "惡意 URL IoC — 59-97-183-97 (3804677)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-59-97-183-97.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-59-97-183-97-3804655-md",
+    "title": "惡意 URL IoC — 59-97-183-97 (3804655)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-59-97-183-97-3804655.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-59-97-177-204:58253-md",
+    "title": "惡意 URL：59.97.177.204:58253 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-59-97-177-204:58253.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-59-88-249-95-53022-md",
+    "title": "惡意 URL：59.88.249.95:53022",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-59-88-249-95-53022.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-59-88-10-109:54668-md",
+    "title": "惡意 URL: 59-88-10-109:54668 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-59-88-10-109:54668.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-59-184-57-31:48088-md",
+    "title": "惡意 URL: 59-184-57-31:48088 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-59-184-57-31:48088.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-50qfdh-hollow-spark-in-net-md",
+    "title": "惡意 URL: 50qfdh-hollow-spark-in-net (ACRStealer, ClearFake)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-50qfdh-hollow-spark-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-45-139-104-122-md",
+    "title": "惡意 URL: 45-139-104-122 (elf, mirai, ua-wget)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-45-139-104-122.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-7-241-63-md",
+    "title": "惡意 URL IoC — 42-7-241-63 (3804683)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-7-241-63.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-7-241-63-3804652-md",
+    "title": "惡意 URL IoC — 42-7-241-63 (3804652)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-7-241-63-3804652.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-238-211-197:53188-md",
+    "title": "惡意 URL: 42-238-211-197:53188 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-238-211-197:53188.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-235-86-167-md",
+    "title": "惡意 URL IoC — 42-235-86-167 (3804692)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-235-86-167.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-234-143-41-56872-md",
+    "title": "惡意 URL：42.234.143.41:56872",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-234-143-41-56872.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-234-100-151-46774-md",
+    "title": "惡意 URL：42.234.100.151:46774",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-234-100-151-46774.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-226-222-212-md",
+    "title": "惡意 URL IoC — 42-226-222-212 (3804695)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-226-222-212.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-226-222-212-3804687-md",
+    "title": "惡意 URL IoC — 42-226-222-212 (3804687)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-226-222-212-3804687.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-224-122-228-54708-md",
+    "title": "惡意 URL：42.224.122.228:54708",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-224-122-228-54708.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-178-112-150-44248-md",
+    "title": "惡意 URL：42.178.112.150:44248",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-178-112-150-44248.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-42-177-234-121:38987-md",
+    "title": "惡意 URL：42.177.234.121:38987 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-42-177-234-121:38987.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-3urg2biz-amber-drift-in-net-md",
+    "title": "惡意 URL：3urg2biz.amber-drift.in.net (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-3urg2biz-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-37-28-176-153:41839-md",
+    "title": "惡意 URL: 37-28-176-153:41839 (未知威脅)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-37-28-176-153:41839.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-2ubum-skyl0om-in-net-md",
+    "title": "惡意 URL IoC — 2ubum-skyl0om-in-net (3804644)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-2ubum-skyl0om-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-29rtrlv-cl0verrun-in-net-md",
+    "title": "惡意 URL IoC — 29rtrlv-cl0verrun-in-net (3804685)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-29rtrlv-cl0verrun-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-27-37-89-137:44175-md",
+    "title": "惡意 URL：27.37.89.137:44175 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-27-37-89-137:44175.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-27-37-113-232:37596-md",
+    "title": "惡意 URL: 27-37-113-232:37596 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-27-37-113-232:37596.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-27-37-113-232-37596-md",
+    "title": "惡意 URL：27.37.113.232:37596",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-27-37-113-232-37596.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-27-207-204-7-md",
+    "title": "惡意 URL IoC — 27-207-204-7 (3804676)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-27-207-204-7.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-27-207-204-7-3804654-md",
+    "title": "惡意 URL IoC — 27-207-204-7 (3804654)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-27-207-204-7-3804654.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-27-11-158-74:52919-md",
+    "title": "惡意 URL：27.11.158.74:52919 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-27-11-158-74:52919.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-27-11-158-74-52919-md",
+    "title": "惡意 URL：27.11.158.74:52919",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-27-11-158-74-52919.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-222-142-252-191:45873-md",
+    "title": "惡意 URL: 222-142-252-191:45873 (Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-222-142-252-191:45873.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-222-142-209-234-md",
+    "title": "惡意 URL IoC — 222-142-209-234 (3804634)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-222-142-209-234.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-222-140-135-232:58649-md",
+    "title": "惡意 URL：222.140.135.232:58649 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-222-140-135-232:58649.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-222-140-135-232-md",
+    "title": "惡意 URL IoC — 222-140-135-232 (3804707)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-222-140-135-232.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-222-127-73-23:59664-md",
+    "title": "惡意 URL: 222-127-73-23:59664 (32-bit, arm, elf, mirai, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-222-127-73-23:59664.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-221-15-23-178:38807-md",
+    "title": "惡意 URL：221.15.23.178:38807 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-221-15-23-178:38807.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-202-111-130-32-55074-md",
+    "title": "惡意 URL：202.111.130.32:55074",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-202-111-130-32-55074.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-201-159-91-2:56534-md",
+    "title": "惡意 URL：201.159.91.2:56534 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-201-159-91-2:56534.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-196-189-98-77-52781-md",
+    "title": "惡意 URL：196.189.98.77:52781",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-196-189-98-77-52781.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-196-189-3-1:48115-md",
+    "title": "惡意 URL: 196-189-3-1:48115 (32-bit, arm, elf, mirai, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-196-189-3-1:48115.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-196-189-3-1-48115-md",
+    "title": "惡意 URL：196.189.3.1:48115",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-196-189-3-1-48115.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-188-137-249-159-md",
+    "title": "惡意 URL IoC — 188-137-249-159 (3804706)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-188-137-249-159.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-182-148-85-228-56473-md",
+    "title": "惡意 URL：182.148.85.228:56473",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-182-148-85-228-56473.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-182-127-102-125:39653-md",
+    "title": "惡意 URL: 182-127-102-125:39653 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-182-127-102-125:39653.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-182-121-114-210-md",
+    "title": "惡意 URL IoC — 182-121-114-210 (3804702)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-182-121-114-210.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-182-117-94-253:47655-md",
+    "title": "惡意 URL：182.117.94.253:47655 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-182-117-94-253:47655.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-182-116-93-187-md",
+    "title": "惡意 URL IoC — 182-116-93-187 (3804686)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-182-116-93-187.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-182-114-252-40-51800-md",
+    "title": "惡意 URL：182.114.252.40:51800",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-182-114-252-40-51800.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-182-112-0-113:33212-md",
+    "title": "惡意 URL：182.112.0.113:33212 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-182-112-0-113:33212.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-175-167-3-64-58849-md",
+    "title": "惡意 URL：175.167.3.64:58849",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-175-167-3-64-58849.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-175-150-179-108-md",
+    "title": "惡意 URL IoC — 175-150-179-108 (3804670)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-175-150-179-108.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-175-150-179-108-3804637-md",
+    "title": "惡意 URL IoC — 175-150-179-108 (3804637)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-175-150-179-108-3804637.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-175-148-156-117-35125-md",
+    "title": "惡意 URL：175.148.156.117:35125",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-175-148-156-117-35125.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-175-146-53-138:46804-md",
+    "title": "惡意 URL：175.146.53.138:46804 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-175-146-53-138:46804.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-163-142-93-220:53783-md",
+    "title": "惡意 URL：163.142.93.220:53783 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-163-142-93-220:53783.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-163-142-78-220:36113-md",
+    "title": "惡意 URL：163.142.78.220:36113 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-163-142-78-220:36113.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-162-248-102-107-md",
+    "title": "惡意 URL：162.248.102.107",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-162-248-102-107.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-158-94-208-168-md",
+    "title": "惡意 URL：158.94.208.168 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-158-94-208-168.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-1502u-frost-echo-in-net-md",
+    "title": "惡意 URL IoC — 1502u-frost-echo-in-net (3804664)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-1502u-frost-echo-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-140-237-44-4:56557-md",
+    "title": "惡意 URL: 140-237-44-4:56557 (32-bit, arm, elf, mirai, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-140-237-44-4:56557.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-125-44-54-187-33821-md",
+    "title": "惡意 URL：125.44.54.187:33821",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-125-44-54-187-33821.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-125-43-82-238-md",
+    "title": "惡意 URL IoC — 125-43-82-238 (3804701)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-125-43-82-238.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-125-43-82-238-3804699-md",
+    "title": "惡意 URL IoC — 125-43-82-238 (3804699)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-125-43-82-238-3804699.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-125-42-238-86:57257-md",
+    "title": "惡意 URL：125.42.238.86:57257 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-125-42-238-86:57257.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-125-40-225-181:38187-md",
+    "title": "惡意 URL：125.40.225.181:38187 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-125-40-225-181:38187.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-125-40-159-87-46256-md",
+    "title": "惡意 URL：125.40.159.87:46256",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-125-40-159-87-46256.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-125-40-129-126:33129-md",
+    "title": "惡意 URL：125.40.129.126:33129 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-125-40-129-126:33129.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-124-72-183-249-52751-md",
+    "title": "惡意 URL：124.72.183.249:52751",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-124-72-183-249-52751.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-124-135-33-173:41720-md",
+    "title": "惡意 URL：124.135.33.173:41720 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-124-135-33-173:41720.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-124-131-94-120-55132-md",
+    "title": "惡意 URL：124.131.94.120:55132",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-124-131-94-120-55132.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-9-198-108:35918-md",
+    "title": "惡意 URL：123.9.198.108:35918 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-9-198-108:35918.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-8-25-196-md",
+    "title": "惡意 URL IoC — 123-8-25-196 (3804703)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-8-25-196.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-8-25-196-3804694-md",
+    "title": "惡意 URL IoC — 123-8-25-196 (3804694)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-8-25-196-3804694.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-5-18-125:53759-md",
+    "title": "惡意 URL：123.5.18.125:53759 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-5-18-125:53759.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-4-249-207:48315-md",
+    "title": "惡意 URL: 123-4-249-207:48315 (32-bit, elf, mips, mirai)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-4-249-207:48315.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-4-249-207-48315-md",
+    "title": "惡意 URL：123.4.249.207:48315",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-4-249-207-48315.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-14-221-79-md",
+    "title": "惡意 URL IoC — 123-14-221-79 (3804648)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-14-221-79.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-14-221-79-3804639-md",
+    "title": "惡意 URL IoC — 123-14-221-79 (3804639)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-14-221-79-3804639.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-11-73-85:60585-md",
+    "title": "惡意 URL：123.11.73.85:60585 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-11-73-85:60585.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-123-11-73-85-md",
+    "title": "惡意 URL IoC — 123-11-73-85 (3804667)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-123-11-73-85.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-120-61-158-252:47382-md",
+    "title": "惡意 URL: 120-61-158-252:47382 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-120-61-158-252:47382.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-120-61-11-105:53571-md",
+    "title": "惡意 URL: 120-61-11-105:53571 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-120-61-11-105:53571.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-120-28-215-50:37995-md",
+    "title": "惡意 URL：120.28.215.50:37995 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-120-28-215-50:37995.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-120-28-160-164:34954-md",
+    "title": "惡意 URL: 120-28-160-164:34954 (32-bit, arm, elf, mirai, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-120-28-160-164:34954.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-118-34-109-121:57516-md",
+    "title": "惡意 URL: 118-34-109-121:57516 (未知威脅)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-118-34-109-121:57516.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-118-251-115-61-md",
+    "title": "惡意 URL IoC — 118-251-115-61 (3804650)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-118-251-115-61.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-118-251-115-61-3804641-md",
+    "title": "惡意 URL IoC — 118-251-115-61 (3804641)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-118-251-115-61-3804641.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-82-134-9:38840-md",
+    "title": "惡意 URL：117.82.134.9:38840 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-82-134-9:38840.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-26-226-221:52208-md",
+    "title": "惡意 URL: 117-26-226-221:52208 (32-bit, arm, elf, mirai, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-26-226-221:52208.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-253-87-155:39642-md",
+    "title": "惡意 URL：117.253.87.155:39642 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-253-87-155:39642.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-242-76-137-50959-md",
+    "title": "惡意 URL：117.242.76.137:50959",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-242-76-137-50959.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-24-142-65:47976-md",
+    "title": "惡意 URL：117.24.142.65:47976 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-24-142-65:47976.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-24-142-65-md",
+    "title": "惡意 URL IoC — 117-24-142-65 (3804697)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-24-142-65.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-213-113-235:51350-md",
+    "title": "惡意 URL：117.213.113.235:51350 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-213-113-235:51350.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-211-35-139-md",
+    "title": "惡意 URL IoC — 117-211-35-139 (3804679)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-211-35-139.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-210-192-97:54462-md",
+    "title": "惡意 URL: 117-210-192-97:54462 (未知威脅)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-210-192-97:54462.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-117-199-164-58:43401-md",
+    "title": "惡意 URL: 117-199-164-58:43401 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-117-199-164-58:43401.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-116-138-244-143-39987-md",
+    "title": "惡意 URL：116.138.244.143:39987",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-116-138-244-143-39987.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-115-63-150-236:46918-md",
+    "title": "惡意 URL：115.63.150.236:46918 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-115-63-150-236:46918.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-115-55-142-141:53069-md",
+    "title": "惡意 URL：115.55.142.141:53069 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-115-55-142-141:53069.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-115-52-31-193:59224-md",
+    "title": "惡意 URL: 115-52-31-193:59224 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-115-52-31-193:59224.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-115-52-31-193-md",
+    "title": "惡意 URL IoC — 115-52-31-193 (3804632)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-115-52-31-193.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-115-48-146-54:59878-md",
+    "title": "惡意 URL: 115-48-146-54:59878 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-115-48-146-54:59878.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-113-229-185-91:49936-md",
+    "title": "惡意 URL：113.229.185.91:49936 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-113-229-185-91:49936.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-113-221-58-86-md",
+    "title": "惡意 URL IoC — 113-221-58-86 (3804674)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-113-221-58-86.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-112-248-255-166:49310-md",
+    "title": "惡意 URL：112.248.255.166:49310 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-112-248-255-166:49310.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-112-198-140-250-48066-md",
+    "title": "惡意 URL：112.198.140.250:48066",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-112-198-140-250-48066.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-111-76-225-148:37151-md",
+    "title": "惡意 URL：111.76.225.148:37151 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-111-76-225-148:37151.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-39-249-30-45324-md",
+    "title": "惡意 URL：110.39.249.30:45324",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-39-249-30-45324.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-39-249-140-md",
+    "title": "惡意 URL IoC — 110-39-249-140 (3804681)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-39-249-140.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-39-249-140-3804672-md",
+    "title": "惡意 URL IoC — 110-39-249-140 (3804672)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-39-249-140-3804672.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-39-247-164-39645-md",
+    "title": "惡意 URL：110.39.247.164:39645",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-39-247-164-39645.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-38-221-108:37733-md",
+    "title": "惡意 URL：110.38.221.108:37733 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-38-221-108:37733.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-97-32:57413-md",
+    "title": "惡意 URL: 110-37-97-32:57413 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-97-32:57413.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-95-41-35733-md",
+    "title": "惡意 URL：110.37.95.41:35733",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-95-41-35733.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-92-149:38047-md",
+    "title": "惡意 URL：110.37.92.149:38047 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-92-149:38047.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-89-197:33597-md",
+    "title": "惡意 URL: 110-37-89-197:33597 (32-bit, arm, elf, mirai, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-89-197:33597.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-89-197-md",
+    "title": "惡意 URL IoC — 110-37-89-197 (3804640)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-89-197.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-80-62:36706-md",
+    "title": "惡意 URL: 110-37-80-62:36706 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-80-62:36706.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-54-31:48074-md",
+    "title": "惡意 URL：110.37.54.31:48074 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-54-31:48074.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-54-31-md",
+    "title": "惡意 URL IoC — 110-37-54-31 (3804708)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-54-31.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-48-94-42185-md",
+    "title": "惡意 URL：110.37.48.94:42185",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-48-94-42185.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-38-88:53286-md",
+    "title": "惡意 URL：110.37.38.88:53286 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-38-88:53286.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-122-34-55000-md",
+    "title": "惡意 URL：110.37.122.34:55000",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-122-34-55000.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-111-110:48924-md",
+    "title": "惡意 URL：110.37.111.110:48924 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-111-110:48924.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-37-111-110-md",
+    "title": "惡意 URL IoC — 110-37-111-110 (3804691)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-37-111-110.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-36-70-238:47397-md",
+    "title": "惡意 URL：110.36.70.238:47397 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-36-70-238:47397.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-36-30-37:43891-md",
+    "title": "惡意 URL：110.36.30.37:43891 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-36-30-37:43891.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-110-36-28-45:54815-md",
+    "title": "惡意 URL：110.36.28.45:54815 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-110-36-28-45:54815.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-106-56-113-164:36235-md",
+    "title": "惡意 URL：106.56.113.164:36235 (malware_download)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-106-56-113-164:36235.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "malicious_url-2026-03-25-103-102-25-50:35778-md",
+    "title": "惡意 URL: 103-102-25-50:35778 (32-bit, elf, mips, Mozi)",
+    "category": "malicious_url",
+    "date": "",
+    "file": "malicious_url/2026-03-25-103-102-25-50:35778.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "malicious_url-2026-03-24-svc4static-formicidavortex-in-net-md",
     "title": "URLhaus: hxxps://svc4static.formicidavortex.in.net/verification.googl",
     "category": "malicious_url",
@@ -443520,11 +446290,311 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "ioc_indicator-2026-03-26-threatfox-svc4link-westpit-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：svc4link.westpit.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-svc4link-westpit-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-svc3user-westpit-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：svc3user.westpit.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-svc3user-westpit-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-svc2base-westpit-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：svc2base.westpit.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-svc2base-westpit-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-svc1infra-westpit-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：svc1infra.westpit.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-svc1infra-westpit-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-ext4view-deepoak-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：ext4view.deepoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-ext4view-deepoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-ext3ghost-deepoak-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：ext3ghost.deepoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-ext3ghost-deepoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-ext2core-deepoak-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：ext2core.deepoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-ext2core-deepoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-ext1proc-deepoak-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：ext1proc.deepoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-ext1proc-deepoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-dev4work-northoak-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：dev4work.northoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-dev4work-northoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-dev3local-northoak-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：dev3local.northoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-dev3local-northoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-dev2power-northoak-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：dev2power.northoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-dev2power-northoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-cl4path-sunnode-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：cl4path.sunnode.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-cl4path-sunnode-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-cl3view-sunnode-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：cl3view.sunnode.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-cl3view-sunnode-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-cl2point-sunnode-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：cl2point.sunnode.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-cl2point-sunnode-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-26-threatfox-cl1proc-sunnode-in-net-md",
+    "title": "ClearFake 惡意程式 Payload 傳遞域名：cl1proc.sunnode.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-26-threatfox-cl1proc-sunnode-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-www-resiliencebehavioralhealthcenters-com-md",
+    "title": "ThreatFox IoC — https://www.resiliencebehavioralhealthcenters.com/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-www-resiliencebehavioralhealthcenters-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-www-griffineditions-com-md",
+    "title": "ThreatFox IoC — https://www.griffineditions.com/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-www-griffineditions-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-wwklydao-amber-drift-in-net-md",
+    "title": "ClearFake IoC — wwklydao.amber-drift.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-wwklydao-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-wgzxuo-brisklume-in-net-md",
+    "title": "ClearFake IoC — wgzxuo.brisklume.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-wgzxuo-brisklume-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-vtto2izc-starapi-digital-md",
+    "title": "ClearFake IoC — vtto2izc.starapi.digital",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-vtto2izc-starapi-digital.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-vorvenen2-dawnspire-in-net-md",
+    "title": "ClearFake IoC — vorvenen2.dawnspire.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-vorvenen2-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-vorfluxet-gl1mmeroak-in-net-md",
+    "title": "ClearFake IoC — vorfluxet.gl1mmeroak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-vorfluxet-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-velmarka-velorune-in-net-md",
+    "title": "ClearFake IoC — velmarka.velorune.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-velmarka-velorune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-vel-corear-velorune-in-net-md",
+    "title": "ClearFake IoC — vel-corear.velorune.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-vel-corear-velorune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-unsd9-velorune-in-net-md",
+    "title": "ClearFake IoC — unsd9.velorune.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-unsd9-velorune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-transdea-crestfall-in-net-md",
+    "title": "ClearFake IoC — transdea.crestfall.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-transdea-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-timbe-well-velorune-in-net-md",
+    "title": "ClearFake IoC — timbe-well.velorune.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-timbe-well-velorune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-the0-drive-brimvale-in-net-md",
+    "title": "ClearFake IoC — the0-drive.brimvale.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-the0-drive-brimvale-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-talven8ex-q7ravo-in-net-md",
+    "title": "ClearFake IoC — talven8ex.q7ravo.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-talven8ex-q7ravo-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "ioc_indicator-2026-03-25-threatfox-svc4static-petrographyflow-in-net-md",
     "title": "ClearFake Payload Delivery Domain: svc4static.petrographyflow.in.net",
     "category": "ioc_indicator",
     "date": "",
     "file": "ioc_indicator/2026-03-25-threatfox-svc4static-petrographyflow-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-svc4sat-rhyolitenodehub-in-net-md",
+    "title": "ClearFake IoC — svc4sat.rhyolitenodehub.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-svc4sat-rhyolitenodehub-in-net.md",
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
@@ -443540,6 +446610,26 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "ioc_indicator-2026-03-25-threatfox-svc4link-magmaticbuffer-in-net-md",
+    "title": "ClearFake IoC — svc4link.magmaticbuffer.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-svc4link-magmaticbuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-svc3user-magmaticbuffer-in-net-md",
+    "title": "ClearFake IoC — svc3user.magmaticbuffer.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-svc3user-magmaticbuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "ioc_indicator-2026-03-25-threatfox-svc3edge-petrographyflow-in-net-md",
     "title": "ClearFake Payload Delivery Domain: svc3edge.petrographyflow.in.net",
     "category": "ioc_indicator",
@@ -443550,11 +446640,31 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "ioc_indicator-2026-03-25-threatfox-svc3core-rhyolitenodehub-in-net-md",
+    "title": "ClearFake IoC — svc3core.rhyolitenodehub.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-svc3core-rhyolitenodehub-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "ioc_indicator-2026-03-25-threatfox-svc3core-nematodastream-in-net-md",
     "title": "ClearFake Payload Delivery Domain: svc3core.nematodastream.in.net",
     "category": "ioc_indicator",
     "date": "",
     "file": "ioc_indicator/2026-03-25-threatfox-svc3core-nematodastream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-svc2steel-rhyolitenodehub-in-net-md",
+    "title": "ClearFake IoC — svc2steel.rhyolitenodehub.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-svc2steel-rhyolitenodehub-in-net.md",
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
@@ -443580,11 +446690,31 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "ioc_indicator-2026-03-25-threatfox-svc2base-magmaticbuffer-in-net-md",
+    "title": "ClearFake IoC — svc2base.magmaticbuffer.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-svc2base-magmaticbuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "ioc_indicator-2026-03-25-threatfox-svc1sync-petrographyflow-in-net-md",
     "title": "ClearFake Payload Delivery Domain: svc1sync.petrographyflow.in.net",
     "category": "ioc_indicator",
     "date": "",
     "file": "ioc_indicator/2026-03-25-threatfox-svc1sync-petrographyflow-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-svc1proc-rhyolitenodehub-in-net-md",
+    "title": "ClearFake IoC — svc1proc.rhyolitenodehub.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-svc1proc-rhyolitenodehub-in-net.md",
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
@@ -443600,11 +446730,851 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "ioc_indicator-2026-03-25-threatfox-svc1infra-magmaticbuffer-in-net-md",
+    "title": "ClearFake IoC — svc1infra.magmaticbuffer.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-svc1infra-magmaticbuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-survebroa-dawnspire-in-net-md",
+    "title": "ClearFake IoC — survebroa.dawnspire.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-survebroa-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-sundoon-no-ip-info-md",
+    "title": "NjRAT IoC — sundoon.no-ip.info",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-sundoon-no-ip-info.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-sub-vv1ld-n1mbleoak-in-net-md",
+    "title": "ClearFake IoC — sub-vv1ld.n1mbleoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-sub-vv1ld-n1mbleoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-stanbrohosting-com-md",
+    "title": "IClickFix IoC — stanbrohosting.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-stanbrohosting-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-stabcdnvlc-beer-md",
+    "title": "ThreatFox IoC — https://stabcdnvlc.beer/api/css.js",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-stabcdnvlc-beer.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-stabcdnvlc-beer-1775324-md",
+    "title": "ThreatFox IoC — stabcdnvlc.beer",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-stabcdnvlc-beer-1775324.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-solarpri-crestfall-in-net-md",
+    "title": "ClearFake IoC — solarpri.crestfall.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-solarpri-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-smcgodda-in-net-md",
+    "title": "Quasar RAT IoC — smcgodda.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-smcgodda-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-shape-mesh-graincrest-in-net-md",
+    "title": "ClearFake IoC — shape-mesh.graincrest.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-shape-mesh-graincrest-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-sermark0um-brimvale-in-net-md",
+    "title": "ClearFake IoC — sermark0um.brimvale.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-sermark0um-brimvale-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ser-tideos-n1ghtridge-in-net-md",
+    "title": "ClearFake IoC — ser-tideos.n1ghtridge.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ser-tideos-n1ghtridge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-sdhscndnssl-beer-md",
+    "title": "ThreatFox IoC — https://sdhscndnssl.beer/api/css.js",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-sdhscndnssl-beer.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-sdhscndnssl-beer-1775326-md",
+    "title": "ThreatFox IoC — sdhscndnssl.beer",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-sdhscndnssl-beer-1775326.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-s3cret-plate-brisklume-in-net-md",
+    "title": "ClearFake IoC — s3cret-plate.brisklume.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-s3cret-plate-brisklume-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-rout3-glow-skyl0om-in-net-md",
+    "title": "ClearFake IoC — rout3-glow.skyl0om.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-rout3-glow-skyl0om-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-rende6-trace-rivermint-in-net-md",
+    "title": "ClearFake IoC — rende6-trace.rivermint.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-rende6-trace-rivermint-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-quot-isle-amber-drift-in-net-md",
+    "title": "ClearFake IoC — quot-isle.amber-drift.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-quot-isle-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-quorcoreix1-thistlecore-in-net-md",
+    "title": "ClearFake IoC — quorcoreix1.thistlecore.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-quorcoreix1-thistlecore-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-quantbin-graincrest-in-net-md",
+    "title": "ClearFake IoC — quantbin.graincrest.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-quantbin-graincrest-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-qiauhat-dawnspire-in-net-md",
+    "title": "ClearFake IoC — qiauhat.dawnspire.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-qiauhat-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-qfvn0y-gl1mmeroak-in-net-md",
+    "title": "ClearFake IoC — qfvn0y.gl1mmeroak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-qfvn0y-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-qclju-larkspin-in-net-md",
+    "title": "ClearFake IoC — qclju.larkspin.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-qclju-larkspin-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-pxmghr-duskforge-in-net-md",
+    "title": "ClearFake IoC — pxmghr.duskforge.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-pxmghr-duskforge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-psj9xexd-brisklume-in-net-md",
+    "title": "ClearFake IoC — psj9xexd.brisklume.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-psj9xexd-brisklume-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-sbs-md",
+    "title": "ThreatFox IoC — https://productionmaza.sbs/api/index.php",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-sbs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-sbs-1775336-md",
+    "title": "ThreatFox IoC — https://productionmaza.sbs/cf.js",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-sbs-1775336.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-sbs-1775335-md",
+    "title": "ThreatFox IoC — productionmaza.sbs",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-sbs-1775335.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-cyou-md",
+    "title": "ThreatFox IoC — https://productionmaza.cyou",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-cyou.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-cyou-1775343-md",
+    "title": "ThreatFox IoC — productionmaza.cyou",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-cyou-1775343.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-cfd-md",
+    "title": "ThreatFox IoC — https://productionmaza.cfd",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-cfd.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-cfd-1775347-md",
+    "title": "ThreatFox IoC — productionmaza.cfd",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-cfd-1775347.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-bond-md",
+    "title": "ThreatFox IoC — https://productionmaza.bond",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-bond.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-productionmaza-bond-1775391-md",
+    "title": "ThreatFox IoC — productionmaza.bond",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-productionmaza-bond-1775391.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-pr0f-hinge-brisklume-in-net-md",
+    "title": "ClearFake IoC — pr0f-hinge.brisklume.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-pr0f-hinge-brisklume-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ph0to3-stack-tr4cefox-in-net-md",
+    "title": "ClearFake IoC — ph0to3-stack.tr4cefox.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ph0to3-stack-tr4cefox-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-payloadcinema-crestfall-in-net-md",
+    "title": "ClearFake IoC — payloadcinema.crestfall.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-payloadcinema-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-patte-span-crestfall-in-net-md",
+    "title": "ClearFake IoC — patte-span.crestfall.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-patte-span-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-paknews-ru-com-md",
+    "title": "Quasar RAT IoC — paknews.ru.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-paknews-ru-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-orangutanasshole1337-38412-portmap-host-md",
+    "title": "Quasar RAT IoC — orangutanasshole1337-38412.portmap.host",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-orangutanasshole1337-38412-portmap-host.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-oqtxen-stone-blink-in-net-md",
+    "title": "ClearFake IoC — oqtxen.stone-blink.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-oqtxen-stone-blink-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ooj9q4-mirthbay-in-net-md",
+    "title": "ClearFake IoC — ooj9q4.mirthbay.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ooj9q4-mirthbay-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-offvisual-stone-blink-in-net-md",
+    "title": "ClearFake IoC — offvisual.stone-blink.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-offvisual-stone-blink-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-nuvc-sa-com-md",
+    "title": "Quasar RAT IoC — nuvc.sa.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-nuvc-sa-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-neuralclip-larkspin-in-net-md",
+    "title": "ClearFake IoC — neuralclip.larkspin.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-neuralclip-larkspin-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-neo-cany0n-mirthbay-in-net-md",
+    "title": "ClearFake IoC — neo-cany0n.mirthbay.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-neo-cany0n-mirthbay-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-neo-5un-crestfall-in-net-md",
+    "title": "ClearFake IoC — neo-5un.crestfall.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-neo-5un-crestfall-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-nabfk-amber-drift-in-net-md",
+    "title": "ClearFake IoC — nabfk.amber-drift.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-nabfk-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-microblob-bond-md",
+    "title": "ThreatFox IoC — https://microblob.bond/log.php",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-microblob-bond.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-microblob-bond-1775340-md",
+    "title": "ThreatFox IoC — microblob.bond",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-microblob-bond-1775340.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-mermeshor-velvet-dune-in-net-md",
+    "title": "ClearFake IoC — mermeshor.velvet-dune.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-mermeshor-velvet-dune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-mer-nexal-rivermint-in-net-md",
+    "title": "ClearFake IoC — mer-nexal.rivermint.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-mer-nexal-rivermint-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-madeinchina-minhacasa-tv-md",
+    "title": "XWorm IoC — madeinchina.minhacasa.tv",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-madeinchina-minhacasa-tv.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-m0nit7-layer-dawnspire-in-net-md",
+    "title": "ClearFake IoC — m0nit7-layer.dawnspire.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-m0nit7-layer-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-lidx4-dawnspire-in-net-md",
+    "title": "ClearFake IoC — lidx4.dawnspire.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-lidx4-dawnspire-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-lckcdnjs-beer-md",
+    "title": "ThreatFox IoC — https://lckcdnjs.beer/api/css.js",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-lckcdnjs-beer.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-lckcdnjs-beer-1775328-md",
+    "title": "ThreatFox IoC — lckcdnjs.beer",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-lckcdnjs-beer-1775328.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-lawyerdz-sa-com-md",
+    "title": "Quasar RAT IoC — lawyerdz.sa.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-lawyerdz-sa-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-lab7-line-brisklume-in-net-md",
+    "title": "ClearFake IoC — lab7-line.brisklume.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-lab7-line-brisklume-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ks48f3vnga-localto-net-md",
+    "title": "XWorm IoC — ks48f3vnga.localto.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ks48f3vnga-localto-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-kristenslack-com-md",
+    "title": "StrelaStealer IoC — kristenslack.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-kristenslack-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-kiyona-in-md",
+    "title": "StrelaStealer IoC — kiyona.in",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-kiyona-in.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-jjvbubodsfds-cn-md",
+    "title": "ValleyRAT IoC — jjvbubodsfds.cn",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-jjvbubodsfds-cn.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-jclforwarding-com-md",
+    "title": "ThreatFox IoC — https://jclforwarding.com/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-jclforwarding-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-isfm-co-in-md",
+    "title": "ThreatFox IoC — https://isfm.co.in/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-isfm-co-in.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-gu8xe-frost-echo-in-net-md",
+    "title": "ClearFake IoC — gu8xe.frost-echo.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-gu8xe-frost-echo-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-glyph-panel-gl1mmeroak-in-net-md",
+    "title": "ClearFake IoC — glyph-panel.gl1mmeroak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-glyph-panel-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-fsn-syslicense-net-md",
+    "title": "Vidar IoC — fsn.syslicense.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-fsn-syslicense-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-fsn-syslicense-net-1775372-md",
+    "title": "Vidar IoC — https://fsn.syslicense.net/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-fsn-syslicense-net-1775372.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-fsn-ssffaa4-xyz-md",
+    "title": "Vidar IoC — fsn.ssffaa4.xyz",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-fsn-ssffaa4-xyz.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-fsn-ssffaa4-xyz-1775373-md",
+    "title": "Vidar IoC — https://fsn.ssffaa4.xyz/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-fsn-ssffaa4-xyz-1775373.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ficjog-velvet-dune-in-net-md",
+    "title": "ClearFake IoC — ficjog.velvet-dune.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ficjog-velvet-dune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-f4ith-chain-duskforge-in-net-md",
+    "title": "ClearFake IoC — f4ith-chain.duskforge.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-f4ith-chain-duskforge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-f360d1285dafeece-md",
+    "title": "Vidar IoC — f360d1285dafeecee7017cf50a531623e2526145331614fc010d2f361e34a83a",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-f360d1285dafeece.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-f1xegu-q7ravo-in-net-md",
+    "title": "ClearFake IoC — f1xegu.q7ravo.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-f1xegu-q7ravo-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-f1er6-lab-n1mbleoak-in-net-md",
+    "title": "ClearFake IoC — f1er6-lab.n1mbleoak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-f1er6-lab-n1mbleoak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-extractwho-flare-path-in-net-md",
+    "title": "ClearFake IoC — extractwho.flare-path.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-extractwho-flare-path-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext4view-feldspargateway-in-net-md",
+    "title": "ClearFake IoC — ext4view.feldspargateway.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext4view-feldspargateway-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext4sync-lithosphereduct-in-net-md",
+    "title": "ClearFake IoC — ext4sync.lithosphereduct.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext4sync-lithosphereduct-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext4point-stratagraphic-in-net-md",
+    "title": "ClearFake IoC — ext4point.stratagraphic.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext4point-stratagraphic-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "ioc_indicator-2026-03-25-threatfox-ext4point-chordatamatrix-in-net-md",
     "title": "ClearFake Payload Delivery Domain: ext4point.chordatamatrix.in.net",
     "category": "ioc_indicator",
     "date": "",
     "file": "ioc_indicator/2026-03-25-threatfox-ext4point-chordatamatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext3ghost-poriferabuffer-in-net-md",
+    "title": "ClearFake IoC — ext3ghost.poriferabuffer.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext3ghost-poriferabuffer-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext3ghost-feldspargateway-in-net-md",
+    "title": "ClearFake IoC — ext3ghost.feldspargateway.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext3ghost-feldspargateway-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext3gate-lithosphereduct-in-net-md",
+    "title": "ClearFake IoC — ext3gate.lithosphereduct.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext3gate-lithosphereduct-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext3data-stratagraphic-in-net-md",
+    "title": "ClearFake IoC — ext3data.stratagraphic.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext3data-stratagraphic-in-net.md",
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
@@ -443620,11 +447590,71 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext2proxy-stratagraphic-in-net-md",
+    "title": "ClearFake IoC — ext2proxy.stratagraphic.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext2proxy-stratagraphic-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "ioc_indicator-2026-03-25-threatfox-ext2proxy-chordatamatrix-in-net-md",
     "title": "ClearFake Payload Delivery Domain: ext2proxy.chordatamatrix.in.net",
     "category": "ioc_indicator",
     "date": "",
     "file": "ioc_indicator/2026-03-25-threatfox-ext2proxy-chordatamatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext2proc-lithosphereduct-in-net-md",
+    "title": "ClearFake IoC — ext2proc.lithosphereduct.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext2proc-lithosphereduct-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext2core-feldspargateway-in-net-md",
+    "title": "ClearFake IoC — ext2core.feldspargateway.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext2core-feldspargateway-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext1proc-feldspargateway-in-net-md",
+    "title": "ClearFake IoC — ext1proc.feldspargateway.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext1proc-feldspargateway-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext1meta-lithosphereduct-in-net-md",
+    "title": "ClearFake IoC — ext1meta.lithosphereduct.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext1meta-lithosphereduct-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ext1infra-stratagraphic-in-net-md",
+    "title": "ClearFake IoC — ext1infra.stratagraphic.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ext1infra-stratagraphic-in-net.md",
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
@@ -443640,11 +447670,891 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "ioc_indicator-2026-03-25-threatfox-exastealer-com-md",
+    "title": "Unknown Stealer IoC — exastealer.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-exastealer-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-euremupdate-duckdns-org-md",
+    "title": "Remcos IoC — euremupdate.duckdns.org",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-euremupdate-duckdns-org.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-embargogo237-duckdns-org-md",
+    "title": "Remcos IoC — embargogo237.duckdns.org",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-embargogo237-duckdns-org.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-e3t525-flare-path-in-net-md",
+    "title": "ClearFake IoC — e3t525.flare-path.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-e3t525-flare-path-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dxn-uk-com-md",
+    "title": "Quasar RAT IoC — dxn.uk.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dxn-uk-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dicbpahq-n1ghtridge-in-net-md",
+    "title": "ClearFake IoC — dicbpahq.n1ghtridge.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dicbpahq-n1ghtridge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dev4work-tectonicstream-in-net-md",
+    "title": "ClearFake IoC — dev4work.tectonicstream.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dev4work-tectonicstream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dev4space-pyroxenetrace-in-net-md",
+    "title": "ClearFake IoC — dev4space.pyroxenetrace.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dev4space-pyroxenetrace-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "ioc_indicator-2026-03-25-threatfox-dev4space-platyhelminth-in-net-md",
     "title": "ClearFake Payload Delivery Domain: dev4space.platyhelminth.in.net",
     "category": "ioc_indicator",
     "date": "",
     "file": "ioc_indicator/2026-03-25-threatfox-dev4space-platyhelminth-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dev3local-tectonicstream-in-net-md",
+    "title": "ClearFake IoC — dev3local.tectonicstream.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dev3local-tectonicstream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dev3field-pyroxenetrace-in-net-md",
+    "title": "ClearFake IoC — dev3field.pyroxenetrace.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dev3field-pyroxenetrace-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dev2power-tectonicstream-in-net-md",
+    "title": "ClearFake IoC — dev2power.tectonicstream.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dev2power-tectonicstream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dev2outer-pyroxenetrace-in-net-md",
+    "title": "ClearFake IoC — dev2outer.pyroxenetrace.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dev2outer-pyroxenetrace-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dev1proc-tectonicstream-in-net-md",
+    "title": "ClearFake IoC — dev1proc.tectonicstream.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dev1proc-tectonicstream-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-dev1proc-pyroxenetrace-in-net-md",
+    "title": "ClearFake IoC — dev1proc.pyroxenetrace.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-dev1proc-pyroxenetrace-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-designtrigger-gl1mmeroak-in-net-md",
+    "title": "ClearFake IoC — designtrigger.gl1mmeroak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-designtrigger-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-d3ep-cast-amber-drift-in-net-md",
+    "title": "ClearFake IoC — d3ep-cast.amber-drift.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-d3ep-cast-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cremar-velorune-in-net-md",
+    "title": "ClearFake IoC — cremar.velorune.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cremar-velorune-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cm88-tang-100k-com-md",
+    "title": "Quasar RAT IoC — cm88-tang-100k.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cm88-tang-100k-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-clubamericanista-com-mx-md",
+    "title": "Quasar RAT IoC — clubamericanista.com.mx",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-clubamericanista-com-mx.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cl4path-obsidianmatrix-in-net-md",
+    "title": "ClearFake IoC — cl4path.obsidianmatrix.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cl4path-obsidianmatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cl4link-sedimentmetrics-in-net-md",
+    "title": "ClearFake IoC — cl4link.sedimentmetrics.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cl4link-sedimentmetrics-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cl3view-obsidianmatrix-in-net-md",
+    "title": "ClearFake IoC — cl3view.obsidianmatrix.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cl3view-obsidianmatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cl3dev-sedimentmetrics-in-net-md",
+    "title": "ClearFake IoC — cl3dev.sedimentmetrics.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cl3dev-sedimentmetrics-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cl2remote-sedimentmetrics-in-net-md",
+    "title": "ClearFake IoC — cl2remote.sedimentmetrics.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cl2remote-sedimentmetrics-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cl2point-obsidianmatrix-in-net-md",
+    "title": "ClearFake IoC — cl2point.obsidianmatrix.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cl2point-obsidianmatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cl1store-sedimentmetrics-in-net-md",
+    "title": "ClearFake IoC — cl1store.sedimentmetrics.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cl1store-sedimentmetrics-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cl1proc-obsidianmatrix-in-net-md",
+    "title": "ClearFake IoC — cl1proc.obsidianmatrix.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cl1proc-obsidianmatrix-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cf-evilpony-win-md",
+    "title": "Havoc IoC — cf.evilpony.win",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cf-evilpony-win.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cdnjsdelivr-beer-md",
+    "title": "ThreatFox IoC — https://cdnjsdelivr.beer/api/css.js",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cdnjsdelivr-beer.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cdnjsdelivr-beer-1775397-md",
+    "title": "ThreatFox IoC — cdnjsdelivr.beer",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cdnjsdelivr-beer-1775397.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-calendar-app-google-md",
+    "title": "GlassWorm IoC — https://calendar.app.google/2NkrcKKj4T6Dn4uK6",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-calendar-app-google.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cabriofocus-com-md",
+    "title": "ThreatFox IoC — https://cabriofocus.com/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cabriofocus-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-cabriofocus-com-1775228-md",
+    "title": "IClickFix IoC — cabriofocus.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-cabriofocus-com-1775228.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-c1ea7-hinge-tr4cefox-in-net-md",
+    "title": "ClearFake IoC — c1ea7-hinge.tr4cefox.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-c1ea7-hinge-tr4cefox-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-brandpackage-cobalt-ridge-in-net-md",
+    "title": "ClearFake IoC — brandpackage.cobalt-ridge.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-brandpackage-cobalt-ridge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-bitbucket-org-md",
+    "title": "ThreatFox IoC — https://bitbucket.org/1431243/12/downloads/css.js",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-bitbucket-org.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-bestfeelingsforbetterpersonformyselfgrea-duckdns-org-md",
+    "title": "Remcos IoC — bestfeelingsforbetterpersonformyselfgrea.duckdns.org",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-bestfeelingsforbetterpersonformyselfgrea-duckdns-org.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-bedcdnset-beer-md",
+    "title": "ThreatFox IoC — https://bedcdnset.beer/api/css.js",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-bedcdnset-beer.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-bedcdnset-beer-1775321-md",
+    "title": "ThreatFox IoC — bedcdnset.beer",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-bedcdnset-beer-1775321.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-ashtes-cl0verrun-in-net-md",
+    "title": "ClearFake IoC — ashtes.cl0verrun.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-ashtes-cl0verrun-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-arkfluxos9-gl1mmeroak-in-net-md",
+    "title": "ClearFake IoC — arkfluxos9.gl1mmeroak.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-arkfluxos9-gl1mmeroak-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-api-exastealer-com-md",
+    "title": "Unknown Stealer IoC — api.exastealer.com",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-api-exastealer-com.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-akeomoahealthcenter-site-md",
+    "title": "ThreatFox IoC — https://akeomoahealthcenter.site/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-akeomoahealthcenter-site.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-adfg-exfrp-sbs-md",
+    "title": "XWorm IoC — adfg.exfrp.sbs",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-adfg-exfrp-sbs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-aaavugcuvkjbibihb-cc-md",
+    "title": "ValleyRAT IoC — aaavugcuvkjbibihb.cc",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-aaavugcuvkjbibihb-cc.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-98-142-252-140-md",
+    "title": "SectopRAT IoC — 98.142.252.140:9000",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-98-142-252-140.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-95-85-238-4-md",
+    "title": "Stealc IoC — http://95.85.238.4",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-95-85-238-4.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-94-154-35-166-md",
+    "title": "ThreatFox IoC — 94.154.35.166:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-94-154-35-166.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-94-154-32-16-md",
+    "title": "XWorm IoC — 94.154.32.16:6000",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-94-154-32-16.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-89-46-38-100-md",
+    "title": "Stealc IoC — http://89.46.38.100",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-89-46-38-100.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-85-209-132-130-md",
+    "title": "ThreatFox IoC — https://85.209.132.130/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-85-209-132-130.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-85-209-132-130-1775231-md",
+    "title": "IClickFix IoC — 85.209.132.130:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-85-209-132-130-1775231.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-80-76-49-215-md",
+    "title": "Remcos IoC — 80.76.49.215:2404",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-80-76-49-215.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-8-148-24-181-md",
+    "title": "Cobalt Strike IoC — 8.148.24.181:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-8-148-24-181.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-7lluqhl-hollow-spark-in-net-md",
+    "title": "ClearFake IoC — 7lluqhl.hollow-spark.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-7lluqhl-hollow-spark-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-77-246-104-220-md",
+    "title": "Rhadamanthys IoC — https://77.246.104.220:3422/4da16be762ab11e97/81u9tj6w.hluu9",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-77-246-104-220.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-6slp-thistlecore-in-net-md",
+    "title": "ClearFake IoC — 6slp.thistlecore.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-6slp-thistlecore-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-69-61-84-164-md",
+    "title": "Remcos IoC — 69.61.84.164:2404",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-69-61-84-164.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-66-70-191-124-md",
+    "title": "ThreatFox IoC — 66.70.191.124:7443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-66-70-191-124.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-64-89-161-178-md",
+    "title": "Tofsee IoC — 64.89.161.178:481",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-64-89-161-178.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-64-81-30-17-md",
+    "title": "ValleyRAT IoC — 64.81.30.17:6666",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-64-81-30-17.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-5pectra-plate-cobalt-ridge-in-net-md",
+    "title": "ClearFake IoC — 5pectra-plate.cobalt-ridge.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-5pectra-plate-cobalt-ridge-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-54-93-229-129-md",
+    "title": "Cobalt Strike IoC — 54.93.229.129:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-54-93-229-129.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-54-250-87-83-md",
+    "title": "Sliver IoC — 54.250.87.83:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-54-250-87-83.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-50qfdh-hollow-spark-in-net-md",
+    "title": "ClearFake IoC — 50qfdh.hollow-spark.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-50qfdh-hollow-spark-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-47-120-20-86-md",
+    "title": "Cobalt Strike IoC — 47.120.20.86:8443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-47-120-20-86.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-46-224-169-62-md",
+    "title": "Vidar IoC — https://46.224.169.62",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-46-224-169-62.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-45-88-91-67-md",
+    "title": "RedLine Stealer IoC — 45.88.91.67:23288",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-45-88-91-67.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-45-150-66-53-md",
+    "title": "Remcos IoC — 45.150.66.53:39489",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-45-150-66-53.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-45-150-66-52-md",
+    "title": "Remcos IoC — 45.150.66.52:39489",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-45-150-66-52.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-45-150-34-158-md",
+    "title": "GlassWorm IoC — 45.150.34.158:4043",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-45-150-34-158.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-45-142-140-122-md",
+    "title": "Sliver IoC — 45.142.140.122:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-45-142-140-122.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-43-199-89-149-md",
+    "title": "ValleyRAT IoC — 43.199.89.149:8880",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-43-199-89-149.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-41-104-161-128-md",
+    "title": "XWorm IoC — 41.104.161.128:1605",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-41-104-161-128.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-3urg2biz-amber-drift-in-net-md",
+    "title": "ClearFake IoC — 3urg2biz.amber-drift.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-3urg2biz-amber-drift-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-38-242-144-218-md",
+    "title": "Remcos IoC — 38.242.144.218:8822",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-38-242-144-218.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-38-147-171-76-md",
+    "title": "ThreatFox IoC — 38.147.171.76:82",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-38-147-171-76.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-3458048c42c12caf-md",
+    "title": "Vidar IoC — 3458048c42c12cafbf778d3bec34a692b151862af456012b7e01cc50ec1a2097",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-3458048c42c12caf.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-31-57-201-158-md",
+    "title": "Vidar IoC — 31.57.201.158:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-31-57-201-158.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-3-72-9-217-md",
+    "title": "Cobalt Strike IoC — 3.72.9.217:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-3-72-9-217.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-2yhh80o1-starapi-digital-md",
+    "title": "ClearFake IoC — 2yhh80o1.starapi.digital",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-2yhh80o1-starapi-digital.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-2ubum-skyl0om-in-net-md",
+    "title": "ClearFake IoC — 2ubum.skyl0om.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-2ubum-skyl0om-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-29rtrlv-cl0verrun-in-net-md",
+    "title": "ClearFake IoC — 29rtrlv.cl0verrun.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-29rtrlv-cl0verrun-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-27-124-12-24-md",
+    "title": "ValleyRAT IoC — 27.124.12.24:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-27-124-12-24.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-217-69-2-135-md",
+    "title": "GlassWorm IoC — 217.69.2.135:4787",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-217-69-2-135.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-217-69-2-135-1775107-md",
+    "title": "GlassWorm IoC — 217.69.2.135:4789",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-217-69-2-135-1775107.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-217-69-2-135-1775106-md",
+    "title": "GlassWorm IoC — 217.69.2.135:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-217-69-2-135-1775106.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-209-54-103-180-md",
+    "title": "ThreatFox IoC — 209.54.103.180:2726",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-209-54-103-180.md",
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"
@@ -443660,11 +448570,671 @@
     "source_layer": "threat_feeds"
   },
   {
+    "id": "ioc_indicator-2026-03-25-threatfox-192-3-122-163-md",
+    "title": "Sliver IoC — 192.3.122.163:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-192-3-122-163.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-192-210-186-224-md",
+    "title": "Remcos IoC — 192.210.186.224:5000",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-192-210-186-224.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-192-154-241-18-md",
+    "title": "XWorm IoC — 192.154.241.18:3333",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-192-154-241-18.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-187-156-246-206-md",
+    "title": "NetSupportManager RAT IoC — 187.156.246.206:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-187-156-246-206.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-185-237-165-218-md",
+    "title": "Socks5 Systemz IoC — 185.237.165.218:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-185-237-165-218.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-185-218-0-137-md",
+    "title": "Tofsee IoC — 185.218.0.137:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-185-218-0-137.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-185-139-230-87-md",
+    "title": "Unknown Stealer IoC — 185.139.230.87:3001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-185-139-230-87.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-178-16-52-101-md",
+    "title": "ThreatFox IoC — 178.16.52.101:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-178-16-52-101.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-176-65-132-55-md",
+    "title": "AsyncRAT IoC — 176.65.132.55:8808",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-176-65-132-55.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-172-86-70-16-md",
+    "title": "Cobalt Strike IoC — 172.86.70.16:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-172-86-70-16.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
     "id": "ioc_indicator-2026-03-25-threatfox-170-187-154-177-1337-md",
     "title": "Empire Downloader C2: 170.187.154.177:1337",
     "category": "ioc_indicator",
     "date": "",
     "file": "ioc_indicator/2026-03-25-threatfox-170-187-154-177-1337.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-167-86-75-151-md",
+    "title": "AsyncRAT IoC — 167.86.75.151:8808",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-167-86-75-151.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-167-172-153-114-md",
+    "title": "Vidar IoC — 167.172.153.114:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-167-172-153-114.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-167-172-153-114-1775370-md",
+    "title": "Vidar IoC — https://167.172.153.114/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-167-172-153-114-1775370.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-166-1-91-23-md",
+    "title": "AsyncRAT IoC — 166.1.91.23:8808",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-166-1-91-23.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-48-md",
+    "title": "Aisuru IoC — 165.245.168.48:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-48.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-47-md",
+    "title": "Aisuru IoC — 165.245.168.47:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-47.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-47-1775302-md",
+    "title": "Aisuru IoC — 165.245.168.47:8443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-47-1775302.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-43-md",
+    "title": "Aisuru IoC — 165.245.168.43:8443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-43.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-43-1775289-md",
+    "title": "Aisuru IoC — 165.245.168.43:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-43-1775289.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-41-md",
+    "title": "Aisuru IoC — 165.245.168.41:8443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-41.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-41-1775297-md",
+    "title": "Aisuru IoC — 165.245.168.41:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-41-1775297.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-39-md",
+    "title": "Aisuru IoC — 165.245.168.39:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-39.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-39-1775314-md",
+    "title": "Aisuru IoC — 165.245.168.39:8443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-39-1775314.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-38-md",
+    "title": "Aisuru IoC — 165.245.168.38:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-38.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-35-md",
+    "title": "Aisuru IoC — 165.245.168.35:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-35.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-34-md",
+    "title": "Aisuru IoC — 165.245.168.34:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-34.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-34-1775304-md",
+    "title": "Aisuru IoC — 165.245.168.34:8443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-34-1775304.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-27-md",
+    "title": "Aisuru IoC — 165.245.168.27:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-27.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-27-1775316-md",
+    "title": "Aisuru IoC — 165.245.168.27:8080",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-27-1775316.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-168-26-md",
+    "title": "Aisuru IoC — 165.245.168.26:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-168-26.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-57-md",
+    "title": "Aisuru IoC — 165.245.167.57:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-57.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-55-md",
+    "title": "Aisuru IoC — 165.245.167.55:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-55.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-54-md",
+    "title": "Aisuru IoC — 165.245.167.54:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-54.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-53-md",
+    "title": "Aisuru IoC — 165.245.167.53:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-53.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-51-md",
+    "title": "Aisuru IoC — 165.245.167.51:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-51.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-51-1775211-md",
+    "title": "Aisuru IoC — 165.245.167.51:8443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-51-1775211.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-49-md",
+    "title": "Aisuru IoC — 165.245.167.49:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-49.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-48-md",
+    "title": "Aisuru IoC — 165.245.167.48:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-48.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-47-md",
+    "title": "Aisuru IoC — 165.245.167.47:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-47.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-47-1775201-md",
+    "title": "Aisuru IoC — 165.245.167.47:8443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-47-1775201.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-46-md",
+    "title": "Aisuru IoC — 165.245.167.46:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-46.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-165-245-167-45-md",
+    "title": "Aisuru IoC — 165.245.167.45:8001",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-165-245-167-45.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-16-163-105-153-md",
+    "title": "ValleyRAT IoC — 16.163.105.153:8880",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-16-163-105-153.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-157-254-167-17-md",
+    "title": "Cobalt Strike IoC — 157.254.167.17:9999",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-157-254-167-17.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-157-22-241-198-md",
+    "title": "AdaptixC2 IoC — 157.22.241.198:4444",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-157-22-241-198.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-156-238-238-201-md",
+    "title": "Havoc IoC — 156.238.238.201:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-156-238-238-201.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-152-228-129-105-md",
+    "title": "ThreatFox IoC — 152.228.129.105:7443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-152-228-129-105.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-151-243-109-36-md",
+    "title": "RedLine Stealer IoC — 151.243.109.36:1912",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-151-243-109-36.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-151-243-109-36-1775229-md",
+    "title": "XWorm IoC — 151.243.109.36:10134",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-151-243-109-36-1775229.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-1502u-frost-echo-in-net-md",
+    "title": "ClearFake IoC — 1502u.frost-echo.in.net",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-1502u-frost-echo-in-net.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-149-248-76-110-md",
+    "title": "Remcos IoC — 149.248.76.110:8019",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-149-248-76-110.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-138-199-175-21-md",
+    "title": "Vidar IoC — 138.199.175.21:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-138-199-175-21.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-138-199-175-21-1775371-md",
+    "title": "Vidar IoC — https://138.199.175.21/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-138-199-175-21-1775371.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-138-199-170-130-md",
+    "title": "Vidar IoC — 138.199.170.130:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-138-199-170-130.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-138-199-170-130-1775369-md",
+    "title": "Vidar IoC — https://138.199.170.130/",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-138-199-170-130-1775369.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-138-199-160-11-md",
+    "title": "Vidar IoC — 138.199.160.11:443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-138-199-160-11.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-137-220-202-67-md",
+    "title": "Venom RAT IoC — 137.220.202.67:4449",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-137-220-202-67.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-131-189-82-20-md",
+    "title": "ThreatFox IoC — 131.189.82.20:7443",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-131-189-82-20.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-130-12-180-119-md",
+    "title": "Tofsee IoC — 130.12.180.119:417",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-130-12-180-119.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-119-45-214-169-md",
+    "title": "VShell IoC — 119.45.214.169:8084",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-119-45-214-169.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-118-194-248-95-md",
+    "title": "Kimsuky IoC — 118.194.248.95:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-118-194-248-95.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-109-230-199-109-md",
+    "title": "Socks5 Systemz IoC — 109.230.199.109:80",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-109-230-199-109.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-107-172-13-230-md",
+    "title": "Remcos IoC — 107.172.13.230:2404",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-107-172-13-230.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-103-82-24-225-md",
+    "title": "Remcos IoC — 103.82.24.225:2404",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-103-82-24-225.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-103-156-25-99-md",
+    "title": "ValleyRAT IoC — 103.156.25.99:5050",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-103-156-25-99.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "threat_feeds"
+  },
+  {
+    "id": "ioc_indicator-2026-03-25-threatfox-103-106-189-91-md",
+    "title": "Cobalt Strike IoC — 103.106.189.91:801",
+    "category": "ioc_indicator",
+    "date": "",
+    "file": "ioc_indicator/2026-03-25-threatfox-103-106-189-91.md",
     "source": "",
     "severity": "",
     "source_layer": "threat_feeds"

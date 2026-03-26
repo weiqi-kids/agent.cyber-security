@@ -410,6 +410,156 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-03-25-schneider-electric-plant-it-brewmaxx-md",
+    "title": "Schneider Electric Plant iT/Brewmaxx",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-schneider-electric-plant-it-brewmaxx.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-schneider-electric-ecostruxure-foxboro-dcs-md",
+    "title": "Schneider Electric EcoStruxure Foxboro DCS",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-schneider-electric-ecostruxure-foxboro-dcs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-pharos-controls-mosaic-show-controller-md",
+    "title": "Pharos Controls Mosaic Show Controller",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-pharos-controls-mosaic-show-controller.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-grassroots-dicom-gdcm-md",
+    "title": "Grassroots DICOM (GDCM)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-grassroots-dicom-gdcm.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0358-citrix-xenserver-md",
+    "title": "Vulnerability in Citrix XenServer (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0358-citrix-xenserver.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0357-gitlab-dos-xss-md",
+    "title": "Multiple Vulnerabilities in GitLab (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0357-gitlab-dos-xss.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0356-isc-kea-dos-md",
+    "title": "Vulnerability in ISC Kea (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0356-isc-kea-dos.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0355-apple-privesc-dos-md",
+    "title": "Multiple Vulnerabilities in Apple Products (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0355-apple-privesc-dos.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0354-mozilla-rce-md",
+    "title": "Multiple Vulnerabilities in Mozilla Products (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0354-mozilla-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0353-zabbix-rce-sqli-md",
+    "title": "Multiple Vulnerabilities in Zabbix (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0353-zabbix-rce-sqli.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0352-f5-rce-dos-md",
+    "title": "Multiple Vulnerabilities in F5 Products (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0352-f5-rce-dos.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0351-tenable-ot-platform-md",
+    "title": "Vulnerability in Tenable OT Platform (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0351-tenable-ot-platform.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-certfr-2026-avi-0350-squid-dos-md",
+    "title": "Multiple Vulnerabilities in Squid (25 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-certfr-2026-avi-0350-squid-dos.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-cert-se-oracle-identity-manager-cve-2026-21992-md",
+    "title": "Critical Vulnerability in Oracle Identity Manager and Oracle Web Services Manager (CVE-2026-21992)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-cert-se-oracle-identity-manager-cve-2026-21992.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-25-apple-patches-march-2026-md",
+    "title": "Apple Patches (almost) everything again. March 2026 edition.",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-25-apple-patches-march-2026.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-03-24-schneider-electric-plant-itbrewmaxx-md",
     "title": "Schneider Electric Plant iT/Brewmaxx - Privilege Escalation and RCE Vulnerabilities",
     "category": "vulnerability_disclosure",
@@ -445,6 +595,166 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-24-grassroots-dicom-gdcm.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-certfr-2026-avi-0349-ruby-on-rails-rce-md",
+    "title": "Multiple Vulnerabilities in Ruby on Rails (24 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-certfr-2026-avi-0349-ruby-on-rails-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-certfr-2026-avi-0348-trend-micro-ddi-rce-md",
+    "title": "Vulnerability in Trend Micro Deep Discovery Inspector (24 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-certfr-2026-avi-0348-trend-micro-ddi-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-certfr-2026-avi-0347-xen-bypass-md",
+    "title": "Vulnerability in Xen (24 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-certfr-2026-avi-0347-xen-bypass.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-certfr-2026-avi-0346-vmware-tanzu-postgres-rce-md",
+    "title": "Vulnerability in VMware Tanzu for Postgres (24 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-certfr-2026-avi-0346-vmware-tanzu-postgres-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-certfr-2026-avi-0345-librenms-rce-md",
+    "title": "Vulnerability in LibreNMS (24 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-certfr-2026-avi-0345-librenms-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-certfr-2026-avi-0344-strongswan-dos-md",
+    "title": "Vulnerability in strongSwan (24 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-certfr-2026-avi-0344-strongswan-dos.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-certfr-2026-avi-0343-spring-cloud-config-ssrf-md",
+    "title": "Vulnerability in Spring Cloud Config (24 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-certfr-2026-avi-0343-spring-cloud-config-ssrf.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-certfr-2026-avi-0342-google-chrome-b-md",
+    "title": "Multiple Vulnerabilities in Google Chrome (24 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-certfr-2026-avi-0342-google-chrome-b.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-24-cert-se-citrix-netscaler-cve-2026-3055-md",
+    "title": "Critical Vulnerability in Citrix NetScaler Gateway and ADC (CVE-2026-3055)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-24-cert-se-citrix-netscaler-cve-2026-3055.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-23-certfr-2026-avi-0341-microsoft-unspecified-md",
+    "title": "Multiple Vulnerabilities in Microsoft Products (23 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-23-certfr-2026-avi-0341-microsoft-unspecified.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-23-certfr-2026-avi-0340-microsoft-edge-md",
+    "title": "Multiple Vulnerabilities in Microsoft Edge (23 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-23-certfr-2026-avi-0340-microsoft-edge.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-23-certfr-2026-avi-0339-vmware-unspecified-md",
+    "title": "Multiple Vulnerabilities in VMware Products (23 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-23-certfr-2026-avi-0339-vmware-unspecified.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-23-certfr-2026-avi-0338-synology-rce-md",
+    "title": "Vulnerability in Synology Products (23 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-23-certfr-2026-avi-0338-synology-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-23-certfr-2026-avi-0337-citrix-md",
+    "title": "Multiple Vulnerabilities in Citrix Products (23 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-23-certfr-2026-avi-0337-citrix.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-23-certfr-2026-avi-0336-qnap-rce-md",
+    "title": "Multiple Vulnerabilities in QNAP Products (23 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-23-certfr-2026-avi-0336-qnap-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-23-certfr-2026-avi-0335-cpython-bypass-md",
+    "title": "Vulnerability in CPython (23 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-23-certfr-2026-avi-0335-cpython-bypass.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -565,6 +875,146 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-20-cisa-adds-five-known-exploited-vulnerabilities-to.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-cisa-adds-five-kev-march-2026-md",
+    "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-cisa-adds-five-kev-march-2026.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0334-microsoft-unspecified-md",
+    "title": "Vulnerability in Microsoft Products (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0334-microsoft-unspecified.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0333-traefik-md",
+    "title": "Multiple Vulnerabilities in Traefik (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0333-traefik.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0332-oracle-identity-manager-md",
+    "title": "Vulnerability in Oracle Identity Manager and Web Services Manager (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0332-oracle-identity-manager.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0331-linux-kernel-ubuntu-md",
+    "title": "Multiple Vulnerabilities in Ubuntu Linux Kernel (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0331-linux-kernel-ubuntu.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0330-linux-kernel-redhat-md",
+    "title": "Multiple Vulnerabilities in Red Hat Linux Kernel (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0330-linux-kernel-redhat.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0329-linux-kernel-suse-md",
+    "title": "Multiple Vulnerabilities in SUSE Linux Kernel (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0329-linux-kernel-suse.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0328-linux-kernel-debian-lts-md",
+    "title": "Multiple Vulnerabilities in Debian LTS Linux Kernel (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0328-linux-kernel-debian-lts.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0327-ibm-rce-dos-md",
+    "title": "Multiple Vulnerabilities in IBM Products (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0327-ibm-rce-dos.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0326-vmware-b-md",
+    "title": "Multiple Vulnerabilities in VMware Products (20 March 2026) — Advisory 0326",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0326-vmware-b.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0325-elastic-rce-md",
+    "title": "Multiple Vulnerabilities in Elastic Products (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0325-elastic-rce.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0324-google-chrome-md",
+    "title": "Multiple Vulnerabilities in Google Chrome (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0324-google-chrome.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0323-spring-products-md",
+    "title": "Multiple Vulnerabilities in Spring Products (20 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0323-spring-products.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-20-certfr-2026-avi-0322-vmware-a-md",
+    "title": "Multiple Vulnerabilities in VMware Products (20 March 2026) — Advisory 0322",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-20-certfr-2026-avi-0322-vmware-a.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -860,11 +1310,41 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-03-19-schneider-electric-modicon-m241-m251-m262-md",
+    "title": "Schneider Electric Modicon M241, M251, and M262",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-schneider-electric-modicon-m241-m251-m262.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-schneider-electric-modicon-m241-m251-m258-lmc058-md",
+    "title": "Schneider Electric Modicon Controllers M241, M251, M258, and LMC058",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-schneider-electric-modicon-m241-m251-m258-lmc058.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-03-19-schneider-electric-modicon-controllers-m241-m251-m-md",
     "title": "Schneider Electric Modicon Controllers M241, M251, M258, and LMC058 - XSS and Open Redirect",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-19-schneider-electric-modicon-controllers-m241-m251-m.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-schneider-electric-ecostruxure-pme-epo-md",
+    "title": "Schneider Electric EcoStruxure PME and EPO",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-schneider-electric-ecostruxure-pme-epo.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -880,8 +1360,38 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-03-19-schneider-electric-ecostruxure-automation-expert-md",
+    "title": "Schneider Electric EcoStruxure Automation Expert",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-schneider-electric-ecostruxure-automation-expert.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-mitsubishi-electric-cnc-series-md",
+    "title": "Mitsubishi Electric CNC Series",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-mitsubishi-electric-cnc-series.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-igl-technologies-eparking-fi-md",
+    "title": "IGL-Technologies eParking.fi",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-igl-technologies-eparking-fi.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-03-19-ctek-chargeportal-md",
-    "title": "CTEK Chargeportal - Critical Authentication and Authorization Vulnerabilities",
+    "title": "CTEK Chargeportal",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-19-ctek-chargeportal.md",
@@ -980,6 +1490,76 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-03-19-cisa-adds-one-kev-cve-2026-20131-md",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog: CVE-2026-20131",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-cisa-adds-one-kev-cve-2026-20131.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-certfr-2026-avi-0321-microsoft-unspecified-md",
+    "title": "Multiple Vulnerabilities in Microsoft Products (19 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-certfr-2026-avi-0321-microsoft-unspecified.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-certfr-2026-avi-0320-roundcube-ssrf-xss-md",
+    "title": "Multiple Vulnerabilities in Roundcube (19 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-certfr-2026-avi-0320-roundcube-ssrf-xss.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-certfr-2026-avi-0319-mitel-xss-md",
+    "title": "Vulnerability in Mitel Products (19 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-certfr-2026-avi-0319-mitel-xss.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-certfr-2026-avi-0318-splunk-universal-forwarder-md",
+    "title": "Multiple Vulnerabilities in Splunk Universal Forwarder (19 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-certfr-2026-avi-0318-splunk-universal-forwarder.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-certfr-2026-avi-0317-python-security-bypass-md",
+    "title": "Vulnerability in Python (19 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-certfr-2026-avi-0317-python-security-bypass.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-19-certfr-2026-avi-0316-vmware-unspecified-md",
+    "title": "Multiple Vulnerabilities in VMware Products (19 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-19-certfr-2026-avi-0316-vmware-unspecified.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-03-19-cert-se-microsoft-sharepoint-vulnerability-md",
     "title": "Serious Vulnerability in Microsoft SharePoint",
     "category": "vulnerability_disclosure",
@@ -1051,7 +1631,7 @@
   },
   {
     "id": "vulnerability_disclosure-2026-03-19-automated-logic-webctrl-premium-server-md",
-    "title": "Automated Logic WebCTRL Premium Server - Critical Authentication and Communication Vulnerabilities",
+    "title": "Automated Logic WebCTRL Premium Server",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-19-automated-logic-webctrl-premium-server.md",
@@ -1075,6 +1655,66 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-18-cisa-kev-one-vulnerability-added-mar18-1.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-18-cisa-adds-one-kev-cve-2026-20963-md",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog: CVE-2026-20963",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-18-cisa-adds-one-kev-cve-2026-20963.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-18-cisa-adds-one-kev-cve-2025-66376-md",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog: CVE-2025-66376",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-18-cisa-adds-one-kev-cve-2025-66376.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-18-certfr-2026-avi-0315-vmware-unspecified-md",
+    "title": "Multiple Vulnerabilities in VMware Products (18 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-18-certfr-2026-avi-0315-vmware-unspecified.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-18-certfr-2026-avi-0314-atlassian-multiple-vulns-md",
+    "title": "Multiple Vulnerabilities in Atlassian Products (18 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-18-certfr-2026-avi-0314-atlassian-multiple-vulns.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-18-certfr-2026-avi-0313-apple-security-bypass-md",
+    "title": "Vulnerability in Apple Products (18 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-18-certfr-2026-avi-0313-apple-security-bypass.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-18-certfr-2026-avi-0312-glpi-sqli-bypass-md",
+    "title": "Multiple Vulnerabilities in GLPI (18 March 2026)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-18-certfr-2026-avi-0312-glpi-sqli-bypass.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1185,6 +1825,46 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-18-cert-fr-apple-products-vuln.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-17-siemens-sicam-siapp-sdk-md",
+    "title": "Siemens SICAM SIAPP SDK",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-17-siemens-sicam-siapp-sdk.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-17-schneider-electric-scadapack-remoteconnect-md",
+    "title": "Schneider Electric SCADAPack and RemoteConnect",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-17-schneider-electric-scadapack-remoteconnect.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-17-schneider-electric-ecostruxure-data-center-expert-md",
+    "title": "Schneider Electric EcoStruxure Data Center Expert",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-17-schneider-electric-ecostruxure-data-center-expert.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-17-codesys-in-festo-automation-suite-md",
+    "title": "CODESYS in Festo Automation Suite",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-17-codesys-in-festo-automation-suite.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1320,6 +2000,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-03-16-cisa-adds-one-kev-cve-2025-47813-md",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog: CVE-2025-47813",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-16-cisa-adds-one-kev-cve-2025-47813.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-03-16-cert-fr-microsoft-products-vulns-md",
     "title": "Multiple Vulnerabilities in Microsoft Products (CERT-FR)",
     "category": "vulnerability_disclosure",
@@ -1340,11 +2030,91 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-03-13-nsm-ncsc-linux-kernel-crackarmor-apparmor-md",
+    "title": "Critical Vulnerabilities in Linux Kernel AppArmor Module (CrackArmor)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-13-nsm-ncsc-linux-kernel-crackarmor-apparmor.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-13-cisa-adds-two-kev-google-chromium-md",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-13-cisa-adds-two-kev-google-chromium.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-12-trane-tracer-sc-concierge-md",
+    "title": "Trane Tracer SC, Tracer SC+, and Tracer Concierge",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-12-trane-tracer-sc-concierge.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-12-siemens-simatic-md",
+    "title": "Siemens SIMATIC",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-12-siemens-simatic.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-12-siemens-sidis-prime-md",
+    "title": "Siemens SIDIS Prime",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-12-siemens-sidis-prime.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-12-siemens-ruggedcom-ape1808-md",
+    "title": "Siemens RUGGEDCOM APE1808 Devices",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-12-siemens-ruggedcom-ape1808.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-12-siemens-heliox-ev-chargers-md",
+    "title": "Siemens Heliox EV Chargers",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-12-siemens-heliox-ev-chargers.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-03-12-sans-isc-zombie-zip-cve-2026-0866-md",
     "title": "Analyzing \"Zombie Zip\" Files (CVE-2026-0866)",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-12-sans-isc-zombie-zip-cve-2026-0866.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-12-inductive-automation-ignition-software-md",
+    "title": "Inductive Automation Ignition Software",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-12-inductive-automation-ignition-software.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -1920,6 +2690,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-03-10-cert-ee-id-card-service-provider-guidance-md",
+    "title": "RIA Guidance: Service Providers Must Ensure Compatibility with New Estonian ID Cards",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-10-cert-ee-id-card-service-provider-guidance.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-03-10-ceragon-siklu-multihaul-etherhaul-arbitrary-file-upload-md",
     "title": "Ceragon Siklu MultiHaul and EtherHaul Series - Arbitrary File Upload Vulnerability",
     "category": "vulnerability_disclosure",
@@ -2095,6 +2875,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-09-cert-ro-nginx-ui-critical-cve-2026-27944.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-09-cert-ee-windows11-thales-id-card-bug-md",
+    "title": "Windows 11 Functional Update Causes Thales ID Card Errors in Estonia",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-09-cert-ee-windows11-thales-id-card-bug.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -2495,6 +3285,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-03-05-cert-ro-cisco-fmc-critical-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-03-05-cert-ee-smart-id-plus-compatibility-issues-md",
+    "title": "Smart-ID Login Errors in Some Estonian National Mobile Apps After Smart-ID+ Upgrade",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-03-05-cert-ee-smart-id-plus-compatibility-issues.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -5480,11 +6280,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2026-02-02-cert-ee-digidoc4j-update-clarification-md",
+    "title": "Estonia RIA Clarifies DigiDoc4j Library Update: Digital Signing Will Continue to Work",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-02-02-cert-ee-digidoc4j-update-clarification.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2026-01-30-twcert-n8n-critical-vulnerabilities-md",
     "title": "Multiple Critical Vulnerabilities in n8n Automation Platform",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-01-30-twcert-n8n-critical-vulnerabilities.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-01-30-n8n-automation-platform-critical-vulnerabilities-md",
+    "title": "n8n Automation Platform Multiple Critical Vulnerabilities — Immediate Update Required",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-01-30-n8n-automation-platform-critical-vulnerabilities.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -5505,6 +6325,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-01-27-threat-actors-use-forticloud-sso-bypass-to-collect-ldap-connection-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-01-27-mongodb-mongobleed-memory-leak-cve-2025-14847-md",
+    "title": "MongoDB Servers Face MongoBleed Memory Data Leakage Risk (CVE-2025-14847)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-01-27-mongodb-mongobleed-memory-leak-cve-2025-14847.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -5535,6 +6365,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2026-01-16-digidoc4j-urgent-update.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2026-01-16-cert-ee-digidoc4j-urgent-update-md",
+    "title": "Estonia RIA Urgently Recommends Information System Managers Update DigiDoc4j Library",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2026-01-16-cert-ee-digidoc4j-urgent-update.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -5660,11 +6500,41 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2025-12-16-react2shell-cve-2025-55182-active-exploitation-md",
+    "title": "Critical RCE Vulnerability \"React2Shell\" Under Mass Active Exploitation (CVE-2025-55182)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2025-12-16-react2shell-cve-2025-55182-active-exploitation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2025-12-09-microsofts-patchetirsdag-desember-md",
     "title": "Microsofts patchetirsdag desember",
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2025-12-09-microsofts-patchetirsdag-desember.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2025-12-04-nsm-ncsc-react-server-components-cve-2025-55182-md",
+    "title": "Critical Vulnerability in React Server Components (CVE-2025-55182)",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2025-12-04-nsm-ncsc-react-server-components-cve-2025-55182.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2025-11-27-wsus-cve-2025-59287-active-exploitation-md",
+    "title": "WSUS Critical Vulnerability CVE-2025-59287 Under Active Exploitation",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2025-11-27-wsus-cve-2025-59287-active-exploitation.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -5720,6 +6590,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2025-10-22-oracle-ebs-cve-2025-61882-ransomware-exploitation-md",
+    "title": "Oracle E-Business Suite Critical Vulnerability CVE-2025-61882 Exploited by CL0P Ransomware Group",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2025-10-22-oracle-ebs-cve-2025-61882-ransomware-exploitation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "vulnerability_disclosure-2025-10-15-ncsc-fi-critical-updates-ceo-fraud-md",
     "title": "Weekly review of the National Cyber Security Centre Finland (NCSC-FI) - 41/2025",
     "category": "vulnerability_disclosure",
@@ -5735,6 +6615,16 @@
     "category": "vulnerability_disclosure",
     "date": "",
     "file": "vulnerability_disclosure/2025-10-14-microsoft-patchetirsdag-oktober-2025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "vulnerability_disclosure-2025-10-02-cert-ee-firefox-id-card-auth-bug-md",
+    "title": "Estonia: Firefox Browser on Windows May Cause ID Card Authentication Errors",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2025-10-02-cert-ee-firefox-id-card-auth-bug.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -6890,6 +7780,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "vulnerability_disclosure-2019-06-26-recomendacao-tecnica-spf-dkim-e-dmarc-md",
+    "title": "Recomendação Técnica - SPF, DKIM e DMARC",
+    "category": "vulnerability_disclosure",
+    "date": "",
+    "file": "vulnerability_disclosure/2019-06-26-recomendacao-tecnica-spf-dkim-e-dmarc.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-index-md",
     "title": "政策法規 (Policy & Regulation)",
     "category": "policy_regulation",
@@ -7550,6 +8450,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2026-03-10-consulta-publica-projeto-de-regulamento-do-regime--md",
+    "title": "Consulta pública: Projeto de Regulamento do Regime Jurídico da Cibersegurança",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-03-10-consulta-publica-projeto-de-regulamento-do-regime-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2026-03-10-consulta-puacuteblica-projeto-de-regulamento-do-re-md",
     "title": "Public Consultation: Draft Regulation on the Legal Framework for Cybersecurity (Portugal)",
     "category": "policy_regulation",
@@ -7730,6 +8640,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2026-02-26-cert-ee-smart-id-plus-launched-md",
+    "title": "Estonia Launches Smart-ID+ for Safer National Authentication",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-02-26-cert-ee-smart-id-plus-launched.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2026-02-25-joint-guidance-on-malicious-cyber-threats-to-sd-wa-md",
     "title": "Joint guidance on malicious cyber threats to SD-WAN networks",
     "category": "policy_regulation",
@@ -7761,7 +8681,7 @@
   },
   {
     "id": "policy_regulation-2026-02-24-etsi-en-304-223-ai-security-standard-md",
-    "title": "",
+    "title": "ETSI Publishes EN 304 223 Standard to Strengthen AI Model and System Cybersecurity",
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2026-02-24-etsi-en-304-223-ai-security-standard.md",
@@ -7785,6 +8705,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2026-02-20-cse-canada-russia-ukraine-anniversary-warning.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2026-02-20-cert-ee-smart-id-plus-announcement-md",
+    "title": "Estonia Announces Smart-ID+ Deployment on February 26 for More Secure E-Service Login",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-02-20-cert-ee-smart-id-plus-announcement.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -8005,6 +8935,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2026-01-02-nis2-directive-implementation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2026-01-02-cert-ee-nis2-cybersecurity-law-expansion-md",
+    "title": "Estonia Expands Cybersecurity Law from January 2026: NIS2 Directive Transposition",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2026-01-02-cert-ee-nis2-cybersecurity-law-expansion.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -8350,6 +9290,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2025-11-11-cert-ee-id-software-25-10-new-id-card-md",
+    "title": "Estonia Releases ID Software Version 25.10 Ready for New Thales ID Card Rollout",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-11-11-cert-ee-id-software-25-10-new-id-card.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2025-11-05-cncs-processo-transposicao-nis2-nova-atualizacao-md",
     "title": "NIS2 Directive Transposition Process — New Update from Portugal",
     "category": "policy_regulation",
@@ -8380,11 +9330,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2025-10-31-cert-ee-new-id-card-november-md",
+    "title": "Estonia to Issue New Design ID Cards from Mid-November 2025 (Thales Manufacturer)",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-10-31-cert-ee-new-id-card-november.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2025-10-29-id-card-system-update-md",
     "title": "RIA: Service Providers Must Prepare IT Systems for New ID Cards",
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2025-10-29-id-card-system-update.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2025-10-29-cert-ee-id-card-service-provider-readiness-md",
+    "title": "Estonia RIA Reminds Service Providers to Prepare IT Systems for New Thales ID Cards by November 14",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-10-29-cert-ee-id-card-service-provider-readiness.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -8480,6 +9450,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2025-09-25-cert-ee-cybersecurity-requirements-eased-md",
+    "title": "Estonia Government Eases Cybersecurity Requirements for Small Businesses and Organizations",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-09-25-cert-ee-cybersecurity-requirements-eased.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2025-09-23-a-throwback-to-the-connect4cyber-event-international-cybersecurity-actors-met-in-md",
     "title": "A throwback to the Connect4Cyber event – International cybersecurity actors met in Helsinki",
     "category": "policy_regulation",
@@ -8535,6 +9515,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2025-08-21-id-software-update.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2025-08-21-cert-ee-id-software-25-8-update-md",
+    "title": "Estonia RIA Recommends Users Update ID Software to Version 25.8 for Security and Functionality",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2025-08-21-cert-ee-id-software-25-8-update.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -9210,6 +10200,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2023-01-16-recomendacoes-da-ocde-relevantes-para-a-cibersegur-md",
+    "title": "Recomendações da OCDE relevantes para a cibersegurança ",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2023-01-16-recomendacoes-da-ocde-relevantes-para-a-cibersegur.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2022-zigzaga-na-net-recomendado-para-o-plano-nacional-de-leitura-md",
     "title": "Zigzaga na Net recomendado para o Plano Nacional de Leitura",
     "category": "policy_regulation",
@@ -9300,11 +10300,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "policy_regulation-2022-06-09-nova-versao-do-esquema-de-certificacao-quadro-naci-md",
+    "title": "Nova versão do esquema de certificação - Quadro Nacional de Referência para a Cibersegurança ",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2022-06-09-nova-versao-do-esquema-de-certificacao-quadro-naci.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "policy_regulation-2022-05-13-cncs-risk-management-guide-public-consultation-md",
     "title": "CNCS Publishes Draft Risk Management Guide for Public Consultation",
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2022-05-13-cncs-risk-management-guide-public-consultation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2022-04-18-ja-se-encontra-disponivel-o-referencial-de-compete-md",
+    "title": "Já se encontra disponível o Referencial de Competências em Cibersegurança do CNCS",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2022-04-18-ja-se-encontra-disponivel-o-referencial-de-compete.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -9375,6 +10395,16 @@
     "category": "policy_regulation",
     "date": "",
     "file": "policy_regulation/2021-11-17-cncs-regulation-technical-instruction-dl-65-2021.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "policy_regulation-2021-08-04-ja-se-encontra-publicado-o-decreto-lei-652021-de-3-md",
+    "title": "Já se encontra publicado o Decreto-Lei 65/2021 de 30 de julho",
+    "category": "policy_regulation",
+    "date": "",
+    "file": "policy_regulation/2021-08-04-ja-se-encontra-publicado-o-decreto-lei-652021-de-3.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -9850,6 +10880,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "other-2026-03-25-cert-ee-eesti-app-outage-resolved-md",
+    "title": "Estonia's Eesti App Temporary Outages Resolved (Updated)",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-03-25-cert-ee-eesti-app-outage-resolved.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "other-2026-03-24-isc-stormcast-for-tuesday-march-24th-2026-httpsisc-md",
     "title": "ISC Stormcast For Tuesday, March 24th, 2026",
     "category": "other",
@@ -9955,6 +10995,16 @@
     "category": "other",
     "date": "",
     "file": "other/2026-03-11-isc-stormcast-for-wednesday-march-11th-2026-httpsi.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "other-2026-03-11-cert-ee-smart-id-login-restored-md",
+    "title": "Smart-ID Login in Estonian National Mobile App Restored",
+    "category": "other",
+    "date": "",
+    "file": "other/2026-03-11-cert-ee-smart-id-login-restored.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -17320,6 +18370,76 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-03-26-sans-isc-stormcast-2026-03-26-md",
+    "title": "SANS ISC Stormcast 2026-03-26",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-26-sans-isc-stormcast-2026-03-26.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-25-sans-isc-stormcast-2026-03-25-md",
+    "title": "SANS ISC Stormcast For Wednesday, March 25th, 2026",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-25-sans-isc-stormcast-2026-03-25.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-25-ncsc-fi-ransomware-ai-speed-era-md",
+    "title": "Ransomware's New Era: Moving at AI Speed",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-25-ncsc-fi-ransomware-ai-speed-era.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-25-ncsc-fi-google-authenticator-passwordless-security-md",
+    "title": "Google Authenticator: The Hidden Mechanisms of Passwordless Authentication",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-25-ncsc-fi-google-authenticator-passwordless-security.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-25-jpcert-csirts-around-world-azerbaijan-md",
+    "title": "CSIRTs Around the World – Azerbaijan",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-25-jpcert-csirts-around-world-azerbaijan.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-25-ca-news-joint-guidance-leo-satcom-cyber-security-md",
+    "title": "Joint Guidance on Securing Space and Cyber Security for Low Earth Orbit Satellite Communications",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-25-ca-news-joint-guidance-leo-satcom-cyber-security.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-24-sans-isc-stormcast-2026-03-24-md",
+    "title": "SANS ISC Stormcast For Tuesday, March 24th, 2026",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-24-sans-isc-stormcast-2026-03-24.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-03-23-tool-updates-lots-of-security-and-logic-fixes-md",
     "title": "Tool Updates: Lots of Security and Logic Fixes via AI Code Review",
     "category": "industry_trend",
@@ -17330,11 +18450,51 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-03-23-sans-isc-tool-updates-security-fixes-md",
+    "title": "SANS ISC: Tool Updates with Security and Logic Fixes",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-23-sans-isc-tool-updates-security-fixes.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-23-sans-isc-stormcast-2026-03-23-md",
+    "title": "SANS ISC Stormcast For Monday, March 23rd, 2026",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-23-sans-isc-stormcast-2026-03-23.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-23-certfr-2026-act-012-weekly-bulletin-md",
+    "title": "CERT-FR Weekly Bulletin CERTFR-2026-ACT-012 (23 March 2026)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-23-certfr-2026-act-012-weekly-bulletin.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-03-21-post-quantum-web-safer-faster-md",
     "title": "Post-Quantum Web Could Be Safer, Faster",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-03-21-post-quantum-web-safer-faster.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-20-sans-isc-stormcast-2026-03-20-md",
+    "title": "SANS ISC Stormcast For Friday, March 20th, 2026",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-20-sans-isc-stormcast-2026-03-20.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -17355,6 +18515,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-03-20-cert-se-veckobrev-v12.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-19-sans-isc-stormcast-2026-03-19-md",
+    "title": "SANS ISC Stormcast For Thursday, March 19th, 2026",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-19-sans-isc-stormcast-2026-03-19.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -17485,6 +18655,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-03-13-finland-election-data-us-cloud-sovereignty-debate.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-03-13-cert-se-veckobrev-v11-md",
+    "title": "CERT-SE Weekly Newsletter v.11 — Source Criticism Day and Communication App Security",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-13-cert-se-veckobrev-v11.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -17810,6 +18990,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-03-06-jsac2026-workshop-lightning-talk-panel-md",
+    "title": "JSAC2026: Workshop, Lightning Talk Session, and Panel Discussion",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-03-06-jsac2026-workshop-lightning-talk-panel.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-03-06-isc-stormcast-for-friday-march-6th-2026-httpsiscsa-md",
     "title": "ISC Stormcast For Friday, March 6th, 2026 https://isc.sans.edu/podcastdetail/9838, (Fri, Mar 6th)",
     "category": "industry_trend",
@@ -18060,6 +19250,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-02-27-jsac2026-day2-md",
+    "title": "JSAC2026 Day 2",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-27-jsac2026-day2.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-02-27-jsac2026-day-2-conference-report-md",
     "title": "JSAC2026 Day 2 Conference Report",
     "category": "industry_trend",
@@ -18225,6 +19425,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-02-20-nov-evropsk-projekt-qarc-zajist-kvantov-odolnou-bezpenost-da.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-02-20-jsac2026-day1-md",
+    "title": "JSAC2026 Day 1",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-20-jsac2026-day1.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -18580,6 +19790,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-02-06-cert-ee-tax-declaration-document-check-md",
+    "title": "Estonia Tax Authority Reminds Citizens to Check Document Validity Before Tax Filing Season",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-06-cert-ee-tax-declaration-document-check.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-02-05-reditel-nukib-diskutoval-v-bruselu-md",
     "title": "",
     "category": "industry_trend",
@@ -18620,11 +19840,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2026-02-03-cert-ee-2025-cybersecurity-yearbook-md",
+    "title": "Estonia RIA 2025 Cybersecurity Yearbook: New Records and Old Mistakes",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-02-03-cert-ee-2025-cybersecurity-yearbook.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2026-01-28-smart-id-plus-deployment-md",
     "title": "RIA Deploys Smart-ID+ in State Authentication Service",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-01-28-smart-id-plus-deployment.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-01-28-cert-ee-smart-id-plus-incoming-md",
+    "title": "Estonia RIA to Deploy Smart-ID+ to National Authentication Service in Late February 2026",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-01-28-cert-ee-smart-id-plus-incoming.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -18735,6 +19975,26 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2026-01-13-cert-br-training-courses-2026.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-01-13-cert-br-courses-2026-enrollment-open-md",
+    "title": "CERT.br: 2026 Course Enrollment Open",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-01-13-cert-br-courses-2026-enrollment-open.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2026-01-09-cert-ee-cybersecurity-r-and-d-grant-md",
+    "title": "Estonia Opens New Grant for Cybersecurity Companies to Develop Innovative Solutions with Researchers",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2026-01-09-cert-ee-cybersecurity-r-and-d-grant.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19180,6 +20440,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-12-19-cert-ee-nordic-baltic-cyber-consortium-md",
+    "title": "Nordic-Baltic Cyber Consortium Project Launched to Strengthen Regional Cyber Threat Intelligence Sharing",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-19-cert-ee-nordic-baltic-cyber-consortium.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-12-16-ncsc-fi-weekly-review-50-2025-md",
     "title": "Weekly review of the National Cyber Security Centre Finland (NCSC-FI) – 50/2025",
     "category": "industry_trend",
@@ -19195,6 +20465,36 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-12-16-eesti-ee-business-renewal.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-12-16-cert-ee-eesti-ee-business-portal-update-md",
+    "title": "Estonia Government Portal eesti.ee Business View Redesigned with New Homepage and Dashboard",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-16-cert-ee-eesti-ee-business-portal-update.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-12-11-owasp-top-10-2025-web-security-md",
+    "title": "OWASP 2025 Top 10 Web Application Security Risks Released — Broken Access Control Remains Top",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-11-owasp-top-10-2025-web-security.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-12-10-cert-ee-ee-alarm-full-test-success-md",
+    "title": "Estonia EE-ALARM National Emergency Alert System Full Test Successful: Reached 155,000 Devices",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-10-cert-ee-ee-alarm-full-test-success.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19230,6 +20530,36 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-12-05-cert-ee-ee-alarm-test-announcement-md",
+    "title": "Estonia to Test EE-ALARM National Emergency Alert System on December 10 Including Sirens",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-05-cert-ee-ee-alarm-test-announcement.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-12-04-twcert-annual-conference-2025-md",
+    "title": "TWCERT/CC 2025 Taiwan Cybersecurity Incident Response Annual Conference: Building Secure Products, Linking Trust Defense Lines",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-04-twcert-annual-conference-2025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-12-04-cert-ee-eesti-app-alert-test-150k-devices-md",
+    "title": "Estonia Eesti App Emergency Alert Test Reaches 150,000 Devices with Temporary Overload Resolved",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-04-cert-ee-eesti-app-alert-test-150k-devices.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-12-03-joint-guidance-ai-secure-integration-ot-md",
     "title": "Joint Guidance on Principles for Secure Integration of Artificial Intelligence in Operational Technology",
     "category": "industry_trend",
@@ -19260,6 +20590,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-12-01-cert-ee-eesti-app-alert-retest-md",
+    "title": "Estonia to Retest Eesti App Emergency Alert Function on December 4",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-12-01-cert-ee-eesti-app-alert-retest.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-11-25-ncsc-fi-cyber-weather-october-2025-md",
     "title": "Cyber Weather in October 2025",
     "category": "industry_trend",
@@ -19275,6 +20615,26 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-11-25-cyber-weather-in-october-2025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-11-25-cert-ee-power-grid-cyber-exercise-md",
+    "title": "Estonia Cyber Exercise Tests Power Grid Resilience and Inter-Agency Cooperation",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-11-25-cert-ee-power-grid-cyber-exercise.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-11-25-2a-edicao-do-forum-de-ciberseguranca-da-administra-md",
+    "title": "2.ª edição do Fórum de Cibersegurança da Administração Local",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-11-25-2a-edicao-do-forum-de-ciberseguranca-da-administra.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19300,6 +20660,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-11-18-yamagoya-sigma-yara-realtime-monitoring-md",
+    "title": "YAMAGoya: A Real-time Client Monitoring Tool Using Sigma and YARA Rules",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-11-18-yamagoya-sigma-yara-realtime-monitoring.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-11-14-volunteer-service-eesti-ee-md",
     "title": "State Portal eesti.ee Launches Volunteer Service for Crisis Resilience",
     "category": "industry_trend",
@@ -19315,6 +20685,26 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-11-14-riigiportaal-eestiee-aitab-kasvatada-vabatahtlike-rolli-eest.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-11-14-cert-ee-eesti-ee-volunteer-service-md",
+    "title": "Estonia Government Portal eesti.ee Launches Volunteer Crisis Readiness Service",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-11-14-cert-ee-eesti-ee-volunteer-service.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-31-cert-br-ransomware-best-practices-slides-md",
+    "title": "CERT.br: Ransomware Best Practices Presentation Slides Available",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-31-cert-br-ransomware-best-practices-slides.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19340,6 +20730,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-10-29-cert-ee-e-its-workshops-md",
+    "title": "Estonia RIA Invites Organizations to E-ITS Information Security Standard Implementation Workshops",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-29-cert-ee-e-its-workshops.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-28-tsubame-report-overflow-apr-jun-2025-md",
+    "title": "TSUBAME Report Overflow (Apr-Jun 2025)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-28-tsubame-report-overflow-apr-jun-2025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-10-28-jpcert-tsubame-overflow-apr-jun-2025-md",
     "title": "TSUBAME Report Overflow: Monitoring Trends April-June 2025",
     "category": "industry_trend",
@@ -19355,6 +20765,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-10-28-cyberchess-live-stream.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-28-cert-ee-eesti-app-alert-technical-test-md",
+    "title": "Estonia Eesti App Emergency Alert Function Technical Test Conducted on October 28",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-28-cert-ee-eesti-app-alert-technical-test.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19390,11 +20810,81 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-10-23-cert-ee-eesti-app-alert-nationwide-test-md",
+    "title": "Estonia to Conduct Nationwide Eesti App Emergency Alert Test on October 28",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-23-cert-ee-eesti-app-alert-nationwide-test.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-20-cert-ee-cybersecurity-month-leadership-md",
+    "title": "Estonia Cybersecurity Month 2025: RIA Focuses on Business Leadership Responsibility",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-20-cert-ee-cybersecurity-month-leadership.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-17-cert-ee-cyber-accelerator-cohort-md",
+    "title": "Estonia Cyber Accelerator 2025 Cohort Selected: Companies Shaping Future Cybersecurity",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-17-cert-ee-cyber-accelerator-cohort.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-10-17-cert-br-training-courses-2026-schedule-md",
     "title": "CERT.br Announces 2026 Course Schedule and New Acceptance Rules",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-10-17-cert-br-training-courses-2026-schedule.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-17-cert-br-courses-2026-schedule-new-rules-md",
+    "title": "CERT.br: 2026 Course Schedule and New Enrollment Rules Announced",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-17-cert-br-courses-2026-schedule-new-rules.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-16-cert-ee-e-its-support-tool-md",
+    "title": "Estonia RIA Develops E-ITS Web Tool to Simplify Estonian Information Security Standard Implementation",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-16-cert-ee-e-its-support-tool.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-09-cert-ee-e-voting-cyber-hygiene-md",
+    "title": "Estonia RIA Urges Citizens to Practice Cyber Hygiene Before E-Voting in Autumn Elections",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-09-cert-ee-e-voting-cyber-hygiene.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-10-07-cert-ee-eesti-ee-personalized-services-md",
+    "title": "Estonia Government Portal eesti.ee Adds New Personalized Event Services for Military and Divorce",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-10-07-cert-ee-eesti-ee-personalized-services.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19440,6 +20930,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-09-23-cert-ee-digidoc-android-3-0-md",
+    "title": "Estonia RIA Releases DigiDoc Android Version 3.0.0 - Major Generational Upgrade",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-23-cert-ee-digidoc-android-3-0.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-09-17-twcert-crowdstrike-2025-threat-report-interactive-intrusions-md",
     "title": "CrowdStrike 2025 Threat Report: Interactive Intrusions Up 27%, Fileless Malware in 80%+ of Cases",
     "category": "industry_trend",
@@ -19450,11 +20950,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-09-17-crowdstrike-2025-threat-tactics-report-md",
+    "title": "CrowdStrike 2025 Threat Report: Interactive Intrusions Up 27%, Cloud Attacks Up 40%, Vishing Up 442%",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-17-crowdstrike-2025-threat-tactics-report.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-09-17-crowdstrike-2025-threat-report-hacker-tactics-evolution-md",
     "title": "CrowdStrike 2025 Threat Report: Decoding Long-Term Operations and Cross-Domain Attack Evolution",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-09-17-crowdstrike-2025-threat-report-hacker-tactics-evolution.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-17-cert-ee-eesti-app-identity-pria-toetukassa-md",
+    "title": "Estonia Eesti App Identity Verification Now Available at PRIA and Unemployment Insurance Fund",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-17-cert-ee-eesti-app-identity-pria-toetukassa.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19475,6 +20995,86 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-09-16-twcert-llm-chatgpt-malicious-samples-generation.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-16-llm-jailbreak-generates-malware-palo-alto-md",
+    "title": "LLM Security Defenses Fully Compromised? Researchers Used ChatGPT to Generate Thousands of Malware Samples",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-16-llm-jailbreak-generates-malware-palo-alto.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-16-cert-ee-eu-cybernet-phase-2-india-md",
+    "title": "Estonia-Led EU CyberNet Initiative Launches Phase 2 Expanding Cyber Cooperation to India and Pacific",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-16-cert-ee-eu-cybernet-phase-2-india.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-16-6a-edicao-do-relatorio-de-ciberseguranca-riscos-co-md",
+    "title": "6.ª edição do Relatório de Cibersegurança Riscos & Conflitos publicada",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-16-6a-edicao-do-relatorio-de-ciberseguranca-riscos-co.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-10-cert-ee-election-candidate-cyber-guide-md",
+    "title": "Estonia RIA Publishes Cyber Security Guide for Local Election Campaign Candidates",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-10-cert-ee-election-candidate-cyber-guide.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-10-cert-ee-eesti-ee-portal-redesign-md",
+    "title": "Estonia Government Portal eesti.ee Updated with Flexible Personal Dashboard",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-10-cert-ee-eesti-ee-portal-redesign.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-09-cert-ee-eesti-ee-notification-phishing-warning-md",
+    "title": "Estonia RIA: Official eesti.ee Notifications Always Come from registrikood@eesti.ee",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-09-cert-ee-eesti-ee-notification-phishing-warning.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-08-cert-ee-election-tech-security-assessment-md",
+    "title": "Estonian Academy of Sciences Maps Key Directions for Election Technology Security",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-08-cert-ee-election-tech-security-assessment.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-09-08-cert-ee-cyber-workshops-elderly-md",
+    "title": "Estonia RIA Organizes Free Cybersecurity Workshops for Middle-Aged and Elderly People",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-09-08-cert-ee-cyber-workshops-elderly.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19510,6 +21110,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-08-19-cert-ee-cyberwizards-2025-girls-cyber-camp-md",
+    "title": "CyberWizards 2025: International Camp Encourages Girls to Enter Cybersecurity World",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-08-19-cert-ee-cyberwizards-2025-girls-cyber-camp.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-08-04-active-cyber-defence-acd-the-third-year-md",
     "title": "Active Cyber Defence (ACD) - The Third Year",
     "category": "industry_trend",
@@ -19540,11 +21150,41 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-07-27-cert-br-ransomware-best-practices-document-md",
+    "title": "CERT.br: New Ransomware Best Practices Document Published",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-07-27-cert-br-ransomware-best-practices-document.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-07-21-cyber-weather-june-2025-md",
     "title": "Cyber weather, June 2025",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-07-21-cyber-weather-june-2025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-07-19-cert-br-new-website-launch-md",
+    "title": "CERT.br: New Website Launched",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-07-19-cert-br-new-website-launch.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-07-08-tsubame-report-overflow-jan-mar-2025-md",
+    "title": "TSUBAME Report Overflow (Jan-Mar 2025)",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-07-08-tsubame-report-overflow-jan-mar-2025.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19610,6 +21250,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2025-04-30-jpcert-ics-security-conference-2025-md",
+    "title": "ICS Security Conference 2025",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-04-30-jpcert-ics-security-conference-2025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2025-04-29-the-digital-europe-programme-work-programme-for-20252027-has-been-published-md",
     "title": "The Digital Europe Programme Work Programme for 2025–2027 has been published",
     "category": "industry_trend",
@@ -19645,6 +21295,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-04-14-upozornn-na-monou-zvenou-aktivitu-kybertonk-v-souvislosti-s.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-04-04-jsac2025-workshop-lightning-talk-md",
+    "title": "JSAC2025 Workshop and Lightning Talk",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-04-04-jsac2025-workshop-lightning-talk.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -19925,6 +21585,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2025-01-23-cert-br-training-courses-2025-open-registration.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2025-01-23-cert-br-courses-2025-enrollment-open-md",
+    "title": "CERT.br: 2025 Course Enrollment Open",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2025-01-23-cert-br-courses-2025-enrollment-open.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -20880,6 +22550,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2024-11-28-publicado-boletim-no-32024-do-observatorio-de-cibe-md",
+    "title": "Publicado Boletim n.º 3/2024 do Observatório de Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2024-11-28-publicado-boletim-no-32024-do-observatorio-de-cibe.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2024-11-26-national-cyber-security-centres-weekly-review-472024-md",
     "title": "National Cyber Security Centre's weekly review – 47/2024",
     "category": "industry_trend",
@@ -20950,6 +22630,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2024-09-18-cert-br-courses-2025-schedule-md",
+    "title": "CERT.br: 2025 Course Schedule and Fees Available",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2024-09-18-cert-br-courses-2025-schedule.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2024-09-11-national-cyber-security-centres-weekly-review-362024-md",
     "title": "National Cyber Security Centre's weekly review – 36/2024",
     "category": "industry_trend",
@@ -20975,6 +22665,36 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2024-07-26-national-cyber-security-centres-weekly-review-302024.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2024-07-25-publicado-boletim-no-22024-do-observatorio-de-cibe-md",
+    "title": "Publicado Boletim n.º 2/2024 do Observatório de Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2024-07-25-publicado-boletim-no-22024-do-observatorio-de-cibe.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2024-07-08-1a-edicao-do-bootcamp-for-girls-junta-jovens-talen-md",
+    "title": "1.ª edição do Bootcamp for Girls junta jovens talentos em Aveiro ",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2024-07-08-1a-edicao-do-bootcamp-for-girls-junta-jovens-talen.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2024-07-05-esta-disponivel-a-5a-edicao-do-relatorio-riscos-co-md",
+    "title": "Está disponível a 5.ª edição do Relatório Riscos & Conflitos",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2024-07-05-esta-disponivel-a-5a-edicao-do-relatorio-riscos-co.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -21015,6 +22735,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2024-06-20-the-national-cyber-security-centre-finlands-weekly-review-252024.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2024-04-29-publicado-boletim-no-12024-do-observatorio-de-cibe-md",
+    "title": "Publicado Boletim n.º 1/2024 do Observatório de Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2024-04-29-publicado-boletim-no-12024-do-observatorio-de-cibe.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -21240,6 +22970,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2023-12-26-publicado-boletim-no-52023-do-observatorio-de-cibe-md",
+    "title": "Publicado Boletim n.º 5/2023 do Observatório de Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-12-26-publicado-boletim-no-52023-do-observatorio-de-cibe.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2023-12-15-cncs-nis2-directive-impact-conference-portugal-md",
     "title": "CNCS Participates in NIS2 Directive Impact Conference for Portuguese Organizations",
     "category": "industry_trend",
@@ -21255,6 +22995,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2023-11-01-tietoturva-2023-information-security-seminar-looked-to-the-future-of-information.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2023-10-13-4a-edicao-do-exercicio-nacional-de-ciberseguranca-md",
+    "title": "4.ª edição do Exercício Nacional de Cibersegurança ",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-10-13-4a-edicao-do-exercicio-nacional-de-ciberseguranca.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -21310,6 +23060,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2023-06-20-seis-milhoes-de-euros-para-a-criacao-de-7-centros--md",
+    "title": "Seis milhões de euros para a criação de 7 Centros de Competências em Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-06-20-seis-milhoes-de-euros-para-a-criacao-de-7-centros-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2023-06-20-ncsc-fi-weekly-24-2023-ransomware-trends-md",
     "title": "The National Cyber Security Centre Finland's weekly review – 24/2023",
     "category": "industry_trend",
@@ -21340,6 +23100,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2023-06-06-lancado-o-boletim-no-22023-do-observatorio-de-cibe-md",
+    "title": "Lançado o Boletim nº 2/2023 do Observatório de Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-06-06-lancado-o-boletim-no-22023-do-observatorio-de-cibe.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2023-06-02-kybermittari-cybermeter-tool-md",
     "title": "Kybermittari (Cybermeter) helps to perceive cybersecurity risks",
     "category": "industry_trend",
@@ -21355,6 +23125,26 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2023-06-02-kybermittari-cybermeter-helps-to-perceive-cybersecurity-risks.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2023-05-18-sessao-de-discussao-estrategia-nacional-de-seguran-md",
+    "title": "Sessão de discussão  Estratégia Nacional de Segurança do Ciberespaço",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-05-18-sessao-de-discussao-estrategia-nacional-de-seguran.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2023-05-16-lancamento-da-campanha-de-sensibilizacao-internet--md",
+    "title": "Lançamento da campanha de sensibilização Internet Segura: #LerAntesClicarDepois",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-05-16-lancamento-da-campanha-de-sensibilizacao-internet-.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -21380,11 +23170,41 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2023-05-04-publicado-relatorio-tecnologias-emergentes-do-obse-md",
+    "title": "Publicado Relatório Tecnologias Emergentes, do Observatório de Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-05-04-publicado-relatorio-tecnologias-emergentes-do-obse.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2023-05-03-ja-esta-disponivel-o-terceiro-episodio-do-podcast--md",
+    "title": "Já está disponível o terceiro episódio do podcast do CNCS \"Comunicar Cibersegurança\"",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-05-03-ja-esta-disponivel-o-terceiro-episodio-do-podcast-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2023-04-21-finland-threat-level-elevated-md",
     "title": "Cyber threat level remains elevated, targeted attacks have become more frequent",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2023-04-21-finland-threat-level-elevated.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2023-04-13-sessoes-de-esclarecimento-c-network-md",
+    "title": "Sessões de Esclarecimento C-Network",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2023-04-13-sessoes-de-esclarecimento-c-network.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -21720,6 +23540,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2022-12-29-a-4a-edicao-do-relatorio-sociedade-do-observatorio-md",
+    "title": "A 4ª edição do Relatório Sociedade do Observatório de Cibersegurança foi publicada",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-12-29-a-4a-edicao-do-relatorio-sociedade-do-observatorio.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2022-12-28-the-national-cyber-security-centre-finlands-weekly-review-512022-md",
     "title": "The National Cyber Security Centre Finland’s weekly review – 51/2022",
     "category": "industry_trend",
@@ -21790,6 +23620,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2022-11-30-os-melhores-as-maiores-do-portugal-tecnologico-202-md",
+    "title": "Os Melhores & As Maiores do Portugal Tecnológico 2022",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-11-30-os-melhores-as-maiores-do-portugal-tecnologico-202.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-11-29-ciberseguranca-programa-europa-digital-convite-a-a-md",
+    "title": "Cibersegurança, Programa Europa Digital - convite à apresentação de propostas",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-11-29-ciberseguranca-programa-europa-digital-convite-a-a.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2022-11-28-the-national-cyber-security-centre-finlands-weekly-review-472022-md",
     "title": "The National Cyber Security Centre Finland’s weekly review – 47/2022",
     "category": "industry_trend",
@@ -21805,6 +23655,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2022-11-22-the-national-cyber-security-centre-finlands-weekly-review-462022.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-11-21-inquerito-de-avaliacao-pos-campanha-do-mes-europeu-md",
+    "title": "Inquérito de avaliação pós-campanha do Mês Europeu da Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-11-21-inquerito-de-avaliacao-pos-campanha-do-mes-europeu.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -21870,6 +23730,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2022-11-09-novo-episodio-disponivel-de-comunicar-ciberseguran-md",
+    "title": "Novo episódio disponível de “Comunicar Cibersegurança – o podcast do CNCS” ",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-11-09-novo-episodio-disponivel-de-comunicar-ciberseguran.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2022-11-09-identify-a-safe-website-by-its-address-md",
     "title": "Identify a safe website by its address",
     "category": "industry_trend",
@@ -21885,6 +23755,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2022-11-01-the-national-cyber-security-centre-finlands-weekly-review-432022.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-10-28-c-academy-formacao-avancada-em-ciberseguranca-lanc-md",
+    "title": "C-Academy - Formação Avançada em Cibersegurança lança calendário de formações ",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-10-28-c-academy-formacao-avancada-em-ciberseguranca-lanc.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -21925,6 +23805,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2022-10-19-the-national-cyber-security-centre-finlands-weekly-review-412022.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-10-19-c-days-acores-2022-md",
+    "title": "C-DAYS Açores 2022",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-10-19-c-days-acores-2022.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22060,11 +23950,51 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2022-09-30-mes-europeu-de-ciberseguranca-arranca-hoje-md",
+    "title": "Mês Europeu de Cibersegurança arranca hoje! ",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-09-30-mes-europeu-de-ciberseguranca-arranca-hoje.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2022-09-30-cyberattack-recovery-instructions-md",
     "title": "Instructions for recovering from cyberattacks",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2022-09-30-cyberattack-recovery-instructions.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-09-30-comunicar-ciberseguranca-o-podcast-do-cncs-e-o-nov-md",
+    "title": "“Comunicar Cibersegurança – o podcast do CNCS” é o novo espaço de conversa do CNCS",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-09-30-comunicar-ciberseguranca-o-podcast-do-cncs-e-o-nov.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-09-19-inquerito-de-avaliacao-do-mes-europeu-da-cibersegu-md",
+    "title": "Inquérito de avaliação do Mês Europeu da Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-09-19-inquerito-de-avaliacao-do-mes-europeu-da-cibersegu.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-09-15-responda-a-inquerito-acerca-dos-comportamentos-e-p-md",
+    "title": "Responda a Inquérito acerca dos comportamentos e perceções sobre cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-09-15-responda-a-inquerito-acerca-dos-comportamentos-e-p.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22090,6 +24020,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2022-09-13-a-setima-edicao-do-cyber-security-challenge-ja-arr-md",
+    "title": "A sétima edição do Cyber Security Challenge já arrancou!",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-09-13-a-setima-edicao-do-cyber-security-challenge-ja-arr.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2022-08-26-tlp-protocol-v2-md",
     "title": "International TLP protocol updated to version 2.0",
     "category": "industry_trend",
@@ -22110,6 +24050,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2022-08-18-identificacao-de-potenciais-prestadores-de-servico-md",
+    "title": "Identificação de Potenciais Prestadores de Serviços na Área da Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-08-18-identificacao-de-potenciais-prestadores-de-servico.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2022-08-08-goals-set-the-pace-for-cyber-exercises-md",
     "title": "Goals set the pace for cyber exercises",
     "category": "industry_trend",
@@ -22125,6 +24075,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2022-08-08-cyber-exercise-goals.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-06-23-relatorio-riscos-conflitos-de-2022-publicado-pelo--md",
+    "title": "Relatório Riscos & Conflitos de 2022 publicado pelo Observatório de Cibersegurança do CNCS",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-06-23-relatorio-riscos-conflitos-de-2022-publicado-pelo-.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22230,6 +24190,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2022-03-24-lancada-campanha-de-sensibilizacao-o-que-a-interne-md",
+    "title": "Lançada campanha de sensibilização \"O que a Internet diz de si\"",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-03-24-lancada-campanha-de-sensibilizacao-o-que-a-interne.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2022-03-18-cyber-security-preparedness-before-risks-materialise-instructions-for-organisati-md",
     "title": "Cyber security preparedness before risks materialise – instructions for organisations",
     "category": "industry_trend",
@@ -22255,6 +24225,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2022-02-07-media-literacy-week-offers-activities-for-all-ages.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2022-02-04-lancada-campanha-de-sensibilizacao-violencia-no-na-md",
+    "title": "Lançada Campanha de Sensibilização Violência no Namoro Online  #logoutaoabuso",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2022-02-04-lancada-campanha-de-sensibilizacao-violencia-no-na.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22320,6 +24300,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2021-12-30-a-3a-edicao-do-relatorio-sociedade-do-observatorio-md",
+    "title": "A 3ª edição do Relatório Sociedade, do Observatório de Cibersegurança, foi publicada",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-12-30-a-3a-edicao-do-relatorio-sociedade-do-observatorio.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-12-10-publicado-relatorio-sobre-politicas-publicas-da-ci-md",
+    "title": "Publicado Relatório sobre Políticas Públicas da Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-12-10-publicado-relatorio-sobre-politicas-publicas-da-ci.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2021-12-07-lähitapiola-recognised-as-information-security-trailblazer--md",
     "title": "LähiTapiola recognised as Information Security Trailblazer ",
     "category": "industry_trend",
@@ -22330,11 +24330,41 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2021-12-07-lahitapiola-recognised-as-information-security-tra-md",
+    "title": "LähiTapiola recognised as Information Security Trailblazer",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-12-07-lahitapiola-recognised-as-information-security-tra.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2021-12-07-information-security-seminar-attracted-record-audience--md",
     "title": "Information security seminar attracted record audience ",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2021-12-07-information-security-seminar-attracted-record-audience-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-12-03-18a-edicao-do-curso-geral-de-ciberseguranca-inscri-md",
+    "title": "18ª Edição do Curso Geral de Cibersegurança – Inscrições abertas",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-12-03-18a-edicao-do-curso-geral-de-ciberseguranca-inscri.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-11-29-publicados-videos-com-recomendacoes-para-que-as-or-md",
+    "title": "Publicados vídeos com recomendações para que as organizações elevem o seu nível de cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-11-29-publicados-videos-com-recomendacoes-para-que-as-or.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22385,6 +24415,36 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2021-10-11-assessment-of-report-on-the-cyber-security-of-mobile-devices.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-10-01-mes-europeu-da-ciberseguranca-ecsm2021-comeca-hoje-md",
+    "title": "Mês Europeu da Cibersegurança, ECSM2021, começa hoje!",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-10-01-mes-europeu-da-ciberseguranca-ecsm2021-comeca-hoje.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-09-30-lancado-boletim-no-42021-do-observatorio-de-cibers-md",
+    "title": "Lançado Boletim nº 4/2021 do Observatório de Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-09-30-lancado-boletim-no-42021-do-observatorio-de-cibers.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-09-21-inscricoes-encerradas-para-a-2a-edicao-do-curso-ge-md",
+    "title": " Inscrições encerradas para a 2ª edição do Curso Geral de Ciber-higiene",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-09-21-inscricoes-encerradas-para-a-2a-edicao-do-curso-ge.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22450,6 +24510,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2021-07-23-lancado-boletim-32021-do-observatorio-de-cibersegu-md",
+    "title": "Lançado Boletim 3/2021, do Observatório de Cibersegurança",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-07-23-lancado-boletim-32021-do-observatorio-de-cibersegu.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2021-07-22-guest-writer-adult-support-needed-to-ensure-children-are-safe-online-md",
     "title": "Guest writer: Adult support needed to ensure children are safe online",
     "category": "industry_trend",
@@ -22500,6 +24570,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2021-06-30-ja-se-encontra-disponivel-o-global-cybersecurity-i-md",
+    "title": "Já se encontra disponível o Global Cybersecurity Index 2020 da UIT",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-06-30-ja-se-encontra-disponivel-o-global-cybersecurity-i.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-06-18-lancado-o-curso-cidadao-cibersocial-md",
+    "title": "Lançado o Curso Cidadão Cibersocial",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-06-18-lancado-o-curso-cidadao-cibersocial.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2021-06-18-cncs-pt-cidadao-cibersocial-course-launch-md",
     "title": "Cidadão Cibersocial (Cyber Social Citizen) Course Launched (18 June 2021)",
     "category": "industry_trend",
@@ -22540,6 +24630,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2021-05-28-e-ja-no-proximo-dia-1-de-junho-que-sera-lancada-a--md",
+    "title": "É já no próximo dia 1 de junho que será lançada a segunda edição do curso Cidadão Ciberinformado",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-05-28-e-ja-no-proximo-dia-1-de-junho-que-sera-lancada-a-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2021-05-28-administrative-court-clarifies-the-interpretation-of-cookie-rules-md",
     "title": "Administrative Court clarifies the interpretation of cookie rules",
     "category": "industry_trend",
@@ -22555,6 +24655,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2021-05-26-information-security-requirements-for-smart-devices-are-companies-ready.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-05-17-ja-pode-aceder-ao-relatorio-riscos-conflitos-de-20-md",
+    "title": "Já pode aceder ao Relatório Riscos & Conflitos de 2021",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-05-17-ja-pode-aceder-ao-relatorio-riscos-conflitos-de-20.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22580,6 +24690,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2021-04-30-projeto-sobre-detecao-do-discurso-de-odio-arranca--md",
+    "title": "Projeto sobre deteção do discurso de ódio arranca dia 1 maio",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-04-30-projeto-sobre-detecao-do-discurso-de-odio-arranca-.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2021-04-30-cncs-pt-hate-speech-detection-project-md",
     "title": "Hate Speech Detection Project Launches May 1 (30 April 2021)",
     "category": "industry_trend",
@@ -22595,6 +24715,26 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2021-04-22-girls-in-ict-10th-anniversary-celebration.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-04-22-comemoracao-do-10o-aniversario-do-girls-in-ict-md",
+    "title": "Comemoração do 10º aniversário do Girls in ICT",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-04-22-comemoracao-do-10o-aniversario-do-girls-in-ict.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2021-04-01-centro-nacional-de-ciberseguranca-lanca-nova-edica-md",
+    "title": "Centro Nacional de Cibersegurança lança nova edição do curso Cidadão Ciberseguro",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-04-01-centro-nacional-de-ciberseguranca-lanca-nova-edica.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22710,6 +24850,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2021-01-18-ja-se-encontram-disponiveis-os-resultados-do-inque-md",
+    "title": "Já se encontram disponíveis os resultados do Inquérito Cibersegurança e Ensino a Distância",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2021-01-18-ja-se-encontram-disponiveis-os-resultados-do-inque.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2021-01-18-cybersecurity-distance-learning-survey-results-available-md",
     "title": "Results of Cybersecurity and Distance Learning Survey Now Available",
     "category": "industry_trend",
@@ -22820,11 +24970,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2020-10-05-tietoturvatorstai-get-to-grips-with-everyday-infor-md",
+    "title": "#tietoturvatorstai - Get to grips with everyday information security with the help of the NCSC-FI",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2020-10-05-tietoturvatorstai-get-to-grips-with-everyday-infor.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2020-10-01-the-european-cybersecurity-month-is-here-again-md",
     "title": "The European Cybersecurity Month is here again!",
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2020-10-01-the-european-cybersecurity-month-is-here-again.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2020-09-24-ja-se-encontra-disponivel-o-boletim-42020-do-obser-md",
+    "title": "Já se encontra disponível o Boletim 4/2020 do Observatório de Cibersegurança ",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2020-09-24-ja-se-encontra-disponivel-o-boletim-42020-do-obser.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22890,6 +25060,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2020-07-13-ja-esta-disponivel-o-boletim-32020-do-observatorio-md",
+    "title": "Já está disponível o Boletim 3/2020 do Observatório de Cibersegurança ",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2020-07-13-ja-esta-disponivel-o-boletim-32020-do-observatorio.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2020-07-13-cybersecurity-observatory-bulletin-3-2020-available-md",
     "title": "Cybersecurity Observatory Bulletin 3/2020 Now Available",
     "category": "industry_trend",
@@ -22905,6 +25085,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2020-06-23-cyber-informed-citizen-course-launched.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2020-06-23-cidadao-ciberinformado-testa-conhecimento-acerca-d-md",
+    "title": "Cidadão Ciberinformado testa conhecimento acerca de desinformação",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2020-06-23-cidadao-ciberinformado-testa-conhecimento-acerca-d.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -22965,6 +25155,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2020-04-21-spells-of-fair-cyber-weather-in-march-despite-state-of-emergency.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2020-04-17-orientacoes-para-utilizacao-das-tecnologias-para-o-md",
+    "title": "Orientações para utilização das tecnologias para o ensino à distância",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2020-04-17-orientacoes-para-utilizacao-das-tecnologias-para-o.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -23250,6 +25450,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "industry_trend-2019-07-08-webcheckpt-ja-se-encontra-disponivel-md",
+    "title": "WEBCHECK.PT já se encontra disponível",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2019-07-08-webcheckpt-ja-se-encontra-disponivel.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "industry_trend-2019-07-08-cncs-pt-webcheck-pt-available-md",
     "title": "WEBCHECK.PT Now Available (8 July 2019)",
     "category": "industry_trend",
@@ -23285,6 +25495,16 @@
     "category": "industry_trend",
     "date": "",
     "file": "industry_trend/2019-06-19-information-security-in-2018-draws-lessons-from-cyber-security-incidents-and-loo.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "industry_trend-2019-04-15-late-frost-in-march-cyber-weather-md",
+    "title": "Late frost in March cyber weather",
+    "category": "industry_trend",
+    "date": "",
+    "file": "industry_trend/2019-04-15-late-frost-in-march-cyber-weather.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -26120,11 +28340,101 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-03-25-tycoon2fa-phishing-returns-after-europol-disruption-md",
+    "title": "Tycoon2FA Phishing Platform Returns After Police Disruption",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-25-tycoon2fa-phishing-returns-after-europol-disruption.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-25-teampcp-backdoors-litellm-cicd-compromise-md",
+    "title": "TeamPCP Backdoors LiteLLM via Trivy CI/CD Compromise",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-25-teampcp-backdoors-litellm-cicd-compromise.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-03-25-smartapesg-campaign-pushes-remcos-rat-netsupport-r-md",
     "title": "SmartApeSG Campaign Pushes Remcos RAT, NetSupport RAT, StealC, and Sectop RAT (ArechClient2)",
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-03-25-smartapesg-campaign-pushes-remcos-rat-netsupport-r.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-25-scam-compounds-ai-models-deepfake-calls-md",
+    "title": "Scam Compounds Hiring \"AI Models\" for Deepfake Video Call Scams",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-25-scam-compounds-ai-models-deepfake-calls.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-25-ovhcloud-alleged-breach-1-6m-records-md",
+    "title": "Alleged OVHcloud Breach: 1.6 Million Customer Records and 5.9 Million Websites at Risk",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-25-ovhcloud-alleged-breach-1-6m-records.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-25-ncsc-fi-finland-compromised-devices-russia-md",
+    "title": "Finland: Thousands of Devices May Unknowingly Aid Russia (Finnish-language Article)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-25-ncsc-fi-finland-compromised-devices-russia.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-25-ncsc-fi-bubble-phishing-tool-md",
+    "title": "Bubble: A New Tool for Phishing Scams",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-25-ncsc-fi-bubble-phishing-tool.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-25-github-openclaw-deployer-trojan-campaign-md",
+    "title": "GitHub 'OpenClaw Deployer' Repo Delivers Trojan Instead",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-25-github-openclaw-deployer-trojan-campaign.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-25-fbi-cisa-russian-hackers-signal-whatsapp-md",
+    "title": "FBI and CISA Warn of Russian Hackers Hijacking Signal and WhatsApp Accounts",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-25-fbi-cisa-russian-hackers-signal-whatsapp.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-24-sans-isc-detecting-ip-kvms-md",
+    "title": "Detecting IP KVMs — Rogue Devices Used by Criminals for Remote Access",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-24-sans-isc-detecting-ip-kvms.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -26230,6 +28540,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-03-20-sans-isc-gsocket-backdoor-bash-script-md",
+    "title": "GSocket Backdoor Delivered Through Bash Script",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-20-sans-isc-gsocket-backdoor-bash-script.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-20-russian-intelligence-targets-messaging-apps-md",
+    "title": "Russian Intelligence Services Target Commercial Messaging Application Accounts",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-20-russian-intelligence-targets-messaging-apps.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-03-20-russian-intelligence-services-target-commercial-me-md",
     "title": "Russian Intelligence Services Target Commercial Messaging Application Accounts",
     "category": "attack_incident",
@@ -26270,6 +28600,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-03-20-certfr-2026-ale-003-instant-messaging-targeting-md",
+    "title": "Alert: Targeting of Instant Messaging Accounts (20 March 2026)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-20-certfr-2026-ale-003-instant-messaging-targeting.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-03-20-cert-fr-instant-messaging-targeting-alert-md",
     "title": "Alert: Targeting of Instant Messaging Applications",
     "category": "attack_incident",
@@ -26300,6 +28640,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-03-18-sans-isc-cowrie-logs-magic-payload-md",
+    "title": "Interesting Message Stored in Cowrie Honeypot Logs",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-18-sans-isc-cowrie-logs-magic-payload.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-03-18-sans-isc-adminer-scans-md",
     "title": "Scans for Adminer Web Database Management Tool",
     "category": "attack_incident",
@@ -26315,6 +28665,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-03-18-cowrie-logs-interesting-message.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-03-18-cisa-stryker-endpoint-management-hardening-md",
+    "title": "CISA Urges Endpoint Management System Hardening After Cyberattack Against US Organization",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-18-cisa-stryker-endpoint-management-hardening.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -26940,6 +29300,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-03-06-cert-ee-february-2026-incidents-md",
+    "title": "Estonia February 2026: Over 800 Cyber Incidents Recorded",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-03-06-cert-ee-february-2026-incidents.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-03-06-apt36-transparent-tribe-vibeware-md",
     "title": "APT36 (Transparent Tribe) Pivots to AI-Driven \"Vibeware\" Malware Development",
     "category": "attack_incident",
@@ -27340,11 +29710,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-02-24-notepadpp-supply-chain-attack-lotus-blossom-md",
+    "title": "Notepad++ Auto-Update Mechanism Compromised in Supply Chain Attack",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-24-notepadpp-supply-chain-attack-lotus-blossom.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-02-24-notepad-plus-plus-supply-chain-attack-md",
-    "title": "檢查可疑檔案",
+    "title": "Notepad++ Auto-Update Mechanism Compromised — Manual Update Required",
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-02-24-notepad-plus-plus-supply-chain-attack.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-02-24-cisa-spyware-messaging-apps-warning-md",
+    "title": "CISA Warning: Spyware Targeting Instant Messaging Application Users",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-24-cisa-spyware-messaging-apps-warning.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -27550,6 +29940,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-02-13-react2shell-cve-2025-55182-multiple-threat-actors-jpcert-md",
+    "title": "Multiple Threat Actors Rapidly Exploit React2Shell: A Case Study of Active Compromise",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-13-react2shell-cve-2025-55182-multiple-threat-actors-jpcert.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-02-13-jpcert-react2shell-multiple-threat-actors-md",
     "title": "Multiple Threat Actors Rapidly Exploit React2Shell (CVE-2025-55182)",
     "category": "attack_incident",
@@ -27670,6 +30070,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-02-05-cert-ee-january-2026-incidents-md",
+    "title": "Estonia January 2026: 768 Cyber Incidents Disrupted Digital Signing, Telecom, and Banking",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-02-05-cert-ee-january-2026-incidents.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-02-01-uac-0001-apt28-cve-2026-21509-md",
     "title": "UAC-0001 (APT28) Cyberattacks Against Ukraine and EU Using CVE-2026-21509 Exploit",
     "category": "attack_incident",
@@ -27695,6 +30105,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-01-28-ria-votab-riigi-autentimisteenuses-kasutusele-uue-smart-id.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-01-28-contagious-interview-vscode-tasks-persistence-md",
+    "title": "\"Contagious Interview\" Attack Evolution: Abusing VS Code Tasks for Persistence",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-01-28-contagious-interview-vscode-tasks-persistence.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -27770,6 +30190,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2026-01-06-cert-ee-december-2025-incidents-md",
+    "title": "Estonia December 2025: 998 Cyber Incidents Including Massive Fraud Calls Impersonating Agencies",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-01-06-cert-ee-december-2025-incidents.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2026-01-01-esignature-incident-resolved-md",
     "title": "Electronic Signature Creation Incident Resolved",
     "category": "attack_incident",
@@ -27805,6 +30235,26 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2026-01-01-digital-signature-disruption.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-01-01-cert-ee-digital-signing-problems-md",
+    "title": "Estonia Experiences Problems with Electronic Signature Creation (New Year's Day 2026)",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-01-01-cert-ee-digital-signing-problems.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2026-01-01-cert-ee-digital-signing-incident-resolved-md",
+    "title": "Estonia Electronic Signature Incident Resolved on January 1, 2026",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2026-01-01-cert-ee-digital-signing-incident-resolved.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -28370,6 +30820,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-12-18-cert-ee-eesti-ee-fraud-scheme-md",
+    "title": "Estonia: Fraudsters Used eesti.ee Portal Data in Fraud Schemes Affecting ~1500 People",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-12-18-cert-ee-eesti-ee-fraud-scheme.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-12-16-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi-502025-md",
     "title": "Weekly review of the National Cyber Security Centre Finland (NCSC-FI) – 50/2025",
     "category": "attack_incident",
@@ -28405,6 +30865,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2025-12-09-social-engineering-impersonating-managers-line-groups.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-12-09-social-engineering-impersonating-executives-md",
+    "title": "Social Engineering Alert: Threat Actors Impersonate Executives to Request Group Creation and Personal Data",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-12-09-social-engineering-impersonating-executives.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -28490,6 +30960,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-12-04-cert-ee-november-2025-incidents-md",
+    "title": "Estonia November 2025: 851 Cyber Incidents Including DDoS Attacks, Ransomware, and Technical Failures",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-12-04-cert-ee-november-2025-incidents.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-11-27-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi-472025-md",
     "title": "Weekly review of the National Cyber Security Centre Finland (NCSC-FI) - 47/2025",
     "category": "attack_incident",
@@ -28540,6 +31020,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-11-27-etherhide-blockchain-c2-threat-md",
+    "title": "Emerging Blockchain C2 Threat: \"EtherHide\" Becomes Hacker Favorite",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-11-27-etherhide-blockchain-c2-threat.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-11-25-twcert-operation-wrthug-asus-routers-md",
     "title": "Operation WrtHug: Large-Scale Cyber Campaign Targeting ASUS Routers Globally",
     "category": "attack_incident",
@@ -28550,11 +31040,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-11-25-operation-wrthug-asus-routers-md",
+    "title": "Global Network Threat Campaign \"Operation WrtHug\" Targets ASUS Routers",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-11-25-operation-wrthug-asus-routers.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-11-25-operation-wrthug-asus-routers-targeted-md",
     "title": "Operation WrtHug Targets ASUS Routers Globally via AiCloud Vulnerabilities",
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2025-11-25-operation-wrthug-asus-routers-targeted.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-11-25-operation-wrthug-asus-router-attacks-md",
+    "title": "Global Cyber Threat Campaign \"Operation WrtHug\" Targets ASUS Routers",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-11-25-operation-wrthug-asus-router-attacks.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -28650,6 +31160,26 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-11-06-cert-ee-october-2025-incidents-md",
+    "title": "Estonia October 2025: 1057 Cyber Incidents Including DDoS Attacks, Fraud Calls",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-11-06-cert-ee-october-2025-incidents.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-11-05-apt-c-60-update-jpcert-md",
+    "title": "Update on Attacks by Threat Group APT-C-60",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-11-05-apt-c-60-update-jpcert.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-11-04-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi-442025-md",
     "title": "Weekly review of the National Cyber Security Centre Finland (NCSC-FI) - 44/2025",
     "category": "attack_incident",
@@ -28710,11 +31240,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-10-29-social-engineering-cloud-services-temp-certs-md",
+    "title": "Social Engineering Escalation: Combining Cloud Services and Short-term Certificates to Evade Defenses",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-10-29-social-engineering-cloud-services-temp-certs.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-10-29-social-engineering-cloud-services-short-term-certificates-md",
     "title": "Social Engineering Escalation: Combining Cloud Services and Short-Term Certificates to Evade Defenses",
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2025-10-29-social-engineering-cloud-services-short-term-certificates.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-10-28-lockbit-5-ransomware-cross-platform-md",
+    "title": "LockBit 5.0 Ransomware Active Again with Higher Technical Complexity and Cross-Platform Attack Capability",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-10-28-lockbit-5-ransomware-cross-platform.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -28850,11 +31400,31 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-10-03-cert-ee-september-2025-incidents-md",
+    "title": "Estonia September 2025: 680 Cyber Incidents, Fewer Numbers but Significant Fraud Activity",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-10-03-cert-ee-september-2025-incidents.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-09-30-twcert-scattered-lapsus-hunters-alliance-md",
     "title": "Multi-Hacker Alliance \"Scattered LapSus Hunters\" Claims Targeting of Cloud Provider",
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2025-09-30-twcert-scattered-lapsus-hunters-alliance.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-09-30-scattered-lapsus-hunters-hacker-coalition-md",
+    "title": "Hacker Groups Reportedly Forming Coalition — Cybersecurity Threats Escalate",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-09-30-scattered-lapsus-hunters-hacker-coalition.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -29000,6 +31570,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-09-04-cert-ee-august-2025-incidents-md",
+    "title": "Estonia August 2025: 759 Cyber Incidents Dominated by Various Fraud Types",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-09-04-cert-ee-august-2025-incidents.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-09-04-august-kuberruumis-petturid-suvepuhkust-ei-votnud-md",
     "title": "August küberruumis: petturid suvepuhkust ei võtnud",
     "category": "attack_incident",
@@ -29050,6 +31630,16 @@
     "source_layer": "security_news_facts"
   },
   {
+    "id": "attack_incident-2025-08-28-chinese-apt-targets-taiwan-semiconductor-industry-md",
+    "title": "Cyber Warfare Behind Semiconductor Strategy: Three Chinese APT Groups Target Taiwan Semiconductor Industry",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-08-28-chinese-apt-targets-taiwan-semiconductor-industry.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
     "id": "attack_incident-2025-08-18-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi-332025-md",
     "title": "Weekly review of the National Cyber Security Centre Finland (NCSC-FI) – 33/2025",
     "category": "attack_incident",
@@ -29075,6 +31665,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2025-08-14-jpcert-crossc2-cobalt-strike.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-08-14-crossc2-cobalt-strike-linux-cross-platform-md",
+    "title": "CrossC2 Expanding Cobalt Strike Beacon to Cross-Platform Attacks",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-08-14-crossc2-cobalt-strike-linux-cross-platform.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -29215,6 +31815,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2025-07-18-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi---282025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-07-18-ivanti-connect-secure-malware-jpcert-md",
+    "title": "Malware Identified in Attacks Exploiting Ivanti Connect Secure Vulnerabilities",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-07-18-ivanti-connect-secure-malware-jpcert.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -29545,6 +32155,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2025-04-25-weekly-review-of-the-national-cyber-security-centre-finland-ncsc-fi---172025.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2025-04-24-dslogdrat-ivanti-connect-secure-md",
+    "title": "DslogdRAT Malware Installed in Ivanti Connect Secure",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2025-04-24-dslogdrat-ivanti-connect-secure.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
@@ -35275,6 +37895,16 @@
     "category": "attack_incident",
     "date": "",
     "file": "attack_incident/2019-11-05-sextortion-spam-scientifically-scrutinized.md",
+    "source": "",
+    "severity": "",
+    "source_layer": "security_news_facts"
+  },
+  {
+    "id": "attack_incident-2019-10-25-qsnatch-malware-designed-for-qnap-nas-devices-md",
+    "title": "QSnatch - Malware designed for QNAP NAS devices",
+    "category": "attack_incident",
+    "date": "",
+    "file": "attack_incident/2019-10-25-qsnatch-malware-designed-for-qnap-nas-devices.md",
     "source": "",
     "severity": "",
     "source_layer": "security_news_facts"
