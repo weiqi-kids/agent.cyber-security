@@ -86,5 +86,13 @@
     "period": "2026-01-21 至 2026-01-27",
     "file": "2026-W04-defense-advisory.md",
     "source_mode": "defense_advisory"
+  },
+  {
+    "id": "2026-W17-defense-advisory-md",
+    "title": "防禦建議 — 2026 第 17 週",
+    "date": "2026-W17",
+    "period": "2026-04-20 至 2026-04-26",
+    "file": "2026-W17-defense-advisory.md",
+    "source_mode": "defense_advisory"
   }
 ]
