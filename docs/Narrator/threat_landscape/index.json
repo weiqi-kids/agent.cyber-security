@@ -8,6 +8,22 @@
     "source_mode": "threat_landscape"
   },
   {
+    "id": "2026-W25-threat-landscape-md",
+    "title": "威脅態勢分析 — 2026 第 25 週",
+    "date": "2026-W25",
+    "period": "2026-06-10 至 2026-06-17",
+    "file": "2026-W25-threat-landscape.md",
+    "source_mode": "threat_landscape"
+  },
+  {
+    "id": "2026-W17-threat-landscape-md",
+    "title": "威脅態勢分析 — 2026 第 17 週",
+    "date": "2026-W17",
+    "period": "2026-04-20 至 2026-04-26",
+    "file": "2026-W17-threat-landscape.md",
+    "source_mode": "threat_landscape"
+  },
+  {
     "id": "2026-W13-threat-landscape-md",
     "title": "威脅態勢分析 — 2026 第 13 週",
     "date": "2026-W13",
@@ -85,14 +101,6 @@
     "date": "2026-W04",
     "period": "2026-01-21 至 2026-01-27",
     "file": "2026-W04-threat-landscape.md",
-    "source_mode": "threat_landscape"
-  },
-  {
-    "id": "2026-W17-threat-landscape-md",
-    "title": "威脅態勢分析 — 2026 第 17 週",
-    "date": "2026-W17",
-    "period": "2026-04-20 至 2026-04-26",
-    "file": "2026-W17-threat-landscape.md",
     "source_mode": "threat_landscape"
   }
 ]
