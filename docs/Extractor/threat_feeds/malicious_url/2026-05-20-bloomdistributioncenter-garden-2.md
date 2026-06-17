@@ -1,0 +1,34 @@
+# 惡意 URL：bloomdistributioncenter.garden
+
+| 項目 | 內容 |
+|------|------|
+| **日期** | 2026-05-20 |
+| **來源** | abuse.ch URLhaus |
+| **分類** | malicious_url |
+| **威脅類型** | malware |
+| **惡意程式家族** | 未知 |
+| **狀態** | offline |
+| **威脅等級** | 未評估 |
+| **信心水準** | 中 |
+
+## 威脅描述
+
+abuse.ch URLhaus 回報的惡意 URL（威脅：malware_download；標籤：ClearFake）。回報者：anonymous。狀態：offline。最後上線：2026-05-20 21:53:07 UTC。
+
+## IoC 指標
+
+| 類型 | 值 |
+|------|-----|
+| url | `hxxps://bloomdistributioncenter.garden/5c3ae8f5-11dc-41f8-a9d0-1f68c169f758/ggl.bsc` |
+
+## 關聯分析
+
+無已識別的關聯。
+
+## 來源連結
+
+- [abuse.ch URLhaus](https://urlhaus.abuse.ch/url/3851036/)
+
+---
+> 萃取時間：2026-06-17 15:40 UTC
+> 資料來源：abuse.ch URLhaus urlhaus-recent
