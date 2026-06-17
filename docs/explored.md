@@ -55,21 +55,21 @@
 
 | 資料源 | 類型 | URL | 語言 | 發現日期 | 狀態 | 最後檢查 | 連續失敗 | 最後成功 |
 |--------|------|-----|------|----------|------|----------|----------|----------|
-| AusCERT (Australia) | RSS | https://auscert.org.au/rss/bulletins/ | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| BGD e-GOV CIRT (Bangladesh) | RSS | https://www.cirt.gov.bd/feed/ | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| CERT.BE (Belgium) | RSS | https://cert.be/en/rss | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| DKCERT (Denmark) | RSS | https://www.cert.dk/nyheder/rss | 非英文 | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| CERT-EU (EU) | RSS | https://cert.europa.eu/cert/Data/newsletter/reviewlatest-SecurityBulletins.xml | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| NCSC Hungary (Hungary) | RSS | https://nki.gov.hu/figyelmeztetesek/riasztas/feed/ | 非英文 | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| CERT-IL (Israel) | RSS | https://www.gov.il/he/api/PublicationApi/rss/4bcc13f5-fed6-4b8c-b8ee-7bf4a6bc81c8 | 非英文 | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| CSIRT Italia (Italy) | RSS | https://csirt.gov.it/data/indexer/rss | 非英文 | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| NISSA (Libya) | RSS | https://nissa.gov.ly/ | 非英文 | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| NCSC NL News (Netherlands) | RSS | https://feeds.english.ncsc.nl/news.rss | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| SingCERT (Singapore) | RSS | https://www.csa.gov.sg/Content/RSS-Feed | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| CCN-CERT News (Spain) | RSS | https://www.ccn-cert.cni.es/component/obrss/rss-noticias.feed | 非英文 | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| CCN-CERT Vulns (Spain) | RSS | https://www.ccn-cert.cni.es/component/obrss/rss-ultimas-vulnerabilidades.feed | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| Swiss GovCERT (Switzerland) | RSS | https://www.govcert.ch/blog/rss.xml | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
-| Swiss GovCERT Whitepapers (Switzerland) | RSS | https://www.govcert.ch/whitepapers/rss.xml | EN | 2026-01-27 | 連線失敗 | 2026-01-27 | 1 | 從未 |
+| AusCERT (Australia) | RSS | https://auscert.org.au/rss/bulletins/ | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| BGD e-GOV CIRT (Bangladesh) | RSS | https://www.cirt.gov.bd/feed/ | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| CERT.BE (Belgium) | RSS | https://cert.be/en/rss | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| DKCERT (Denmark) | RSS | https://www.cert.dk/nyheder/rss | 非英文 | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| CERT-EU (EU) | RSS | https://cert.europa.eu/cert/Data/newsletter/reviewlatest-SecurityBulletins.xml | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| NCSC Hungary (Hungary) | RSS | https://nki.gov.hu/figyelmeztetesek/riasztas/feed/ | 非英文 | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| CERT-IL (Israel) | RSS | https://www.gov.il/he/api/PublicationApi/rss/4bcc13f5-fed6-4b8c-b8ee-7bf4a6bc81c8 | 非英文 | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| CSIRT Italia (Italy) | RSS | https://csirt.gov.it/data/indexer/rss | 非英文 | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| NISSA (Libya) | RSS | https://nissa.gov.ly/ | 非英文 | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| NCSC NL News (Netherlands) | RSS | https://feeds.english.ncsc.nl/news.rss | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| SingCERT (Singapore) | RSS | https://www.csa.gov.sg/Content/RSS-Feed | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| CCN-CERT News (Spain) | RSS | https://www.ccn-cert.cni.es/component/obrss/rss-noticias.feed | 非英文 | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| CCN-CERT Vulns (Spain) | RSS | https://www.ccn-cert.cni.es/component/obrss/rss-ultimas-vulnerabilidades.feed | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| Swiss GovCERT (Switzerland) | RSS | https://www.govcert.ch/blog/rss.xml | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
+| Swiss GovCERT Whitepapers (Switzerland) | RSS | https://www.govcert.ch/whitepapers/rss.xml | EN | 2026-01-27 | 連線失敗 | 2026-04-04 | 2 | 從未 |
 
 ## 已排除
 

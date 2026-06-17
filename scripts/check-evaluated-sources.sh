@@ -92,16 +92,16 @@ while IFS= read -r line || [[ -n "$line" ]]; do
       status="連線成功"
       consec=0
       last_success="$TODAY"
-      ((ok_count++))
+      (( ok_count += 1 ))
       echo "  ✅ $name → HTTP $http_code"
     else
       # 連線失敗 → 累加計數
       consec=$((consec + 1))
-      ((fail_count++))
+      (( fail_count += 1 ))
 
       if [[ $consec -ge $FAILURE_THRESHOLD ]]; then
         status="待排除"
-        ((pending_count++))
+        (( pending_count += 1 ))
         echo "  ⛔ $name → HTTP ${http_code}（連續 ${consec} 天，已標記待排除）"
       else
         status="連線失敗"
@@ -109,7 +109,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
       fi
     fi
 
-    ((checked++))
+    (( checked += 1 ))
 
     # 重建資料列
     printf '| %s | %s | %s | %s | %s | %s | %s | %s | %s |\n' \

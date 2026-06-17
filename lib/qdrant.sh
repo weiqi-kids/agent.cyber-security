@@ -39,8 +39,8 @@ _qdrant_id_to_uuid() {
     return 0
   fi
 
-  # 使用 Python uuid5 產生確定性 UUID
-  python3 -c "import uuid; print(uuid.uuid5(uuid.NAMESPACE_URL, '''$input'''))" 2>/dev/null && return 0
+  # 使用 Python uuid5 產生確定性 UUID（透過 stdin 傳入避免命令注入）
+  printf '%s' "$input" | python3 -c "import sys, uuid; print(uuid.uuid5(uuid.NAMESPACE_URL, sys.stdin.read()))" 2>/dev/null && return 0
 
   # Fallback：用 md5 手動格式化為 UUID
   local hash
@@ -746,6 +746,190 @@ qdrant_scroll_without_field() {
 
   # 回傳 points array
   printf '%s' "$resp" | jq -c '.result.points // []'
+}
+
+########################################
+# Scroll (Filter-based query, no vector needed)
+########################################
+
+# qdrant_scroll COLLECTION_NAME FILTER_JSON [LIMIT]
+#
+# 功能：
+#   - 按 filter 條件捲動查詢（不需要向量）
+#   - 用於跨平台資料查詢（如：查詢同一 product_id 的所有平台資料）
+#
+# 參數：
+#   COLLECTION_NAME: collection 名稱
+#   FILTER_JSON: Qdrant filter 條件 (JSON object)
+#     例如：'{"must":[{"key":"product_id","match":{"value":"B09V3KXJPB"}}]}'
+#   LIMIT: 回傳結果數量（預設 100）
+#
+# stdout:
+#   查詢結果 JSON（包含 points 陣列，每個 point 含 id 和 payload）
+#
+# 回傳值：
+#   0  = 成功
+#   >0 = 失敗
+qdrant_scroll() {
+  local collection_name="$1"
+  local filter_json="$2"
+  local limit="${3:-100}"
+
+  require_cmd curl jq || return 1
+
+  local max_retries=3
+  local retry_delay=1
+
+  # 使用臨時檔案避免命令行參數過長
+  local tmp_payload tmp_body http_code
+  tmp_payload="$(mktemp)"
+  tmp_body="$(mktemp)"
+
+  # 組合 scroll 請求 payload
+  printf '%s' "$filter_json" | jq -c \
+    --argjson limit "$limit" \
+    '{
+      filter: .,
+      limit: $limit,
+      with_payload: true,
+      with_vector: false
+    }' > "$tmp_payload"
+
+  for ((attempt=1; attempt<=max_retries; attempt++)); do
+    local curl_args=(
+      -sS -X POST "${QDRANT_URL%/}/collections/${collection_name}/points/scroll"
+      -H "Content-Type: application/json"
+      -d "@${tmp_payload}"
+      -w '%{http_code}' -o "$tmp_body"
+      --connect-timeout 15
+      --max-time 60
+      --tlsv1.2
+    )
+
+    if [[ -n "${QDRANT_API_KEY:-}" ]]; then
+      curl_args+=( -H "api-key: ${QDRANT_API_KEY}" )
+    fi
+
+    http_code="$(curl "${curl_args[@]}" 2>/dev/null)"
+    local curl_exit=$?
+
+    if [[ $curl_exit -eq 0 ]]; then
+      local resp
+      resp="$(cat "$tmp_body")"
+      rm -f "$tmp_payload" "$tmp_body"
+
+      if [[ "$http_code" == "200" ]]; then
+        printf '%s\n' "$resp"
+        return 0
+      fi
+
+      echo "❌ [qdrant_scroll] HTTP=${http_code}" >&2
+      if jq -e . >/dev/null 2>&1 <<<"$resp"; then
+        echo "$resp" | jq -C '.' >&2
+      else
+        echo "$resp" >&2
+      fi
+      return 1
+    fi
+
+    rm -f "$tmp_body"
+    if [[ $attempt -lt $max_retries ]]; then
+      echo "⚠️  [qdrant_scroll] curl 失敗 (exit=$curl_exit)，重試 $attempt/$max_retries..." >&2
+      sleep $retry_delay
+    else
+      rm -f "$tmp_payload"
+      echo "❌ [qdrant_scroll] curl 失敗 (exit=$curl_exit)，已重試 $max_retries 次" >&2
+      return 1
+    fi
+  done
+
+  rm -f "$tmp_payload" "$tmp_body"
+  return 1
+}
+
+########################################
+# Search by Payload (URL 查詢)
+########################################
+
+# qdrant_exists_by_url SOURCE_URL [COLLECTION_NAME]
+#
+# 功能：
+#   - 檢查是否存在具有特定 source_url 的 point
+#
+# 參數：
+#   SOURCE_URL: 要查詢的 source_url
+#   COLLECTION_NAME: collection 名稱（預設使用 $QDRANT_COLLECTION）
+#
+# 回傳值：
+#   0  = 存在
+#   1  = 不存在
+qdrant_exists_by_url() {
+  local source_url="$1"
+  local collection_name="${2:-${QDRANT_COLLECTION:-}}"
+
+  require_cmd curl jq || return 1
+
+  if [[ -z "$collection_name" ]]; then
+    echo "❌ [qdrant_exists_by_url] 未指定 collection（設定 QDRANT_COLLECTION 或傳入第二參數）" >&2
+    return 1
+  fi
+
+  local payload
+  payload="$(
+    jq -n \
+      --arg url "$source_url" \
+      '{
+        filter: {
+          must: [
+            {
+              key: "source_url",
+              match: { value: $url }
+            }
+          ]
+        },
+        limit: 1,
+        with_payload: false,
+        with_vector: false
+      }'
+  )"
+
+  local tmp_body http_code
+  tmp_body="$(mktemp)"
+
+  local curl_args=(
+    -sS -X POST "${QDRANT_URL%/}/collections/${collection_name}/points/scroll"
+    -H "Content-Type: application/json"
+    --data-raw "$payload"
+    -w '%{http_code}' -o "$tmp_body"
+    --connect-timeout 15
+    --max-time 30
+    --tlsv1.2
+  )
+
+  if [[ -n "${QDRANT_API_KEY:-}" ]]; then
+    curl_args+=( -H "api-key: ${QDRANT_API_KEY}" )
+  fi
+
+  http_code="$(curl "${curl_args[@]}" 2>/dev/null)" || {
+    rm -f "$tmp_body"
+    return 1
+  }
+
+  local resp
+  resp="$(cat "$tmp_body")"
+  rm -f "$tmp_body"
+
+  if [[ "$http_code" != "200" ]]; then
+    return 1
+  fi
+
+  # 檢查是否有結果
+  local count
+  count="$(printf '%s' "$resp" | jq -r '.result.points | length')"
+  if [[ "$count" -gt 0 ]]; then
+    return 0  # 存在
+  fi
+  return 1  # 不存在
 }
 
 ########################################
