@@ -67,3 +67,7 @@ flowchart TB
 | 版本 | 日期 | 變更內容 |
 |------|------|----------|
 | v1.0 | 2026-01-26 | 初始版本：L1/L2 + M1/M2 架構建立 |
+
+---
+
+Maintained by Light. I build and maintain websites with AI as a service: [arthurs.tw](https://arthurs.tw/?utm_source=github&utm_medium=readme&utm_campaign=oss)
